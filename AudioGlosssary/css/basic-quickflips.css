@@ -1,0 +1,106 @@
+.quickFlip, .quickFlip3 {
+ }
+
+.quickFlip2 {
+}
+
+
+.redPanel, .blackPanel {
+    text-align: center;
+}
+
+.half-col {
+    width: 50%;
+    float: left;
+}
+
+/**** panels ****/
+
+.quickFlip, .quickFlip2, .quickFlip3 {
+    font-family: "Trebuchet MS", Verdana, Sans-serif, sans;
+    font-size: 13px;
+    position: relative;
+	-moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-box-shadow: 1px 1px 2px #87b8e0;
+  -webkit-box-shadow: 1px 1px 2px #87b8e0;
+  -webkit-transition-duration: 5s; 
+}
+
+.quickFlip .blackPanel, .quickFlip2 .blackPanel, .quickFlip3 .blackPanel {
+    background-color: #FFD993;
+    color: darkbrown;
+    border: 1px outset #A61C14;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+	-moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-box-shadow: 1px 1px 2px #87b8e0;
+  -webkit-box-shadow: 1px 1px 2px #87b8e0;
+  -webkit-transition-duration: 5s; 
+}
+
+.quickFlip .redPanel, .quickFlip2 .redPanel, .quickFlip3 .redPanel {
+    background-color: #75941f;
+    color: #FFF;
+    border: 1px outset #4f6417;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+	-moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-box-shadow: 1px 1px 2px #87b8e0;
+  -webkit-box-shadow: 1px 1px 2px #87b8e0;
+  -webkit-transition-duration: 5s; 
+}
+
+.half-col p {
+    padding: 5px;
+    margin:0 30px 10px 30px;
+}
+
+.half-col p.panel-content {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.half-col h3, .half-col h4 {
+    padding: 0;
+    margin: 0 35px;
+}
+
+.half-col h3 {
+    text-align: left;
+    font-size:24px;
+    line-height:24px;
+}
+
+.half-col .redPanel h3 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.half-col .first {
+    margin-top: 30px;
+}
+
+.half-col EM {
+    display: block;
+    padding: 0;
+}
+
+.half-col A.quickFlipCta {
+    position: absolute;
+    bottom: 30px;
+    left: 65px;
+    width: 210px;
+    font-size: 15px;
+    outline: none;
+}
+
+.quickFlip2 .redPanel a {
+    color: #FFF;
+}
+
+.quickFlipCta {
+    cursor: pointer;
+}

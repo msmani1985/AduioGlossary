@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=10.0;" />  
+<title>My Audio Glossary FlashCard</title>
+<link rel="stylesheet" type="text/css" href="css/Inlinestyle.css"/>
+<link rel="stylesheet" type="text/css" href="css/master.css" />
+<link rel="stylesheet" type="text/css" href="css/responsive.css" /> 
+<script type="text/javascript" src="js/html5.js"></script> 
+<script type="text/javascript" src="js/jquery.mobile-1.4.0-rc.1.min.js"></script> 
+<script type="text/javascript" src="js/jquery.js"></script> 
+<script type="text/javascript" src="js/jquery.flip.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.js"></script> 
+<script type="text/javascript" src="js/FlashcardDataProvider.js"></script> 
+<script type="text/javascript" src="js/FlashcardView.js"></script> 
+<script type="text/javascript" src="js/buzz.js"></script> 
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.21/themes/base/jquery-ui.css" type="text/css" media="all" />
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.21/themes/base/jquery-ui.css" type="text/css" media="all" />
+<script type="text/javascript" src="script/browser-detect.js"></script>
+<script type="text/javascript" src="script/script.js"></script>
+<script type="text/javascript" src="script/DataProvider.js"></script>
+<script type="text/javascript" src="script/DataProvider1.js"></script>
+   <link rel="stylesheet" href="jquery-ui.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+        <script src="js/jquery.confirmon.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/model.css"/>
+</head>
+<body onload="bodyloaded1()">
+
+ <form onsubmit="return false">
+<div  class="body"> 
+<header>
+<div class="header">
+     <div class="logo"><a href="#"><img src="images/logo.png" border="0" alt="" /></a></div>
+     <div class="main_title">
+          <div class="fl title">ACSM'S INTRODUCTION TO EXERCISE SCIENCE</div>
+          <div class="fr subtitle">SECOND EDITION</div>
+     </div>
+     <div class="clear"></div>
+     <div class="fl"><h3>JEFFREY A. POTTEIGER</h3></div>
+     <div class="fr">
+   <div class="selectbox">
+            <select id="chapterList" onchange="onSelection2()" title="Select Chapter">
+            </select>
+    </div>
+     </div>
+     <div class="clear"></div>
+     </div>
+</header>
+<div class="btnCntnr" id="btnCntnr" style="margin-left: 278px;margin-top: 10px;margin-bottom: -20px;">
+   <input class="btns active" type="button" value="Term" id="b1" onclick="tabClickTerm()" title="Term"/>
+   <input class="btns " type="button" value="Definition" id="b2" class="inactive" onclick="tabClickDef()" title="Definition"/>
+    <input class="btns" type="button" value="Spanish Terms" id="b3" class="active" onclick="ToViewSpanTerm()" title="SpaneshTerm"/>
+</div>
+<div>
+    <div id="Term" style="display:block;" class="container"  onclick="Rotates()" >
+         <h2 class="a_titlebar" id="chapterHedding"></h2>
+		 <p id="Audio1"> </p>
+         <div class="termbox">
+              <div id="thead" class="term_contenttext1">Term<span id="termContent"></span></div>
+         </div>
+		 <!--<div id="box"></div>-->
+    </div>
+    <div id="Definition" style="display:none;" class="container" onclick="Rotates1()"  >
+        <h2 class="a_titlebar" id="chapterHeddingDeff"></h2>
+
+		<h2 id="Audio"> </h2>
+        <h2 id="TermContext">   </h2>   
+         <div class="termbox">
+				  <span class="defAudio" id="defAudio"></span>
+             <div id="dhead" class="term_contenttext">Definition<span id="definitionContent"></span></div>
+			
+			 <p id="SenAudion"></p>
+			 <div id="senTitle" style="color:#015D8C;font-weight:bold;font-size: 24px"></div>
+			 <div id="SenTerm" style="font-size: 20px;color: #E32C66;font-family: PTSans">
+			 </div> 
+         </div>
+		
+    </div>
+	
+</div>
+<div id="selectbox1">
+</div>
+<div id="nav">
+	<div id="section">
+</div>
+</div>
+<div class="selectbox">
+	
+	<ol id="myLi"></ol>
+</div>
+
+<ol id="demo">
+<li id="terms"></li>
+</ol>
+</div>
+<footer>
+    <div class="footer">Copyright &copy; 2014 Wolters Kluwer Health | Lippincott Williams & Wilkins</div>
+</footer>
+</form>
+<script>
+	$(document).ready(function(){
+	
+		$('.btns').click(function(){
+		var btnv = this.value;
+              
+					$('#'+btnv).siblings().hide();
+
+		$('#'+btnv).show() ;
+		$('#'+btnv).flip({
+	direction:'tb',
+	color:'white' 
+})
+	$('#'+btnv).siblings().hide();
+})  
+
+          
+    $('#Term').click(function(){
+	$('#Term').siblings().hide();
+	$('#Term').siblings().show();
+	//$('#Term').flip({
+	//direction:'tb',
+	//color:'white' 
+//})
+
+$('#Term').siblings().hide();
+	})
+	
+	
+	
+	
+	
+	
+
+
+
+		
+	})
+</script>
+</body>
+</html>

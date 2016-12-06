@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?> 
+<root>
+	<chapxml url="xml/chapter.xml"/>
+	<termsxml url="xml/terms.xml"/>
+	<glossary x="120" y="25" tocWid="400" tocHt="22" headerHt="47" alpOffset="17"/>
+</root>
