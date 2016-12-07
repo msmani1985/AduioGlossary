@@ -1,5 +1,7 @@
 var max=60;
 var min=24;
+var data;
+
 var nclexDoc;
 var tocDoc;
 var initDoc;
@@ -23,11 +25,29 @@ var FirstTerm;
 var FirstDefinition;
 var loaded = false;
 var audioElement1;
+function onSidenav()
+{
+	
+if($("#sidemenu").attr("class").indexOf("sideNav")>0)
+	{
+				$("#sidemenu").toggleClass("sideNav","sideNav1");
+				$("#sidemenu").css("display","");
+			
+	}
+	else
+	{
+		
+		$("#sidemenu").addClass("sideNav");
+		$("#sidemenu").css("display","block");
+	}
+	
+}
 function bodyloaded1() {
 	document.addEventListener("dataLoaded", createUI);
 	document.addEventListener("dataLoaded", createUI1);
 	modelObj = new DtataProvider("xml/chapter.xml", createUI);
 	modelObj1 = new DtataProvider1("xml/terms.xml", createUI1);
+	
 }
 function createUI(e) //to load data into the UI
 {
@@ -60,31 +80,35 @@ function createUI1(e) {
 	var MYLIST = document.getElementById("myLi"); //chapter level data
 
 	var lix = document.createElement("li");
-	lix.innerHTML = "<input type=\"button\" class=\"btns1\" style=\"width:30px;height:18.1px;font-size:10px;\" onclick=\"onSelection3(this)\" id=\"All\" value=\"All\">";
+	lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-warning\" style=\"width:30px;height:25px;font-size:15px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"All\" value=\"All\">";
+	
+	//lix.innerHTML="<button type=\"button\" class=\"btn btn-default\" onclick=\"onSelection3(this)\" id=\"All\" value=\"All\">All</button>"
 	MYLIST.appendChild(lix);
 
 	for (var i = 0; i < GROUP.length; i++) //loading chapter headdings to dropdown box
 	{
 
 		var lix = document.createElement("li");
-		lix.innerHTML = "<input type=\"button\" class=\"btns1\" style=\"width:30px;height:18.1px;font-size:10px;\" onclick=\"onSelection3(this)\" id=\"" + GROUP[i] + "index\" value=\"" + GROUP[i] + "\">";
+		lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-info\" style=\"width:30px;height:25px;font-size:17px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"" + GROUP[i] + "index\" value=\"" + GROUP[i] + "\">";
 		MYLIST.appendChild(lix);
 
 	}
-	document.getElementById("b1").disabled = true;
-	document.getElementById("b2").disabled = true;
+	//document.getElementById("b1").disabled = true;
+	//document.getElementById("b2").disabled = true;
 
 	GroupArray = e;
 
 	var myDiv = document.getElementById("section");
 	var selectList = document.createElement("select");
+			var termsdetsear="";
 	for (var t = 0; t < GroupArray.length; t++) {
 		selectList.setAttribute("id", "termChoose");
-		selectList.setAttribute("size", "30");
+		selectList.setAttribute("size", "42");
 		selectList.setAttribute("style", "width:200px");
 		selectList.setAttribute("onclick", "onSelectDef(this)");
 		myDiv.appendChild(selectList);
 		//GroupArrayRef.push(GroupArray[t].groupname);
+
 		for (var j = 0; j < GroupArray[t].AudioList.length; j++) //loading chapter headdings to dropdown box
 		{
 			Defarray.push(GroupArray[t].AudioList[j].Audiomeaning);
@@ -93,13 +117,16 @@ function createUI1(e) {
 			option.value = GroupArray[t].AudioList[j].Audioterm;
 			option.text = GroupArray[t].AudioList[j].Audioterm;
 			selectList.appendChild(option);
+			termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].Audioterm+'",';
 			  if(GroupArray[t].AudioList[j].SpaneshTerm==undefined||GroupArray[t].AudioList[j].SpaneshTerm=="")
 			  {
+				 // termsdetsear=termsdetsear+",";
 			 }else{
             var option1 = document.createElement("option");
 			option1.value = GroupArray[t].AudioList[j].SpaneshTerm;
 			option1.text = GroupArray[t].AudioList[j].SpaneshTerm;
 			option1.setAttribute("style", "color:blue");
+			termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].SpaneshTerm+'",';
 			selectList.appendChild(option1);
 			}
 			option1.setAttribute("style", "color:blue");
@@ -119,9 +146,51 @@ function createUI1(e) {
 			
 		}
 	}
+	alert(termsdetsear);
+	data=  {"ale": [termsdetsear]};
+	console.log(data.ale[0]);
+search();
 	$("#bl").attr('disabled',true);
 	$("#b2").attr('disabled',true)
 }
+function search()
+{
+	console.log("["+data.ale[0]+"]")
+ typeof $.typeahead === 'function' && $.typeahead({
+            input: ".js-typeahead-input",
+            minLength: 1,
+            maxItem: 15,
+            order: "asc",
+            hint: true,
+            group: {
+                template: "{{group}} beers!"
+            },
+            maxItemPerGroup: 5,
+            backdrop: {
+                "background-color": "#fff"
+            },
+            href: "/beers/{{group}}/{{display}}/",
+            dropdownFilter: "all beers",
+            emptyTemplate: 'No result for "{{query}}"',
+            source: {
+                ale: {
+                    data: [data.ale[0]]
+                },
+                
+            },
+            callback: {
+                onClickAfter: function (node, a, item, event) {
+
+                    // href key gets added inside item from options.href configuration
+                    alert(item.href);
+
+                }
+            },
+            debug: true
+        });
+
+}
+
 function ToViewSpanTerm()
 {
 //document.getElementById("b3").value="English Term";
@@ -145,7 +214,7 @@ for (var t = 0; t < GroupArray.length; t++) {
 		for (var j = 0; j < GroupArray[t].AudioList.length; j++) //loading chapter headdings to dropdown box
 		{	
 		selectList.setAttribute("id", "termChoose");
-		selectList.setAttribute("size", "30");
+		selectList.setAttribute("size", "42");
 		selectList.setAttribute("style", "width:200px");
 		selectList.setAttribute("onclick", "onSelectDef(this)");
 		myDiv.appendChild(selectList);
@@ -197,10 +266,11 @@ function onSelection2() {
 			var selectList = document.createElement("select");
 			for (var t = 0; t < GroupArray.length; t++) {
 				selectList.setAttribute("id", "termChoose");
-				selectList.setAttribute("size", "30");
+				selectList.setAttribute("size", "42");
 				selectList.setAttribute("style", "width:200px");
 				selectList.setAttribute("onclick", "onSelectDef(this)");
 				myDiv.appendChild(selectList);
+            var termsdetsear="";				
 				for (var j = 0; j < GroupArray[t].AudioList.length; j++) //loading chapter headdings to dropdown box
 				{
 					if (GroupArray[t].AudioList[j].chapterattr.indexOf("\," + chapterNumberOnly1.trim() + "\,") > -1) {
@@ -210,7 +280,7 @@ function onSelection2() {
 						option.value = GroupArray[t].AudioList[j].Audioterm;
 						option.text = GroupArray[t].AudioList[j].Audioterm;
 						selectList.appendChild(option);
-						
+						termsdetsear=termsdetsear+GroupArray[t].AudioList[j].Audioterm;
 						
 						if(GroupArray[t].AudioList[j].SpaneshTerm==undefined||GroupArray[t].AudioList[j].SpaneshTerm=="")
 			            {
@@ -221,11 +291,15 @@ function onSelection2() {
 							option1.text = GroupArray[t].AudioList[j].SpaneshTerm;
 							option1.setAttribute("style", "color:blue");
 							selectList.appendChild(option1);
+							termsdetsear=termsdetsear+","+ GroupArray[t].AudioList[j].SpaneshTerm;
 							} 
 
 					}
 				}
+				data = {
+				"ale": [termsdetsear]};
 			}
+			alert(data);
 
 			if (sectiondatacount == 0) {
 
@@ -246,7 +320,7 @@ function onSelection2() {
 				var myDiv = document.getElementById("section");
 				var selectList = document.createElement("select");
 				selectList.setAttribute("id", "termChoose");
-				selectList.setAttribute("size", "30");
+				selectList.setAttribute("size", "42");
 				selectList.setAttribute("style", "width:200px");
 				//selectList.setAttribute("onclick","onSelectDef()");
 				myDiv.appendChild(selectList);
@@ -276,7 +350,7 @@ function onSelection2() {
 			var selectList = document.createElement("select");
 			for (var t = 0; t < GroupArray.length; t++) {
 				selectList.setAttribute("id", "termChoose");
-				selectList.setAttribute("size", "30");
+				selectList.setAttribute("size", "42");
 				selectList.setAttribute("style", "width:200px");
 				selectList.setAttribute("onclick", "onSelectDef(this)");
 				myDiv.appendChild(selectList);
@@ -302,7 +376,17 @@ function onSelection2() {
 	}
 }
 function onSelection3(obj) {
+//btn-info
+var list=[];
+list=document.getElementsByClassName("btns1");
 
+for(var i=0;i<list.length;i++)
+{
+	
+	list[i].className=list[i].className.replace("btn-warning","btn-info");
+}
+
+obj.className=obj.className.replace("btn-info","btn-warning")
 	var bx = document.getElementById("box");
 	if (bx == null) {}
 	else {
@@ -340,9 +424,10 @@ function onSelection3(obj) {
 					var myDiv = document.getElementById("section");
 					var selectList = document.createElement("select");
 					selectList.setAttribute("id", "termChoose");
-					selectList.setAttribute("size", "30");
+					selectList.setAttribute("size", "42");
 					selectList.setAttribute("style", "width:200px");
 					selectList.setAttribute("onclick", "onSelectDef(this)");
+					
 					myDiv.appendChild(selectList);
 					for (var j = 0; j < GroupArray[t].AudioList.length; j++) //loading chapter headdings to dropdown box
 					{
@@ -381,7 +466,7 @@ function onSelection3(obj) {
 					var myDiv = document.getElementById("section");
 					var selectList = document.createElement("select");
 					selectList.setAttribute("id", "termChoose");
-					selectList.setAttribute("size", "30");
+					selectList.setAttribute("size", "42");
 					selectList.setAttribute("style", "width:200px");
 					selectList.setAttribute("onclick", "onSelectDef(this)");
 					myDiv.appendChild(selectList);
@@ -425,7 +510,7 @@ function onSelection3(obj) {
 				var myDiv = document.getElementById("section");
 				var selectList = document.createElement("select");
 				selectList.setAttribute("id", "termChoose");
-				selectList.setAttribute("size", "30");
+				selectList.setAttribute("size", "42");
 				selectList.setAttribute("style", "width:200px");
 				//selectList.setAttribute("onclick","onSelectDef(this)");
 				myDiv.appendChild(selectList);
@@ -467,7 +552,7 @@ function onSelection3(obj) {
 		var myDiv = document.getElementById("section");
 		var selectList = document.createElement("select");
 		selectList.setAttribute("id", "termChoose");
-		selectList.setAttribute("size", "30");
+		selectList.setAttribute("size", "42");
 		selectList.setAttribute("style", "width:200px");
 		//selectList.setAttribute("onclick","onSelectDef(this)");
 		myDiv.appendChild(selectList);
@@ -516,6 +601,18 @@ function queistionVO() {
 }
 function onSelectDef(tgt) {
 
+if($("#sidemenu").attr("class").indexOf("sideNav")>0)
+	{
+				$("#sidemenu").toggleClass("sideNav","sideNav1");
+				$("#sidemenu").css("display","");
+			
+	}
+	else
+	{
+		
+		$("#sidemenu").addClass("sideNav");
+		$("#sidemenu").css("display","block");
+	}
 
 audioElement1.pause();
 //TAudioption.currentTime = 0;
@@ -531,20 +628,20 @@ audioElement1.pause();
 		$("#box1").remove();
 	}
 	// bx1.remove();
-	document.getElementById("b1").disabled = false;
-	document.getElementById("b2").disabled = false;
-	$("#b1").css("background", "#9AC97B");
+//	document.getElementById("b1").disabled = false;
+	//document.getElementById("b2").disabled = false;
+	//$("#b1").css("background", "#9AC97B");
 	//$("#b2").css("font-weight","normal");
-	$("#b1").css("color", "white");
-	$("#b2").css("background", "#369CCD");
-	$("#b2").css("color", "black");
+	//$("#b1").css("color", "white");
+	//$("#b2").css("background", "#369CCD");
+	//$("#b2").css("color", "black");
 	//$("#b1").css("font-weight","normal");
 	var cahperList = document.getElementById("chapterList");
 	var currentChap = cahperList.options[cahperList.selectedIndex].value;
 	var termList = document.getElementById("termChoose");
 	var selectedterm = termList.options[termList.selectedIndex].value;
 	
-	//alert(selectedterm);
+	//	alert(selectedterm);
 	var cnt = 0;
 	for (var t = 0; t < modalData.length; t++) {
 		for (var j = 0; j < GroupArray[t].AudioList.length; j++) {
@@ -554,8 +651,8 @@ audioElement1.pause();
 				TC.innerHTML = GroupArray[t].AudioList[j].Audioterm;
 				var DC = document.getElementById("definitionContent");
 				DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning;
-				var tcontext = document.getElementById("TermContext");
-				tcontext.innerHTML = GroupArray[t].AudioList[j].Audioterm;
+			//	var tcontext = document.getElementById("TermContext");
+			//	tcontext.innerHTML = GroupArray[t].AudioList[j].Audioterm;
 
 				//audioPlay(GroupArray[t].AudioList[j].AudioUrl);
 				var TermFileAudio = GroupArray[t].AudioList[j].AudioUrl;
@@ -602,11 +699,11 @@ audioElement1.pause();
 					var DefAud = document.getElementById('defAudio');
 					DefAud.innerHTML = "";
 
-					var Sentitle = document.getElementById('senTitle');
-					Sentitle.innerHTML = "";
+				//	var Sentitle = document.getElementById('senTitle');
+				//	Sentitle.innerHTML = "";
 
-					var Senterm = document.getElementById('SenTerm');
-					Senterm.innerHTML = "";
+					//var Senterm = document.getElementById('SenTerm');
+				//	Senterm.innerHTML = "";
 
 					var SenAud = document.getElementById('SenAudion');
 					SenAud.innerHTML = "";
@@ -632,10 +729,10 @@ audioElement1.pause();
 				//Adding audio button to sentence
 				if (GroupArray[t].AudioList[j].AudioSentence == "") {
 
-					var Sterm = document.getElementById("SenTerm");
-					Sterm.innerHTML = "";
-					var SenAud = document.getElementById('SenAudion');
-					SenAud.innerHTML = "";
+				//	var Sterm = document.getElementById("SenTerm");
+			//		Sterm.innerHTML = "";
+				//	var SenAud = document.getElementById('SenAudion');
+					//SenAud.innerHTML = "";
 
 				} else {
 					var Sterm = document.getElementById("SenTerm");
@@ -688,8 +785,8 @@ audioElement1.pause();
 				TC.innerHTML = GroupArray[t].AudioList[j].SpaneshTerm;
 				var DC = document.getElementById("definitionContent");
 				DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning;
-				var tcontext = document.getElementById("TermContext");
-				tcontext.innerHTML = GroupArray[t].AudioList[j].SpaneshTerm;
+				//var tcontext = document.getElementById("TermContext");
+				//tcontext.innerHTML = GroupArray[t].AudioList[j].SpaneshTerm;
 				//span term Audio 
 				var TOappnd = document.getElementById('Audio1');
 				TOappnd.innerHTML = "";
@@ -952,3 +1049,4 @@ function increaseFontSizeInternal() {
     }
 } 
 
+ 

@@ -80,10 +80,10 @@ h6{margin:0;padding:0;font: bold 18px PTSans;color:#333333;}
 
 /*Global Header Starts*/
 .header,.article,.footer,.banner,.warticle{margin:0 auto;width:100%;max-width:900px; -moz-transition: all .3s ease-in-out;-webkit-transition: all .3s ease-in-out;-o-transition:  all .3s ease-in-out;transition:  all .3s ease-in-out; }
-.body { max-width:868px; margin:20px auto 10px auto; border:1px solid #6f99b8; box-shadow:0 0 10px #5381ac; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; background:#ffffff; padding:15px; overflow:hidden; } 
+.body { margin:20px auto 10px auto; border:1px solid #6f99b8; box-shadow:0 0 10px #5381ac; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; background:#ffffff; padding:10px; overflow:hidden; } 
 .header {padding: 0 0 0px 0;position: relative;}
 .logo { float: none;margin: 0 auto;max-width: 484px;text-align: center;width: 100%;transition: all .3s ease-in-out;-moz-transition: all .3s ease-in-out;-webkit-transition: all .3s ease-in-out;-o-transition:  all .3s ease-in-out;}
-.main_title { width:100%; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; padding:10px 0; display:block; overflow:hidden; text-transform:uppercase; margin:10px 0; 
+.main_title { width:100%; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; padding:10px 0; display:block; overflow:hidden; text-transform:uppercase; margin:1px 0; 
 /* IE10 Consumer Preview */ 
 background-image: -ms-linear-gradient(top, #02679A 0%, #0C91D4 100%);
 
@@ -110,11 +110,6 @@ background-image: linear-gradient(to bottom, #02679A 0%, #0C91D4 100%);
 
 .btns{width:125px;height:29px; cursor:pointer;
 
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  -moz-box-shadow: 1px 1px 2px #999999;
-  -webkit-box-shadow: 1px 1px 2px #999999;
-  -webkit-transition-duration: 1s;
   
 
 }
@@ -194,7 +189,7 @@ background-image: -webkit-linear-gradient(top, #FFFFFF 0%, #E6F1DD 100%);
 /* W3C Markup, IE10 Release Preview */ 
 background-image: linear-gradient(to bottom, #FFFFFF 0%, #E6F1DD 100%); 
  }
-.termbox { text-align:center; padding:30px 0 0 0; }
+.termbox { text-align:center; padding:1px 0 0 0; }
 .term_contenttext { color:#015d8c; font-family:PTSansNarrowbold; font-size:24px; display:block; width:100%;  }
 .term_contenttext1 { color:#015d8c; font-family:PTSansNarrowbold; font-size:24px; display:block; width:100%; margin-top:103px; text-align: center;
  }
@@ -289,5 +284,14 @@ filter:alpha(opacity=40);
 	 opacity:0.4;
 filter:alpha(opacity=40);
 
+}
+.sideNav1{
+	display:none;
+}
+.sideNav {
+    
+    
+    z-index: 1; /* Stay on top */
+   
 }
 
