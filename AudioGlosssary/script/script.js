@@ -146,13 +146,23 @@ function createUI1(e) {
 			
 		}
 	}
-	alert(termsdetsear);
-	data=  {"ale": [termsdetsear]};
-	console.log(data.ale[0]);
+	console.log(termsdetsear);
+	
+	var termdsdetsear1=JSON.parse("["+removeLastComma(termsdetsear)+"]");
+	alert(termdsdetsear1);
+	data=  {"ale": termdsdetsear1};
+	alert(termdsdetsear1);
+	console.log(data.ale);
 search();
 	$("#bl").attr('disabled',true);
 	$("#b2").attr('disabled',true)
 }
+
+function removeLastComma(str) {
+   return str.replace(/,(\s+)?$/, '');   
+}
+
+
 function search()
 {
 	console.log("["+data.ale[0]+"]")
@@ -174,7 +184,7 @@ function search()
             emptyTemplate: 'No result for "{{query}}"',
             source: {
                 ale: {
-                    data: [data.ale[0]]
+                    data: data.ale
                 },
                 
             },
