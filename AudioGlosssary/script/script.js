@@ -1,3 +1,5 @@
+var max=60;
+var min=24;
 var nclexDoc;
 var tocDoc;
 var initDoc;
@@ -122,7 +124,18 @@ function createUI1(e) {
 }
 function ToViewSpanTerm()
 {
-
+//document.getElementById("b3").value="English Term";
+//document.getElementById("b3").style="	background-color: #7D81D1;"
+if(document.getElementById("b3").value=="English Terms")
+{
+	
+	document.getElementById("b3").value="Spanish Terms";
+document.getElementById("b3").style="	background-color: #D17DD0;"
+}
+else
+{	
+document.getElementById("b3").value="English Terms";
+document.getElementById("b3").style="	background-color: #7D81D1;"
 var x = document.getElementById("termChoose");
 x.remove();
 var myDiv = document.getElementById("section");
@@ -149,6 +162,7 @@ for (var t = 0; t < GroupArray.length; t++) {
 		}
 					
 	}
+}
 }
 
 function onSelection2() {
@@ -803,6 +817,7 @@ function gettingFlip() {
 	$(function () {
 		$('.btns').click(function () {
 			var btnv = this.value;
+			
 			$('#' + btnv).siblings().hide();
 			$('#' + btnv).show();
 			$('#' + btnv).flip({
@@ -890,4 +905,50 @@ $(document).ready(function(){
 				audioElement1.setAttribute("preload", "none");	
 				audioElement1.setAttribute("id", "Taudio");	
 });
+
+function decreaseFontSizeInternal() 
+{
+		var list=[];
+	list.push(document.getElementById('thead'));
+	list.push(document.getElementById('termContent'));
+	list.push(document.getElementById('dhead'));
+	list.push(document.getElementById('definitionContent'));
+    for(i=0;i<list.length;i++) 
+    {   
+        var s = 24;
+        if(list[i].style.fontSize) 
+        {
+            s = parseInt(list[i].style.fontSize.replace("px",""));
+        } 
+        if(s!=min) {
+            s -= 1;
+        }
+        list[i].style.fontSize = s+"px"
+    }
+} 
+
+function increaseFontSizeInternal() {
+	var list=[];
+	list.push(document.getElementById('thead'));
+	list.push(document.getElementById('termContent'));
+	list.push(document.getElementById('dhead'));
+	list.push(document.getElementById('definitionContent'));
+	//alert(list);
+    for(i=0;i<list.length;i++)
+    {   
+		
+		console.log(list[i])
+        var s = 24;
+		//alert(list[i].style.fontSize);
+        if(list[i].style.fontSize) 
+        { 
+            s = parseInt(list[i].style.fontSize.replace("px",""));
+        }
+        if(s!=max)
+        {
+            s += 1; 
+        } 
+        list[i].style.fontSize = s+"px"
+    }
+} 
 
