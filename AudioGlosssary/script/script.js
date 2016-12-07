@@ -173,14 +173,14 @@ function search()
             order: "asc",
             hint: true,
             group: {
-                template: "{{group}} beers!"
+                template: "{{group}} Chapters!"
             },
             maxItemPerGroup: 5,
             backdrop: {
                 "background-color": "#fff"
             },
-            href: "/beers/{{group}}/{{display}}/",
-            dropdownFilter: "all beers",
+            href: "/Chapters/{{group}}/{{display}}/",
+           // dropdownFilter: "all beers",
             emptyTemplate: 'No result for "{{query}}"',
             source: {
                 ale: {
