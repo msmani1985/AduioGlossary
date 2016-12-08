@@ -32,13 +32,41 @@ if($("#sidemenu").attr("class").indexOf("sideNav")>0)
 	{
 				$("#sidemenu").toggleClass("sideNav","sideNav1");
 				$("#sidemenu").css("display","");
-			
+
+
 	}
 	else
 	{
 		
 		$("#sidemenu").addClass("sideNav");
 		$("#sidemenu").css("display","block");
+		
+	}
+	if($("#sidemenu").attr("class").indexOf("col-xs-4")>0)
+	{
+				
+				
+				$("#sidemenu").toggleClass("col-xs-4","col-xs-12");
+			
+	}
+	else
+	{
+		
+		
+		$("#sidemenu").toggleClass("col-xs-12","col-xs-4");
+	}
+if($("#main_cont").attr("class").indexOf("col-xs-4")>0)
+	{
+				
+				
+				$("#main_cont").toggleClass("col-xs-4","col-xs-12");
+			
+	}
+	else
+	{
+		
+		
+		$("#main_cont").toggleClass("col-xs-12","col-xs-4");
 	}
 	
 }
@@ -615,6 +643,7 @@ if($("#sidemenu").attr("class").indexOf("sideNav")>0)
 	{
 				$("#sidemenu").toggleClass("sideNav","sideNav1");
 				$("#sidemenu").css("display","");
+				
 			
 	}
 	else
@@ -622,6 +651,34 @@ if($("#sidemenu").attr("class").indexOf("sideNav")>0)
 		
 		$("#sidemenu").addClass("sideNav");
 		$("#sidemenu").css("display","block");
+
+	}
+	
+	if($("#sidemenu").attr("class").indexOf("col-xs-4")>0)
+	{
+				
+				
+				$("#sidemenu").toggleClass("col-xs-4","col-xs-12");
+			
+	}
+	else
+	{
+		
+		
+		$("#sidemenu").toggleClass("col-xs-12","col-xs-4");
+	}
+if($("#main_cont").attr("class").indexOf("col-xs-4")>0)
+	{
+				
+				
+				$("#main_cont").toggleClass("col-xs-4","col-xs-12");
+			
+	}
+	else
+	{
+		
+		
+		$("#main_cont").toggleClass("col-xs-12","col-xs-4");
 	}
 
 audioElement1.pause();
