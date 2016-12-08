@@ -207,7 +207,7 @@ function search()
             backdrop: {
                 "background-color": "#fff"
             },
-            href: "/Chapters/{{group}}/{{display}}/",
+            //href: "alpha1.html",
            // dropdownFilter: "all beers",
             emptyTemplate: 'No result for "{{query}}"',
             source: {
