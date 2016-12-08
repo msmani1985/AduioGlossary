@@ -133,7 +133,7 @@ function createUI1(e) {
 		selectList.setAttribute("id", "termChoose");
 		selectList.setAttribute("size", "42");
 		selectList.setAttribute("style", "width:200px");
-		selectList.setAttribute("onclick", "onSelectDef(this)");
+		selectList.setAttribute("onclick", "onSelectDef()");
 		myDiv.appendChild(selectList);
 		//GroupArrayRef.push(GroupArray[t].groupname);
 
@@ -174,13 +174,13 @@ function createUI1(e) {
 			
 		}
 	}
-	console.log(termsdetsear);
+	//console.log(termsdetsear);
 	
 	var termdsdetsear1=JSON.parse("["+removeLastComma(termsdetsear)+"]");
-	alert(termdsdetsear1);
+	//alert(termdsdetsear1);
 	data=  {"ale": termdsdetsear1};
-	alert(termdsdetsear1);
-	console.log(data.ale);
+	//alert(termdsdetsear1);
+	//console.log(data.ale);
 search();
 	$("#bl").attr('disabled',true);
 	$("#b2").attr('disabled',true)
@@ -211,7 +211,7 @@ function search()
            // dropdownFilter: "all beers",
             emptyTemplate: 'No result for "{{query}}"',
             source: {
-                ale: {
+                Terms: {
                     data: data.ale
                 },
                 
@@ -220,7 +220,20 @@ function search()
                 onClickAfter: function (node, a, item, event) {
 
                     // href key gets added inside item from options.href configuration
-                    alert(item.href);
+
+					var x1= document.getElementById("termChoose");
+					for(var x=0;x<x1.length;x++)
+					{
+						if(x1[x].value==item.display)
+						{
+
+							x1.selectedIndex=x;
+							onSelectDef();
+
+							break;
+						}
+					}
+
 
                 }
             },
@@ -273,7 +286,7 @@ for (var t = 0; t < GroupArray.length; t++) {
 }
 
 function onSelection2() {
-
+alert("daff");
 	var bx = document.getElementById("box");
 	if (bx == null) {}
 	else {
@@ -637,7 +650,7 @@ function queistionVO() {
 	var termAudio;
 	var deffAudio;
 }
-function onSelectDef(tgt) {
+function onSelectDef() {
 
 if($("#sidemenu").attr("class").indexOf("sideNav")>0)
 	{
