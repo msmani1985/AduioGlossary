@@ -1053,11 +1053,11 @@ var x1= document.getElementById("termChoose");
 
 
 function onSelectDef() {
-
-if($("#sidemenu").attr("class").indexOf("sideNav")>0)
+ if (window.matchMedia("(min-width: 768px)").matches) {
+	if($("#sidemenu").attr("class").indexOf("sideNav")>0)
 	{
-				$("#sidemenu").toggleClass("sideNav","sideNav1");
-				$("#sidemenu").css("display","");
+		//		$("#sidemenu").toggleClass("sideNav","sideNav1");
+		//		$("#sidemenu").css("display","");
 				
 			
 	}
@@ -1073,23 +1073,67 @@ if($("#sidemenu").attr("class").indexOf("sideNav")>0)
 	if($("#sidemenu").attr("class").indexOf("col-xs-4")>0)
 	{
 				
-				if (window.matchMedia("(min-width: 768px)").matches) {
-  					//	alert("matches");
-				} else {
-					$("#sidemenu").toggleClass("col-xs-4","col-xs-12");
-				}
+		//			$("#sidemenu").toggleClass("col-xs-4","col-xs-12");
+		
 				
 			
 	}
 	else
 	{
 		
-				if (window.matchMedia("(min-width: 768px)").matches) {
-  					//	alert("matches");
+		
+  		
 					 $("#sidemenu").toggleClass("col-xs-12","col-xs-4"); 
-				} else {
-					//$("#sidemenu").toggleClass("col-xs-4","col-xs-12");
-				}
+		
+		
+	}
+if($("#main_cont").attr("class").indexOf("col-xs-4")>0)
+	{
+				
+				
+		//		$("#main_cont").toggleClass("col-xs-4","col-xs-12");
+			
+	}
+	else
+	{
+		
+		
+		$("#main_cont").toggleClass("col-xs-12","col-xs-4");
+	}
+ }
+ else
+ {
+	 	if($("#sidemenu").attr("class").indexOf("sideNav")>0)
+	{
+				$("#sidemenu").toggleClass("sideNav","sideNav1");
+				$("#sidemenu").css("display","");
+				
+			
+	}
+	else
+	{
+		
+		//$("#sidemenu").addClass("sideNav");
+		//$("#sidemenu").css("display","block");
+
+	}
+	
+	
+	if($("#sidemenu").attr("class").indexOf("col-xs-4")>0)
+	{
+				
+					$("#sidemenu").toggleClass("col-xs-4","col-xs-12");
+		
+				
+			
+	}
+	else
+	{
+		
+		
+  		
+		//			 $("#sidemenu").toggleClass("col-xs-12","col-xs-4"); 
+		
 		
 	}
 if($("#main_cont").attr("class").indexOf("col-xs-4")>0)
@@ -1103,9 +1147,10 @@ if($("#main_cont").attr("class").indexOf("col-xs-4")>0)
 	{
 		
 		
-		$("#main_cont").toggleClass("col-xs-12","col-xs-4");
+		//$("#main_cont").toggleClass("col-xs-12","col-xs-4");
 	}
 
+ }
 audioElement1.pause();
 //TAudioption.currentTime = 0;
 	var currAud=0;
