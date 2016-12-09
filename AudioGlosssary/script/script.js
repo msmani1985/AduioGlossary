@@ -25,6 +25,7 @@ var FirstTerm;
 var FirstDefinition;
 var loaded = false;
 var audioElement1;
+var psbi=null;
 function onSidenav()
 {
 	
@@ -70,13 +71,15 @@ if($("#main_cont").attr("class").indexOf("col-xs-4")>0)
 	}
 	
 }
+
 function bodyloaded1() {
 	document.addEventListener("dataLoaded", createUI);
 	document.addEventListener("dataLoaded", createUI1);
 	modelObj = new DtataProvider("xml/chapter.xml", createUI);
 	modelObj1 = new DtataProvider1("xml/terms.xml", createUI1);
-	
+	psbi=null;
 }
+
 function createUI(e) //to load data into the UI
 {
 
@@ -97,6 +100,9 @@ function createUI(e) //to load data into the UI
 		//alert(modalData[k].name);
 	}
 }
+
+
+
 function createUI1(e) {
 
 	modalData1 = e; //loading data to variable
@@ -121,6 +127,7 @@ function createUI1(e) {
 		MYLIST.appendChild(lix);
 
 	}
+
 	//document.getElementById("b1").disabled = true;
 	//document.getElementById("b2").disabled = true;
 
@@ -128,15 +135,24 @@ function createUI1(e) {
 
 	var myDiv = document.getElementById("section");
 	var selectList = document.createElement("select");
+	var selectList1 = document.createElement("ul");
 			var termsdetsear="";
 	for (var t = 0; t < GroupArray.length; t++) {
 		selectList.setAttribute("id", "termChoose");
-		selectList.setAttribute("size", "42");
+		//selectList.setAttribute("size", "42");
 		selectList.setAttribute("style", "width:200px");
 		selectList.setAttribute("onclick", "onSelectDef()");
 		myDiv.appendChild(selectList);
-		//GroupArrayRef.push(GroupArray[t].groupname);
 
+
+		selectList1.setAttribute("id", "termChoose1");
+		//selectList.setAttribute("size", "42");
+		selectList1.setAttribute("style", "width:200px");
+		selectList1.setAttribute("class","list-group");
+		
+		myDiv.appendChild(selectList1);
+		//GroupArrayRef.push(GroupArray[t].groupname);
+		
 		for (var j = 0; j < GroupArray[t].AudioList.length; j++) //loading chapter headdings to dropdown box
 		{
 			Defarray.push(GroupArray[t].AudioList[j].Audiomeaning);
@@ -145,6 +161,19 @@ function createUI1(e) {
 			option.value = GroupArray[t].AudioList[j].Audioterm;
 			option.text = GroupArray[t].AudioList[j].Audioterm;
 			selectList.appendChild(option);
+
+			var li = document.createElement("li");
+			var a=document.createElement("a");
+			li.setAttribute("class","list-group-item list-group-itemn-action btn-warning");
+	        a.setAttribute("onclick", "onSelectDef_1(this)");
+			a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
+			li.value = j
+			var t1= document.createTextNode(GroupArray[t].AudioList[j].Audioterm);
+			//li.text = GroupArray[t].AudioList[j].Audioterm;
+			a.appendChild(t1);
+			li.appendChild(a);
+			selectList1.appendChild(li);
+
 			termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].Audioterm+'",';
 			  if(GroupArray[t].AudioList[j].SpaneshTerm==undefined||GroupArray[t].AudioList[j].SpaneshTerm=="")
 			  {
@@ -156,8 +185,25 @@ function createUI1(e) {
 			option1.setAttribute("style", "color:blue");
 			termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].SpaneshTerm+'",';
 			selectList.appendChild(option1);
+			 var li1 = document.createElement("li");
+ 			var a=document.createElement("a");
+ 			a.setAttribute("onclick", "onSelectDef_1(this)");
+			
+			a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
+ 			li1.setAttribute("class","list-group-item list-group-item btn-warning");
+			li1.value = j;
+			var t1=document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm);
+			//li1.text = GroupArray[t].AudioList[j].SpaneshTerm;
+			a.appendChild(t1);
+			li1.appendChild(a);
+			a.setAttribute("style", "color:blue;font-weight:bold;cursor:pointer");
+			//termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].SpaneshTerm+'",';
+			selectList1.appendChild(li1);
+
+
 			}
 			option1.setAttribute("style", "color:blue");
+			li1.setAttribute("style", "color:blue");
 			if (GroupArray[t].groupname == "A") {
 
 				FirstTerm = GroupArray[t].AudioList[0].Audioterm;
@@ -181,7 +227,7 @@ function createUI1(e) {
 	data=  {"ale": termdsdetsear1};
 	//alert(termdsdetsear1);
 	//console.log(data.ale);
-search();
+	search();
 	$("#bl").attr('disabled',true);
 	$("#b2").attr('disabled',true)
 }
@@ -265,7 +311,7 @@ for (var t = 0; t < GroupArray.length; t++) {
 		for (var j = 0; j < GroupArray[t].AudioList.length; j++) //loading chapter headdings to dropdown box
 		{	
 		selectList.setAttribute("id", "termChoose");
-		selectList.setAttribute("size", "42");
+		//selectList.setAttribute("size", "42");
 		selectList.setAttribute("style", "width:200px");
 		selectList.setAttribute("onclick", "onSelectDef(this)");
 		myDiv.appendChild(selectList);
@@ -286,6 +332,7 @@ for (var t = 0; t < GroupArray.length; t++) {
 }
 
 function onSelection2() {
+	psbi=null;
 alert("daff");
 	var bx = document.getElementById("box");
 	if (bx == null) {}
@@ -310,18 +357,39 @@ alert("daff");
 		if (modalData[t].name == currentChap) {
 			var x = document.getElementById("termChoose");
 			x.remove();
+			
+			var x = document.getElementById("termChoose1");
+			x.remove();
+			
 			var chapterNumberOnly = modalData[t].name;
 			var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10);
 			var chapterNumberOnly2 = "\," + chapterNumberOnly1.trim() + "\,";
 			var myDiv = document.getElementById("section");
 			var selectList = document.createElement("select");
+			/************************************************************************ */
+			// Change for Mobile layout design
+			/************************************************************************* */
+			var selectList1 = document.createElement("ul");
+			
+		
+			/*************************************************************************** */
+
+
 			for (var t = 0; t < GroupArray.length; t++) {
 				selectList.setAttribute("id", "termChoose");
-				selectList.setAttribute("size", "42");
+				//selectList.setAttribute("size", "42");
 				selectList.setAttribute("style", "width:200px");
 				selectList.setAttribute("onclick", "onSelectDef(this)");
 				myDiv.appendChild(selectList);
-            var termsdetsear="";				
+
+
+				selectList1.setAttribute("id", "termChoose1");
+				//selectList.setAttribute("size", "42");
+				selectList1.setAttribute("style", "width:200px");
+				selectList1.setAttribute("class","list-group");
+				myDiv.appendChild(selectList1);
+
+            	var termsdetsear="";				
 				for (var j = 0; j < GroupArray[t].AudioList.length; j++) //loading chapter headdings to dropdown box
 				{
 					if (GroupArray[t].AudioList[j].chapterattr.indexOf("\," + chapterNumberOnly1.trim() + "\,") > -1) {
@@ -332,7 +400,22 @@ alert("daff");
 						option.text = GroupArray[t].AudioList[j].Audioterm;
 						selectList.appendChild(option);
 						termsdetsear=termsdetsear+GroupArray[t].AudioList[j].Audioterm;
-						
+						/*********************************************************************************** */
+						// li tag create and a tag created
+						/*********************************************************************************** */
+						var li = document.createElement("li");
+						var a=document.createElement("a");
+						li.setAttribute("class","list-group-item list-group-itemn-action btn-warning");
+	        			a.setAttribute("onclick", "onSelectDef_1(this)");		
+						a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
+						li.value = j
+						var t1= document.createTextNode(GroupArray[t].AudioList[j].Audioterm);
+						//li.text = GroupArray[t].AudioList[j].Audioterm;
+						a.appendChild(t1);
+						li.appendChild(a);
+						selectList1.appendChild(li);
+						/**************************************************************************************** */
+
 						if(GroupArray[t].AudioList[j].SpaneshTerm==undefined||GroupArray[t].AudioList[j].SpaneshTerm=="")
 			            {
 			            }else{
@@ -342,6 +425,22 @@ alert("daff");
 							option1.text = GroupArray[t].AudioList[j].SpaneshTerm;
 							option1.setAttribute("style", "color:blue");
 							selectList.appendChild(option1);
+							/*************************************************************************************** */
+							// li and a tag create for spanish trm with ble font color
+							/*************************************************************************************** */
+							var li = document.createElement("li");
+							var a=document.createElement("a");
+							li.setAttribute("class","list-group-item list-group-itemn-action btn-warning");
+	        				a.setAttribute("onclick", "onSelectDef_1(this)");		
+							a.setAttribute("style", "color:blue;font-weight:bold;cursor:pointer");
+							li.value = j
+							var t1= document.createTextNode(GroupArray[t].AudioList[j].Audioterm);
+							//li.text = GroupArray[t].AudioList[j].Audioterm;
+							a.appendChild(t1);
+							li.appendChild(a);
+							selectList1.appendChild(li);
+							/**************************************************************************************** */						var li = document.createElement("li");
+							
 							termsdetsear=termsdetsear+","+ GroupArray[t].AudioList[j].SpaneshTerm;
 							} 
 
@@ -353,7 +452,7 @@ alert("daff");
 			alert(data);
 
 			if (sectiondatacount == 0) {
-
+				alert();
 				var toreport = document.createElement("div");
 				toreport.setAttribute("id", "box");
 				toreport.innerHTML = "No Terms/Definitions in the Selected Letter";
@@ -371,10 +470,29 @@ alert("daff");
 				var myDiv = document.getElementById("section");
 				var selectList = document.createElement("select");
 				selectList.setAttribute("id", "termChoose");
-				selectList.setAttribute("size", "42");
+				//selectList.setAttribute("size", "42");
 				selectList.setAttribute("style", "width:200px");
 				//selectList.setAttribute("onclick","onSelectDef()");
 				myDiv.appendChild(selectList);
+				/* list item  */
+				var selectList = document.createElement("ul");
+				selectList.setAttribute("id", "termChoose1");
+				//selectList.setAttribute("size", "42");
+				selectList.setAttribute("style", "width:200px");
+				myDiv.appendChild(selectList);
+
+				var option = document.createElement("li");
+				var a=document.createElement("a");
+				
+				a.value = "empty";
+				a.text = "No Terms......!";
+				option.appendChild(a);
+				selectList.appendChild(option);
+
+
+				/**************************/
+				
+
 				var option = document.createElement("option");
 				option.value = "empty";
 				option.text = "No Terms......!";
@@ -385,7 +503,7 @@ alert("daff");
 				DC.innerHTML = "";
 				var tcontext = document.getElementById("TermContext");
 				tcontext.innerHTML = "";
-				var Audio = document.getElementById("Audio");
+				var Audio = dmyDiv.appendChild(selectList);ocument.getElementById("Audio");
 				Audio.innerHTML = "";
 				var Audio1 = document.getElementById("Audio1");
 				Audio1.innerHTML = "";
@@ -399,17 +517,33 @@ alert("daff");
 			x.remove();
 			var myDiv = document.getElementById("section");
 			var selectList = document.createElement("select");
+
+			var selectList1 = document.createElement("ul");
 			for (var t = 0; t < GroupArray.length; t++) {
 				selectList.setAttribute("id", "termChoose");
-				selectList.setAttribute("size", "42");
+				//selectList.setAttribute("size", "42");
 				selectList.setAttribute("style", "width:200px");
 				selectList.setAttribute("onclick", "onSelectDef(this)");
+				selectList1.setAttribute("id", "termChoose1");
+				//selectList.setAttribute("size", "42");
+				selectList1.setAttribute("style", "width:200px");
+				//selectList1.setAttribute("onclick", "onSelectDef(this)");
+				myDiv.appendChild(selectList1)
 				myDiv.appendChild(selectList);
 				for (var j = 0; j < GroupArray[t].AudioList.length; j++) //loading chapter headdings to dropdown box
 				{
 					var option = document.createElement("option");
 					option.value = GroupArray[t].AudioList[j].Audioterm;
 					option.text = GroupArray[t].AudioList[j].Audioterm;
+
+
+					var option_1 = document.createElement("li");
+					var a1=document.createElement("a");
+					a1.value = GroupArray[t].AudioList[j].Audioterm;
+					a1.text = GroupArray[t].AudioList[j].Audioterm;
+					a1.setAttribute("onclick", "onSelectDef(this)");
+					option_1.appendChild(a1);
+					selectList.appendChild(option_1);
 					selectList.appendChild(option);
 					if(GroupArray[t].AudioList[j].SpaneshTerm==undefined||GroupArray[t].AudioList[j].SpaneshTerm=="")
 			            {
@@ -420,6 +554,20 @@ alert("daff");
 							option1.text = GroupArray[t].AudioList[j].SpaneshTerm;
 							option1.setAttribute("style", "color:blue");
 							selectList.appendChild(option1);
+							
+							var option_11 = document.createElement("li");
+							var a1=document.createElement("a");
+							a1.value = GroupArray[t].AudioList[j].SpaneshTerm;
+							a1.text = GroupArray[t].AudioList[j].SpaneshTerm;
+							a1.setAttribute("style", "color:blue");
+							a1.setAttribute("onclick", "onSelectDef(this)");
+							option_1.appendChild(a1);
+							selectList.appendChild(option_1	);
+							//option1.value = GroupArray[t].AudioList[j].SpaneshTerm;
+							//option1.text = GroupArray[t].AudioList[j].SpaneshTerm;
+							
+							selectList.appendChild(option1);
+
 							} 
 				}
 			}
@@ -456,6 +604,7 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 	var attr = obj;
 	var gName = attr.value;
 	var gcount = 0;
+	
 	//alert("here\t"+attr.value);
 	var cahperList = document.getElementById("chapterList");
 	var currentChap = cahperList.options[cahperList.selectedIndex].value;
@@ -475,7 +624,7 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 					var myDiv = document.getElementById("section");
 					var selectList = document.createElement("select");
 					selectList.setAttribute("id", "termChoose");
-					selectList.setAttribute("size", "42");
+					//selectList.setAttribute("size", "42");
 					selectList.setAttribute("style", "width:200px");
 					selectList.setAttribute("onclick", "onSelectDef(this)");
 					
@@ -517,7 +666,7 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 					var myDiv = document.getElementById("section");
 					var selectList = document.createElement("select");
 					selectList.setAttribute("id", "termChoose");
-					selectList.setAttribute("size", "42");
+					//selectList.setAttribute("size", "42");
 					selectList.setAttribute("style", "width:200px");
 					selectList.setAttribute("onclick", "onSelectDef(this)");
 					myDiv.appendChild(selectList);
@@ -561,7 +710,7 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 				var myDiv = document.getElementById("section");
 				var selectList = document.createElement("select");
 				selectList.setAttribute("id", "termChoose");
-				selectList.setAttribute("size", "42");
+				//selectList.setAttribute("size", "42");
 				selectList.setAttribute("style", "width:200px");
 				//selectList.setAttribute("onclick","onSelectDef(this)");
 				myDiv.appendChild(selectList);
@@ -586,6 +735,11 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 		}
 	}
 	if (gcount == 0) {
+		if(psbi==null)
+		{
+		alert(obj.parentNode.previousSibling.outerHTML);
+		psbi = obj.parentNode.previousSibling;
+		}
 		var toreport = document.createElement("div")
 			toreport.setAttribute("id", "box");
 		toreport.innerHTML = "No Terms/Definitions in the Selected Letter";
@@ -603,7 +757,7 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 		var myDiv = document.getElementById("section");
 		var selectList = document.createElement("select");
 		selectList.setAttribute("id", "termChoose");
-		selectList.setAttribute("size", "42");
+		//selectList.setAttribute("size", "42");
 		selectList.setAttribute("style", "width:200px");
 		//selectList.setAttribute("onclick","onSelectDef(this)");
 		myDiv.appendChild(selectList);
@@ -650,6 +804,31 @@ function queistionVO() {
 	var termAudio;
 	var deffAudio;
 }
+
+/**************************************************************************************************************** */
+//    New Update for the select dropdown button layout varies from desktop browsers to mobile browser
+//    We have modifies ths to select element to list tag.
+//    onSelectDef_1 method used to check and select the corresponding index of the dropdown menu
+//    Developer : Subramani M
+//    Impelesys India Privat Limited 
+//    Date : 08-Dec-2016
+/******************************************************************************************************************* */
+function onSelectDef_1(tar){
+tar.className=tar.className+" active";
+var x1= document.getElementById("termChoose");
+	for(var x=0;x<x1.length;x++)
+	{
+		if(x1[x].value==tar.innerHTML)
+		{
+			x1.selectedIndex=x;
+			onSelectDef();
+			break;
+		}
+	}
+}
+
+
+
 function onSelectDef() {
 
 if($("#sidemenu").attr("class").indexOf("sideNav")>0)
@@ -667,18 +846,28 @@ if($("#sidemenu").attr("class").indexOf("sideNav")>0)
 
 	}
 	
+	
 	if($("#sidemenu").attr("class").indexOf("col-xs-4")>0)
 	{
 				
+				if (window.matchMedia("(min-width: 768px)").matches) {
+  					//	alert("matches");
+				} else {
+					$("#sidemenu").toggleClass("col-xs-4","col-xs-12");
+				}
 				
-				$("#sidemenu").toggleClass("col-xs-4","col-xs-12");
 			
 	}
 	else
 	{
 		
+				if (window.matchMedia("(min-width: 768px)").matches) {
+  					//	alert("matches");
+					 $("#sidemenu").toggleClass("col-xs-12","col-xs-4"); 
+				} else {
+					//$("#sidemenu").toggleClass("col-xs-4","col-xs-12");
+				}
 		
-		$("#sidemenu").toggleClass("col-xs-12","col-xs-4");
 	}
 if($("#main_cont").attr("class").indexOf("col-xs-4")>0)
 	{
@@ -1129,4 +1318,30 @@ function increaseFontSizeInternal() {
     }
 } 
 
+$( window ).resize(function() {
+  if (window.matchMedia("(min-width: 768px)").matches) {
+			if($("#sidemenu").attr("class").indexOf("col-xs-4")>0)
+			{
+				
+			
+					//$("#sidemenu").toggleClass("col-xs-4","col-xs-12");
+			//	}
+				
+			
+			}
+			else
+			{
+		
+				//if (window.matchMedia("(min-width: 768px)").matches) {
+  					//	alert("matches");
+				//	 $("#sidemenu").toggleClass("col-xs-12","col-xs-4"); 
+				//} else {
+					//$("#sidemenu").toggleClass("col-xs-4","col-xs-12");
+			}
+		
+	
+	} else {
+  
+	}
+});
  
