@@ -26,7 +26,7 @@ var FirstDefinition;
 var loaded = false;
 var audioElement1;
 var psbi=null;
-var count=0;
+var count=-1;
 function onSidenav()
 {
 	
@@ -236,6 +236,7 @@ function createUI1(e) {
 
 function onPrevious()
 {
+	count=count-1;
 	if(count==0)
 	{
 		document.getElementById("previous").disabled=true;
@@ -248,7 +249,7 @@ function onPrevious()
 		document.getElementById("termChoose").selectedIndex=count;
 		document.getElementById("number_term").innerHTML=count + "/" + document.getElementById("termChoose").length;
 		onSelectDef();
-		count=count-1;
+		
 	}
 
 }
@@ -256,6 +257,7 @@ function onPrevious()
 function onNext()
 {
 //alert(document.getElementById("termChoose").length + " " + count);
+	count=count+1;
 	if(count<document.getElementById("termChoose").length)
 	{
 		document.getElementById("previous").disabled=false;
@@ -263,7 +265,7 @@ function onNext()
 		document.getElementById("termChoose").selectedIndex=count;
 		document.getElementById("number_term").innerHTML=count+1 + "/" + document.getElementById("termChoose").length;
 		onSelectDef();
-		count=count+1;
+		
 	}
 	else
 	{
