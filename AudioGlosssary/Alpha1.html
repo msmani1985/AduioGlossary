@@ -143,7 +143,9 @@
 
 
                 <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 text_cont" id="main_cont">
-                    <h2 class="a_titlebar" id="chapterHedding"></h2>
+                    <h2 class="a_titlebar" id="chapterHedding">
+                        <p id="number_term"></p>
+                    </h2>
                     <div style="width:100%">        
                     <div class="pull-left">
                         <input class="btns" type="button" value="Spanish Terms" id="b3" class="active" onclick="ToViewSpanTerm()" title="SpaneshTerm"
@@ -162,13 +164,26 @@
 
                     <div class="termbox  panel panel-default">
                         
+                        <div>
+                            <button id="previous" type="button" class="btn btn-default btn-sm pull-left" onclick="onPrevious()">
+                                <span class="glyphicon glyphicon-chevron-left"></span> Previous
+                           </button>
+                            <button id="next" type="button" class="btn btn-default btn-sm pull-right" onclick="onNext()">
+                                <span class="glyphicon glyphicon-chevron-right pull-right"></span> Next
+                           </button>
+
+                        </div>
+                        
+                          
                         <div id="Term">
-                               <p id="Audio1"> </p><div id="thead" class="term_contenttext1"> Term<span id="termContent"></span></div>
+                           
+                               <p id="Audio1"> </p><div id="thead" class="term_contenttext1" style="margin-left:-30px"> Term<span id="termContent"></span></div>
+
                         </div>
                          <div id="Definition">
                                 <h2 id="Audio" style="display:none"> </h2>
                                 <span class="defAudio" id="defAudio"></span>
-                                <div id="dhead" class="term_contenttext">Definition<span id="definitionContent"></span></div>
+                                 <div id="dhead" class="term_contenttext">Definition<span id="definitionContent"></span></div>
 			        			 <p id="SenAudion"></p>
 			                    <div id="senTitle" style="color:#015D8C;font-weight:bold;font-size: 24px"></div>
 			                    <div id="SenTerm" style="font-size: 20px;color: #E32C66;font-family: PTSans">

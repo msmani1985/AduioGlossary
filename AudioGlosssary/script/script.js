@@ -26,6 +26,7 @@ var FirstDefinition;
 var loaded = false;
 var audioElement1;
 var psbi=null;
+var count=0;
 function onSidenav()
 {
 	
@@ -78,6 +79,7 @@ function bodyloaded1() {
 	modelObj = new DtataProvider("xml/chapter.xml", createUI);
 	modelObj1 = new DtataProvider1("xml/terms.xml", createUI1);
 	psbi=null;
+	document.getElementById("previous").disabled=true;
 }
 
 function createUI(e) //to load data into the UI
@@ -230,6 +232,45 @@ function createUI1(e) {
 	search();
 	$("#bl").attr('disabled',true);
 	$("#b2").attr('disabled',true)
+}
+
+function onPrevious()
+{
+	if(count==0)
+	{
+		document.getElementById("previous").disabled=true;
+		document.getElementById("next").disabled=false;
+
+	}
+	else
+	{
+		
+		document.getElementById("termChoose").selectedIndex=count;
+		document.getElementById("number_term").innerHTML=count + "/" + document.getElementById("termChoose").length;
+		onSelectDef();
+		count=count-1;
+	}
+
+}
+
+function onNext()
+{
+//alert(document.getElementById("termChoose").length + " " + count);
+	if(count<document.getElementById("termChoose").length)
+	{
+		document.getElementById("previous").disabled=false;
+		document.getElementById("next").disabled=false;
+		document.getElementById("termChoose").selectedIndex=count;
+		document.getElementById("number_term").innerHTML=count+1 + "/" + document.getElementById("termChoose").length;
+		onSelectDef();
+		count=count+1;
+	}
+	else
+	{
+			document.getElementById("previous").disabled=false;
+			document.getElementById("next").disabled=true;
+	}
+	
 }
 
 function removeLastComma(str) {
