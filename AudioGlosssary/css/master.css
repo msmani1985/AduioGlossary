@@ -185,10 +185,8 @@ font-weight:bold;
 height: 230px;
 
 overflow-y: auto;
-overflow-x: hidden;
 
-
-	 } 
+} 
 
 #Term{ background:#ffffff;  display:block;  }
 
