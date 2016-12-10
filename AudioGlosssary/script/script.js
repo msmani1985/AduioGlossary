@@ -420,7 +420,7 @@ alert("daff");
 		$("#box1").remove();
 
 	}
-	
+
 var list=[];
 list=document.getElementsByClassName("btns1");
 for(var i=0;i<list.length;i++)
@@ -801,7 +801,7 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 	//document.getElementById("b2").disabled = false;
 	var attr = obj;
 	var gName = attr.id.replace("index","");
-	alert(gName);
+	//alert(gName);
 	var gcount = 0;
 	
 
@@ -813,12 +813,12 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 	var currentChap = cahperList.options[cahperList.selectedIndex].value;
 	//alert("selected ChapterValue "+currentChap);
 	if (gName == "All" && currentChap == "All Chapters") {
-		alert("we");
+		///alert("we");
 		gcount++;
 		onSelection2();
 	}
 	var option1;
-	alert(modalData.length)
+//	alert(modalData.length)
 	for (var t = 0; t < modalData.length; t++) {
 		if (currentChap == "All Chapters") {
 			for (var t = 0; t < GroupArray.length; t++) {
