@@ -492,15 +492,7 @@ varprevious =null;
 				}
 		}
 	}	
-if(varnon!="")
-				{
-					alert("sfdff")
-					alert(varnon+"-"+document.getElementById("myLi").childNodes[la-1].previousSibling.childNodes[0].value);
-					document.getElementById("myLi").childNodes[la-1].childNodes[0].value=varnon+"-"+document.getElementById("myLi").childNodes[la-1].childNodes[0].value
-					document.getElementById("myLi").childNodes[la-1].style.display="block"
-					//document.getElementById("myLi").childNodes[la],childNodes[0].setAttribute("value",varnon + "-"+document.getElementById("myLi").childNodes[la].previousSibling,childNodes[0].getAttribute("value"));
-					varnon="";
-				}
+
 
 	var sectiondatacount = 0;
 	for (var t = 0; t < modalData.length; t++) {
