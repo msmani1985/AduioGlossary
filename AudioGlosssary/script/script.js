@@ -32,44 +32,32 @@ var count=-1;
 function onSidenav()
 {
 	
-if($("#sidemenu").attr("class").indexOf("sideNav")>0)
+	if($("#sidemenu").attr("class").indexOf("sideNav")>0)
 	{
-				$("#sidemenu").toggleClass("sideNav","sideNav1");
-				$("#sidemenu").css("display","");
-
-
+		$("#sidemenu").toggleClass("sideNav","sideNav1");
+		$("#sidemenu").css("display","");
 	}
 	else
 	{
-		
 		$("#sidemenu").addClass("sideNav");
 		$("#sidemenu").css("display","block");
-		
 	}
+	
 	if($("#sidemenu").attr("class").indexOf("col-xs-4")>0)
 	{
-				
-				
-				$("#sidemenu").toggleClass("col-xs-4","col-xs-12");
-			
+		$("#sidemenu").toggleClass("col-xs-4","col-xs-12");
 	}
 	else
 	{
-		
-		
 		$("#sidemenu").toggleClass("col-xs-12","col-xs-4");
 	}
-if($("#main_cont").attr("class").indexOf("col-xs-4")>0)
+	
+	if($("#main_cont").attr("class").indexOf("col-xs-4")>0)
 	{
-				
-				
-				$("#main_cont").toggleClass("col-xs-4","col-xs-12");
-			
+		$("#main_cont").toggleClass("col-xs-4","col-xs-12");
 	}
 	else
 	{
-		
-		
 		$("#main_cont").toggleClass("col-xs-12","col-xs-4");
 	}
 	
@@ -95,7 +83,8 @@ function createUI(e) //to load data into the UI
 	option.innerHTML = "All Chapters";
 	option.value = "All Chapters";
 	cahperList.appendChild(option);
-	for (var k = 0; k < modalData.length; k++) {
+	for (var k = 0; k < modalData.length; k++) 
+	{
 		option = document.createElement("option");
 		option.setAttribute("value", "Connection.TRANSACTION_NONE")
 		option.innerHTML = modalData[k].name;
@@ -107,31 +96,23 @@ function createUI(e) //to load data into the UI
 
 
 
-function createUI1(e) {
-
+function createUI1(e)
+ {
 	modalData1 = e; //loading data to variable
-
-
 	var questionlist = modalData1[0].AudioList;
 	currentChapterList = questionlist.slice(0, questionlist.length); //coping array
 	currentQ = 0;
 	var MYLIST = document.getElementById("myLi"); //chapter level data
-
 	var lix = document.createElement("li");
 	lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-warning\" style=\"width:30px;height:25px;font-size:15px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"All\" value=\"All\">";
-	
 	//lix.innerHTML="<button type=\"button\" class=\"btn btn-default\" onclick=\"onSelection3(this)\" id=\"All\" value=\"All\">All</button>"
 	MYLIST.appendChild(lix);
-
 	for (var i = 0; i < GROUP.length; i++) //loading chapter headdings to dropdown box
 	{
-
 		var lix = document.createElement("li");
 		lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-info\" style=\"width:30px;height:25px;font-size:17px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"" + GROUP[i] + "index\" value=\"" + GROUP[i] + "\">";
 		MYLIST.appendChild(lix);
-
 	}
-
 	//document.getElementById("b1").disabled = true;
 	//document.getElementById("b2").disabled = true;
 
@@ -143,8 +124,10 @@ function createUI1(e) {
 		var gname =document.getElementById("myLi").childNodes[la].childNodes[0].getAttribute("value");
 		var varfound =false; 
 		
-			for (var t = 0; t < GroupArray.length; t++) {
-				if (GroupArray[t].groupname == gname) {
+			for (var t = 0; t < GroupArray.length; t++) 
+			{
+				if (GroupArray[t].groupname == gname) 
+				{
 					varfound=true;
 					//varprevious=document.getElementById("myLi").childNodes[la].childNodes[0];
 					break;
@@ -154,10 +137,10 @@ function createUI1(e) {
 
 				}
 			}
+			
 			if(varfound==false)
 			{
 				document.getElementById("myLi").childNodes[la].style="display:none";
-				//alert("false");
 			}	
 	}
 
@@ -166,23 +149,24 @@ function createUI1(e) {
 	var myDiv = document.getElementById("section");
 	var selectList = document.createElement("select");
 	var selectList1 = document.createElement("ul");
-			var termsdetsear="";
-	for (var t = 0; t < GroupArray.length; t++) {
+	/*************************************************************************************** */
+	//Search data variable 
+	//******************************************************************************************
+	var termsdetsear="";
+	/**************************************************************************************** */
+	for (var t = 0; t < GroupArray.length; t++) 
+	{
 		selectList.setAttribute("id", "termChoose");
 		//selectList.setAttribute("size", "42");
 		selectList.setAttribute("style", "width:200px");
 		selectList.setAttribute("onclick", "onSelectDef()");
 		myDiv.appendChild(selectList);
-
-
 		selectList1.setAttribute("id", "termChoose1");
 		//selectList.setAttribute("size", "42");
 		selectList1.setAttribute("style", "width:200px");
 		selectList1.setAttribute("class","list-group");
-		
 		myDiv.appendChild(selectList1);
 		//GroupArrayRef.push(GroupArray[t].groupname);
-		
 		for (var j = 0; j < GroupArray[t].AudioList.length; j++) //loading chapter headdings to dropdown box
 		{
 			Defarray.push(GroupArray[t].AudioList[j].Audiomeaning);
@@ -191,7 +175,6 @@ function createUI1(e) {
 			option.value = GroupArray[t].AudioList[j].Audioterm;
 			option.text = GroupArray[t].AudioList[j].Audioterm;
 			selectList.appendChild(option);
-
 			var li = document.createElement("li");
 			var a=document.createElement("a");
 			li.setAttribute("class","list-group-item list-group-itemn-action btn-warning");
@@ -203,39 +186,53 @@ function createUI1(e) {
 			a.appendChild(t1);
 			li.appendChild(a);
 			selectList1.appendChild(li);
-
+			/**********************************search data information*************************************** */
+			//
+			//									Search functionality and merging the 
+			//
+			/************************************************************************************************** */
 			termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].Audioterm+'",';
-			  if(GroupArray[t].AudioList[j].SpaneshTerm==undefined||GroupArray[t].AudioList[j].SpaneshTerm=="")
-			  {
-				 // termsdetsear=termsdetsear+",";
-			 }else{
-            var option1 = document.createElement("option");
-			option1.value = GroupArray[t].AudioList[j].SpaneshTerm;
-			option1.text = GroupArray[t].AudioList[j].SpaneshTerm;
-			option1.setAttribute("style", "color:blue");
-			termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].SpaneshTerm+'",';
-			selectList.appendChild(option1);
-			 var li1 = document.createElement("li");
- 			var a=document.createElement("a");
- 			a.setAttribute("onclick", "onSelectDef_1(this)");
-			
-			a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
- 			li1.setAttribute("class","list-group-item list-group-item btn-warning");
-			li1.value = j;
-			var t1=document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm);
-			//li1.text = GroupArray[t].AudioList[j].SpaneshTerm;
-			a.appendChild(t1);
-			li1.appendChild(a);
-			a.setAttribute("style", "color:blue;font-weight:bold;cursor:pointer");
-			//termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].SpaneshTerm+'",';
-			selectList1.appendChild(li1);
+			/**************************************************************************** ***********************/
 
+     		if(GroupArray[t].AudioList[j].SpaneshTerm==undefined||GroupArray[t].AudioList[j].SpaneshTerm=="")
+			{
+				 // termsdetsear=termsdetsear+",";
+			}
+			else
+			{
+            	var option1 = document.createElement("option");
+				option1.value = GroupArray[t].AudioList[j].SpaneshTerm;
+				option1.text = GroupArray[t].AudioList[j].SpaneshTerm;
+				option1.setAttribute("style", "color:blue");
+				
+				/*********************************************************************************************** */
+				termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].SpaneshTerm+'",';
+				/********************************************************************************************** */
+
+				selectList.appendChild(option1);
+				/****************************************************************************************** */
+				// Mobile browser side me layout
+				/******************************************************************************************* */
+			 	var li1 = document.createElement("li");
+ 				var a=document.createElement("a");
+ 				a.setAttribute("onclick", "onSelectDef_1(this)");
+				a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
+ 				li1.setAttribute("class","list-group-item list-group-item btn-warning");
+				li1.value = j;
+				var t1=document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm);
+				//li1.text = GroupArray[t].AudioList[j].SpaneshTerm;
+				a.appendChild(t1);
+				li1.appendChild(a);
+				a.setAttribute("style", "color:blue;font-weight:bold;cursor:pointer");
+				//termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].SpaneshTerm+'",';
+				selectList1.appendChild(li1);
+				/********************************************************************************************************* */
 
 			}
 			option1.setAttribute("style", "color:blue");
 			li1.setAttribute("style", "color:blue");
-			if (GroupArray[t].groupname == "A") {
-
+			if (GroupArray[t].groupname == "A") 
+			{
 				FirstTerm = GroupArray[t].AudioList[0].Audioterm;
 				FirstDefinition = GroupArray[t].AudioList[0].Audiomeaning;
 				var TC = document.getElementById("termContent");
@@ -244,20 +241,14 @@ function createUI1(e) {
 				DC.innerHTML = FirstDefinition;
 				$("#b1").css("background", "#9AC97B");
 				$("#b1").css("color", "white");
-
 			}
-			
-			
 		}
 	}
-	//console.log(termsdetsear);
-	
+	/******************************************************************************************************* */
 	var termdsdetsear1=JSON.parse("["+removeLastComma(termsdetsear)+"]");
-	//alert(termdsdetsear1);
 	data=  {"ale": termdsdetsear1};
-	//alert(termdsdetsear1);
-	//console.log(data.ale);
 	search();
+	/********************************************************************************************************** */
 	$("#bl").attr('disabled',true);
 	$("#b2").attr('disabled',true)
 }
@@ -296,7 +287,6 @@ function onNext()
 		document.getElementById("termChoose").selectedIndex=count;
 		document.getElementById("number_term").innerHTML=count+1 + "/" + document.getElementById("termChoose").length;
 		onSelectDef();
-		
 	}
 	else
 	{
@@ -306,110 +296,104 @@ function onNext()
 	
 }
 
-function removeLastComma(str) {
+function removeLastComma(str)
+{
    return str.replace(/,(\s+)?$/, '');   
 }
 
 
 function search()
 {
-	console.log("["+data.ale[0]+"]")
- typeof $.typeahead === 'function' && $.typeahead({
-            input: ".js-typeahead-input",
-            minLength: 1,
-            maxItem: 15,
-            order: "asc",
-            hint: true,
-            group: {
-                template: "{{group}} Chapters!"
-            },
-            maxItemPerGroup: 5,
-            backdrop: {
-                "background-color": "#fff"
-            },
-            //href: "alpha1.html",
-           // dropdownFilter: "all beers",
-            emptyTemplate: 'No result for "{{query}}"',
-            source: {
-                Terms: {
-                    data: data.ale
+		typeof $.typeahead === 'function' && $.typeahead(
+			{
+            	input: ".js-typeahead-input",
+            	minLength: 1,
+            	maxItem: 15,
+            	order: "asc",
+            	hint: true,
+            	group: {
+                	template: "{{group}} Chapters!"
+            	},
+            	maxItemPerGroup: 5,
+            	backdrop: {
+                	"background-color": "#fff"
+            	},
+            	//href: "alpha1.html",
+           		// dropdownFilter: "all beers",
+            	emptyTemplate: 'No result for "{{query}}"',
+            	source: {
+                	Terms: {
+                    	data: data.ale
+                	},
                 },
-                
-            },
-            callback: {
-                onClickAfter: function (node, a, item, event) {
-
+            	callback: {
+                	onClickAfter: function (node, a, item, event) {
                     // href key gets added inside item from options.href configuration
-
 					var x1= document.getElementById("termChoose");
 					for(var x=0;x<x1.length;x++)
 					{
 						if(x1[x].value==item.display)
 						{
-
 							x1.selectedIndex=x;
 							onSelectDef();
-
 							break;
 						}
 					}
-
-
                 }
             },
             debug: true
         });
-
 }
 
 function ToViewSpanTerm()
 {
-//document.getElementById("b3").value="English Term";
-//document.getElementById("b3").style="	background-color: #7D81D1;"
-if(document.getElementById("b3").value=="English Terms")
-{
-	
-	document.getElementById("b3").value="Spanish Terms";
-document.getElementById("b3").style="	background-color: #D17DD0;"
-}
-else
-{	
-document.getElementById("b3").value="English Terms";
-document.getElementById("b3").style="	background-color: #7D81D1;"
-var x = document.getElementById("termChoose");
-x.remove();
-var myDiv = document.getElementById("section");
-var selectList = document.createElement("select");
-for (var t = 0; t < GroupArray.length; t++) {
-	
-		for (var j = 0; j < GroupArray[t].AudioList.length; j++) //loading chapter headdings to dropdown box
-		{	
-		selectList.setAttribute("id", "termChoose");
-		//selectList.setAttribute("size", "42");
-		selectList.setAttribute("style", "width:200px");
-		selectList.setAttribute("onclick", "onSelectDef(this)");
-		myDiv.appendChild(selectList);
-		if(GroupArray[t].AudioList[j].SpaneshTerm==undefined||GroupArray[t].AudioList[j].SpaneshTerm=="")
-			  {
-			 }else{
-            var option= document.createElement("option");
-			option.value = GroupArray[t].AudioList[j].SpaneshTerm;
-			option.text = GroupArray[t].AudioList[j].SpaneshTerm;
-			option.setAttribute("style", "color:blue");
-			selectList.appendChild(option);
-			}
-		
-		}
-					
+	//document.getElementById("b3").value="English Term";
+	//document.getElementById("b3").style="	background-color: #7D81D1;"
+	if(document.getElementById("b3").value=="English Terms")
+	{
+		document.getElementById("b3").value="Spanish Terms";
+		document.getElementById("b3").style="	background-color: #D17DD0;"
 	}
-}
+	else
+	{	
+		document.getElementById("b3").value="English Terms";
+		document.getElementById("b3").style="	background-color: #7D81D1;"
+		var x = document.getElementById("termChoose");
+		x.remove();
+		var myDiv = document.getElementById("section");
+		var selectList = document.createElement("select");
+		for (var t = 0; t < GroupArray.length; t++) {
+			for (var j = 0; j < GroupArray[t].AudioList.length; j++) //loading chapter headdings to dropdown box
+			{	
+				selectList.setAttribute("id", "termChoose");
+				//selectList.setAttribute("size", "42");
+				selectList.setAttribute("style", "width:200px");
+				selectList.setAttribute("onclick", "onSelectDef(this)");
+				myDiv.appendChild(selectList);
+				if(GroupArray[t].AudioList[j].SpaneshTerm==undefined||GroupArray[t].AudioList[j].SpaneshTerm=="")
+			  	{
+			 	}
+				else
+				{
+            		var option= document.createElement("option");
+					option.value = GroupArray[t].AudioList[j].SpaneshTerm;
+					option.text = GroupArray[t].AudioList[j].SpaneshTerm;
+					option.setAttribute("style", "color:blue");
+					selectList.appendChild(option);
+				}
+		   }
+		}
+  	}
 }
 
 function onSelection2() {
 	psbi=null;
-alert("daff");
+	//alert("daff");
 	var bx = document.getElementById("box");
-	if (bx == null) {}
+	if (bx == null) 
+	{
+
+	}
 	else {
 		$("#box").remove();
 	}
@@ -418,28 +402,20 @@ alert("daff");
 	if (bx1 == null) {}
 	else {
 		$("#box1").remove();
-
 	}
-
-var list=[];
-list=document.getElementsByClassName("btns1");
-for(var i=0;i<list.length;i++)
-{
-	
-	list[i].className=list[i].className.replace("btn-warning","btn-info");
-}
-
-document.getElementById("All").className=document.getElementById("All").className.replace("btn-info","btn-warning")
-
-
-
+	var list=[];
+	list=document.getElementsByClassName("btns1");
+	for(var i=0;i<list.length;i++)
+	{
+		list[i].className=list[i].className.replace("btn-warning","btn-info");
+	}
+	document.getElementById("All").className=document.getElementById("All").className.replace("btn-info","btn-warning")
 	//document.getElementById("b1").disabled = true;
 	//document.getElementById("b2").disabled = true;
 	var cahperList = document.getElementById("chapterList");
 	var currentChap = cahperList.options[cahperList.selectedIndex].value;
 	//alert(currentChap);
-
-for(var la=1;la<document.getElementById("myLi").childNodes.length;la++)
+	for(var la=1;la<document.getElementById("myLi").childNodes.length;la++)
 	{
 		//for (var i = 0; i < GROUP.length; i++) //loading chapter headdings to dropdown box
 		{
@@ -448,7 +424,7 @@ for(var la=1;la<document.getElementById("myLi").childNodes.length;la++)
 		document.getElementById("myLi").childNodes[la].style.display="block";
 	}
 
-varprevious =null;
+	varprevious =null;
 	for(var la=1;la<document.getElementById("myLi").childNodes.length;la++)
 	{
 		//alert(document.getElementById("myLi").childNodes[la].childNodes[0].getAttribute("value"));
@@ -460,29 +436,27 @@ varprevious =null;
 				var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10);
 				var chapterNumberOnly2 = "\," + chapterNumberOnly1.trim() + "\,";			
 
-			for (var t = 0; t < GroupArray.length; t++) {
-				for (var j = 0; j < GroupArray[t].AudioList.length; j++) //loading chapter headdings to dropdown box
-				{
-					if (GroupArray[t].AudioList[j].chapterattr.indexOf("\," + chapterNumberOnly1.trim() + "\,") > -1)
+				for (var t = 0; t < GroupArray.length; t++) {
+					for (var j = 0; j < GroupArray[t].AudioList.length; j++) //loading chapter headdings to dropdown box
 					{
-
-						if (GroupArray[t].groupname == gname) {
+						if (GroupArray[t].AudioList[j].chapterattr.indexOf("\," + chapterNumberOnly1.trim() + "\,") > -1)
+						{
+							if (GroupArray[t].groupname == gname) {
 								varfound=true;
 								//varprevious=document.getElementById("myLi").childNodes[la].childNodes[0];
 								break;
-						}
-						else
-						{
+							}
+							else
+							{
 
+							}
 						}
 					}
 				}
 			}
 		}
-	}
 		   if(varfound==false)
 			{
-				
 				document.getElementById("myLi").childNodes[la].style="display:none";
 				//alert("dafdf1 " + gname);
 				//alert("false");
@@ -518,10 +492,8 @@ varprevious =null;
 		if (modalData[t].name == currentChap) {
 			var x = document.getElementById("termChoose");
 			x.remove();
-			
 			var x = document.getElementById("termChoose1");
 			x.remove();
-			
 			var chapterNumberOnly = modalData[t].name;
 			var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10);
 			var chapterNumberOnly2 = "\," + chapterNumberOnly1.trim() + "\,";
@@ -536,6 +508,8 @@ varprevious =null;
 			/*************************************************************************** */
 			//myDiv.appendChild(selectList);
 			//myDiv.appendChild(selectList1);
+			/*************************************************************************** */
+			var termsdetsear="";
 			for (var t = 0; t < GroupArray.length; t++) {
 				selectList.setAttribute("id", "termChoose");
 				//selectList.setAttribute("size", "42");
@@ -576,7 +550,9 @@ varprevious =null;
 						li.appendChild(a);
 						selectList1.appendChild(li);
 						/**************************************************************************************** */
-
+						/************************************************************************************************** */
+						termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].Audioterm+'",';
+						/**************************************************************************** ***********************/
 						if(GroupArray[t].AudioList[j].SpaneshTerm==undefined||GroupArray[t].AudioList[j].SpaneshTerm=="")
 			            {
 			            }else{
@@ -589,6 +565,10 @@ varprevious =null;
 							/*************************************************************************************** */
 							// li and a tag create for spanish trm with ble font color
 							/*************************************************************************************** */
+							/*********************************************************************************************** */
+							termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].SpaneshTerm+'",';
+							/********************************************************************************************** */
+
 							var li = document.createElement("li");
 							var a=document.createElement("a");
 							li.setAttribute("class","list-group-item list-group-itemn-action btn-warning");
@@ -602,15 +582,16 @@ varprevious =null;
 							selectList1.appendChild(li);
 							/**************************************************************************************** */						var li = document.createElement("li");
 							
-							termsdetsear=termsdetsear+","+ GroupArray[t].AudioList[j].SpaneshTerm;
+							//termsdetsear=termsdetsear+","+ GroupArray[t].AudioList[j].SpaneshTerm;
 							} 
 
 					}
 				}
-				data = {
-				"ale": [termsdetsear]};
+				var termdsdetsear1=JSON.parse("["+removeLastComma(termsdetsear)+"]");
+				data=  {"ale": termdsdetsear1};
+				search();
 			}
-			alert(data);
+			//alert(data);
 
 			if (sectiondatacount == 0) {
 				
@@ -704,7 +685,7 @@ varprevious =null;
 			var selectList = document.createElement("select");
 
 			var selectList1 = document.createElement("ul");
-
+			var termsdetsear="";
 			for (var t = 0; t < GroupArray.length; t++) {
 				selectList.setAttribute("id", "termChoose");
 				//selectList.setAttribute("size", "42");
@@ -737,6 +718,7 @@ varprevious =null;
 					li.appendChild(a);
 					selectList1.appendChild(li);
 					selectList.appendChild(option);
+					termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].Audioterm+'",';
 					if(GroupArray[t].AudioList[j].SpaneshTerm==undefined||GroupArray[t].AudioList[j].SpaneshTerm=="")
 			            {
 			            }else{
@@ -746,7 +728,7 @@ varprevious =null;
 							option1.text = GroupArray[t].AudioList[j].SpaneshTerm;
 							option1.setAttribute("style", "color:blue");
 							selectList.appendChild(option1);
-							
+							termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].SpaneshTerm+'",';
 							var li = document.createElement("li");
 							var a=document.createElement("a");
 							li.setAttribute("class","list-group-item list-group-itemn-action btn-warning");
@@ -764,10 +746,14 @@ varprevious =null;
 							selectList.appendChild(option1);
 
 							} 
+							
 				}
 			}
 		}
 	}
+	var termdsdetsear1=JSON.parse("["+removeLastComma(termsdetsear)+"]");
+	data=  {"ale": termdsdetsear1};
+	search();
 }
 
 
