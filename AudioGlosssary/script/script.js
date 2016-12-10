@@ -420,15 +420,34 @@ alert("daff");
 		$("#box1").remove();
 
 	}
+	
+var list=[];
+list=document.getElementsByClassName("btns1");
+for(var i=0;i<list.length;i++)
+{
+	
+	list[i].className=list[i].className.replace("btn-warning","btn-info");
+}
+
+document.getElementById("All").className=document.getElementById("All").className.replace("btn-info","btn-warning")
+
+
+
 	//document.getElementById("b1").disabled = true;
 	//document.getElementById("b2").disabled = true;
 	var cahperList = document.getElementById("chapterList");
 	var currentChap = cahperList.options[cahperList.selectedIndex].value;
 	//alert(currentChap);
+
 for(var la=1;la<document.getElementById("myLi").childNodes.length;la++)
 	{
+		//for (var i = 0; i < GROUP.length; i++) //loading chapter headdings to dropdown box
+		{
+			document.getElementById("myLi").childNodes[la].childNodes[0].value=GROUP[la-1];
+		}
 		document.getElementById("myLi").childNodes[la].style.display="block";
 	}
+
 varprevious =null;
 	for(var la=1;la<document.getElementById("myLi").childNodes.length;la++)
 	{
@@ -478,14 +497,14 @@ varprevious =null;
 			if(varnon=="")
 			{
 				varnon = document.getElementById("myLi").childNodes[la].childNodes[0].getAttribute("value");
-				alert(varnon);
+				//alert(varnon);
 			}
 		}
 		else
 		{
 				if(varnon!="")
 				{
-					alert(varnon+"-"+document.getElementById("myLi").childNodes[la].childNodes[0].value);
+					//alert(varnon+"-"+document.getElementById("myLi").childNodes[la].childNodes[0].value);
 					document.getElementById("myLi").childNodes[la].childNodes[0].value=varnon+"-"+document.getElementById("myLi").childNodes[la].childNodes[0].value
 					//document.getElementById("myLi").childNodes[la],childNodes[0].setAttribute("value",varnon + "-"+document.getElementById("myLi").childNodes[la].previousSibling,childNodes[0].getAttribute("value"));
 					varnon="";
@@ -754,7 +773,7 @@ varprevious =null;
 
 function onSelection3(obj) {
 //btn-
-alert("daffd");
+//alert("daffd");
 var list=[];
 list=document.getElementsByClassName("btns1");
 
