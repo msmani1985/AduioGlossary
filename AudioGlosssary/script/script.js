@@ -27,6 +27,8 @@ var loaded = false;
 var audioElement1;
 var psbi=null;
 var count=-1;
+
+
 function onSidenav()
 {
 	
@@ -134,6 +136,32 @@ function createUI1(e) {
 	//document.getElementById("b2").disabled = true;
 
 	GroupArray = e;
+	varprevious =null;
+	for(var la=1;la<document.getElementById("myLi").childNodes.length;la++)
+	{
+		//alert(document.getElementById("myLi").childNodes[la].childNodes[0].getAttribute("value"));
+		var gname =document.getElementById("myLi").childNodes[la].childNodes[0].getAttribute("value");
+		var varfound =false; 
+		
+			for (var t = 0; t < GroupArray.length; t++) {
+				if (GroupArray[t].groupname == gname) {
+					varfound=true;
+					//varprevious=document.getElementById("myLi").childNodes[la].childNodes[0];
+					break;
+				}
+				else
+				{
+
+				}
+			}
+			if(varfound==false)
+			{
+				document.getElementById("myLi").childNodes[la].style="display:none";
+				//alert("false");
+			}	
+	}
+
+
 
 	var myDiv = document.getElementById("section");
 	var selectList = document.createElement("select");
@@ -233,6 +261,9 @@ function createUI1(e) {
 	$("#bl").attr('disabled',true);
 	$("#b2").attr('disabled',true)
 }
+
+
+
 
 function onPrevious()
 {
@@ -394,6 +425,82 @@ alert("daff");
 	var cahperList = document.getElementById("chapterList");
 	var currentChap = cahperList.options[cahperList.selectedIndex].value;
 	//alert(currentChap);
+for(var la=1;la<document.getElementById("myLi").childNodes.length;la++)
+	{
+		document.getElementById("myLi").childNodes[la].style.display="block";
+	}
+varprevious =null;
+	for(var la=1;la<document.getElementById("myLi").childNodes.length;la++)
+	{
+		//alert(document.getElementById("myLi").childNodes[la].childNodes[0].getAttribute("value"));
+		var gname =document.getElementById("myLi").childNodes[la].childNodes[0].getAttribute("value");
+		var varfound =false; 
+		for (var t = 0; t < modalData.length; t++) {
+			if (modalData[t].name == currentChap) {
+				var chapterNumberOnly = modalData[t].name;
+				var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10);
+				var chapterNumberOnly2 = "\," + chapterNumberOnly1.trim() + "\,";			
+
+			for (var t = 0; t < GroupArray.length; t++) {
+				for (var j = 0; j < GroupArray[t].AudioList.length; j++) //loading chapter headdings to dropdown box
+				{
+					if (GroupArray[t].AudioList[j].chapterattr.indexOf("\," + chapterNumberOnly1.trim() + "\,") > -1)
+					{
+
+						if (GroupArray[t].groupname == gname) {
+								varfound=true;
+								//varprevious=document.getElementById("myLi").childNodes[la].childNodes[0];
+								break;
+						}
+						else
+						{
+
+						}
+					}
+				}
+			}
+		}
+	}
+		   if(varfound==false)
+			{
+				
+				document.getElementById("myLi").childNodes[la].style="display:none";
+				//alert("dafdf1 " + gname);
+				//alert("false");
+			}	
+	}
+	varnon="";
+	for(var la=1;la<document.getElementById("myLi").childNodes.length;la++)
+	{
+		
+		if(document.getElementById("myLi").childNodes[la].style.display=="none")
+		{
+			if(varnon=="")
+			{
+				varnon = document.getElementById("myLi").childNodes[la].childNodes[0].getAttribute("value");
+				alert(varnon);
+			}
+		}
+		else
+		{
+				if(varnon!="")
+				{
+					alert(varnon+"-"+document.getElementById("myLi").childNodes[la].childNodes[0].value);
+					document.getElementById("myLi").childNodes[la].childNodes[0].value=varnon+"-"+document.getElementById("myLi").childNodes[la].childNodes[0].value
+					//document.getElementById("myLi").childNodes[la],childNodes[0].setAttribute("value",varnon + "-"+document.getElementById("myLi").childNodes[la].previousSibling,childNodes[0].getAttribute("value"));
+					varnon="";
+				}
+		}
+	}	
+if(varnon!="")
+				{
+					alert("sfdff")
+					alert(varnon+"-"+document.getElementById("myLi").childNodes[la-1].previousSibling.childNodes[0].value);
+					document.getElementById("myLi").childNodes[la-1].childNodes[0].value=varnon+"-"+document.getElementById("myLi").childNodes[la-1].childNodes[0].value
+					document.getElementById("myLi").childNodes[la-1].style.display="block"
+					//document.getElementById("myLi").childNodes[la],childNodes[0].setAttribute("value",varnon + "-"+document.getElementById("myLi").childNodes[la].previousSibling,childNodes[0].getAttribute("value"));
+					varnon="";
+				}
 
 	var sectiondatacount = 0;
 	for (var t = 0; t < modalData.length; t++) {
@@ -682,9 +789,14 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 	//document.getElementById("b1").disabled = false;
 	//document.getElementById("b2").disabled = false;
 	var attr = obj;
-	var gName = attr.value;
+	var gName = attr.id.replace("index","");
+	alert(gName);
 	var gcount = 0;
 	
+
+
+
+
 	//alert("here\t"+attr.value);
 	var cahperList = document.getElementById("chapterList");
 	var currentChap = cahperList.options[cahperList.selectedIndex].value;
@@ -695,6 +807,7 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 		onSelection2();
 	}
 	var option1;
+	alert(modalData.length)
 	for (var t = 0; t < modalData.length; t++) {
 		if (currentChap == "All Chapters") {
 			for (var t = 0; t < GroupArray.length; t++) {
@@ -856,7 +969,7 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 					}
 				} else {}
 			}
-			console.log(myDiv.innerHTML);
+			//console.log(myDiv.innerHTML);
 			if (cntvar == 0) {
 
 				var toreport = document.createElement("div")
@@ -921,8 +1034,8 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 				Audio.innerHTML = "";
 				var Audio1 = document.getElementById("Audio1");
 				Audio1.innerHTML = "";
-				document.getElementById("b1").disabled = true;
-				document.getElementById("b2").disabled = true;
+				//document.getElementById("b1").disabled = true;
+				//document.getElementById("b2").disabled = true;
 			}
 		}
 	}
