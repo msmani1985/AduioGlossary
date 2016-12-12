@@ -549,7 +549,7 @@ function onSelection2()
 		if (modalData[t].name == currentChap) {
 			var x = document.getElementById("termChoose");
 			x.remove();
-			var ssx = document.getElementById("termChoose1");
+			var x = document.getElementById("termChoose1");
 			x.remove();
 			var chapterNumberOnly = modalData[t].name;
 			var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10);
