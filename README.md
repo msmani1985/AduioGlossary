@@ -1,2 +1,0 @@
-# AduioGlossary
-AudioGlossary Repository 
