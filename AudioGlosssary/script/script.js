@@ -117,31 +117,71 @@ function createUI1(e)
 	//document.getElementById("b2").disabled = true;
 
 	GroupArray = e;
+	for(var la=1;la<document.getElementById("myLi").childNodes.length;la++)
+	{
+		//for (var i = 0; i < GROUP.length; i++) //loading chapter headdings to dropdown box
+		{
+			document.getElementById("myLi").childNodes[la].childNodes[0].value=GROUP[la-1];
+		}
+		document.getElementById("myLi").childNodes[la].style.display="block";
+	}
+
 	varprevious =null;
 	for(var la=1;la<document.getElementById("myLi").childNodes.length;la++)
 	{
 		//alert(document.getElementById("myLi").childNodes[la].childNodes[0].getAttribute("value"));
 		var gname =document.getElementById("myLi").childNodes[la].childNodes[0].getAttribute("value");
 		var varfound =false; 
-		
-			for (var t = 0; t < GroupArray.length; t++) 
-			{
-				if (GroupArray[t].groupname == gname) 
-				{
-					varfound=true;
-					//varprevious=document.getElementById("myLi").childNodes[la].childNodes[0];
-					break;
-				}
-				else
-				{
-
-				}
-			}
 			
-			if(varfound==false)
+
+				for (var t = 0; t < GroupArray.length; t++) {
+					for (var j = 0; j < GroupArray[t].AudioList.length; j++) //loading chapter headdings to dropdown box
+					{
+						
+						{
+							if (GroupArray[t].groupname == gname) {
+								varfound=true;
+								//varprevious=document.getElementById("myLi").childNodes[la].childNodes[0];
+								break;
+							}
+							else
+							{
+
+							}
+						}
+					}
+		
+		
+		}
+		   if(varfound==false)
 			{
 				document.getElementById("myLi").childNodes[la].style="display:none";
+				//alert("dafdf1 " + gname);
+				//alert("false");
 			}	
+	}
+	varnon="";
+	for(var la=1;la<document.getElementById("myLi").childNodes.length;la++)
+	{
+//alert("dfasff")
+		if(document.getElementById("myLi").childNodes[la].style.display=="none")
+		{
+			if(varnon=="")
+			{
+				varnon = document.getElementById("myLi").childNodes[la].childNodes[0].getAttribute("value");
+				//alert(varnon);
+			}
+		}
+		else
+		{
+				if(varnon!="")
+				{
+					//alert(varnon+"-"+document.getElementById("myLi").childNodes[la].childNodes[0].value);
+					document.getElementById("myLi").childNodes[la].childNodes[0].value=varnon+"-"+document.getElementById("myLi").childNodes[la].childNodes[0].value
+					//document.getElementById("myLi").childNodes[la],childNodes[0].setAttribute("value",varnon + "-"+document.getElementById("myLi").childNodes[la].previousSibling,childNodes[0].getAttribute("value"));
+					varnon="";
+				}
+		}
 	}
 
 
@@ -244,6 +284,7 @@ function createUI1(e)
 			}
 		}
 	}
+	//alert(termsdetsear);
 	/******************************************************************************************************* */
 	var termdsdetsear1=JSON.parse("["+removeLastComma(termsdetsear)+"]");
 	data=  {"ale": termdsdetsear1};
@@ -385,8 +426,16 @@ function ToViewSpanTerm()
 		}
   	}
 }
-
-function onSelection2() {
+/************************************************************* */
+//
+//
+//   The following functiona trigged only when you  select
+//     chapter wise dropdown follwoing trigged the following        
+//      function
+/************************************************************* */
+function onSelection2()
+ {
+	 
 	psbi=null;
 	//alert("daff");
 	var bx = document.getElementById("box");
@@ -674,6 +723,44 @@ function onSelection2() {
 				document.getElementById("b2").disabled = true;
 			}
 		} else if (currentChap == "All Chapters") {
+			
+				for(var la=1;la<document.getElementById("myLi").childNodes.length;la++)
+	{
+		//for (var i = 0; i < GROUP.length; i++) //loading chapter headdings to dropdown box
+		{
+			document.getElementById("myLi").childNodes[la].childNodes[0].value=GROUP[la-1];
+		}
+		document.getElementById("myLi").childNodes[la].style.display="block";
+	}
+
+
+			for(var la=1;la<document.getElementById("myLi").childNodes.length;la++)
+	{
+		//alert(document.getElementById("myLi").childNodes[la].childNodes[0].getAttribute("value"));
+		var gname =document.getElementById("myLi").childNodes[la].childNodes[0].getAttribute("value");
+		var varfound =false; 
+		
+			for (var t = 0; t < GroupArray.length; t++) 
+			{
+				if (GroupArray[t].groupname == gname) 
+				{
+					varfound=true;
+					//varprevious=document.getElementById("myLi").childNodes[la].childNodes[0];
+					break;
+				}
+				else
+				{
+
+				}
+			}
+			
+			if(varfound==false)
+			{
+				document.getElementById("myLi").childNodes[la].style="display:none";
+			}	
+	}
+
+
 
 			var x = document.getElementById("termChoose");
 			x.remove();
@@ -756,8 +843,14 @@ function onSelection2() {
 	search();
 }
 
-
+/*********************************************************** */
+//
+//                Alphabetic selectio function
+//			Followig function trgged when you select the alphabet
+//
+/*********************************************************** */
 function onSelection3(obj) {
+	
 //btn-
 //alert("daffd");
 var list=[];
@@ -799,6 +892,7 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 	var currentChap = cahperList.options[cahperList.selectedIndex].value;
 	//alert("selected ChapterValue "+currentChap);
 	if (gName == "All" && currentChap == "All Chapters") {
+		//alert("all");
 		///alert("we");
 		gcount++;
 		onSelection2();
@@ -807,6 +901,7 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 //	alert(modalData.length)
 	for (var t = 0; t < modalData.length; t++) {
 		if (currentChap == "All Chapters") {
+			//alert("*.pdf")
 			for (var t = 0; t < GroupArray.length; t++) {
 				if (gName == GroupArray[t].groupname) {
 					gcount++;
@@ -888,6 +983,7 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 				}
 			}
 		} else if (gName == "All") {
+			//alert("wel")
 			gcount++;
 			onSelection2();
 		} else if (modalData[t].name == currentChap) {
@@ -1037,10 +1133,10 @@ obj.className=obj.className.replace("btn-info","btn-warning")
 		}
 	}
 	if (gcount == 0) {
-		alert("g");
+		//alert("g");
 		if(psbi==null)
 		{
-		alert(obj.parentNode.previousSibling.outerHTML);
+		//alert(obj.parentNode.previousSibling.outerHTML);
 		psbi = obj.parentNode.previousSibling;
 		}
 		var toreport = document.createElement("div")
