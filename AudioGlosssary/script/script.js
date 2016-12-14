@@ -268,6 +268,8 @@ function createUI1(e) {
 
 				var TC = document.getElementById("termContent");
 				TC.innerHTML = FirstTerm;
+				var TCp = document.getElementById("termContentPro");
+				TCp.innerHTML = GroupArray[t].AudioList[0].pronc;
 				var DC = document.getElementById("definitionContent");
 				DC.innerHTML = FirstDefinition;
 				$("#b1").css("background", "#9AC97B");
@@ -396,6 +398,8 @@ function ToViewSpanTerm() {
 					cnt++;
 					var TC = document.getElementById("termContent");
 					TC.innerHTML = GroupArray[t].AudioList[j].Audioterm;
+					var TCp = document.getElementById("termContentPro");
+					TCp.innerHTML = GroupArray[t].AudioList[j].pronc;
 					var DC = document.getElementById("definitionContent");
 					DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning;
 					if (GroupArray[t].AudioList[j].SpaneshTerm == "") {} else {
@@ -1545,6 +1549,10 @@ function onSelectDef() {
 				cnt++;
 				var TC = document.getElementById("termContent");
 				TC.innerHTML = GroupArray[t].AudioList[j].Audioterm;
+				//termContentPro
+				var TCp = document.getElementById("termContentPro");
+				TCp.innerHTML = GroupArray[t].AudioList[j].pronc;
+
 				var DC = document.getElementById("definitionContent");
 				DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning;
 				if (GroupArray[t].AudioList[j].SpaneshTerm == "") {

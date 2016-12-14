@@ -48,6 +48,7 @@ function DtataProvider1(url, fuc) {
             $(this).find("audio").each(function () {
                 var qVo = new queistionVO();
                 qVo.Audioterm = $(this).find("term").text();
+                qVo.pronc=$(this).find("pronc").text();//<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
                 qVo.Audiomeaning = $(this).find("def").text();
                 qVo.AudioSentence = $(this).find("sen").text();
                 qVo.SpaneshTerm = $(this).find("spanishterm").text();
@@ -93,6 +94,7 @@ function DtataProvider1(url, fuc) {
         //contains the queistion level details
         var qType;
         var term;
+        var pronc;
         var meaning;
         var termAudio;
         var deffAudio;
