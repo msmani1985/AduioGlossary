@@ -69,12 +69,14 @@ function onSidenav()
 }
 
 function bodyloaded1() {
+	document.getElementById("loadder").style.display="block";
 	document.addEventListener("dataLoaded", createUI);
 	document.addEventListener("dataLoaded", createUI1);
 	modelObj = new DtataProvider("xml/chapter.xml", createUI);
 	modelObj1 = new DtataProvider1("xml/terms.xml", createUI1);
 	psbi=null;
 	document.getElementById("previous").disabled=true;
+	//document.getElementById("loadder").style.display="none";
 }
 
 function createUI(e) //to load data into the UI
@@ -469,6 +471,9 @@ function ToViewSpanTerm()
 						Abtn.innerHTML = "Play Term Audio";
 						TOappnd.appendChild(Abtn);
 						//audioElement.play();
+						audioElement.onloadeddata=function(){
+							document.getElementById("loadder").style.display="none";
+						}
 						$('.play').click(function () {
 							audioElement.play();
 						});
@@ -504,6 +509,7 @@ function ToViewSpanTerm()
 							Abtn.innerHTML = "Play Def Audio";
 							DefAud.appendChild(Abtn);
 							//DefaudioElement.play();
+							
 							$('.Defplayplay').click(function () {
 								DefaudioElement.play();
 							});
@@ -554,8 +560,15 @@ function ToViewSpanTerm()
 						Abtn.setAttribute("onmouseout", "mOut(this)");
 						Abtn.innerHTML = "Play Def Audio";
 						TOappnd.appendChild(Abtn);
+						audioElement.onloadeddata=function(){
+							document.getElementById("loadder").style.display="none";
+						}
 						audioElement1.preload = "none";
+						audioElement.onloadeddata=function(){
+							document.getElementById("loadder").style.display="none";
+						}
 						$('.play').click(function () {
+
 							audioElement1.play();
 						});
 
@@ -596,6 +609,9 @@ function ToViewSpanTerm()
 					audioElement1.setAttribute('src', "media/span/media/" + GroupArray[t].AudioList[j].SpanURL+".mp3");
 					
 					//alert("media/span/media/" + GroupArray[t].AudioList[j].SpanURL);
+					audioElement1.onloadeddata=function(){
+							document.getElementById("loadder").style.display="none";
+						}
 					audioElement1.play();
 					var TOappnd = document.getElementById('Audio1');
 					var Abtn = document.createElement("button");
@@ -606,6 +622,9 @@ function ToViewSpanTerm()
 					Abtn.innerHTML = "Play Def Audio";
 					TOappnd.appendChild(Abtn);
 					audioElement1.preload = "none";
+					audioElement1.onloadeddata=function(){
+							document.getElementById("loadder").style.display="none";
+						}
 					$('.play').click(function () {
 						audioElement1.play();
 					});
@@ -1516,6 +1535,7 @@ var x1= document.getElementById("termChoose");
 
 
 function onSelectDef() {
+	document.getElementById("loadder").style.display="block";
  if (window.matchMedia("(min-width: 768px)").matches) {
 	if($("#sidemenu").attr("class").indexOf("sideNav")>0)
 	{
@@ -1620,6 +1640,7 @@ if($("#main_cont").attr("class").indexOf("col-xs-4")>0)
 
  }
 audioElement1.pause();
+
 //TAudioption.currentTime = 0;
 	var currAud=0;
 	var bx = document.getElementById("box");
@@ -1660,11 +1681,15 @@ audioElement1.pause();
 				DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning;
 				if(GroupArray[t].AudioList[j].SpaneshTerm=="")
 				{
+					ToViewSpanTerm();
 					document.getElementById("ESToggle").style.visibility="hidden";
+					
 				}
 				else
 				{
-						ToViewSpanTerm();
+					
+					
+				ToViewSpanTerm();
 				var TC = document.getElementById("spanitem_1");
 				TC.style.color="blue";	
 				TC.innerHTML = '<span class="badge" >Related Spanish term</span> '+GroupArray[t].AudioList[j].SpaneshTerm;
@@ -1692,6 +1717,9 @@ audioElement1.pause();
 				Abtn.innerHTML = "Play Term Audio";
 				TOappnd.appendChild(Abtn);
 				//audioElement.play();
+				audioElement.onloadeddata=function(){
+							document.getElementById("loadder").style.display="none";
+						}
 				$('.play').click(function () {
 					audioElement.play();
 				});
@@ -1768,6 +1796,9 @@ audioElement1.pause();
 				TOappnd.innerHTML = "";
 				audioElement1.setAttribute('src', "media/" + GroupArray[t].AudioList[j].AudioUrl);
 				//alert("media/" + GroupArray[t].AudioList[j].AudioUrl);
+				audioElement1.onloadeddata=function(){
+							document.getElementById("loadder").style.display="none";
+						}
 				audioElement1.play();
 				var TOappnd = document.getElementById('Audio1');
 				var Abtn = document.createElement("button");
@@ -1778,6 +1809,9 @@ audioElement1.pause();
 				Abtn.innerHTML = "Play Def Audio";
 				TOappnd.appendChild(Abtn);
 				audioElement1.preload = "none";
+				audioElement1.onloadeddata=function(){
+							document.getElementById("loadder").style.display="none";
+						}
 				$('.play').click(function () {
 					audioElement1.play();
 				});
@@ -1789,6 +1823,7 @@ audioElement1.pause();
 			else if(GroupArray[t].AudioList[j].SpaneshTerm == selectedterm)//Spanes Definition Display Frame
 			{
 			// SpanURL
+			ToViewSpanTerm();
 				var TC = document.getElementById("termContent");
 				TC.innerHTML = GroupArray[t].AudioList[j].SpaneshTerm;
 				var DC = document.getElementById("definitionContent");
@@ -1805,6 +1840,9 @@ audioElement1.pause();
 				audioElement1.setAttribute('src', "media/span/media/" + GroupArray[t].AudioList[j].SpanURL+".mp3");
 				
 				//alert("media/span/media/" + GroupArray[t].AudioList[j].SpanURL);
+				audioElement1.onloadeddata=function(){
+							document.getElementById("loadder").style.display="none";
+						}
 				audioElement1.play();
 				var TOappnd = document.getElementById('Audio1');
 				var Abtn = document.createElement("button");
@@ -1837,6 +1875,9 @@ audioElement1.pause();
 				Abtn.innerHTML = "Play Term Audio";
 				TOappnd.appendChild(Abtn);
 				//audioElement.play();
+				audioElement.onloadeddata=function(){
+							document.getElementById("loadder").style.display="none";
+						}
 				$('.play').click(function () {
 					audioElement.play();
 				});
@@ -1867,6 +1908,7 @@ audioElement1.pause();
 	if (cnt == 0) {
 		//alert("Not found");
 	}
+	//document.getElementById("loadder").style.display="none";
 }
 
 function mOver(obj) {
