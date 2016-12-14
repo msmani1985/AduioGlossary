@@ -71,7 +71,7 @@ p{font:normal 14px PTSans; color:#333333;padding:0px 0px; }
 ul{padding:0px;font:normal 14px PTSans;list-style:none; }
 li{ padding:0px; margin:0px; list-style:none; }
 input{outline:none;}
-.body{}
+.body{max-width:1050px; }
 .fl{float:left;} 
 .fr{float:right;}
 
@@ -83,7 +83,7 @@ h5{margin:0;padding:0;font: normal 11px PTSans;color:#333333;}
 h6{margin:0;padding:0;font: bold 18px PTSans;color:#333333;}  
 
 /*Global Header Starts*/
-.header,.article,.footer,.banner,.warticle{margin:0 auto;width:100%;max-width:900px; -moz-transition: all .3s ease-in-out;-webkit-transition: all .3s ease-in-out;-o-transition:  all .3s ease-in-out;transition:  all .3s ease-in-out; }
+.header,.article,.footer,.banner,.warticle{margin:0 auto;width:100%;max-width:1000px; -moz-transition: all .3s ease-in-out;-webkit-transition: all .3s ease-in-out;-o-transition:  all .3s ease-in-out;transition:  all .3s ease-in-out; }
 .body { margin:20px auto 10px auto; border:1px solid #6f99b8; box-shadow:0 0 10px #5381ac; border-radius:6px; -moz-border-radius:6px; -webkit-border-radius:6px; background:#ffffff; padding:10px; overflow:hidden; } 
 .header {padding: 0 0 0px 0;position: relative;}
 .logo { float: none;margin: 0 auto;max-width: 484px;text-align: center;width: 100%;transition: all .3s ease-in-out;-moz-transition: all .3s ease-in-out;-webkit-transition: all .3s ease-in-out;-o-transition:  all .3s ease-in-out;}
