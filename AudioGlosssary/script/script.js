@@ -106,13 +106,13 @@ function createUI1(e) {
 	currentQ = 0;
 	var MYLIST = document.getElementById("myLi"); //chapter level data
 	var lix = document.createElement("li");
-	lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-warning\" style=\"width:42px;height:25px;font-size:15px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"All\" value=\"All\">";
+	lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-warning\" style=\" width: 35px;    height: 25px;    font-size: 17px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;\" onclick=\"onSelection3(this)\" id=\"All\" value=\"All\">";
 	//lix.innerHTML="<button type=\"button\" class=\"btn btn-default\" onclick=\"onSelection3(this)\" id=\"All\" value=\"All\">All</button>"
 	MYLIST.appendChild(lix);
 	for (var i = 0; i < GROUP.length; i++) //loading chapter headdings to dropdown box
 	{
 		var lix = document.createElement("li");
-		lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-info\" style=\"width:42px;height:25px;font-size:17px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"" + GROUP[i] + "index\" value=\"" + GROUP[i] + "\">";
+		lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-info\" style=\"    width: 35px;    height: 25px;    font-size: 17px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 12px;    padding-right: 1em;\" onclick=\"onSelection3(this)\" id=\"" + GROUP[i] + "index\" value=\"" + GROUP[i] + "\">";
 		MYLIST.appendChild(lix);
 	}
 	//document.getElementById("b1").disabled = true;
@@ -123,7 +123,7 @@ function createUI1(e) {
 		//for (var i = 0; i < GROUP.length; i++) //loading chapter headdings to dropdown box
 		{
 			document.getElementById("myLi").childNodes[la].childNodes[0].value = GROUP[la - 1];
-			document.getElementById("myLi").childNodes[la].childNodes[0].style.fontSize = "17px";
+			document.getElementById("myLi").childNodes[la].childNodes[0].style.paddingLeft= "12px";
 		}
 		document.getElementById("myLi").childNodes[la].style.display = "block";
 	}
@@ -170,7 +170,8 @@ function createUI1(e) {
 			if (varnon != "") {
 				//alert(varnon+"-"+document.getElementById("myLi").childNodes[la].childNodes[0].value);
 				document.getElementById("myLi").childNodes[la].childNodes[0].value = varnon + "-" + document.getElementById("myLi").childNodes[la].childNodes[0].value
-				document.getElementById("myLi").childNodes[la].childNodes[0].style.fontSize = "14px";
+				document.getElementById("myLi").childNodes[la].childNodes[0].style.paddingLeft= "2px";
+				
 				//document.getElementById("myLi").childNodes[la],childNodes[0].setAttribute("value",varnon + "-"+document.getElementById("myLi").childNodes[la].previousSibling,childNodes[0].getAttribute("value"));
 				varnon = "";
 			}
@@ -211,7 +212,7 @@ function createUI1(e) {
 			var a = document.createElement("a");
 			li.setAttribute("class", "list-group-item list-group-itemn-action btn-warning");
 			a.setAttribute("onclick", "onSelectDef_1(this)");
-			a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
+			a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
 			li.value = j
 			var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm);
 			//li.text = GroupArray[t].AudioList[j].Audioterm;
@@ -245,14 +246,14 @@ function createUI1(e) {
 				var li1 = document.createElement("li");
 				var a = document.createElement("a");
 				a.setAttribute("onclick", "onSelectDef_1(this)");
-				a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
+				a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
 				li1.setAttribute("class", "list-group-item list-group-item btn-warning");
 				li1.value = j;
 				var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm);
 				//li1.text = GroupArray[t].AudioList[j].SpaneshTerm;
 				a.appendChild(t1);
 				li1.appendChild(a);
-				a.setAttribute("style", "color:blue;font-weight:bold;cursor:pointer");
+				a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin: -10em;");
 				//termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].SpaneshTerm+'",';
 				selectList1.appendChild(li1);
 				/********************************************************************************************************* */
@@ -670,7 +671,7 @@ function onSelection2() {
 		//for (var i = 0; i < GROUP.length; i++) //loading chapter headdings to dropdown box
 		{
 			document.getElementById("myLi").childNodes[la].childNodes[0].value = GROUP[la - 1];
-			document.getElementById("myLi").childNodes[la].childNodes[0].style.fontSize = "17px";
+			document.getElementById("myLi").childNodes[la].childNodes[0].style.paddingLeft= "12px";
 		}
 		document.getElementById("myLi").childNodes[la].style.display = "block";
 	}
@@ -722,7 +723,7 @@ function onSelection2() {
 				//alert(varnon+"-"+document.getElementById("myLi").childNodes[la].childNodes[0].value);
 				document.getElementById("myLi").childNodes[la].childNodes[0].value = varnon + "-" + document.getElementById("myLi").childNodes[la].childNodes[0].value
 					//document.getElementById("myLi").childNodes[la],childNodes[0].setAttribute("value",varnon + "-"+document.getElementById("myLi").childNodes[la].previousSibling,childNodes[0].getAttribute("value"));
-				document.getElementById("myLi").childNodes[la].childNodes[0].style.fontSize = "15px";
+				document.getElementById("myLi").childNodes[la].childNodes[0].style.paddingLeft= "2px";
 				varnon = "";
 			}
 		}
@@ -782,10 +783,10 @@ function onSelection2() {
 						/*********************************************************************************** */
 						var li = document.createElement("li");
 						var a = document.createElement("a");
-						li.setAttribute("class", "list-group-item list-group-itemn-action btn-warning");
+						li.setAttribute("class", "list-group-item list-group-itemn-action btn-warning click_width");
 						a.setAttribute("onclick", "onSelectDef_1(this)");
-						a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
-						li.value = j
+						a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
+												li.value = j
 						var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm);
 						//li.text = GroupArray[t].AudioList[j].Audioterm;
 						a.appendChild(t1);
@@ -813,7 +814,7 @@ function onSelection2() {
 							var a = document.createElement("a");
 							li.setAttribute("class", "list-group-item list-group-itemn-action btn-warning");
 							a.setAttribute("onclick", "onSelectDef_1(this)");
-							a.setAttribute("style", "color:blue;font-weight:bold;cursor:pointer");
+							a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin: -10em;");
 							li.value = j
 							var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm);
 							//li.text = GroupArray[t].AudioList[j].Audioterm;
@@ -872,7 +873,7 @@ function onSelection2() {
 				var a = document.createElement("a");
 				li.setAttribute("class", "list-group-item list-group-itemn-action btn-warning");
 				a.setAttribute("onclick", "onSelectDef_1(this)");
-				a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
+				a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
 				li.value = -1
 				var t1 = document.createTextNode("No Term.......!");
 				//li.text = GroupArray[t].AudioList[j].Audioterm;
@@ -893,7 +894,7 @@ function onSelection2() {
 				var a = document.createElement("a");
 				li.setAttribute("class", "list-group-item list-group-itemn-action btn-warning");
 				a.setAttribute("onclick", "onSelectDef_1(this)");
-				a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
+				a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
 				li.value = -1
 				var t1 = document.createTextNode("No Term.......!");
 				//li.text = GroupArray[t].AudioList[j].Audioterm;
@@ -922,7 +923,7 @@ function onSelection2() {
 				//for (var i = 0; i < GROUP.length; i++) //loading chapter headdings to dropdown box
 				{
 					document.getElementById("myLi").childNodes[la].childNodes[0].value = GROUP[la - 1];
-					document.getElementById("myLi").childNodes[la].childNodes[0].style.fontSize = "17px";
+					document.getElementById("myLi").childNodes[la].childNodes[0].style.paddingLeft= "12px";
 				}
 				document.getElementById("myLi").childNodes[la].style.display = "block";
 			}
@@ -985,7 +986,7 @@ function onSelection2() {
 					var a = document.createElement("a");
 					li.setAttribute("class", "list-group-item list-group-itemn-action btn-warning");
 					a.setAttribute("onclick", "onSelectDef_1(this)");
-					a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
+					a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin: -10em;");
 					li.value = j
 					var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm);
 					//li.text = GroupArray[t].AudioList[j].Audioterm;
@@ -1006,7 +1007,7 @@ function onSelection2() {
 						var a = document.createElement("a");
 						li.setAttribute("class", "list-group-item list-group-itemn-action btn-warning");
 						a.setAttribute("onclick", "onSelectDef_1(this)");
-						a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
+						a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
 						li.value = j
 						var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm);
 						//li.text = GroupArray[t].AudioList[j].Audioterm;
@@ -1139,7 +1140,7 @@ function onSelection3(obj) {
 						var a = document.createElement("a");
 						li.setAttribute("class", "list-group-item list-group-itemn-action btn-warning");
 						a.setAttribute("onclick", "onSelectDef_1(this)");
-						a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
+						a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin: -10em;");
 						li.value = j
 						var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm);
 						//li.text = GroupArray[t].AudioList[j].Audioterm;
@@ -1162,13 +1163,13 @@ function onSelection3(obj) {
 							var a = document.createElement("a");
 							a.setAttribute("onclick", "onSelectDef_1(this)");
 							a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
-							li1.setAttribute("class", "list-group-item list-group-item btn-warning");
+							a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
 							li1.value = j;
 							var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm);
 							//li1.text = GroupArray[t].AudioList[j].SpaneshTerm;
 							a.appendChild(t1);
 							li1.appendChild(a);
-							a.setAttribute("style", "color:blue;font-weight:bold;cursor:pointer");
+							a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
 							//termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].SpaneshTerm+'",';
 							selectList1.appendChild(li1);
 
@@ -1225,7 +1226,7 @@ function onSelection3(obj) {
 							var a = document.createElement("a");
 							li.setAttribute("class", "list-group-item list-group-itemn-action btn-warning");
 							a.setAttribute("onclick", "onSelectDef_1(this)");
-							a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
+							a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
 							li.value = j
 							var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm);
 							//li.text = GroupArray[t].AudioList[j].Audioterm;
@@ -1245,7 +1246,7 @@ function onSelection3(obj) {
 								var a = document.createElement("a");
 								li.setAttribute("class", "list-group-item list-group-itemn-action btn-warning");
 								a.setAttribute("onclick", "onSelectDef_1(this)");
-								a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
+								a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin: -10em;");
 								li.value = j
 								var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm);
 								//li.text = GroupArray[t].AudioList[j].Audioterm;
@@ -1304,7 +1305,7 @@ function onSelection3(obj) {
 				var a = document.createElement("a");
 				li.setAttribute("class", "list-group-item list-group-itemn-action btn-warning");
 				a.setAttribute("onclick", "onSelectDef_1(this)");
-				a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
+				a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
 				li.value = j
 				var t1 = document.createTextNode("No Terms.....!");
 				//li.text = GroupArray[t].AudioList[j].Audioterm;
@@ -1381,7 +1382,7 @@ function onSelection3(obj) {
 		var a = document.createElement("a");
 		li.setAttribute("class", "list-group-item list-group-itemn-action btn-warning");
 		a.setAttribute("onclick", "onSelectDef_1(this)");
-		a.setAttribute("style", "color:black;font-weight:bold;cursor:pointer");
+		a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
 		li.value = j
 		var t1 = document.createTextNode("No Terms..!");
 		//li.text = GroupArray[t].AudioList[j].Audioterm;
