@@ -26,7 +26,7 @@ var FirstDefinition
 var loaded = false
 var audioElement1
 var psbi = null
-var count = -1
+var count = 0
 // onSideNav method used to dispaly an hide the alphabet menu
 function onSidenav() {
 
@@ -63,6 +63,8 @@ function bodyloaded1 () {
   modelObj1 = new DtataProvider1('xml/terms.xml', createUI1)
   psbi = null
   document.getElementById('previous').disabled = true
+  document.getElementById('next').disabled =false
+  
 }
 
 function createUI (e) // to load data into the UI
@@ -170,11 +172,11 @@ function createUI1 (e) {
   var termsdetsear = ''
   /**************************************************************************************** */
   for (var t = 0; t < GroupArray.length; t++) {
-    selectList.setAttribute('id', 'termChoose')
+   // selectList.setAttribute('id', 'termChoose')
     // selectList.setAttribute("size", "42")
-    selectList.setAttribute('style', 'width:200px')
-    selectList.setAttribute('onclick', 'onSelectDef()')
-    myDiv.appendChild(selectList)
+    //selectList.setAttribute('style', 'width:200px')
+    //selectList.setAttribute('onclick', 'onSelectDef()')
+    //myDiv.appendChild(selectList)
     selectList1.setAttribute('id', 'termChoose1')
     // selectList.setAttribute("size", "42")
     selectList1.setAttribute('style', 'width:200px')
@@ -185,16 +187,16 @@ function createUI1 (e) {
     {
       Defarray.push(GroupArray[t].AudioList[j].Audiomeaning)
       // alert(GroupArray[t].AudioList[j].chapterattr)
-      var option = document.createElement('option')
-      option.value = GroupArray[t].AudioList[j].Audioterm
-      option.text = GroupArray[t].AudioList[j].Audioterm
-      selectList.appendChild(option)
+     // var option = document.createElement('option')
+     // option.value = GroupArray[t].AudioList[j].Audioterm
+      //option.text = GroupArray[t].AudioList[j].Audioterm
+      //selectList.appendChild(option)
       var li = document.createElement('li')
       var a = document.createElement('a')
       li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
       a.setAttribute('onclick', 'onSelectDef_1(this)')
       //a.setAttribute('style', 'color:black;font-weight:bold;cursor:pointer')
-	  a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
+	    a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
 	  
       li.value = j
       var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
@@ -213,16 +215,16 @@ function createUI1 (e) {
       if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
         // termsdetsear=termsdetsear+","
       }else {
-        var option1 = document.createElement('option')
-        option1.value = GroupArray[t].AudioList[j].SpaneshTerm
-        option1.text = GroupArray[t].AudioList[j].SpaneshTerm
-        option1.setAttribute('style', 'color:blue')
+        //var option1 = document.createElement('option')
+        //option1.value = GroupArray[t].AudioList[j].SpaneshTerm
+        //option1.text = GroupArray[t].AudioList[j].SpaneshTerm
+        //option1.setAttribute('style', 'color:blue')
 
         /*********************************************************************************************** */
         termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].SpaneshTerm + '",'
         /********************************************************************************************** */
 
-        selectList.appendChild(option1)
+        //selectList.appendChild(option1)
         /****************************************************************************************** */
         // Mobile browser side me layout
         /******************************************************************************************* */
@@ -242,7 +244,7 @@ function createUI1 (e) {
         /********************************************************************************************************* */
 
       }
-      option1.setAttribute('style', 'color:blue')
+      //option1.setAttribute('style', 'color:blue')
       li1.setAttribute('style', 'color:blue')
       if (GroupArray[t].groupname == 'A') {
         FirstTerm = GroupArray[t].AudioList[0].Audioterm
@@ -266,29 +268,42 @@ function createUI1 (e) {
   /********************************************************************************************************** */
   $('#bl').attr('disabled', true)
   $('#b2').attr('disabled', true)
+  document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
 }
 
 function onPrevious () {
-  count = count - 1
+  
   if (count == 0) {
     document.getElementById('previous').disabled = true
     document.getElementById('next').disabled = false
   }else {
-    document.getElementById('termChoose').selectedIndex = count
-    document.getElementById('number_term').innerHTML = count + '/' + document.getElementById('termChoose').length
-    onSelectDef()
+    
+     document.getElementById('previous').disabled = false
+    document.getElementById('next').disabled = false
+    onSelectDef(document.getElementById('termChoose1').childNodes[count-1].childNodes[0]);
+    document.getElementById('number_term').innerHTML = count + '/' + document.getElementById('termChoose1').childNodes.length
+    count = count - 1 
+    if (count == 0) {
+    document.getElementById('previous').disabled = true
+    document.getElementById('next').disabled = false
+    }
   }
 }
 
 function onNext () {
   // alert(document.getElementById("termChoose").length + " " + count)
   count = count + 1
-  if (count < document.getElementById('termChoose').length) {
+  
+  if (count < document.getElementById('termChoose1').childNodes.length) {
     document.getElementById('previous').disabled = false
     document.getElementById('next').disabled = false
-    document.getElementById('termChoose').selectedIndex = count
-    document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose').length
-    onSelectDef()
+    onSelectDef(document.getElementById('termChoose1').childNodes[count].childNodes[0])
+    document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
+    if (count >= document.getElementById('termChoose1').childNodes.length-1) {
+      
+        document.getElementById('previous').disabled = false
+        document.getElementById('next').disabled = true
+      }
   }else {
     document.getElementById('previous').disabled = false
     document.getElementById('next').disabled = true
@@ -325,11 +340,32 @@ function search () {
       callback: {
         onClickAfter: function (node, a, item, event) {
           // href key gets added inside item from options.href configuration
-          var x1 = document.getElementById('termChoose')
+          var x1 = document.getElementById('termChoose1').childNodes;
           for (var x = 0;x < x1.length;x++) {
-            if (x1[x].value == item.display) {
-              x1.selectedIndex = x
-              onSelectDef()
+            
+            if (x1[x].childNodes[0].text == item.display) {
+              //x1.selectedIndex = x
+              count=x;
+              
+              if(x==0)
+              {
+                  document.getElementById('previous').disabled = true
+                  document.getElementById('next').disabled = false
+              }
+              else
+              {
+                document.getElementById('previous').disabled = false
+                document.getElementById('next').disabled = false
+              }
+              
+              if(x==x1.length-1)
+              {
+                  document.getElementById('previous').disabled = false
+                  document.getElementById('next').disabled = true
+              }
+              
+              document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
+              onSelectDef(x1[x].childNodes[0]);
               break
             }
           }
@@ -348,30 +384,6 @@ function ToViewSpanTerm () {
   }else {
     document.getElementById('b3').value = 'English Terms'
     document.getElementById('b3').style = '	background-color: #7D81D1;'
-    var x = document.getElementById('termChoose')
-    x.remove()
-	 var x = document.getElementById('termChoose1')
-    x.remove()
-    var myDiv = document.getElementById('section')
-    var selectList = document.createElement('select')
-    for (var t = 0; t < GroupArray.length; t++) {
-      for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
-      {
-        selectList.setAttribute('id', 'termChoose')
-        // selectList.setAttribute("size", "42")
-        selectList.setAttribute('style', 'width:200px')
-        selectList.setAttribute('onclick', 'onSelectDef(this)')
-        myDiv.appendChild(selectList)
-        if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
-        }else {
-          var option = document.createElement('option')
-          option.value = GroupArray[t].AudioList[j].SpaneshTerm
-          option.text = GroupArray[t].AudioList[j].SpaneshTerm
-          option.setAttribute('style', 'color:blue')
-          selectList.appendChild(option)
-        }
-      }
-    }
   }
 }
 /************************************************************* */
@@ -468,15 +480,15 @@ function onSelection2 () {
   var sectiondatacount = 0
   for (var t = 0; t < modalData.length; t++) {
     if (modalData[t].name == currentChap) {
-      var x = document.getElementById('termChoose')
-      x.remove()
+      //var x = document.getElementById('termChoose')
+      //x.remove()
       var x = document.getElementById('termChoose1')
       x.remove()
       var chapterNumberOnly = modalData[t].name
       var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10)
       var chapterNumberOnly2 = '\,' + chapterNumberOnly1.trim() + '\,'
       var myDiv = document.getElementById('section')
-      var selectList = document.createElement('select')
+      //var selectList = document.createElement('select')
       /************************************************************************ */
       // Change for Mobile layout design
       /************************************************************************* */
@@ -489,11 +501,11 @@ function onSelection2 () {
       /*************************************************************************** */
       var termsdetsear = ''
       for (var t = 0; t < GroupArray.length; t++) {
-        selectList.setAttribute('id', 'termChoose')
+        //selectList.setAttribute('id', 'termChoose')
         // selectList.setAttribute("size", "42")
-        selectList.setAttribute('style', 'width:200px')
-        selectList.setAttribute('onclick', 'onSelectDef(this)')
-        myDiv.appendChild(selectList)
+        //selectList.setAttribute('style', 'width:200px')
+        //selectList.setAttribute('onclick', 'onSelectDef(this)')
+        //myDiv.appendChild(selectList)
 
         selectList1.setAttribute('id', 'termChoose1')
         // selectList.setAttribute("size", "42")
@@ -507,10 +519,10 @@ function onSelection2 () {
           if (GroupArray[t].AudioList[j].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
             sectiondatacount++
             // alert(GroupArray[t].AudioList[j].Audioterm)
-            var option = document.createElement('option')
-            option.value = GroupArray[t].AudioList[j].Audioterm
-            option.text = GroupArray[t].AudioList[j].Audioterm
-            selectList.appendChild(option)
+          //  var option = document.createElement('option')
+           // option.value = GroupArray[t].AudioList[j].Audioterm
+           // option.text = GroupArray[t].AudioList[j].Audioterm
+            //selectList.appendChild(option)
             termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].Audioterm + '",'
             /*********************************************************************************** */
             // li tag create and a tag created
@@ -533,11 +545,11 @@ function onSelection2 () {
             if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
             }else {
               // alert(GroupArray[t].AudioList[j].SpaneshTerm)
-              var option1 = document.createElement('option')
-              option1.value = GroupArray[t].AudioList[j].SpaneshTerm
-              option1.text = GroupArray[t].AudioList[j].SpaneshTerm
-              option1.setAttribute('style', 'color:blue')
-              selectList.appendChild(option1)
+              //var option1 = document.createElement('option')
+              //option1.value = GroupArray[t].AudioList[j].SpaneshTerm
+              //option1.text = GroupArray[t].AudioList[j].SpaneshTerm
+              //option1.setAttribute('style', 'color:blue')
+              //selectList.appendChild(option1)
               /*************************************************************************************** */
               // li and a tag create for spanish trm with ble font color
               /*************************************************************************************** */
@@ -582,18 +594,18 @@ function onSelection2 () {
         var ToappendBox1 = document.getElementById('Term')
         ToappendBox1.appendChild(toreport1)
 
-        var x = document.getElementById('termChoose')
-        x.remove()
+        //var x = document.getElementById('termChoose')
+        //x.remove()
         var x = document.getElementById('termChoose1')
         x.remove()
 
         var myDiv = document.getElementById('section')
-        var selectList = document.createElement('select')
-        selectList.setAttribute('id', 'termChoose')
+        //var selectList = document.createElement('select')
+        //selectList.setAttribute('id', 'termChoose')
         // selectList.setAttribute("size", "42")
-        selectList.setAttribute('style', 'width:200px')
+        //selectList.setAttribute('style', 'width:200px')
         // selectList.setAttribute("onclick","onSelectDef()")
-        myDiv.appendChild(selectList)
+        //myDiv.appendChild(selectList)
         /* list item  */
         var selectList1 = document.createElement('ul')
         selectList1.setAttribute('id', 'termChoose1')
@@ -616,10 +628,10 @@ function onSelection2 () {
         /**************************/
 
 
-        var option = document.createElement('option')
-        option.value = 'empty'
-        option.text = 'No Terms......!'
-        selectList.appendChild(option)
+        //var option = document.createElement('option')
+        //option.value = 'empty'
+        //option.text = 'No Terms......!'
+        //selectList.appendChild(option)
 
         var li = document.createElement('li')
         var a = document.createElement('a')
@@ -677,35 +689,35 @@ function onSelection2 () {
         }
       }
 
-      var x = document.getElementById('termChoose')
-      x.remove()
+      //var x = document.getElementById('termChoose')
+      //x.remove()
 
       var x = document.getElementById('termChoose1')
       x.remove()
 
       var myDiv = document.getElementById('section')
-      var selectList = document.createElement('select')
+      //var selectList = document.createElement('select')
 
       var selectList1 = document.createElement('ul')
       var termsdetsear = ''
       for (var t = 0; t < GroupArray.length; t++) {
-        selectList.setAttribute('id', 'termChoose')
+     //   selectList.setAttribute('id', 'termChoose')
         // selectList.setAttribute("size", "42")
-        selectList.setAttribute('style', 'width:200px')
-        selectList.setAttribute('onclick', 'onSelectDef(this)')
+       // selectList.setAttribute('style', 'width:200px')
+       // selectList.setAttribute('onclick', 'onSelectDef(this)')
 
         selectList1.setAttribute('id', 'termChoose1')
         // selectList.setAttribute("size", "42")
         selectList1.setAttribute('style', 'width:200px')
         // selectList1.setAttribute("onclick", "onSelectDef(this)")
         myDiv.appendChild(selectList1)
-        myDiv.appendChild(selectList)
+       // myDiv.appendChild(selectList)
 
         for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
         {
-          var option = document.createElement('option')
-          option.value = GroupArray[t].AudioList[j].Audioterm
-          option.text = GroupArray[t].AudioList[j].Audioterm
+         // var option = document.createElement('option')
+         // option.value = GroupArray[t].AudioList[j].Audioterm
+         // option.text = GroupArray[t].AudioList[j].Audioterm
 
           var li = document.createElement('li')
           var a = document.createElement('a')
@@ -718,16 +730,16 @@ function onSelection2 () {
           a.appendChild(t1)
           li.appendChild(a)
           selectList1.appendChild(li)
-          selectList.appendChild(option)
+         // selectList.appendChild(option)
           termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].Audioterm + '",'
           if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
           }else {
             // alert(GroupArray[t].AudioList[j].SpaneshTerm)
-            var option1 = document.createElement('option')
-            option1.value = GroupArray[t].AudioList[j].SpaneshTerm
-            option1.text = GroupArray[t].AudioList[j].SpaneshTerm
-            option1.setAttribute('style', 'color:blue')
-            selectList.appendChild(option1)
+           // var option1 = document.createElement('option')
+           // option1.value = GroupArray[t].AudioList[j].SpaneshTerm
+            //option1.text = GroupArray[t].AudioList[j].SpaneshTerm
+            //option1.setAttribute('style', 'color:blue')
+            //selectList.appendChild(option1)
             termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].SpaneshTerm + '",'
             var li = document.createElement('li')
             var a = document.createElement('a')
@@ -743,12 +755,14 @@ function onSelection2 () {
             // option1.value = GroupArray[t].AudioList[j].SpaneshTerm
             // option1.text = GroupArray[t].AudioList[j].SpaneshTerm
 
-            selectList.appendChild(option1)
+            //selectList.appendChild(option1)
           }
         }
       }
     }
   }
+  count=0;
+  document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
   var termdsdetsear1 = JSON.parse('[' + removeLastComma(termsdetsear) + ']')
   console.log(termdsdetsear1)
   data = {'ale': termdsdetsear1}
@@ -811,20 +825,20 @@ function onSelection3 (obj) {
         if (gName == GroupArray[t].groupname) {
           gcount++
 
-          var x = document.getElementById('termChoose')
-          x.remove()
+          //var x = document.getElementById('termChoose')
+          //x.remove()
 
           var x1 = document.getElementById('termChoose1')
           x1.remove()
 
           var myDiv = document.getElementById('section')
-          var selectList = document.createElement('select')
-          selectList.setAttribute('id', 'termChoose')
+          //var selectList = document.createElement('select')
+          //selectList.setAttribute('id', 'termChoose')
           // selectList.setAttribute("size", "42")
-          selectList.setAttribute('style', 'width:200px')
-          selectList.setAttribute('onclick', 'onSelectDef(this)')
+          //selectList.setAttribute('style', 'width:200px')
+          //selectList.setAttribute('onclick', 'onSelectDef(this)')
 
-          myDiv.appendChild(selectList)
+          //myDiv.appendChild(selectList)
 
           var selectList1 = document.createElement('ul')
           selectList1.setAttribute('id', 'termChoose1')
@@ -835,9 +849,9 @@ function onSelection3 (obj) {
 
           for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
           {
-            var option = document.createElement('option')
-            option.value = GroupArray[t].AudioList[j].Audioterm
-            option.text = GroupArray[t].AudioList[j].Audioterm
+            //var option = document.createElement('option')
+           // option.value = GroupArray[t].AudioList[j].Audioterm
+            //option.text = GroupArray[t].AudioList[j].Audioterm
 
             var li = document.createElement('li')
             var a = document.createElement('a')
@@ -850,18 +864,18 @@ function onSelection3 (obj) {
             a.appendChild(t1)
             li.appendChild(a)
 
-			selectList.appendChild(option)
+			      //selectList.appendChild(option)
             selectList1.appendChild(li)
-
+            
 
             if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
             }else {
               // alert(GroupArray[t].AudioList[j].SpaneshTerm)
-              var option1 = document.createElement('option')
-              option1.value = GroupArray[t].AudioList[j].SpaneshTerm
-              option1.text = GroupArray[t].AudioList[j].SpaneshTerm
-              option1.setAttribute('style', 'color:blue')
-              selectList.appendChild(option1)
+              //var option1 = document.createElement('option')
+              //option1.value = GroupArray[t].AudioList[j].SpaneshTerm
+              //option1.text = GroupArray[t].AudioList[j].SpaneshTerm
+              //option1.setAttribute('style', 'color:blue')
+              //selectList.appendChild(option1)
 
               var li1 = document.createElement('li')
               var a = document.createElement('a')
@@ -896,17 +910,17 @@ function onSelection3 (obj) {
 
       for (var t = 0; t < GroupArray.length; t++) {
         if (GroupArray[t].groupname == gName) {
-          var x = document.getElementById('termChoose')
-          x.remove()
+          //var x = document.getElementById('termChoose')
+          //x.remove()
           var x = document.getElementById('termChoose1')
           x.remove()
           var myDiv = document.getElementById('section')
-          var selectList = document.createElement('select')
-          selectList.setAttribute('id', 'termChoose')
+          //var selectList = document.createElement('select')
+          //selectList.setAttribute('id', 'termChoose')
           // selectList.setAttribute("size", "42")
-          selectList.setAttribute('style', 'width:200px')
-          selectList.setAttribute('onclick', 'onSelectDef(this)')
-          myDiv.appendChild(selectList)
+         // selectList.setAttribute('style', 'width:200px')
+         // selectList.setAttribute('onclick', 'onSelectDef(this)')
+          //myDiv.appendChild(selectList)
 
           var selectList1 = document.createElement('ul')
           selectList1.setAttribute('id', 'termChoose1')
@@ -918,10 +932,10 @@ function onSelection3 (obj) {
           for (var j = 0; j < GroupArray[t].AudioList.length; j++) {
             if (GroupArray[t].AudioList[j].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
               cntvar++
-              var option = document.createElement('option')
-              option.value = GroupArray[t].AudioList[j].Audioterm
-              option.text = GroupArray[t].AudioList[j].Audioterm
-              selectList.appendChild(option)
+            //  var option = document.createElement('option')
+            //  option.value = GroupArray[t].AudioList[j].Audioterm
+            //  option.text = GroupArray[t].AudioList[j].Audioterm
+             // selectList.appendChild(option)
 
               var li = document.createElement('li')
               var a = document.createElement('a')
@@ -938,11 +952,11 @@ function onSelection3 (obj) {
               if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
               }else {
                 // alert(GroupArray[t].AudioList[j].SpaneshTerm)
-                var option1 = document.createElement('option')
-                option1.value = GroupArray[t].AudioList[j].SpaneshTerm
-                option1.text = GroupArray[t].AudioList[j].SpaneshTerm
-                option1.setAttribute('style', 'color:blue')
-                selectList.appendChild(option1)
+             //   var option1 = document.createElement('option')
+              //  option1.value = GroupArray[t].AudioList[j].SpaneshTerm
+               // option1.text = GroupArray[t].AudioList[j].SpaneshTerm
+              //  option1.setAttribute('style', 'color:blue')
+              //  selectList.appendChild(option1)
 
                 var li = document.createElement('li')
                 var a = document.createElement('a')
@@ -974,18 +988,18 @@ function onSelection3 (obj) {
         var ToappendBox1 = document.getElementById('Term')
         ToappendBox1.appendChild(toreport1)
 
-        var x = document.getElementById('termChoose')
-        x.remove()
+       // var x = document.getElementById('termChoose')
+       // x.remove()
         var x = document.getElementById('termChoose1')
         x.remove()
 
         var myDiv = document.getElementById('section')
-        var selectList = document.createElement('select')
-        selectList.setAttribute('id', 'termChoose')
+       // var selectList = document.createElement('select')
+       // selectList.setAttribute('id', 'termChoose')
         // selectList.setAttribute("size", "42")
-        selectList.setAttribute('style', 'width:200px')
+        //selectList.setAttribute('style', 'width:200px')
         // selectList.setAttribute("onclick","onSelectDef(this)")
-        myDiv.appendChild(selectList)
+        //myDiv.appendChild(selectList)
 
         var selectList1 = document.createElement('ul')
         selectList1.setAttribute('id', 'termChoose1')
@@ -997,7 +1011,7 @@ function onSelection3 (obj) {
         var option = document.createElement('option')
         option.value = 'empty'
         option.text = 'No Terms.....!'
-        selectList.appendChild(option)
+        //selectList.appendChild(option)
         myDiv.appendChild(selectList)
 
         var li = document.createElement('li')
@@ -1046,19 +1060,19 @@ function onSelection3 (obj) {
     var ToappendBox1 = document.getElementById('Term')
     ToappendBox1.appendChild(toreport1)
 
-    var x = document.getElementById('termChoose')
-    x.remove()
+    //var x = document.getElementById('termChoose')
+    //x.remove()
 
     var x = document.getElementById('termChoose1')
     x.remove()
 
     var myDiv = document.getElementById('section')
-    var selectList = document.createElement('select')
-    selectList.setAttribute('id', 'termChoose')
+    //var selectList = document.createElement('select')
+    //selectList.setAttribute('id', 'termChoose')
     // selectList.setAttribute("size", "42")
-    selectList.setAttribute('style', 'width:200px')
+    //selectList.setAttribute('style', 'width:200px')
     // selectList.setAttribute("onclick","onSelectDef(this)")
-    myDiv.appendChild(selectList)
+    //myDiv.appendChild(selectList)
 
     var selectList1 = document.createElement('ul')
     selectList1.setAttribute('id', 'termChoose1')
@@ -1067,11 +1081,11 @@ function onSelection3 (obj) {
     // selectList.setAttribute("onclick","onSelectDef(this)")
     myDiv.appendChild(selectList1)
 
-    var option = document.createElement('option')
-    option.value = 'empty'
-    option.text = 'No Terms..!'
-    selectList.appendChild(option)
-    myDiv.appendChild(selectList)
+    //var option = document.createElement('option')
+    //option.value = 'empty'
+    //option.text = 'No Terms..!'
+    //selectList.appendChild(option)
+    //myDiv.appendChild(selectList)
 
     var li = document.createElement('li')
     var a = document.createElement('a')
@@ -1111,6 +1125,8 @@ function onSelection3 (obj) {
     document.getElementById('b1').disabled = true
     document.getElementById('b2').disabled = true
   }
+  count=0;
+  document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
 }
 function GroupRefVO () {
   // contains the chapter level details
@@ -1136,17 +1152,20 @@ function queistionVO () {
 /******************************************************************************************************************* */
 function onSelectDef_1 (tar) {
   tar.className = tar.className + ' active'
-  var x1 = document.getElementById('termChoose')
-  for (var x = 0;x < x1.length;x++) {
-    if (x1[x].value == tar.innerHTML) {
-      x1.selectedIndex = x
-      onSelectDef()
-      break
-    }
-  }
+  //var x1 = document.getElementById('termChoose')
+  //for (var x = 0;x < x1.length;x++) {
+    //if (x1[x].value == tar.innerHTML) {
+      //x1.selectedIndex = x
+      onSelectDef(tar)
+      //break
+    //}
+    
+  //}
+  
+  
 }
 
-function onSelectDef() {
+function onSelectDef(tar) {
   
 	document.getElementById("loadder").style.display = "block";
 	if (window.matchMedia("(min-width: 768px)").matches) {
@@ -1231,11 +1250,11 @@ function onSelectDef() {
 
 	var cahperList = document.getElementById("chapterList");
 	var currentChap = cahperList.options[cahperList.selectedIndex].value;
-	var termList = document.getElementById("termChoose");
-	var selectedterm = termList.options[termList.selectedIndex].value;
-
+	var termList = document.getElementById("termChoose1");
+	//var selectedterm = termList.options[termList.selectedIndex].value;
+var selectedterm = tar.innerHTML;
 	//	alert(selectedterm);
-
+//alert(selectedterm);
 	var cnt = 0;
 	for (var t = 0; t < modalData.length; t++) {
 		for (var j = 0; j < GroupArray[t].AudioList.length; j++) {
@@ -1273,7 +1292,8 @@ function onSelectDef() {
 
 				//adding Audio button to definiton frame
 				var audioElement = document.createElement('audio');
-				audioElement.setAttribute('src', "media/" + GroupArray[t].AudioList[j].AudioUrl);
+        
+        audioElement.setAttribute('src', "media/" + (GroupArray[t].AudioList[j].AudioUrl+".mp3").replace(".mp3.mp3",".mp3"));
 				var TOappnd = document.getElementById('Audio');
 				TOappnd.innerHTML = "";
 				var Abtn = document.createElement("button");
@@ -1311,7 +1331,7 @@ function onSelectDef() {
 					SenAud.innerHTML = "";
 				} else {
 					var DefaudioElement = document.createElement('audio');
-					DefaudioElement.setAttribute('src', "media/" + GroupArray[t].AudioList[j].defAudioUrl);
+          DefaudioElement.setAttribute('src', "media/" + (GroupArray[t].AudioList[j].defAudioUrl+".mp3").replace(".mp3.mp3",".mp3"));
 					var DefAud = document.getElementById('defAudio');
 					DefAud.innerHTML = "";
 					var Abtn = document.createElement("button");
@@ -1341,7 +1361,7 @@ function onSelectDef() {
 					Sterm.innerHTML = GroupArray[t].AudioList[j].AudioSentence;
 
 					var SentenceaudioElement = document.createElement('audio');
-					$(SentenceaudioElement).attr('src', "media/" + GroupArray[t].AudioList[j].defAudioUrl);
+          $(SentenceaudioElement).attr('src', "media/" + (GroupArray[t].AudioList[j].defAudioUrl+".mp3").replace(".mp3.mp3",".mp3"));
 					var SenAud = document.getElementById('SenAudion');
 					SenAud.innerHTML = "";
 					var Abtn = document.createElement("button");
@@ -1361,7 +1381,7 @@ function onSelectDef() {
 				//adding Audio button to Term frame
 				var TOappnd = document.getElementById('Audio1');
 				TOappnd.innerHTML = "";
-				audioElement1.setAttribute('src', "media/" + GroupArray[t].AudioList[j].AudioUrl);
+        audioElement1.setAttribute('src', "media/" + (GroupArray[t].AudioList[j].AudioUrl+".mp3").replace(".mp3.mp3",".mp3"));
 				//alert("media/" + GroupArray[t].AudioList[j].AudioUrl);
 				audioElement1.onloadeddata = function () {
 					document.getElementById("loadder").style.display = "none";
@@ -1606,6 +1626,8 @@ function decreaseFontSizeInternal () {
   list.push(document.getElementById('termContent'))
   list.push(document.getElementById('dhead'))
   list.push(document.getElementById('definitionContent'))
+  list.push(document.getElementById('termContentPro'))
+  list.push(document.getElementById('spanitem_1'))
   for (i = 0;i < list.length;i++) {
     var s = 24
     if (list[i].style.fontSize) {
@@ -1624,6 +1646,10 @@ function increaseFontSizeInternal () {
   list.push(document.getElementById('termContent'))
   list.push(document.getElementById('dhead'))
   list.push(document.getElementById('definitionContent'))
+  list.push(document.getElementById('termContentPro'))
+  list.push(document.getElementById('spanitem_1'))
+  //termContentPro
+  //SpanTerms_1
   // alert(list)
   for (i = 0;i < list.length;i++) {
     console.log(list[i])
