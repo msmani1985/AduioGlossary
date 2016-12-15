@@ -255,6 +255,124 @@ function createUI1 (e) {
         TC.innerHTML = FirstTerm
         var DC = document.getElementById('definitionContent')
         DC.innerHTML = FirstDefinition
+        				//adding Audio button to definiton frame
+				var audioElement = document.createElement('audio');
+        
+        audioElement.setAttribute('src', "media/" + (GroupArray[t].AudioList[0].AudioUrl+".mp3").replace(".mp3.mp3",".mp3"));
+				var TOappnd = document.getElementById('Audio');
+				TOappnd.innerHTML = "";
+				var Abtn = document.createElement("button");
+				Abtn.setAttribute("id", "play1");
+				Abtn.setAttribute("class", "play");
+				Abtn.setAttribute("onmouseover", "mOver1(this)");
+				Abtn.setAttribute("onmouseout", "mOut1(this)");
+				Abtn.innerHTML = "Play Term Audio";
+				TOappnd.appendChild(Abtn);
+				//audioElement.play();
+				audioElement.onloadeddata = function () {
+					document.getElementById("loadder").style.display = "none";
+				}
+				$('.play').click(function () {
+					audioElement.play();
+				});
+
+				$('.pause').click(function () {
+					audioElement.pause();
+				});
+
+				//adding definition audion button
+
+				if (GroupArray[t].AudioList[0].defAudioUrl == undefined) {
+					var DefAud = document.getElementById('defAudio');
+					DefAud.innerHTML = "";
+
+					//	var Sentitle = document.getElementById('senTitle');
+					//	Sentitle.innerHTML = "";
+
+					//var Senterm = document.getElementById('SenTerm');
+					//	Senterm.innerHTML = "";
+
+					var SenAud = document.getElementById('SenAudion');
+					SenAud.innerHTML = "";
+				} else {
+					var DefaudioElement = document.createElement('audio');
+          DefaudioElement.setAttribute('src', "media/" + (GroupArray[t].AudioList[0].defAudioUrl+".mp3").replace(".mp3.mp3",".mp3"));
+					var DefAud = document.getElementById('defAudio');
+					DefAud.innerHTML = "";
+					var Abtn = document.createElement("button");
+					Abtn.setAttribute("id", "Defplay");
+					Abtn.setAttribute("class", "Defplayplay");
+					Abtn.setAttribute("onmouseover", "DefplaymOver(this)");
+					Abtn.setAttribute("onmouseout", "DefplaymOut(this)");
+					Abtn.innerHTML = "Play Def Audio";
+					DefAud.appendChild(Abtn);
+					//DefaudioElement.play();
+					$('.Defplayplay').click(function () {
+						DefaudioElement.play();
+					});
+
+				}
+
+				//Adding audio button to sentence
+				if (GroupArray[t].AudioList[0].AudioSentence == "") {
+
+					//	var Sterm = document.getElementById("SenTerm");
+					//		Sterm.innerHTML = "";
+					//	var SenAud = document.getElementById('SenAudion');
+					//SenAud.innerHTML = "";
+
+				} else {
+					var Sterm = document.getElementById("SenTerm");
+					Sterm.innerHTML = GroupArray[t].AudioList[0].AudioSentence;
+
+					var SentenceaudioElement = document.createElement('audio');
+          $(SentenceaudioElement).attr('src', "media/" + (GroupArray[t].AudioList[0].defAudioUrl+".mp3").replace(".mp3.mp3",".mp3"));
+					var SenAud = document.getElementById('SenAudion');
+					SenAud.innerHTML = "";
+					var Abtn = document.createElement("button");
+					Abtn.setAttribute("id", "Senplay");
+					Abtn.setAttribute("class", "Senplayplay");
+					Abtn.setAttribute("onmouseover", "SenplaymOver(this)");
+					Abtn.setAttribute("onmouseout", "SenplaymOut(this)");
+					Abtn.innerHTML = "Play sen Audio";
+					SenAud.appendChild(Abtn);
+					//SentenceaudioElement.play();
+					$('.Senplayplay').click(function () {
+						SentenceaudioElement.play();
+					});
+
+				}
+
+				//adding Audio button to Term frame
+				var TOappnd = document.getElementById('Audio1');
+				TOappnd.innerHTML = "";
+        audioElement1.setAttribute('src', "media/" + (GroupArray[t].AudioList[0].AudioUrl+".mp3").replace(".mp3.mp3",".mp3"));
+				//alert("media/" + GroupArray[t].AudioList[j].AudioUrl);
+				audioElement1.onloadeddata = function () {
+					document.getElementById("loadder").style.display = "none";
+				}
+				//audioElement1.play();
+				var TOappnd = document.getElementById('Audio1');
+				var Abtn = document.createElement("button");
+				Abtn.setAttribute("id", "play");
+				Abtn.setAttribute("class", "play");
+				Abtn.setAttribute("onmouseover", "mOver(this)");
+				Abtn.setAttribute("onmouseout", "mOut(this)");
+				Abtn.innerHTML = "Play Def Audio";
+				TOappnd.appendChild(Abtn);
+				audioElement1.preload = "none";
+				audioElement1.onloadeddata = function () {
+					document.getElementById("loadder").style.display = "none";
+				}
+				$('.play').click(function () {
+					audioElement1.play();
+				});
+
+				$('.pause').click(function () {
+					audioElement1.pause();
+				});
+
+
         $('#b1').css('background', '#9AC97B')
         $('#b1').css('color', 'white')
       }
