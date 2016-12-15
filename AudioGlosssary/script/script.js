@@ -1271,11 +1271,15 @@ var selectedterm = tar.innerHTML;
 				if (GroupArray[t].AudioList[j].SpaneshTerm == "") {
 					ToViewSpanTerm();
 					document.getElementById("ESToggle").style.visibility = "hidden";
+          var TC = document.getElementById("spanitem_1");
+					TC.style.display = "none";
 
 				} else {
 
 
 					ToViewSpanTerm();
+          var TC = document.getElementById("spanitem_1");
+					TC.style.display = "block";
 					var TC = document.getElementById("spanitem_1");
 					TC.style.color = "blue";
 					TC.innerHTML = '<span class="badge" >Related Spanish term</span> ' + GroupArray[t].AudioList[j].SpaneshTerm;
@@ -1420,6 +1424,7 @@ var selectedterm = tar.innerHTML;
 				//alert(GroupArray[t].AudioList[j].SpanURL);
 				var TC = document.getElementById("spanitem_1");
 				TC.style.color = "black";
+        TC.style.display = "block";
 				TC.innerHTML = '<span class="badge" >Related English term</span> ' + GroupArray[t].AudioList[j].Audioterm;
 				var TOappnd = document.getElementById('Audio1');
 				TOappnd.innerHTML = "";
