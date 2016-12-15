@@ -372,12 +372,13 @@ h6 {
 
 #Term,
 #Definition {
-    height: 230px;
+    height: auto;
 }
 
 #Term {
     background: #ffffff;
     display: block;
+    
 }
 
 #Definition {
@@ -426,7 +427,7 @@ h6 {
     font-size: 24px;
     display: block;
     width: 100%;
-    margin-top: 103px;
+    margin-top: 43px;
     text-align: center;
 }
 
@@ -435,7 +436,7 @@ h6 {
     height: 674px;
     width: 200px;
     text-align: left;
-    margin-left: 5px;
+    margin-left: 4px;
 }
 
 .term_contenttext span {

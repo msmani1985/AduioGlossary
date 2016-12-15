@@ -27,29 +27,35 @@ var loaded = false
 var audioElement1
 var psbi = null
 var count = -1
+// onSideNav method used to dispaly an hide the alphabet menu
+function onSidenav() {
 
-function onSidenav () {
-  if ($('#sidemenu').attr('class').indexOf('sideNav') > 0) {
-    $('#sidemenu').toggleClass('sideNav', 'sideNav1')
-    $('#sidemenu').css('display', '')
-  }else {
-    $('#sidemenu').addClass('sideNav')
-    $('#sidemenu').css('display', 'block')
-  }
+	if ($("#sidemenu").attr("class").indexOf("sideNav") > 0) {
 
-  if ($('#sidemenu').attr('class').indexOf('col-xs-4') > 0) {
-    $('#sidemenu').toggleClass('col-xs-4', 'col-xs-12')
-  }else {
-    $('#sidemenu').toggleClass('col-xs-12', 'col-xs-4')
-  }
+		$("#sidemenu").toggleClass("sideNav", "sideNav1");
+		$("#sidemenu").css("display", "");
+		$("#main_cont").css("display", "block");
+	} else {
 
-  if ($('#main_cont').attr('class').indexOf('col-xs-4') > 0) {
-    $('#main_cont').toggleClass('col-xs-4', 'col-xs-12')
-  }else {
-    $('#main_cont').toggleClass('col-xs-12', 'col-xs-4')
-  }
+
+		$("#sidemenu").addClass("sideNav");
+		$("#sidemenu").css("display", "block");
+		$("#main_cont").css("display", "none");
+	}
+
+	if ($("#sidemenu").attr("class").indexOf("col-xs-4") > 0) {
+		$("#sidemenu").toggleClass("col-xs-4", "col-xs-12");
+	} else {
+		$("#sidemenu").toggleClass("col-xs-12", "col-xs-4");
+	}
+
+	if ($("#main_cont").attr("class").indexOf("col-xs-4") > 0) {
+		$("#main_cont").toggleClass("col-xs-4", "col-xs-12");
+	} else {
+		$("#main_cont").toggleClass("col-xs-12", "col-xs-4");
+	}
+
 }
-
 function bodyloaded1 () {
   document.addEventListener('dataLoaded', createUI)
   document.addEventListener('dataLoaded', createUI1)
@@ -1140,302 +1146,324 @@ function onSelectDef_1 (tar) {
   }
 }
 
-function onSelectDef () {
-  if (window.matchMedia('(min-width: 768px)').matches) {
-    if ($('#sidemenu').attr('class').indexOf('sideNav') > 0) {
-      //		$("#sidemenu").toggleClass("sideNav","sideNav1")
-      //		$("#sidemenu").css("display","")
+function onSelectDef() {
+  
+	document.getElementById("loadder").style.display = "block";
+	if (window.matchMedia("(min-width: 768px)").matches) {
+		if ($("#sidemenu").attr("class").indexOf("sideNav") > 0) {} else {
+
+			$("#sidemenu").addClass("sideNav");
+			$("#sidemenu").css("display", "block");
+			$("#main_cont").css("display", "none");
+
+		}
 
 
-    }else {
-      $('#sidemenu').addClass('sideNav')
-      $('#sidemenu').css('display', 'block')
-    }
+		if ($("#sidemenu").attr("class").indexOf("col-xs-4") > 0) {} else {
+			$("#sidemenu").toggleClass("col-xs-12", "col-xs-4");
+			$("#main_cont").css("display", "block");
+		}
+		if ($("#main_cont").attr("class").indexOf("col-xs-4") > 0) {
 
 
-    if ($('#sidemenu').attr('class').indexOf('col-xs-4') > 0) {
+			//		$("#main_cont").toggleClass("col-xs-4","col-xs-12");
 
-      //			$("#sidemenu").toggleClass("col-xs-4","col-xs-12")
-
-
-
-    }else {
-      $('#sidemenu').toggleClass('col-xs-12', 'col-xs-4')
-    }
-    if ($('#main_cont').attr('class').indexOf('col-xs-4') > 0) {
+		} else {
 
 
-      //		$("#main_cont").toggleClass("col-xs-4","col-xs-12")
+			$("#main_cont").toggleClass("col-xs-12", "col-xs-4");
 
-    }else {
-      $('#main_cont').toggleClass('col-xs-12', 'col-xs-4')
-    }
-  }else {
-    if ($('#sidemenu').attr('class').indexOf('sideNav') > 0) {
-      $('#sidemenu').toggleClass('sideNav', 'sideNav1')
-      $('#sidemenu').css('display', '')
-    }else {
-
-      // $("#sidemenu").addClass("sideNav")
-      // $("#sidemenu").css("display","block")
-
-    }
+		}
+	} else {
+		if ($("#sidemenu").attr("class").indexOf("sideNav") > 0) {
+			$("#sidemenu").toggleClass("sideNav", "sideNav1");
+			$("#sidemenu").css("display", "");
+			$("#main_cont").css("display", "block");
 
 
-    if ($('#sidemenu').attr('class').indexOf('col-xs-4') > 0) {
-      $('#sidemenu').toggleClass('col-xs-4', 'col-xs-12')
-    }else {
+		} else {
+
+			//$("#sidemenu").addClass("sideNav");
+			//$("#sidemenu").css("display","block");
 
 
-
-      //			 $("#sidemenu").toggleClass("col-xs-12","col-xs-4"); 
-
-
-    }
-    if ($('#main_cont').attr('class').indexOf('col-xs-4') > 0) {
-      $('#main_cont').toggleClass('col-xs-4', 'col-xs-12')
-    }else {
+		}
 
 
-      // $("#main_cont").toggleClass("col-xs-12","col-xs-4")
-    }
-  }
-  audioElement1.pause()
-  // TAudioption.currentTime = 0
-  var currAud = 0
-  var bx = document.getElementById('box')
-  if (bx == null) {}else {
-    $('#box').remove()
-  }
-  var bx1 = document.getElementById('box1')
-  if (bx1 == null) {}else {
-    $('#box1').remove()
-  }
-  // bx1.remove()
-  //	document.getElementById("b1").disabled = false
-  // document.getElementById("b2").disabled = false
-  // $("#b1").css("background", "#9AC97B")
-  // $("#b2").css("font-weight","normal")
-  // $("#b1").css("color", "white")
-  // $("#b2").css("background", "#369CCD")
-  // $("#b2").css("color", "black")
-  // $("#b1").css("font-weight","normal")
-  var cahperList = document.getElementById('chapterList')
-  var currentChap = cahperList.options[cahperList.selectedIndex].value
-  var termList = document.getElementById('termChoose')
-  var selectedterm = termList.options[termList.selectedIndex].value
+		if ($("#sidemenu").attr("class").indexOf("col-xs-4") > 0) {
 
-  //	alert(selectedterm)
-  var cnt = 0
-  for (var t = 0; t < modalData.length; t++) {
-    for (var j = 0; j < GroupArray[t].AudioList.length; j++) {
-      if (GroupArray[t].AudioList[j].Audioterm == selectedterm) {
-        cnt++
-        var TC = document.getElementById('termContent')
-        TC.innerHTML = GroupArray[t].AudioList[j].Audioterm
-        var DC = document.getElementById('definitionContent')
-        DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning
-        //	var tcontext = document.getElementById("TermContext")
-        //	tcontext.innerHTML = GroupArray[t].AudioList[j].Audioterm
-
-        // audioPlay(GroupArray[t].AudioList[j].AudioUrl)
-        var TermFileAudio = GroupArray[t].AudioList[j].AudioUrl
-        var defAudio = GroupArray[t].AudioList[j].defAudioUrl
-        var SenAudio = GroupArray[t].AudioList[j].senAudioUrl
-
-        $(function () {
-          $('#termChoose').click(function () {
-            $('#' + 'Term').siblings().hide()
-
-            $('#' + 'Term').show()
-            // $('#' + "Term").flip({
-            // direction : 'tb',
-            // color : 'white'
-            // })
-            $('#' + 'Term').siblings().hide()
-          })
-        })
-
-        // adding Audio button to definiton frame
-        var audioElement = document.createElement('audio')
-        audioElement.setAttribute('src', 'media/' + GroupArray[t].AudioList[j].AudioUrl)
-        var TOappnd = document.getElementById('Audio')
-        TOappnd.innerHTML = ''
-        var Abtn = document.createElement('button')
-        Abtn.setAttribute('id', 'play1')
-        Abtn.setAttribute('class', 'play')
-        Abtn.setAttribute('onmouseover', 'mOver1(this)')
-        Abtn.setAttribute('onmouseout', 'mOut1(this)')
-        Abtn.innerHTML = 'Play Term Audio'
-        TOappnd.appendChild(Abtn)
-        // audioElement.play()
-        $('.play').click(function () {
-          audioElement.play()
-        })
-
-        $('.pause').click(function () {
-          audioElement.pause()
-        })
-
-        // adding definition audion button
-
-        if (GroupArray[t].AudioList[j].defAudioUrl == undefined) {
-          var DefAud = document.getElementById('defAudio')
-          DefAud.innerHTML = ''
-
-          //	var Sentitle = document.getElementById('senTitle')
-          //	Sentitle.innerHTML = ""
-
-          // var Senterm = document.getElementById('SenTerm')
-          //	Senterm.innerHTML = ""
-
-          var SenAud = document.getElementById('SenAudion')
-          SenAud.innerHTML = ''
-        } else {
-          var DefaudioElement = document.createElement('audio')
-          DefaudioElement.setAttribute('src', 'media/' + GroupArray[t].AudioList[j].defAudioUrl)
-          var DefAud = document.getElementById('defAudio')
-          DefAud.innerHTML = ''
-          var Abtn = document.createElement('button')
-          Abtn.setAttribute('id', 'Defplay')
-          Abtn.setAttribute('class', 'Defplayplay')
-          Abtn.setAttribute('onmouseover', 'DefplaymOver(this)')
-          Abtn.setAttribute('onmouseout', 'DefplaymOut(this)')
-          Abtn.innerHTML = 'Play Def Audio'
-          DefAud.appendChild(Abtn)
-          // DefaudioElement.play()
-          $('.Defplayplay').click(function () {
-            DefaudioElement.play()
-          })
-        }
-
-        // Adding audio button to sentence
-        if (GroupArray[t].AudioList[j].AudioSentence == '') {
-
-          //	var Sterm = document.getElementById("SenTerm")
-          //		Sterm.innerHTML = ""
-          //	var SenAud = document.getElementById('SenAudion')
-          // SenAud.innerHTML = ""
-
-        } else {
-          var Sterm = document.getElementById('SenTerm')
-          Sterm.innerHTML = GroupArray[t].AudioList[j].AudioSentence
-
-          var SentenceaudioElement = document.createElement('audio')
-          $(SentenceaudioElement).attr('src', 'media/' + GroupArray[t].AudioList[j].defAudioUrl)
-          var SenAud = document.getElementById('SenAudion')
-          SenAud.innerHTML = ''
-          var Abtn = document.createElement('button')
-          Abtn.setAttribute('id', 'Senplay')
-          Abtn.setAttribute('class', 'Senplayplay')
-          Abtn.setAttribute('onmouseover', 'SenplaymOver(this)')
-          Abtn.setAttribute('onmouseout', 'SenplaymOut(this)')
-          Abtn.innerHTML = 'Play sen Audio'
-          SenAud.appendChild(Abtn)
-          // SentenceaudioElement.play()
-          $('.Senplayplay').click(function () {
-            SentenceaudioElement.play()
-          })
-        }
-
-        // adding Audio button to Term frame
-        var TOappnd = document.getElementById('Audio1')
-        TOappnd.innerHTML = ''
-        audioElement1.setAttribute('src', 'media/' + GroupArray[t].AudioList[j].AudioUrl)
-        // alert("media/" + GroupArray[t].AudioList[j].AudioUrl)
-        audioElement1.play()
-        var TOappnd = document.getElementById('Audio1')
-        var Abtn = document.createElement('button')
-        Abtn.setAttribute('id', 'play')
-        Abtn.setAttribute('class', 'play')
-        Abtn.setAttribute('onmouseover', 'mOver(this)')
-        Abtn.setAttribute('onmouseout', 'mOut(this)')
-        Abtn.innerHTML = 'Play Def Audio'
-        TOappnd.appendChild(Abtn)
-        audioElement1.preload = 'none'
-        $('.play').click(function () {
-          audioElement1.play()
-        })
-
-        $('.pause').click(function () {
-          audioElement1.pause()
-        })
-      }else if (GroupArray[t].AudioList[j].SpaneshTerm == selectedterm) // Spanes Definition Display Frame
-      {
-        // SpanURL
-        var TC = document.getElementById('termContent')
-        TC.innerHTML = GroupArray[t].AudioList[j].SpaneshTerm
-        var DC = document.getElementById('definitionContent')
-        DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning
-        // var tcontext = document.getElementById("TermContext")
-        // tcontext.innerHTML = GroupArray[t].AudioList[j].SpaneshTerm
-        // span term Audio 
-        var TOappnd = document.getElementById('Audio1')
-        TOappnd.innerHTML = ''
-        audioElement1.setAttribute('src', 'media/span/media/' + GroupArray[t].AudioList[j].SpanURL + '.mp3')
-
-        // alert("media/span/media/" + GroupArray[t].AudioList[j].SpanURL)
-        audioElement1.play()
-        var TOappnd = document.getElementById('Audio1')
-        var Abtn = document.createElement('button')
-        Abtn.setAttribute('id', 'play')
-        Abtn.setAttribute('class', 'play')
-        Abtn.setAttribute('onmouseover', 'mOver(this)')
-        Abtn.setAttribute('onmouseout', 'mOut(this)')
-        Abtn.innerHTML = 'Play Def Audio'
-        TOappnd.appendChild(Abtn)
-        audioElement1.preload = 'none'
-        $('.play').click(function () {
-          audioElement1.play()
-        })
-
-        $('.pause').click(function () {
-          audioElement1.pause()
-        })
-
-
-        // sapn Definition Audio
-        var audioElement = document.createElement('audio')
-        audioElement.setAttribute('src', 'media/span/media/' + GroupArray[t].AudioList[j].SpanURL + '.mp3')
-        var TOappnd = document.getElementById('Audio')
-        TOappnd.innerHTML = ''
-        var Abtn = document.createElement('button')
-        Abtn.setAttribute('id', 'play1')
-        Abtn.setAttribute('class', 'play')
-        Abtn.setAttribute('onmouseover', 'mOver1(this)')
-        Abtn.setAttribute('onmouseout', 'mOut1(this)')
-        Abtn.innerHTML = 'Play Term Audio'
-        TOappnd.appendChild(Abtn)
-        // audioElement.play()
-        $('.play').click(function () {
-          audioElement.play()
-        })
-
-        $('.pause').click(function () {
-          audioElement.pause()
-        })
+			$("#sidemenu").toggleClass("col-xs-4", "col-xs-12");
 
 
 
+		} else {
 
-        $(function () {
-          $('#termChoose').click(function () {
-            $('#' + 'Term').siblings().hide()
 
-            $('#' + 'Term').show()
-            // $('#' + "Term").flip({
-            // direction : 'tb',
-            // color : 'white'
-            // })
-            $('#' + 'Term').siblings().hide()
-          })
-        })
-      }
-    }
-  }
-  if (cnt == 0) {
-    // alert("Not found")
-  }
+
+			//			 $("#sidemenu").toggleClass("col-xs-12","col-xs-4"); 
+
+
+		}
+		if ($("#main_cont").attr("class").indexOf("col-xs-4") > 0) {
+
+
+			$("#main_cont").toggleClass("col-xs-4", "col-xs-12");
+
+		} else {
+
+
+			//$("#main_cont").toggleClass("col-xs-12","col-xs-4");
+		}
+
+	}
+	audioElement1.pause();
+
+	//TAudioption.currentTime = 0;
+	var currAud = 0;
+	var bx = document.getElementById("box");
+	if (bx == null) {} else {
+		$("#box").remove();
+	}
+	var bx1 = document.getElementById("box1");
+	if (bx1 == null) {} else {
+		$("#box1").remove();
+	}
+
+	var cahperList = document.getElementById("chapterList");
+	var currentChap = cahperList.options[cahperList.selectedIndex].value;
+	var termList = document.getElementById("termChoose");
+	var selectedterm = termList.options[termList.selectedIndex].value;
+
+	//	alert(selectedterm);
+
+	var cnt = 0;
+	for (var t = 0; t < modalData.length; t++) {
+		for (var j = 0; j < GroupArray[t].AudioList.length; j++) {
+			if (GroupArray[t].AudioList[j].Audioterm == selectedterm) {
+				cnt++;
+				var TC = document.getElementById("termContent");
+				TC.innerHTML = GroupArray[t].AudioList[j].Audioterm;
+				//termContentPro
+				var TCp = document.getElementById("termContentPro");
+				TCp.innerHTML = GroupArray[t].AudioList[j].pronc;
+
+				var DC = document.getElementById("definitionContent");
+				DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning;
+				if (GroupArray[t].AudioList[j].SpaneshTerm == "") {
+					ToViewSpanTerm();
+					document.getElementById("ESToggle").style.visibility = "hidden";
+
+				} else {
+
+
+					ToViewSpanTerm();
+					var TC = document.getElementById("spanitem_1");
+					TC.style.color = "blue";
+					TC.innerHTML = '<span class="badge" >Related Spanish term</span> ' + GroupArray[t].AudioList[j].SpaneshTerm;
+				}
+				//	var tcontext = document.getElementById("TermContext");
+				//	tcontext.innerHTML = GroupArray[t].AudioList[j].Audioterm;
+
+				//audioPlay(GroupArray[t].AudioList[j].AudioUrl);<span class="badge">Relate Spanish Term</span>
+				var TermFileAudio = GroupArray[t].AudioList[j].AudioUrl;
+				var defAudio = GroupArray[t].AudioList[j].defAudioUrl;
+				var SenAudio = GroupArray[t].AudioList[j].senAudioUrl;
+
+
+
+				//adding Audio button to definiton frame
+				var audioElement = document.createElement('audio');
+				audioElement.setAttribute('src', "media/" + GroupArray[t].AudioList[j].AudioUrl);
+				var TOappnd = document.getElementById('Audio');
+				TOappnd.innerHTML = "";
+				var Abtn = document.createElement("button");
+				Abtn.setAttribute("id", "play1");
+				Abtn.setAttribute("class", "play");
+				Abtn.setAttribute("onmouseover", "mOver1(this)");
+				Abtn.setAttribute("onmouseout", "mOut1(this)");
+				Abtn.innerHTML = "Play Term Audio";
+				TOappnd.appendChild(Abtn);
+				//audioElement.play();
+				audioElement.onloadeddata = function () {
+					document.getElementById("loadder").style.display = "none";
+				}
+				$('.play').click(function () {
+					audioElement.play();
+				});
+
+				$('.pause').click(function () {
+					audioElement.pause();
+				});
+
+				//adding definition audion button
+
+				if (GroupArray[t].AudioList[j].defAudioUrl == undefined) {
+					var DefAud = document.getElementById('defAudio');
+					DefAud.innerHTML = "";
+
+					//	var Sentitle = document.getElementById('senTitle');
+					//	Sentitle.innerHTML = "";
+
+					//var Senterm = document.getElementById('SenTerm');
+					//	Senterm.innerHTML = "";
+
+					var SenAud = document.getElementById('SenAudion');
+					SenAud.innerHTML = "";
+				} else {
+					var DefaudioElement = document.createElement('audio');
+					DefaudioElement.setAttribute('src', "media/" + GroupArray[t].AudioList[j].defAudioUrl);
+					var DefAud = document.getElementById('defAudio');
+					DefAud.innerHTML = "";
+					var Abtn = document.createElement("button");
+					Abtn.setAttribute("id", "Defplay");
+					Abtn.setAttribute("class", "Defplayplay");
+					Abtn.setAttribute("onmouseover", "DefplaymOver(this)");
+					Abtn.setAttribute("onmouseout", "DefplaymOut(this)");
+					Abtn.innerHTML = "Play Def Audio";
+					DefAud.appendChild(Abtn);
+					//DefaudioElement.play();
+					$('.Defplayplay').click(function () {
+						DefaudioElement.play();
+					});
+
+				}
+
+				//Adding audio button to sentence
+				if (GroupArray[t].AudioList[j].AudioSentence == "") {
+
+					//	var Sterm = document.getElementById("SenTerm");
+					//		Sterm.innerHTML = "";
+					//	var SenAud = document.getElementById('SenAudion');
+					//SenAud.innerHTML = "";
+
+				} else {
+					var Sterm = document.getElementById("SenTerm");
+					Sterm.innerHTML = GroupArray[t].AudioList[j].AudioSentence;
+
+					var SentenceaudioElement = document.createElement('audio');
+					$(SentenceaudioElement).attr('src', "media/" + GroupArray[t].AudioList[j].defAudioUrl);
+					var SenAud = document.getElementById('SenAudion');
+					SenAud.innerHTML = "";
+					var Abtn = document.createElement("button");
+					Abtn.setAttribute("id", "Senplay");
+					Abtn.setAttribute("class", "Senplayplay");
+					Abtn.setAttribute("onmouseover", "SenplaymOver(this)");
+					Abtn.setAttribute("onmouseout", "SenplaymOut(this)");
+					Abtn.innerHTML = "Play sen Audio";
+					SenAud.appendChild(Abtn);
+					//SentenceaudioElement.play();
+					$('.Senplayplay').click(function () {
+						SentenceaudioElement.play();
+					});
+
+				}
+
+				//adding Audio button to Term frame
+				var TOappnd = document.getElementById('Audio1');
+				TOappnd.innerHTML = "";
+				audioElement1.setAttribute('src', "media/" + GroupArray[t].AudioList[j].AudioUrl);
+				//alert("media/" + GroupArray[t].AudioList[j].AudioUrl);
+				audioElement1.onloadeddata = function () {
+					document.getElementById("loadder").style.display = "none";
+				}
+				audioElement1.play();
+				var TOappnd = document.getElementById('Audio1');
+				var Abtn = document.createElement("button");
+				Abtn.setAttribute("id", "play");
+				Abtn.setAttribute("class", "play");
+				Abtn.setAttribute("onmouseover", "mOver(this)");
+				Abtn.setAttribute("onmouseout", "mOut(this)");
+				Abtn.innerHTML = "Play Def Audio";
+				TOappnd.appendChild(Abtn);
+				audioElement1.preload = "none";
+				audioElement1.onloadeddata = function () {
+					document.getElementById("loadder").style.display = "none";
+				}
+				$('.play').click(function () {
+					audioElement1.play();
+				});
+
+				$('.pause').click(function () {
+					audioElement1.pause();
+				});
+			} else if (GroupArray[t].AudioList[j].SpaneshTerm == selectedterm) //Spanes Definition Display Frame
+			{
+				// SpanURL
+				ToViewSpanTerm();
+				var TC = document.getElementById("termContent");
+				TC.innerHTML = GroupArray[t].AudioList[j].SpaneshTerm;
+				var DC = document.getElementById("definitionContent");
+				DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning;
+				//var tcontext = document.getElementById("TermContext");
+				//tcontext.innerHTML = GroupArray[t].AudioList[j].SpaneshTerm;
+				//span term Audio 
+				//alert(GroupArray[t].AudioList[j].SpanURL);
+				var TC = document.getElementById("spanitem_1");
+				TC.style.color = "black";
+				TC.innerHTML = '<span class="badge" >Related English term</span> ' + GroupArray[t].AudioList[j].Audioterm;
+				var TOappnd = document.getElementById('Audio1');
+				TOappnd.innerHTML = "";
+				audioElement1.setAttribute('src', "media/span/media/" + GroupArray[t].AudioList[j].SpanURL + ".mp3");
+
+				//alert("media/span/media/" + GroupArray[t].AudioList[j].SpanURL);
+				audioElement1.onloadeddata = function () {
+					document.getElementById("loadder").style.display = "none";
+				}
+				audioElement1.play();
+				var TOappnd = document.getElementById('Audio1');
+				var Abtn = document.createElement("button");
+				Abtn.setAttribute("id", "play");
+				Abtn.setAttribute("class", "play");
+				Abtn.setAttribute("onmouseover", "mOver(this)");
+				Abtn.setAttribute("onmouseout", "mOut(this)");
+				Abtn.innerHTML = "Play Def Audio";
+				TOappnd.appendChild(Abtn);
+				audioElement1.preload = "none";
+				$('.play').click(function () {
+					audioElement1.play();
+				});
+
+				$('.pause').click(function () {
+					audioElement1.pause();
+				});
+
+
+				//sapn Definition Audio
+				var audioElement = document.createElement('audio');
+				audioElement.setAttribute('src', "media/span/media/" + GroupArray[t].AudioList[j].SpanURL + ".mp3");
+				var TOappnd = document.getElementById('Audio');
+				TOappnd.innerHTML = "";
+				var Abtn = document.createElement("button");
+				Abtn.setAttribute("id", "play1");
+				Abtn.setAttribute("class", "play");
+				Abtn.setAttribute("onmouseover", "mOver1(this)");
+				Abtn.setAttribute("onmouseout", "mOut1(this)");
+				Abtn.innerHTML = "Play Term Audio";
+				TOappnd.appendChild(Abtn);
+				//audioElement.play();
+				audioElement.onloadeddata = function () {
+					document.getElementById("loadder").style.display = "none";
+				}
+				$('.play').click(function () {
+					audioElement.play();
+				});
+
+				$('.pause').click(function () {
+					audioElement.pause();
+				});
+
+
+
+
+
+
+			}
+		}
+	}
+	if (cnt == 0) {
+		//alert("Not found");
+	}
+	//document.getElementById("loadder").style.display="none";
 }
 
 function mOver (obj) {
@@ -1612,22 +1640,12 @@ function increaseFontSizeInternal () {
 }
 
 $(window).resize(function () {
-  if (window.matchMedia('(min-width: 768px)').matches) {
-    if ($('#sidemenu').attr('class').indexOf('col-xs-4') > 0) {
-
-
-      // $("#sidemenu").toggleClass("col-xs-4","col-xs-12")
-      //	}
-
-
-    }else {
-
-      // if (window.matchMedia("(min-width: 768px)").matches) {
-      //	alert("matches")
-      //	 $("#sidemenu").toggleClass("col-xs-12","col-xs-4"); 
-      // } else {
-      // $("#sidemenu").toggleClass("col-xs-4","col-xs-12")
-    }
-  } else {
+  
+  if($(window).width()<750)
+  {
+    // onSideNav method used to dispaly an hide the alphabet menu
+    onSidenav();
+    $("#sidemenu").css("display", "");
+    $("#main_cont").css("display", "block");
   }
 })
