@@ -246,6 +246,10 @@ h6 {
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
 }
+#number_term
+{
+    font-size:1.1em;
+}
 
 .main_title {
     width: 100%;
@@ -276,7 +280,7 @@ h6 {
     border-radius: 6px;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
-    padding: 10px 0;
+    padding: 1px 0;
     display: block;
     margin: 1px 0;
     /* IE10 Consumer Preview */
