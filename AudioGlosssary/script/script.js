@@ -1,7 +1,8 @@
 var max = 60
 var min = 24
 var data
-
+var vart=0;
+var varj=0;
 var nclexDoc
 var tocDoc
 var initDoc
@@ -247,6 +248,8 @@ function createUI1 (e) {
       //option1.setAttribute('style', 'color:blue')
       li1.setAttribute('style', 'color:blue')
       if (GroupArray[t].groupname == 'A') {
+        vart =t;
+        varj=0;
         FirstTerm = GroupArray[t].AudioList[0].Audioterm
         FirstDefinition = GroupArray[t].AudioList[0].Audiomeaning
         termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[0].Audioterm + '",'
@@ -269,11 +272,20 @@ function createUI1 (e) {
 				Abtn.innerHTML = "Play Term Audio";
 				TOappnd.appendChild(Abtn);
 				//audioElement.play();
+       
+
 				audioElement.onloadeddata = function () {
 					document.getElementById("loadder").style.display = "none";
 				}
 				$('.play').click(function () {
+          try
+          {
 					audioElement.play();
+        
+           
+    } catch (e) {
+        audioElement.innerHTML=""
+    }
 				});
 
 				$('.pause').click(function () {
@@ -308,7 +320,14 @@ function createUI1 (e) {
 					DefAud.appendChild(Abtn);
 					//DefaudioElement.play();
 					$('.Defplayplay').click(function () {
-						DefaudioElement.play();
+                      try
+          {
+						DefaudioElement.play();        
+           
+    } catch (e) {
+        Defa
+    }
+
 					});
 
 				}
@@ -338,7 +357,13 @@ function createUI1 (e) {
 					SenAud.appendChild(Abtn);
 					//SentenceaudioElement.play();
 					$('.Senplayplay').click(function () {
-						SentenceaudioElement.play();
+                                  try
+          {
+											SentenceaudioElement.play();
+    } catch (e) {
+        console.log("Error");
+    }
+
 					});
 
 				}
@@ -365,7 +390,13 @@ function createUI1 (e) {
 					document.getElementById("loadder").style.display = "none";
 				}
 				$('.play').click(function () {
-					audioElement1.play();
+                                            try
+          {
+															audioElement1.play();
+    } catch (e) {
+        console.log("Error");
+    }
+
 				});
 
 				$('.pause').click(function () {
@@ -499,10 +530,42 @@ function ToViewSpanTerm () {
   if (document.getElementById('b3').value == 'English Terms') {
     document.getElementById('b3').value = 'Spanish Terms'
     document.getElementById('b3').style = '	background-color: #D17DD0;'
+
+          var TC = document.getElementById("termContent");
+					TC.innerHTML = GroupArray[vart].AudioList[varj].Audioterm;
+					var TCp = document.getElementById("termContentPro");
+					TCp.innerHTML = GroupArray[vart].AudioList[varj].pronc;
+					var DC = document.getElementById("definitionContent");
+					DC.innerHTML = GroupArray[vart].AudioList[varj].Audiomeaning;
+					if (GroupArray[vart].AudioList[varj].SpaneshTerm == "") {
+            var TC = document.getElementById("spanitem_1");
+						TC.style.display = "none";
+          } else {
+						var TC = document.getElementById("spanitem_1");
+						TC.style.color = "blue";
+						TC.innerHTML = '<span class="badge" >Related Spanish term</span> ' + GroupArray[t].AudioList[j].SpaneshTerm;
+					}
+
   }else {
     document.getElementById('b3').value = 'English Terms'
+  
     document.getElementById('b3').style = '	background-color: #7D81D1;'
+     var TC = document.getElementById("termContent");
+					TC.innerHTML = GroupArray[vart].AudioList[varj].SpaneshTerm;
+					//var TCp = document.getElementById("termContentPro");
+					//TCp.innerHTML = GroupArray[vart].AudioList[varj].pronc;
+					var DC = document.getElementById("definitionContent");
+					DC.innerHTML = GroupArray[vart].AudioList[varj].Audiomeaning;
+					if (GroupArray[vart].AudioList[varj].SpaneshTerm == "") {
+            var TC = document.getElementById("spanitem_1");
+						TC.style.display = "none";
+          } else {
+						var TC = document.getElementById("spanitem_1");
+						TC.style.color = "blue";
+						TC.innerHTML = '<span class="badge" >Related Spanish term</span> ' + GroupArray[t].AudioList[j].SpaneshTerm;
+					}
   }
+
 }
 /************************************************************* */
 //
@@ -1377,7 +1440,13 @@ var selectedterm = tar.innerHTML;
 	for (var t = 0; t < modalData.length; t++) {
 		for (var j = 0; j < GroupArray[t].AudioList.length; j++) {
 			if (GroupArray[t].AudioList[j].Audioterm == selectedterm) {
+            document.getElementById('b3').value = 'Spanish Terms'
+          document.getElementById('b3').style = '	background-color: #D17DD0;'
+          
+          
 				cnt++;
+        vart=t;
+        varj=j;
 				var TC = document.getElementById("termContent");
 				TC.innerHTML = GroupArray[t].AudioList[j].Audioterm;
 				//termContentPro
@@ -1387,7 +1456,7 @@ var selectedterm = tar.innerHTML;
 				var DC = document.getElementById("definitionContent");
 				DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning;
 				if (GroupArray[t].AudioList[j].SpaneshTerm == "") {
-					ToViewSpanTerm();
+					//ToViewSpanTerm();
 					document.getElementById("ESToggle").style.visibility = "hidden";
           var TC = document.getElementById("spanitem_1");
 					TC.style.display = "none";
@@ -1395,7 +1464,8 @@ var selectedterm = tar.innerHTML;
 				} else {
 
 
-					ToViewSpanTerm();
+					//ToViewSpanTerm();
+          document.getElementById('ESToggle').style.visibility = 'visible'
           var TC = document.getElementById("spanitem_1");
 					TC.style.display = "block";
 					var TC = document.getElementById("spanitem_1");
@@ -1409,7 +1479,8 @@ var selectedterm = tar.innerHTML;
 				var TermFileAudio = GroupArray[t].AudioList[j].AudioUrl;
 				var defAudio = GroupArray[t].AudioList[j].defAudioUrl;
 				var SenAudio = GroupArray[t].AudioList[j].senAudioUrl;
-
+                vart=t;
+        varj=j;  
 
 
 				//adding Audio button to definiton frame
@@ -1430,7 +1501,13 @@ var selectedterm = tar.innerHTML;
 					document.getElementById("loadder").style.display = "none";
 				}
 				$('.play').click(function () {
-					audioElement.play();
+           try
+          {
+															audioElement.play();
+    } catch (e) {
+        console.log("Error");
+    }
+				
 				});
 
 				$('.pause').click(function () {
@@ -1465,7 +1542,14 @@ var selectedterm = tar.innerHTML;
 					DefAud.appendChild(Abtn);
 					//DefaudioElement.play();
 					$('.Defplayplay').click(function () {
-						DefaudioElement.play();
+                       try
+          {
+																DefaudioElement.play();
+    } catch (e) {
+        $('.defplayplay').innerHTML="";
+    }
+
+					
 					});
 
 				}
@@ -1495,7 +1579,17 @@ var selectedterm = tar.innerHTML;
 					SenAud.appendChild(Abtn);
 					//SentenceaudioElement.play();
 					$('.Senplayplay').click(function () {
+
+    try {
 						SentenceaudioElement.play();
+
+    } catch (e) {
+        $('.Senplayplay').innerHTML=""
+    }
+
+
+
+
 					});
 
 				}
@@ -1508,7 +1602,13 @@ var selectedterm = tar.innerHTML;
 				audioElement1.onloadeddata = function () {
 					document.getElementById("loadder").style.display = "none";
 				}
-				audioElement1.play();
+            try {
+audioElement1.play();
+
+    } catch (e) {
+        auioElement1.innerHTML=""
+    }
+				
 				var TOappnd = document.getElementById('Audio1');
 				var Abtn = document.createElement("button");
 				Abtn.setAttribute("id", "play");
@@ -1531,7 +1631,10 @@ var selectedterm = tar.innerHTML;
 			} else if (GroupArray[t].AudioList[j].SpaneshTerm == selectedterm) //Spanes Definition Display Frame
 			{
 				// SpanURL
-				ToViewSpanTerm();
+        document.getElementById('b3').value = 'English Terms'
+        document.getElementById('b3').style = '	background-color: #7D81D1;'
+    
+          document.getElementById('b3').style.display = 'block'
 				var TC = document.getElementById("termContent");
 				TC.innerHTML = GroupArray[t].AudioList[j].SpaneshTerm;
 				var DC = document.getElementById("definitionContent");
@@ -1552,7 +1655,13 @@ var selectedterm = tar.innerHTML;
 				audioElement1.onloadeddata = function () {
 					document.getElementById("loadder").style.display = "none";
 				}
-				audioElement1.play();
+         try {
+audioElement1.play();
+    } catch (e) {
+        auioElement1.innerHTML=""
+    }
+
+				
 				var TOappnd = document.getElementById('Audio1');
 				var Abtn = document.createElement("button");
 				Abtn.setAttribute("id", "play");
