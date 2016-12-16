@@ -156,7 +156,7 @@ function createUI1 (e) {
     }else {
       if (varnon != '') {
         // alert(varnon+"-"+document.getElementById("myLi").childNodes[la].childNodes[0].value)
-        document.getElementById('myLi').childNodes[la].childNodes[0].value = varnon + '-' + document.getElementById('myLi').childNodes[la].childNodes[0].value
+        document.getElementById('myLi').childNodes[la].childNodes[0].value = document.getElementById('myLi').childNodes[la].childNodes[0]+ '-' + valuevarnon ;
         document.getElementById('myLi').childNodes[la].childNodes[0].style.paddingLeft = '2px'
         // document.getElementById("myLi").childNodes[la],childNodes[0].setAttribute("value",varnon + "-"+document.getElementById("myLi").childNodes[la].previousSibling,childNodes[0].getAttribute("value"))
         varnon = ''
@@ -642,23 +642,33 @@ function onSelection2 () {
     }
   }
   varnon = ''
+  var varmyli;
   for (var la = 1;la < document.getElementById('myLi').childNodes.length;la++) {
     if (document.getElementById('myLi').childNodes[la].style.display == 'none') {
       if (varnon == '') {
         varnon = document.getElementById('myLi').childNodes[la].childNodes[0].getAttribute('value')
-      // alert(varnon)
+      
       }
     }else {
       if (varnon != '') {
 
         // alert(varnon+"-"+document.getElementById("myLi").childNodes[la].childNodes[0].value)
-        document.getElementById('myLi').childNodes[la].childNodes[0].value = varnon + '-' + document.getElementById('myLi').childNodes[la].childNodes[0].value
+        document.getElementById('myLi').childNodes[la].childNodes[0].value =  document.getElementById('myLi').childNodes[la].childNodes[0].value+ '-'+varnon ;
+        varmyli=document.getElementById('myLi').childNodes[la].childNodes[0];
         // document.getElementById("myLi").childNodes[la],childNodes[0].setAttribute("value",varnon + "-"+document.getElementById("myLi").childNodes[la].previousSibling,childNodes[0].getAttribute("value"))
         document.getElementById('myLi').childNodes[la].childNodes[0].style.paddingLeft = '2px'
         varnon = ''
       }
     }
   }
+  
+  if(varnon!=document.getElementById('myLi').childNodes[la-1].childNodes[0].value)
+  {
+    var tet=varmyli.value.split("-");
+    varmyli.value=tet[0] + "-"+"Z";
+    //alert(varnon + " " +document.getElementById('myLi').childNodes[la-1].childNodes[0].value);
+  }
+  
 
   var sectiondatacount = 0
   for (var t = 0; t < modalData.length; t++) {
