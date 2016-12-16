@@ -195,7 +195,7 @@ function createUI1 (e) {
       var li = document.createElement('li')
       var a = document.createElement('a')
       li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-      a.setAttribute('onclick', 'onSelectDef_1(this)')
+      a.setAttribute('onclick', 'onSelectDef_1(this,true)')
       //a.setAttribute('style', 'color:black;font-weight:bold;cursor:pointer')
 	    a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
 	  
@@ -231,7 +231,7 @@ function createUI1 (e) {
         /******************************************************************************************* */
         var li1 = document.createElement('li')
         var a = document.createElement('a')
-        a.setAttribute('onclick', 'onSelectDef_1(this)')
+        a.setAttribute('onclick', 'onSelectDef_1(this,true)')
         a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
         li1.setAttribute('class', 'list-group-item list-group-item btn-warning')
         li1.value = j
@@ -666,7 +666,7 @@ function onSelection2 () {
   {
     var tet=varmyli.value.split("-");
     varmyli.value=tet[0] + "-"+"Z";
-    //alert(varnon + " " +document.getElementById('myLi').childNodes[la-1].childNodes[0].value);
+    alert(varnon + " " +document.getElementById('myLi').childNodes[la-1].childNodes[0].value);
   }
   
 
@@ -723,7 +723,7 @@ function onSelection2 () {
             var li = document.createElement('li')
             var a = document.createElement('a')
             li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-            a.setAttribute('onclick', 'onSelectDef_1(this)')
+            a.setAttribute('onclick', 'onSelectDef_1(this,true)')
         	a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
             li.value = j
             var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
@@ -753,7 +753,7 @@ function onSelection2 () {
               var li = document.createElement('li')
               var a = document.createElement('a')
               li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-              a.setAttribute('onclick', 'onSelectDef_1(this)')
+              a.setAttribute('onclick', 'onSelectDef_1(this,true)')
               a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
               li.value = j
               var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm)
@@ -809,7 +809,7 @@ function onSelection2 () {
         var li = document.createElement('li')
         var a = document.createElement('a')
         li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-        a.setAttribute('onclick', 'onSelectDef_1(this)')
+        a.setAttribute('onclick', 'onSelectDef_1(this,true)')
         a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
         li.value = -1
         var t1 = document.createTextNode('No Term.......!')
@@ -829,7 +829,7 @@ function onSelection2 () {
         var li = document.createElement('li')
         var a = document.createElement('a')
         li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-        a.setAttribute('onclick', 'onSelectDef_1(this)')
+        a.setAttribute('onclick', 'onSelectDef_1(this,true)')
         a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
         li.value = -1
         var t1 = document.createTextNode('No Term.......!')
@@ -915,7 +915,7 @@ function onSelection2 () {
           var li = document.createElement('li')
           var a = document.createElement('a')
           li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-          a.setAttribute('onclick', 'onSelectDef_1(this)')
+          a.setAttribute('onclick', 'onSelectDef_1(this,true)')
           a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
           li.value = j
           var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
@@ -937,7 +937,7 @@ function onSelection2 () {
             var li = document.createElement('li')
             var a = document.createElement('a')
             li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-            a.setAttribute('onclick', 'onSelectDef_1(this)')
+            a.setAttribute('onclick', 'onSelectDef_1(this,true)')
             a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
             li.value = j
             var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm)
@@ -1049,7 +1049,7 @@ function onSelection3 (obj) {
             var li = document.createElement('li')
             var a = document.createElement('a')
             li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-            a.setAttribute('onclick', 'onSelectDef_1(this)')
+            a.setAttribute('onclick', 'onSelectDef_1(this,true)')
             a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
             li.value = j
             var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
@@ -1072,7 +1072,7 @@ function onSelection3 (obj) {
 
               var li1 = document.createElement('li')
               var a = document.createElement('a')
-              a.setAttribute('onclick', 'onSelectDef_1(this)')
+              a.setAttribute('onclick', 'onSelectDef_1(this,true)')
               a.setAttribute('style', 'color:blue;font-weight:bold;cursor:pointer')
               li1.setAttribute('class', 'list-group-item list-group-item btn-warning')
               li1.value = j
@@ -1133,7 +1133,7 @@ function onSelection3 (obj) {
               var li = document.createElement('li')
               var a = document.createElement('a')
               li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-              a.setAttribute('onclick', 'onSelectDef_1(this)')
+              a.setAttribute('onclick', 'onSelectDef_1(this,true)')
               a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
               li.value = j
               var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
@@ -1154,7 +1154,7 @@ function onSelection3 (obj) {
                 var li = document.createElement('li')
                 var a = document.createElement('a')
                 li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-                a.setAttribute('onclick', 'onSelectDef_1(this)')
+                a.setAttribute('onclick', 'onSelectDef_1(this,true)')
                 a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
                 li.value = j
                 var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm)
@@ -1210,7 +1210,7 @@ function onSelection3 (obj) {
         var li = document.createElement('li')
         var a = document.createElement('a')
         li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-        a.setAttribute('onclick', 'onSelectDef_1(this)')
+        a.setAttribute('onclick', 'onSelectDef_1(this,true)')
         a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
         li.value = j
         var t1 = document.createTextNode('No Terms.....!')
@@ -1283,7 +1283,7 @@ function onSelection3 (obj) {
     var li = document.createElement('li')
     var a = document.createElement('a')
     li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-    a.setAttribute('onclick', 'onSelectDef_1(this)')
+    a.setAttribute('onclick', 'onSelectDef_1(this,true)')
     a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
     li.value = j
     var t1 = document.createTextNode('No Terms..!')
@@ -1343,13 +1343,13 @@ function queistionVO () {
 //    Impelesys India Privat Limited 
 //    Date : 08-Dec-2016
 /******************************************************************************************************************* */
-function onSelectDef_1 (tar) {
+function onSelectDef_1 (tar,vartlist) {
   tar.className = tar.className + ' active'
   //var x1 = document.getElementById('termChoose')
   //for (var x = 0;x < x1.length;x++) {
     //if (x1[x].value == tar.innerHTML) {
       //x1.selectedIndex = x
-      onSelectDef(tar)
+      onSelectDef(tar,vartlist)
       //break
     //}
     
@@ -1358,7 +1358,7 @@ function onSelectDef_1 (tar) {
   
 }
 
-function onSelectDef(tar) {
+function onSelectDef(tar,vartlist) {
   
 	document.getElementById("loadder").style.display = "block";
 	if (window.matchMedia("(min-width: 768px)").matches) {
@@ -1446,6 +1446,39 @@ function onSelectDef(tar) {
 	var termList = document.getElementById("termChoose1");
 	//var selectedterm = termList.options[termList.selectedIndex].value;
 var selectedterm = tar.innerHTML;
+//alert(termList.childNodes.length);
+if(vartlist==true)
+{
+var x1 = document.getElementById('termChoose1').childNodes;
+          for (var x = 0;x < x1.length;x++) {
+            
+            if (x1[x].childNodes[0].text == selectedterm) {
+              //x1.selectedIndex = x
+              count=x;
+              
+              if(x==0)
+              {
+                  document.getElementById('previous').disabled = true
+                  document.getElementById('next').disabled = false
+              }
+              else
+              {
+                document.getElementById('previous').disabled = false
+                document.getElementById('next').disabled = false
+              }
+              
+              if(x==x1.length-1)
+              {
+                  document.getElementById('previous').disabled = false
+                  document.getElementById('next').disabled = true
+              }
+              
+              document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
+             // onSelectDef(x1[x].childNodes[0]);
+              break
+            }
+          }
+ } 
 	//	alert(selectedterm);
 //alert(selectedterm);
 	var cnt = 0;
@@ -1455,6 +1488,7 @@ var selectedterm = tar.innerHTML;
             document.getElementById('b3').value = 'Spanish Terms'
           document.getElementById('b3').style = '	background-color: #D17DD0;'
           
+       
           
 				cnt++;
         vart=t;
@@ -1728,6 +1762,7 @@ audioElement1.play();
 		//alert("Not found");
 	}
 	//document.getElementById("loadder").style.display="none";
+
 }
 
 function mOver (obj) {
