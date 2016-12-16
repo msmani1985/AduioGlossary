@@ -546,6 +546,8 @@ function ToViewSpanTerm () {
 						TC.innerHTML = '<span class="badge" >Related Spanish term</span> ' + GroupArray[t].AudioList[j].SpaneshTerm;
 					}
 
+          
+
   }else {
     document.getElementById('b3').value = 'English Terms'
   
