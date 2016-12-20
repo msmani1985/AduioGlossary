@@ -373,7 +373,14 @@ h6 {
     color: white;
     font-weight: bold;
 }
-
+.btns#b4 {
+    width: 135px;
+    height: 40px;
+    background-color: #399ACD;
+    border-radius: 10px 10px 0px 0px;
+    color: white;
+    font-weight: bold;
+}
 #Term,
 #Definition {
     height: auto;

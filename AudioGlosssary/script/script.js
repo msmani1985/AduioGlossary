@@ -524,12 +524,60 @@ function search () {
     })
 }
 
+function ToViewEnglishTerm () {
+  // document.getElementById("b3").value="English Term"
+  // document.getElementById("b3").style="	background-color: #7D81D1;"
+  if (document.getElementById('b4').value == 'English Terms') {
+    //document.getElementById('b3').value = 'Spanish Terms'
+    document.getElementById('b4').style = '	background-color: #7D81D1;'
+    
+    document.getElementById('b3').style = '	background-color: #399ACD;'
+
+          var TC = document.getElementById("termContent");
+					TC.innerHTML = GroupArray[vart].AudioList[varj].Audioterm;
+					var TCp = document.getElementById("termContentPro");
+					TCp.innerHTML = GroupArray[vart].AudioList[varj].pronc;
+					var DC = document.getElementById("definitionContent");
+					DC.innerHTML = GroupArray[vart].AudioList[varj].Audiomeaning;
+					if (GroupArray[vart].AudioList[varj].SpaneshTerm == "") {
+            var TC = document.getElementById("spanitem_1");
+						TC.style.display = "none";
+          } else {
+						var TC = document.getElementById("spanitem_1");
+						TC.style.color = "blue";
+						TC.innerHTML = '<span class="badge" >Related Spanish term</span> ' + GroupArray[vart].AudioList[varj].SpaneshTerm;
+					}
+
+          
+
+}/*else {
+    document.getElementById('b3').value = 'English Terms'
+  
+    document.getElementById('b3').style = '	background-color: #7D81D1;'
+     var TC = document.getElementById("termContent");
+					TC.innerHTML = GroupArray[vart].AudioList[varj].SpaneshTerm;
+					//var TCp = document.getElementById("termContentPro");
+					//TCp.innerHTML = GroupArray[vart].AudioList[varj].pronc;
+					var DC = document.getElementById("definitionContent");
+					DC.innerHTML = GroupArray[vart].AudioList[varj].Audiomeaning;
+					if (GroupArray[vart].AudioList[varj].SpaneshTerm == "") {
+            var TC = document.getElementById("spanitem_1");
+						TC.style.display = "none";
+          } else {
+						var TC = document.getElementById("spanitem_1");
+						TC.style.color = "blue";
+						TC.innerHTML = '<span class="badge" >Related Spanish term</span> ' + GroupArray[t].AudioList[j].SpaneshTerm;
+					}
+  }*/
+
+}
+
 function ToViewSpanTerm () {
   // document.getElementById("b3").value="English Term"
   // document.getElementById("b3").style="	background-color: #7D81D1;"
-  if (document.getElementById('b3').value == 'English Terms') {
-    document.getElementById('b3').value = 'Spanish Terms'
-    document.getElementById('b3').style = '	background-color: #D17DD0;'
+  /*if (document.getElementById('b4').value == 'English Terms') {
+    //document.getElementById('b3').value = 'Spanish Terms'
+    document.getElementById('b4').style = '	background-color: #7D81D1;'
 
           var TC = document.getElementById("termContent");
 					TC.innerHTML = GroupArray[vart].AudioList[varj].Audioterm;
@@ -548,10 +596,12 @@ function ToViewSpanTerm () {
 
           
 
-  }else {
-    document.getElementById('b3').value = 'English Terms'
+}*/
+ if (document.getElementById('b3').value == 'Spanish Terms') {
+//    document.getElementById('b3').value = 'English Terms'
   
     document.getElementById('b3').style = '	background-color: #7D81D1;'
+    document.getElementById('b4').style = '	background-color: #399ACD;'
      var TC = document.getElementById("termContent");
 					TC.innerHTML = GroupArray[vart].AudioList[varj].SpaneshTerm;
 					//var TCp = document.getElementById("termContentPro");
@@ -564,11 +614,12 @@ function ToViewSpanTerm () {
           } else {
 						var TC = document.getElementById("spanitem_1");
 						TC.style.color = "blue";
-						TC.innerHTML = '<span class="badge" >Related Spanish term</span> ' + GroupArray[t].AudioList[j].SpaneshTerm;
+						TC.innerHTML = '<span class="badge" >Related Spanish term</span> ' + GroupArray[vart].AudioList[varj].SpaneshTerm;
 					}
   }
 
 }
+
 /************************************************************* */
 //
 //
@@ -662,11 +713,12 @@ function onSelection2 () {
     }
   }
   
+  
   if(varnon!=document.getElementById('myLi').childNodes[la-1].childNodes[0].value)
   {
     var tet=varmyli.value.split("-");
     varmyli.value=tet[0] + "-"+"Z";
-    alert(varnon + " " +document.getElementById('myLi').childNodes[la-1].childNodes[0].value);
+    alert(varnon+document.getElementById('myLi').childNodes[la-1].childNodes[0].value);
   }
   
 
@@ -1485,7 +1537,7 @@ var x1 = document.getElementById('termChoose1').childNodes;
 	for (var t = 0; t < modalData.length; t++) {
 		for (var j = 0; j < GroupArray[t].AudioList.length; j++) {
 			if (GroupArray[t].AudioList[j].Audioterm == selectedterm) {
-            document.getElementById('b3').value = 'Spanish Terms'
+            //document.getElementById('b3').value = 'Spanish Terms'
           document.getElementById('b3').style = '	background-color: #D17DD0;'
           
        
@@ -1503,15 +1555,20 @@ var x1 = document.getElementById('termChoose1').childNodes;
 				DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning;
 				if (GroupArray[t].AudioList[j].SpaneshTerm == "") {
 					//ToViewSpanTerm();
-					document.getElementById("ESToggle").style.visibility = "hidden";
+         
+					document.getElementById("ESToggle").style.visibility = "visible";
+          document.getElementById("b3").disabled = true;
+          document.getElementById("b4").disabled = true;
           var TC = document.getElementById("spanitem_1");
 					TC.style.display = "none";
 
 				} else {
-
+ alert("san");
 
 					//ToViewSpanTerm();
           document.getElementById('ESToggle').style.visibility = 'visible'
+          document.getElementById("b3").disabled = false;
+          document.getElementById("b4").disabled = false;
           var TC = document.getElementById("spanitem_1");
 					TC.style.display = "block";
 					var TC = document.getElementById("spanitem_1");
@@ -1677,7 +1734,7 @@ audioElement1.play();
 			} else if (GroupArray[t].AudioList[j].SpaneshTerm == selectedterm) //Spanes Definition Display Frame
 			{
 				// SpanURL
-        document.getElementById('b3').value = 'English Terms'
+        //document.getElementById('b3').value = 'English Terms'
         document.getElementById('b3').style = '	background-color: #7D81D1;'
     
           document.getElementById('b3').style.display = 'block'
@@ -1893,11 +1950,7 @@ function flipInto () // conditional flip
   $('#term').siblings().hide()
 }
 
-$(document).ready(function () {
-  audioElement1 = document.createElement('audio')
-  audioElement1.setAttribute('preload', 'none')
-  audioElement1.setAttribute('id', 'Taudio')
-})
+
 
 function decreaseFontSizeInternal () {
   var list = []
