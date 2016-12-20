@@ -21,7 +21,7 @@
         <![endif]-->
 </head>
 
-<body onload="bodyloaded1()">
+<body>
     <div id="LP" style="display:block">
         <div class="container">
             <div class="row text-centers">
@@ -216,6 +216,20 @@
     <script type="text/javascript" src="script/DataProvider.min.js"></script>
     <script type="text/javascript" src="script/DataProvider1.min.js"></script>
     <script src="script/jquery.typeahead.js"></script>
+    <script>
+    $(document).ready(function () {
+  audioElement1 = document.createElement('audio')
+  audioElement1.setAttribute('preload', 'none')
+  audioElement1.setAttribute('id', 'Taudio')
+  $( ".landing" ).click(function() {
+  $("#LP").css("display","none");
+   bodyloaded1();
+  $("#AG").css("display","block");
+  
+});
+
+})
+    </script>
 </body>
 
 </html>

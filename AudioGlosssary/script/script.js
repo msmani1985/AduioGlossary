@@ -1893,16 +1893,7 @@ function flipInto () // conditional flip
   $('#term').siblings().hide()
 }
 
-$(document).ready(function () {
-  audioElement1 = document.createElement('audio')
-  audioElement1.setAttribute('preload', 'none')
-  audioElement1.setAttribute('id', 'Taudio')
-  $( ".landing" ).click(function() {
-  $("#LP").css("display","none");
-  $("#AG").css("display","block");
-});
 
-})
 
 function decreaseFontSizeInternal () {
   var list = []
