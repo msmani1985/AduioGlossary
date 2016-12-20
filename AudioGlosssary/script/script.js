@@ -1903,10 +1903,7 @@ $(document).ready(function () {
 });
 
 })
-function AG_Launching()
-{
-  
-}
+
 function decreaseFontSizeInternal () {
   var list = []
   list.push(document.getElementById('thead'))
