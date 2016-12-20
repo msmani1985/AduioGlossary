@@ -1897,8 +1897,16 @@ $(document).ready(function () {
   audioElement1 = document.createElement('audio')
   audioElement1.setAttribute('preload', 'none')
   audioElement1.setAttribute('id', 'Taudio')
-})
+  $( ".landing" ).click(function() {
+  $("#LP").css("display","none");
+  $("#AG").css("display","block");
+});
 
+})
+function AG_Launching()
+{
+  
+}
 function decreaseFontSizeInternal () {
   var list = []
   list.push(document.getElementById('thead'))
