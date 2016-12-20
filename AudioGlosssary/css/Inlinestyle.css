@@ -9,7 +9,7 @@
     background-image: url(../images/Normalaudio.png); /* 16px x 16px */
     background-color: transparent; /* make the button transparent */
     background-repeat: no-repeat;  /* make the background image appear only once */
-    background-position: 0px 0px;  /* equivalent to 'top left' */
+    background-position: center;/* equivalent to 'top left' */
     border: none;           /* assuming we don't want any borders */
     cursor: pointer;        /* make the cursor like hovering over an <a> element */
     height: 16px;           /* make this the size of your image */
@@ -18,13 +18,14 @@
 	  border: medium none;
     height: 29px;
     text-indent: -999999px;
+    margin-left: 56px;
 }
 
 .play1{
     background-image: url(../images/audio.png); /* 16px x 16px */
     background-color: transparent; /* make the button transparent */
     background-repeat: no-repeat;  /* make the background image appear only once */
-    background-position: 0px 0px;  /* equivalent to 'top left' */
+    background-position: center;  /* equivalent to 'top left' */
     border: none;           /* assuming we don't want any borders */
     cursor: pointer;        /* make the cursor like hovering over an <a> element */
     height: 16px;           /* make this the size of your image */
@@ -33,6 +34,7 @@
 	  border: medium none;
     height: 29px;
     text-indent: -999999px;
+    margin-left:56px;
 }
 
 
@@ -199,7 +201,7 @@ button {
 #TermContext {
 
 text-align: justify;
-padding-top: 50px;
+/*padding-top: 50px;*/
 font-weight: bold;
 padding-left: 215px;
 
@@ -241,13 +243,20 @@ margin-left:-190px;
 
 
 }
+#termContentPro
+ {
+
+display:block; text-align:center;  font-size:20px; font-weight:bold;color:#8e69f9;font-family:PTSans;
+
+
+}
+
 #termContent {
 
 display:block; text-align:center;  font-size:20px; color:#e32c66;font-family:PTSans;
 
 
 }
-
 #box {
 
 padding: 2em;
