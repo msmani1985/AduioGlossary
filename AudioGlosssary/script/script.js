@@ -718,7 +718,7 @@ function onSelection2 () {
   {
     var tet=varmyli.value.split("-");
     varmyli.value=tet[0] + "-"+"Z";
-    alert(varnon+document.getElementById('myLi').childNodes[la-1].childNodes[0].value);
+    //alert(varnon+document.getElementById('myLi').childNodes[la-1].childNodes[0].value);
   }
   
 
