@@ -1107,17 +1107,33 @@ function onSelection2 () {
           //document.getElementById('myLi').childNodes[la-1].childNodes[0].value =  varnon ;
           //alert( document.getElementById('myLi').childNodes[la-1].childNodes[0].style.display);
           document.getElementById('myLi').childNodes[la-1].style.display="block";
-          
+          document.getElementById('myLi').childNodes[la-1].childNodes[0].disabled=true;
+          document.getElementById('myLi').childNodes[la-1].childNodes[0].className="btn-default";
           varmyli=document.getElementById('myLi').childNodes[la].childNodes[0];
+          
           varnon = ''
         }
         else
         {
+          if(varnon=="A")
+          {
+            document.getElementById('myLi').childNodes[la-1].style.display="block";
+          document.getElementById('myLi').childNodes[la-1].childNodes[0].disabled=true;
+          document.getElementById('myLi').childNodes[la-1].childNodes[0].className="btn-default";
+           document.getElementById('myLi').childNodes[la-1].childNodes[0].value =  varnon +'-'+document.getElementById('myLi').childNodes[la-1].childNodes[0].value ;
+        varmyli=document.getElementById('myLi').childNodes[la].childNodes[0];
+        // document.getElementById("myLi").childNodes[la],childNodes[0].setAttribute("value",varnon + "-"+document.getElementById("myLi").childNodes[la].previousSibling,childNodes[0].getAttribute("value"))
+        document.getElementById('myLi').childNodes[la-1].childNodes[0].style.paddingLeft = '2px'
+        varnon = ''
+          }
+          else
+          {
         document.getElementById('myLi').childNodes[la].childNodes[0].value =  document.getElementById('myLi').childNodes[la].childNodes[0].value+ '-'+varnon ;
         varmyli=document.getElementById('myLi').childNodes[la].childNodes[0];
         // document.getElementById("myLi").childNodes[la],childNodes[0].setAttribute("value",varnon + "-"+document.getElementById("myLi").childNodes[la].previousSibling,childNodes[0].getAttribute("value"))
         document.getElementById('myLi').childNodes[la].childNodes[0].style.paddingLeft = '2px'
         varnon = ''
+        }
         }
       }
     }
@@ -1192,7 +1208,9 @@ function onSelection2 () {
             var li = document.createElement('li')
             var a = document.createElement('a')
             li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
+
             a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+            
         	a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
             li.value = j
             var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
