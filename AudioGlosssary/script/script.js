@@ -2012,7 +2012,7 @@ var x1 = document.getElementById('termChoose1').childNodes;
 
 					//ToViewSpanTerm();
           document.getElementById('ESToggle').style.visibility = 'visible'
-          document.getElementById("ESToggle3").style.visibility = "hidden";
+          //document.getElementById("ESToggle3").style.visibility = "hidden";
           document.getElementById("b3").disabled = false;
           document.getElementById("b4").disabled = false;
           var TC = document.getElementById("spanitem_1");
