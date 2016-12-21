@@ -548,7 +548,205 @@ function ToViewEnglishTerm () {
 						TC.innerHTML = '<span class="Senplayplay" ></span> ' + GroupArray[vart].AudioList[varj].SpaneshTerm;
 					}
 
-          
+          var cahperList = document.getElementById('chapterList')
+  var currentChap = cahperList.options[cahperList.selectedIndex].value
+
+  if(cahperList.selectedIndex==0)
+  {
+     var x = document.getElementById('termChoose1')
+      x.remove()
+       var termsdetsear = ''
+      var myDiv = document.getElementById('section')
+      //var selectList = document.createElement('select')
+      /************************************************************************ */
+      // Change for Mobile layout design
+      /************************************************************************* */
+      var selectList1 = document.createElement('ul')
+      for (var t = 0; t < GroupArray.length; t++) {
+        //selectList.setAttribute('id', 'termChoose')
+        // selectList.setAttribute("size", "42")
+        //selectList.setAttribute('style', 'width:200px')
+        //selectList.setAttribute('onclick', 'onSelectDef(this)')
+        //myDiv.appendChild(selectList)
+
+        selectList1.setAttribute('id', 'termChoose1')
+        // selectList.setAttribute("size", "42")
+        selectList1.setAttribute('style', 'width:200px')
+        selectList1.setAttribute('class', 'list-group')
+        myDiv.appendChild(selectList1)
+
+
+        for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
+        {
+          //if (GroupArray[t].AudioList[j].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1)
+           {
+            sectiondatacount++
+            // alert(GroupArray[t].AudioList[j].Audioterm)
+          //  var option = document.createElement('option')
+           // option.value = GroupArray[t].AudioList[j].Audioterm
+           // option.text = GroupArray[t].AudioList[j].Audioterm
+            //selectList.appendChild(option)
+            termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].Audioterm + '",'
+            /*********************************************************************************** */
+            // li tag create and a tag created
+            /*********************************************************************************** */
+          var li = document.createElement('li')
+            var a = document.createElement('a')
+            li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
+            a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+        	a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
+            li.value = j
+            var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
+             li.text = GroupArray[t].AudioList[j].Audioterm
+            a.appendChild(t1)
+            li.appendChild(a)
+            selectList1.appendChild(li)
+            /**************************************************************************************** */
+            /************************************************************************************************** */
+            termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].Audioterm+'",'
+            /**************************************************************************** ***********************/
+            if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
+            }else {
+              // alert(GroupArray[t].AudioList[j].SpaneshTerm)
+              //var option1 = document.createElement('option')
+              //option1.value = GroupArray[t].AudioList[j].SpaneshTerm
+              //option1.text = GroupArray[t].AudioList[j].SpaneshTerm
+              //option1.setAttribute('style', 'color:blue')
+              //selectList.appendChild(option1)
+              /*************************************************************************************** */
+              // li and a tag create for spanish trm with ble font color
+              /*************************************************************************************** */
+              /*********************************************************************************************** */
+             /// termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].SpaneshTerm + '",'
+              /********************************************************************************************** */
+
+              //var li = document.createElement('li')
+              //var a = document.createElement('a')
+              //li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
+              //a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+             // a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
+              //li.value = j
+              //var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm)
+              // li.text = GroupArray[t].AudioList[j].Audioterm
+             // a.appendChild(t1)
+             // li.appendChild(a)
+             // selectList1.appendChild(li)
+              /**************************************************************************************** */						var li = document.createElement('li')
+
+            // termsdetsear=termsdetsear+","+ GroupArray[t].AudioList[j].SpaneshTerm
+            }
+          }
+        }
+      // var termdsdetsear1=JSON.parse("["+removeLastComma(termsdetsear)+"]")
+      // data=  {"ale": termdsdetsear1}
+      // console.log(termdsdetsear1)
+      // search()
+      }
+  }
+           var sectiondatacount = 0
+  for (var t = 0; t < modalData.length; t++) {
+    if (modalData[t].name == currentChap) {
+      //var x = document.getElementById('termChoose')
+      //x.remove()
+      var x = document.getElementById('termChoose1')
+      x.remove()
+      var chapterNumberOnly = modalData[t].name
+      var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10)
+      var chapterNumberOnly2 = '\,' + chapterNumberOnly1.trim() + '\,'
+      var myDiv = document.getElementById('section')
+      //var selectList = document.createElement('select')
+      /************************************************************************ */
+      // Change for Mobile layout design
+      /************************************************************************* */
+      var selectList1 = document.createElement('ul')
+
+
+      /*************************************************************************** */
+      // myDiv.appendChild(selectList)
+      // myDiv.appendChild(selectList1)
+      /*************************************************************************** */
+      var termsdetsear = ''
+      for (var t = 0; t < GroupArray.length; t++) {
+        //selectList.setAttribute('id', 'termChoose')
+        // selectList.setAttribute("size", "42")
+        //selectList.setAttribute('style', 'width:200px')
+        //selectList.setAttribute('onclick', 'onSelectDef(this)')
+        //myDiv.appendChild(selectList)
+
+        selectList1.setAttribute('id', 'termChoose1')
+        // selectList.setAttribute("size", "42")
+        selectList1.setAttribute('style', 'width:200px')
+        selectList1.setAttribute('class', 'list-group')
+        myDiv.appendChild(selectList1)
+
+
+        for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
+        {
+          if (GroupArray[t].AudioList[j].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
+            sectiondatacount++
+            // alert(GroupArray[t].AudioList[j].Audioterm)
+          //  var option = document.createElement('option')
+           // option.value = GroupArray[t].AudioList[j].Audioterm
+           // option.text = GroupArray[t].AudioList[j].Audioterm
+            //selectList.appendChild(option)
+           termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].Audioterm + '",'
+            /*********************************************************************************** */
+            // li tag create and a tag created
+            /*********************************************************************************** */
+          var li = document.createElement('li')
+            var a = document.createElement('a')
+            li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
+            a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+        	a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
+            li.value = j
+            var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
+             li.text = GroupArray[t].AudioList[j].Audioterm
+            a.appendChild(t1)
+           li.appendChild(a)
+           selectList1.appendChild(li)
+            /**************************************************************************************** */
+            /************************************************************************************************** */
+            // termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].Audioterm+'",'
+            /**************************************************************************** ***********************/
+            if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
+            }else {
+              // alert(GroupArray[t].AudioList[j].SpaneshTerm)
+              //var option1 = document.createElement('option')
+              //option1.value = GroupArray[t].AudioList[j].SpaneshTerm
+              //option1.text = GroupArray[t].AudioList[j].SpaneshTerm
+              //option1.setAttribute('style', 'color:blue')
+              //selectList.appendChild(option1)
+              /*************************************************************************************** */
+              // li and a tag create for spanish trm with ble font color
+              /*************************************************************************************** */
+              /*********************************************************************************************** */
+             // termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].SpaneshTerm + '",'
+              /********************************************************************************************** */
+
+             // var li = document.createElement('li')
+            //  var a = document.createElement('a')
+           //   li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
+            //  a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+            //  a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
+           //   li.value = j
+            //  var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm)
+              // li.text = GroupArray[t].AudioList[j].Audioterm
+            //  a.appendChild(t1)
+           //   li.appendChild(a)
+            //  selectList1.appendChild(li)
+              /**************************************************************************************** */						var li = document.createElement('li')
+
+            // termsdetsear=termsdetsear+","+ GroupArray[t].AudioList[j].SpaneshTerm
+            }
+          }
+        }
+      // var termdsdetsear1=JSON.parse("["+removeLastComma(termsdetsear)+"]")
+      // data=  {"ale": termdsdetsear1}
+      // console.log(termdsdetsear1)
+      // search()
+      }
+  }
+  }
 
 }/*else {
     document.getElementById('b3').value = 'English Terms'
@@ -616,8 +814,207 @@ function ToViewSpanTerm () {
 						TC.style.color = "blue";
 						TC.innerHTML = '<span class="Senplayplay" ></span>' + GroupArray[vart].AudioList[varj].SpaneshTerm;
 					}
-  }
 
+ var cahperList = document.getElementById('chapterList')
+  var currentChap = cahperList.options[cahperList.selectedIndex].value
+  if(cahperList.selectedIndex==0)
+  {
+     var x = document.getElementById('termChoose1')
+      x.remove()
+       var termsdetsear = ''
+      var myDiv = document.getElementById('section')
+      //var selectList = document.createElement('select')
+      /************************************************************************ */
+      // Change for Mobile layout design
+      /************************************************************************* */
+      var selectList1 = document.createElement('ul')
+      for (var t = 0; t < GroupArray.length; t++) {
+        //selectList.setAttribute('id', 'termChoose')
+        // selectList.setAttribute("size", "42")
+        //selectList.setAttribute('style', 'width:200px')
+        //selectList.setAttribute('onclick', 'onSelectDef(this)')
+        //myDiv.appendChild(selectList)
+
+        selectList1.setAttribute('id', 'termChoose1')
+        // selectList.setAttribute("size", "42")
+        selectList1.setAttribute('style', 'width:200px')
+        selectList1.setAttribute('class', 'list-group')
+        myDiv.appendChild(selectList1)
+
+
+        for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
+        {
+          //if (GroupArray[t].AudioList[j].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1)
+           {
+            sectiondatacount++
+            // alert(GroupArray[t].AudioList[j].Audioterm)
+          //  var option = document.createElement('option')
+           // option.value = GroupArray[t].AudioList[j].Audioterm
+           // option.text = GroupArray[t].AudioList[j].Audioterm
+            //selectList.appendChild(option)
+           // termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].Audioterm + '",'
+            /*********************************************************************************** */
+            // li tag create and a tag created
+            /*********************************************************************************** */
+          //var li = document.createElement('li')
+           // var a = document.createElement('a')
+           // li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
+           // a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+        //	a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
+          //  li.value = j
+          //  var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
+            // li.text = GroupArray[t].AudioList[j].Audioterm
+           // a.appendChild(t1)
+           // li.appendChild(a)
+           // selectList1.appendChild(li)
+            /**************************************************************************************** */
+            /************************************************************************************************** */
+            // termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].Audioterm+'",'
+            /**************************************************************************** ***********************/
+            if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
+            }else {
+              // alert(GroupArray[t].AudioList[j].SpaneshTerm)
+              //var option1 = document.createElement('option')
+              //option1.value = GroupArray[t].AudioList[j].SpaneshTerm
+              //option1.text = GroupArray[t].AudioList[j].SpaneshTerm
+              //option1.setAttribute('style', 'color:blue')
+              //selectList.appendChild(option1)
+              /*************************************************************************************** */
+              // li and a tag create for spanish trm with ble font color
+              /*************************************************************************************** */
+              /*********************************************************************************************** */
+              termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].SpaneshTerm + '",'
+              /********************************************************************************************** */
+
+              var li = document.createElement('li')
+              var a = document.createElement('a')
+              li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
+              a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+              a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
+              li.value = j
+              var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm)
+              // li.text = GroupArray[t].AudioList[j].Audioterm
+              a.appendChild(t1)
+              li.appendChild(a)
+              selectList1.appendChild(li)
+              /**************************************************************************************** */						var li = document.createElement('li')
+
+            // termsdetsear=termsdetsear+","+ GroupArray[t].AudioList[j].SpaneshTerm
+            }
+          }
+        }
+      // var termdsdetsear1=JSON.parse("["+removeLastComma(termsdetsear)+"]")
+      // data=  {"ale": termdsdetsear1}
+      // console.log(termdsdetsear1)
+      // search()
+      }
+  }
+           var sectiondatacount = 0
+  for (var t = 0; t < modalData.length; t++) {
+    if (modalData[t].name == currentChap) {
+      //var x = document.getElementById('termChoose')
+      //x.remove()
+      
+      var x = document.getElementById('termChoose1')
+      x.remove()
+      var chapterNumberOnly = modalData[t].name
+      var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10)
+      var chapterNumberOnly2 = '\,' + chapterNumberOnly1.trim() + '\,'
+      var myDiv = document.getElementById('section')
+      //var selectList = document.createElement('select')
+      /************************************************************************ */
+      // Change for Mobile layout design
+      /************************************************************************* */
+      var selectList1 = document.createElement('ul')
+
+
+      /*************************************************************************** */
+      // myDiv.appendChild(selectList)
+      // myDiv.appendChild(selectList1)
+      /*************************************************************************** */
+      var termsdetsear = ''
+      for (var t = 0; t < GroupArray.length; t++) {
+        //selectList.setAttribute('id', 'termChoose')
+        // selectList.setAttribute("size", "42")
+        //selectList.setAttribute('style', 'width:200px')
+        //selectList.setAttribute('onclick', 'onSelectDef(this)')
+        //myDiv.appendChild(selectList)
+
+        selectList1.setAttribute('id', 'termChoose1')
+        // selectList.setAttribute("size", "42")
+        selectList1.setAttribute('style', 'width:200px')
+        selectList1.setAttribute('class', 'list-group')
+        myDiv.appendChild(selectList1)
+
+
+        for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
+        {
+          if (GroupArray[t].AudioList[j].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
+            sectiondatacount++
+            // alert(GroupArray[t].AudioList[j].Audioterm)
+          //  var option = document.createElement('option')
+           // option.value = GroupArray[t].AudioList[j].Audioterm
+           // option.text = GroupArray[t].AudioList[j].Audioterm
+            //selectList.appendChild(option)
+           // termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].Audioterm + '",'
+            /*********************************************************************************** */
+            // li tag create and a tag created
+            /*********************************************************************************** */
+          //var li = document.createElement('li')
+           // var a = document.createElement('a')
+           // li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
+           // a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+        //	a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
+          //  li.value = j
+          //  var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
+            // li.text = GroupArray[t].AudioList[j].Audioterm
+           // a.appendChild(t1)
+           // li.appendChild(a)
+           // selectList1.appendChild(li)
+            /**************************************************************************************** */
+            /************************************************************************************************** */
+            // termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].Audioterm+'",'
+            /**************************************************************************** ***********************/
+            if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
+            }else {
+              // alert(GroupArray[t].AudioList[j].SpaneshTerm)
+              //var option1 = document.createElement('option')
+              //option1.value = GroupArray[t].AudioList[j].SpaneshTerm
+              //option1.text = GroupArray[t].AudioList[j].SpaneshTerm
+              //option1.setAttribute('style', 'color:blue')
+              //selectList.appendChild(option1)
+              /*************************************************************************************** */
+              // li and a tag create for spanish trm with ble font color
+              /*************************************************************************************** */
+              /*********************************************************************************************** */
+              termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].SpaneshTerm + '",'
+              /********************************************************************************************** */
+
+              var li = document.createElement('li')
+              var a = document.createElement('a')
+              li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
+              a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+              a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
+              li.value = j
+              var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm)
+              // li.text = GroupArray[t].AudioList[j].Audioterm
+              a.appendChild(t1)
+              li.appendChild(a)
+              selectList1.appendChild(li)
+              /**************************************************************************************** */						var li = document.createElement('li')
+
+            // termsdetsear=termsdetsear+","+ GroupArray[t].AudioList[j].SpaneshTerm
+            }
+          }
+        }
+      // var termdsdetsear1=JSON.parse("["+removeLastComma(termsdetsear)+"]")
+      // data=  {"ale": termdsdetsear1}
+      // console.log(termdsdetsear1)
+      // search()
+      }
+  }
+  }
+ }
 }
 
 /************************************************************* */
@@ -712,14 +1109,19 @@ function onSelection2 () {
       }
     }
   }
-  
-  
+  if(document.getElementById('myLi').childNodes[la-1].childNodes[0].value!="All")
+  {
+  if(varmyli!=undefined)
+   {
   if(varnon!=document.getElementById('myLi').childNodes[la-1].childNodes[0].value)
   {
-    var tet=varmyli.value.split("-");
+    alert()   
+     var tet=varmyli.value.split("-");
     varmyli.value=tet[0] + "-"+"Z";
+   }
+
     //alert(varnon+document.getElementById('myLi').childNodes[la-1].childNodes[0].value);
-  }
+  }}
   
 
   var sectiondatacount = 0
