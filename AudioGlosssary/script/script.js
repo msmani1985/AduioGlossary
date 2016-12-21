@@ -65,7 +65,14 @@ function bodyloaded1 () {
   psbi = null
   document.getElementById('previous').disabled = true
   document.getElementById('next').disabled =false
-  
+  if($(window).width()<750)
+  {
+     
+    // onSideNav method used to dispaly an hide the alphabet menu
+    onSidenav();
+    $("#sidemenu").css("display", "");
+    $("#main_cont").css("display", "block");
+  }
 }
 
 function createUI (e) // to load data into the UI
@@ -284,7 +291,7 @@ function createUI1 (e) {
         
            
     } catch (e) {
-        audioElement.innerHTML=""
+        document.getElementById("loadder").style.display = "none";
     }
 				});
 
@@ -2089,6 +2096,7 @@ var x1 = document.getElementById('termChoose1').childNodes;
 																DefaudioElement.play();
     } catch (e) {
         $('.defplayplay').innerHTML="";
+        document.getElementById("loadder").style.display = "none";
     }
 
 					
@@ -2127,6 +2135,7 @@ var x1 = document.getElementById('termChoose1').childNodes;
 
     } catch (e) {
         $('.Senplayplay').innerHTML=""
+        document.getElementById("loadder").style.display = "none";
     }
 
 
@@ -2149,6 +2158,7 @@ audioElement1.play();
 
     } catch (e) {
         auioElement1.innerHTML=""
+        document.getElementById("loadder").style.display = "none";
     }
 				
 				var TOappnd = document.getElementById('Audio1');
@@ -2164,7 +2174,12 @@ audioElement1.play();
 					document.getElementById("loadder").style.display = "none";
 				}
 				$('.play').click(function () {
-					audioElement1.play();
+          try
+          {					audioElement1.play();}
+          catch(e)
+          {
+            document.getElementById("loadder").style.display = "none";
+          }
 				});
 
 				$('.pause').click(function () {
@@ -2201,6 +2216,7 @@ audioElement1.play();
 audioElement1.play();
     } catch (e) {
         auioElement1.innerHTML=""
+        document.getElementById("loadder").style.display = "none";
     }
 
 				
@@ -2214,7 +2230,12 @@ audioElement1.play();
 				TOappnd.appendChild(Abtn);
 				audioElement1.preload = "none";
 				$('.play').click(function () {
+          try
+          {
 					audioElement1.play();
+          }
+          catch(e)
+          {document.getElementById("loadder").style.display = "none";}
 				});
 
 				$('.pause').click(function () {
@@ -2239,7 +2260,12 @@ audioElement1.play();
 					document.getElementById("loadder").style.display = "none";
 				}
 				$('.play').click(function () {
+          try
+          {
 					audioElement.play();
+          }
+          catch(e)
+          {document.getElementById("loadder").style.display = "none";}
 				});
 
 				$('.pause').click(function () {
@@ -2437,12 +2463,15 @@ function increaseFontSizeInternal () {
 }
 
 $(window).resize(function () {
-  
+ 
   if($(window).width()<750)
   {
+     
     // onSideNav method used to dispaly an hide the alphabet menu
     onSidenav();
+    $("#sidemenu").css("display", "none");
     $("#sidemenu").css("display", "");
     $("#main_cont").css("display", "block");
+    
   }
 })
