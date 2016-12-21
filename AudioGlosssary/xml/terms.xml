@@ -1,44 +1,30 @@
-
 <root>
-	<group name="A" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00041176.mp3" SpanURL="00065096"      chapter=",5,">
-			<term>ab-</term>
-			<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>away from, absent</def>
-			<spanishterm>acromegalia</spanishterm>
-		</audio>
-		<audio audioURL="00000012.mp3" SpanURL="00065202" chapter=",5,">
+<group name="A" chapter=",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
+		
+		<audio audioURL="00000012.mp3" SpanURL="" chapter=",5,">
 			<term>abdominocentesis</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>surgical puncture of the abdomen to remove fluid</def>
-			
-			<spanishterm>agudo-a</spanishterm>
+			<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
+			<def>surgical puncture of the abdomen to remove fluid</def>			
+			<spanishterm></spanishterm>
 		</audio>
 		<audio audioURL="00000030.mp3" SpanURL="00065215" chapter=",6,">
 			<term>abduction</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
+			<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
 			<def>moving away from the body midline (the opposite of adduction) (e.g., spreading the arms)</def>
-			<spanishterm>ajuste</spanishterm>
-		</audio>
-		<audio audioURL="00000067.mp3" SpanURL="00065096" chapter=",6,">
-			<term>abortion</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>termination of pregnancy before viability; may be spontaneous (naturally occurring) or medically/surgically induced</def>
-			
+			<spanishterm>secuestro</spanishterm>
 		</audio>
 		<audio audioURL="00000075.mp3"  chapter=",19,26,">
 			<term>abrasion</term>
 						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>outer layers of skin scraped off, resulting in a small amount of sanguineous or serosanguineous drainage, such as a "skinned" knee; open wound resulting in scraping off of skin layer(s) by trauma; may or may not produce bleeding</def>
-		
+			<def>outer layers of skin scraped off, resulting in a small amount of sanguineous or serosanguineous drainage, such as a "skinned" knee; open wound resulting in scraping off of skin layer(s) by trauma; may or may not produce bleeding</def>		
 		</audio>
-		<audio audioURL="00000082.mp3" chapter=",6,">
+		<audio audioURL="00000082.mp3" SpanURL="00065215" chapter=",6,">
 			<term>abruptio placentae</term>
 						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
 			<def>premature separation of the placenta</def>
-	
+	<spanishterm>desprendimiento de placenta</spanishterm>
 		</audio>
-		<audio audioURL="00000103.mp3" chapter=",6,24,">
+		<!--<audio audioURL="00000103.mp3" chapter=",6,24,">
 			<term>absorption</term>
 						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
 			<def>the transfer of the products of digestion into the blood and lymph for circulation; the transfer of digested nutrients from the gastrointestinal system to the blood circulation</def>
@@ -339,7 +325,7 @@
 		<audio audioURL="00081360.mp3" chapter=",6,">
 			<term>axial skeleton</term>
 			<def>consists of the bones of the skull, spine, and chest</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="B" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00003662.mp3" chapter=",17,">
@@ -347,26 +333,39 @@
 			<def>one-celled microorganisms; may be found singularly or in chains</def>
 		</audio>
 		<audio audioURL="00003673.mp3" chapter=",17,">
-			<term>bacteriocide </term>
+			<term>bacteriocide</term>
 			<def>an agent or a process that kills bacteria</def>
-		</audio>
+			<spanishterm>bactericida</spanishterm>
+			</audio>		
+		<audio mediatype="sound" format="mp3" audioURL="00003683.mp3" SpanURL="00065592" chapter=",17," >
+		<term>bacteriology</term>
+		<def>the science and study of bacteria.</def>
+				</audio>
 		
-		<audio mediatype="sound" format="mp3" audioURL="00003683" SpanURL="00065592" chapter=",17," ><term>bacteriology</term><def>the science and study of bacteria.</def><spanishterm>bacteriologa</spanishterm></audio>
-<audio mediatype="sound" format="mp3" audioURL="00003717" SpanURL="00065599" chapter=",4," ><term>balance</term><def>equality between the debit and credit sides of an accounting equation; that which is left over after additions and subtractions have been made to an account; remainder; amount due.</def><spanishterm>balance</spanishterm></audio>
+<audio mediatype="sound" format="mp3" audioURL="00003717.mp3" SpanURL="00065599" chapter=",4," >
+<term>balance</term>
+<def>equality between the debit and credit sides of an accounting equation; that which is left over after additions and subtractions have been made to an account; remainder; amount due.</def>
+<spanishterm>equilibrar</spanishterm>
+</audio>
 
-<audio mediatype="sound" format="mp3" audioURL="00003902" SpanURL="00065640" chapter=",9,"><term>benign</term><def>not cancerous or malignant.</def><spanishterm>benigno-a</spanishterm></audio>
-		<audio audioURL="00003683.mp3" chapter=",17,">
-			<term>bacteriology</term>
-			<def>the study of bacteria</def>
-		</audio>
-		<audio audioURL="00003698.mp3" chapter=",17,">
-			<term>bacteriostasis</term>
-			<def>the process of inhibiting or controlling bacterial growth</def>
-		</audio>
-		<audio audioURL="00077976.mp3" chapter=",22,">
-			<term>barium enema (lower GI series)</term>
-			<def>rectal administration of barium to radiographically visualize the lower portion of the gastrointestinal system</def>
-		</audio>
+<!--
+<audio mediatype="sound" format="mp3" audioURL="00003902" SpanURL="00065640" chapter=",9,">
+<term>benign</term>
+<def>not cancerous or malignant.</def>
+<spanishterm>benigno-a</spanishterm>
+</audio>
+<audio audioURL="00003683.mp3" chapter=",17,">
+<term>bacteriology</term>
+<def>the study of bacteria</def>
+</audio>
+<audio audioURL="00003698.mp3" chapter=",17,">
+<term>bacteriostasis</term>
+<def>the process of inhibiting or controlling bacterial growth</def>
+</audio>
+<audio audioURL="00077976.mp3" chapter=",22,">
+<term>barium enema (lower GI series)</term>
+<def>rectal administration of barium to radiographically visualize the lower portion of the gastrointestinal system</def>
+</audio>
 		<audio audioURL="00048864.mp3" chapter=",22,">
 			<term>barium swallow (upper GI series)</term>
 			<def>oral administration of barium to radiographically visualize the upper portion of the gastrointestinal system</def>
@@ -462,7 +461,7 @@
 		<audio audioURL="00042103.mp3" chapter=",26,">
 			<term>burns</term>
 			<def>tissue damage from exposure to heat, chemicals, or electricity</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="C" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00004938.mp3" chapter=",21,">
@@ -472,11 +471,18 @@
 		<audio audioURL="00004974.mp3" chapter=",24,">
 			<term>calorie</term>
 			<def>unit of energy that produces heat</def>
+			<spanishterm>caloría</spanishterm>
+		</audio>		
+		<audio mediatype="sound" format="mp3" audioURL="00005224" SpanURL="00065909" chapter=",15,">
+		<term>carbuncle</term>
+		<def>infection of interconnected group of hair follicles or several furuncles forming a mass.</def>
 		</audio>
-		
-		
-		<audio mediatype="sound" format="mp3" audioURL="00005224" SpanURL="00065909" chapter=",15,"><term>carbuncle</term><def>infection of interconnected group of hair follicles or several furuncles forming a mass.</def><spanishterm>carbunco</spanishterm></audio>
-<audio mediatype="sound" format="mp3" audioURL="00005289" SpanURL="00065927" chapter=",10,"><term>cardiomegaly</term><def>enlarged heart muscle.</def><spanishterm>cardiomegalia</spanishterm></audio>
+<audio mediatype="sound" format="mp3" audioURL="00005289" SpanURL="00065927" chapter=",10,">
+<term>cardiomegaly</term>
+<def>enlarged heart muscle.</def>
+<spanishterm>cardiomegalia</spanishterm>
+</audio>
+<!--
 <audio mediatype="sound" format="mp3" audioURL="00005293" SpanURL="00065928" chapter=",4,"><term>cardiomyopathy</term><def>any disease affecting the myocardium.</def><spanishterm>cardiomiopata</spanishterm></audio>
 
 
@@ -795,7 +801,7 @@
 		<audio audioURL="00008433.mp3" chapter=",6,">
 			<term>cytoplasm</term>
 			<def>colloidal substance (protoplasm) found in the cell; holds other structures in place</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="D" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00008475.mp3" chapter=",5,">
@@ -805,13 +811,18 @@
 		<audio audioURL="00071608.mp3" chapter=",5,">
 			<term>dactyl/o</term>
 			<def>digit, finger or toe</def>
+			<spanishterm>Dactila</spanishterm>
 		</audio>
 		<audio audioURL="00086343.mp3" chapter=",15,">
 			<term>day sheet</term>
 			<def>a daily record of the services rendered, charges made, and payments received; may be a manual or computerized system</def>
+		</audio>		
+		<audio mediatype="sound" format="mp3" audioURL="00008615" SpanURL="00066549" chapter=",13,">
+		<term>decongestant</term>
+		<def>substance that reduces congestion or swelling.</def>
+		<spanishterm>descongestionante </spanishterm>
 		</audio>
-		
-		<audio mediatype="sound" format="mp3" audioURL="00008615" SpanURL="00066549" chapter=",13,"><term>decongestant</term><def>substance that reduces congestion or swelling.</def><spanishterm>descongestionante </spanishterm></audio>
+		<!--
 <audio mediatype="sound" format="mp3" audioURL="00008674" SpanURL="00066484" chapter=",11,"><term>deglutition</term><def>the act of swallowing.</def><spanishterm>deglucin </spanishterm></audio>
 <audio mediatype="sound" format="mp3" audioURL="00008681" SpanURL="00066488" chapter=",17,"><term>dehiscence</term><def>separation or opening of the edges of a wound.</def><spanishterm>dehiscencia </spanishterm></audio>
 <audio mediatype="sound" format="mp3" audioURL="00008746" SpanURL="00066497" chapter=",14,"><term>dementia</term><def>progressive organic mental deterioration with loss of intellectual function.</def><spanishterm>demencia </spanishterm></audio>
@@ -943,7 +954,7 @@
 		<audio audioURL="00010102.mp3" chapter=",5,">
 			<term>dyspepsia</term>
 			<def>indigestion or painful digestion</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="E" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00086389.mp3" chapter=",14,">
@@ -953,14 +964,18 @@
 		<audio audioURL="00010205.mp3" chapter=",20,">
 			<term>echocardiogram</term>
 			<def>reflected sound waves used to test the heart for structural or functional abnormalities</def>
+			<spanishterm>ecocardiograma</spanishterm>
 		</audio>
 		<audio audioURL="00010226.mp3" chapter=",6,">
 			<term>eclampsia</term>
 			<def>toxemia of pregnancy, with high blood pressure, albuminuria, oliguria, seizures, and sometimes coma</def>
+		</audio>		
+		<audio mediatype="sound" format="mp3" audioURL="00010175" SpanURL="00066994" chapter=",20,">
+		<term>ecchymosis</term>
+		<def>characteristic black and blue mark that results from blood as it accumulates under the skin.</def>
+		<spanishterm>equimosis</spanishterm>
 		</audio>
-		
-		
-		<audio mediatype="sound" format="mp3" audioURL="00010175" SpanURL="00066994" chapter=",20,"><term>ecchymosis</term><def>characteristic black and blue mark that results from blood as it accumulates under the skin.</def><spanishterm>equimosis</spanishterm></audio>
+		<!--
 <audio mediatype="sound" format="mp3" audioURL="00010308" SpanURL="00066810" chapter=",8,"><term>eczema</term><def>superficial dermatitis.</def><spanishterm>eczema, eccema</spanishterm></audio>
 <audio mediatype="sound" format="mp3" audioURL="" SpanURL="00066837" chapter=",16,"><term>electroencephalogram</term><def>tracing of the electrical activity of the brain.</def><spanishterm>electroencefalograma</spanishterm></audio>
 <audio mediatype="sound" format="mp3" audioURL="" SpanURL="00066866" chapter=",19,"><term>employee</term><def>a person hired to perform given duties in return for financial compensation.</def><spanishterm>empleado-a</spanishterm></audio>
@@ -1159,7 +1174,7 @@
 		<audio audioURL="00012093.mp3" chapter=",25,">
 			<term>extravasation</term>
 			<def>the leakage of fluid from the vein into the surrounding tissue</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="F" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00038247.mp3" chapter=",6,">
@@ -1169,14 +1184,18 @@
 		<audio audioURL="00018646.mp3" chapter=",24,">
 			<term>fats (lipids)</term>
 			<def>greasy material in nutrients transport fat-soluble vitamins, insulate the body from the cold, and provide fatty acids</def>
+			<spanishterm>Grasas (lípidos)</spanishterm>
 		</audio>
 		<audio audioURL="00086444.mp3" chapter=",13,">
 			<term>fee schedule</term>
 			<def>a list of a physician's customary charges; may incorporate insurance plan-specific discounts</def>
+		</audio>		
+		<audio mediatype="sound" format="mp3" audioURL="00012652" SpanURL="00067414" chapter=",7,">
+		<term>fluoroscopy</term>
+		<def>special x-ray technique for examining a body part by immediate projection onto a fluorescent screen.</def>
+		<spanishterm>fluoroscopa</spanishterm>
 		</audio>
-		
-		
-		<audio mediatype="sound" format="mp3" audioURL="00012652" SpanURL="00067414" chapter=",7,"><term>fluoroscopy</term><def>special x-ray technique for examining a body part by immediate projection onto a fluorescent screen.</def><spanishterm>fluoroscopa</spanishterm></audio>
+		<!--
 <audio mediatype="sound" format="mp3" audioURL="00012699" SpanURL="00067420" chapter=",21,"><term>folliculitis</term><def>inflammation of hair follicles.</def><spanishterm>foliculitis</spanishterm></audio>
 		<audio audioURL="00012244.mp3" chapter=",7,">
 			<term>feedback</term>
@@ -1245,7 +1264,7 @@
 		<audio audioURL="00051073.mp3" chapter=",6,">
 			<term>frontal plane</term>
 			<def>imaginary line or cut of the body made in line with the ears and then down the middle of the body, resulting in a front and back portion; also called coronal plane</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="G" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00013041.mp3" chapter=",6,">
@@ -1255,6 +1274,7 @@
 		<audio audioURL="00013074.mp3" chapter=",6,">
 			<term>gamete</term>
 			<def>male(sperm) or female (ovum) reproductive cell</def>
+			<spanishterm>gameto</spanishterm>
 		</audio>
 		<audio audioURL="00013108.mp3" chapter=",6,">
 			<term>ganglion</term>
@@ -1263,7 +1283,9 @@
 		<audio audioURL="00038454.mp3" chapter=",5,">
 			<term>gastrectasia</term>
 			<def>stretching of the stomach</def>
+			<spanishterm>Gastrectasia</spanishterm>
 		</audio>
+		<!--
 		<audio audioURL="00013147.mp3" chapter=",5,">
 			<term>gastritis</term>
 			<def>inflammation of the stomach</def>
@@ -1331,7 +1353,7 @@
 		<audio audioURL="00038573.mp3" chapter=",6,">
 			<term>Graves disease</term>
 			<def>hyperthyroidism; increased secretion of thyroxine; characterized by goiter, exophthalmia (bulging eyes), weight loss, extreme nervousness, and rapid metabolism</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="H" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00072910.mp3" chapter=",9,">
@@ -1341,6 +1363,7 @@
 		<audio audioURL="00046682.mp3" chapter=",11,">
 			<term>Health Insurance Portability and Accountability Act (HIPAA)</term>
 			<def>originally enacted in 1996, contains requirements for patient confidentiality</def>
+			<spanishterm>Ley de Portabilidad y Responsabilidad del Seguro Médico (HIPAA)</spanishterm>
 		</audio>
 		<audio audioURL="00051391.mp3" chapter=",13,">
 			<term>health maintenance organization (HMO)</term>
@@ -1349,7 +1372,9 @@
 		<audio audioURL="00014290.mp3" chapter=",21,">
 			<term>hematocrit</term>
 			<def>percentage of red blood cells in the total blood volume</def>
+			<spanishterm>Hematocrito</spanishterm>
 		</audio>
+		<!--
 		<audio audioURL="00014308.mp3" chapter=",21,">
 			<term>hematology</term>
 			<def>study of blood and blood-forming tissue; analysis of blood to determine abnormalities</def>
@@ -1497,7 +1522,7 @@
 		<audio audioURL="00016218.mp3" chapter=",5,">
 			<term>hysterorrhaphy</term>
 			<def>suturing of the uterus</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="I" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00016373.mp3" chapter=",6,">
@@ -1507,6 +1532,7 @@
 		<audio audioURL="00016398.mp3" chapter=",6,">
 			<term>ilium</term>
 			<def>superior wing-shaped portion of hip bones</def>
+			<spanishterm>ilion</spanishterm>
 		</audio>
 		<audio audioURL="00016443.mp3" chapter=",6,">
 			<term>immunity</term>
@@ -1515,7 +1541,9 @@
 		<audio audioURL="00016444.mp3" chapter=",6,">
 			<term>immunization</term>
 			<def>vaccination; protection from communicable diseases by administration of living attenuated agents (e.g., measles), killed organisms (e.g., pertussis), inactivated toxins (e.g., tetanus), or recombinant DNA (e.g., hepatitis B)</def>
+			<spanishterm>inmunización</spanishterm>
 		</audio>
+		<!--
 		<audio audioURL="00016476.mp3" chapter=",21,">
 			<term>immunohematology</term>
 			<def>specialized immunology dealing with blood, the presence of antibodies/antigens, and pathology</def>
@@ -1635,7 +1663,7 @@
 		<audio audioURL="00017616.mp3" chapter=",6,">
 			<term>isotonic</term>
 			<def>solution with the same concentration as intracellular fluid, moves in and out of the cell at the same rate</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="J" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00017656.mp3" chapter=",6,">
@@ -1645,6 +1673,7 @@
 		<audio audioURL="00017674.mp3" chapter=",6,">
 			<term>joints</term>
 			<def>areas where two or more bones come together or articulate</def>
+			<spanishterm>Articulaciones</spanishterm>
 		</audio>
 		<audio audioURL="00057781.mp3" chapter=",4,">
 			<term>justice</term>
@@ -1659,6 +1688,7 @@
 		<audio audioURL="00017886.mp3" chapter=",6,">
 			<term>kidneys</term>
 			<def>two muscular, bean-shaped organs located in the back of the abdominal cavity that filtrate, reabsorb selected substances, and excrete urine</def>
+			<spanishterm>Riñones</spanishterm>
 		</audio>
 		<audio audioURL="00039100.mp3" chapter=",18,">
 			<term>Korotkoff sounds</term>
@@ -1667,6 +1697,7 @@
 		<audio audioURL="00017990.mp3" chapter=",6,">
 			<term>kyphosis</term>
 			<def>hunchback; an excessive curvature in the thoracic portion of the vertebral column</def>
+			<spanishterm>Cifosis</spanishterm>
 		</audio>
 	</group>
 	<group name="L" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
@@ -1677,6 +1708,7 @@
 		<audio audioURL="00018035.mp3" chapter=",19,26,">
 			<term>laceration</term>
 			<def>a jagged traumatic cut resulting in irregular wound edges; straight or jagged cut into the body tissue</def>
+			<spanishterm>laceración</spanishterm>
 		</audio>
 		<audio audioURL="00018149.mp3" chapter=",21,">
 			<term>lancet</term>
@@ -1685,7 +1717,9 @@
 		<audio audioURL="00018171.mp3" chapter=",5,">
 			<term>laparotomy</term>
 			<def>incision of the abdominal wall</def>
+			<spanishterm>Laparotomía</spanishterm>
 		</audio>
+		<!--
 		<audio audioURL="00083259.mp3" chapter=",6,">
 			<term>large intestine</term>
 			<def>the final organ of the digestive tract; connects to the small intestine at the ileum; sections include cecum, colon, rectum; ends at the anus; manufactures vitamins K and B; absorbs fluids and electrolytes; forms, stores, and excretes feces</def>
@@ -1761,7 +1795,7 @@
 		<audio audioURL="00041377.mp3" chapter=",5,">
 			<term>-lysis</term>
 			<def>destruction, destroy, dissolution</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="M" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00086570.mp3" chapter=",6,">
@@ -1771,15 +1805,17 @@
 		<audio audioURL="00083140.mp3" chapter=",22,">
 			<term>magnetic resonance imaging (MRI)</term>
 			<def>film visualization of internal structures, including soft tissue, by using a magnetic field with radiation</def>
+			<spanishterm>Resonancia magnética (MRI)</spanishterm>
 		</audio>
 		<audio audioURL="00041379.mp3" chapter=",5,">
-			<term>-malacia</term>
+			<term>malacia</term>
 			<def>softening of tissue</def>
-		</audio>
-		
-		
-		
-		<audio mediatype="sound" format="mp3" audioURL="00019354" SpanURL="00068388" chapter=",14,"><term>malignant</term><def>cancerous.</def><spanishterm>maligno-a</spanishterm></audio>
+		</audio>			
+		<audio mediatype="sound" format="mp3" audioURL="00019354" SpanURL="00068388" chapter=",14,">
+		<term>malignant</term>
+		<def>cancerous.</def>
+		<spanishterm>maligno</spanishterm></audio>
+		<!--
 <audio mediatype="sound" format="mp3" audioURL="00052613" SpanURL="00068409" chapter=",18,"><term>manipulation</term><def>skillful use of the hands in diagnostic procedures.</def><spanishterm>manipulacin</spanishterm></audio>
 <audio mediatype="sound" format="mp3" audioURL="00019817" SpanURL="00068477" chapter=",19,"><term>melanin</term><def>dark pigment that gives color to the skin, hair and eyes.</def><spanishterm>melena</spanishterm></audio>
 		<audio audioURL="00052589.mp3" chapter=",14,">
@@ -1969,8 +2005,8 @@
 		<audio audioURL="00021692.mp3" chapter=",6,">
 			<term>myxedema</term>
 			<def>atrophy of thyroid in adults, resulting in decreased secretion of thyroxine, causing forms of physical and mental decline</def>
-		</audio>
-	</group>
+		</audio>-->
+	</group>	
 	<group name="N" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00021769.mp3" chapter=",6,">
 			<term>narcolepsy</term>
@@ -1979,6 +2015,8 @@
 		<audio audioURL="00021788.mp3" chapter=",5,">
 			<term>nasopharyngeal</term>
 			<def>pertaining to nose and throat</def>
+				<spanishterm>Nasofaríngeo</spanishterm>
+			
 		</audio>
 		<audio audioURL="00021858.mp3" chapter=",5,">
 			<term>necrosis</term>
@@ -1987,8 +2025,9 @@
 		<audio audioURL="00058198.mp3" chapter=",4,">
 			<term>negligence</term>
 			<def>commission or omission of an act that resulted in or caused harm</def>
+			<spanishterm>negligencia</spanishterm>
 		</audio>
-		<audio audioURL="00021916.mp3" chapter=",6,">
+		<!--<audio audioURL="00021916.mp3" chapter=",6,">
 			<term>neonatal</term>
 			<def>first 30 days after birth</def>
 		</audio>
@@ -2063,7 +2102,7 @@
 		<audio audioURL="00022601.mp3" chapter=",24,">
 			<term>nutrition</term>
 			<def>the process of taking food into the body and using it</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="O" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00022642.mp3" chapter=",24,">
@@ -2073,11 +2112,18 @@
 		<audio audioURL="00023018.mp3" chapter=",5,">
 			<term>onychocryptosis</term>
 			<def>an ingrown (hidden) nail, finger or toe</def>
-		</audio>
-		
-		<audio mediatype="sound" format="mp3" audioURL="00023130" SpanURL="00068834" chapter=",5,12,"><term>ophthalmoscope</term><def>lighted instrument used to examine the inner surfaces of the eye.</def><spanishterm>oftalmoscopio</spanishterm></audio>
-<audio mediatype="sound" format="mp3" audioURL="00023188" SpanURL="00068867" chapter=",12,"><term>optometrist</term><def>specialist who can measure for errors of refraction and prescribe lenses but who cannot treat diseases of the eye or perform surgery.</def><spanishterm>optmetra, optometrista</spanishterm></audio>
-		<audio audioURL="00023030.mp3" chapter=",5," >
+			<spanishterm>Onicocriptosis</spanishterm>
+		</audio>		
+		<audio mediatype="sound" format="mp3" audioURL="00023130" SpanURL="" chapter=",5,12,">
+		<term>ophthalmoscope</term>
+		<def>lighted instrument used to examine the inner surfaces of the eye.</def>
+				</audio>
+<audio mediatype="sound" format="mp3" audioURL="00023188" SpanURL="00068867" chapter=",12,">
+<term>optometrist</term>
+<def>specialist who can measure for errors of refraction and prescribe lenses but who cannot treat diseases of the eye or perform surgery.</def>
+<spanishterm>Optmetra optometrista</spanishterm>
+</audio>
+		<!--<audio audioURL="00023030.mp3" chapter=",5," >
 			<term>onychomycosis</term>
 			<def>condition of fungus of the nails</def>
 		</audio>
@@ -2164,7 +2210,7 @@
 		<audio audioURL="00023726.mp3" chapter=",6,">
 			<term>ovulation</term>
 			<def>release of an ovum (egg) from the follicle into the ovarian tube resulting from cyclical hormone function</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="P" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00023993.mp3" chapter=",18,">
@@ -2174,13 +2220,17 @@
 		<audio audioURL="00024019.mp3" chapter=",6,">
 			<term>pancreas</term>
 			<def>an endocrine gland located behind the stomach that produces pancreatic juice, which is transported to the duodenum to aid in digestion, and insulin and glucagon, which regulate carbohydrate metabolism</def>
+		<spanishterm>páncreas</spanishterm>
 		</audio>
-		<audio mediatype="sound" format="mp3" audioURL="00024659" SpanURL="00069023" chapter=",16,"><term>pediculosis</term><def>infestation with parasitic lice.</def><spanishterm>pediculosis</spanishterm></audio>
+		<audio mediatype="sound" format="mp3" audioURL="00024659" SpanURL="" chapter=",16,">
+		<term>pediculosis</term><def>infestation with parasitic lice.</def>
+		</audio>
 		<audio audioURL="00044149.mp3" chapter=",6,">
 			<term>Papnicolaou smear (Pap smear)</term>
 			<def>test for cervical cancer that involves microscopically examining cervical scrapings</def>
+			<spanishterm>Papanicolaou frotis (Papanicolau)</spanishterm>
 		</audio>
-		<audio audioURL="00024362.mp3" chapter=",17,">
+		<!--<audio audioURL="00024362.mp3" chapter=",17,">
 			<term>parasite</term>
 			<def>an organism that lives at the expense of another organism</def>
 		</audio>
@@ -2539,7 +2589,7 @@
 		<audio audioURL="00028424.mp3" chapter=",5,">
 			<term>pyogenesis</term>
 			<def>formation of pus</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="Q" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00058994.mp3" chapter=",21,">
@@ -2549,6 +2599,7 @@
 		<audio audioURL="00058999.mp3" chapter=",21,">
 			<term>quantitative analysis</term>
 			<def>the method used to determine the number of bacteria present in a specimen</def>
+			<spanishterm>análisis cuantitativo</spanishterm>
 		</audio>
 	</group>
 	<group name="R" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
@@ -2559,6 +2610,7 @@
 		<audio audioURL="00028768.mp3" chapter=",22,">
 			<term>radiology</term>
 			<def>the study of use of radioactive substances to visualize an internal structure</def>
+			<spanishterm>radiología</spanishterm>
 		</audio>
 		<audio audioURL="00028770.mp3" chapter=",22,">
 			<term>radiolucent</term>
@@ -2567,8 +2619,9 @@
 		<audio audioURL="00028782.mp3" chapter=",22,">
 			<term>radiopaque</term>
 			<def>substance or structure that is not penetrated by x-rays</def>
+			<spanishterm>radioopaco</spanishterm>
 		</audio>
-		<audio audioURL="00028818.mp3" chapter=",6,">
+		<!--<audio audioURL="00028818.mp3" chapter=",6,">
 			<term>radius</term>
 			<def>lateral bone of forearm (in anatomic position)</def>
 		</audio>
@@ -2675,7 +2728,7 @@
 		<audio audioURL="00088920.mp3" chapter=",26,">
 			<term>rule of nines</term>
 			<def>formula used to determine extent of the body burned; each body part is considered 9% of the body; the affected parts are added to determine the percentage of body burned</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="S" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00055180.mp3" chapter=",6,">
@@ -2685,6 +2738,7 @@
 		<audio audioURL="00103494.mp3" chapter=",6,">
 			<term>salivary glands</term>
 			<def>three pairs of glands located in the mouth, secreting saliva that moistens food and begins the chemical breakdown of carbohydrates</def>
+			<spanishterm>glándulas salivales</spanishterm>
 		</audio>
 		<audio audioURL="00029966.mp3" chapter=",19,">
 			<term>scalpels</term>
@@ -2693,8 +2747,9 @@
 		<audio audioURL="00029973.mp3" chapter=",9,">
 			<term>scanner</term>
 			<def>software-required device that reads documents (text, graphics, photos) and transfers the image to the computer</def>
+			<spanishterm>escáner</spanishterm>
 		</audio>
-		<audio audioURL="00029974.mp3" chapter=",9,">
+		<!--<audio audioURL="00029974.mp3" chapter=",9,">
 			<term>scanning</term>
 			<def>a process of transferring a written document or image into an electronic version using computer hardware called a scanner</def>
 		</audio>
@@ -2885,7 +2940,7 @@
 		<audio audioURL="00003154.mp3" chapter=",6,">
 			<term>systole</term>
 			<def>contraction portion of the cardiac cycle</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="T" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00032742.mp3" chapter=",5,20,">
@@ -2895,6 +2950,7 @@
 		<audio audioURL="00032970.mp3" chapter=",6,">
 			<term>telophase</term>
 			<def>final phase of mitosis; the nucleus divides in the center, forming two distinct cells</def>
+			<spanishterm>Telófase</spanishterm>
 		</audio>
 		<audio audioURL="00033000.mp3" chapter=",19,">
 			<term>tenaculum</term>
@@ -2903,8 +2959,9 @@
 		<audio audioURL="00033011.mp3" chapter=",6,">
 			<term>tendons</term>
 			<def>connective tissue attaching muscle directly to the periosteum (covering) of the bone</def>
+			<spanishterm>Tendones</spanishterm>
 		</audio>
-		<audio audioURL="00033033.mp3" chapter=",5,">
+		<!--<audio audioURL="00033033.mp3" chapter=",5,">
 			<term>tenodynia</term>
 			<def>painful tendon</def>
 		</audio>
@@ -3015,7 +3072,7 @@
 		<audio audioURL="00034810.mp3" chapter=",18,">
 			<term>tympanometry</term>
 			<def>a test that uses a tympanometer, which uses air pressure to measure tympanic membrane mobility</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="U" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00056486.mp3" chapter=",6,">
@@ -3025,6 +3082,7 @@
 		<audio audioURL="00034876.mp3" chapter=",6,">
 			<term>ulcers</term>
 			<def>lesions of the mucosa of any organ; most common in the stomach and intestine</def>
+			<spanishterm>úlceras</spanishterm>
 		</audio>
 		<audio audioURL="00082479.mp3" chapter=",6,">
 			<term>ulna</term>
@@ -3033,8 +3091,9 @@
 		<audio audioURL="00034923.mp3" chapter=",22,">
 			<term>ultrasonography (ultrasound)</term>
 			<def>use of high-frequency ultrasonic waves to produce an image and identify and measure deep body structures and abnormalities</def>
+			<spanishterm>Ultrasonografía (ultrasonido)</spanishterm>
 		</audio>
-		<audio audioURL="00034925.mp3" chapter=",23,">
+		<!--<audio audioURL="00034925.mp3" chapter=",23,">
 			<term>ultrasound</term>
 			<def>heat therapy using high-frequency sound waves; a special gel substance is placed on the head of the ultrasound attachment to improve conductivity</def>
 		</audio>
@@ -3085,7 +3144,7 @@
 		<audio audioURL="00035351.mp3" chapter=",6,">
 			<term>uterus</term>
 			<def>female organ located in pelvic cavity from the oviducts to the vagina; houses and nourishes the growing fetus and placenta</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="V" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00087088.mp3" chapter=",14,">
@@ -3095,6 +3154,7 @@
 		<audio audioURL="00089970.mp3" chapter=",6,">
 			<term>vas deferens</term>
 			<def>tubule carrying sperm from epididymis to seminal vesicles</def>
+			<spanishterm>Conducto deferente</spanishterm>
 		</audio>
 		<audio audioURL="00035571.mp3" chapter=",6,">
 			<term>vasectomy</term>
@@ -3103,8 +3163,9 @@
 		<audio audioURL="00101855.mp3" chapter=",6,">
 			<term>vena cava</term>
 			<def>largest body vein, with inferior and superior branches</def>
+			<spanishterm>Vena cava</spanishterm>
 		</audio>
-		<audio audioURL="00056692.mp3" chapter=",20,">
+		<!--<audio audioURL="00056692.mp3" chapter=",20,">
 			<term>ventricular fibrillation</term>
 			<def>uncoordinated and ineffective ventricular contractions, "quivering of the heart"; displayed on the ECG as coarse or fine trembles with no identifiable waves or complexes; considered a life-threatening arrhythmia</def>
 		</audio>
@@ -3143,7 +3204,7 @@
 		<audio audioURL="00036043.mp3" chapter=",24,">
 			<term>vitamins</term>
 			<def>organic substances found naturally in foods and needed in small amounts for metabolism and prevention of certain diseases</def>
-		</audio>
+		</audio>-->
 	</group>
 	<group name="W" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
 		<audio audioURL="00087109.mp3" chapter=",26,">
@@ -3153,6 +3214,7 @@
 		<audio audioURL="00036165.mp3" chapter=",10,">
 			<term>wave</term>
 			<def>scheduling a specific number of patients, usually four, at the beginning of the hour</def>
+			<spanishterm>ola</spanishterm>
 		</audio>
 		<audio audioURL="00036191.mp3" chapter=",6,">
 			<term>wheeze</term>
@@ -3161,8 +3223,7 @@
 		<audio audioURL="00056910.mp3" chapter=",13,">
 			<term>workers' compensation</term>
 			<def>medical and disability insurance to cover employees in the event of a work-related injury, illness, or death</def>
+			<spanishterm>Compensación laboral</spanishterm>
 		</audio>
 	</group>
-
-
 </root>
