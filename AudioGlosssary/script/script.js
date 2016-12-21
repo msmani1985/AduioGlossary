@@ -199,6 +199,9 @@ function createUI1 (e) {
      // option.value = GroupArray[t].AudioList[j].Audioterm
       //option.text = GroupArray[t].AudioList[j].Audioterm
       //selectList.appendChild(option)
+      /***************************************************************************** */
+      // Mering the spanish and english with "," 
+      /*
       var li = document.createElement('li')
       var a = document.createElement('a')
       li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
@@ -211,7 +214,7 @@ function createUI1 (e) {
       // li.text = GroupArray[t].AudioList[j].Audioterm
       a.appendChild(t1)
       li.appendChild(a)
-      selectList1.appendChild(li)
+      selectList1.appendChild(li)*/
       /**********************************search data information*************************************** */
       //
       //									Search functionality and merging the 
@@ -222,6 +225,20 @@ function createUI1 (e) {
 
       if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
         // termsdetsear=termsdetsear+","
+         var li = document.createElement('li')
+      var a = document.createElement('a')
+      li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
+      a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+      //a.setAttribute('style', 'color:black;font-weight:bold;cursor:pointer')
+	    a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
+	  
+      li.value = j
+     // var t2 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
+      var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
+      // li.text = GroupArray[t].AudioList[j].Audioterm
+      a.appendChild(t1)
+      li.appendChild(a)
+      selectList1.appendChild(li)
       }else {
         //var option1 = document.createElement('option')
         //option1.value = GroupArray[t].AudioList[j].SpaneshTerm
@@ -242,9 +259,23 @@ function createUI1 (e) {
         a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
         li1.setAttribute('class', 'list-group-item list-group-item btn-warning')
         li1.value = j
-        var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm)
+        var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
+        var t2 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm)
+        var t3 = document.createTextNode(", ")
+         var s1 = document.createElement('span')
+         s1.setAttribute("style","color:black");
+         var s2 = document.createElement('span')
+         s2.setAttribute("style","color:blue");
+         var s3 = document.createElement('span')
+          s3.setAttribute("style","color:black");
+          s1.appendChild(t1)
+          s2.appendChild(t2)
+          s3.appendChild(t3)
+
         // li1.text = GroupArray[t].AudioList[j].SpaneshTerm
-        a.appendChild(t1)
+        a.appendChild(s1)
+        a.appendChild(s3)
+        a.appendChild(s2)
         li1.appendChild(a)
         a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
         // termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].SpaneshTerm+'",'
@@ -1939,7 +1970,14 @@ function onSelectDef(tar,vartlist) {
 	var currentChap = cahperList.options[cahperList.selectedIndex].value;
 	var termList = document.getElementById("termChoose1");
 	//var selectedterm = termList.options[termList.selectedIndex].value;
-var selectedterm = tar.innerHTML;
+  if(tar.childNodes.length>1)
+  {
+var selectedterm = tar.childNodes[0].innerHTML;
+}
+else
+{
+  var selectedterm = tar.innerHTML;
+}
 //alert(termList.childNodes.length);
 if(vartlist==true)
 {
