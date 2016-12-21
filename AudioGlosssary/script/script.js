@@ -1100,12 +1100,25 @@ function onSelection2 () {
     }else {
       if (varnon != '') {
 
-        // alert(varnon+"-"+document.getElementById("myLi").childNodes[la].childNodes[0].value)
+       
+        if(varnon==document.getElementById('myLi').childNodes[la-1].childNodes[0].value)   
+        {
+          // alert(varnon+"-"+document.getElementById("myLi").childNodes[la-1].childNodes[0].value)
+          //document.getElementById('myLi').childNodes[la-1].childNodes[0].value =  varnon ;
+          //alert( document.getElementById('myLi').childNodes[la-1].childNodes[0].style.display);
+          document.getElementById('myLi').childNodes[la-1].style.display="block";
+          
+          varmyli=document.getElementById('myLi').childNodes[la].childNodes[0];
+          varnon = ''
+        }
+        else
+        {
         document.getElementById('myLi').childNodes[la].childNodes[0].value =  document.getElementById('myLi').childNodes[la].childNodes[0].value+ '-'+varnon ;
         varmyli=document.getElementById('myLi').childNodes[la].childNodes[0];
         // document.getElementById("myLi").childNodes[la],childNodes[0].setAttribute("value",varnon + "-"+document.getElementById("myLi").childNodes[la].previousSibling,childNodes[0].getAttribute("value"))
         document.getElementById('myLi').childNodes[la].childNodes[0].style.paddingLeft = '2px'
         varnon = ''
+        }
       }
     }
   }
@@ -1115,9 +1128,11 @@ function onSelection2 () {
    {
   if(varnon!=document.getElementById('myLi').childNodes[la-1].childNodes[0].value)
   {
-    alert()   
+   
      var tet=varmyli.value.split("-");
     varmyli.value=tet[0] + "-"+"Z";
+    varmyli.style.paddingLeft = '2px'
+        varnon = ''
    }
 
     //alert(varnon+document.getElementById('myLi').childNodes[la-1].childNodes[0].value);
