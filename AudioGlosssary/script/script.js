@@ -1854,7 +1854,7 @@ function onSelectDef_1 (tar,vartlist) {
 
 function onSelectDef(tar,vartlist) {
   
-	document.getElementById("loadder").style.display = "block";
+//	document.getElementById("loadder").style.display = "block";
 	if (window.matchMedia("(min-width: 768px)").matches) {
 		if ($("#sidemenu").attr("class").indexOf("sideNav") > 0) {} else {
 
@@ -1999,7 +1999,7 @@ var x1 = document.getElementById('termChoose1').childNodes;
 					//ToViewSpanTerm();
          
 					document.getElementById("ESToggle").style.visibility = "visible";
-					document.getElementById("ESToggle3").style.visibility = "visible";
+				//	document.getElementById("ESToggle3").style.visibility = "visible";
 					
           
           document.getElementById("b3").disabled = true;
