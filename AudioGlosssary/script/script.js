@@ -259,7 +259,7 @@ function alpha_list(e)
        //MYLIST.appendChild(lix)
       
     }
-    if(varfound[varfound.length-1]<26)
+    if(varfound.length<26)
     {
       lix.childNodes[lix.childNodes.length-1].value=lix.childNodes[lix.childNodes.length-1].value + "-" + "Z";
         //lix.childNodes[lix.childNodes.length-1].value=lix.childNodes[lix.childNodes.length-1].style.paddingLeft = '12px';
@@ -1671,7 +1671,7 @@ function display_left(vart)
 {
   //var x = document.getElementById('termChoose')
           //x.remove()
-alert("dafff");
+//alert("dafff");
           var x1 = document.getElementById('termChoose1')
           x1.remove()
 
@@ -1806,7 +1806,7 @@ function onSelection3 (obj) {
     if (currentChap == 'All Chapters') {
       // alert("*.pdf")
       for (var t = 0; t < GroupArray.length; t++) {
-        alert(gName.indexOf("-"));
+        //alert(gName.indexOf("-"));
         if(gName.indexOf("-")==-1)
         {
         if (gName == GroupArray[t].groupname) {
@@ -1870,7 +1870,7 @@ if(gName.indexOf("-")==-1)
       for(var varcharcode=gName.split("-")[0].charCodeAt(0);varcharcode<gName.split("-")[1].charCodeAt(0)+1;varcharcode++)
       {
        var gName1=String.fromCharCode(varcharcode)
-       alert(String.fromCharCode(varcharcode));
+       //alert(String.fromCharCode(varcharcode));
         for (var t = 0; t < GroupArray.length; t++) {
       if (GroupArray[t].groupname == gName1) {
           
