@@ -145,15 +145,18 @@
                         </div>
                         <div class="col-xs-12 col-sm-8 col-md-8 col-lg-9 text_cont" id="main_cont">
                             <h2 class="a_titlebar" id="chapterHedding">
-                            <div id="ESToggle" class="pull-left" style="visibility:visible">
-                                <div id="ESToggle2" class="pull-left" style="visibility:visible">
-                                    <input class="btns" type="button" value="English Terms" id="b4" class="active" onclick="ToViewEnglishTerm()" title="SpaneshTerm"
-                                    />
-                                </div>
-                                <div id="ESToggle1" class="pull-left" style="visibility:visible">
-                                    <input class="btns" type="button" value="Spanish Terms" id="b3" class="active" onclick="ToViewSpanTerm()" title="EnglishTerm"
-                                    />
-                                </div>
+                                <div id="ESToggle" class="pull-left" style="visibility:visible">
+                                    <div id="ESToggle2" class="pull-left" style="visibility:visible">
+                                        <input class="btns" type="button" value="English Terms" id="b4" class="active" onclick="ToViewEnglishTerm()" title="SpaneshTerm"
+                                        />
+                                    </div>
+                                    <div id="ESToggle1" class="pull-left" style="visibility:visible">
+                                        <input class="btns" type="button" value="Spanish Terms" id="b3" class="active" onclick="ToViewSpanTerm()" title="EnglishTerm"
+                                        />
+                                    </div>
+                                    <div id="ESToggle3" class="pull-left" style="visibility:hidden">
+                                        <span id="Info_terms" class="label label-warning">Only English Terms Available. No Spanish Terms </span>
+                                    </div>
                                 </div>
                                 <div class="pull-right">
                                     <span id="terminfo" class="badge" style="font-size:130%;padding:10px;display:none">English term</span>
@@ -175,63 +178,63 @@
         <button id="previous" type="button" class="btn btn-default btn-sm pull-left" onclick="onPrevious()">
 <span class="glyphicon glyphicon-chevron-left"></span> Previous
                                     </button>
-        <button id="next" type="button" class="btn btn-default btn-sm pull-right" onclick="onNext()">
+                                    <button id="next" type="button" class="btn btn-default btn-sm pull-right" onclick="onNext()">
 <span class="glyphicon glyphicon-chevron-right pull-right"></span> Next
 </button>
-    </div>
-    <div id="Term">
-        <div>
-            <p id="Audio1" style="text-align: center"> </p>
+                                </div>
+                                <div id="Term">
+                                    <div>
+                                        <p id="Audio1" style="text-align: center"> </p>
+                                    </div>
+                                    <div id="thead" class="term_contenttext1"> Term<span id="Audio1"></span><span id="termContent"></span><span id="termContentPro">Pronucation</span></div>
+                                </div>
+                                <div id="Definition">
+                                    <h2 id="Audio" style="display:none"> </h2>
+                                    <h2 id="TermContext"> </h2>
+                                    <span class="defAudio" id="defAudio"></span>
+                                    <div id="dhead" class="term_contenttext">Definition<span id="definitionContent"></span></div>
+                                    <p id="SenAudion"></p>
+                                    <div id="senTitle" style="color:#015D8C;font-weight:bold;font-size: 24px"></div>
+                                    <div id="SenTerm" style="font-size: 20px;color: #E32C66;font-family: PTSans"></div>
+                                </div>
+                                <div id="SpanTerms_1">
+                                     <p id="Audio1"></p>
+                                    <p style="color:blue;font-size:20px" id="spanitem_1"></p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="thead" class="term_contenttext1"> Term<span id="termContent"></span><span id="termContent"></span><span id="termContentPro">Pronucation</span></div>
+        <div class="panel-footer">
+            Copyright &copy; 2016 Wolters Kluwer Health | Lippincott Williams &amp; Wilkins
+        </div>
     </div>
-    <div id="Definition">
-        <h2 id="Audio" style="display:none"> </h2>
-        <h2 id="TermContext"> </h2>
-        <span class="defAudio" id="defAudio"></span>
-        <div id="dhead" class="term_contenttext">Definition<span id="definitionContent"></span></div>
-        <p id="SenAudion"></p>
-        <div id="senTitle" style="color:#015D8C;font-weight:bold;font-size: 24px"></div>
-        <div id="SenTerm" style="font-size: 20px;color: #E32C66;font-family: PTSans"></div>
     </div>
-    <div id="SpanTerms_1">
-        <p style="color:blue;font-size:20px" id="spanitem_1"></p>
     </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="panel-footer">
-    Copyright &copy; 2016 Wolters Kluwer Health | Lippincott Williams &amp; Wilkins
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- jQuery -->
-<script src="script/lib.js"></script>
-<!-- Bootstrap JavaScript -->
-<script src="script/bootstrap.min.js"></script>
+    </div>
+    <!-- jQuery -->
+    <script src="script/lib.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="script/bootstrap.min.js"></script>
+    <script type="text/javascript" src="script/DataProvider.min.js"></script>
+    <script type="text/javascript" src="script/DataProvider1.min.js"></script>
+    <script src="script/jquery.typeahead.js"></script>
+    <script type="text/javascript" src="script/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            audioElement1 = document.createElement('audio')
+            audioElement1.setAttribute('preload', 'none')
+            audioElement1.setAttribute('id', 'Taudio')
+            $(".landing").click(function () {
+                $("#LP").css("display", "none");
+                bodyloaded1();
+                $("#AG").css("display", "block");
 
-<script type="text/javascript" src="script/DataProvider.min.js"></script>
-<script type="text/javascript" src="script/DataProvider1.min.js"></script>
-<script src="script/jquery.typeahead.js"></script>
-<script type="text/javascript" src="script/script.js"></script>
-<script>
-    $(document).ready(function () {
-        audioElement1 = document.createElement('audio')
-        audioElement1.setAttribute('preload', 'none')
-        audioElement1.setAttribute('id', 'Taudio')
-        $(".landing").click(function () {
-            $("#LP").css("display", "none");
-            bodyloaded1();
-            $("#AG").css("display", "block");
+            });
 
-        });
-
-    })
-</script>
+        })
+    </script>
 </body>
 
 </html>
