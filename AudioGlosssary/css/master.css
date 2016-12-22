@@ -248,7 +248,8 @@ h6 {
 }
 #number_term
 {
-    font-size:1.1em;
+    font-size:0.9em;
+    margin-top:10px;
 }
 
 .main_title {
@@ -368,18 +369,22 @@ h6 {
 .btns#b3 {
     width: 135px;
     height: 40px;
-    background-color: #D17DD0;
+    background-color:rgb(195, 217, 228);
     border-radius: 10px 10px 0px 0px;
-    color: white;
-    font-weight: bold;
+    color: black;
+    
+}
+#SpanTerms_1
+{
+    margin-top: 21px;
 }
 .btns#b4 {
     width: 135px;
     height: 40px;
-    background-color: #399ACD;
+    background-color: rgb(195, 217, 228);
     border-radius: 10px 10px 0px 0px;
-    color: white;
-    font-weight: bold;
+    color: black;
+    
 }
 #Term,
 #Definition {
@@ -395,6 +400,7 @@ h6 {
 #Definition {
     background: #ffffff;
     display: block;
+    margin-top:20px;
 }
 
 .a_titlebar {
