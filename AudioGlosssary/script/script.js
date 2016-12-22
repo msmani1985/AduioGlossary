@@ -2015,8 +2015,8 @@ if(gName.indexOf("-")==-1)
     var seterm = document.getElementById('SenTerm')
     seterm.innerHTML = ''
 
-    document.getElementById('b1').disabled = true
-    document.getElementById('b2').disabled = true
+    //document.getElementById('b1').disabled = true
+   // document.getElementById('b2').disabled = true
   }
   count=0;
   document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length

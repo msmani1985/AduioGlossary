@@ -1,3229 +1,968 @@
 <root>
-<group name="A" chapter=",1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		
-		<audio audioURL="00000012.mp3" SpanURL="" chapter=",5,">
-			<term>abdominocentesis</term>
-			<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>surgical puncture of the abdomen to remove fluid</def>			
-			<spanishterm></spanishterm>
-		</audio>
-		<audio audioURL="00000030.mp3" SpanURL="00065215" chapter=",6,">
-			<term>abduction</term>
-			<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>moving away from the body midline (the opposite of adduction) (e.g., spreading the arms)</def>
-			<spanishterm>secuestro</spanishterm>
-		</audio>
-		<audio audioURL="00000075.mp3"  chapter=",19,26,">
-			<term>abrasion</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>outer layers of skin scraped off, resulting in a small amount of sanguineous or serosanguineous drainage, such as a "skinned" knee; open wound resulting in scraping off of skin layer(s) by trauma; may or may not produce bleeding</def>		
-		</audio>
-		<audio audioURL="00000082.mp3" SpanURL="00065215" chapter=",6,">
-			<term>abruptio placentae</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>premature separation of the placenta</def>
-	<spanishterm>desprendimiento de placenta</spanishterm>
-		</audio>
-		<!--<audio audioURL="00000103.mp3" chapter=",6,24,">
-			<term>absorption</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>the transfer of the products of digestion into the blood and lymph for circulation; the transfer of digested nutrients from the gastrointestinal system to the blood circulation</def>
-			
-		</audio>
-		<audio audioURL="00000115.mp3" chapter=",4,14,">
-			<term>abuse</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>wrong or improper use; an unreasonable and generally unacceptable departure from precedent and custom with one person taking advantage of another person or set of circumstances; abuse may or may not be unlawful</def>
-		</audio>
-				<audio audioURL="00086019.mp3" chapter=",15,">
-			<term>accounts payable</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>the money the practice owes (e.g., rent, utilities, medical supplies, payroll)</def>
-		</audio>
-		<audio audioURL="00086020.mp3" chapter=",15,">
-			<term>accounts receivable</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>the money owed to the practice, such as patient bills</def>
-		</audio>
-		<audio audioURL="00081930.mp3" chapter=",6,">
-		
-			<term>acquired immunodeficiency syndrome (AIDS)</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>decreased immunity resulting from infection with the human immunodeficiency virus (HIV), leaving victim susceptible to opportunistic diseases</def>
-		</audio>
-		<audio audioURL="00000426.mp3" chapter=",5,">
-			<term>acrocyanosis</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>blue condition of the extremities</def>
-		</audio>
-		<audio audioURL="00000448.mp3" chapter=",6,">
-			<term>acromegaly</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>overproduction of the growth hormone after puberty, resulting in wide, large face, hands, and feet</def>
-		</audio>
-		<audio audioURL="00057117.mp3" chapter=",6,">
-			<term>active transport</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>movement of molecules from area of lower to area of higher concentration</def>
-		</audio>
-		<audio audioURL="00046019.mp3" chapter=",23,">
-			<term>activities of daily living (ADL)</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>common acts performed during a person's normal day</def>
-		</audio>
-		<audio audioURL="00037037.mp3" chapter=",6,">
-			<term>Addison disease</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>hyposecretion of cortisol by the adrenal cortex, resulting in muscle atrophy, tissue weakness, and skin pigmentation</def>
-		</audio>
-		<audio audioURL="00000567.mp3" chapter=",6,">
-			<term>adduction</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>moving toward the body midline (the opposite of abduction) (e.g., bringing the arms to the sides)</def>
-		</audio>
-		<audio audioURL="00000603.mp3" chapter=",5,">
-			<term>adenoma</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>tumor of a gland</def>
-		</audio>
-		<audio audioURL="00086043.mp3" chapter=",15,">
-			<term>adjustments</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>changes to the amount of money owed for reasons other than additional services or payments (e.g., fee discounts, refunds)	</def>
-		</audio>
-		<audio audioURL="00083732.mp3" chapter=",6,">
-			<term>adrenal glands</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>endocrine glands located on top of each kidney</def>
-		</audio>
-		<audio audioURL="00000720.mp3" chapter=",5,">
-			<term>adrenomegaly</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>enlargement of the adrenal gland(s)</def>
-		</audio>
-		<audio audioURL="00060031.mp3" chapter=",4,">
-			<term>advance directives</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>documents signed by the patient and by witnesses stating the patient's wishes for medical care should he or she become incapacitated</def>
-		</audio>
-		<audio audioURL="00072085.mp3" chapter=",14,">
-			<term>adverse effect</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>a pathologic reaction to a drug that occurs when appropriate doses are given</def>
-		</audio>
-		<audio audioURL="00000801.mp3" chapter=",8,">
-			<term>affective</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>relating to a person's values, attitudes, opinions; a domain of learning</def>
-		</audio>
-		<audio audioURL="00001065.mp3" chapter=",5,">
-			<term>-algesia</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>pain, sensitivity to pain</def>
-		</audio>
-		<audio audioURL="00001320.mp3" chapter=",6,">
-			<term>alveoli (singular alveolus)</term>
-						<pronc>(ab-dom-ih-no-PEL-vik)</pronc>
-			<def>air sacs at the ends of the bronchioles where the exchange of gases occurs</def>
-		</audio>
-		<audio audioURL="00037108.mp3" chapter=",6,">
-			<term>Alzheimer disease</term>
-			<def>degenerative disorder of the brain beginning with dementia-like symptoms and progressing to a nonfunctioning of neuron fibers that prevents communication between cells for ordinary tasks (such as swallowing), which results in death; etiology is unknown</def>
-		</audio>
-		<audio audioURL="00001422.mp3" chapter=",6,">
-			<term>amenorrhea</term>
-			<def>absence of menstrual flow</def>
-		</audio>
-		<audio audioURL="00047057.mp3" chapter=",4,">
-			<term>Americans with Disabilities Act (ADA)</term>
-			<def>prohibits discrimination against people with disabilities in employment, transportation, public accommodation, communications, and governmental activities</def>
-		</audio>
-		<audio audioURL="00081169.mp3" chapter=",6,">
-			<term>amyotrophic lateral sclerosis (ALS)</term>
-			<def>progressive disease of the motor neurons, causing muscle atrophy and weakness; also known as Lou Gehrig disease</def>
-		</audio>
-		<audio audioURL="00001684.mp3" chapter=",6,">
-			<term>anabolism</term>
-			<def>phase of metabolism in which cells are built or repaired</def>
-		</audio>
-		<audio audioURL="00001722.mp3" chapter=",5,">
-			<term>analgesia</term>
-			<def>take away pain, free from pain</def>
-		</audio>
-		<audio audioURL="00001750.mp3" chapter=",6,">
-			<term>anaphase</term>
-			<def>third phase of mitosis duplicated chromosomes separate, and one of each begins to move toward opposite centrioles or poles</def>
-		</audio>
-		<audio audioURL="00001762.mp3" chapter=",26,">
-			<term>anaphylaxis</term>
-			<def>shock caused by a severe allergic reaction that results in respiratory distress and, in some instances, cardiac arrest</def>
-		</audio>
-		<audio audioURL="00001787.mp3" chapter=",6,">
-			<term>anatomy</term>
-			<def>the study of body structure</def>
-		</audio>
-		<audio audioURL="00001843.mp3" chapter=",6,">
-			<term>anemia</term>
-			<def>abnormally low hemoglobin or red blood cells, decreasing oxygen supply to the tissues; many causes and types; the main symptoms are fatigue and weakness</def>
-		</audio>
-		<audio audioURL="00001883.mp3" chapter=",6,">
-			<term>aneurysm</term>
-			<def>congenital or traumatic weakness of the vessel wall demonstrated by a "bubble" or outpouching caused by pressure of blood; an abdominal aortic aneurysm is called AAA or triple A</def>
-		</audio>
-		<audio audioURL="00048423.mp3" chapter=",6,">
-			<term>angina pectoris</term>
-			<def>severe constricting chest pain from lack of blood supply to the heart; associated with coronary artery disease</def>
-		</audio>
-		<audio audioURL="00001925.mp3" chapter=",22,">
-			<term>angiography</term>
-			<def>radiographic visualization of blood vessels and blood flow by injecting radiopaque material through a subcutaneous catheter</def>
-		</audio>
-		<audio audioURL="00002135.mp3" chapter=",6,">
-			<term>anorexia</term>
-			<def>diminished appetite and aversion to food</def>
-		</audio>
-		<audio audioURL="00002187.mp3" chapter=",6,">
-			<term>antepartum</term>
-			<def>time before delivery</def>
-		</audio>
-		<audio audioURL="00002190.mp3" chapter=",6,">
-			<term>anterior</term>
-			<def>in front (ventral)</def>
-		</audio>
-		<audio audioURL="00002198.mp3" chapter=",5,">
-			<term>anteroposterior</term>
-			<def>passing from front to rear</def>
-		</audio>
-		<audio audioURL="00002242.mp3" chapter=",18,">
-			<term>anthropometry</term>
-			<def>obtaining assessment measurements; comprises signs, functions, and capacities that can be objectively determined by the senses (e.g., sight, hearing, smell) or by specific equipment or tests</def>
-		</audio>
-		<audio audioURL="00002270.mp3" chapter=",17,">
-			<term>antibiotic</term>
-			<def>a substance ingested, injected, or applied to a living being that has the power to inhibit the growth of or to destroy bacteria</def>
-		</audio>
-		<audio audioURL="00002273.mp3" chapter=",6,">
-			<term>antibody</term>
-			<def>a substance produced in the body in response to the presence of an antigen; antibodies enhance activities of leukocytes and produce globulins protecting the body against further assault from the specific antigen</def>
-		</audio>
-		<audio audioURL="00002289.mp3" chapter=",21,">
-			<term>anticoagulant</term>
-			<def>substance that prevents blood from clotting</def>
-		</audio>
-		<audio audioURL="00002321.mp3" chapter=",6,">
-			<term>antigen</term>
-			<def>a substance (e.g., bacteria/viruses, bacterial/viral toxins, foreign blood cells) that causes the formation of antibodies</def>
-		</audio>
-		<audio audioURL="00002412.mp3" chapter=",5,">
-			<term>antipyretic</term>
-			<def>against fever; fever reducing</def>
-		</audio>
-		<audio audioURL="00002425.mp3" chapter=",17,">
-			<term>antiseptic </term>
-			<def>a chemical cleaning agent used on the skin to remove or to inhibit the growth of bacteria</def>
-		</audio>
-		<audio audioURL="00077200.mp3" chapter=",6,">
-			<term>anus</term>
-			<def>the final portion of the digestive tract, where feces are excreted</def>
-		</audio>
-		<audio audioURL="00002492.mp3" chapter=",6,">
-			<term>aorta </term>
-			<def>the largest body artery; consists of three parts: ascending, aortic arch, and descending</def>
-		</audio>
-		<audio audioURL="00002587.mp3" chapter=",5,">
-			<term>aplasia </term>
-			<def>lack of formation or development; usually refers to an organ</def>
-		</audio>
-		<audio audioURL="00002613.mp3" chapter=",6,">
-			<term>aponeurosis</term>
-			<def>broad sheet of muscle fibers attaching muscle to muscle or muscle to select bones, such as the skull</def>
-		</audio>
-		<audio audioURL="00086125.mp3" chapter=",14,">
-			<term>appeal</term>
-			<def>a resort to a higher authority for a decision</def>
-		</audio>
-		<audio audioURL="00081359.mp3" chapter=",6,">
-			<term>appendicular skeleton</term>
-			<def>consists of the bones of the upper and lower extremities and the girdle attaching them to the axial skeleton</def>
-		</audio>
-		<audio audioURL="00002829.mp3" chapter=",6,20,">
-			<term>arrhythmia</term>
-			<def>abnormal heart rhythm; irregular heart activity resulting in loss of a rhythm</def>
-		</audio>
-		<audio audioURL="00002891.mp3" chapter=",5,6,">
-			<term>arteriosclerosis</term>
-			<def>thickening (hardening) of the arteries; hardening of the arteries and loss of elasticity resulting from thickening of the vessel wall</def>
-		</audio>
-		<audio audioURL="00002908.mp3" chapter=",5,6,">
-			<term>arthritis</term>
-			<def>inflammation of the joints</def>
-		</audio>
-		<audio audioURL="00002926.mp3" chapter=",22,">
-			<term>arthrography</term>
-			<def>radiographic visualization of a joint by injection of contrast media</def>
-		</audio>
-		<audio audioURL="00002968.mp3" chapter=",20,">
-			<term>artifacts</term>
-			<def>interruptions or disturbances in the ECG strip resulting from activity outside the heart</def>
-		</audio>
-		<audio audioURL="00003023.mp3" chapter=",17,">
-			<term>asepsis</term>
-			<def>the absence of or the control of microorganisms</def>
-		</audio>
-		<audio audioURL="00086136.mp3" chapter=",13,">
-			<term>assignment of benefits</term>
-			<def>authorization for the insurance company to send insurance payments directly to the health care provider; also, an agreement with Medicare that the provider will accept the remittance as full payment</def>
-		</audio>
-		<audio audioURL="00003106.mp3" chapter=",6,">
-			<term>asthma</term>
-			<def>an episodic chronic respiratory disorder resulting from constricted bronchi; associated with allergens, infection, pollutants, cold air, exercise, or stress; characterized by wheezing and low oxygen levels</def>
-		</audio>
-		<audio audioURL="00003110.mp3" chapter=",6,">
-			<term>astigmatism</term>
-			<def>impaired vision resulting from irregular curve of cornea; the image focuses improperly on the retina; may be mild to severe; usually corrected with glasses or contact lenses</def>
-		</audio>
-		<audio audioURL="00003154.mp3" chapter=",20,">
-			<term>asystole</term>
-			<def>absence of a heart rate, no complexes; represented by a flat line; cardiac arrest</def>
-		</audio>
-		<audio audioURL="00003173.mp3" chapter=",6,">
-			<term>atelectasis</term>
-			<def>a decrease or absence of air in part or all of the lung and alveoli, resulting in a collapse of these structures</def>
-		</audio>
-		<audio audioURL="00003190.mp3" chapter=",6,">
-			<term>atherosclerosis</term>
-			<def>the most common form of arteriosclerosis; irregular fatty deposits on arterial wall result in narrowing and occlusion of vessel; may cause myocardial infarctions, cerebrovascular accidents, gangrene, and other disorders associated with blood vessel blockage</def>
-		</audio>
-		<audio audioURL="00083741.mp3" chapter=",20,">
-			<term>atrial fibrillation</term>
-			<def>atrial rate of 350 to 500 beats per minute; P waves not distinct because of rapid rate; R to R waves usually irregular, often with a rapid ventricular rate</def>
-		</audio>
-		<audio audioURL="00083742.mp3" chapter=",20,">
-			<term>atrial flutter</term>
-			<def>atrial rate of 250 to 350 beats per minutes; a "saw tooth" pattern on ECG; the ventricular rate is dependent on the number of nonconducted beats</def>
-		</audio>
-		<audio audioURL="00003264.mp3" chapter=",6,">
-			<term>atrioventricular (AV) node</term>
-			<def>located at the lower right of the atrial septum, it picks up the impulse of signal from the sinoatrial (SA) node that causes atrial contraction; if the SA node fails, the AV node may initiate the impulse; the resulting heart rate is slower, at 40 to 60 beats per minute</def>
-		</audio>
-		<audio audioURL="00003311.mp3" chapter=",18,">
-			<term>audiometry</term>
-			<def>a hearing test using an audiometer with earphones that measures the patient's response to tones; it is recorded in decibels (db) and frequencies</def>
-		</audio>
-		<audio audioURL="00037258.mp3" chapter=",11,">
-			<term>audit</term>
-			<def>examine medical record files to ensure accuracy, completeness, and sequence of the documents</def>
-		</audio>
-		<audio audioURL="00003346.mp3" chapter=",18,">
-			<term>auscultation</term>
-			<def>use of an instrument, usually a stethoscope, to listen to internal body sounds for abnormalities</def>
-		</audio>
-		<audio audioURL="00003534.mp3" chapter=",26,">
-			<term>avulsion</term>
-			<def>open wound caused by forceful tearing away of skin from bony structure by trauma, sometimes leaving a skin flap and causing excessive bleeding</def>
-		</audio>
-		<audio audioURL="00081360.mp3" chapter=",6,">
-			<term>axial skeleton</term>
-			<def>consists of the bones of the skull, spine, and chest</def>
-		</audio>-->
-	</group>
-	<group name="B" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00003662.mp3" chapter=",17,">
-			<term>bacteria (singular bacterium)</term>
-			<def>one-celled microorganisms; may be found singularly or in chains</def>
-		</audio>
-		<audio audioURL="00003673.mp3" chapter=",17,">
-			<term>bacteriocide</term>
-			<def>an agent or a process that kills bacteria</def>
-			<spanishterm>bactericida</spanishterm>
-			</audio>		
-		<audio mediatype="sound" format="mp3" audioURL="00003683.mp3" SpanURL="00065592" chapter=",17," >
-		<term>bacteriology</term>
-		<def>the science and study of bacteria.</def>
-				</audio>
-		
-<audio mediatype="sound" format="mp3" audioURL="00003717.mp3" SpanURL="00065599" chapter=",4," >
-<term>balance</term>
-<def>equality between the debit and credit sides of an accounting equation; that which is left over after additions and subtractions have been made to an account; remainder; amount due.</def>
-<spanishterm>equilibrar</spanishterm>
-</audio>
-
-<!--
-<audio mediatype="sound" format="mp3" audioURL="00003902" SpanURL="00065640" chapter=",9,">
-<term>benign</term>
-<def>not cancerous or malignant.</def>
-<spanishterm>benigno-a</spanishterm>
-</audio>
-<audio audioURL="00003683.mp3" chapter=",17,">
-<term>bacteriology</term>
-<def>the study of bacteria</def>
-</audio>
-<audio audioURL="00003698.mp3" chapter=",17,">
-<term>bacteriostasis</term>
-<def>the process of inhibiting or controlling bacterial growth</def>
-</audio>
-<audio audioURL="00077976.mp3" chapter=",22,">
-<term>barium enema (lower GI series)</term>
-<def>rectal administration of barium to radiographically visualize the lower portion of the gastrointestinal system</def>
-</audio>
-		<audio audioURL="00048864.mp3" chapter=",22,">
-			<term>barium swallow (upper GI series)</term>
-			<def>oral administration of barium to radiographically visualize the upper portion of the gastrointestinal system</def>
-		</audio>
-		<audio audioURL="00003856.mp3" chapter=",4,">
-			<term>battery</term>
-			<def>touching a person without his or her consent</def>
-		</audio>
-		<audio audioURL="00060470.mp3" chapter=",6,">
-			<term>Bell palsy</term>
-			<def>unilateral facial muscle paralysis (drooping of eye and mouth) resulting from dysfunction of the seventh cranial nerve</def>
-		</audio>
-		<audio audioURL="00003901.mp3" chapter=",4,">
-			<term>beneficence</term>
-			<def>actions that create benefit or good</def>
-		</audio>
-		<audio audioURL="00048924.mp3" chapter=",13,">
-			<term>beneficiary</term>
-			<def>a person eligible to receive insurance benefits</def>
-		</audio>
-		<audio audioURL="00083085.mp3" chapter=",6,">
-			<term>benign prostatic hyperplasia (BPH)</term>
-			<def>nonmalignant enlargement of the prostate</def>
-		</audio>
-		<audio audioURL="00048936.mp3" chapter=",14,">
-			<term>benign tumor</term>
-			<def>a nonmalignant lesion that is not invasive or metastatic</def>
-		</audio>
-		<audio audioURL="00004036.mp3" chapter=",20,">
-			<term>bigeminy </term>
-			<def>every other beat is ectopic or premature</def>
-		</audio>
-		<audio audioURL="00004044.mp3" chapter=",6,">
-			<term>bile</term>
-			<def>a substance produced by the liver and stored in the gallbladder that aids in digestion and fat absorption</def>
-		</audio>
-		<audio audioURL="00048998.mp3" chapter=",4,">
-			<term>bioethics</term>
-			<def>moral issues dealing with biologic studies, research, procedures, and decisions</def>
-		</audio>
-		<audio audioURL="00004158.mp3" chapter=",21,">
-			<term>biopsy</term>
-			<def>removing tissue from patients for microscopic examination to determine the presence of cancer or other abnormalities; may be done surgically or with endoscopes, biopsy punches, or other instruments</def>
-		</audio>
-		<audio audioURL="00086217.mp3" chapter=",13,">
-			<term>birthday rule</term>
-			<def>a method used to determine the primary insurance carrier when children are covered under both parents' insurance plans; the parent whose birthday falls earliest in the calendar year becomes the primary carrier</def>
-		</audio>
-		<audio audioURL="00049076.mp3" chapter=",17,">
-			<term>bloodborne pathogen</term>
-			<def>any type of disease-causing organism that lives in and is transmitted through blood</def>
-		</audio>
-		<audio audioURL="00004377.mp3" chapter=",6,">
-			<term>body</term>
-			<def>organism; a group of systems working together to maintain life</def>
-		</audio>
-		<audio audioURL="00049085.mp3" chapter=",6,">
-			<term>body cavities</term>
-			<def>spaces within the body that house internal organs</def>
-		</audio>
-		<audio audioURL="00083167.mp3" chapter=",18,">
-			<term>body mass index (BMI)</term>
-			<def>a health risk assessment tool for adults and children to estimate the percentage of body fat by using a formula based on the individual's height and weight</def>
-		</audio>
-		<audio audioURL="00049091.mp3" chapter=",23,">
-			<term>body mechanics</term>
-			<def>the efficient use of the body to prevent injury to the health care provider or patient</def>
-		</audio>
-		<audio audioURL="00004422.mp3" chapter=",6,">
-			<term>botulism</term>
-			<def>serious food poisoning, usually found in contaminated canned foods, caused by Clostridium botulinum bacteria</def>
-		</audio>
-		<audio audioURL="00004499.mp3" chapter=",5,20,">
-			<term>bradycardia</term>
-			<def>slow heart rate (pulse); a hear rate slower than 60 beats per minute</def>
-		</audio>
-		<audio audioURL="00004530.mp3" chapter=",6,">
-			<term>brain</term>
-			<def>an organ acting as the primary center for regulating and coordinating body functions and activities; divided into right and left hemispheres</def>
-		</audio>
-		<audio audioURL="00004606.mp3" chapter=",6,">
-			<term>bronchi (singular bronchus)</term>
-			<def>tubes from trachea entering the lungs that subdivide into two more branches in the lungs</def>
-		</audio>
-		<audio audioURL="00004614.mp3" chapter=",6,">
-			<term>bronchioles</term>
-			<def>smaller branches of the bronchi</def>
-		</audio>
-		<audio audioURL="00004623.mp3" chapter=",6,">
-			<term>bronchitis</term>
-			<def>chronic or acute inflammation of the bronchi</def>
-		</audio>
-		<audio audioURL="00042103.mp3" chapter=",26,">
-			<term>burns</term>
-			<def>tissue damage from exposure to heat, chemicals, or electricity</def>
-		</audio>-->
-	</group>
-	<group name="C" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00004938.mp3" chapter=",21,">
-			<term>calibration</term>
-			<def>a measurement compared with a standard; a method for testing the accuracy of equipment; a quality assurance procedure</def>
-		</audio>
-		<audio audioURL="00004974.mp3" chapter=",24,">
-			<term>calorie</term>
-			<def>unit of energy that produces heat</def>
-			<spanishterm>caloría</spanishterm>
-		</audio>		
-		<audio mediatype="sound" format="mp3" audioURL="00005224" SpanURL="00065909" chapter=",15,">
-		<term>carbuncle</term>
-		<def>infection of interconnected group of hair follicles or several furuncles forming a mass.</def>
-		</audio>
-<audio mediatype="sound" format="mp3" audioURL="00005289" SpanURL="00065927" chapter=",10,">
-<term>cardiomegaly</term>
-<def>enlarged heart muscle.</def>
-<spanishterm>cardiomegalia</spanishterm>
-</audio>
-<!--
-<audio mediatype="sound" format="mp3" audioURL="00005293" SpanURL="00065928" chapter=",4,"><term>cardiomyopathy</term><def>any disease affecting the myocardium.</def><spanishterm>cardiomiopata</spanishterm></audio>
-
-
-		<audio audioURL="00005100.mp3" chapter=",13,">
-			<term>capitation</term>
-			<def>a health care insurance payment made to a provider based on a fixed amount per enrollee assigned to that provider, regardless of services provided</def>
-		</audio>
-		<audio audioURL="00005185.mp3" chapter=",24,">
-			<term>carbohydrates</term>
-			<def>sugars and starches; the body's primary energy source</def>
-		</audio>
-		<audio audioURL="00005289.mp3" chapter=",5,">
-			<term>cardiomegaly</term>
-			<def>enlargement of the heart</def>
-		</audio>
-		<audio audioURL="00049298.mp3" chapter=",26,">
-			<term>cardiopulmonary resuscitation (CPR)</term>
-			<def>a standardized approach to providing first aid in a situation in which the victim is not breathing and the heart may have stopped beating</def>
-		</audio>
-		<audio audioURL="00005390.mp3" chapter=",6,">
-			<term>carpals</term>
-			<def>eight wrist bones</def>
-		</audio>
-		<audio audioURL="00086266.mp3" chapter=",13,">
-			<term>carrier</term>
-			<def>insurance company that provides the policy and benefits</def>
-		</audio>
-		<audio audioURL="00005406.mp3" chapter=",6,">
-			<term>cartilage</term>
-			<def>firm connective tissue found primarily in joints, thorax walls, larynx, airway passages and ears</def>
-		</audio>
-		<audio audioURL="00005443.mp3" chapter=",6,">
-			<term>catabolism</term>
-			<def>the phase of metabolism in which cells are broken down</def>
-		</audio>
-		<audio audioURL="00005476.mp3" chapter=",6,">
-			<term>cataract</term>
-			<def>a cloudy or opaque lens that impairs sight; usually corrected by surgery</def>
-		</audio>
-		<audio audioURL="00005531.mp3" chapter=",6,">
-			<term>caudal</term>
-			<def>the location near the sacral region of the spinal column</def>
-		</audio>
-		<audio audioURL="00005588.mp3" chapter=",6,">
-			<term>cecum</term>
-			<def>the upper portion of the large intestine; contains the appendix</def>
-		</audio>
-		<audio audioURL="00005630.mp3" chapter=",6,">
-			<term>cells</term>
-			<def>the structural and functional units of life</def>
-		</audio>
-		<audio audioURL="00082124.mp3" chapter=",6,">
-			<term>central nervous system (CNS)</term>
-			<def>made up of the brain and spinal cord; integrates sensory information and responses</def>
-		</audio>
-		<audio audioURL="00005708.mp3" chapter=",21,">
-			<term>centrifuge</term>
-			<def>laboratory instrument that spins at high speeds, separating particles in specimens such as blood and urine</def>
-		</audio>
-		<audio audioURL="00005710.mp3" chapter=",6,">
-			<term>centriole</term>
-			<def>rod-shaped material in the cytoplasm that begins cell division</def>
-		</audio>
-		<audio audioURL="00005818.mp3" chapter=",6,">
-			<term>cerebellum</term>
-			<def>"little brain"; portion of the brain involved in synergic control of skeletal muscles and coordination of voluntary muscular movements; connected to the cerebrum, brainstem, and spinal cord by the pons</def>
-		</audio>
-		<audio audioURL="00049423.mp3" chapter=",6,">
-			<term>cerebral palsy</term>
-			<def>loss of mental function, sensation, or control of movement resulting from birth injury or defect</def>
-		</audio>
-		<audio audioURL="00049428.mp3" chapter=",6,">
-			<term>cerebrospinal fluid (CSF)</term>
-			<def>clear fluid that flows through the brain and spinal cord and into the subarachnoid spaces of the meninges; it cushions and supports nervous tissue and transports nutrients and waste products from the cells</def>
-		</audio>
-		<audio audioURL="00049431.mp3" chapter=",6,">
-			<term>cerebrovascular accident (CVA)</term>
-			<def>stroke; occlusion or hemorrhage of vessel(s) in the brain, resulting in impairment of mental functions or paralysis or both</def>
-		</audio>
-		<audio audioURL="00005838.mp3" chapter=",6,">
-			<term>cerebrum</term>
-			<def>the largest part of the brain, divided into right and left hemispheres by the longitudinal fissure; it contains auditory, visual, gustatory, and olfactory areas as well as areas of higher mental faculties, and regulates balance</def>
-		</audio>
-		<audio audioURL="00005870.mp3" chapter=",5,">
-			<term>cervicofacial</term>
-			<def>pertaining to the face and neck</def>
-		</audio>
-		<audio audioURL="00060608.mp3" chapter=",11,">
-			<term>chart</term>
-			<def>the patient's medical record</def>
-		</audio>
-		<audio audioURL="00037699.mp3" chapter=",6,">
-			<term>Cheyne-Stokes respiration</term>
-			<def>an irregular breathing pattern of slow and shallow, then rapid and deep respirations with pauses for 20 to 30 seconds; frequently occurs before death</def>
-		</audio>
-		<audio audioURL="00060621.mp3" chapter=",14,18,">
-			<term>chief complaint</term>
-			<def>a patient's statement describing symptoms and conditions that are the reason for seeking health care services; a summary of the patient's words explaining why he or she is seeking health care</def>
-		</audio>
-				<audio audioURL="00046264.mp3" chapter=",5,">
-			<term>chiroplasty</term>
-			<def>surgical repair of the hands</def>
-		</audio>
-		<audio audioURL="00006092.mp3" chapter=",6,">
-			<term>chlamydia</term>
-			<def>the most prevalent sexually transmitted disease, caused by Chlamydia trachomatis; symptoms are frequently undetected, resulting in female pelvic inflammatory disease</def>
-		</audio>
-		<audio audioURL="00006228.mp3" chapter=",22,">
-			<term>cholangiography</term>
-			<def>radiographic visualization of the bile ducts using contrast media</def>
-		</audio>
-		<audio audioURL="00006255.mp3" chapter=",5,">
-			<term>cholecystitis</term>
-			<def>inflammation of the gallbladder</def>
-		</audio>
-		<audio audioURL="00006259.mp3" chapter=",22,">
-			<term>cholecystography</term>
-			<def>radiographic visualization of the gallbladder structure and function</def>
-		</audio>
-		<audio audioURL="00006301.mp3" chapter=",6,">
-			<term>cholelithiasis</term>
-			<def>gallstones</def>
-		</audio>
-		<audio audioURL="00049543.mp3" chapter=",6,">
-			<term>chronic obstructive pulmonary disease (COPD)</term>
-			<def>a usually progressive respiratory system disorder with irreversible obstruction of air exchange in the bronchi alveoli, and lungs; emphysema is a form of COPD</def>
-		</audio>
-		<audio audioURL="00006652.mp3" chapter=",6,">
-			<term>cilia</term>
-			<def>hair-like processes that trap and move foreign particles</def>
-		</audio>
-		<audio audioURL="00006730.mp3" chapter=",6,">
-			<term>circumcision</term>
-			<def>surgical removal of foreskin</def>
-		</audio>
-		<audio audioURL="00006732.mp3" chapter=",6,">
-			<term>circumduction</term>
-			<def> drawing an imaginary circle with a body structure (e.g., the arms)</def>
-		</audio>
-		<audio audioURL="00006754.mp3" chapter=",6,">
-			<term>cirrhosis</term>
-			<def>end-stage liver disease with interference with blood flow, resulting in jaundice, portal hypertension, and liver failure</def>
-		</audio>
-		<audio audioURL="00086298.mp3" chapter=",14,">
-			<term>claim</term>
-			<def>a bill sent to the insurance carrier for payment related to patient care</def>
-		</audio>
-		<audio audioURL="00006815.mp3" chapter=",6,">
-			<term>clavicle</term>
-			<def>collar bone joining the sternum at the anterior and the scapula laterally</def>
-		</audio>
-		<audio audioURL="00086300.mp3" chapter=",14,">
-			<term>clean claim</term>
-			<def>completed insurance claim form submitted to a carrier without deficiencies or errors</def>
-		</audio>
-		<audio audioURL="00007015.mp3" chapter=",6,">
-			<term>cochlea</term>
-			<def>snail-shaped tube in the ear containing receptor for hearing</def>
-		</audio>
-		<audio audioURL="00007053.mp3" chapter=",8,">
-			<term>cognitive</term>
-			<def>relating to knowledge and understanding; a domain of learning</def>
-		</audio>
-		<audio audioURL="00049678.mp3" chapter=",13,">
-			<term>coinsurance</term>
-			<def>a percentage or an established dollar amount of costs contractually assumed by the insured party</def>
-		</audio>
-		<audio audioURL="00007097.mp3" chapter=",6,">
-			<term>collagen</term>
-			<def>a fibrous protein found in the dermis, connective tissues, tendons, and ligaments; it is sometimes referred to as the body's glue, providing strength and flexibility</def>
-		</audio>
-		<audio audioURL="00037763.mp3" chapter=",6,">
-			<term>Colles fracture</term>
-			<def>displaced fracture of the distal radius, proximal to the wrist</def>
-		</audio>
-		<audio audioURL="00007144.mp3" chapter=",6,">
-			<term>colon</term>
-			<def>largest portion of large intestine; divides into four parts: ascending, transverse, descending, and sigmoid</def>
-		</audio>
-		<audio audioURL="00007257.mp3" chapter=",7,">
-			<term>communication</term>
-			<def>the process of forming and transmitting a message to a receiver who interprets that message and, in most cases, transmits a message back to the original sender, repeating the process</def>
-		</audio>
-		<audio audioURL="00007259.mp3" chapter=",14,">
-			<term>comorbidity</term>
-			<def>a condition that exists along with the condition for which the patient is receiving treatment and may increase patient's length of stay (LOS) if hospitalized</def>
-		</audio>
-		<audio audioURL="00007266.mp3" chapter=",7,">
-			<term>compensation</term>
-			<def>a defense mechanism in which a person overemphasizes certain behaviors to accommodate for real or imagined weaknesses</def>
-		</audio>
-		<audio audioURL="00049773.mp3" chapter=",21,">
-			<term>complete blood count (CBC)</term>
-			<def>panel of blood tests that includes hematocrit, hemoglobin, red blood cells, white blood cells, and differential white blood cells (diff)</def>
-		</audio>
-		<audio audioURL="00049811.mp3" chapter=",22,">
-			<term>computed tomography (CT)</term>
-			<def>radiographic visualization of body structures in thin cross sections or layers</def>
-		</audio>
-		<audio audioURL="00071383.mp3" chapter=",9,">
-			<term>computer</term>
-			<def>an electronic device that is programmed to take in, store, retrieve, and process data </def>
-		</audio>
-		<audio audioURL="00007330.mp3" chapter=",11,">
-			<term>conditioning</term>
-			<def>preparation of the chart for retention: secure all loose documents and examine the chart for completion and correct filing order of documents</def>
-		</audio>
-		<audio audioURL="00007358.mp3" chapter=",4,">
-			<term>confidentiality</term>
-			<def>protection of patient information from all but authorized persons </def>
-		</audio>
-		<audio audioURL="00057694.mp3" chapter=",6,">
-			<term>congestive heart failure (CHF)</term>
-			<def>venous and pulmonary congestion and general edema (swelling) resulting from decreased blood circulation</def>
-		</audio>
-		<audio audioURL="00007414.mp3" chapter=",6,">
-			<term>conjunctivitis</term>
-			<def>inflammation of the conjunctiva caused by infection or irritation</def>
-		</audio>
-		<audio audioURL="00007455.mp3" chapter=",14,">
-			<term>consultation</term>
-			<def>services rendered by a physician whose opinion or advice is requested by another physician or agency in the evaluation or treatment of a patient's illness or suspected problem</def>
-		</audio>
-		<audio audioURL="00037793.mp3" chapter=",4,">
-			<term>contract</term>
-			<def>an agreement between two or more parties</def>
-		</audio>
-		<audio audioURL="00007490.mp3" chapter=",21,">
-			<term>control</term>
-			<def>a specimen with known values that serves as a check of test accuracy</def>
-		</audio>
-		<audio audioURL="00007491.mp3" chapter=",19,26,">
-			<term>contusion</term>
-			<def>bleeding below unbroken skin caused by blunt trauma; a bruise; closed wound usually caused by blunt trauma</def>
-		</audio>
-		<audio audioURL="00057698.mp3" chapter=",13,">
-			<term>copayment</term>
-			<def>a portion of the cost to the provider owed by the insured at the time of service; may be referred to as coinsurance</def>
-		</audio>
-		<audio audioURL="00049954.mp3" chapter=",6,">
-			<term>coronary artery disease (CAD)</term>
-			<def>arteriosclerosis or atherosclerosis of the coronary arteries, usually leading to myocardial ischemia (damage to tissue)</def>
-		</audio>
-		<audio audioURL="00007739.mp3" chapter=",14,">
-			<term>counseling</term>
-			<def>discussion with patient or family concerning diagnosis, recommendations, risks, benefits, prognosis, options, and necessary condition-related education; definition used for the coding of professional services</def>
-		</audio>
-		<audio audioURL="00037840.mp3" chapter=",6,">
-			<term>Cowper glands</term>
-			<def>two small glands located at the base of the penis that secrete lubricant during intercourse</def>
-		</audio>
-		<audio audioURL="00007787.mp3" chapter=",6,">
-			<term>cranial</term>
-			<def>location associated with the head</def>
-		</audio>
-		<audio audioURL="00007880.mp3" chapter=",6,">
-			<term>cretinism</term>
-			<def>hypothyroidism; decreased secretion of thyroxine in infants resulting in failure of physical and mental development</def>
-		</audio>
-		<audio audioURL="00037855.mp3" chapter=",6,">
-			<term>Crohn disease</term>
-			<def>inflammatory bowel disease; chronic inflammatory disease of ileum or colon resulting in diarrhea, pain, weight loss, and sometimes rectal bleeding; generally affects young female adults</def>
-		</audio>
-		<audio audioURL="00007927.mp3" chapter=",21,">
-			<term>crossmatching</term>
-			<def>laboratory testing process to determine compatibility of blood donated by one person with the blood of a potential recipient</def>
-		</audio>
-		<audio audioURL="00007942.mp3" chapter=",6,">
-			<term>croup</term>
-			<def>acute viral infection, usually in infants, characterized by barking cough</def>
-		</audio>
-		<audio audioURL="00008007.mp3" chapter=",19,">
-			<term>cryosurgery</term>
-			<def>a method of destroying tissue by freezing (cryogenics) using liquid nitrogen applied from a tank with a gauge and removable hand pieces, or other cryomaterials requiring simple spray canisters</def>
-		</audio>
-		<audio audioURL="00008009.mp3" chapter=",23,">
-			<term>cryotherapy (cold)</term>
-			<def>causes blood vessels to constrict, prevent swelling and reducing pain; used in the initial treatment of an injury</def>
-		</audio>
-		<audio audioURL="00008032.mp3" chapter=",6,">
-			<term>cryptorchidism</term>
-			<def>failure of testes to descend into scrotum</def>
-		</audio>
-		<audio audioURL="00008080.mp3" chapter=",7,21,">
-			<term>culture</term>
-			<def>customary beliefs, traits, social forms, and behaviors associated with a religious, ethnic, or other group; the process of growing pathogens from specimens inoculated into a culture medium and maintained at a designated temperature; the purpose is to identify the microorganisms contained in the specimen</def>
-		</audio>
-		<audio audioURL="00008121.mp3" chapter=",19,">
-			<term>curettes</term>
-			<def>sharp or smooth spoon-shaped instruments used to scrape tissue or other substances from a body orifice or organ; most common area ear and uterine</def>
-		</audio>
-		<audio audioURL="00046375.mp3" chapter=",14,">
-			<term>Current Procedural Terminology (CPT)</term>
-			<def>coding system first published by the American Medical Association in 1966; a manual, updated annually, that contains the codes for procedures and services performed by doctors and other select medical personnel</def>
-		</audio>
-		<audio audioURL="00037891.mp3" chapter=",6,">
-			<term>Cushing syndrome</term>
-			<def>overproduction of cortisol by the adrenal cortex, resulting in round face, overweight, thin skin, and high blood sugar</def>
-		</audio>
-		<audio audioURL="00008175.mp3" chapter=",5,">
-			<term>cyanosis</term>
-			<def>bluish condition of the skin</def>
-		</audio>
-		<audio audioURL="00078263.mp3" chapter=",6,">
-			<term>cystic fibrosis</term>
-			<def>a genetic disorder producing abnormally thick mucus secretions that block and impair the bronchi, pancreatic and bile ducts, and intestines</def>
-		</audio>
-		<audio audioURL="00008297.mp3" chapter=",5,">
-			<term>cystitis </term>
-			<def>bladder inflammation</def>
-		</audio>
-		<audio audioURL="00008399.mp3" chapter=",5,21,">
-			<term>cytology</term>
-			<def>study of cells; analysis of cells to determine abnormalities</def>
-		</audio>
-		<audio audioURL="00008433.mp3" chapter=",6,">
-			<term>cytoplasm</term>
-			<def>colloidal substance (protoplasm) found in the cell; holds other structures in place</def>
-		</audio>-->
-	</group>
-	<group name="D" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00008475.mp3" chapter=",5,">
-			<term>dacryocystitis</term>
-			<def>inflammation of a tear sac</def>
-		</audio>
-		<audio audioURL="00071608.mp3" chapter=",5,">
-			<term>dactyl/o</term>
-			<def>digit, finger or toe</def>
-			<spanishterm>Dactila</spanishterm>
-		</audio>
-		<audio audioURL="00086343.mp3" chapter=",15,">
-			<term>day sheet</term>
-			<def>a daily record of the services rendered, charges made, and payments received; may be a manual or computerized system</def>
-		</audio>		
-		<audio mediatype="sound" format="mp3" audioURL="00008615" SpanURL="00066549" chapter=",13,">
-		<term>decongestant</term>
-		<def>substance that reduces congestion or swelling.</def>
-		<spanishterm>descongestionante </spanishterm>
-		</audio>
-		<!--
-<audio mediatype="sound" format="mp3" audioURL="00008674" SpanURL="00066484" chapter=",11,"><term>deglutition</term><def>the act of swallowing.</def><spanishterm>deglucin </spanishterm></audio>
-<audio mediatype="sound" format="mp3" audioURL="00008681" SpanURL="00066488" chapter=",17,"><term>dehiscence</term><def>separation or opening of the edges of a wound.</def><spanishterm>dehiscencia </spanishterm></audio>
-<audio mediatype="sound" format="mp3" audioURL="00008746" SpanURL="00066497" chapter=",14,"><term>dementia</term><def>progressive organic mental deterioration with loss of intellectual function.</def><spanishterm>demencia </spanishterm></audio>
-
-		<audio audioURL="00050145.mp3" chapter=",13,">
-			<term>deductible</term>
-			<def>an established dollar amount of actual costs of medical services that must be paid by the insured party before the insurance carrier will cover cost; usually applies each year</def>
-		</audio>
-		<audio audioURL="00050176.mp3" chapter=",7,">
-			<term>defense mechanisms</term>
-			<def>psychological behaviors that protect a person from guilt and shame</def>
-		</audio>
-		<audio audioURL="00008766.mp3" chapter=",6,">
-			<term>dendrites</term>
-			<def>neuron fibers conducting impulses to the cell body</def>
-		</audio>
-		<audio audioURL="00008773.mp3" chapter=",7,">
-			<term>denial</term>
-			<def>a defense mechanism in which a person refuses to accept unwanted information or unpleasant circumstances</def>
-		</audio>
-		<audio audioURL="00086360.mp3" chapter=",13,">
-			<term>dependent</term>
-			<def>a person covered under the primary insured's policy</def>
-		</audio>
-		<audio audioURL="00008878.mp3" chapter=",20,">
-			<term>depolarization</term>
-			<def>charged and contracting cardiac muscle cells; systole</def>
-		</audio>
-		<audio audioURL="00008973.mp3" chapter=",5,">
-			<term>dermatosis</term>
-			<def>any skin lesion or eruption</def>
-		</audio>
-		<audio audioURL="00037977.mp3" chapter=",6,">
-			<term>dermis</term>
-			<def>deeper layer of skin containing nerves, blood vessels, and other skin structures or appendages</def>
-		</audio>
-		<audio audioURL="00071698.mp3" chapter=",5,">
-			<term>dextr/o</term>
-			<def>right</def>
-		</audio>
-		<audio audioURL="00061161.mp3" chapter=",6,">
-			<term>diabetes mellitus</term>
-			<def>most common endocrine disorder; low production of insulin, resulting in cells retaining sugar; two types: insulin-dependent diabetes mellitus (type 1 diabetes) and non-insulin-dependent diabetes mellitus (type 2 diabetes)</def>
-		</audio>
-		<audio audioURL="00050278.mp3" chapter=",6,">
-			<term>diabetic retinopathy</term>
-			<def>damage to the retina in diabetic patients from hemorrhage of vessels; usually progressive and related to the control of diabetes</def>
-		</audio>
-		<audio audioURL="00009199.mp3" chapter=",6,">
-			<term>dialysis</term>
-			<def>a form of osmosis that removes certain impurities from the blood (two types: peritoneal and hemodialysis)</def>
-		</audio>
-		<audio audioURL="00009223.mp3" chapter=",6,">
-			<term>diaphragm</term>
-			<def>muscle tissue separating thoracic and abdominal cavities that contracts and expands during respiration, allowing lungs to fill and empty air</def>
-		</audio>
-		<audio audioURL="00009261.mp3" chapter=",6,">
-			<term>diastole</term>
-			<def>relaxation portion of the cardiac cycle</def>
-		</audio>
-		<audio audioURL="00009272.mp3" chapter=",23,">
-			<term>diathermy</term>
-			<def>deep heat therapy using a mechanical energy source</def>
-		</audio>
-		<audio audioURL="00009405.mp3" chapter=",6,">
-			<term>diffusion</term>
-			<def>movement of molecules from area of higher to lower concentration</def>
-		</audio>
-		<audio audioURL="00009416.mp3" chapter=",6,24,">
-			<term>digestion</term>
-			<def>physical and chemical processes changing food into simple nutrients to be utilized by the cells for energy and building materials and into solid waste to be eliminated from the body; physical and chemical changing of nutrients in the body to allow absorption</def>
-		</audio>
-		<audio audioURL="00082125.mp3" chapter=",6,">
-			<term>digestive system</term>
-			<def>body system containing mouth, esophagus, stomach, intestines, rectum, liver, gallbladder, and pancreas; the system ingests and processes food and eliminates solid waste products</def>
-		</audio>
-		<audio audioURL="00009494.mp3" chapter=",19,">
-			<term>dilators</term>
-			<def>solid instruments used to stretch or widen the opening to an anatomic structure (e.g., uterine, urethral sounds)</def>
-		</audio>
-		<audio audioURL="00009698.mp3" chapter=",17,">
-			<term>disinfectant</term>
-			<def>a bacteriostatic chemical agent used to clean and to decrease the number of pathogens on inanimate objects (such as surgical instruments, countertops); does not sterilize</def>
-		</audio>
-		<audio audioURL="00009736.mp3" chapter=",7,">
-			<term>displacement</term>
-			<def>a defense mechanism in which a person transfers negative feelings, sometimes hostility, to something or someone unrelated to a negative situation</def>
-		</audio>
-		<audio audioURL="00009750.mp3" chapter=",6,">
-			<term>distal</term>
-			<def>away from the origin of a structure</def>
-		</audio>
-		<audio audioURL="00009805.mp3" chapter=",6,">
-			<term>diverticula (singular diverticulum)</term>
-			<def>abnormal pouches in the walls of an organ, usually the colon</def>
-		</audio>
-		<audio audioURL="00009811.mp3" chapter=",6,">
-			<term>diverticulosis</term>
-			<def>diverticula of the colon</def>
-		</audio>
-		<audio audioURL="00042510.mp3" chapter=",18,">
-			<term>Doppler</term>
-			<def>an ultrasonic device used to locate, audibly transmit, and sometimes record pulses</def>
-		</audio>
-		<audio audioURL="00009873.mp3" chapter=",6,">
-			<term>dorsal</term>
-			<def>posterior; in back</def>
-		</audio>
-		<audio audioURL="00077750.mp3" chapter=",22,">
-			<term>dosimeter</term>
-			<def>badge-like meter worn by radiology personnel to measure the individual's x-ray exposure</def>
-		</audio>
-		<audio audioURL="00009969.mp3" chapter=",5,">
-			<term>duodenoscopy</term>
-			<def>inspection of the duodenum with a scope</def>
-		</audio>
-		<audio audioURL="00009972.mp3" chapter=",6,">
-			<term>duodenum</term>
-			<def>upper portion of small intestine, separated from the stomach by the pyloric sphincter</def>
-		</audio>
-		<audio audioURL="00009986.mp3" chapter=",6,">
-			<term>dwarfism</term>
-			<def>decreased growth hormone, resulting in abnormally small size</def>
-		</audio>
-		<audio audioURL="00010074.mp3" chapter=",5,">
-			<term>dyskinesia</term>
-			<def>difficult or painful movement</def>
-		</audio>
-		<audio audioURL="00010102.mp3" chapter=",5,">
-			<term>dyspepsia</term>
-			<def>indigestion or painful digestion</def>
-		</audio>-->
-	</group>
-	<group name="E" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00086389.mp3" chapter=",14,">
-			<term>E code</term>
-			<def>a supplementary classification of ICD-9 coding that denotes the external cause of an injury rather than a disease; explains the mechanism of injury; includes drug events such as poisonings and adverse effects</def>
-		</audio>
-		<audio audioURL="00010205.mp3" chapter=",20,">
-			<term>echocardiogram</term>
-			<def>reflected sound waves used to test the heart for structural or functional abnormalities</def>
-			<spanishterm>ecocardiograma</spanishterm>
-		</audio>
-		<audio audioURL="00010226.mp3" chapter=",6,">
-			<term>eclampsia</term>
-			<def>toxemia of pregnancy, with high blood pressure, albuminuria, oliguria, seizures, and sometimes coma</def>
-		</audio>		
-		<audio mediatype="sound" format="mp3" audioURL="00010175" SpanURL="00066994" chapter=",20,">
-		<term>ecchymosis</term>
-		<def>characteristic black and blue mark that results from blood as it accumulates under the skin.</def>
-		<spanishterm>equimosis</spanishterm>
-		</audio>
-		<!--
-<audio mediatype="sound" format="mp3" audioURL="00010308" SpanURL="00066810" chapter=",8,"><term>eczema</term><def>superficial dermatitis.</def><spanishterm>eczema, eccema</spanishterm></audio>
-<audio mediatype="sound" format="mp3" audioURL="" SpanURL="00066837" chapter=",16,"><term>electroencephalogram</term><def>tracing of the electrical activity of the brain.</def><spanishterm>electroencefalograma</spanishterm></audio>
-<audio mediatype="sound" format="mp3" audioURL="" SpanURL="00066866" chapter=",19,"><term>employee</term><def>a person hired to perform given duties in return for financial compensation.</def><spanishterm>empleado-a</spanishterm></audio>
-		<audio audioURL="00050483.mp3" chapter=",20,">
-			<term>ectopic beat</term>
-			<def>a beat originating outside the sinoatrial (SA) node, the pacemaker of the heart</def>
-		</audio>
-		<audio audioURL="00050484.mp3" chapter=",6,">
-			<term>ectopic pregnancy</term>
-			<def>extrauterine pregnancy; implantation of fertilized ovum outside the uterus, most commonly in the ovarian tubes</def>
-		</audio>
-		<audio audioURL="00038157.mp3" chapter=",20,">
-			<term>Einthoven triangle</term>
-			<def>the views of the heart from the placement of lead I, lead II, and lead III, which form a triangular shape</def>
-		</audio>
-		<audio audioURL="00050510.mp3" chapter=",6,">
-			<term>ejaculatory duct</term>
-			<def>passage formed by the seminal vesicles and vas deferens allowing semen to enter the urethra</def>
-		</audio>
-		<audio audioURL="00010410.mp3" chapter=",20,">
-			<term>electrocardiogram (ECG or EKG)</term>
-			<def>the graphic representation of the heart's electrical activity monitored at the skin surface with sensors called electrodes</def>
-		</audio>
-		<audio audioURL="00010431.mp3" chapter=",20,">
-			<term>electrodes</term>
-			<def>skin sensors used to capture or monitor electrical activity of various organs (e.g., the heart, the brain)</def>
-		</audio>
-		<audio audioURL="00086396.mp3" chapter=",11,">
-			<term>electronic health record (HER)</term>
-			<def>patient health information maintained in an electronic format, computerized record</def>
-		</audio>
-		<audio audioURL="00010504.mp3" chapter=",19,">
-			<term>electrosurgery</term>
-			<def>a method of cutting or cautherization using an electric current directed to a specific anatomic area to cut, destroy, or coagulate</def>
-		</audio>
-		<audio audioURL="00010528.mp3" chapter=",6,">
-			<term>elimination</term>
-			<def>excretion of the solid waste products of digestion in the form of feces</def>
-		</audio>
-		<audio audioURL="00086400.mp3" chapter=",4,">
-			<term>emancipated minor</term>
-			<def>a person who has not reached the age of majority but is living on his or her own and is self-supporting; a minor serving in the armed forces is considered emancipated</def>
-		</audio>
-		<audio audioURL="00010570.mp3" chapter=",6,">
-			<term>embolus (plural emboli)</term>
-			<def>a detached thrombus or other substance occluding a vessel</def>
-		</audio>
-		<audio audioURL="00041286.mp3" chapter=",5,">
-			<term>-emia</term>
-			<def>pertaining to the blood</def>
-		</audio>
-		<audio audioURL="00010645.mp3" chapter=",6,">
-			<term>emphysema</term>
-			<def>a form of chronic obstructive pulmonary disease that impedes respiration; characterized by irreversible loss of elasticity in alveoli</def>
-		</audio>
-		<audio audioURL="00041288.mp3" chapter=",5,">
-			<term>encephal/o</term>
-			<def>pertaining to the brain</def>
-		</audio>
-		<audio audioURL="00010700.mp3" chapter=",5,">
-			<term>encephalitis</term>
-			<def>inflammation of the brain</def>
-		</audio>
-		<audio audioURL="00010745.mp3" chapter=",7,">
-			<term>encoding</term>
-			<def>forming and sending a message</def>
-		</audio>
-		<audio audioURL="00010782.mp3" chapter=",5,">
-			<term>endocarditis</term>
-			<def>inflammation of the inside lining of the heart</def>
-		</audio>
-		<audio audioURL="00010783.mp3" chapter=",6,">
-			<term>endocardium</term>
-			<def>inner layer of the heart</def>
-		</audio>
-		<audio audioURL="00082126.mp3" chapter=",6,">
-			<term>endocrine system</term>
-			<def>body system containing glands and related structures that produce and secrete hormones</def>
-		</audio>
-		<audio audioURL="00010842.mp3" chapter=",6,">
-			<term>endometriosis</term>
-			<def>condition caused by endometrium tissue located outside the uterus that causes pain and, sometimes, cyst formation</def>
-		</audio>
-		<audio audioURL="00010886.mp3" chapter=",19,">
-			<term>endoscope</term>
-			<def>special instrument used to examine the interior of canals and hollow viscus; design and name is dependent on the organ; it usually contains fiberoptic technology allowing lighting, video transmission, and other technologic procedures</def>
-		</audio>
-		<audio audioURL="00010971.mp3" chapter=",5,">
-			<term>enteritis</term>
-			<def>inflammation of the small intestine</def>
-		</audio>
-		<audio audioURL="00011095.mp3" chapter=",6,">
-			<term>enucleation</term>
-			<def>removal of the eyeball</def>
-		</audio>
-		<audio audioURL="00011096.mp3" chapter=",6,">
-			<term>enuresis</term>
-			<def>involuntary discharge of urine</def>
-		</audio>
-		<audio audioURL="00011104.mp3" chapter=",6,">
-			<term>enzymes</term>
-			<def>proteins that act as catalysts to increase the speed of digestion; each enzyme is specific to a certain type of food and reaction</def>
-		</audio>
-		<audio audioURL="00011148.mp3" chapter=",6,">
-			<term>epicardium</term>
-			<def>outer layer of heart</def>
-		</audio>
-		<audio audioURL="00011175.mp3" chapter=",6,">
-			<term>epidermis</term>
-			<def>surface layer of skin containing strata and melanin</def>
-		</audio>
-		<audio audioURL="00011187.mp3" chapter=",6,">
-			<term>epididymis</term>
-			<def>two coiled tubules on the posterior of the testes that store and carry sperm from the testes to the vas deferens</def>
-		</audio>
-		<audio audioURL="00011208.mp3" chapter=",6,">
-			<term>epiglottis</term>
-			<def>flaplike structure covering larynx during swallowing</def>
-		</audio>
-		<audio audioURL="00011222.mp3" chapter=",6,">
-			<term>epilepsy</term>
-			<def>abnormal electrical activity of the brain resulting in seizure; there are multiple causes, such as head trauma, high fevers, disease processes, poisoning, or overdose</def>
-		</audio>
-		<audio audioURL="00011286.mp3" chapter=",26,">
-			<term>epistaxis</term>
-			<def>nosebleed</def>
-		</audio>
-		<audio audioURL="00011337.mp3" chapter=",14,">
-			<term>eponym</term>
-			<def>the name of a disease or procedure derived from the name of a place or person</def>
-		</audio>
-		<audio audioURL="00011393.mp3" chapter=",23,">
-			<term>ergonomics</term>
-			<def>adaptation of the environment and use of techniques and equipment to prevent injury</def>
-		</audio>
-		<audio audioURL="00011463.mp3" chapter=",6,">
-			<term>erythrocytes</term>
-			<def>red blood cells (RBCs); contain hemoglobin to carry oxygen; mature cells do not have a nucleus</def>
-		</audio>
-		<audio audioURL="00011568.mp3" chapter=",6,">
-			<term>esophagus</term>
-			<def>tube from the pharynx to the stomach</def>
-		</audio>
-		<audio audioURL="00086420.mp3" chapter=",14,">
-			<term>established patient</term>
-			<def>a person who has received care from the physician or another physician of the same specialty in the same group practice within 3 years</def>
-		</audio>
-		<audio audioURL="00086421.mp3" chapter=",24,">
-			<term>estimated energy requirement (EER)</term>
-			<def>approximation of needed daily calories</def>
-		</audio>
-		<audio audioURL="00011651.mp3" chapter=",4,">
-			<term>ethics</term>
-			<def>moral principles or values or duties</def>
-		</audio>
-		<audio audioURL="00011723.mp3" chapter=",14,">
-			<term>etiology</term>
-			<def>the cause of disease</def>
-		</audio>
-		<audio audioURL="00038228.mp3" chapter=",6,">
-			<term>eustachian tube</term>
-			<def>connects middle ear with pharynx (throat); equalizes pressure on tympanic membrane</def>
-		</audio>
-		<audio audioURL="00057733.mp3" chapter=",21,">
-			<term>evacuated tube (ET)</term>
-			<def>a tube, sealed to maintain the vacuum, that is used for obtaining blood specimens; it may have additives, depending on the type of blood specimen to be obtained</def>
-		</audio>
-		<audio audioURL="00011860.mp3" chapter=",6,">
-			<term>eversion</term>
-			<def>turning wrists or ankles outward, away from the body (the opposite of inversion), such as turning the foot away from the body</def>
-		</audio>
-		<audio audioURL="00011908.mp3" chapter=",13,">
-			<term>exclusion</term>
-			<def>conditions or circumstances that are not covered under the insurance plan</def>
-		</audio>
-		<audio audioURL="00087456.mp3" chapter=",6,">
-			<term>exophthalmia</term>
-			<def>protrusion of the eyeballs, usually resulting from an endocrine disorder</def>
-		</audio>
-		<audio audioURL="00011997.mp3" chapter=",6,">
-			<term>expiration</term>
-			<def>exhalation; letting air out of the lungs; the diaphragm relaxes, decreasing the size of the thoracic cavity and pushing air out</def>
-		</audio>
-		<audio audioURL="00046519.mp3" chapter=",13,">
-			<term>explanation of benefits (EOB)</term>
-			<def>a claim summary indicating what services were covered, what was not covered, and why; also referred to as remittance advice</def>
-		</audio>
-		<audio audioURL="00012026.mp3" chapter=",6,">
-			<term>extension</term>
-			<def>bringing the limbs or phalanges toward a straight position (the opposite of flexion), such as opening the fingers of a closed hand</def>
-		</audio>
-		<audio audioURL="00078321.mp3" chapter=",6,">
-			<term>extracellular fluid</term>
-			<def>body fluid outside the cell</def>
-		</audio>
-		<audio audioURL="00012093.mp3" chapter=",25,">
-			<term>extravasation</term>
-			<def>the leakage of fluid from the vein into the surrounding tissue</def>
-		</audio>-->
-	</group>
-	<group name="F" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00038247.mp3" chapter=",6,">
-			<term>fallopian tubes</term>
-			<def>oviducts; canals leading from the ovaries to the uterus</def>
-		</audio>
-		<audio audioURL="00018646.mp3" chapter=",24,">
-			<term>fats (lipids)</term>
-			<def>greasy material in nutrients transport fat-soluble vitamins, insulate the body from the cold, and provide fatty acids</def>
-			<spanishterm>Grasas (lípidos)</spanishterm>
-		</audio>
-		<audio audioURL="00086444.mp3" chapter=",13,">
-			<term>fee schedule</term>
-			<def>a list of a physician's customary charges; may incorporate insurance plan-specific discounts</def>
-		</audio>		
-		<audio mediatype="sound" format="mp3" audioURL="00012652" SpanURL="00067414" chapter=",7,">
-		<term>fluoroscopy</term>
-		<def>special x-ray technique for examining a body part by immediate projection onto a fluorescent screen.</def>
-		<spanishterm>fluoroscopa</spanishterm>
-		</audio>
-		<!--
-<audio mediatype="sound" format="mp3" audioURL="00012699" SpanURL="00067420" chapter=",21,"><term>folliculitis</term><def>inflammation of hair follicles.</def><spanishterm>foliculitis</spanishterm></audio>
-		<audio audioURL="00012244.mp3" chapter=",7,">
-			<term>feedback</term>
-			<def>paraphrasing, mirroring, repeating, or restating to ensure understanding</def>
-		</audio>
-		<audio audioURL="00012260.mp3" chapter=",6,">
-			<term>femur</term>
-			<def>thigh bone; the body's largest, longest, and strongest bone</def>
-		</audio>
-		<audio audioURL="00012311.mp3" chapter=",6,">
-			<term>fertilization</term>
-			<def>impregnation of the female ovum (egg) with the male sperm</def>
-		</audio>
-		<audio audioURL="00012338.mp3" chapter=",6,">
-			<term>fetus</term>
-			<def>term given after the first trimester to a developing baby in the uterus</def>
-		</audio>
-		<audio audioURL="00012341.mp3" chapter=",24,">
-			<term>fiber</term>
-			<def>nondigestible but edible portion of plants; necessary for the gastrointestinal elimination function</def>
-		</audio>
-		<audio audioURL="00012361.mp3" chapter=",21,">
-			<term>fibrinogen</term>
-			<def>a protein in blood plasma that assists clotting</def>
-		</audio>
-		<audio audioURL="00012401.mp3" chapter=",6,">
-			<term>fibroids</term>
-			<def>nonmalignant tumors of the uterus</def>
-		</audio>
-		<audio audioURL="00012437.mp3" chapter=",6,">
-			<term>fibula</term>
-			<def>smaller lower leg bone, lateral to tibia</def>
-		</audio>
-		<audio audioURL="00012481.mp3" chapter=",6,">
-			<term>filtration</term>
-			<def>process of moving fluid containing dissolved particles through a membrane; an example is kidney filtration</def>
-		</audio>
-		<audio audioURL="00061609.mp3" chapter=",26,">
-			<term>first aid</term>
-			<def>the immediate care rendered in a medical emergency until definitive or advanced care is available</def>
-		</audio>
-		<audio audioURL="00012518.mp3" chapter=",6,">
-			<term>flagella</term>
-			<def>whiplike processes on the cell surface; accommodate cell movement</def>
-		</audio>
-		<audio audioURL="00012559.mp3" chapter=",6,">
-			<term>flexion</term>
-			<def>bending (the opposite of extension), such as closing the fingers of the hand</def>
-		</audio>
-		<audio audioURL="00012707.mp3" chapter=",17,">
-			<term>fomite</term>
-			<def>contaminated food or drink and contaminated objects such as soiled hands; provide avenue for indirect transmission of microbes</def>
-		</audio>
-		<audio audioURL="00087499.mp3" chapter=",25,">
-			<term>Food and Drug Administration (FDA)</term>
-			<def>federal agency that controls the drugs that are acceptable for use in the United States</def>
-		</audio>
-		<audio audioURL="00012730.mp3" chapter=",19,">
-			<term>forceps</term>
-			<def>a two-handled instrument used to grasp, move, or crimp tissue</def>
-		</audio>
-		<audio audioURL="00038375.mp3" chapter=",4,14,">
-			<term>fraud</term>
-			<def>an act of deceiving or misrepresenting; intentional and unlawful deception for gain that results in harm to another person or organization</def>
-		</audio>
-		<audio audioURL="00051073.mp3" chapter=",6,">
-			<term>frontal plane</term>
-			<def>imaginary line or cut of the body made in line with the ears and then down the middle of the body, resulting in a front and back portion; also called coronal plane</def>
-		</audio>-->
-	</group>
-	<group name="G" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00013041.mp3" chapter=",6,">
-			<term>gallbladder</term>
-			<def>pear-shaped sac located on the inferior surface of the liver; stores bile to aid in digestion and fat absorption</def>
-		</audio>
-		<audio audioURL="00013074.mp3" chapter=",6,">
-			<term>gamete</term>
-			<def>male(sperm) or female (ovum) reproductive cell</def>
-			<spanishterm>gameto</spanishterm>
-		</audio>
-		<audio audioURL="00013108.mp3" chapter=",6,">
-			<term>ganglion</term>
-			<def>marked swelling of gray matter, located outside the central nervous system, containing cells of neurons</def>
-		</audio>
-		<audio audioURL="00038454.mp3" chapter=",5,">
-			<term>gastrectasia</term>
-			<def>stretching of the stomach</def>
-			<spanishterm>Gastrectasia</spanishterm>
-		</audio>
-		<!--
-		<audio audioURL="00013147.mp3" chapter=",5,">
-			<term>gastritis</term>
-			<def>inflammation of the stomach</def>
-		</audio>
-		<audio audioURL="00051142.mp3" chapter=",6,">
-			<term>gastroesophageal reflux disease (GERD)</term>
-			<def>backflow of stomach acids into the esophagus due to an incompetent esophageal sphincter, resulting in burning and discomfort; can lead to ulcers</def>
-		</audio>
-		<audio audioURL="00051188.mp3" chapter=",6,">
-			<term>genital herpes</term>
-			<def>painful and incurable viral infection of the male or female genital tract's mucous membrane; may lead to cervical cancer in women; newborns become infected through contact with the mother's birth canal</def>
-		</audio>
-		<audio audioURL="00083599.mp3" chapter=",6,">
-			<term>genital warts</term>
-			<def>infection caused by the human papillomavirus; believed to be a precursor of female cervical cancer</def>
-		</audio>
-		<audio audioURL="00013333.mp3" chapter=",6,">
-			<term>genitalia</term>
-			<def>external sex organs</def>
-		</audio>
-		<audio audioURL="00013407.mp3" chapter=",6,">
-			<term>gestation</term>
-			<def>period of pregnancy</def>
-		</audio>
-		<audio audioURL="00013413.mp3" chapter=",6,">
-			<term>giantism</term>
-			<def>overproduction of the growth hormone, resulting in abnormally large size</def>
-		</audio>
-		<audio audioURL="00013415.mp3" chapter=",6,">
-			<term>giardiasis</term>
-			<def>infectious diarrhea caused by Giardia lamblia in contaminated water</def>
-		</audio>
-		<audio audioURL="00013431.mp3" chapter=",5,">
-			<term>gingivoglossitis</term>
-			<def>inflammation of the gums and tongue</def>
-		</audio>
-		<audio audioURL="00078486.mp3" chapter=",6,">
-			<term>glans penis</term>
-			<def>acorn-shaped head of penis</def>
-		</audio>
-		<audio audioURL="00013472.mp3" chapter=",6,">
-			<term>glaucoma</term>
-			<def> a disease of the eye characterized by increased intraocular pressure; causes damage to optic nerve; often results in blindness</def>
-		</audio>
-		<audio audioURL="00013508.mp3" chapter=",6,">
-			<term>globulins</term>
-			<def>the fraction of the blood serum protein associated with antibodies; vaccination with globulins produce passive immunity</def>
-		</audio>
-		<audio audioURL="00013521.mp3" chapter=",6,">
-			<term>glomerulonephritis</term>
-			<def>acute or chronic inflammation of the kidney glomeruli; symptoms include edema, blood and protein in the urine, and possible uremia</def>
-		</audio>
-		<audio audioURL="00013769.mp3" chapter=",6,">
-			<term>goiter</term>
-			<def>enlarged thyroid</def>
-		</audio>
-		<audio audioURL="00078653.mp3" chapter=",6,">
-			<term>gonorrhea</term>
-			<def>contagious inflammation of the genital mucous membrane of either sex, caused by Neisseria gonorrhoeae</def>
-		</audio>
-		<audio audioURL="00078665.mp3" chapter=",6,">
-			<term>gout</term>
-			<def>inflammation and pain, usually of the great toes or thumbs, caused by accumulation of uric acid crystals; usually occurs in late-middle-aged men</def>
-		</audio>
-		<audio audioURL="00038573.mp3" chapter=",6,">
-			<term>Graves disease</term>
-			<def>hyperthyroidism; increased secretion of thyroxine; characterized by goiter, exophthalmia (bulging eyes), weight loss, extreme nervousness, and rapid metabolism</def>
-		</audio>-->
-	</group>
-	<group name="H" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00072910.mp3" chapter=",9,">
-			<term>hardware</term>
-			<def>the central processing unit, motherboard, hard drive, disk drive, keyboard, monitor, and mouse of the computer</def>
-		</audio>
-		<audio audioURL="00046682.mp3" chapter=",11,">
-			<term>Health Insurance Portability and Accountability Act (HIPAA)</term>
-			<def>originally enacted in 1996, contains requirements for patient confidentiality</def>
-			<spanishterm>Ley de Portabilidad y Responsabilidad del Seguro Médico (HIPAA)</spanishterm>
-		</audio>
-		<audio audioURL="00051391.mp3" chapter=",13,">
-			<term>health maintenance organization (HMO)</term>
-			<def>an association that provides all care to the insured person for a fixed fee, usually paid for by the insured or employer through a monthly premium; a copayment may or may not be required</def>
-		</audio>
-		<audio audioURL="00014290.mp3" chapter=",21,">
-			<term>hematocrit</term>
-			<def>percentage of red blood cells in the total blood volume</def>
-			<spanishterm>Hematocrito</spanishterm>
-		</audio>
-		<!--
-		<audio audioURL="00014308.mp3" chapter=",21,">
-			<term>hematology</term>
-			<def>study of blood and blood-forming tissue; analysis of blood to determine abnormalities</def>
-		</audio>
-		<audio audioURL="00079045.mp3" chapter=",5,">
-			<term>hemiplegia</term>
-			<def>paralysis of one half of the body</def>
-		</audio>
-		<audio audioURL="00079073.mp3" chapter=",6,">
-			<term>hemodialysis</term>
-			<def>a form of dialysis that removes blood via a catheter placed directly into a vein; the blood then circulates through a dialysis machine to remove impurities</def>
-		</audio>
-		<audio audioURL="00079080.mp3" chapter=",21,">
-			<term>hemoglobin</term>
-			<def>oxygen-carrying portion of red blood cells</def>
-		</audio>
-		<audio audioURL="00079101.mp3" chapter=",6,">
-			<term>hemophilia</term>
-			<def>genetic bleeding disorder involving a deficiency of specific clotting factors and resulting in excessive bleeding, especially into the joints</def>
-		</audio>
-		<audio audioURL="00079112.mp3" chapter=",26,">
-			<term>hemorrhage</term>
-			<def>excessive bleeding that may result in hypovolemic shock</def>
-		</audio>
-		<audio audioURL="00079117.mp3" chapter=",6,">
-			<term>hemorrhoids</term>
-			<def>inflammation and dilation of veins in rectum and anus</def>
-		</audio>
-		<audio audioURL="00014586.mp3" chapter=",5,">
-			<term>hemostasis</term>
-			<def>to stop or control bleeding</def>
-		</audio>
-		<audio audioURL="00079123.mp3" chapter=",19,">
-			<term>hemostat</term>
-			<def>sometimes referred to as a forceps; straight or curved instrument used to compress capillaries and other blood vessels to stop bleeding; also referred to as a clamp or a crile</def>
-		</audio>
-		<audio audioURL="00014616.mp3" chapter=",6,">
-			<term>hepatic</term>
-			<def>referring to the liver</def>
-		</audio>
-		<audio audioURL="00014628.mp3" chapter=",6,">
-			<term>hepatitis</term>
-			<def>acute or chronic inflammation of the liver; there are at least eight types of identified hepatitis (A, B, C, D, E, F, G, H), with different causes and prognoses</def>
-		</audio>
-		<audio audioURL="00079165.mp3" chapter=",5,">
-			<term>hepatomegaly</term>
-			<def>enlargement of the liver</def>
-		</audio>
-		<audio audioURL="00079192.mp3" chapter=",6,">
-			<term>hernia</term>
-			<def>protrusion of an organ or part of an organ through the wall normally containing it; intestine is the most common organ to herniate</def>
-		</audio>
-		<audio audioURL="00079718.mp3" chapter=",6,">
-			<term>herpes zoster</term>
-			<def>shingles; infection caused by herpes zoster virus forming blister-type lesions and producing  pain along the nerve trunks</def>
-		</audio>
-		<audio audioURL="00079365.mp3" chapter=",6,21,">
-			<term>histology</term>
-			<def>study of tissues; microscopic study of cells, tissues, and organs in association with their functions</def>
-		</audio>
-		<audio audioURL="00038829.mp3" chapter=",20,">
-			<term>Holter monitor</term>
-			<def>a portable ECG device worn by a patient for 24 hours; heart activity is monitored during normal activities of daily living</def>
-		</audio>
-		<audio audioURL="00015099.mp3" chapter=",6,">
-			<term>homeostasis</term>
-			<def>equilibrium or health of the body as measured by established norms for blood pressure, heart rate, temperature, respiration rate, and other indicators</def>
-		</audio>
-		<audio audioURL="00079561.mp3" chapter=",21,">
-			<term>human chorionic gonadotropin (hCG)</term>
-			<def>hormone present in blood and urine during pregnancy; urine or blood tests are used to determine pregnancy by the presence of hCG</def>
-		</audio>
-		<audio audioURL="00051594.mp3" chapter=",6,">
-			<term>human immunodeficiency virus (HIV)</term>
-			<def>the virus causing acquired immunodeficiency syndrome</def>
-		</audio>
-		<audio audioURL="00087753.mp3" chapter=",6,">
-			<term>human papillomavirus (HPV)</term>
-			<def>the virus associated with genital warts and cervical cancer</def>
-		</audio>
-		<audio audioURL="00015235.mp3" chapter=",6,">
-			<term>humerus</term>
-			<def>upper arm bone</def>
-		</audio>
-		<audio audioURL="00015336.mp3" chapter=",6,">
-			<term>hydrocephalus</term>
-			<def>accumulation of cerebrospinal fluid in the brain caused by an obstruction and resulting in mounting pressure and destruction of brain tissue</def>
-		</audio>
-		<audio audioURL="00015389.mp3" chapter=",6,">
-			<term>hydronephrosis</term>
-			<def>distention of the renal pelvis resulting from obstructed flow of urine</def>
-		</audio>
-		<audio audioURL="00015435.mp3" chapter=",23,">
-			<term>hydrotherapy</term>
-			<def>hot- or cold-water regimens used for therapy</def>
-		</audio>
-		<audio audioURL="00015645.mp3" chapter=",6,">
-			<term>hyperextension</term>
-			<def>extreme or abnormal extension, usually resulting in injury (e.g., dislocated finger)</def>
-		</audio>
-		<audio audioURL="00015664.mp3" chapter=",26,">
-			<term>hyperglycemia</term>
-			<def>abnormally high blood glucose level</def>
-		</audio>
-		<audio audioURL="00015750.mp3" chapter=",6,">
-			<term>hyperopia</term>
-			<def>farsightedness; a condition in which distant objects can be seen more clearly than closer objects</def>
-		</audio>
-		<audio audioURL="00015793.mp3" chapter=",5,">
-			<term>hyperplasia</term>
-			<def>excessive formation of cells or tissue</def>
-		</audio>
-		<audio audioURL="00015834.mp3" chapter=",6,">
-			<term>hypertension</term>
-			<def>high blood pressure (beginning at 140/90)</def>
-		</audio>
-		<audio audioURL="00015841.mp3" chapter=",26,">
-			<term>hyperthermia</term>
-			<def>abnormally high body temperature (e.g., heat exhaustion and heat stroke [most serious])</def>
-		</audio>
-		<audio audioURL="00015849.mp3" chapter=",6,">
-			<term>hyperthyroidism</term>
-			<def>overactivity of the thyroid</def>
-		</audio>
-		<audio audioURL="00016012.mp3" chapter=",5,26,">
-			<term>hypoglycemia</term>
-			<def>less than normal blood sugar level; abnormally low blood glucose level</def>
-		</audio>
-		<audio audioURL="00016122.mp3" chapter=",6,">
-			<term>hypospadias</term>
-			<def>congenital disorder; the male urethra opens on the underside of the penis</def>
-		</audio>
-		<audio audioURL="00016140.mp3" chapter=",6,">
-			<term>hypothalamus</term>
-			<def>located in the diencephalon, the hypothalamus contains nerve cells assisting in maintenance of water balance, fat and sugar metabolism, secretion of endocrine glands, and regulation of body temperature</def>
-		</audio>
-		<audio audioURL="00016143.mp3" chapter=",5,26,">
-			<term>hypothermia</term>
-			<def>below normal temperature; abnormally low body temperature</def>
-		</audio>
-		<audio audioURL="00016151.mp3" chapter=",6,">
-			<term>hypothyroidism</term>
-			<def>underactivity of the thyroid</def>
-		</audio>
-		<audio audioURL="00016218.mp3" chapter=",5,">
-			<term>hysterorrhaphy</term>
-			<def>suturing of the uterus</def>
-		</audio>-->
-	</group>
-	<group name="I" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00016373.mp3" chapter=",6,">
-			<term>ileum</term>
-			<def>lower portion of the small intestine, opening into the cecum</def>
-		</audio>
-		<audio audioURL="00016398.mp3" chapter=",6,">
-			<term>ilium</term>
-			<def>superior wing-shaped portion of hip bones</def>
-			<spanishterm>ilion</spanishterm>
-		</audio>
-		<audio audioURL="00016443.mp3" chapter=",6,">
-			<term>immunity</term>
-			<def>the individual's ability to resist specific diseases or disorders, usually by acquiring the corresponding antibody</def>
-		</audio>
-		<audio audioURL="00016444.mp3" chapter=",6,">
-			<term>immunization</term>
-			<def>vaccination; protection from communicable diseases by administration of living attenuated agents (e.g., measles), killed organisms (e.g., pertussis), inactivated toxins (e.g., tetanus), or recombinant DNA (e.g., hepatitis B)</def>
-			<spanishterm>inmunización</spanishterm>
-		</audio>
-		<!--
-		<audio audioURL="00016476.mp3" chapter=",21,">
-			<term>immunohematology</term>
-			<def>specialized immunology dealing with blood, the presence of antibodies/antigens, and pathology</def>
-		</audio>
-		<audio audioURL="00016480.mp3" chapter=",21,">
-			<term>immunology</term>
-			<def>study of immunity, sensitivity, and induced sensitivity; the presence of antibodies/antigens and pathology</def>
-		</audio>
-		<audio audioURL="00057771.mp3" chapter=",4,">
-			<term>implied consent</term>
-			<def>a patient's permission in which his or her actions indirectly indicate approval</def>
-		</audio>
-		<audio audioURL="00016517.mp3" chapter=",6,">
-			<term>impotence</term>
-			<def>inability of the male to achieve erection or ejaculation</def>
-		</audio>
-		<audio audioURL="00087865.mp3" chapter=",14,">
-			<term>in situ</term>
-			<def>neoplasm confined to the site of origin</def>
-		</audio>
-		<audio audioURL="00051750.mp3" chapter=",4,">
-			<term>incident report</term>
-			<def>a form that is usually required when an event occurs in a health care facility that has the potential to result in harm or loss (lawsuits); sometimes called an occurrence report</def>
-		</audio>
-		<audio audioURL="00016552.mp3" chapter=",19,">
-			<term>incision</term>
-			<def>a smooth cut as in surgery or as made with a razor</def>
-		</audio>
-		<audio audioURL="00016566.mp3" chapter=",6,">
-			<term>incontinence </term>
-			<def>inability to retain urine, semen, or feces</def>
-		</audio>
-		<audio audioURL="00016575.mp3" chapter=",21,">
-			<term>incubation</term>
-			<def>maintaining a controlled environment to promote growth of microbial or tissue cultures</def>
-		</audio>
-		<audio audioURL="00016586.mp3" chapter=",6,">
-			<term>incus</term>
-			<def>anvil; second ossicle (bone) of the middle ear</def>
-		</audio>
-		<audio audioURL="00086518.mp3" chapter=",13,">
-			<term>indemnity</term>
-			<def>a plan through which the insured person selects his or her own health care providers; an established amount or percentage of care cost is paid by the insurance plan on a fee-for-service basis; usually has deductibles and limits</def>
-		</audio>
-		<audio audioURL="00016663.mp3" chapter=",6,">
-			<term>inferior</term>
-			<def>below</def>
-		</audio>
-		<audio audioURL="00016669.mp3" chapter=",25,">
-			<term>infiltration</term>
-			<def>IV solution enters the tissue around the vein</def>
-		</audio>
-		<audio audioURL="00016679.mp3" chapter=",9,">
-			<term>inflection</term>
-			<def>changing voice pitch to avoid a monotonous tone implying boredom</def>
-		</audio>
-		<audio audioURL="00087920.mp3" chapter=",4,">
-			<term>informed consent</term>
-			<def>a patient's permission for a procedure, given after receiving all the information necessary to make an educated decision</def>
-		</audio>
-		<audio audioURL="00016747.mp3" chapter=",24,">
-			<term>ingestion</term>
-			<def>taking in of nutrients; eating and drinking</def>
-		</audio>
-		<audio audioURL="00016853.mp3" chapter=",6,">
-			<term>inspiration</term>
-			<def>inhalation; bringing air into lungs; diaphragm contracts, increasing the size of the thoracic cavity and allowing air to enter the lungs</def>
-		</audio>
-		<audio audioURL="00041343.mp3" chapter=",5,">
-			<term>inter-</term>
-			<def>between, in the midst</def>
-		</audio>
-		<audio audioURL="00088069.mp3" chapter=",6,">
-			<term>intracellular fluid</term>
-			<def>body fluid inside the cell</def>
-		</audio>
-		<audio audioURL="00101303.mp3" chapter=",5,">
-			<term>intracerebral</term>
-			<def>within the main part of the brain</def>
-		</audio>
-		<audio audioURL="00101309.mp3" chapter=",25,">
-			<term>intramuscular (IM)</term>
-			<def>injected into muscle at 90&#x00B0; angle via 18- to 23-gauge long needle</def>
-		</audio>
-		<audio audioURL="00017206.mp3" chapter=",5,">
-			<term>intravascular</term>
-			<def>within a vessel</def>
-		</audio>
-		<audio audioURL="00051993.mp3" chapter=",22,">
-			<term>intravenous pyelography (IVP)</term>
-			<def>radiographic visualization of the kidney, ureters, and bladder by injection of contrast media through a vein</def>
-		</audio>
-		<audio audioURL="00017219.mp3" chapter=",7,">
-			<term>introjection</term>
-			<def>a defense mechanism in which a person identifies and assumes characteristics or feelings of another</def>
-		</audio>
-		<audio audioURL="00017234.mp3" chapter=",6,">
-			<term>intussusception</term>
-			<def>one part of the intestine slipping into another, leading to bowel obstruction and gangrene if not quickly treated; most common in male infants</def>
-		</audio>
-		<audio audioURL="00101321.mp3" chapter=",4,">
-			<term>invasion of privacy</term>
-			<def>releasing patient information to unauthorized parties without the consent of the patient</def>
-		</audio>
-		<audio audioURL="00017255.mp3" chapter=",6,">
-			<term>inversion</term>
-			<def>turning inside out (the opposite of eversion), such as turning the heels out so toes face each other</def>
-		</audio>
-		<audio audioURL="00017460.mp3" chapter=",6,">
-			<term>ischium</term>
-			<def>inferior portion of hip bones supporting the body weight when sitting</def>
-		</audio>
-		<audio audioURL="00078065.mp3" chapter=",23,">
-			<term>isometric exercise</term>
-			<def>a type of exercise that contracts opposing muscles without the muscles shortening</def>
-		</audio>
-		<audio audioURL="00017616.mp3" chapter=",6,">
-			<term>isotonic</term>
-			<def>solution with the same concentration as intracellular fluid, moves in and out of the cell at the same rate</def>
-		</audio>-->
-	</group>
-	<group name="J" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00017656.mp3" chapter=",6,">
-			<term>jaundice</term>
-			<def>yellow color of skin, white of eyes, and mucous membranes resulting from increased bilirubin in blood; most common causes are obstruction of bile flow, liver dysfunction, and excess destruction of red blood cells</def>
-		</audio>
-		<audio audioURL="00017674.mp3" chapter=",6,">
-			<term>joints</term>
-			<def>areas where two or more bones come together or articulate</def>
-			<spanishterm>Articulaciones</spanishterm>
-		</audio>
-		<audio audioURL="00057781.mp3" chapter=",4,">
-			<term>justice</term>
-			<def>equitable distribution of benefits and burdens</def>
-		</audio>
-	</group>
-	<group name="K" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00017772.mp3" chapter=",6,">
-			<term>keratin</term>
-			<def>a protein in the epidermis that thickens and waterproofs the skin</def>
-		</audio>
-		<audio audioURL="00017886.mp3" chapter=",6,">
-			<term>kidneys</term>
-			<def>two muscular, bean-shaped organs located in the back of the abdominal cavity that filtrate, reabsorb selected substances, and excrete urine</def>
-			<spanishterm>Riñones</spanishterm>
-		</audio>
-		<audio audioURL="00039100.mp3" chapter=",18,">
-			<term>Korotkoff sounds</term>
-			<def>sounds heard through the stethoscope during the measurement of blood pressure; there are five phases</def>
-		</audio>
-		<audio audioURL="00017990.mp3" chapter=",6,">
-			<term>kyphosis</term>
-			<def>hunchback; an excessive curvature in the thoracic portion of the vertebral column</def>
-			<spanishterm>Cifosis</spanishterm>
-		</audio>
-	</group>
-	<group name="L" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00018024.mp3" chapter=",6,">
-			<term>labyrinth</term>
-			<def>inner ear; contains vestibule, semicircular canal, and cochlea with receptors for hearing and balance</def>
-		</audio>
-		<audio audioURL="00018035.mp3" chapter=",19,26,">
-			<term>laceration</term>
-			<def>a jagged traumatic cut resulting in irregular wound edges; straight or jagged cut into the body tissue</def>
-			<spanishterm>laceración</spanishterm>
-		</audio>
-		<audio audioURL="00018149.mp3" chapter=",21,">
-			<term>lancet</term>
-			<def>a sharp, sterile, disposable instrument used to puncture skin for collecting capillary blood</def>
-		</audio>
-		<audio audioURL="00018171.mp3" chapter=",5,">
-			<term>laparotomy</term>
-			<def>incision of the abdominal wall</def>
-			<spanishterm>Laparotomía</spanishterm>
-		</audio>
-		<!--
-		<audio audioURL="00083259.mp3" chapter=",6,">
-			<term>large intestine</term>
-			<def>the final organ of the digestive tract; connects to the small intestine at the ileum; sections include cecum, colon, rectum; ends at the anus; manufactures vitamins K and B; absorbs fluids and electrolytes; forms, stores, and excretes feces</def>
-		</audio>
-		<audio audioURL="00018221.mp3" chapter=",6,">
-			<term>larynx</term>
-			<def>voice box; organ between the pharynx and trachea containing vocal cords, which vibrate to produce speech</def>
-		</audio>
-		<audio audioURL="00086556.mp3" chapter=",14,">
-			<term>late effect</term>
-			<def>a residual condition occurring after the acute phase is over</def>
-		</audio>
-		<audio audioURL="00018232.mp3" chapter=",6,">
-			<term>lateral</term>
-			<def>away from midline; toward the side</def>
-		</audio>
-		<audio audioURL="00018262.mp3" chapter=",4,">
-			<term>law</term>
-			<def>a set of rules governing conduct and actions; enforced by a recognized authority</def>
-		</audio>
-		<audio audioURL="00018269.mp3" chapter=",20,">
-			<term>lead</term>
-			<def>a standard combination of electrode placements that designates a specific view of the heart</def>
-		</audio>
-		<audio audioURL="00039195.mp3" chapter=",6,">
-			<term>Legionnaires' disease</term>
-			<def>a type of pneumonia caused by the Legionella pneumophila bacteria</def>
-		</audio>
-		<audio audioURL="00018403.mp3" chapter=",6,">
-			<term>leukemia</term>
-			<def>type of malignancy characterized by rapid and abnormal development of leukocytes (white blood cells) in spleen, bone marrow, and lymph nodes</def>
-		</audio>
-		<audio audioURL="00018421.mp3" chapter=",6,">
-			<term>leukocytes</term>
-			<def>white blood cells (WBCs); fight infection</def>
-		</audio>
-		<audio audioURL="00018466.mp3" chapter=",5,">
-			<term>leukopenia</term>
-			<def>decreased white cells</def>
-		</audio>
-		<audio audioURL="00018569.mp3" chapter=",6,">
-			<term>ligaments</term>
-			<def>bands of fibrous connective tissue connecting the articulating ends of bones to facilitate or limit movement</def>
-		</audio>
-		<audio audioURL="00018642.mp3" chapter=",5,">
-			<term>lipectomy</term>
-			<def>excision of fatty tissue</def>
-		</audio>
-		<audio audioURL="00018779.mp3" chapter=",5,">
-			<term>litholysis</term>
-			<def>destruction of a stone</def>
-		</audio>
-		<audio audioURL="00018803.mp3" chapter=",6,">
-			<term>liver</term>
-			<def>largest gland in the body, located in the upper right portion of the abdominal cavity; it produces bile, detoxifies blood, and aids metabolism</def>
-		</audio>
-		<audio audioURL="00041373.mp3" chapter=",5,">
-			<term>-logy</term>
-			<def>the study of</def>
-		</audio>
-		<audio audioURL="00018886.mp3" chapter=",6,">
-			<term>lordosis</term>
-			<def>swayback; excessive curvature in the lumbar portion of the vertebral column</def>
-		</audio>
-		<audio audioURL="00018954.mp3" chapter=",6,">
-			<term>lungs</term>
-			<def>two main organs of the respiratory system that are located in the thoracic cavity; they distribute and exchange gases</def>
-		</audio>
-		<audio audioURL="00019008.mp3" chapter=",5,">
-			<term>lymphadenitis</term>
-			<def>inflammation of the lymph glands/nodes</def>
-		</audio>
-		<audio audioURL="00041377.mp3" chapter=",5,">
-			<term>-lysis</term>
-			<def>destruction, destroy, dissolution</def>
-		</audio>-->
-	</group>
-	<group name="M" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00086570.mp3" chapter=",6,">
-			<term>macular degeneration</term>
-			<def>progressive abnormal growth of blood vessels or other structures in the retina, usually leading to blindness</def>
-		</audio>
-		<audio audioURL="00083140.mp3" chapter=",22,">
-			<term>magnetic resonance imaging (MRI)</term>
-			<def>film visualization of internal structures, including soft tissue, by using a magnetic field with radiation</def>
-			<spanishterm>Resonancia magnética (MRI)</spanishterm>
-		</audio>
-		<audio audioURL="00041379.mp3" chapter=",5,">
-			<term>malacia</term>
-			<def>softening of tissue</def>
-		</audio>			
-		<audio mediatype="sound" format="mp3" audioURL="00019354" SpanURL="00068388" chapter=",14,">
-		<term>malignant</term>
-		<def>cancerous.</def>
-		<spanishterm>maligno</spanishterm></audio>
-		<!--
-<audio mediatype="sound" format="mp3" audioURL="00052613" SpanURL="00068409" chapter=",18,"><term>manipulation</term><def>skillful use of the hands in diagnostic procedures.</def><spanishterm>manipulacin</spanishterm></audio>
-<audio mediatype="sound" format="mp3" audioURL="00019817" SpanURL="00068477" chapter=",19,"><term>melanin</term><def>dark pigment that gives color to the skin, hair and eyes.</def><spanishterm>melena</spanishterm></audio>
-		<audio audioURL="00052589.mp3" chapter=",14,">
-			<term>malignant tumor</term>
-			<def>a neoplasm with invasive and metastatic properties</def>
-		</audio>
-		<audio audioURL="00079872.mp3" chapter=",6,">
-			<term>malleus</term>
-			<def>hammer; first ossicle (bone) of the middle ear</def>
-		</audio>
-		<audio audioURL="00019409.mp3" chapter=",22,">
-			<term>mammography</term>
-			<def>radiographic examination of breasts (usually female) with specialized x-ray equipment</def>
-		</audio>
-		<audio audioURL="00019411.mp3" chapter=",5,">
-			<term>mammoplasty</term>
-			<def>surgical reconstruction of the breast</def>
-		</audio>
-		<audio audioURL="00019422.mp3" chapter=",6,">
-			<term>mandible</term>
-			<def>lower jaw bone</def>
-		</audio>
-		<audio audioURL="00052613.mp3" chapter=",18,">
-			<term>manipulation</term>
-			<def>passive movement of body joints to determine the extent of movement</def>
-		</audio>
-		<audio audioURL="00039426.mp3" chapter=",7,">
-			<term>Maslow's hierarchy</term>
-			<def>a progression of a person's needs from basic survival to reaching one's pinnacle, or self-actualization, identified by Abraham Maslow</def>
-		</audio>
-		<audio audioURL="00019585.mp3" chapter=",6,">
-			<term>maxilla </term>
-			<def>upper jaw bone</def>
-		</audio>
-		<audio audioURL="00019656.mp3" chapter=",6,">
-			<term>medial</term>
-			<def>toward the middle or center</def>
-		</audio>
-		<audio audioURL="00019669.mp3" chapter=",6,">
-			<term>mediastinum</term>
-			<def>small cavity within the thoracic cavity that lies between the lungs and contains the heart and large blood vessels</def>
-		</audio>
-		<audio audioURL="00046839.mp3" chapter=",13,">
-			<term>Medicaid</term>
-			<def>provides health coverage for the categorically needy; a federal insurance program established in 1965 under the Social Security Act (Title 19) and administered by the Centers for Medicare and Medicaid Services (CMS), formerly called HCFA; eligibility, benefits, and name differ from state to state (e.g., in California, it is called Medi-Cal)</def>
-		</audio>
-		<audio audioURL="00052750.mp3" chapter=",11,">
-			<term>medical record</term>
-			<def>all patient information related to the medical care; may be in the form of paper, medical imaging, tapes, disks, electronic printouts, photographs, and any other material telling the "story" of the patient's medical history</def>
-		</audio>
-		<audio audioURL="00046840.mp3" chapter=",13,">
-			<term>Medicare</term>
-			<def>primarily for people older than age 65 and others eligible for Social Security; federal insurance program established in 1965 under the Social Security Act (Title 18) and administered by the Centers for Medicare and Medicaid Services (CMS), formerly called HCFA</def>
-		</audio>
-		<audio audioURL="00052764.mp3" chapter=",6,">
-			<term>medulla oblongata</term>
-			<def>portion of the brain connecting with spinal cord; contains centers for control of heart beat, respirations, and blood pressure</def>
-		</audio>
-		<audio audioURL="00019817.mp3" chapter=",6,">
-			<term>melanin</term>
-			<def>pigment giving the skin its color</def>
-		</audio>
-		<audio audioURL="00019894.mp3" chapter=",6,">
-			<term>membranes</term>
-			<def>thin sheets of tissue that line and protect body structures</def>
-		</audio>
-		<audio audioURL="00019908.mp3" chapter=",6,">
-			<term>menarche</term>
-			<def>first female menses; usually occurs between 9 and 15 years of age</def>
-		</audio>
-		<audio audioURL="00019917.mp3" chapter=",6,">
-			<term>meninges (singular meninx)</term>
-			<def>three layers of connective tissue covering that completely enclose the brain and spinal cord</def>
-		</audio>
-		<audio audioURL="00019924.mp3" chapter=",5,">
-			<term>meningocele</term>
-			<def>herniation of the meninges</def>
-		</audio>
-		<audio audioURL="00019955.mp3" chapter=",6,">
-			<term>menopause</term>
-			<def>cessation of menses and female reproduction from aging or surgical removal of the ovaries</def>
-		</audio>
-		<audio audioURL="00079946.mp3" chapter=",6,">
-			<term>menorrhagia</term>
-			<def>painful menses</def>
-		</audio>
-		<audio audioURL="00019961.mp3" chapter=",5,">
-			<term>menostasis</term>
-			<def>suppression of menses</def>
-		</audio>
-		<audio audioURL="00052800.mp3" chapter=",6,">
-			<term>menstrual cycle </term>
-			<def>a phase lasting approximately 28 days, beginning with menstruation, followed by the thickening of the endometrium; midcycle, ovulation occurs, followed by secretion of progesterone by the corpus luteum to prepare the uterus for a fertilized ovum; if pregnancy does not occur, the cycle repeats</def>
-		</audio>
-		<audio audioURL="00019970.mp3" chapter=",6,">
-			<term>menstruation</term>
-			<def>menses; the shedding of the endometrium of the uterus in the form of vaginal bleeding when pregnancy does not occur, usually in a 28-day cycle</def>
-		</audio>
-		<audio audioURL="00019973.mp3" chapter=",18,">
-			<term>mensuration</term>
-			<def>measurement of height or length and weight</def>
-		</audio>
-		<audio audioURL="00020231.mp3" chapter=",6,24,">
-			<term>metabolism</term>
-			<def>energy transformation in living cells; synthesizing of nutrients from the bloodstream, producing energy</def>
-		</audio>
-		<audio audioURL="00088445.mp3" chapter=",6,">
-			<term>metacarpals</term>
-			<def>five bones that form the palm of the hand</def>
-		</audio>
-		<audio audioURL="00020292.mp3" chapter=",6,">
-			<term>metaphase</term>
-			<def>second phase of mitosis; chromosomes line up along an equator-type line along centriole filaments</def>
-		</audio>
-		<audio audioURL="00020321.mp3" chapter=",6,">
-			<term>metatarsals</term>
-			<def>the five foot bones</def>
-		</audio>
-		<audio audioURL="00020552.mp3" chapter=",21,">
-			<term>microbiology</term>
-			<def>study of microorganisms; in the laboratory, this division usually determines the presence and the identity of microorganisms found in specimens; examples include tests for tuberculosis, meningitis, and diphtheria</def>
-		</audio>
-		<audio audioURL="00020675.mp3" chapter=",17,">
-			<term>microorganisms</term>
-			<def>microbes or germs; living organisms that are too small to see with the naked eye</def>
-		</audio>
-		<audio audioURL="00020705.mp3" chapter=",21,">
-			<term>microscope (scope)</term>
-			<def>an instrument used to magnify very small objects usually not visible to the naked eye</def>
-		</audio>
-		<audio audioURL="00020757.mp3" chapter=",6,">
-			<term>midbrain</term>
-			<def>connects the pons and cerebellum with the cerebrum; functions as relay for certain eye and ear reflexes</def>
-		</audio>
-		<audio audioURL="00020831.mp3" chapter=",6,">
-			<term>miscarriage</term>
-			<def>spontaneous abortion; a natural interruption of a pregnancy before the seventh month</def>
-		</audio>
-		<audio audioURL="00020859.mp3" chapter=",6,">
-			<term>mitosis</term>
-			<def>cell division; comprises four phases: prophase, metaphase, anaphase, and telophase</def>
-		</audio>
-		<audio audioURL="00082774.mp3" chapter=",9,">
-			<term>monitor</term>
-			<def>visual display terminal (VDT) that allows data to be seen on a television-like screen</def>
-		</audio>
-		<audio audioURL="00021177.mp3" chapter=",8,">
-			<term>motivation</term>
-			<def>a circumstance or a tangible item that drives a person into action</def>
-		</audio>
-		<audio audioURL="00021193.mp3" chapter=",9,">
-			<term>mouse</term>
-			<def>a device that plugs into the computer and allows the user to control the cursor viewed on the monitor</def>
-		</audio>
-		<audio audioURL="00021194.mp3" chapter=",6,">
-			<term>mouth</term>
-			<def>oral cavity; orifice in the lower face where food enters the body; chewing (mastication) and mixing with saliva occurs, forming a bolus</def>
-		</audio>
-		<audio audioURL="00053041.mp3" chapter=",8,">
-			<term>multidisciplinary</term>
-			<def>a team approach involving different fields of knowledge and expertise</def>
-		</audio>
-		<audio audioURL="00081171.mp3" chapter=",6,">
-			<term>multiple sclerosis</term>
-			<def>progressive inflammation and hardening of the myelin sheath in the nervous system</def>
-		</audio>
-		<audio audioURL="00082816.mp3" chapter=",17,">
-			<term>mycology</term>
-			<def>the study of fungi</def>
-		</audio>
-		<audio audioURL="00021454.mp3" chapter=",22,">
-			<term>myelography</term>
-			<def>radiographic visualization of the spinal cord and nerve roots by injection of contrast media into the subarachnoid space</def>
-		</audio>
-		<audio audioURL="00083186.mp3" chapter=",6,">
-			<term>myocardial infarction (MI)</term>
-			<def>heart attack; necrosis (death) of an area in the myocardium resulting from cessation of blood supply, usually from coronary thrombosis</def>
-		</audio>
-		<audio audioURL="00021521.mp3" chapter=",6,">
-			<term>myocardium</term>
-			<def>middle layer of heart</def>
-		</audio>
-		<audio audioURL="00021625.mp3" chapter=",6,">
-			<term>myopia</term>
-			<def>condition of nearsightedness; can see objects close by but not far away</def>
-		</audio>
-		<audio audioURL="00021692.mp3" chapter=",6,">
-			<term>myxedema</term>
-			<def>atrophy of thyroid in adults, resulting in decreased secretion of thyroxine, causing forms of physical and mental decline</def>
-		</audio>-->
-	</group>	
-	<group name="N" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00021769.mp3" chapter=",6,">
-			<term>narcolepsy</term>
-			<def>uncontrollable episodes of falling asleep; also known as sleep epilepsy</def>
-		</audio>
-		<audio audioURL="00021788.mp3" chapter=",5,">
-			<term>nasopharyngeal</term>
-			<def>pertaining to nose and throat</def>
-				<spanishterm>Nasofaríngeo</spanishterm>
-			
-		</audio>
-		<audio audioURL="00021858.mp3" chapter=",5,">
-			<term>necrosis</term>
-			<def>death of tissue or bone</def>
-		</audio>
-		<audio audioURL="00058198.mp3" chapter=",4,">
-			<term>negligence</term>
-			<def>commission or omission of an act that resulted in or caused harm</def>
-			<spanishterm>negligencia</spanishterm>
-		</audio>
-		<!--<audio audioURL="00021916.mp3" chapter=",6,">
-			<term>neonatal</term>
-			<def>first 30 days after birth</def>
-		</audio>
-		<audio audioURL="00021964.mp3" chapter=",6,">
-			<term>nephrolithiasis</term>
-			<def>renal calculi (kidney stones)</def>
-		</audio>
-		<audio audioURL="00082876.mp3" chapter=",5,">
-			<term>nephrolysis</term>
-			<def>destruction of kidney tissue</def>
-		</audio>
-		<audio audioURL="00021977.mp3" chapter=",5,">
-			<term>nephropathy</term>
-			<def>disease of the kidney</def>
-		</audio>
-		<audio audioURL="00053295.mp3" chapter=",6,">
-			<term>nervous system</term>
-			<def>body system containing nerves and related structures that receive stimuli and initiate responses</def>
-		</audio>
-		<audio audioURL="00022029.mp3" chapter=",5,">
-			<term>neuralgia </term>
-			<def>pain in the nerves</def>
-		</audio>
-		<audio audioURL="00022161.mp3" chapter=",5,">
-			<term>neuropathy</term>
-			<def>disease of the nerves</def>
-		</audio>
-		<audio audioURL="00080015.mp3" chapter=",6,">
-			<term>neurotransmitter</term>
-			<def>chemical released by the axons that stimulates the next cell to continue the transmission of an impulse</def>
-		</audio>
-		<audio audioURL="00022222.mp3" chapter=",5,">
-			<term>neurotripsy</term>
-			<def>surgical crushing of a nerve</def>
-		</audio>
-		<audio audioURL="00086700.mp3" chapter=",14,">
-			<term>new patient</term>
-			<def>a person who has not received care from the physician or another physician of the same specialty in the same group practice within 3 or more years</def>
-			</audio>
-			<audio audioURL="00022407.mp3" chapter=",4,">
-			<term>non compos mentis</term>
-			<def>not of sound mind</def>
-		</audio>
-		<audio audioURL="00102847.mp3" chapter=",4,">
-			<term>nonfeasance</term>
-			<def>failure to act when there was a duty to act, resulting in or causing harm</def>
-		</audio>
-		<audio audioURL="00053384.mp3" chapter=",7,">
-			<term>nonverbal communication</term>
-			<def>using body language and other nonwritten or nonoral methods; nonverbal communication may be formal or informal, open or closed</def>
-		</audio>
-		<audio audioURL="00102853.mp3" chapter=",20,">
-			<term>normal sinus rhythm (NSR)</term>
-			<def>a standard cardiac cycle that begins in the SA node</def>
-		</audio>
-		<audio audioURL="00053411.mp3" chapter=",22,">
-			<term>nuclear medicine</term>
-			<def>area of medicine using radioisotopes to diagnose and treat specific pathology; used in some cancer therapies</def>
-		</audio>
-		<audio audioURL="00022560.mp3" chapter=",6,">
-			<term>nucleolus</term>
-			<def>small structure in the cell nucleus that holds ribonucleic acid (RNA) and ribosomes essential for protein formation</def>
-		</audio>
-		<audio audioURL="00022581.mp3" chapter=",6,">
-			<term>nucleus</term>
-			<def>located in the center of the cell; controls cell activity and contains genetic material (DNA)</def>
-		</audio>
-		<audio audioURL="00022599.mp3" chapter=",24,">
-			<term>nutrients</term>
-			<def>components of food necessary for the body to perform physiologic functions</def>
-		</audio>
-		<audio audioURL="00022601.mp3" chapter=",24,">
-			<term>nutrition</term>
-			<def>the process of taking food into the body and using it</def>
-		</audio>-->
-	</group>
-	<group name="O" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00022642.mp3" chapter=",24,">
-			<term>obese</term>
-			<def>20% overweight for sex, height, and type of frame</def>
-		</audio>
-		<audio audioURL="00023018.mp3" chapter=",5,">
-			<term>onychocryptosis</term>
-			<def>an ingrown (hidden) nail, finger or toe</def>
-			<spanishterm>Onicocriptosis</spanishterm>
-		</audio>		
-		<audio mediatype="sound" format="mp3" audioURL="00023130" SpanURL="" chapter=",5,12,">
-		<term>ophthalmoscope</term>
-		<def>lighted instrument used to examine the inner surfaces of the eye.</def>
-				</audio>
-<audio mediatype="sound" format="mp3" audioURL="00023188" SpanURL="00068867" chapter=",12,">
-<term>optometrist</term>
-<def>specialist who can measure for errors of refraction and prescribe lenses but who cannot treat diseases of the eye or perform surgery.</def>
-<spanishterm>Optmetra optometrista</spanishterm>
-</audio>
-		<!--<audio audioURL="00023030.mp3" chapter=",5," >
-			<term>onychomycosis</term>
-			<def>condition of fungus of the nails</def>
-		</audio>
-		<audio audioURL="00023062.mp3" chapter=",5,">
-			<term>oophorectomy</term>
-			<def>excision of an ovary</def>
-		</audio>
-		<audio audioURL="00023130.mp3" chapter=",18,">
-			<term>ophthalmoscope (funduscope)</term>
-			<def>an instrument that reflects light throughout the pupil to determine the health of the interior of the eye</def>
-		</audio>
-		<audio audioURL="00023221.mp3" chapter=",5,">
-			<term>orchidectomy</term>
-			<def>surgical removal of a testicle</def>
-		</audio>
-		<audio audioURL="00023223.mp3" chapter=",6,">
-			<term>orchidits (also spelled orchitis)</term>
-			<def>inflammation of the testes</def>
-		</audio>
-		<audio audioURL="00023257.mp3" chapter=",6,">
-			<term>organ</term>
-			<def>group of tissues working together to perform a function, such as the kidney</def>
-		</audio>
-		<audio audioURL="00023407.mp3" chapter=",22,">
-			<term>oscilloscope</term>
-			<def>screen that displays the visual pattern or picture of an ultrasound</def>
-		</audio>
-		<audio audioURL="00088801.mp3" chapter=",17,">
-			<term>OSHA (Occupational Safety and Health Administration)</term>
-			<def>a federal agency that develops and monitors guidelines and mandates that address health and safety in the workplace</def>
-		</audio>
-		<audio audioURL="00023438.mp3" chapter=",6,">
-			<term>osmosis</term>
-			<def>water diffusion (movement from area of higher to lower concentration) through a semipermeable membrane</def>
-		</audio>
-		<audio audioURL="00053671.mp3" chapter=",6,">
-			<term>osmotic pressure</term>
-			<def>the tendency of a higher-concentration solution to draw in water from a lower-concentration solution</def>
-		</audio>
-		<audio audioURL="00023478.mp3" chapter=",6,">
-			<term>osteoarthritis</term>
-			<def>degenerative joint disease that results in deformities and chronic pain; usually occurs as part of the aging process, but excessive use (e.g., in marathon runners) and trauma are also contributory factors</def>
-		</audio>
-		<audio audioURL="00023479.mp3" chapter=",5,">
-			<term>osteoarthropathy</term>
-			<def>disease of joints and bones</def>
-		</audio>
-		<audio audioURL="00023489.mp3" chapter=",6,">
-			<term>osteochondroma</term>
-			<def>malignancy of the bone and cartilage</def>
-		</audio>
-		<audio audioURL="00023500.mp3" chapter=",5,">
-			<term>osteocyte</term>
-			<def>bone cell</def>
-		</audio>
-		<audio audioURL="00023536.mp3" chapter=",6,">
-			<term>osteomyelitis</term>
-			<def>inflammation of the bone or marrow caused by pathogens</def>
-		</audio>
-		<audio audioURL="00023561.mp3" chapter=",6,">
-			<term>osteoporosis</term>
-			<def>porous, brittle bones resulting from low levels of calcium salts; common in menopausal women</def>
-		</audio>
-		<audio audioURL="00023567.mp3" chapter=",6,">
-			<term>osteosarcoma</term>
-			<def>malignant tumor of the bone</def>
-		</audio>
-		<audio audioURL="00023592.mp3" chapter=",5,">
-			<term>otalgia</term>
-			<def>pain in the ear</def>
-		</audio>
-		<audio audioURL="00086763.mp3" chapter=",6,">
-			<term>otitis media</term>
-			<def>infection of middle ear; most common in infants and toddlers; usually treated with antibiotics</def>
-		</audio>
-		<audio audioURL="00023630.mp3" chapter=",18,">
-			<term>otoscope</term>
-			<def>an instrument to examine the auditory canal and eardrum</def>
-		</audio>
-		<audio audioURL="00023667.mp3" chapter=",6,">
-			<term>ovaries</term>
-			<def>two female endocrine sex glands (gonads) that secrete estrogen to stimulate growth of breasts, uterus, and secondary sex characteristics and form ova (the female gametes) and progesterone to prepare and maintain uterus in pregnancy; located in the pelvis</def>
-		</audio>
-		<audio audioURL="00023726.mp3" chapter=",6,">
-			<term>ovulation</term>
-			<def>release of an ovum (egg) from the follicle into the ovarian tube resulting from cyclical hormone function</def>
-		</audio>-->
-	</group>
-	<group name="P" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00023993.mp3" chapter=",18,">
-			<term>palpation</term>
-			<def>use of fingertips and hands to feel for sizes and positions of specific organs, masses, or other abnormalities; texture and firmness; skin temperature and moisture; and flexibility of joints</def>
-		</audio>
-		<audio audioURL="00024019.mp3" chapter=",6,">
-			<term>pancreas</term>
-			<def>an endocrine gland located behind the stomach that produces pancreatic juice, which is transported to the duodenum to aid in digestion, and insulin and glucagon, which regulate carbohydrate metabolism</def>
-		<spanishterm>páncreas</spanishterm>
-		</audio>
-		<audio mediatype="sound" format="mp3" audioURL="00024659" SpanURL="" chapter=",16,">
-		<term>pediculosis</term><def>infestation with parasitic lice.</def>
-		</audio>
-		<audio audioURL="00044149.mp3" chapter=",6,">
-			<term>Papnicolaou smear (Pap smear)</term>
-			<def>test for cervical cancer that involves microscopically examining cervical scrapings</def>
-			<spanishterm>Papanicolaou frotis (Papanicolau)</spanishterm>
-		</audio>
-		<!--<audio audioURL="00024362.mp3" chapter=",17,">
-			<term>parasite</term>
-			<def>an organism that lives at the expense of another organism</def>
-		</audio>
-		<audio audioURL="00024374.mp3" chapter=",17,21,">
-			<term>parasitology</term>
-			<def>study of worms, protozoa, and other parasites; study of human parasites and ova (eggs)</def>
-		</audio>
-		<audio audioURL="00086799.mp3" chapter=",6,">
-			<term>parasympathetic nervous system</term>
-			<def>portion of the nervous system that returns the body to rest and replenishes energy</def>
-		</audio>
-		<audio audioURL="00058551.mp3" chapter=",6,">
-			<term>paraythyroid gland</term>
-			<def>one of four pea-sized glands located on or embedded in the thyroid that secrete parathyroid hormone, increasing blood levels of calcium</def>
-		</audio>
-		<audio audioURL="00024441.mp3" chapter=",25,">
-			<term>parenteral</term>
-			<def>substances administered by intramuscular, intradermal, intravenous, or subcutaneous routes</def>
-		</audio>
-		<audio audioURL="00039951.mp3" chapter=",6,">
-			<term>Parkinson disease</term>
-			<def>chronic progressive neurologic disease characterized by fine tremors and muscle weakness and rigidity; etiology believed to be associated with low dopamine production</def>
-		</audio>
-		<audio audioURL="00053857.mp3" chapter=",20,">
-			<term>paroxysmal atrial tachycardia (PAT)</term>
-			<def>atrial tachycardia that starts, and often stops, suddenly</def>
-		</audio>
-		<audio audioURL="00024518.mp3" chapter=",6,">
-			<term>parturition</term>
-			<def>process of delivery; giving birth</def>
-		</audio>
-				<audio audioURL="00102953.mp3" chapter=",23,">
-			<term>passive exercise</term>
-			<def>exercises performed on the patient by another person or a mechanical device</def>
-		</audio>
-		<audio audioURL="00024552.mp3" chapter=",6,">
-			<term>patella </term>
-			<def>kneecap</def>
-		</audio>
-		<audio audioURL="00053886.mp3" chapter=",6,">
-			<term>patent ductus arteriosus (PDA)</term>
-			<def>opening between the aorta and pulmonary artery in fetal circulation that does not close as it should after birth</def>
-		</audio>
-		<audio audioURL="00024571.mp3" chapter=",17,">
-			<term>pathogens</term>
-			<def>microorganisms that cause disease</def>
-		</audio>
-		<audio audioURL="00024582.mp3" chapter=",6,">
-			<term>pathology</term>
-			<def>the study of abnormal changes in body structure or function, usually caused by disease</def>
-		</audio>
-		<audio audioURL="00058583.mp3" chapter=",25,">
-			<term>patient-controlled analgesia (PCA)</term>
-			<def>an electronic infusion device that allows the patient to self-administer IV pain medication through an open IV line</def>
-		</audio>
-		<audio audioURL="00103342.mp3" chapter=",4,">
-			<term>Patient's Bill of Rights</term>
-			<def>a list of reasonable expectations a patient should receive from health care professionals regarding treatment as a patient and as an individual; the lists are published by formal professional groups and health care institutions</def>
-		</audio>
-		<audio audioURL="00086807.mp3" chapter=",15,">
-			<term>payee</term>
-			<def>the person to whom the check is written; the person receiving the money</def>
-		</audio>
-		<audio audioURL="00053904.mp3" chapter=",18,">
-			<term>peak flow meter</term>
-			<def>a handheld device used to measure the peak expiratory flow rate (PEFR) to monitor asthmatics</def>
-		</audio>
-		<audio audioURL="00053933.mp3" chapter=",6,">
-			<term>pelvic inflammatory disease (PID)</term>
-			<def>inflammation of the pelvic cavity organs resulting from widespread infection</def>
-		</audio>
-		<audio audioURL="00024760.mp3" chapter=",6,">
-			<term>penis</term>
-			<def>external male sex organ containing the urethra; during sexual arousal, the penis becomes engorged with blood and firm and erect, allowing entry to the female vagina where the sperm is ejected (ejaculated)</def>
-		</audio>
-		<audio audioURL="00024860.mp3" chapter=",18,">
-			<term>percussion</term>
-			<def>process of determining density of specific internal structures by the sound produced by external tapping, usually with fingers or with a percussion hammer for testing neurologic reflexes</def>
-		</audio>
-		<audio audioURL="00041451.mp3" chapter=",5,">
-			<term>peri-</term>
-			<def>around, about</def>
-		</audio>
-		<audio audioURL="00054003.mp3" chapter=",6,">
-			<term>peripheral nervous system (PNS)</term>
-			<def>nerves outside the central nervous system originating from the brain and spinal cord; it transmits sensory information and responses</def>
-		</audio>
-		<audio audioURL="00025146.mp3" chapter=",6,">
-			<term>peristalsis</term>
-			<def>rhythmic contractions that move food throughout the digestive tract</def>
-		</audio>
-		<audio audioURL="00054009.mp3" chapter=",6,">
-			<term>peritoneal dialysis</term>
-			<def>a form of dialysis using the peritoneal membrane to filter wastes</def>
-		</audio>
-		<audio audioURL="00102968.mp3" chapter=",18,">
-			<term>PERRLA</term>
-			<def>pupils equal, round, reactive to light and accommodation; abbreviation used to describe the normal pupil of the eye</def>
-		</audio>
-		<audio audioURL="00025263.mp3" chapter=",6,">
-			<term>pertussis</term>
-			<def>whooping cough; a vaccine-preventable bacterial infection caused by Bordetella pertussis, producing a "whoop" coughing sound; serious, sometimes fatal in infants</def>
-		</audio>
-		<audio audioURL="00041454.mp3" chapter=",5,">
-			<term>phag/o</term>
-			<def>to ingest or eat</def>
-		</audio>
-		<audio audioURL="00025339.mp3" chapter=",6,">
-			<term>phagocytosis</term>
-			<def>ingestion and digestion of bacteria and other substances by phagocytic cells</def>
-		</audio>
-		<audio audioURL="00025351.mp3" chapter=",6,">
-			<term>phalanges</term>
-			<def>fingers (three bones each) and thumb (two bones each); toes (three bones each) and great toes (two bones each)</def>
-		</audio>
-		<audio audioURL="00025405.mp3" chapter=",25,">
-			<term>pharmacology</term>
-			<def>the study of drugs</def>
-		</audio>
-		<audio audioURL="00025421.mp3" chapter=",6,">
-			<term>pharyngitis</term>
-			<def>sore throat; inflammation of the pharynx</def>
-		</audio>
-		<audio audioURL="00025447.mp3" chapter=",6,">
-			<term>pharynx</term>
-			<def>throat; passageway from nose to larynx</def>
-		</audio>
-		<audio audioURL="00025539.mp3" chapter=",21,">
-			<term>phenylketonuria (PKU)</term>
-			<def>a disease resulting in mental retardation caused by a deficiency in the metabolic process; tested for by using a capillary specimen from an infant's heel, a test required by law in the United States</def>
-		</audio>
-		<audio audioURL="00025571.mp3" chapter=",6,">
-			<term>phimosis</term>
-			<def>inability to retract the foreskin over the glans penis because of tightness of the skin</def>
-		</audio>
-		<audio audioURL="00025596.mp3" chapter=",5,">
-			<term>phleborrhexis</term>
-			<def>rupture of a vein</def>
-		</audio>
-		<audio audioURL="00025606.mp3" chapter=",21,">
-			<term>phlebotomy</term>
-			<def>incision or needle puncture into a vein to draw blood</def>
-		</audio>
-		<audio audioURL="00054102.mp3" chapter=",23,">
-			<term>physical medicine (physiatry)</term>
-			<def>deals with the diagnosis and treatment of disease and disability using physical means, such as diathermy</def>
-		</audio>
-		<audio audioURL="00025982.mp3" chapter=",6,">
-			<term>physiology</term>
-			<def>the study of body function</def>
-		</audio>
-		<audio audioURL="00058690.mp3" chapter=",6,">
-			<term>pineal gland</term>
-			<def>endocrine gland located in the brain behind the hypothalamus that secrets melatonin, which regulates the body's sleep/wake cycles</def>
-		</audio>
-		<audio audioURL="00026134.mp3" chapter=",6,">
-			<term>pinna</term>
-			<def>auricle; external ear; directs sound waves to the canal</def>
-		</audio>
-		<audio audioURL="00026192.mp3" chapter=",6,">
-			<term>pituitary</term>
-			<def>endocrine gland located at the base of the brain, called "master gland" because of the number of hormones it secretes and functions it serves</def>
-		</audio>
-		<audio audioURL="00026204.mp3" chapter=",6,">
-			<term>placenta</term>
-			<def>oval vascular structure present in the uterus during pregnancy that supplies nutrients to the fetus</def>
-		</audio>
-		<audio audioURL="00058709.mp3" chapter=",6,">
-			<term>placenta previa</term>
-			<def>abnormal implantation of the placenta in the lower uterus</def>
-		</audio>
-		<audio audioURL="00040082.mp3" chapter=",6,">
-			<term>plantar flexion</term>
-			<def>pointing toes downward, which flexes the arch of the foot (e.g., en pointe dancing in ballet)</def>
-		</audio>
-		<audio audioURL="00026252.mp3" chapter=",6,21,">
-			<term>plasma</term>
-			<def>liquid portion of blood (55%); relatively clear yellow liquid portion of blood; composes 55% of whole blood; upper layer in specimen tube</def>
-		</audio>
-		<audio audioURL="00026308.mp3" chapter=",6,">
-			<term>platelets</term>
-			<def>thrombocytes; cell fragments, function in coagulation</def>
-		</audio>
-		<audio audioURL="00080091.mp3" chapter=",21,">
-			<term>plating</term>
-			<def>process of inoculating agar with a specimen swab and sometimes a sterile inoculating loop</def>
-		</audio>
-		<audio audioURL="00026369.mp3" chapter=",6,">
-			<term>pleura</term>
-			<def>lung linings containing pleural fluid to protect lungs and reduce friction during respiration</def>
-		</audio>
-		<audio audioURL="00026376.mp3" chapter=",6,">
-			<term>pleurisy</term>
-			<def>inflammation of the pleura</def>
-		</audio>
-		<audio audioURL="00041471.mp3" chapter=",5,">
-			<term>pneum/o</term>
-			<def>air</def>
-		</audio>
-		<audio audioURL="00041472.mp3" chapter=",5,">
-			<term>pneumon/o</term>
-			<def>lung</def>
-		</audio>
-		<audio audioURL="00080178.mp3" chapter=",6,">
-			<term>pneumonia</term>
-			<def>viral or bacterial infection causing inflammation of the lungs</def>
-		</audio>
-		<audio audioURL="00080203.mp3" chapter=",6,">
-			<term>pneumothorax</term>
-			<def>partial or complete collapse of the lung(s) resulting from air in the pleural cavity</def>
-		</audio>
-		<audio audioURL="00054245.mp3" chapter=",21,">
-			<term>point of care testing (POCT)</term>
-			<def>laboratory testing performed at the location where the patient is receiving his or her health care (usually the medical office) using small, rapid instruments and methods; these tests are Clinical Laboratory Improvement Amendments (CLIA) waived</def>
-		</audio>
-		<audio audioURL="00026598.mp3" chapter=",26,">
-			<term>poisoning</term>
-			<def>the injection, respiration, or ingestion of a toxic substance (may be natural or chemical)</def>
-		</audio>
-		<audio audioURL="00026607.mp3" chapter=",20,">
-			<term>polarization</term>
-			<def>resting cardiac muscle cells</def>
-		</audio>
-		<audio audioURL="00080384.mp3" chapter=",6,">
-			<term>pons</term>
-			<def>area where nerves cross, resulting in nerves located on one side of the brain controlling the opposite side of the body; connects the cerebellum with the nervous system</def>
-		</audio>
-		<audio audioURL="00054313.mp3" chapter=",22,">
-			<term>positron emission tomography (PET)</term>
-			<def>process of producing color images by injecting radioisotopes that combine with particles in the body; used to assess physiology and metabolic activity</def>
-		</audio>
-		<audio audioURL="00026995.mp3" chapter=",5,">
-			<term>posteromedial</term>
-			<def>middle of the back, middle of back side</def>
-		</audio>
-		<audio audioURL="00054435.mp3" chapter=",13,">
-			<term>preauthorization</term>
-			<def>process of obtaining approval for a service through the individual's insurance company by establishing that it is a medical necessity</def>
-		</audio>
-		<audio audioURL="00054439.mp3" chapter=",13,">
-			<term>precertification</term>
-			<def>process of determining whether a service is covered under the insured person's plan</def>
-		</audio>
-		<audio audioURL="00054443.mp3" chapter=",13,">
-			<term>predetermination</term>
-			<def>a process of ascertaining the amount the insurance carrier will pay for a specific service</def>
-		</audio>
-		<audio audioURL="00058827.mp3" chapter=",13,">
-			<term>preexisting condition</term>
-			<def>a diagnosed and treated health condition that the patient had before obtaining insurance</def>
-		</audio>
-		<audio audioURL="00054446.mp3" chapter=",13,">
-			<term>preferred provider organization (PPO)</term>
-			<def>a plan allowing the insured person to select physicians, hospitals, and other health care services from an approved list issued by the insurance plan to provide care at a discounted rate</def>
-		</audio>
-		<audio audioURL="00080532.mp3" chapter=",6,">
-			<term>pregnancy</term>
-			<def>gestation; period of fetal development in the uterus from fertilization to birth, usually 40 weeks</def>
-		</audio>
-		<audio audioURL="00054452.mp3" chapter=",20,">
-			<term>premature atrial contraction (PAC)</term>
-			<def>a contraction of the atria occurring early</def>
-		</audio>
-		<audio audioURL="00071409.mp3" chapter=",20,">
-			<term>premature ventricular contraction (PVC)</term>
-			<def>a contraction of the ventricles occurring early; may be life threatening, depending on the ratio of PVCs to normal ventricular contractions</def>
-		</audio>
-		<audio audioURL="00081960.mp3" chapter=",6,">
-			<term>premenstrual syndrome (PMS)</term>
-			<def>irritability, bloating and depression preceding menses</def>
-		</audio>
-		<audio audioURL="00086853.mp3" chapter=",13,">
-			<term>premium</term>
-			<def>a dollar amount the insured person pays for insurance coverage</def>
-		</audio>
-		<audio audioURL="00027245.mp3" chapter=",6,">
-			<term>prepuce</term>
-			<def>foreskin; a fold of skin on the penis covering the glans</def>
-		</audio>
-		<audio audioURL="00080573.mp3" chapter=",6,">
-			<term>presbyopia</term>
-			<def>most common eye condition associated with aging</def>
-		</audio>
-		<audio audioURL="00027263.mp3" chapter=",25,">
-			<term>prescriptions</term>
-			<def>written directions for therapeutic agents; the most common involve medications</def>
-		</audio>
-		<audio audioURL="00080592.mp3" chapter=",6,">
-			<term>priapism</term>
-			<def>abnormal, painful, prolonged penile erection, usually resulting form spinal cord injury or disease</def>
-		</audio>
-		<audio audioURL="00054559.mp3" chapter=",14,">
-			<term>principal diagnosis</term>
-			<def>the definitive diagnosis, obtained generally through hospitalization</def>
-		</audio>
-		<audio audioURL="00027347.mp3" chapter=",19,">
-			<term>probe</term>
-			<def>a straight instrument with ends of various shapes; used primarily to explore patency of ducts, canals, and other anatomic structures</def>
-		</audio>
-		<audio audioURL="00054566.mp3" chapter=",11,">
-			<term>problem-oriented medical record (POMR)</term>
-			<def>the patient's problems are numbered and listed on a form (problem list) placed in front of the chart; each visit or treatment associated with the number of the corresponding problem (e.g., if asthma is #1, it is documented #1 throughout chart)</def>
-		</audio>
-		<audio audioURL="00027422.mp3" chapter=",5,">
-			<term>proctorrhagia</term>
-			<def>hemorrhage from the rectum</def>
-		</audio>
-		<audio audioURL="00027502.mp3" chapter=",7,">
-			<term>projection</term>
-			<def>a defense mechanism in which a person places blame or accuses another for actions or feelings committed by himself or herself</def>
-		</audio>
-		<audio audioURL="00027583.mp3" chapter=",6,">
-			<term>prophase</term>
-			<def>first stage of mitosis; centrioles move to opposite ends of the cell, forming two poles; they stretch filaments between them, resembling longitudes on a globe</def>
-		</audio>
-		<audio audioURL="00058898.mp3" chapter=",6,">
-			<term>prostate gland</term>
-			<def>donut-shaped gland around the male urethra at the bladder neck that secretes alkaline fluid to protect sperm</def>
-		</audio>
-		<audio audioURL="00080817.mp3" chapter=",6,">
-			<term>proximal</term>
-			<def>toward the origin of a structure</def>
-		</audio>
-		<audio audioURL="00080925.mp3" chapter=",8,">
-			<term>psychomotor</term>
-			<def>relating to a person's physical and mental capabilities and sensory skills; a domain of learning</def>
-		</audio>
-		<audio audioURL="00040186.mp3" chapter=",6,">
-			<term>pubis</term>
-			<def>anterior union of the hip bones</def>
-		</audio>
-		<audio audioURL="00077892.mp3" chapter=",6,">
-			<term>pulmonary edema</term>
-			<def>fluid accumulation in the lungs, often associated with congestive heart failure</def>
-		</audio>
-		<audio audioURL="00054726.mp3" chapter=",18,">
-			<term>pulmonary function test (PFT)</term>
-			<def>used to diagnose and measure the severity of lung problems by evaluating how well the lungs work; the amount of air the lungs can hold and how quickly the lungs move air in and out; measurements also include the efficiency of oxygenating the blood and removing carbon dioxide</def>
-		</audio>
-		<audio audioURL="00083451.mp3" chapter=",19,">
-			<term>puncture</term>
-			<def>a hole in the skin made by a sharp pointed object</def>
-		</audio>
-		<audio audioURL="00040204.mp3" chapter=",6,">
-			<term>Purkinje fibers</term>
-			<def>smaller fibers arising from the  bundle branches located in the heart's conductive system that carry the electrical impulse to the ventricular walls, causing them to contract</def>
-		</audio>
-		<audio audioURL="00028350.mp3" chapter=",6,">
-			<term>pyelonephritis</term>
-			<def>inflammation and pyogenic infection of the renal pelvis</def>
-		</audio>
-		<audio audioURL="00028352.mp3" chapter=",5,">
-			<term>pyeloplasty</term>
-			<def>surgical repair of the renal pelvis</def>
-		</audio>
-		<audio audioURL="00028424.mp3" chapter=",5,">
-			<term>pyogenesis</term>
-			<def>formation of pus</def>
-		</audio>-->
-	</group>
-	<group name="Q" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00058994.mp3" chapter=",21,">
-			<term>qualitative analysis</term>
-			<def>the identification of a type of pathogen by its appearance in the specimen</def>
-		</audio>
-		<audio audioURL="00058999.mp3" chapter=",21,">
-			<term>quantitative analysis</term>
-			<def>the method used to determine the number of bacteria present in a specimen</def>
-			<spanishterm>análisis cuantitativo</spanishterm>
-		</audio>
-	</group>
-	<group name="R" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00075133.mp3" chapter=",22,">
-			<term>rad</term>
-			<def>unit of absorbed dose of radiation</def>
-		</audio>
-		<audio audioURL="00028768.mp3" chapter=",22,">
-			<term>radiology</term>
-			<def>the study of use of radioactive substances to visualize an internal structure</def>
-			<spanishterm>radiología</spanishterm>
-		</audio>
-		<audio audioURL="00028770.mp3" chapter=",22,">
-			<term>radiolucent</term>
-			<def>a substance or structure that x-rays will penetrate</def>
-		</audio>
-		<audio audioURL="00028782.mp3" chapter=",22,">
-			<term>radiopaque</term>
-			<def>substance or structure that is not penetrated by x-rays</def>
-			<spanishterm>radioopaco</spanishterm>
-		</audio>
-		<!--<audio audioURL="00028818.mp3" chapter=",6,">
-			<term>radius</term>
-			<def>lateral bone of forearm (in anatomic position)</def>
-		</audio>
-		<audio audioURL="00028825.mp3" chapter=",6,">
-			<term>rales</term>
-			<def>crackling breath sound resulting from increased secretions in the bronchi; sometimes referred to as rhonchi</def>
-		</audio>
-		<audio audioURL="00054877.mp3" chapter=",23,">
-			<term>range of motion (ROM)</term>
-			<def>passive or active; the patient or caregiver exercises joints by performing standard joint motions (e.g., flexion and rotation) to maintain or improve the movement</def>
-		</audio>
-		<audio audioURL="00028861.mp3" chapter=",7,">
-			<term>rationalization</term>
-			<def>justifying thoughts or actions whether right or wrong</def>
-		</audio>
-		<audio audioURL="00083466.mp3" chapter=",21,">
-			<term>reagent</term>
-			<def>a substance that, when added to a solution of another substance, participates in a chemical reaction; it may be used to identify or to quantify the presence of another substance</def>
-		</audio>
-		<audio audioURL="00054901.mp3" chapter=",4,">
-			<term>reciprocity</term>
-			<def>the acceptance by one state of a license that is issued by another state</def>
-		</audio>
-		<audio audioURL="00028951.mp3" chapter=",6,">
-			<term>rectum</term>
-			<def>the lower portion of the large intestine that contains the reflexes for defecation</def>
-		</audio>
-		<audio audioURL="00029021.mp3" chapter=",4,">
-			<term>registration</term>
-			<def>a process similar to certification in which an individual, after meeting the criteria of an organization (such as passing an exam), is listed on a state or national registry</def>
-		</audio>
-		<audio audioURL="00029024.mp3" chapter=",7,">
-			<term>regression</term>
-			<def>a defense mechanism in which a person escapes an unpleasantness by returning to an earlier stage  or behavior in life</def>
-		</audio>
-		<audio audioURL="00086916.mp3" chapter=",13,">
-			<term>relative value unit (RVU)</term>
-			<def>the component (e.g., time) that is multipled by a monetary conversion factor to establish physician payment for the resource-based relative value system or scale</def>
-		</audio>
-		<audio audioURL="00078102.mp3" chapter=",6,">
-			<term>renal failure</term>
-			<def>acute or chronic loss of kidney function that results in buildup of nitrogen waste in the body</def>
-		</audio>
-		<audio audioURL="00029115.mp3" chapter=",20,">
-			<term>repolarization</term>
-			<def>recovering cardiac muscle cells; diastole; returning to equilibrium</def>
-		</audio>
-		<audio audioURL="00029119.mp3" chapter=",7,">
-			<term>repression</term>
-			<def>a defense mechanism in which a person deals with a difficult situation by true temporary amnesia</def>
-		</audio>
-		<audio audioURL="00054997.mp3" chapter=",4,">
-			<term>res ipsa loquitur</term>
-			<def>"the thing speaks for itself"; used to describe obvious cases of negligence</def>
-			</audio>
-			<audio audioURL="00055013.mp3" chapter=",13,">
-			<term>resource-based relative value system/scale (RBRVS)</term>
-			<def>a system that calculates physician reimbursement for services using relative value units (RVUs)</def>
-		</audio>
-		<audio audioURL="00086926.mp3" chapter=",4,">
-			<term>respondeat superior</term>
-			<def>"let the master answer"; the employer is responsible for the actions of an employee if the employee followed policy and procedure and stayed within the scope of his or her position</def>
-		</audio>
-		<audio audioURL="00029227.mp3" chapter=",5,">
-			<term>retinopathy</term>
-			<def>disease of the retina</def>
-		</audio>
-		<audio audioURL="00029241.mp3" chapter=",19,">
-			<term>retractors</term>
-			<def>instruments of various shapes used to hold back tissue and organs to facilitate exposure to the operative site</def>
-		</audio>
-		<audio audioURL="00029285.mp3" chapter=",5,">
-			<term>retroperitoneal</term>
-			<def>behind the peritoneum</def>
-		</audio>
-		<audio audioURL="00055097.mp3" chapter=",6,">
-			<term>rheumatoid arthritis</term>
-			<def>inflammation and overgrowth of synovial membranes and joint tissues characterized by swelling of joints, usually occurring young adults</def>
-		</audio>
-		<audio audioURL="00029419.mp3" chapter=",5,">
-			<term>rhinorrhea</term>
-			<def>flow or discharge from the nose</def>
-		</audio>
-		<audio audioURL="00029559.mp3" chapter=",22,">
-			<term>roentgen</term>
-			<def>international unit measuring radiation dose in the air</def>
-		</audio>
-		<audio audioURL="00029609.mp3" chapter=",6,">
-			<term>rotation</term>
-			<def>turning on an axis, such as turning the head to indicate "no"</def>
-		</audio>
-		<audio audioURL="00041502.mp3" chapter=",5,">
-			<term>-rrhagia</term>
-			<def>burst forth, hemorrhage</def>
-		</audio>
-		<audio audioURL="00041505.mp3" chapter=",5,">
-			<term>-rrhexis</term>
-			<def>rupture of a vessel, organ, or tissue</def>
-		</audio>
-		<audio audioURL="00040375.mp3" chapter=",6,">
-			<term>rugae</term>
-			<def>folds in the lining of the stomach and some other organs</def>
-		</audio>
-		<audio audioURL="00088920.mp3" chapter=",26,">
-			<term>rule of nines</term>
-			<def>formula used to determine extent of the body burned; each body part is considered 9% of the body; the affected parts are added to determine the percentage of body burned</def>
-		</audio>-->
-	</group>
-	<group name="S" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00055180.mp3" chapter=",6,">
-			<term>sagittal plane</term>
-			<def>an imaginary line or cut through the body, bilaterally separating it into right and left halves</def>
-		</audio>
-		<audio audioURL="00103494.mp3" chapter=",6,">
-			<term>salivary glands</term>
-			<def>three pairs of glands located in the mouth, secreting saliva that moistens food and begins the chemical breakdown of carbohydrates</def>
-			<spanishterm>glándulas salivales</spanishterm>
-		</audio>
-		<audio audioURL="00029966.mp3" chapter=",19,">
-			<term>scalpels</term>
-			<def>knives with various blade shapes and sizes, used to make surgical incisions</def>
-		</audio>
-		<audio audioURL="00029973.mp3" chapter=",9,">
-			<term>scanner</term>
-			<def>software-required device that reads documents (text, graphics, photos) and transfers the image to the computer</def>
-			<spanishterm>escáner</spanishterm>
-		</audio>
-		<!--<audio audioURL="00029974.mp3" chapter=",9,">
-			<term>scanning</term>
-			<def>a process of transferring a written document or image into an electronic version using computer hardware called a scanner</def>
-		</audio>
-		<audio audioURL="00029983.mp3" chapter=",6,">
-			<term>scapula</term>
-			<def>shoulder blade</def>
-		</audio>
-		<audio audioURL="00030081.mp3" chapter=",22,">
-			<term>scintigraphy</term>
-			<def>photographic images using a gamma camera to record the distribution of a radioactive agent; used to identify cancer metastasis</def>
-		</audio>
-		<audio audioURL="00030163.mp3" chapter=",6,">
-			<term>scoliosis</term>
-			<def>abnormal lateral curvature of the vertebral column</def>
-		</audio>
-		<audio audioURL="00030215.mp3" chapter=",6,">
-			<term>scrotum</term>
-			<def>external pouch suspended from the male perineum containing the testes and epididymis</def>
-		</audio>
-		<audio audioURL="00055308.mp3" chapter=",6,">
-			<term>seminal vesicles</term>
-			<def>a pair of accessory glands in the male, posterior to the urinary bladder, that secrete nutrient fluid for sperm</def>
-		</audio>
-		<audio audioURL="00030384.mp3" chapter=",21,">
-			<term>sensitivity</term>
-			<def>testing to determine a pathogen's susceptibility to specific antibiotics</def>
-		</audio>
-		<audio audioURL="00030503.mp3" chapter=",6,21,">
-			<term>serum</term>
-			<def>clear, liquid portion of blood that remains after the blood clots; liquid portion of the blood that remains after clotting factors are removed</def>
-		</audio>
-		<audio audioURL="00030544.mp3" chapter=",26,">
-			<term>shock</term>
-			<def>life-threatening condition related to inadequate oxygen supply and ofter characterized by heavy blood loss; lowered blood pressure; weak, increased pulse; cool, clammy skin; increased respiratory rate; anxiety; and agitation</def>
-		</audio>
-		<audio audioURL="00030625.mp3" chapter=",6,">
-			<term>sigmoid</term>
-			<def>lower S-shaped portion of colon connected to the descending colon and the rectum</def>
-		</audio>
-		<audio audioURL="00030695.mp3" chapter=",6,20,">
-			<term>sinoatrial (SA) node</term>
-			<def>located in the upper wall of the right atrium; it is the pacemaker of the heart and initiates a normal heartbeat and rate of 60 to 80 beats per minute (sinus rhythm); causes atria to contract; pacemaker of the heart</def>
-		</audio>
-		<audio audioURL="00089117.mp3" chapter=",6,">
-			<term>small intestine</term>
-			<def>longest portion of digestive tract; digests fats, proteins, and carbohydrates and absorbs the nutrient products into the blood; contains three sections: duodenum, jejunum, and ileum</def>
-		</audio>
-		<audio audioURL="00075715.mp3" chapter=",9,">
-			<term>software</term>
-			<def>computer programs that tell the computer what to do related to that topic (e.g., word processing)</def>
-		</audio>
-		<audio audioURL="00030923.mp3" chapter=",19,">
-			<term>sound</term>
-			<def>a straight or curved instrument used to explore body cavities for measurement of depth and presence of masses or foreign bodies</def>
-		</audio>
-		<audio audioURL="00031022.mp3" chapter=",6,">
-			<term>spermatozoa</term>
-			<def>sperm</def>
-		</audio>
-		<audio audioURL="00031118.mp3" chapter=",18,">
-			<term>sphygmomanometer</term>
-			<def>instrument used to measure blood pressure, the instrument is composed of a cuff for the arm, thigh, wrist, or finger and a measurement device</def>
-		</audio>
-		<audio audioURL="00089190.mp3" chapter=",6,">
-			<term>spina bifida</term>
-			<def>congential deformity exposing the spinal column, resulting in malformation of verebrae</def>
-		</audio>
-		<audio audioURL="00055621.mp3" chapter=",6,">
-			<term>spinal cord</term>
-			<def>continuous tubelike structure located within the spinal vertebrae extending from the occipital bone to the coccyx; it contains cerebrospinal fluid and ascending and descending nerve tracts that carry transmissions to and from the brain</def>
-		</audio>
-		<audio audioURL="00031196.mp3" chapter=",18,">
-			<term>spirometry</term>
-			<def>the most common lung function test; measures how much and how quickly air is moved in and out of the lungs by breathing into a mouthpiece attached to a recording device (spirometer); a graph with the results (spirogram) is provided</def>
-		</audio>
-		<audio audioURL="00031258.mp3" chapter=",5,">
-			<term>splenomegaly</term>
-			<def>enlargement of the spleen</def>
-		</audio>
-		<audio audioURL="00031321.mp3" chapter=",17,">
-			<term>spores</term>
-			<def>encapsulated bacteria in an inactive or resting state</def>
-		</audio>
-		<audio audioURL="00055702.mp3" chapter=",4,">
-			<term>standard of care</term>
-			<def>uniform criterion established by an authority to determine quality or measure of health care or that is recognized as acceptable by usage</def>
-		</audio>
-		<audio audioURL="00081979.mp3" chapter=",6,">
-			<term>stapes</term>
-			<def>stirrup; third ossicle (bone) of the middle ear</def>
-		</audio>
-		<audio audioURL="00031459.mp3" chapter=",5,">
-			<term>-stasis</term>
-			<def>to stop or control</def>
-		</audio>
-		<audio audioURL="00041530.mp3" chapter=",5,">
-			<term>sten/o</term>
-			<def>narrowing</def>
-		</audio>
-		<audio audioURL="00031597.mp3" chapter=",17,">
-			<term>sterilization</term>
-			<def>process of destroying all living organisms</def>
-		</audio>
-		<audio audioURL="00082059.mp3" chapter=",6,">
-			<term>stomach</term>
-			<def>J-shaped organ between the esophagus and the duodenum that produces a churning action that mixes food with gastric acids and enzymes as part of digestion; also stores food</def>
-		</audio>
-		<audio audioURL="00082072.mp3" chapter=",5,">
-			<term>stomatomycosis</term>
-			<def>condition of fungus in the mouth</def>
-		</audio>
-		<audio audioURL="00041536.mp3" chapter=",5,">
-			<term>-stomy</term>
-			<def>forming a new opening</def>
-		</audio>
-		<audio audioURL="00082085.mp3" chapter=",6,">
-			<term>strabismus</term>
-			<def>inability of both eyes to simultaneously focus on a subject; commonly known as lazy eye or being cross-eyed</def>
-		</audio>
-		<audio audioURL="00040670.mp3" chapter=",6,">
-			<term>strata</term>
-			<def>sublayers</def>
-		</audio>
-		<audio audioURL="00089296.mp3" chapter=",20,">
-			<term>stress test</term>
-			<def>ECG recordings taken while the patient exercises on a treadmill, stationary bicycle, or stair climber</def>
-		</audio>
-		<audio audioURL="00031801.mp3" chapter=",6,">
-			<term>stridor</term>
-			<def>high-pitched breath sounds resembling wind; caused by a partial obstruction of air passages</def>
-		</audio>
-		<audio audioURL="00031872.mp3" chapter=",20,">
-			<term>stylus</term>
-			<def>a heated pen-like instrument of the ECG machine that receives impulses via electrodes and moves on ECG paper, recording the electrical activity of the heart</def>
-		</audio>
-		<audio audioURL="00031938.mp3" chapter=",25,">
-			<term>subcutaneous</term>
-			<def>injected in fatty tissue under the skin at a 45&#x00B0; angle</def>
-		</audio>
-		<audio audioURL="00082296.mp3" chapter=",7,">
-			<term>sublimation</term>
-			<def>a defense mechanism in which a person redirects unacceptable thoughts or behaviors to acceptable ones</def>
-		</audio>
-		<audio audioURL="00032057.mp3" chapter=",5,">
-			<term>subpulmonary</term>
-			<def>below the lungs</def>
-		</audio>
-		<audio audioURL="00087034.mp3" chapter=",14,">
-			<term>superbill</term>
-			<def>also called an encounter form; a charge form custom-designed for the specific medical practice; lists the ICD-9 and CPT codes common to the services of that practice</def>
-		</audio>
-		<audio audioURL="00087034.mp3" chapter=",15,">
-			<term>superbill (encounter form)</term>
-			<def>a provided form that has all the necessary information to file an insurance claim related to that office visit</def>
-		</audio>
-		<audio audioURL="00032301.mp3" chapter=",6,">
-			<term>superior</term>
-			<def>above</def>
-		</audio>
-		<audio audioURL="00032330.mp3" chapter=",7,">
-			<term>suppression</term>
-			<def>a defense mechanism in which a person purposefully forgets an unpleasant situation or avoids dealing with it</def>
-		</audio>
-		<audio audioURL="00087039.mp3" chapter=",6,">
-			<term>sympathetic nervous system</term>
-			<def>portion of the nervous system preparing the body for stressful situations ("fight or flight")</def>
-		</audio>
-		<audio audioURL="00032511.mp3" chapter=",18,">
-			<term>symptoms</term>
-			<def>subjective descriptions of altered health indicators (e.g., nausea, headache); complaints that cannot be seen or measured</def>
-		</audio>
-		<audio audioURL="00032526.mp3" chapter=",6,">
-			<term>synapse</term>
-			<def>neuromuscular junction between neurons</def>
-		</audio>
-		<audio audioURL="00081766.mp3" chapter=",26,">
-			<term>syncope</term>
-			<def>transient unconsciousness, usually caused by a sudden decrease in blood pressure or oxygen; also called fainting or swooning</def>
-		</audio>
-		<audio audioURL="00032658.mp3" chapter=",6,">
-			<term>syphilis</term>
-			<def>sexually transmitted disease resulting in lesions (chancre) that may spread to bone and other systems; if untreated, it may be terminal</def>
-		</audio>
-		<audio audioURL="00040738.mp3" chapter=",25,">
-			<term>syringes</term>
-			<def>plastic or glass tube-like carriers used with an attached needle to administer substances into the body via injection</def>
-		</audio>
-		<audio audioURL="00003154.mp3" chapter=",6,">
-			<term>systole</term>
-			<def>contraction portion of the cardiac cycle</def>
-		</audio>-->
-	</group>
-	<group name="T" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00032742.mp3" chapter=",5,20,">
-			<term>tachycardia</term>
-			<def>increased heart rate (pulse):a heart rate faster than 100 beats per minute</def>
-		</audio>
-		<audio audioURL="00032970.mp3" chapter=",6,">
-			<term>telophase</term>
-			<def>final phase of mitosis; the nucleus divides in the center, forming two distinct cells</def>
-			<spanishterm>Telófase</spanishterm>
-		</audio>
-		<audio audioURL="00033000.mp3" chapter=",19,">
-			<term>tenaculum</term>
-			<def>a long, two-handled instrument with pointed ends used to grasp tissue during surgery; a cervical tenaculum is commonly used in well-woman exams</def>
-		</audio>
-		<audio audioURL="00033011.mp3" chapter=",6,">
-			<term>tendons</term>
-			<def>connective tissue attaching muscle directly to the periosteum (covering) of the bone</def>
-			<spanishterm>Tendones</spanishterm>
-		</audio>
-		<!--<audio audioURL="00033033.mp3" chapter=",5,">
-			<term>tenodynia</term>
-			<def>painful tendon</def>
-		</audio>
-		<audio audioURL="00033129.mp3" chapter=",6,">
-			<term>testes</term>
-			<def>male endocrine sex glands (gonads) that secrete testosteone and stimulate the development of male sex characteristics and sperm</def>
-		</audio>
-		<audio audioURL="00033152.mp3" chapter=",6,">
-			<term>tetany</term>
-			<def>spasms caused by low blood calcium</def>
-		</audio>
-		<audio audioURL="00033240.mp3" chapter=",6,">
-			<term>thalamus</term>
-			<def>located in the diencephalon, serves as relay for sensory input</def>
-		</audio>
-		<audio audioURL="00033396.mp3" chapter=",23,">
-			<term>thermotherapy (heat)</term>
-			<def>reduces swelling and decreases pain by improving circulation; it is not used in acute phase of injury</def>
-		</audio>
-		<audio audioURL="00056173.mp3" chapter=",13,">
-			<term>third-party payer</term>
-			<def>the entity (usually the insurance company) that pays the second party (doctor, hospital, pharmacy, etc.) for the medical bills of the first party (patient or insured individual); also referred to as the third-party administrator</def>
-		</audio>
-		<audio audioURL="00033539.mp3" chapter=",6,">
-			<term>thorax</term>
-			<def>cavity containing lungs</def>
-		</audio>
-		<audio audioURL="00033555.mp3" chapter=",5,">
-			<term>thrombectomy</term>
-			<def>surgical removal of a blood clot</def>
-		</audio>
-		<audio audioURL="00033595.mp3" chapter=",6,">
-			<term>thrombophlebitis</term>
-			<def>inflammation of a vein with clots</def>
-		</audio>
-		<audio audioURL="00033612.mp3" chapter=",6,">
-			<term>thrombus (plural thrombi)</term>
-			<def>a blood clot attached to a vessel wall</def>
-		</audio>
-		<audio audioURL="00033614.mp3" chapter=",6,">
-			<term>thrush</term>
-			<def>yeast infection of the mouth caused by Candida albicans</def>
-		</audio>
-		<audio audioURL="00033699.mp3" chapter=",6,">
-			<term>tibia</term>
-			<def>shin bone</def>
-		</audio>
-		<audio audioURL="00033746.mp3" chapter=",6,">
-			<term>tinnitus</term>
-			<def>ringing in the ears</def>
-		</audio>
-		<audio audioURL="00033749.mp3" chapter=",6,">
-			<term>tissues</term>
-			<def>group of cells with similar structures and functions (e.g., renal)</def>
-		</audio>
-		<audio audioURL="00033828.mp3" chapter=",18,">
-			<term>tonometry</term>
-			<def>a test using an instrument (tonometer), to measure the intraocular pressure of the eye to diagnose glaucoma</def>
-		</audio>
-		<audio audioURL="00033853.mp3" chapter=",25,">
-			<term>topical</term>
-			<def>placed on skin or mucous membranes via ointments, creams, liquids, or sprays for direct treatment to skin or membranes</def>
-		</audio>
-		<audio audioURL="00033960.mp3" chapter=",6,">
-			<term>trachea</term>
-			<def>tube branching into two bronchi leading into the lungs</def>
-		</audio>
-		<audio audioURL="00034061.mp3" chapter=",9,12,">
-			<term>transcription</term>
-			<def>a written copy of dictated or recorded information:the conversion of the dictated word of the health care provider into a word-processed form</def>
-		</audio>
-		<audio audioURL="00059705.mp3" chapter=",25,">
-			<term>transdermal</term>
-			<def>drug route in which medication is placed on skin via a patch for medication to absorb through skin and enter bloodstream</def>
-		</audio>
-		<audio audioURL="00056325.mp3" chapter=",6,">
-			<term>transient ischemic attack (TIA)</term>
-			<def>ministroke; temporary episode of impaired neurologic function resulting from decreased blood flow to the brain</def>
-		</audio>
-		<audio audioURL="00056348.mp3" chapter=",6,">
-			<term>transverse plane</term>
-			<def>an imaginary line or cut through the body horizontally dividing it into superior and inferior sections</def>
-		</audio>
-		<audio audioURL="00056389.mp3" chapter=",13,">
-			<term>TRICARE</term>
-			<def>formerly CHAMPUS; health care benefit plans provided by the federal government, primarily for spouses and dependents of service men and women</def>
-		</audio>
-		<audio audioURL="00034427.mp3" chapter=",24,">
-			<term>triglycerides</term>
-			<def>component molecule of fat found in fatty foods; a combination of fatty acids and glycerol; high levels clog blood vessels, causing cardiovascular disease</def>
-		</audio>
-		<audio audioURL="00082465.mp3" chapter=",6,">
-			<term>tuberculosis</term>
-			<def>an infectious bacterial disease characterized by tubercles in the tissue; the lung is the most common disease site</def>
-		</audio>
-		<audio audioURL="00089838.mp3" chapter=",18,">
-			<term>tuning fork</term>
-			<def>used for gross measurement for hearing and sound conduction; the instrument is activated by striking it with the hand and is then placed on top of the patient's head, beside each ear, and on each side of the patient's mastoid bone</def>
-		</audio>
-		<audio audioURL="00041568.mp3" chapter=",5,">
-			<term>tympan/o</term>
-			<def>eardrum, drum-like</def>
-		</audio>
-		<audio audioURL="00056460.mp3" chapter=",6,">
-			<term>tympanic membrane</term>
-			<def>eardrum; boundary between external and middle ear canals; vibrates, transmitting sound waves to inner ear</def>
-		</audio>
-		<audio audioURL="00034810.mp3" chapter=",18,">
-			<term>tympanometry</term>
-			<def>a test that uses a tympanometer, which uses air pressure to measure tympanic membrane mobility</def>
-		</audio>-->
-	</group>
-	<group name="U" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00056486.mp3" chapter=",6,">
-			<term>ulcerative colitis</term>
-			<def>inflammation and ulceration of the mucosa of the colon and rectum</def>
-		</audio>
-		<audio audioURL="00034876.mp3" chapter=",6,">
-			<term>ulcers</term>
-			<def>lesions of the mucosa of any organ; most common in the stomach and intestine</def>
-			<spanishterm>úlceras</spanishterm>
-		</audio>
-		<audio audioURL="00082479.mp3" chapter=",6,">
-			<term>ulna</term>
-			<def>medial bone of forearm (in anatomic position)</def>
-		</audio>
-		<audio audioURL="00034923.mp3" chapter=",22,">
-			<term>ultrasonography (ultrasound)</term>
-			<def>use of high-frequency ultrasonic waves to produce an image and identify and measure deep body structures and abnormalities</def>
-			<spanishterm>Ultrasonografía (ultrasonido)</spanishterm>
-		</audio>
-		<!--<audio audioURL="00034925.mp3" chapter=",23,">
-			<term>ultrasound</term>
-			<def>heat therapy using high-frequency sound waves; a special gel substance is placed on the head of the ultrasound attachment to improve conductivity</def>
-		</audio>
-		<audio audioURL="00034928.mp3" chapter=",23,">
-			<term>ultraviolet</term>
-			<def>heat lamps to treat specific conditions (e.g., psoriasis, newborn jaundice)</def>
-		</audio>
-		<audio audioURL="00056510.mp3" chapter=",4,14,">
-			<term>unbundling</term>
-			<def>collecting higher reimbursement by billing separately for individual components of a procedure rather than for the procedure as a whole; using several CPT codes to identify procedures normally covered by a single code</def>
-		</audio>
-		<audio audioURL="00089900.mp3" chapter=",21,">
-			<term>universal donor</term>
-			<def>a person who has O-negative blood, which is theoretically able to be transfused into a person with another blood type in an emergency situation</def>
-		</audio>
-		<audio audioURL="00087086.mp3" chapter=",4,14,">
-			<term>upcoding</term>
-			<def>an illegal practice of billing more than indicated for a procedure by selecting a higher than appropriate code; deliberatley using an incorrect code to bill at a higher rate</def>
-		</audio>
-		<audio audioURL="00035084.mp3" chapter=",6,">
-			<term>uremia</term>
-			<def>high levels of nitrogen waste in the body</def>
-		</audio>
-		<audio audioURL="00035093.mp3" chapter=",6,">
-			<term>ureters</term>
-			<def>two slim tubes that carry urine from the kidneys to the urinary bladder</def>
-		</audio>
-		<audio audioURL="00083819.mp3" chapter=",6,">
-			<term>urethra</term>
-			<def>tube from the bladder that allows urine to leave the body</def>
-		</audio>
-		<audio audioURL="00035202.mp3" chapter=",21,">
-			<term>urinalysis</term>
-			<def>the physical, chemical, and microscopic analysis of urine</def>
-		</audio>
-		<audio audioURL="00056560.mp3" chapter=",6,">
-			<term>urinary bladder</term>
-			<def>saclike organ behind the symphysis pubis that temporarily stores urine</def>
-		</audio>
-		<audio audioURL="00035205.mp3" chapter=",6,">
-			<term>urination</term>
-			<def>voiding or micturition; discharge of urine from the bladder</def>
-		</audio>
-		<audio audioURL="00035214.mp3" chapter=",21,">
-			<term>urinometer</term>
-			<def>a sealed glass float placed in approximately 15 mL of urine and that measures specific gravity</def>
-		</audio>
-		<audio audioURL="00035351.mp3" chapter=",6,">
-			<term>uterus</term>
-			<def>female organ located in pelvic cavity from the oviducts to the vagina; houses and nourishes the growing fetus and placenta</def>
-		</audio>-->
-	</group>
-	<group name="V" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00087088.mp3" chapter=",14,">
-			<term>V codes</term>
-			<def>ICD-9 codes identifying health care visits for reasons other than illness</def>
-		</audio>
-		<audio audioURL="00089970.mp3" chapter=",6,">
-			<term>vas deferens</term>
-			<def>tubule carrying sperm from epididymis to seminal vesicles</def>
-			<spanishterm>Conducto deferente</spanishterm>
-		</audio>
-		<audio audioURL="00035571.mp3" chapter=",6,">
-			<term>vasectomy</term>
-			<def>male sterilization procedure; tying off or removing part or all of vas defernes</def>
-		</audio>
-		<audio audioURL="00101855.mp3" chapter=",6,">
-			<term>vena cava</term>
-			<def>largest body vein, with inferior and superior branches</def>
-			<spanishterm>Vena cava</spanishterm>
-		</audio>
-		<!--<audio audioURL="00056692.mp3" chapter=",20,">
-			<term>ventricular fibrillation</term>
-			<def>uncoordinated and ineffective ventricular contractions, "quivering of the heart"; displayed on the ECG as coarse or fine trembles with no identifiable waves or complexes; considered a life-threatening arrhythmia</def>
-		</audio>
-		<audio audioURL="00056693.mp3" chapter=",20,">
-			<term>ventricular flutter</term>
-			<def>ventricular rate of 150 to 300 beats per minute; considered a life-threatening arrhythmia</def>
-		</audio>
-		<audio audioURL="00056702.mp3" chapter=",20,">
-			<term>ventricular tachycardia</term>
-			<def>ventricular rate of more than 100 to 150 beats per minute, wide QRS complex; considered a life-threatening arrhythmia</def>
-		</audio>
-		<audio audioURL="00056716.mp3" chapter=",6,">
-			<term>vertebral column</term>
-			<def>spine; 26 vertebrae (bones that cover the spinal cord)</def>
-		</audio>
-		<audio audioURL="00035813.mp3" chapter=",6,">
-			<term>vertigo</term>
-			<def>dizziness</def>
-		</audio>
-		<audio audioURL="00035876.mp3" chapter=",6,">
-			<term>vestibule</term>
-			<def>middle section of inner ear involving balance</def>
-		</audio>
-		<audio audioURL="00035922.mp3" chapter=",6,">
-			<term>villi (singular villus)</term>
-			<def>tiny projections in the small intestine lining where absorption of nutrients occurs</def>
-		</audio>
-		<audio audioURL="00035976.mp3" chapter=",17,">
-			<term>virology</term>
-			<def>study of virus</def>
-		</audio>
-		<audio audioURL="00090091.mp3" chapter=",18,">
-			<term>vital signs</term>
-			<def>measurements of body temperature, pulse rate, respirations (TPR) and blood pressure (BP)</def>
-		</audio>
-		<audio audioURL="00036043.mp3" chapter=",24,">
-			<term>vitamins</term>
-			<def>organic substances found naturally in foods and needed in small amounts for metabolism and prevention of certain diseases</def>
-		</audio>-->
-	</group>
-	<group name="W" chapter=",4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,">
-		<audio audioURL="00087109.mp3" chapter=",26,">
-			<term>walking wounded</term>
-			<def>persons in a disaster who have been triaged at a command center of the community disaster, have minor injuries, and are capable of walking</def>
-		</audio>
-		<audio audioURL="00036165.mp3" chapter=",10,">
-			<term>wave</term>
-			<def>scheduling a specific number of patients, usually four, at the beginning of the hour</def>
-			<spanishterm>ola</spanishterm>
-		</audio>
-		<audio audioURL="00036191.mp3" chapter=",6,">
-			<term>wheeze</term>
-			<def>squeaking or whistling breath sound, usually caused by narrowed tracheobronchial airways, as in asthma</def>
-		</audio>
-		<audio audioURL="00056910.mp3" chapter=",13,">
-			<term>workers' compensation</term>
-			<def>medical and disability insurance to cover employees in the event of a work-related injury, illness, or death</def>
-			<spanishterm>Compensación laboral</spanishterm>
-		</audio>
-	</group>
+  <group name='A' chapter=',5,6,19,26,'>
+    <audio audioURL='00000012.mp3' SpanURL='' chapter=',5,'>
+      <term>
+        abdominocentesis
+      </term>
+      <pronc>
+        (ab-dom-ih-no-PEL-vik)
+      </pronc>
+      <def>
+        surgical puncture of the abdomen to remove fluid
+      </def>
+      <spanishterm></spanishterm>
+    </audio>
+    <audio audioURL='00000030.mp3' SpanURL='00065215' chapter=',6,'>
+      <term>
+        abduction
+      </term>
+      <pronc>
+        (ab-dom-ih-no-PEL-vik)
+      </pronc>
+      <def>
+        moving away from the body midline (the opposite of adduction) (e.g., spreading the arms)
+      </def>
+      <spanishterm>
+        secuestro
+      </spanishterm>
+    </audio>
+    <audio audioURL='00000075.mp3' chapter=',19,26,'>
+      <term>
+        abrasion
+      </term>
+      <pronc>
+        (ab-dom-ih-no-PEL-vik)
+      </pronc>
+      <def>
+        outer layers of skin scraped off, resulting in a small amount of sanguineous or serosanguineous drainage, such as a "skinned" knee; open wound resulting in scraping
+        off of skin layer(s) by trauma; may or may not produce bleeding
+      </def>
+    </audio>
+    <audio audioURL='00000082.mp3' SpanURL='00065215' chapter=',6,'>
+      <term>
+        abruptio placentae
+      </term>
+      <pronc>
+        (ab-dom-ih-no-PEL-vik)
+      </pronc>
+      <def>
+        premature separation of the placenta
+      </def>
+      <spanishterm>
+        desprendimiento de placenta
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='B' chapter=',4,,17,'>
+    <audio audioURL='00003662.mp3' chapter=',17,'>
+      <term>
+        bacteria (singular bacterium)
+      </term>
+      <def>
+        one-celled microorganisms; may be found singularly or in chains
+      </def>
+    </audio>
+    <audio audioURL='00003673.mp3' chapter=',17,'>
+      <term>
+        bacteriocide
+      </term>
+      <def>
+        an agent or a process that kills bacteria
+      </def>
+      <spanishterm>
+        bactericida
+      </spanishterm>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00003683.mp3'
+      SpanURL='00065592'
+      chapter=',17,'>
+      <term>
+        bacteriology
+      </term>
+      <def>
+        the science and study of bacteria.
+      </def>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00003717.mp3'
+      SpanURL='00065599'
+      chapter=',4,'>
+      <term>
+        balance
+      </term>
+      <def>
+        equality between the debit and credit sides of an accounting equation; that which is left over after additions and subtractions have been made to an account; remainder
+        amount due.
+      </def>
+      <spanishterm>
+        equilibrar
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='C' chapter=',10,15,,21,24,'>
+    <audio audioURL='00004938.mp3' chapter=',21,'>
+      <term>
+        calibration
+      </term>
+      <def>
+        a measurement compared with a standard; a method for testing the accuracy of equipment; a quality assurance procedure
+      </def>
+    </audio>
+    <audio audioURL='00004974.mp3' chapter=',24,'>
+      <term>
+        calorie
+      </term>
+      <def>
+        unit of energy that produces heat
+      </def>
+      <spanishterm>
+        caloría
+      </spanishterm>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00005224'
+      SpanURL='00065909'
+      chapter=',15,'>
+      <term>
+        carbuncle
+      </term>
+      <def>
+        infection of interconnected group of hair follicles or several furuncles forming a mass.
+      </def>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00005289'
+      SpanURL='00065927'
+      chapter=',10,'>
+      <term>
+        cardiomegaly
+      </term>
+      <def>
+        enlarged heart muscle.
+      </def>
+      <spanishterm>
+        cardiomegalia
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='D' chapter=',5,13,15,'>
+    <audio audioURL='00008475.mp3' chapter=',5,'>
+      <term>
+        dacryocystitis
+      </term>
+      <def>
+        inflammation of a tear sac
+      </def>
+    </audio>
+    <audio audioURL='00071608.mp3' chapter=',5,'>
+      <term>
+        dactyl/o
+      </term>
+      <def>
+        digit, finger or toe
+      </def>
+      <spanishterm>
+        Dactila
+      </spanishterm>
+    </audio>
+    <audio audioURL='00086343.mp3' chapter=',15,'>
+      <term>
+        day sheet
+      </term>
+      <def>
+        a daily record of the services rendered, charges made, and payments received; may be a manual or computerized system
+      </def>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00008615'
+      SpanURL='00066549'
+      chapter=',13,'>
+      <term>
+        decongestant
+      </term>
+      <def>
+        substance that reduces congestion or swelling.
+      </def>
+      <spanishterm>
+        descongestionante
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='E' chapter=',6,14,20,'>
+    <audio audioURL='00086389.mp3' chapter=',14,'>
+      <term>
+        E code
+      </term>
+      <def>
+        a supplementary classification of ICD-9 coding that denotes the external cause of an injury rather than a disease; explains the mechanism of injury; includes drug
+        events such as poisonings and adverse effects
+      </def>
+    </audio>
+    <audio audioURL='00010205.mp3' chapter=',20,'>
+      <term>
+        echocardiogram
+      </term>
+      <def>
+        reflected sound waves used to test the heart for structural or functional abnormalities
+      </def>
+      <spanishterm>
+        ecocardiograma
+      </spanishterm>
+    </audio>
+    <audio audioURL='00010226.mp3' chapter=',6,'>
+      <term>
+        eclampsia
+      </term>
+      <def>
+        toxemia of pregnancy, with high blood pressure, albuminuria, oliguria, seizures, and sometimes coma
+      </def>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00010175'
+      SpanURL='00066994'
+      chapter=',20,'>
+      <term>
+        ecchymosis
+      </term>
+      <def>
+        characteristic black and blue mark that results from blood as it accumulates under the skin.
+      </def>
+      <spanishterm>
+        equimosis
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='F' chapter=',6,7,13,24,'>
+    <audio audioURL='00038247.mp3' chapter=',6,'>
+      <term>
+        fallopian tubes
+      </term>
+      <def>
+        oviducts; canals leading from the ovaries to the uterus
+      </def>
+    </audio>
+    <audio audioURL='00018646.mp3' chapter=',24,'>
+      <term>
+        fats (lipids)
+      </term>
+      <def>
+        greasy material in nutrients transport fat-soluble vitamins, insulate the body from the cold, and provide fatty acids
+      </def>
+      <spanishterm>
+        Grasas (lípidos)
+      </spanishterm>
+    </audio>
+    <audio audioURL='00086444.mp3' chapter=',13,'>
+      <term>
+        fee schedule
+      </term>
+      <def>
+        a list of a physician's customary charges; may incorporate insurance plan-specific discounts
+      </def>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00012652'
+      SpanURL='00067414'
+      chapter=',7,'>
+      <term>
+        fluoroscopy
+      </term>
+      <def>
+        special x-ray technique for examining a body part by immediate projection onto a fluorescent screen.
+      </def>
+      <spanishterm>
+        fluoroscopa
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='G' chapter=',5,6,'>
+    <audio audioURL='00013041.mp3' chapter=',6,'>
+      <term>
+        gallbladder
+      </term>
+      <def>
+        pear-shaped sac located on the inferior surface of the liver; stores bile to aid in digestion and fat absorption
+      </def>
+    </audio>
+    <audio audioURL='00013074.mp3' chapter=',6,'>
+      <term>
+        gamete
+      </term>
+      <def>
+        male(sperm) or female (ovum) reproductive cell
+      </def>
+      <spanishterm>
+        gameto
+      </spanishterm>
+    </audio>
+    <audio audioURL='00013108.mp3' chapter=',6,'>
+      <term>
+        ganglion
+      </term>
+      <def>
+        marked swelling of gray matter, located outside the central nervous system, containing cells of neurons
+      </def>
+    </audio>
+    <audio audioURL='00038454.mp3' chapter=',5,'>
+      <term>
+        gastrectasia
+      </term>
+      <def>
+        stretching of the stomach
+      </def>
+      <spanishterm>
+        Gastrectasia
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='H' chapter=',9,11,13,21,'>
+    <audio audioURL='00072910.mp3' chapter=',9,'>
+      <term>
+        hardware
+      </term>
+      <def>
+        the central processing unit, motherboard, hard drive, disk drive, keyboard, monitor, and mouse of the computer
+      </def>
+    </audio>
+    <audio audioURL='00046682.mp3' chapter=',11,'>
+      <term>
+        Health Insurance Portability and Accountability Act (HIPAA)
+      </term>
+      <def>
+        originally enacted in 1996, contains requirements for patient confidentiality
+      </def>
+      <spanishterm>
+        Ley de Portabilidad y Responsabilidad del Seguro Médico (HIPAA)
+      </spanishterm>
+    </audio>
+    <audio audioURL='00051391.mp3' chapter=',13,'>
+      <term>
+        health maintenance organization (HMO)
+      </term>
+      <def>
+        an association that provides all care to the insured person for a fixed fee, usually paid for by the insured or employer through a monthly premium; a copayment may
+        or may not be required
+      </def>
+    </audio>
+    <audio audioURL='00014290.mp3' chapter=',21,'>
+      <term>
+        hematocrit
+      </term>
+      <def>
+        percentage of red blood cells in the total blood volume
+      </def>
+      <spanishterm>
+        Hematocrito
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='I' chapter=',6,'>
+    <audio audioURL='00016373.mp3' chapter=',6,'>
+      <term>
+        ileum
+      </term>
+      <def>
+        lower portion of the small intestine, opening into the cecum
+      </def>
+    </audio>
+    <audio audioURL='00016398.mp3' chapter=',6,'>
+      <term>
+        ilium
+      </term>
+      <def>
+        superior wing-shaped portion of hip bones
+      </def>
+      <spanishterm>
+        ilion
+      </spanishterm>
+    </audio>
+    <audio audioURL='00016443.mp3' chapter=',6,'>
+      <term>
+        immunity
+      </term>
+      <def>
+        the individual's ability to resist specific diseases or disorders, usually by acquiring the corresponding antibody
+      </def>
+    </audio>
+    <audio audioURL='00016444.mp3' chapter=',6,'>
+      <term>
+        immunization
+      </term>
+      <def>
+        vaccination; protection from communicable diseases by administration of living attenuated agents (e.g., measles), killed organisms (e.g., pertussis), inactivated
+        toxins (e.g., tetanus), or recombinant DNA (e.g., hepatitis B)
+      </def>
+      <spanishterm>
+        inmunización
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='J' chapter=',4,6,'>
+    <audio audioURL='00017656.mp3' chapter=',6,'>
+      <term>
+        jaundice
+      </term>
+      <def>
+        yellow color of skin, white of eyes, and mucous membranes resulting from increased bilirubin in blood; most common causes are obstruction of bile flow, liver dysfunction,
+        and excess destruction of red blood cells
+      </def>
+    </audio>
+    <audio audioURL='00017674.mp3' chapter=',6,'>
+      <term>
+        joints
+      </term>
+      <def>
+        areas where two or more bones come together or articulate
+      </def>
+      <spanishterm>
+        Articulaciones
+      </spanishterm>
+    </audio>
+    <audio audioURL='00057781.mp3' chapter=',4,'>
+      <term>
+        justice
+      </term>
+      <def>
+        equitable distribution of benefits and burdens
+      </def>
+    </audio>
+  </group>
+  <group name='K' chapter=',6,18,'>
+    <audio audioURL='00017772.mp3' chapter=',6,'>
+      <term>
+        keratin
+      </term>
+      <def>
+        a protein in the epidermis that thickens and waterproofs the skin
+      </def>
+    </audio>
+    <audio audioURL='00017886.mp3' chapter=',6,'>
+      <term>
+        kidneys
+      </term>
+      <def>
+        two muscular, bean-shaped organs located in the back of the abdominal cavity that filtrate, reabsorb selected substances, and excrete urine
+      </def>
+      <spanishterm>
+        Riñones
+      </spanishterm>
+    </audio>
+    <audio audioURL='00039100.mp3' chapter=',18,'>
+      <term>
+        Korotkoff sounds
+      </term>
+      <def>
+        sounds heard through the stethoscope during the measurement of blood pressure; there are five phases
+      </def>
+    </audio>
+    <audio audioURL='00017990.mp3' chapter=',6,'>
+      <term>
+        kyphosis
+      </term>
+      <def>
+        hunchback; an excessive curvature in the thoracic portion of the vertebral column
+      </def>
+      <spanishterm>
+        Cifosis
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='L' chapter=',5,6,19,21,26,'>
+    <audio audioURL='00018024.mp3' chapter=',6,'>
+      <term>
+        labyrinth
+      </term>
+      <def>
+        inner ear; contains vestibule, semicircular canal, and cochlea with receptors for hearing and balance
+      </def>
+    </audio>
+    <audio audioURL='00018035.mp3' chapter=',19,26,'>
+      <term>
+        laceration
+      </term>
+      <def>
+        a jagged traumatic cut resulting in irregular wound edges; straight or jagged cut into the body tissue
+      </def>
+      <spanishterm>
+        laceración
+      </spanishterm>
+    </audio>
+    <audio audioURL='00018149.mp3' chapter=',21,'>
+      <term>
+        lancet
+      </term>
+      <def>
+        a sharp, sterile, disposable instrument used to puncture skin for collecting capillary blood
+      </def>
+    </audio>
+    <audio audioURL='00018171.mp3' chapter=',5,'>
+      <term>
+        laparotomy
+      </term>
+      <def>
+        incision of the abdominal wall
+      </def>
+      <spanishterm>
+        Laparotomía
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='M' chapter=',5,6,22,'>
+    <audio audioURL='00086570.mp3' chapter=',6,'>
+      <term>
+        macular degeneration
+      </term>
+      <def>
+        progressive abnormal growth of blood vessels or other structures in the retina, usually leading to blindness
+      </def>
+    </audio>
+    <audio audioURL='00083140.mp3' chapter=',22,'>
+      <term>
+        magnetic resonance imaging (MRI)
+      </term>
+      <def>
+        film visualization of internal structures, including soft tissue, by using a magnetic field with radiation
+      </def>
+      <spanishterm>
+        Resonancia magnética (MRI)
+      </spanishterm>
+    </audio>
+    <audio audioURL='00041379.mp3' chapter=',5,'>
+      <term>
+        malacia
+      </term>
+      <def>
+        softening of tissue
+      </def>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00019354'
+      SpanURL='00068388'
+      chapter=',14,'>
+      <term>
+        malignant
+      </term>
+      <def>
+        cancerous.
+      </def>
+      <spanishterm>
+        maligno
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='N' chapter=',4,5,6,'>
+    <audio audioURL='00021769.mp3' chapter=',6,'>
+      <term>
+        narcolepsy
+      </term>
+      <def>
+        uncontrollable episodes of falling asleep; also known as sleep epilepsy
+      </def>
+    </audio>
+    <audio audioURL='00021788.mp3' chapter=',5,'>
+      <term>
+        nasopharyngeal
+      </term>
+      <def>
+        pertaining to nose and throat
+      </def>
+      <spanishterm>
+        Nasofaríngeo
+      </spanishterm>
+    </audio>
+    <audio audioURL='00021858.mp3' chapter=',5,'>
+      <term>
+        necrosis
+      </term>
+      <def>
+        death of tissue or bone
+      </def>
+    </audio>
+    <audio audioURL='00058198.mp3' chapter=',4,'>
+      <term>
+        negligence
+      </term>
+      <def>
+        commission or omission of an act that resulted in or caused harm
+      </def>
+      <spanishterm>
+        negligencia
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='O' chapter=',5,12,24,'>
+    <audio audioURL='00022642.mp3' chapter=',24,'>
+      <term>
+        obese
+      </term>
+      <def>
+        20% overweight for sex, height, and type of frame
+      </def>
+    </audio>
+    <audio audioURL='00023018.mp3' chapter=',5,'>
+      <term>
+        onychocryptosis
+      </term>
+      <def>
+        an ingrown (hidden) nail, finger or toe
+      </def>
+      <spanishterm>
+        Onicocriptosis
+      </spanishterm>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00023130'
+      SpanURL=''
+      chapter=',5,12,'>
+      <term>
+        ophthalmoscope
+      </term>
+      <def>
+        lighted instrument used to examine the inner surfaces of the eye.
+      </def>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00023188'
+      SpanURL='00068867'
+      chapter=',12,'>
+      <term>
+        optometrist
+      </term>
+      <def>
+        specialist who can measure for errors of refraction and prescribe lenses but who cannot treat diseases of the eye or perform surgery.
+      </def>
+      <spanishterm>
+        Optmetra optometrista
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='P' chapter=',6,16,18,'>
+    <audio audioURL='00023993.mp3' chapter=',18,'>
+      <term>
+        palpation
+      </term>
+      <def>
+        use of fingertips and hands to feel for sizes and positions of specific organs, masses, or other abnormalities; texture and firmness; skin temperature and moisture
+        and flexibility of joints
+      </def>
+    </audio>
+    <audio audioURL='00024019.mp3' chapter=',6,'>
+      <term>
+        pancreas
+      </term>
+      <def>
+        an endocrine gland located behind the stomach that produces pancreatic juice, which is transported to the duodenum to aid in digestion, and insulin and glucagon,
+        which regulate carbohydrate metabolism
+      </def>
+      <spanishterm>
+        páncreas
+      </spanishterm>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00024659'
+      SpanURL=''
+      chapter=',16,'>
+      <term>
+        pediculosis
+      </term>
+      <def>
+        infestation with parasitic lice.
+      </def>
+    </audio>
+    <audio audioURL='00044149.mp3' chapter=',6,'>
+      <term>
+        Papnicolaou smear (Pap smear)
+      </term>
+      <def>
+        test for cervical cancer that involves microscopically examining cervical scrapings
+      </def>
+      <spanishterm>
+        Papanicolaou frotis (Papanicolau)
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='Q' chapter=',21,'>
+    <audio audioURL='00058994.mp3' chapter=',21,'>
+      <term>
+        qualitative analysis
+      </term>
+      <def>
+        the identification of a type of pathogen by its appearance in the specimen
+      </def>
+    </audio>
+    <audio audioURL='00058999.mp3' chapter=',21,'>
+      <term>
+        quantitative analysis
+      </term>
+      <def>
+        the method used to determine the number of bacteria present in a specimen
+      </def>
+      <spanishterm>
+        análisis cuantitativo
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='R' chapter=',22,'>
+    <audio audioURL='00075133.mp3' chapter=',22,'>
+      <term>
+        rad
+      </term>
+      <def>
+        unit of absorbed dose of radiation
+      </def>
+    </audio>
+    <audio audioURL='00028768.mp3' chapter=',22,'>
+      <term>
+        radiology
+      </term>
+      <def>
+        the study of use of radioactive substances to visualize an internal structure
+      </def>
+      <spanishterm>
+        radiología
+      </spanishterm>
+    </audio>
+    <audio audioURL='00028770.mp3' chapter=',22,'>
+      <term>
+        radiolucent
+      </term>
+      <def>
+        a substance or structure that x-rays will penetrate
+      </def>
+    </audio>
+    <audio audioURL='00028782.mp3' chapter=',22,'>
+      <term>
+        radiopaque
+      </term>
+      <def>
+        substance or structure that is not penetrated by x-rays
+      </def>
+      <spanishterm>
+        radioopaco
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='S' chapter=',6,9,19,'>
+    <audio audioURL='00055180.mp3' chapter=',6,'>
+      <term>
+        sagittal plane
+      </term>
+      <def>
+        an imaginary line or cut through the body, bilaterally separating it into right and left halves
+      </def>
+    </audio>
+    <audio audioURL='00103494.mp3' chapter=',6,'>
+      <term>
+        salivary glands
+      </term>
+      <def>
+        three pairs of glands located in the mouth, secreting saliva that moistens food and begins the chemical breakdown of carbohydrates
+      </def>
+      <spanishterm>
+        glándulas salivales
+      </spanishterm>
+    </audio>
+    <audio audioURL='00029966.mp3' chapter=',19,'>
+      <term>
+        scalpels
+      </term>
+      <def>
+        knives with various blade shapes and sizes, used to make surgical incisions
+      </def>
+    </audio>
+    <audio audioURL='00029973.mp3' chapter=',9,'>
+      <term>
+        scanner
+      </term>
+      <def>
+        software-required device that reads documents (text, graphics, photos) and transfers the image to the computer
+      </def>
+      <spanishterm>
+        escáner
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='T' chapter=',5,6,19,20,'>
+    <audio audioURL='00032742.mp3' chapter=',5,20,'>
+      <term>
+        tachycardia
+      </term>
+      <def>
+        increased heart rate (pulse):a heart rate faster than 100 beats per minute
+      </def>
+    </audio>
+    <audio audioURL='00032970.mp3' chapter=',6,'>
+      <term>
+        telophase
+      </term>
+      <def>
+        final phase of mitosis; the nucleus divides in the center, forming two distinct cells
+      </def>
+      <spanishterm>
+        Telófase
+      </spanishterm>
+    </audio>
+    <audio audioURL='00033000.mp3' chapter=',19,'>
+      <term>
+        tenaculum
+      </term>
+      <def>
+        a long, two-handled instrument with pointed ends used to grasp tissue during surgery; a cervical tenaculum is commonly used in well-woman exams
+      </def>
+    </audio>
+    <audio audioURL='00033011.mp3' chapter=',6,'>
+      <term>
+        tendons
+      </term>
+      <def>
+        connective tissue attaching muscle directly to the periosteum (covering) of the bone
+      </def>
+      <spanishterm>
+        Tendones
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='U' chapter=',6,22,'>
+    <audio audioURL='00056486.mp3' chapter=',6,'>
+      <term>
+        ulcerative colitis
+      </term>
+      <def>
+        inflammation and ulceration of the mucosa of the colon and rectum
+      </def>
+    </audio>
+    <audio audioURL='00034876.mp3' chapter=',6,'>
+      <term>
+        ulcers
+      </term>
+      <def>
+        lesions of the mucosa of any organ; most common in the stomach and intestine
+      </def>
+      <spanishterm>
+        úlceras
+      </spanishterm>
+    </audio>
+    <audio audioURL='00082479.mp3' chapter=',6,'>
+      <term>
+        ulna
+      </term>
+      <def>
+        medial bone of forearm (in anatomic position)
+      </def>
+    </audio>
+    <audio audioURL='00034923.mp3' chapter=',22,'>
+      <term>
+        ultrasonography (ultrasound)
+      </term>
+      <def>
+        use of high-frequency ultrasonic waves to produce an image and identify and measure deep body structures and abnormalities
+      </def>
+      <spanishterm>
+        Ultrasonografía (ultrasonido)
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='V' chapter=',6,14,'>
+    <audio audioURL='00087088.mp3' chapter=',14,'>
+      <term>
+        V codes
+      </term>
+      <def>
+        ICD-9 codes identifying health care visits for reasons other than illness
+      </def>
+    </audio>
+    <audio audioURL='00089970.mp3' chapter=',6,'>
+      <term>
+        vas deferens
+      </term>
+      <def>
+        tubule carrying sperm from epididymis to seminal vesicles
+      </def>
+      <spanishterm>
+        Conducto deferente
+      </spanishterm>
+    </audio>
+    <audio audioURL='00035571.mp3' chapter=',6,'>
+      <term>
+        vasectomy
+      </term>
+      <def>
+        male sterilization procedure; tying off or removing part or all of vas defernes
+      </def>
+    </audio>
+    <audio audioURL='00101855.mp3' chapter=',6,'>
+      <term>
+        vena cava
+      </term>
+      <def>
+        largest body vein, with inferior and superior branches
+      </def>
+      <spanishterm>
+        Vena cava
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='W' chapter=',6,10,13,26,'>
+    <audio audioURL='00087109.mp3' chapter=',26,'>
+      <term>
+        walking wounded
+      </term>
+      <def>
+        persons in a disaster who have been triaged at a command center of the community disaster, have minor injuries, and are capable of walking
+      </def>
+    </audio>
+    <audio audioURL='00036165.mp3' chapter=',10,'>
+      <term>
+        wave
+      </term>
+      <def>
+        scheduling a specific number of patients, usually four, at the beginning of the hour
+      </def>
+      <spanishterm>
+        ola
+      </spanishterm>
+    </audio>
+    <audio audioURL='00036191.mp3' chapter=',6,'>
+      <term>
+        wheeze
+      </term>
+      <def>
+        squeaking or whistling breath sound, usually caused by narrowed tracheobronchial airways, as in asthma
+      </def>
+    </audio>
+    <audio audioURL='00056910.mp3' chapter=',13,'>
+      <term>
+        workers' compensation
+      </term>
+      <def>
+        medical and disability insurance to cover employees in the event of a work-related injury, illness, or death
+      </def>
+      <spanishterm>
+        Compensación laboral
+      </spanishterm>
+    </audio>
+  </group>
 </root>
