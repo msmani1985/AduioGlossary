@@ -242,7 +242,7 @@ var currentChap = cahperList.options[0].value
           }
           else
           {
-            console.log(varfound[i]);
+            //console.log(varfound[i]);
             MYLIST.childNodes[MYLIST.childNodes.length-1].childNodes[0].value=MYLIST.childNodes[MYLIST.childNodes.length-1].childNodes[0].value + "-" + varfound[i];
             i=i+1;
         }
