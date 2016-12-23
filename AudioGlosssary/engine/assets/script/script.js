@@ -60,8 +60,8 @@ function onSidenav() {
 function bodyloaded1 () {
   document.addEventListener('dataLoaded', createUI)
   document.addEventListener('dataLoaded', createUI1)
-  modelObj = new DtataProvider('xml/chapter.xml', createUI)
-  modelObj1 = new DtataProvider1('xml/terms.xml', createUI1)
+  modelObj = new DtataProvider('assets/xml/chapter.xml', createUI)
+  modelObj1 = new DtataProvider1('assets/xml/terms.xml', createUI1)
   psbi = null
   document.getElementById('previous').disabled = true
   document.getElementById('next').disabled =false
