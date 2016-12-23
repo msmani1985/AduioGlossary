@@ -25,3 +25,26 @@ English list will be alphabetized by English term only
 
 Spanish list will be alphabetized by Spanish term only
 
+
+Modules:
+1. XML Data reading modules.
+2. Chapter Listing modules.
+3. Side Menu A-Z alphabetic listing modules
+4. A-Z merging modules
+5. Term listing modules with Taken care of A-Z merging.
+6. English Alphabetic order with spanish terms. 
+7. English terms alphabetic order. 
+8. Spanish tarms alphabetic order. 
+9. English and Spanish toggle modules. 
+10. Terms count information listing. 
+11. Next and Previous functionality. 
+12. Chapter selected display first term logic. 
+13. If user toggle spanish to English if spanish word not availble need to switch over the first term of the spanish or english. 
+14. Side bar or chapter select by user need to change the next and previous logic. 
+15. Spanish terms and English terms display logic. 
+16. Spanish definition and English definiton placeholder information. 
+17. Search functionality for All and All chaapter. 
+18. Search functionality for alphabtic wise.
+19. Search functionality for Chater wiser all 
+20 Search functionality for cahpter wise alphabetic wiser. 
+
