@@ -12,15 +12,17 @@
          <script>
           var moduleA = angular.module("MyModuleA", []);
           moduleA.value("xmlpath",'assets/xml/chapter.xml');
+          var moduleB = angular.module("MyModuleB", []);
+          moduleB.value("xmlpath",'assets/xml/terms.xml');
 
          moduleA.controller("MyControllerA", function($scope,$http,xmlpath) {
          $http.get(xmlpath)     
         .success( function(data,status,header,config) {
             var x2js = new X2JS();
             var jsondat= x2js.xml_str2json(data);
-            console.log(jsondat);
+           // console.log(jsondat);
 
-            $scope.name=jsondat.chapters.chapter;
+         //  $scope.name=jsondat.chapters.chapter;
          
         })
         .error(function(data,status,header,config)
@@ -30,9 +32,22 @@
         
       });
 
-          var moduleB = angular.module("MyModuleB", []);
-          moduleB.controller("MyControllerB", function($scope) {
-              $scope.name = "Steve B";
+          
+          moduleB.controller("MyControllerB",  function($scope,$http,xmlpath) {
+               $http.get(xmlpath)     
+        .success( function(data,status,header,config) {
+            $.(data).find("group");
+           // var x2js = new X2JS();
+           // var jsondat= x2js.xml_str2json(data);
+            //console.log(jsondat);
+
+            
+         
+        })
+        .error(function(data,status,header,config)
+        {
+                alert("error");
+        })
           });
 
           angular.module("CombineModule", ["MyModuleA", "MyModuleB"]);
