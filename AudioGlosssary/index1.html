@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+         <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+         <script src="engine/assets/script/xml2json.min.js">
+             
+         </script>
+         <script>
+          var moduleA = angular.module("MyModuleA", []);
+          moduleA.value("xmlpath",'assets/xml/chapter.xml');
+
+         moduleA.controller("MyControllerA", function($scope,$http,xmlpath) {
+         $http.get(xmlpath)     
+        .success( function(data,status,header,config) {
+            var x2js = new X2JS();
+            var jsondat= x2js.xml_str2json(data);
+            console.log(jsondat);
+
+            $scope.name=jsondat.chapters.chapter;
+         
+        })
+        .error(function(data,status,header,config)
+        {
+                alert("error");
+        })
+        
+      });
+
+          var moduleB = angular.module("MyModuleB", []);
+          moduleB.controller("MyControllerB", function($scope) {
+              $scope.name = "Steve B";
+          });
+
+          angular.module("CombineModule", ["MyModuleA", "MyModuleB"]);
+        </script>
+    </head>
+     <body ng-app="CombineModule">
+        <div>
+            <h1>myDiv1</h1>
+            <div ng-controller="MyControllerA">
+               <select ng-model="selectedCar">
+                   <option value="0">All Chapters</option>
+
+<option ng-repeat="x in name" value="{{x._id}}">{{x.__text}}</option>
+</select>
+            </div>
+        </div>
+
+        <div>
+            <h1>myDiv2</h1>
+            <div ng-controller="MyControllerB">
+                {{name}}
+            </div>
+        </div>
+    </body>
+</html>
