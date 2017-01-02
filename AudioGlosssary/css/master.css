@@ -397,6 +397,11 @@ h6 {
     
 }
 
+#Span_Definition {
+    background: #ffffff;
+    display: block;
+    margin-top:20px;
+}
 #Definition {
     background: #ffffff;
     display: block;

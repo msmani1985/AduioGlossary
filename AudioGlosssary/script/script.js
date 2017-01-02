@@ -611,6 +611,8 @@ function Englishwordonly(selectList1,varj,vart)
       li.appendChild(a)
       selectList1.appendChild(li)
       onSelectDef_1(selectList1.childNodes[0].childNodes[0],true);
+      
+      
 }
 function EnglishSpanshword(selectList1,varj,vart)
 {
@@ -652,6 +654,7 @@ function EnglishSpanshword(selectList1,varj,vart)
         selectList1.appendChild(li1)
         
          onSelectDef_1(selectList1.childNodes[0].childNodes[0],true)
+         
 }
 function onPrevious () {
   
@@ -787,7 +790,14 @@ document.getElementById('b4').className= document.getElementById('b4').className
 						TC.style.color = "blue";
 						TC.innerHTML = '<span class="Senplayplay" ></span> ' + GroupArray[vart].AudioList[varj].SpaneshTerm;
 					}
-
+ var TC = document.getElementById("SpanTerms_1");
+					TC.style.display = "none";
+          var TC = document.getElementById("Span_Definition");
+					TC.style.display = "none";
+          var TC = document.getElementById("Term");
+					TC.style.display = "block";
+        var TC = document.getElementById("Definition");
+					TC.style.display = "block";
           var cahperList = document.getElementById('chapterList')
   var currentChap = cahperList.options[cahperList.selectedIndex].value
 
@@ -944,6 +954,7 @@ document.getElementById('b4').className= document.getElementById('b4').className
             a.appendChild(t1)
            li.appendChild(a)
            selectList1.appendChild(li)
+          
             /**************************************************************************************** */
             /************************************************************************************************** */
             // termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].Audioterm+'",'
@@ -1143,6 +1154,14 @@ function ToViewSpanTerm () {
               a.appendChild(t1)
               li.appendChild(a)
               selectList1.appendChild(li)
+              var TC = document.getElementById("Term");
+					TC.style.display = "none";
+          var TC = document.getElementById("Definition");
+					TC.style.display = "none";
+          var TC = document.getElementById("SpanTerms_1");
+					TC.style.display = "block";
+          var TC = document.getElementById("Span_Definition");
+					//TC.style.display = "block";
               /**************************************************************************************** */						var li = document.createElement('li')
 
             // termsdetsear=termsdetsear+","+ GroupArray[t].AudioList[j].SpaneshTerm
@@ -2295,8 +2314,10 @@ var x1 = document.getElementById('termChoose1').childNodes;
           document.getElementById('b4').className= document.getElementById('b4').className.replace("btn-info","btn-default");
           document.getElementById('b3').className= document.getElementById('b3').className.replace("btn-info","btn-default");
 
-          var TC = document.getElementById("spanitem_1");
+          var TC = document.getElementById("SpanTerms_1");
 					TC.style.display = "none";
+          var TC = document.getElementById("Span_Definition");
+				//	TC.style.display = "none";
 
 				} else {
  //console.log("san");
@@ -2308,8 +2329,10 @@ var x1 = document.getElementById('termChoose1').childNodes;
           document.getElementById("b4").disabled = false;
            document.getElementById('b4').className= document.getElementById('b4').className.replace("btn-default","btn-info");
           document.getElementById('b3').className= document.getElementById('b3').className.replace("btn-info","btn-default");
-          var TC = document.getElementById("spanitem_1");
+          var TC = document.getElementById("SpanTerms_1");
 					TC.style.display = "block";
+          var TC = document.getElementById("Span_Definition");
+					TC.style.display = "none";
 					var TC = document.getElementById("spanitem_1");
 					TC.style.color = "blue";
 					TC.innerHTML = '<span class="Senplayplay" ></span> ' + GroupArray[t].AudioList[j].SpaneshTerm;
