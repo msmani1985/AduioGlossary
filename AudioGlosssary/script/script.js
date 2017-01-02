@@ -1221,7 +1221,7 @@ function ToViewSpanTerm () {
         selectList1.setAttribute('style', 'width:200px')
         selectList1.setAttribute('class', 'list-group')
         myDiv.appendChild(selectList1)
-alert("welcome");
+//alert("welcome");
 
         for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
         {
@@ -2368,7 +2368,7 @@ var x1 = document.getElementById('termChoose1').childNodes;
 				//adding Audio button to definiton frame
 				var audioElement = document.createElement('audio');
         
-        audioElement.setAttribute('src', "media/" + (GroupArray[t].AudioList[j].AudioUrl+".mp3").replace(".mp3.mp3",".mp3"));
+         $(audioElement).attr('src', "media/" + (GroupArray[t].AudioList[j].AudioUrl+".mp3").replace(".mp3.mp3",".mp3"));
 				var TOappnd = document.getElementById('Audio');
 				TOappnd.innerHTML = "";
 				var Abtn = document.createElement("button");
@@ -2412,7 +2412,7 @@ var x1 = document.getElementById('termChoose1').childNodes;
 					SenAud.innerHTML = "";
 				} else {
 					var DefaudioElement = document.createElement('audio');
-          DefaudioElement.setAttribute('src', "media/" + (GroupArray[t].AudioList[j].defAudioUrl+".mp3").replace(".mp3.mp3",".mp3"));
+           $(DefaudioElement).attr('src', "media/" + (GroupArray[t].AudioList[j].defAudioUrl+".mp3").replace(".mp3.mp3",".mp3"));
 					var DefAud = document.getElementById('defAudio');
 					DefAud.innerHTML = "";
 					var Abtn = document.createElement("button");
