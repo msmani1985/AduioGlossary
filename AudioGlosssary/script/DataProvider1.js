@@ -39,7 +39,7 @@ function DtataProvider1(url, fuc) {
             storeConformation(xml)
         }
         var list = []; //stores the chapter list
-
+        xml1=xml;
         $(xml).find("group").each(function () {
             //parsing   
             var chpVo = new chapterVO();

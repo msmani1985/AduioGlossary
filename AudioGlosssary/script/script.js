@@ -6,6 +6,7 @@ var varj=0;
 var nclexDoc
 var tocDoc
 var initDoc
+var xml1;
 var sound
 var Chap4Array = []
 var GroupArray = []
@@ -116,53 +117,89 @@ var currentChap = cahperList.options[0].value
   var currentChap = cahperList.options[cahperList.selectedIndex].value
   }
   var gName;
-  
+   var varfound=[];
      //console.log("dafdfadf");
     if (currentChap == 'All Chapters') {
-       var varfound=[];
-      for (var i = 0; i < GROUP.length; i++) // loading chapter headdings to dropdown box
+      var varprev="";
+      for(vari=65;vari<91;vari++)
       {
-        gName=GROUP[i];
-         for (var j = 0; j < GroupArray.length; j++) {
-         if (gName == GroupArray[j].groupname) {
- 
-               varfound.push(gName);
-               break;
-           }
-         }
+        if($(xml1).find("group[name='"+String.fromCharCode(vari)+"']").length==0)
+        {
+        }
+        else
+        {
+          if(varprev!=String.fromCharCode(vari))
+          {
+            varfound.push(String.fromCharCode(vari));
+            varprev="";
+          }
+          else
+          
+      {alert( varprev+" " +String.fromCharCode(vari)+" " + $(xml1).find("group[name='"+String.fromCharCode(vari)+"']").length);varprev=""}
+        
+          varprev=String.fromCharCode(vari);
+        }
+      }
+      if(varprev!="")
+      {
+        
+        varfound[varfound.length-1]=(varprev + "-" +"Z");
       }
     }
     else
     {
-       var varfound=[];
+      
       for (var t = 0; t < modalData.length; t++) {
         if(modalData[t].name==currentChap)
         {
       var chapterNumberOnly = modalData[t].name
       var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10)
       var chapterNumberOnly2 = '\,' + chapterNumberOnly1.trim() + '\,';
-       for (var j = 0; j < GroupArray.length; j++) {
-      for (var varj = 0; varj < GroupArray[j].AudioList.length; varj++) // loading chapter headdings to dropdown box
-        {
-       if (GroupArray[j].AudioList[varj].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
-          for (var i = 0; i < GROUP.length; i++) // loading chapter headdings to dropdown box
-          {
-             gName=GROUP[i];
-            
-            if (gName == GroupArray[j].groupname) {
-               //console.log((varfound.length-1) + " " + varfound[varfound.length-1]);
-               varfound.push(gName);
-               break;
-           }
-         }
-         break;
-       }
+      break;
         }
-       }
-       break;
-       }
       }
+var vargname=[];
+var varfound=[];
+
+
+       $(xml1).find("audio[chapter*='"+chapterNumberOnly2+"']").each(function(){
+         if($.inArray($(this).parent().attr("name").charCodeAt(0),vargname)<0)
+         {
+         vargname.push($(this).parent().attr("name").charCodeAt(0))}
+         else
+         {
+           //alert("found");
+         }
+       })
+       vargname=vargname.sort();
+       varprev=65;
+      // alert(vargname);
+       for(vari=0;vari<vargname.length;vari++)
+       {
+         //alert(varprev + " " + vargname[vari])
+         if(varprev==vargname[vari])
+         {
+           varfound.push(String.fromCharCode(vargname[vari]));
+          // alert(vargname[vari])
+           varprev=vargname[vari]+1
+         }
+         else
+         {
+        varfound.push(String.fromCharCode(varprev) + "-" + String.fromCharCode(vargname[vari]))
+        // varprev=vargname[vari]+1
+       // alert(String.fromCharCode(vargname[vari]));
+          varprev=vargname[vari]+1
+        }
+          
+       }
+        if(varprev!=91)
+    {
+      varfound[varfound.length-1]=varfound[varfound.length-1].split("-")[0] + "-"+"Z";
     }
+
+    }
+   
+      
 /*
     
       for (var t = 0; t < modalData.length; t++) {
@@ -210,88 +247,19 @@ var currentChap = cahperList.options[0].value
   var varmyli;
    var varcharnumber=64;
    
-    for(var i=0;i<varfound.length-1;i++)
+    for(var i=0;i<varfound.length;i++)
     {
      // console.log(varfound[i+1].charCodeAt(0) + " " + varfound[i].charCodeAt(0))
-      if((varfound[i+1].charCodeAt(0) -varfound[i].charCodeAt(0))==1)
-      {
-        varcharnumber=varcharnumber+(varfound[i+1]-varfound[i])
+     
        //console.log(String.fromCharCode(varcharnumber))
        var lix = document.createElement('li')
        // lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-info\" style=\"width:42px;height:25px;font-size:17px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"" + GROUP[i] + "index\" value=\"" + GROUP[i] + "\">"
         lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="' + varfound[i]+ 'index" value="' + varfound[i]+ '">'
         MYLIST.appendChild(lix)
 
-      }
-      else
-      {
-        
-        if( MYLIST.childNodes[MYLIST.childNodes.length-1].childNodes[0].value.indexOf("-")==-1)
-        {
-          if((MYLIST.childNodes[MYLIST.childNodes.length-1].childNodes[0].value)=="All")
-          {
-            console.log("welcom ALL");
-                var lix = document.createElement('li')
-       // lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-info\" style=\"width:42px;height:25px;font-size:17px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"" + GROUP[i] + "index\" value=\"" + GROUP[i] + "\">"
-
-          
-        lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="' + "A"+ 'index" value="' + "A"+ '">'
-        MYLIST.appendChild(lix);
-       
-
-          }
-          else
-          {
-            //console.log(varfound[i]);
-            MYLIST.childNodes[MYLIST.childNodes.length-1].childNodes[0].value=MYLIST.childNodes[MYLIST.childNodes.length-1].childNodes[0].value + "-" + varfound[i];
-            i=i+1;
-        }
-        
-        }
-        else
-        {
-          //console.log("dfaff");
-          //console.log(varfound[i])
-          console.log(varfound[i])
-          var lix = document.createElement('li')
-       // lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-info\" style=\"width:42px;height:25px;font-size:17px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"" + GROUP[i] + "index\" value=\"" + GROUP[i] + "\">"
-          
-        lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="' + varfound[i]+ 'index" value="' + varfound[i]+ '">'
-        MYLIST.appendChild(lix)
-        }
-
-    // console.log(varfound[i+1]-varfound[i]);
-     }
-      /*if((varfound[i]-varprev)<=1)
-      {
-       // console.log(varfound[i]);
-        var lix = document.createElement('li')
-       // lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-info\" style=\"width:42px;height:25px;font-size:17px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"" + GROUP[i] + "index\" value=\"" + GROUP[i] + "\">"
-        lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;    font-size: 17px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="' + GROUP[i] + 'index" value="' + GROUP[i] + '">'
-        MYLIST.appendChild(lix)
-        varmyli=document.getElementById(GROUP[i] + 'index');
-        varprev=varfound[i];
-      }
-      //if((varprev-varfound[i])==1)
-      else
-      {
-
-       varmyli.value=varmyli.value + "-"+GROUP[varfound[i]];
-        i=i+1;
-       varprev=varfound[i];
-      
-       }*/
-       //lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-info\" style=\"width:42px;height:25px;font-size:17px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"" + GROUP[i] + "index\" value=\"" + GROUP[i] + "\">"
-       //lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;    font-size: 17px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="' + GROUP[i] + 'index" value="' + GROUP[i] + '">'
-       //MYLIST.appendChild(lix)
-      
-    }
-    if(varfound.length<26)
-    {
-      lix.childNodes[lix.childNodes.length-1].value=lix.childNodes[lix.childNodes.length-1].value + "-" + "Z";
-        //lix.childNodes[lix.childNodes.length-1].value=lix.childNodes[lix.childNodes.length-1].style.paddingLeft = '12px';
-    }
+     
    
+}
 }
 function createUI1 (e) {
   modalData1 = e // loading data to variable
