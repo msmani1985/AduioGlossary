@@ -1706,8 +1706,9 @@ function onSelection2 () {
 
   }
 }
-function display_left(vart)
+function display_left(vart,varchap1)
 {
+  //alert("welcome34");
   //var x = document.getElementById('termChoose')
           //x.remove()
 //console.log("dafff");
@@ -1730,8 +1731,9 @@ function display_left(vart)
 
           myDiv.appendChild(selectList1)
 
-          for (var j = 0; j < GroupArray[vart].AudioList.length; j++) // loading chapter headdings to dropdown box
+       
           {
+            
             //var option = document.createElement('option')
            // option.value = GroupArray[t].AudioList[j].Audioterm
             //option.text = GroupArray[t].AudioList[j].Audioterm
@@ -1750,7 +1752,44 @@ function display_left(vart)
 			      //selectList.appendChild(option)
             selectList1.appendChild(li)
             */
+if(varchap1==undefined)
+{
+  if(vart==undefined)
+  {
+    for(vart=0;vart<GroupArray.length;vart++)
+    {
+     for (var j = 0; j < GroupArray[vart].AudioList.length; j++) // loading chapter headdings to dropdown box
+     {
+   if (GroupArray[vart].AudioList[j].SpaneshTerm == undefined || GroupArray[vart].AudioList[j].SpaneshTerm == '') {
+              Englishwordonly(selectList1,j,vart)
+            }else {
+             
+              EnglishSpanshword(selectList1,j,vart)
 
+            }
+  }
+  }
+  }
+  else
+  {
+     for (var j = 0; j < GroupArray[vart].AudioList.length; j++) // loading chapter headdings to dropdown box
+     {
+   if (GroupArray[vart].AudioList[j].SpaneshTerm == undefined || GroupArray[vart].AudioList[j].SpaneshTerm == '') {
+              Englishwordonly(selectList1,j,vart)
+            }else {
+             
+              EnglishSpanshword(selectList1,j,vart)
+
+            }
+  }
+  
+  }
+}
+else
+{     
+     for (var j = 0; j < GroupArray[vart].AudioList.length; j++) // loading chapter headdings to dropdown box
+     {       
+   if (GroupArray[vart].AudioList[j].chapterattr.indexOf('\,' + varchap1.trim() + '\,') > -1) {
             if (GroupArray[vart].AudioList[j].SpaneshTerm == undefined || GroupArray[vart].AudioList[j].SpaneshTerm == '') {
               Englishwordonly(selectList1,j,vart)
             }else {
@@ -1778,6 +1817,9 @@ function display_left(vart)
             }
 
             
+          }
+          }
+}
           }
 }
 /*********************************************************** */
@@ -1809,13 +1851,11 @@ function onSelection3 (obj) {
     $('#box1').remove()
   }
 
-  // document.getElementById("b1").disabled = false
-  // document.getElementById("b2").disabled = false
+  
   var attr = obj
-  //var gName = attr.id.replace('index', '')
+  
   var gName=attr.value;
-  //console.log(gName);
-  // console.log(gName)
+  
   var gcount = 0
 
 
@@ -1823,157 +1863,113 @@ function onSelection3 (obj) {
   var cahperList = document.getElementById('chapterList')
   var currentChap = cahperList.options[cahperList.selectedIndex].value
   // console.log("selected ChapterValue "+currentChap)
+  
   if (gName == 'All' && currentChap == 'All Chapters') {
     // console.log("all")
     // /console.log("we")
+    
     gcount++
     //onSelection2()
-     for (var t = 0; t < GroupArray.length; t++) {
+    // for (var t = 0; t < GroupArray.length; t++) {
        // if (gName == GroupArray[t].groupname) {
           gcount++
 
           //var x = document.getElementById('termChoose')
           //x.remove()
-          display_left(t);
+          display_left();
           
-  }
-     }
-  
-  var option1
-  //	console.log(modalData.length)
-  for (var t = 0; t < modalData.length; t++) {
-    if (currentChap == 'All Chapters') {
-      // console.log("*.pdf")
-      for (var t = 0; t < GroupArray.length; t++) {
-        //console.log(gName.indexOf("-"));
-        if(gName.indexOf("-")==-1)
-        {
-        if (gName == GroupArray[t].groupname) {
-          gcount++
-          display_left(t);
-          
-        }
-        }
-        else
-        {
-          console.log(gName.split("-")[0].charCodeAt(0));
-          if (gName == GroupArray[t].groupname) {
-          gcount++
-          display_left(t);
-          
-          }
-        }
-      }
-    } else if (gName == 'All') {
-      // console.log("wel")
-      gcount++
-     // onSelection2()
-    } else if (modalData[t].name == currentChap) {
-      // console.log("we2")
-      gcount++
-      var cntvar = 0
+  //}
+}
+else
+{
+
+for (var t = 0; t < modalData.length; t++) {
+  if (modalData[t].name == currentChap)
+  {
       var chapterNumberOnly = modalData[t].name
       var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10)
       var chapterNumberOnly2 = '\,' + chapterNumberOnly1.trim() + '\,'
+      break;
+  }
+}
+if(currentChap="All Chapters")
+{
 if(gName.indexOf("-")==-1)
         {
       for (var t = 0; t < GroupArray.length; t++) {
-        
+        //for(varj=0;varj<GroupArray[t].AudioList.length;varj++){
+        //if (GroupArray[t].AudioList[varj].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
         if (GroupArray[t].groupname == gName) {
-          display_left(t);
-            }
+          
+          display_left(t,chapterNumberOnly1);
+          
+        }
+          
+         else {}
+      }
+        }   
+      
+      
+    else
+    {
+      for(var varcharcode=gName.split("-")[0].charCodeAt(0);varcharcode<gName.split("-")[1].charCodeAt(0)+1;varcharcode++)
+      {
+           var gName1=String.fromCharCode(varcharcode)
+            for (var t = 0; t < GroupArray.length; t++) {
+             // for(varj=0;varj<GroupArray[t].AudioList.length;varj++){
+               //    if (GroupArray[t].AudioList[varj].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
+                 if (GroupArray[t].groupname == gName1) {
+                   display_left(t);
+                  
+        }
+     // }
+         
+    //}
+ 
+
+}
+      }
+    }
+}
+else
+{
+ if(gName.indexOf("-")==-1)
+        {
+      for (var t = 0; t < GroupArray.length; t++) {
+        for(varj=0;varj<GroupArray[t].AudioList.length;varj++){
+        if (GroupArray[t].AudioList[varj].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
+        if (GroupArray[t].groupname == gName) {
+          
+          display_left(t,chapterNumberOnly1);
+          
+        }
           
          else {}
       }
         }
-      else
-      {
-         var x1 = document.getElementById('termChoose1')
-          x1.remove()
-
-          var myDiv = document.getElementById('section')
-          //var selectList = document.createElement('select')
-          //selectList.setAttribute('id', 'termChoose')
-          // selectList.setAttribute("size", "42")
-          //selectList.setAttribute('style', 'width:200px')
-          //selectList.setAttribute('onclick', 'onSelectDef(this)')
-
-          //myDiv.appendChild(selectList)
-
-          var selectList1 = document.createElement('ul')
-          selectList1.setAttribute('id', 'termChoose1')
-          // selectList.setAttribute("size", "42")
-          selectList1.setAttribute('style', 'width:200px')
-
-          myDiv.appendChild(selectList1)
+      }
+      }
+    else
+    {
       for(var varcharcode=gName.split("-")[0].charCodeAt(0);varcharcode<gName.split("-")[1].charCodeAt(0)+1;varcharcode++)
       {
-       var gName1=String.fromCharCode(varcharcode)
-       //console.log(String.fromCharCode(varcharcode));
-        for (var t = 0; t < GroupArray.length; t++) {
-      if (GroupArray[t].groupname == gName1) {
-          
-        
-          for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
-          {
-            //var option = document.createElement('option')
-           // option.value = GroupArray[t].AudioList[j].Audioterm
-            //option.text = GroupArray[t].AudioList[j].Audioterm
-/*
-            var li = document.createElement('li')
-            var a = document.createElement('a')
-            li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-            a.setAttribute('onclick', 'onSelectDef_1(this,true)')
-            a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
-            li.value = j
-            var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
-            // li.text = GroupArray[t].AudioList[j].Audioterm
-            a.appendChild(t1)
-            li.appendChild(a)
-
-			      //selectList.appendChild(option)
-            selectList1.appendChild(li)
-            */
-
-            if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
-              
-              Englishwordonly(selectList1,j,t)
-            }else {
-
-           // console.log(GroupArray[t].AudioList[j].SpaneshTerm)
-              //var option1 = document.createElement('option')
-              //option1.value = GroupArray[t].AudioList[j].SpaneshTerm
-              //option1.text = GroupArray[t].AudioList[j].SpaneshTerm
-              //option1.setAttribute('style', 'color:blue')
-              //selectList.appendChild(option1)
-              EnglishSpanshword(selectList1,j,t)
-/*
-              var li1 = document.createElement('li')
-              var a = document.createElement('a')
-              a.setAttribute('onclick', 'onSelectDef_1(this,true)')
-              a.setAttribute('style', 'color:blue;font-weight:bold;cursor:pointer')
-              li1.setAttribute('class', 'list-group-item list-group-item btn-warning')
-              li1.value = j
-              var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm)
-              // li1.text = GroupArray[t].AudioList[j].SpaneshTerm
-              a.appendChild(t1)
-              li1.appendChild(a)
-              a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
-              // termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].SpaneshTerm+'",'
-              selectList1.appendChild(li1)*/
-            }
-          }
+           var gName1=String.fromCharCode(varcharcode)
+            for (var t = 0; t < GroupArray.length; t++) {
+              for(varj=0;varj<GroupArray[t].AudioList.length;varj++){
+                   if (GroupArray[t].AudioList[varj].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
+                 if (GroupArray[t].groupname == gName1) {
+                   display_left(t,chapterNumberOnly1);
+                  
+        }
       }
-        
-         else {}
-      
-      } 
-    }     
+         
     }
-      // console.log(myDiv.innerHTML)
-     
+            }
+      }
     }
-  }
+}
+}
+/*
   if (gcount == 0) {
     // console.log("g")
     if (psbi == null) {
@@ -2059,6 +2055,7 @@ if(gName.indexOf("-")==-1)
   }
   count=0;
   document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
+  */
 }
 function GroupRefVO () {
   // contains the chapter level details
