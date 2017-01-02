@@ -253,10 +253,17 @@ var varfound=[];
      // console.log(varfound[i+1].charCodeAt(0) + " " + varfound[i].charCodeAt(0))
      
        //console.log(String.fromCharCode(varcharnumber))
-       var lix = document.createElement('li')
+       if(varfound[i].indexOf("-")>0)
+       {var lix = document.createElement('li')
+       // lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-info\" style=\"width:42px;height:25px;font-size:17px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"" + GROUP[i] + "index\" value=\"" + GROUP[i] + "\">"
+        lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 3px;    padding-right: 1em" onclick="onSelection3(this)" id="' + varfound[i]+ 'index" value="' + varfound[i]+ '">'
+        MYLIST.appendChild(lix)}
+       else
+
+       {var lix = document.createElement('li')
        // lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-info\" style=\"width:42px;height:25px;font-size:17px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"" + GROUP[i] + "index\" value=\"" + GROUP[i] + "\">"
         lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="' + varfound[i]+ 'index" value="' + varfound[i]+ '">'
-        MYLIST.appendChild(lix)
+        MYLIST.appendChild(lix)}
 
      
    
@@ -2292,7 +2299,7 @@ var x1 = document.getElementById('termChoose1').childNodes;
 	//	console.log(selectedterm);
 //console.log(selectedterm);
 	var cnt = 0;
-	for (var t = 0; t < modalData.length; t++) {
+	for (var t = 0; t < GroupArray.length; t++) {
 		for (var j = 0; j < GroupArray[t].AudioList.length; j++) {
 			if (GroupArray[t].AudioList[j].Audioterm == selectedterm) {
             //document.getElementById('b3').value = 'Spanish Terms'
@@ -2337,7 +2344,7 @@ var x1 = document.getElementById('termChoose1').childNodes;
           //document.getElementById("ESToggle3").style.visibility = "hidden";
           document.getElementById("b3").disabled = false;
           document.getElementById("b4").disabled = false;
-           document.getElementById('b4').className= document.getElementById('b4').className.replace("btn-default","btn-info");
+          document.getElementById('b4').className= document.getElementById('b4').className.replace("btn-default","btn-info");
           document.getElementById('b3').className= document.getElementById('b3').className.replace("btn-info","btn-default");
           var TC = document.getElementById("SpanTerms_1");
 					TC.style.display = "block";
