@@ -135,7 +135,8 @@ var currentChap = cahperList.options[0].value
           }
           else
           
-      {alert( varprev+" " +String.fromCharCode(vari)+" " + $(xml1).find("group[name='"+String.fromCharCode(vari)+"']").length);varprev=""}
+      {//alert( varprev+" " +String.fromCharCode(vari)+" " + $(xml1).find("group[name='"+String.fromCharCode(vari)+"']").length);
+      varprev=""}
         
           varprev=String.fromCharCode(vari);
         }
@@ -621,6 +622,7 @@ function EnglishSpanshword(selectList1,varj,vart)
         /****************************************************************************************** */
         // Mobile browser side me layout
         /******************************************************************************************* */
+        
         document.getElementById("b3").disabled = false;
   document.getElementById("b4").disabled = false;
   document.getElementById('b4').className= document.getElementById('b4').className.replace("btn-default","btn-info");
@@ -730,6 +732,7 @@ function search () {
             
             if (x1[x].childNodes[0].text == item.display) {
               //x1.selectedIndex = x
+             
               count=x;
               
               if(x==0)
@@ -1140,6 +1143,7 @@ function ToViewSpanTerm () {
               // li and a tag create for spanish trm with ble font color
               /*************************************************************************************** */
               /*********************************************************************************************** */
+              
               termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].SpaneshTerm + '",'
               /********************************************************************************************** */
 
@@ -1210,7 +1214,7 @@ function ToViewSpanTerm () {
         selectList1.setAttribute('style', 'width:200px')
         selectList1.setAttribute('class', 'list-group')
         myDiv.appendChild(selectList1)
-
+alert("welcome");
 
         for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
         {
@@ -1242,6 +1246,7 @@ function ToViewSpanTerm () {
             /**************************************************************************** ***********************/
             if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
             }else {
+              //alert("welcome");
               // console.log(GroupArray[t].AudioList[j].SpaneshTerm)
               //var option1 = document.createElement('option')
               //option1.value = GroupArray[t].AudioList[j].SpaneshTerm
@@ -1774,10 +1779,11 @@ function display_left(vart,varchap1)
 			      //selectList.appendChild(option)
             selectList1.appendChild(li)
             */
+             
 if(varchap1==undefined)
 {
-  
-  if(vart==undefined||vart=="")
+  //  alert(vart);
+  if(vart==undefined)
   {
     for(vart=0;vart<GroupArray.length;vart++)
     {
@@ -1795,6 +1801,7 @@ if(varchap1==undefined)
   }
   else
   {
+ 
      for (var j = 0; j < GroupArray[vart].AudioList.length; j++) // loading chapter headdings to dropdown box
      {
    if (GroupArray[vart].AudioList[j].SpaneshTerm == undefined || GroupArray[vart].AudioList[j].SpaneshTerm == '') {
@@ -1939,14 +1946,16 @@ for (var t = 0; t < modalData.length; t++) {
 
 if(currentChap=="All Chapters")
 {
+  
 if(gName.indexOf("-")==-1)
         {
+          
       for (var t = 0; t < GroupArray.length; t++) {
         //for(varj=0;varj<GroupArray[t].AudioList.length;varj++){
         //if (GroupArray[t].AudioList[varj].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
         if (GroupArray[t].groupname == gName) {
-          
-          display_left(t,chapterNumberOnly1);
+        // alert(gName);
+          display_left(t);
           
         }
           
@@ -2251,10 +2260,11 @@ if(vartlist==true)
 {
 var x1 = document.getElementById('termChoose1').childNodes;
           for (var x = 0;x < x1.length;x++) {
-            
-            if (x1[x].childNodes[0].text == selectedterm) {
+            //alert(x1[x].childNodes[0].text.split(",")[0]   + " " + selectedterm)
+            if (x1[x].childNodes[0].text.split(",")[0]   == selectedterm) {
               //x1.selectedIndex = x
               count=x;
+              //alert(count);
               
               if(x==0)
               {
@@ -2272,7 +2282,7 @@ var x1 = document.getElementById('termChoose1').childNodes;
                   document.getElementById('previous').disabled = false
                   document.getElementById('next').disabled = true
               }
-              
+             // alert(count);
               document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
              // onSelectDef(x1[x].childNodes[0]);
               break
@@ -2289,7 +2299,7 @@ var x1 = document.getElementById('termChoose1').childNodes;
          // document.getElementById('b3').style = '	background-color: #D17DD0;'
           
        
-          
+          //alert(count);
 				cnt++;
         vart=t;
         varj=j;
