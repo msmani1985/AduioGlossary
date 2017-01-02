@@ -610,6 +610,7 @@ function Englishwordonly(selectList1,varj,vart)
       a.appendChild(t1)
       li.appendChild(a)
       selectList1.appendChild(li)
+      onSelectDef_1(selectList1.childNodes[0].childNodes[0],true);
 }
 function EnglishSpanshword(selectList1,varj,vart)
 {
@@ -649,6 +650,8 @@ function EnglishSpanshword(selectList1,varj,vart)
         a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
         // termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].SpaneshTerm+'",'
         selectList1.appendChild(li1)
+        
+         onSelectDef_1(selectList1.childNodes[0].childNodes[0],true)
 }
 function onPrevious () {
   
