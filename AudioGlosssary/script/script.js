@@ -599,10 +599,10 @@ catch(e){
 }
 function Englishwordonly(selectList1,varj,vart)
 {
-  
-  document.getElementById("b3").disabled = true;
-  document.getElementById("b4").disabled = true;
-  document.getElementById('b4').className= document.getElementById('b4').className.replace("btn-info","btn-default");
+  //alert("welcom");
+  document.getElementById("b3").disabled = false;
+  document.getElementById("b4").disabled = false;
+  document.getElementById('b4').className= document.getElementById('b4').className.replace("btn-default","btn-info");
    document.getElementById('b3').className= document.getElementById('b3').className.replace("btn-info","btn-default");
     var li = document.createElement('li')
       var a = document.createElement('a')
@@ -786,7 +786,7 @@ document.getElementById('b4').className= document.getElementById('b4').className
     //document.getElementById('b4').style = '	background-color: '
     //document.getElementById('b4').style = '	color:white'
 
-          var TC = document.getElementById("termContent");
+         /* var TC = document.getElementById("termContent");
 					TC.innerHTML = GroupArray[vart].AudioList[varj].Audioterm;
 					var TCp = document.getElementById("termContentPro");
 					TCp.innerHTML = GroupArray[vart].AudioList[varj].pronc;
@@ -807,7 +807,7 @@ document.getElementById('b4').className= document.getElementById('b4').className
           var TC = document.getElementById("Term");
 					TC.style.display = "block";
         var TC = document.getElementById("Definition");
-					TC.style.display = "block";
+					TC.style.display = "block";*/
           var cahperList = document.getElementById('chapterList')
   var currentChap = cahperList.options[cahperList.selectedIndex].value
 
@@ -1067,7 +1067,7 @@ function ToViewSpanTerm () {
     
     document.getElementById('b3').style = '	background-color: blue'
     document.getElementById('b3').style = '	color:white'*/
-     var TC = document.getElementById("termContent");
+    /* var TC = document.getElementById("termContent");
 					TC.innerHTML = GroupArray[vart].AudioList[varj].SpaneshTerm;
 					//var TCp = document.getElementById("termContentPro");
 					//TCp.innerHTML = GroupArray[vart].AudioList[varj].pronc;
@@ -1081,7 +1081,7 @@ function ToViewSpanTerm () {
 						TC.style.color = "blue";
 						TC.innerHTML = '<span class="Senplayplay" ></span>' + GroupArray[vart].AudioList[varj].SpaneshTerm;
 					}
-
+*/
  var cahperList = document.getElementById('chapterList')
   var currentChap = cahperList.options[cahperList.selectedIndex].value
   if(cahperList.selectedIndex==0)
@@ -1165,14 +1165,14 @@ function ToViewSpanTerm () {
               a.appendChild(t1)
               li.appendChild(a)
               selectList1.appendChild(li)
-              var TC = document.getElementById("Term");
+              /*var TC = document.getElementById("Term");
 					TC.style.display = "none";
           var TC = document.getElementById("Definition");
 					TC.style.display = "none";
           var TC = document.getElementById("SpanTerms_1");
 					TC.style.display = "block";
           var TC = document.getElementById("Span_Definition");
-					//TC.style.display = "block";
+					//TC.style.display = "block";*/
               /**************************************************************************************** */						var li = document.createElement('li')
 
             // termsdetsear=termsdetsear+","+ GroupArray[t].AudioList[j].SpaneshTerm
@@ -2170,6 +2170,7 @@ function onSelectDef_1 (tar,vartlist) {
 function onSelectDef(tar,vartlist) {
   
 //	document.getElementById("loadder").style.display = "block";
+
 	if (window.matchMedia("(min-width: 768px)").matches) {
 		if ($("#sidemenu").attr("class").indexOf("sideNav") > 0) {} else {
 
@@ -2296,6 +2297,30 @@ var x1 = document.getElementById('termChoose1').childNodes;
             }
           }
  } 
+  if(tar.outerHTML.indexOf("color: blue;")>0)
+        {
+          //alert(document.getElementById("thead").innerHTML)
+          document.getElementById("thead").innerHTML= document.getElementById("thead").innerHTML.replace("Term","Término")
+          document.getElementById("dhead").innerHTML=document.getElementById("dhead").innerHTML.replace("Definition","Definición")
+          $("#Definition").css("display","none")
+          $("#termContentPro").css("display","none")
+                $("#SpanTerms_1").css("display","none")
+          $("#Span_Definition").css("display","none")
+          //termContentPro
+
+        }
+    else 
+        {
+          //alert(document.getElementById("thead").innerHTML)
+          document.getElementById("thead").innerHTML= document.getElementById("thead").innerHTML.replace("Término","Term")
+          document.getElementById("dhead").innerHTML=document.getElementById("dhead").innerHTML.replace("Definición","Definition")
+          $("#Definition").css("display","block")
+          $("#termContentPro").css("display","block")
+             $("#SpanTerms_1").css("display","block")
+          $("#Span_Definition").css("display","none")
+          //termContentPro
+
+        }
 	//	console.log(selectedterm);
 //console.log(selectedterm);
 	var cnt = 0;
@@ -2310,6 +2335,7 @@ var x1 = document.getElementById('termChoose1').childNodes;
 				cnt++;
         vart=t;
         varj=j;
+       
 				var TC = document.getElementById("termContent");
 				TC.innerHTML = GroupArray[t].AudioList[j].Audioterm;
 				//termContentPro
@@ -2325,10 +2351,10 @@ var x1 = document.getElementById('termChoose1').childNodes;
 				//	document.getElementById("ESToggle3").style.visibility = "visible";
 					
           
-          document.getElementById("b3").disabled = true;
-          document.getElementById("b4").disabled = true;
+          document.getElementById("b3").disabled = false;
+          document.getElementById("b4").disabled = false;
 
-          document.getElementById('b4').className= document.getElementById('b4').className.replace("btn-info","btn-default");
+          document.getElementById('b4').className= document.getElementById('b4').className.replace("btn-default","btn-info");
           document.getElementById('b3').className= document.getElementById('b3').className.replace("btn-info","btn-default");
 
           var TC = document.getElementById("SpanTerms_1");
