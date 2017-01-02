@@ -1754,7 +1754,8 @@ function display_left(vart,varchap1)
             */
 if(varchap1==undefined)
 {
-  if(vart==undefined)
+  
+  if(vart==undefined||vart=="")
   {
     for(vart=0;vart<GroupArray.length;vart++)
     {
@@ -1786,7 +1787,27 @@ if(varchap1==undefined)
   }
 }
 else
-{     
+{  
+if(vart==undefined)
+  {
+    for(vart=0;vart<GroupArray.length;vart++)
+    {
+     for (var j = 0; j < GroupArray[vart].AudioList.length; j++) // loading chapter headdings to dropdown box
+     {
+        if (GroupArray[vart].AudioList[j].chapterattr.indexOf('\,' + varchap1.trim() + '\,') > -1) {
+   if (GroupArray[vart].AudioList[j].SpaneshTerm == undefined || GroupArray[vart].AudioList[j].SpaneshTerm == '') {
+              Englishwordonly(selectList1,j,vart)
+            }else {
+             
+              EnglishSpanshword(selectList1,j,vart)
+
+            }
+  }
+  }
+  }
+  }
+  else
+  {     
      for (var j = 0; j < GroupArray[vart].AudioList.length; j++) // loading chapter headdings to dropdown box
      {       
    if (GroupArray[vart].AudioList[j].chapterattr.indexOf('\,' + varchap1.trim() + '\,') > -1) {
@@ -1821,6 +1842,7 @@ else
           }
 }
           }
+}
 }
 /*********************************************************** */
 //
@@ -1892,7 +1914,8 @@ for (var t = 0; t < modalData.length; t++) {
       break;
   }
 }
-if(currentChap="All Chapters")
+
+if(currentChap=="All Chapters")
 {
 if(gName.indexOf("-")==-1)
         {
@@ -1933,11 +1956,22 @@ if(gName.indexOf("-")==-1)
 }
 else
 {
+ 
  if(gName.indexOf("-")==-1)
         {
+         
       for (var t = 0; t < GroupArray.length; t++) {
         for(varj=0;varj<GroupArray[t].AudioList.length;varj++){
         if (GroupArray[t].AudioList[varj].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
+        if(gName=="All")
+        {
+          
+          display_left(undefined,chapterNumberOnly1);
+          break;
+        }
+        else
+        {
+          
         if (GroupArray[t].groupname == gName) {
           
           display_left(t,chapterNumberOnly1);
@@ -1946,6 +1980,7 @@ else
           
          else {}
       }
+        }
         }
       }
       }
