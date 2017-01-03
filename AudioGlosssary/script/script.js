@@ -2354,7 +2354,7 @@ var x1 = document.getElementById('termChoose1').childNodes;
           document.getElementById("b3").disabled = false;
           document.getElementById("b4").disabled = false;
 
-          document.getElementById('b4').className= document.getElementById('b4').className.replace("btn-default","btn-info");
+          document.getElementById('b4').className= document.getElementById('b4').className.replace("btn-info","btn-default");
           document.getElementById('b3').className= document.getElementById('b3').className.replace("btn-info","btn-default");
 
           var TC = document.getElementById("SpanTerms_1");
