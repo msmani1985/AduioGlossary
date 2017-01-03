@@ -774,6 +774,16 @@ function ToViewEnglishTerm () {
   // document.getElementById("b3").value="English Term"
   // document.getElementById("b3").style="	background-color: #7D81D1;"
   //if (document.getElementById('b4').value == 'English Terms') 
+   var groupName = "";
+for(vark=0;vark<document.getElementById("myLi").childNodes.length;vark++)
+{
+  
+  if( document.getElementById('myLi').childNodes[vark].childNodes[0].outerHTML.indexOf("btn-warning")>0)
+  {
+      groupName=document.getElementById('myLi').childNodes[vark].childNodes[0].value;
+      break;
+  }
+}
   {
     
 document.getElementById('b4').className= document.getElementById('b4').className.replace("btn-default","btn-info");
@@ -850,12 +860,14 @@ document.getElementById('b4').className= document.getElementById('b4').className
             /*********************************************************************************** */
             // li tag create and a tag created
             /*********************************************************************************** */
+            
           var li = document.createElement('li')
             var a = document.createElement('a')
             li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
             a.setAttribute('onclick', 'onSelectDef_1(this,true)')
         	a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
             li.value = j
+
             var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
              li.text = GroupArray[t].AudioList[j].Audioterm
             a.appendChild(t1)
@@ -1034,7 +1046,16 @@ document.getElementById('b4').className= document.getElementById('b4').className
 function ToViewSpanTerm () {
 
   {
-
+    var groupName = "";
+for(vark=0;vark<document.getElementById("myLi").childNodes.length;vark++)
+{
+  
+  if( document.getElementById('myLi').childNodes[vark].childNodes[0].outerHTML.indexOf("btn-warning")>0)
+  {
+      groupName=document.getElementById('myLi').childNodes[vark].childNodes[0].value;
+      break;
+  }
+}
   
  document.getElementById('b3').className= document.getElementById('b3').className.replace("btn-default","btn-info");
    document.getElementById('b4').className= document.getElementById('b4').className.replace("btn-info","btn-default");
@@ -1064,8 +1085,36 @@ function ToViewSpanTerm () {
         {
            if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
             }else {
-                spanish_list.push(GroupArray[t].AudioList[j].SpaneshTerm);
+              if (groupName=="All") {
+                 spanish_list.push(GroupArray[t].AudioList[j].SpaneshTerm);
+               }
+               else
+               {
+              var gName=groupName;
+              
+              if(gName.indexOf("-")==-1)
+              {
                 
+                  if (GroupArray[t].groupname == gName) {
+                     spanish_list.push(GroupArray[t].AudioList[j].SpaneshTerm);
+                  }
+              }
+              else
+              {
+                
+                for(var varcharcode=gName.split("-")[0].charCodeAt(0);varcharcode<gName.split("-")[1].charCodeAt(0)+1;varcharcode++)
+                {
+                    var gName1=String.fromCharCode(varcharcode)
+                    for (var t = 0; t < GroupArray.length; t++) {
+                    if (GroupArray[t].groupname == gName1) {
+                            spanish_list.push(GroupArray[t].AudioList[j].SpaneshTerm);
+                  
+                  }
+               }
+      }
+}
+                
+            }
             }
         }
       }
@@ -1105,11 +1154,42 @@ function ToViewSpanTerm () {
           if (GroupArray[t].AudioList[j].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
            if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
             }else {
-                spanish_list.push(GroupArray[t].AudioList[j].SpaneshTerm);
+               if (groupName=="All") {
+                 spanish_list.push(GroupArray[t].AudioList[j].SpaneshTerm);
+               }
+              else
+              {
+             var gName=groupName;
+              
+              if(gName.indexOf("-")==-1)
+              {
+                
+                  if (GroupArray[t].groupname == gName) {
+                     spanish_list.push(GroupArray[t].AudioList[j].SpaneshTerm);
+                  }
+              }
+              else
+              {
+                
+                for(var varcharcode=gName.split("-")[0].charCodeAt(0);varcharcode<gName.split("-")[1].charCodeAt(0)+1;varcharcode++)
+                {
+                 
+                    var gName1=String.fromCharCode(varcharcode)
+                    //for (var t = 0; t < GroupArray.length; t++) {
+                    if (GroupArray[t].groupname == gName1) {
+                    
+                            spanish_list.push(GroupArray[t].AudioList[j].SpaneshTerm);
+                  
+                  //}
+               }
+      }
+               
+               }
                 
             }
           }
         }
+      }
       }
       spanish_list=spanish_list.sort();
   }
