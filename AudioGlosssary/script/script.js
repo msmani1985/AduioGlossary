@@ -764,240 +764,162 @@ function ToViewEnglishTerm() {
 
         document.getElementById('b4').className = document.getElementById('b4').className.replace("btn-default", "btn-info");
         document.getElementById('b3').className = document.getElementById('b3').className.replace("btn-info", "btn-default");
-        //document.getElementById('b3').value = 'Spanish Terms'
-        //if(document.getElementById('b3').className.indexOf(""))
-        //document.getElementById('b3').style = '	background-color: rgb(195, 217, 228);'
-        //document.getElementById('b3').style = '	color:black';
-
-        //document.getElementById('b4').style = '	background-color: '
-        //document.getElementById('b4').style = '	color:white'
-
-        /* var TC = document.getElementById("termContent");
-					TC.innerHTML = GroupArray[vart].AudioList[varj].Audioterm;
-					var TCp = document.getElementById("termContentPro");
-					TCp.innerHTML = GroupArray[vart].AudioList[varj].pronc;
-					var DC = document.getElementById("definitionContent");
-					DC.innerHTML = GroupArray[vart].AudioList[varj].Audiomeaning;
-					if (GroupArray[vart].AudioList[varj].SpaneshTerm == "") {
-            var TC = document.getElementById("spanitem_1");
-						TC.style.display = "none";
-          } else {
-						var TC = document.getElementById("spanitem_1");
-						TC.style.color = "blue";
-						TC.innerHTML = '<span class="Senplayplay" ></span> ' + GroupArray[vart].AudioList[varj].SpaneshTerm;
-					}
- var TC = document.getElementById("SpanTerms_1");
-					TC.style.display = "none";
-          var TC = document.getElementById("Span_Definition");
-					TC.style.display = "none";
-          var TC = document.getElementById("Term");
-					TC.style.display = "block";
-        var TC = document.getElementById("Definition");
-					TC.style.display = "block";*/
-        var cahperList = document.getElementById('chapterList')
+         var cahperList = document.getElementById('chapterList')
         var currentChap = cahperList.options[cahperList.selectedIndex].value
-
+        var spanish_list = [];
         if (cahperList.selectedIndex == 0) {
+            var spanish_list = [];
             var x = document.getElementById('termChoose1')
             x.remove()
             var termsdetsear = ''
             var myDiv = document.getElementById('section')
+
             var selectList1 = document.createElement('ul')
             for (var t = 0; t < GroupArray.length; t++) {
-               selectList1.setAttribute('id', 'termChoose1')
-               selectList1.setAttribute('style', 'width:200px')
-               selectList1.setAttribute('class', 'list-group')
-               myDiv.appendChild(selectList1)
+
+
+                selectList1.setAttribute('id', 'termChoose1')
+
+                selectList1.setAttribute('style', 'width:200px')
+                selectList1.setAttribute('class', 'list-group')
+                myDiv.appendChild(selectList1)
+
                 for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
                 {
-                    
-                       
-                    if(groupName=="All")
+                    //if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') 
                     {
-                        sectiondatacount++
-                        termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].Audioterm + '",'
-                                              var li = document.createElement('li')
-                        var a = document.createElement('a')
-                        li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-                        a.setAttribute('onclick', 'onSelectDef_1(this,true)')
-                        a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
-                        li.value = j
+                        if (groupName == "All") {
+                            spanish_list.push(GroupArray[t].AudioList[j].Audioterm);
+                        } else {
+                            var gName = groupName;
 
-                        var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
-                        li.text = GroupArray[t].AudioList[j].Audioterm
-                        a.appendChild(t1)
-                        li.appendChild(a)
-                        selectList1.appendChild(li)
-                            /**************************************************************************************** */
-                            /************************************************************************************************** */
-                        termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].Audioterm + '",'
-                            /**************************************************************************** ***********************/
-                        if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {} else {
-                            // console.log(GroupArray[t].AudioList[j].SpaneshTerm)
-                            //var option1 = document.createElement('option')
-                            //option1.value = GroupArray[t].AudioList[j].SpaneshTerm
-                            //option1.text = GroupArray[t].AudioList[j].SpaneshTerm
-                            //option1.setAttribute('style', 'color:blue')
-                            //selectList.appendChild(option1)
-                            /*************************************************************************************** */
-                            // li and a tag create for spanish trm with ble font color
-                            /*************************************************************************************** */
-                            /*********************************************************************************************** */
-                            /// termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].SpaneshTerm + '",'
-                            /********************************************************************************************** */
+                            if (gName.indexOf("-") == -1) {
 
-                            //var li = document.createElement('li')
-                            //var a = document.createElement('a')
-                            //li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-                            //a.setAttribute('onclick', 'onSelectDef_1(this,true)')
-                            // a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
-                            //li.value = j
-                            //var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm)
-                            // li.text = GroupArray[t].AudioList[j].Audioterm
-                            // a.appendChild(t1)
-                            // li.appendChild(a)
-                            // selectList1.appendChild(li)
-                            /**************************************************************************************** */
-                            var li = document.createElement('li')
+                                if (GroupArray[t].groupname == gName) {
+                                    spanish_list.push(GroupArray[t].AudioList[j].Audioterm);
+                                }
+                            } else {
 
-                            // termsdetsear=termsdetsear+","+ GroupArray[t].AudioList[j].SpaneshTerm
+                                for (var varcharcode = gName.split("-")[0].charCodeAt(0); varcharcode < gName.split("-")[1].charCodeAt(0) + 1; varcharcode++) {
+                                    var gName1 = String.fromCharCode(varcharcode)
+                                    for (var t = 0; t < GroupArray.length; t++) {
+                                        if (GroupArray[t].groupname == gName1) {
+                                            spanish_list.push(GroupArray[t].AudioList[j].Audioterm);
+
+                                        }
+                                    }
+                                }
+                            }
+
                         }
                     }
                 }
-                // var termdsdetsear1=JSON.parse("["+removeLastComma(termsdetsear)+"]")
-                // data=  {"ale": termdsdetsear1}
-                // console.log(termdsdetsear1)
-                // search()
             }
-        }
-        var sectiondatacount = 0
-        for (var t = 0; t < modalData.length; t++) {
-            if (modalData[t].name == currentChap) {
-                //var x = document.getElementById('termChoose')
-                //x.remove()
-                var x = document.getElementById('termChoose1')
-                x.remove()
-                var chapterNumberOnly = modalData[t].name
-                var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10)
-                var chapterNumberOnly2 = '\,' + chapterNumberOnly1.trim() + '\,'
-                var myDiv = document.getElementById('section')
-                    //var selectList = document.createElement('select')
-                    /************************************************************************ */
-                    // Change for Mobile layout design
-                    /************************************************************************* */
-                var selectList1 = document.createElement('ul')
+           // spanish_list = spanish_list.sort();
+        } else {
+            var spanish_list = [];
+
+            for (var t = 0; t < modalData.length; t++) {
+                if (modalData[t].name == currentChap) {
+
+                    var x = document.getElementById('termChoose1')
+                    x.remove()
+                    var chapterNumberOnly = modalData[t].name
+                    var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10)
+                    var chapterNumberOnly2 = '\,' + chapterNumberOnly1.trim() + '\,'
+                    var myDiv = document.getElementById('section')
+
+                    var selectList1 = document.createElement('ul')
 
 
-                /*************************************************************************** */
-                // myDiv.appendChild(selectList)
-                // myDiv.appendChild(selectList1)
-                /*************************************************************************** */
-                var termsdetsear = ''
-                for (var t = 0; t < GroupArray.length; t++) {
-                    //selectList.setAttribute('id', 'termChoose')
-                    // selectList.setAttribute("size", "42")
-                    //selectList.setAttribute('style', 'width:200px')
-                    //selectList.setAttribute('onclick', 'onSelectDef(this)')
-                    //myDiv.appendChild(selectList)
-
-                    selectList1.setAttribute('id', 'termChoose1')
-                        // selectList.setAttribute("size", "42")
-                    selectList1.setAttribute('style', 'width:200px')
-                    selectList1.setAttribute('class', 'list-group')
-                    myDiv.appendChild(selectList1)
+                    var termsdetsear = ''
+                    for (var t = 0; t < GroupArray.length; t++) {
 
 
-                    for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
-                    {
-                        if (GroupArray[t].AudioList[j].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
-                            sectiondatacount++
-                            // console.log(GroupArray[t].AudioList[j].Audioterm)
-                            //  var option = document.createElement('option')
-                            // option.value = GroupArray[t].AudioList[j].Audioterm
-                            // option.text = GroupArray[t].AudioList[j].Audioterm
-                            //selectList.appendChild(option)
-                            termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].Audioterm + '",'
-                                /*********************************************************************************** */
-                                // li tag create and a tag created
-                                /*********************************************************************************** */
-                            var li = document.createElement('li')
-                            var a = document.createElement('a')
-                            li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-                            a.setAttribute('onclick', 'onSelectDef_1(this,true)')
-                            a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
-                            li.value = j
-                            var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
-                            li.text = GroupArray[t].AudioList[j].Audioterm
-                            a.appendChild(t1)
-                            li.appendChild(a)
-                            selectList1.appendChild(li)
+                        selectList1.setAttribute('id', 'termChoose1')
 
-                            /**************************************************************************************** */
-                            /************************************************************************************************** */
-                            // termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].Audioterm+'",'
-                            /**************************************************************************** ***********************/
-                            if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {} else {
-                                // console.log(GroupArray[t].AudioList[j].SpaneshTerm)
-                                //var option1 = document.createElement('option')
-                                //option1.value = GroupArray[t].AudioList[j].SpaneshTerm
-                                //option1.text = GroupArray[t].AudioList[j].SpaneshTerm
-                                //option1.setAttribute('style', 'color:blue')
-                                //selectList.appendChild(option1)
-                                /*************************************************************************************** */
-                                // li and a tag create for spanish trm with ble font color
-                                /*************************************************************************************** */
-                                /*********************************************************************************************** */
-                                // termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].SpaneshTerm + '",'
-                                /********************************************************************************************** */
+                        selectList1.setAttribute('style', 'width:200px')
+                        selectList1.setAttribute('class', 'list-group')
+                        myDiv.appendChild(selectList1)
 
-                                // var li = document.createElement('li')
-                                //  var a = document.createElement('a')
-                                //   li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-                                //  a.setAttribute('onclick', 'onSelectDef_1(this,true)')
-                                //  a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
-                                //   li.value = j
-                                //  var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm)
-                                // li.text = GroupArray[t].AudioList[j].Audioterm
-                                //  a.appendChild(t1)
-                                //   li.appendChild(a)
-                                //  selectList1.appendChild(li)
-                                /**************************************************************************************** */
-                                var li = document.createElement('li')
 
-                                // termsdetsear=termsdetsear+","+ GroupArray[t].AudioList[j].SpaneshTerm
+
+                        for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
+                        {
+                            if (GroupArray[t].AudioList[j].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
+                               // if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '')  
+                               {
+                                    if (groupName == "All") {
+                                        spanish_list.push(GroupArray[t].AudioList[j].Audioterm);
+                                    } else {
+                                        var gName = groupName;
+
+                                        if (gName.indexOf("-") == -1) {
+
+                                            if (GroupArray[t].groupname == gName) {
+                                                spanish_list.push(GroupArray[t].AudioList[j].Audioterm);
+                                            }
+                                        } else {
+
+                                            for (var varcharcode = gName.split("-")[0].charCodeAt(0); varcharcode < gName.split("-")[1].charCodeAt(0) + 1; varcharcode++) {
+
+                                                var gName1 = String.fromCharCode(varcharcode)
+                                                    //for (var t = 0; t < GroupArray.length; t++) {
+                                                if (GroupArray[t].groupname == gName1) {
+
+                                                    spanish_list.push(GroupArray[t].AudioList[j].Audioterm);
+
+                                                    //}
+                                                }
+                                            }
+
+                                        }
+
+                                    }
+                                }
                             }
                         }
                     }
-                    // var termdsdetsear1=JSON.parse("["+removeLastComma(termsdetsear)+"]")
-                    // data=  {"ale": termdsdetsear1}
-                    // console.log(termdsdetsear1)
-                    // search()
+                   // spanish_list = spanish_list.sort();
                 }
             }
         }
+    }
+
+
+    for (varj = 0; varj < spanish_list.length; varj++) {
+        termsdetsear = termsdetsear + '"' + spanish_list[varj] + '",'
+            /********************************************************************************************** */
+
+        var li = document.createElement('li')
+        var a = document.createElement('a')
+        li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
+        a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+        a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
+        li.value = varj
+        var t1 = document.createTextNode(spanish_list[varj])
+            // li.text = GroupArray[t].AudioList[j].Audioterm
+        a.appendChild(t1)
+        li.appendChild(a)
+        selectList1.appendChild(li)
+            /*var TC = document.getElementById("Term");
+					TC.style.display = "none";
+          var TC = document.getElementById("Definition");
+					TC.style.display = "none";
+          var TC = document.getElementById("SpanTerms_1");
+					TC.style.display = "block";
+          var TC = document.getElementById("Span_Definition");
+					//TC.style.display = "block";*/
+            /**************************************************************************************** */
+        var li = document.createElement('li')
+
+        // termsdetsear=termsdetsear+","+ GroupArray[t].AudioList[j].SpaneshTerm
+
 
     }
-    /*else {
-        document.getElementById('b3').value = 'English Terms'
-      
-        document.getElementById('b3').style = '	background-color: #7D81D1;'
-         var TC = document.getElementById("termContent");
-    					TC.innerHTML = GroupArray[vart].AudioList[varj].SpaneshTerm;
-    					//var TCp = document.getElementById("termContentPro");
-    					//TCp.innerHTML = GroupArray[vart].AudioList[varj].pronc;
-    					var DC = document.getElementById("definitionContent");
-    					DC.innerHTML = GroupArray[vart].AudioList[varj].Audiomeaning;
-    					if (GroupArray[vart].AudioList[varj].SpaneshTerm == "") {
-                var TC = document.getElementById("spanitem_1");
-    						TC.style.display = "none";
-              } else {
-    						var TC = document.getElementById("spanitem_1");
-    						TC.style.color = "blue";
-    						TC.innerHTML = '<span class="badge" >Related Spanish term</span> ' + GroupArray[t].AudioList[j].SpaneshTerm;
-    					}
-      }*/
-
 }
+
+
 
 function ToViewSpanTerm() {
 
