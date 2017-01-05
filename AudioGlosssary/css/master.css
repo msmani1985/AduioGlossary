@@ -86,7 +86,10 @@ input[type="submit"] {
 .curser_pointer {
     cursor: pointer;
 }
-
+.list-group-item
+{
+    padding:0px;
+}
 .clear {
     clear: both;
     height: 0px;
