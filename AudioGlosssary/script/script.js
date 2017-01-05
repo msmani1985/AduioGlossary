@@ -87,6 +87,9 @@ function createUI(e) // to load data into the UI
     option.innerHTML = 'All Chapters'
     option.value = 'All Chapters'
     cahperList.appendChild(option)
+    alert("dafsdfds")
+    data=  {"ale": "djlafdslkjf"}
+    search();
     for (var k = 0; k < modalData.length; k++) {
         option = document.createElement('option')
         option.setAttribute('value', 'Connection.TRANSACTION_NONE')
@@ -740,9 +743,35 @@ function search() {
                 }
             },
             
-            onSearch  : function(node, query)
+            onSubmit  : function (node, form, item, event)
             {
-                alert("weleocm");
+                event.preventDefault()
+                var x1 = document.getElementById('termChoose1').childNodes;
+                for (var x = 0; x < x1.length; x++) {
+
+                    if (x1[x].childNodes[0].text == item.display) {
+                        //x1.selectedIndex = x
+
+                        count = x;
+
+                        if (x == 0) {
+                            document.getElementById('previous').disabled = true
+                            document.getElementById('next').disabled = false
+                        } else {
+                            document.getElementById('previous').disabled = false
+                            document.getElementById('next').disabled = false
+                        }
+
+                        if (x == x1.length - 1) {
+                            document.getElementById('previous').disabled = false
+                            document.getElementById('next').disabled = true
+                        }
+
+                        document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
+                        onSelectDef(x1[x].childNodes[0]);
+                        break
+                    }
+                }
             }
         },
         debug: true
