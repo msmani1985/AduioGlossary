@@ -693,6 +693,7 @@ function search() {
         maxItem: 15,
         order: 'asc',
         hint: true,
+        dynamic: true,
         group: {
             template: '{{group}} Chapters!'
         },
@@ -737,6 +738,11 @@ function search() {
                         break
                     }
                 }
+            },
+            
+            onSearch  : function(node, query)
+            {
+                alert("weleocm");
             }
         },
         debug: true
@@ -2185,7 +2191,7 @@ function onSelectDef(tar, vartlist) {
     }
     if (tar.outerHTML.indexOf("color: blue;") > 0) {
         //alert(document.getElementById("thead").innerHTML)
-        document.getElementById("thead").innerHTML = document.getElementById("thead").innerHTML.replace("Term", "Término")
+        document.getElementById("thead").innerHTML = document.getElementById("thead").innerHTML.replace("Término", "Term")
         document.getElementById("dhead").innerHTML = document.getElementById("dhead").innerHTML.replace("Definition", "Definición")
         $("#Definition").css("display", "none")
         $("#termContentPro").css("display", "none")
