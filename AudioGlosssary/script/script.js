@@ -2711,3 +2711,13 @@ $(window).resize(function() {
     }
 })
 
+
+
+$("body").keydown(function(e) {
+  if(e.keyCode == 37) { // left
+   onPrevious();
+  }
+  else if(e.keyCode == 39) { // right
+  onNext();
+  }
+});
