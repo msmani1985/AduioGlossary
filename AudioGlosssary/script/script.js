@@ -1592,47 +1592,40 @@ function onSelection2() {
 
                 for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
                 {
-                    // var option = document.createElement('option')
-                    // option.value = GroupArray[t].AudioList[j].Audioterm
-                    // option.text = GroupArray[t].AudioList[j].Audioterm
+                   if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {
+                            Englishwordonly(selectList1, j, t);
+                        } else {
+                            // console.log(GroupArray[t].AudioList[j].SpaneshTerm)
+                            //var option1 = document.createElement('option')
+                            //option1.value = GroupArray[t].AudioList[j].SpaneshTerm
+                            //option1.text = GroupArray[t].AudioList[j].SpaneshTerm
+                            //option1.setAttribute('style', 'color:blue')
+                            //selectList.appendChild(option1)
+                            /*************************************************************************************** */
+                            // li and a tag create for spanish trm with ble font color
+                            /*************************************************************************************** */
+                            /*********************************************************************************************** */
+                            termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].SpaneshTerm + '",'
+                                /********************************************************************************************** */
+                            EnglishSpanshword(selectList1, j, t);
+                            /*
+                                          var li = document.createElement('li')
+                                          var a = document.createElement('a')
+                                          li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
+                                          a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+                                          a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
+                                          li.value = j
+                                          var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm)
+                                          // li.text = GroupArray[t].AudioList[j].Audioterm
+                                          a.appendChild(t1)
+                                          li.appendChild(a)
+                                          selectList1.appendChild(li)
+                                          /**************************************************************************************** */
+                            var li = document.createElement('li')
 
-                    var li = document.createElement('li')
-                    var a = document.createElement('a')
-                    li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-                    a.setAttribute('onclick', 'onSelectDef_1(this,true)')
-                    a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
-                    li.value = j
-                    var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
-                        // li.text = GroupArray[t].AudioList[j].Audioterm
-                    a.appendChild(t1)
-                    li.appendChild(a)
-                    selectList1.appendChild(li)
-                        // selectList.appendChild(option)
-                    termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].Audioterm + '",'
-                    if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {} else {
-                        // console.log(GroupArray[t].AudioList[j].SpaneshTerm)
-                        // var option1 = document.createElement('option')
-                        // option1.value = GroupArray[t].AudioList[j].SpaneshTerm
-                        //option1.text = GroupArray[t].AudioList[j].SpaneshTerm
-                        //option1.setAttribute('style', 'color:blue')
-                        //selectList.appendChild(option1)
-                        termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].SpaneshTerm + '",'
-                        var li = document.createElement('li')
-                        var a = document.createElement('a')
-                        li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-                        a.setAttribute('onclick', 'onSelectDef_1(this,true)')
-                        a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
-                        li.value = j
-                        var t1 = document.createTextNode(GroupArray[t].AudioList[j].SpaneshTerm)
-                            // li.text = GroupArray[t].AudioList[j].Audioterm
-                        a.appendChild(t1)
-                        li.appendChild(a)
-                        selectList1.appendChild(li)
-                            // option1.value = GroupArray[t].AudioList[j].SpaneshTerm
-                            // option1.text = GroupArray[t].AudioList[j].SpaneshTerm
-
-                        //selectList.appendChild(option1)
-                    }
+                            // termsdetsear=termsdetsear+","+ GroupArray[t].AudioList[j].SpaneshTerm
+                        }
+                    
                 }
             }
         }
