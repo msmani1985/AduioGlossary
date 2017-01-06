@@ -995,9 +995,11 @@ function ToViewSpanTerm() {
                 for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
                 {
                     if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {} else {
+                        
                         if (groupName == "All") {
                             spanish_list.push(GroupArray[t].AudioList[j].SpaneshTerm);
                         } else {
+                            
                             var gName = groupName;
 
                             if (gName.indexOf("-") == -1) {
@@ -1022,7 +1024,7 @@ function ToViewSpanTerm() {
                     }
                 }
             }
-            spanish_list = spanish_list.sort();
+            
         } else {
             var spanish_list = [];
 
@@ -1086,13 +1088,25 @@ function ToViewSpanTerm() {
                             }
                         }
                     }
-                    spanish_list = spanish_list.sort();
+                    
                 }
             }
         }
     }
 
+spanish_list = spanish_list.sort(function(a, b) {
+  var nameA = a.toLowerCase(); // ignore upper and lowercase
+  var nameB = b.toLowerCase(); // ignore upper and lowercase
+  if (nameA < nameB) {
+    return -1;
+  }
+  if (nameA > nameB) {
+    return 1;
+  }
 
+  // names must be equal
+  return 0;
+});
     for (varj = 0; varj < spanish_list.length; varj++) {
         termsdetsear = termsdetsear + '"' + spanish_list[varj] + '",'
             /********************************************************************************************** */
