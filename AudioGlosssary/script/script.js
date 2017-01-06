@@ -185,7 +185,7 @@ function alpha_list(e) {
         if (varprev != 91) {
             
             varfound[varfound.length - 1] = varfound[varfound.length - 1].split("-")[0] + "-" + "Z";
-            alert( varfound[varfound.length - 1]) ;  
+           // alert( varfound[varfound.length - 1]) ;  
         }
 
     }
@@ -805,7 +805,7 @@ function ToViewEnglishTerm() {
         var spanish_list = [];
         if (cahperList.selectedIndex == 0) {
             var spanish_list = [];
-            var x = document.getElementById('termChoose1')
+            var x = $('#termChoose1')
             x.remove()
             var termsdetsear = ''
             var myDiv = document.getElementById('section')
@@ -858,7 +858,7 @@ function ToViewEnglishTerm() {
             for (var t = 0; t < modalData.length; t++) {
                 if (modalData[t].name == currentChap) {
 
-                    var x = document.getElementById('termChoose1')
+                    var x = $('#termChoose1')
                     x.remove()
                     var chapterNumberOnly = modalData[t].name
                     var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10)
@@ -979,7 +979,7 @@ function ToViewSpanTerm() {
         var spanish_list = [];
         if (cahperList.selectedIndex == 0) {
             var spanish_list = [];
-            var x = document.getElementById('termChoose1')
+            var x = $('#termChoose1')
             x.remove()
             var termsdetsear = ''
             var myDiv = document.getElementById('section')
@@ -1033,7 +1033,7 @@ function ToViewSpanTerm() {
             for (var t = 0; t < modalData.length; t++) {
                 if (modalData[t].name == currentChap) {
 
-                    var x = document.getElementById('termChoose1')
+                    var x = $('#termChoose1')
                     x.remove()
                     var chapterNumberOnly = modalData[t].name
                     var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10)
@@ -1237,7 +1237,7 @@ function onSelection2() {
     var cahperList = document.getElementById('chapterList')
     var currentChap = cahperList.options[cahperList.selectedIndex].value
         // console.log(currentChap)
-    document.getElementById('myLi').remove();
+    $('#myLi').remove();
     var myli = document.createElement("ol");
     myli.setAttribute("id", "myLi");
     document.getElementById("Select1").appendChild(myli);
@@ -1355,7 +1355,7 @@ function onSelection2() {
         if (modalData[t].name == currentChap) {
             //var x = document.getElementById('termChoose')
             //x.remove()
-            var x = document.getElementById('termChoose1')
+            var x = $('#termChoose1')
             x.remove()
             var chapterNumberOnly = modalData[t].name
             var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10)
@@ -1474,7 +1474,7 @@ function onSelection2() {
 
                 //var x = document.getElementById('termChoose')
                 //x.remove()
-                var x = document.getElementById('termChoose1')
+                var x = $('#termChoose1')
                 x.remove()
 
                 var myDiv = document.getElementById('section')
@@ -1569,7 +1569,7 @@ function onSelection2() {
             //var x = document.getElementById('termChoose')
             //x.remove()
 
-            var x = document.getElementById('termChoose1')
+            var x = $('#termChoose1')
             x.remove()
 
             var myDiv = document.getElementById('section')
@@ -1655,7 +1655,7 @@ function display_left(vart, varchap1) {
     //var x = document.getElementById('termChoose')
     //x.remove()
     //console.log("dafff");
-    var x1 = document.getElementById('termChoose1')
+    var x1 = $('#termChoose1')
     x1.remove()
 
     var myDiv = document.getElementById('section')
@@ -1939,7 +1939,7 @@ function onSelection3(obj) {
         //var x = document.getElementById('termChoose')
         //x.remove()
 
-        var x = document.getElementById('termChoose1')
+        var x = $('#termChoose1')
         x.remove()
 
         var myDiv = document.getElementById('section')
