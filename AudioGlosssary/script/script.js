@@ -34,16 +34,15 @@ var count = 0
 function onSidenav() {
 
     if ($("#sidemenu").attr("class").indexOf("sideNav") > 0) {
-
         $("#sidemenu").toggleClass("sideNav", "sideNav1");
-        $("#sidemenu").css("display", "");
+        $("#sidemenu").css("display", "none");
         $("#main_cont").css("display", "block");
     } else {
 
 
         $("#sidemenu").addClass("sideNav");
         $("#sidemenu").css("display", "block");
-        $("#main_cont").css("display", "none");
+        $("#main_cont").css("display", "block");
     }
 
     if ($("#sidemenu").attr("class").indexOf("col-xs-4") > 0) {
@@ -72,7 +71,7 @@ function bodyloaded1() {
 
         // onSideNav method used to dispaly an hide the alphabet menu
         onSidenav();
-        $("#sidemenu").css("display", "");
+        $("#sidemenu").css("display", "none");
         $("#main_cont").css("display", "block");
     }
 }
@@ -570,7 +569,7 @@ function createUI1(e) {
     // console.log(termsdetsear)
     /******************************************************************************************************* */
     console.log(termsdetsear);
-    alert("dsafdsf");
+    
     try {
         var termdsdetsear1 = JSON.parse('[' + removeLastComma(termsdetsear) + ']')
         data = { 'ale': termdsdetsear1 }
@@ -2071,7 +2070,7 @@ function onSelectDef(tar, vartlist) {
     } else {
         if ($("#sidemenu").attr("class").indexOf("sideNav") > 0) {
             $("#sidemenu").toggleClass("sideNav", "sideNav1");
-            $("#sidemenu").css("display", "");
+            $("#sidemenu").css("display", "none");
             $("#main_cont").css("display", "block");
 
 
@@ -2696,10 +2695,15 @@ $(window).resize(function() {
 
         // onSideNav method used to dispaly an hide the alphabet menu
         onSidenav();
-        $("#sidemenu").css("display", "none");
-        $("#sidemenu").css("display", "");
-        $("#main_cont").css("display", "block");
+       
 
+    }
+    else
+    {
+
+         $("#sidemenu").toggleClass("sideNav1", "sideNav");
+        $("#sidemenu").css("display", "block");
+        $("#main_cont").css("display", "block");
     }
 })
 
