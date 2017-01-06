@@ -723,13 +723,22 @@ function search() {
         },
         callback: {
             onClickAfter: function(node, a, item, event) {
+                
                 // href key gets added inside item from options.href configuration
+                var varleft="";
                 var x1 = document.getElementById('termChoose1').childNodes;
                 for (var x = 0; x < x1.length; x++) {
-
-                    if (x1[x].childNodes[0].text == item.display) {
+                       
+                       if(x1[x].childNodes[0].text.replace(/\n/g,"").indexOf(" , ")>-1)
+                       {
+                           varleft=x1[x].childNodes[0].text.replace(/\n/g,"").split(",")[0];
+                       }
+                       else
+                       {
+                           varleft=x1[x].childNodes[0].text.replace(/\n/g,"");
+                       }
+                    if (varleft.trim() == item.display.trim()) {
                         //x1.selectedIndex = x
-
                         count = x;
 
                         if (x == 0) {
@@ -750,14 +759,28 @@ function search() {
                         break
                     }
                 }
+                
             },
 
             onSubmit: function(node, form, item, event) {
                 event.preventDefault()
+                var itemdisplay=($(".js-typeahead-input").val())
+               
+                var varleft="";
                 var x1 = document.getElementById('termChoose1').childNodes;
                 for (var x = 0; x < x1.length; x++) {
 
-                    if (x1[x].childNodes[0].text == item.display) {
+                    if(x1[x].childNodes[0].text.replace(/\n/g,"").indexOf(" , ")>-1)
+                       {
+                           varleft=x1[x].childNodes[0].text.replace(/\n/g,"").split(",")[0];
+                       }
+                       else
+                       {
+                           varleft=x1[x].childNodes[0].text.replace(/\n/g,"");
+                       }
+
+                       
+                    if (varleft.trim() == itemdisplay.replace(/\n/g,"").trim()) {
                         //x1.selectedIndex = x
 
                         count = x;
