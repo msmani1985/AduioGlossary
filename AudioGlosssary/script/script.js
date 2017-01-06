@@ -953,6 +953,8 @@ function ToViewEnglishTerm() {
 
 
     }
+    document.getElementById('previous').disabled = true
+                    document.getElementById('next').disabled = true
 }
 
 
@@ -1137,6 +1139,8 @@ spanish_list = spanish_list.sort(function(a, b) {
 
 
     }
+     document.getElementById('previous').disabled = true
+                    document.getElementById('next').disabled = true
 }
 
 
