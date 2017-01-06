@@ -839,12 +839,12 @@ function ToViewEnglishTerm() {
 
                                 for (var varcharcode = gName.split("-")[0].charCodeAt(0); varcharcode < gName.split("-")[1].charCodeAt(0) + 1; varcharcode++) {
                                     var gName1 = String.fromCharCode(varcharcode)
-                                    for (var t = 0; t < GroupArray.length; t++) {
+                                   // for (var t = 0; t < GroupArray.length; t++) {
                                         if (GroupArray[t].groupname == gName1) {
                                             spanish_list.push(GroupArray[t].AudioList[j].Audioterm);
 
                                         }
-                                    }
+                                   // }
                                 }
                             }
 
@@ -998,32 +998,35 @@ function ToViewSpanTerm() {
                 for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
                 {
                     if (GroupArray[t].AudioList[j].SpaneshTerm == undefined || GroupArray[t].AudioList[j].SpaneshTerm == '') {} else {
-                        
+                       
                         if (groupName == "All") {
                             spanish_list.push(GroupArray[t].AudioList[j].SpaneshTerm);
                         } else {
                             
                             var gName = groupName;
-
+ 
                             if (gName.indexOf("-") == -1) {
-
+                                    
                                 if (GroupArray[t].groupname == gName) {
                                     spanish_list.push(GroupArray[t].AudioList[j].SpaneshTerm);
                                 }
                             } else {
-
+                                
                                 for (var varcharcode = gName.split("-")[0].charCodeAt(0); varcharcode < gName.split("-")[1].charCodeAt(0) + 1; varcharcode++) {
+                                    
                                     var gName1 = String.fromCharCode(varcharcode)
-                                    for (var t = 0; t < GroupArray.length; t++) {
+                                 
+                                    //for (var t = 0; t < GroupArray.length; t++) {
                                         if (GroupArray[t].groupname == gName1) {
                                             spanish_list.push(GroupArray[t].AudioList[j].SpaneshTerm);
 
                                         }
-                                    }
+                                    //}
                                 }
                             }
 
                         }
+
                     }
                 }
             }
