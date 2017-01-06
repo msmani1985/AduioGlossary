@@ -625,7 +625,7 @@ function EnglishSpanshword(selectList1, varj, vart) {
     var li1 = document.createElement('li')
     var a = document.createElement('a')
     a.setAttribute('onclick', 'onSelectDef_1(this,true)')
-    a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
+    a.setAttribute("style", "        font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
     li1.setAttribute('class', 'list-group-item list-group-item btn-warning')
     li1.value = varj
     var t1 = document.createTextNode(GroupArray[vart].AudioList[varj].Audioterm)
@@ -646,7 +646,7 @@ function EnglishSpanshword(selectList1, varj, vart) {
     a.appendChild(s3)
     a.appendChild(s2)
     li1.appendChild(a)
-    a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
+    a.setAttribute("style", "     font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
     // termsdetsear=termsdetsear+'"'+GroupArray[t].AudioList[j].SpaneshTerm+'",'
     selectList1.appendChild(li1)
 
@@ -2166,9 +2166,12 @@ function onSelectDef(tar, vartlist) {
             }
         }
     }
-    if (tar.outerHTML.indexOf("color: blue;") > 0) {
+    
+    
+    
+ if (tar.getAttribute("style").indexOf("color: blue;") > 0) {
         //alert(document.getElementById("thead").innerHTML)
-        document.getElementById("thead").innerHTML = document.getElementById("thead").innerHTML.replace("Término", "Term")
+        document.getElementById("thead").innerHTML = document.getElementById("thead").innerHTML.replace("Term","Término")
         document.getElementById("dhead").innerHTML = document.getElementById("dhead").innerHTML.replace("Definition", "Definición")
         $("#Definition").css("display", "none")
         $("#termContentPro").css("display", "none")
@@ -2176,7 +2179,13 @@ function onSelectDef(tar, vartlist) {
         $("#Span_Definition").css("display", "none")
             //termContentPro
 
-    } else {
+    }
+    
+    else
+    {
+    
+    
+     {
         //alert(document.getElementById("thead").innerHTML)
         document.getElementById("thead").innerHTML = document.getElementById("thead").innerHTML.replace("Término", "Term")
         document.getElementById("dhead").innerHTML = document.getElementById("dhead").innerHTML.replace("Definición", "Definition")
@@ -2186,6 +2195,7 @@ function onSelectDef(tar, vartlist) {
         $("#Span_Definition").css("display", "none")
             //termContentPro
 
+    }
     }
     //	console.log(selectedterm);
     //console.log(selectedterm);
