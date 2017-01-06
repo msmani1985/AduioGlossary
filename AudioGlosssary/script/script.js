@@ -2660,7 +2660,8 @@ function decreaseFontSizeInternal() {
         if (list[i].style.fontSize) {
             s = parseInt(list[i].style.fontSize.replace('px', ''))
         }
-        if (s != min) {
+        
+        if (s >= min) {
             s -= 1
         }
         list[i].style.fontSize = s + 'px'
