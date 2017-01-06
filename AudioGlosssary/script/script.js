@@ -569,6 +569,8 @@ function createUI1(e) {
     }
     // console.log(termsdetsear)
     /******************************************************************************************************* */
+    console.log(termsdetsear);
+    alert("dsafdsf");
     try {
         var termdsdetsear1 = JSON.parse('[' + removeLastComma(termsdetsear) + ']')
         data = { 'ale': termdsdetsear1 }
@@ -694,7 +696,7 @@ function onNext() {
 }
 
 function removeLastComma(str) {
-    return str.replace(/,(\s+)?$/, '')
+    return str.replace(/,(\s+)?$/, '').replace(/\n/g,"");
 }
 
 function search() {
