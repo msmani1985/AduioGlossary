@@ -459,7 +459,8 @@ h6 {
 }
 
 #termChoose1 {
-    overflow: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
     height: 674px;
     width: 200px;
     text-align: left;
