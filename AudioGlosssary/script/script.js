@@ -2800,4 +2800,10 @@ $("body").keydown(function(e) {
   else if(e.keyCode == 39) { // right
   onNext();
   }
+  if(e.keyCode == 118) { // left
+    decreaseFontSizeInternal();
+  }
+  else if(e.keyCode == 119) { // right
+  increaseFontSizeInternal();
+  }
 });
