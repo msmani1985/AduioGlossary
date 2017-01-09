@@ -448,7 +448,12 @@ function onPrevious() {
 
         document.getElementById('previous').disabled = false
         document.getElementById('next').disabled = false
+        try
+        {
         onSelectDef(document.getElementById('termChoose1').childNodes[count - 1].childNodes[0]);
+        }
+        catch(e)
+        {}
         document.getElementById('number_term').innerHTML = count + '/' + document.getElementById('termChoose1').childNodes.length
         count = count - 1
         if (count == 0) {
@@ -2359,8 +2364,22 @@ $(window).resize(function() {
 })
 
 
-
+$("#chapterList").keydown(function(e){
+  if(e.keyCode == 37) { // left
+ $(".js-typeahead-input").focus(); 
+   document.getElementById("chapterList").selectedIndex=document.getElementById("chapterList").selectedIndex+1;
+   onPrevious();
+  }
+  else if(e.keyCode == 39) { // right
+   $(".js-typeahead-input").focus();  
+  document.getElementById("chapterList").selectedIndex=document.getElementById("chapterList").selectedIndex-1;
+  onNext();
+  
+  }
+    
+})
 $("body").keydown(function(e) {
+    
   if(e.keyCode == 37) { // left
    onPrevious();
   }
@@ -2397,6 +2416,8 @@ function audio_tag(audiofile,audioid,varplayid)
                 Abtn.setAttribute("class", "play");
                 Abtn.setAttribute("onmouseover", "mOver1(this)");
                 Abtn.setAttribute("onmouseout", "mOut1(this)");
+                Abtn.setAttribute("data-toggle","tooltip");
+                Abtn.setAttribute("title","Play/Repeat audio");
                 Abtn.innerHTML = "Play Term Audio";
                 TOappnd.appendChild(Abtn);
                 //audioElement.play();
