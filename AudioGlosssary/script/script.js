@@ -267,68 +267,6 @@ function createUI1(e) {
     currentChapterList = questionlist.slice(0, questionlist.length) // coping array
     currentQ = 0
     alpha_list(e);
-    /*var lix = document.createElement('li')
-    // lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-info\" style=\"width:42px;height:25px;font-size:17px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"" + GROUP[i] + "index\" value=\"" + GROUP[i] + "\">"
-    lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;    font-size: 17px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="' + GROUP[i] + 'index" value="' + GROUP[i] + '">'
-    MYLIST.appendChild(lix)
-  //}
-  // document.getElementById("b1").disabled = true
-  // document.getElementById("b2").disabled = true
-
- /* GroupArray = e
-  for (var la = 1;la < document.getElementById('myLi').childNodes.length;la++) {
-    // for (var i = 0; i < GROUP.length; i++) //loading chapter headdings to dropdown box
-    {
-      document.getElementById('myLi').childNodes[la].childNodes[0].value = GROUP[la - 1]
-      document.getElementById('myLi').childNodes[la].childNodes[0].style.paddingLeft = '12px'
-    }
-    document.getElementById('myLi').childNodes[la].style.display = 'block'
-  }
-
-  varprevious = null
-  for (var la = 1;la < document.getElementById('myLi').childNodes.length;la++) {
-    // console.log(document.getElementById("myLi").childNodes[la].childNodes[0].getAttribute("value"))
-    var gname = document.getElementById('myLi').childNodes[la].childNodes[0].getAttribute('value')
-    var varfound = false
-
-
-    for (var t = 0; t < GroupArray.length; t++) {
-      for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
-      {
-        {
-          if (GroupArray[t].groupname == gname) {
-            varfound = true
-            // varprevious=document.getElementById("myLi").childNodes[la].childNodes[0]
-            break
-          }else {
-          }
-        }
-      }
-    }
-    if (varfound == false) {
-      document.getElementById('myLi').childNodes[la].style = 'display:none'
-    // console.log("dafdf1 " + gname)
-    // console.log("false")
-    }
-  }
-  varnon = ''
-  for (var la = 1;la < document.getElementById('myLi').childNodes.length;la++) {
-    // console.log("dfasff")
-    if (document.getElementById('myLi').childNodes[la].style.display == 'none') {
-      if (varnon == '') {
-        varnon = document.getElementById('myLi').childNodes[la].childNodes[0].getAttribute('value')
-      // console.log(varnon)
-      }
-    }else {
-      if (varnon != '') {
-        // console.log(varnon+"-"+document.getElementById("myLi").childNodes[la].childNodes[0].value)
-        document.getElementById('myLi').childNodes[la].childNodes[0].value = document.getElementById('myLi').childNodes[la].childNodes[0]+ '-' + valuevarnon ;
-        document.getElementById('myLi').childNodes[la].childNodes[0].style.paddingLeft = '2px'
-        // document.getElementById("myLi").childNodes[la],childNodes[0].setAttribute("value",varnon + "-"+document.getElementById("myLi").childNodes[la].previousSibling,childNodes[0].getAttribute("value"))
-        varnon = ''
-      }
-    }
-  }*/
     document.getElementById("b3").disabled = true;
     document.getElementById("b4").disabled = true;
     document.getElementById('b4').className = document.getElementById('b4').className.replace("btn-info", "btn-default");
@@ -356,27 +294,6 @@ function createUI1(e) {
         for (var j = 0; j < GroupArray[t].AudioList.length; j++) // loading chapter headdings to dropdown box
         {
             Defarray.push(GroupArray[t].AudioList[j].Audiomeaning)
-                // console.log(GroupArray[t].AudioList[j].chapterattr)
-                // var option = document.createElement('option')
-                // option.value = GroupArray[t].AudioList[j].Audioterm
-                //option.text = GroupArray[t].AudioList[j].Audioterm
-                //selectList.appendChild(option)
-                /***************************************************************************** */
-                // Mering the spanish and english with "," 
-                /*
-      var li = document.createElement('li')
-      var a = document.createElement('a')
-      li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-      a.setAttribute('onclick', 'onSelectDef_1(this,true)')
-      //a.setAttribute('style', 'color:black;font-weight:bold;cursor:pointer')
-	    a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em");
-	  
-      li.value = j
-      var t1 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
-      // li.text = GroupArray[t].AudioList[j].Audioterm
-      a.appendChild(t1)
-      li.appendChild(a)
-      selectList1.appendChild(li)*/
                 /**********************************search data information*************************************** */
                 //
                 //									Search functionality and merging the 
@@ -391,10 +308,7 @@ function createUI1(e) {
 
 
             } else {
-                //var option1 = document.createElement('option')
-                //option1.value = GroupArray[t].AudioList[j].SpaneshTerm
-                //option1.text = GroupArray[t].AudioList[j].SpaneshTerm
-                //option1.setAttribute('style', 'color:blue')
+
 
                 /*********************************************************************************************** */
                 termsdetsear = termsdetsear + '"' + GroupArray[t].AudioList[j].SpaneshTerm + '",'
@@ -419,153 +333,7 @@ function createUI1(e) {
                 TC.innerHTML = FirstTerm
                 var DC = document.getElementById('definitionContent')
                 DC.innerHTML = FirstDefinition
-                    //adding Audio button to definiton frame
-                var audioElement = document.createElement('audio');
-
-                audioElement.setAttribute('src', "media/" + (GroupArray[t].AudioList[0].AudioUrl + ".mp3").replace(".mp3.mp3", ".mp3"));
-                var TOappnd = document.getElementById('Audio');
-                TOappnd.innerHTML = "";
-                var Abtn = document.createElement("button");
-                Abtn.setAttribute("id", "play1");
-                Abtn.setAttribute("class", "play");
-                Abtn.setAttribute("onmouseover", "mOver1(this)");
-                Abtn.setAttribute("onmouseout", "mOut1(this)");
-                Abtn.innerHTML = "Play Term Audio";
-                TOappnd.appendChild(Abtn);
-                //audioElement.play();
-
-
-                audioElement.onloadeddata = function() {
-                    document.getElementById("loadder").style.display = "none";
-                }
-                $('.play').click(function() {
-                    try {
-                        audioElement.play();
-                       audioElement.onPlay=(function(){
-                        alert("welcome");
-                    })
-
-                    } catch (e) {
-                        document.getElementById("loadder").style.display = "none";
-                    }
-                });
-
-                $('.pause').click(function() {
-                    audioElement.pause();
-                });
-
-                //adding definition audion button
-
-                if (GroupArray[t].AudioList[0].defAudioUrl == undefined) {
-                    var DefAud = document.getElementById('defAudio');
-                    DefAud.innerHTML = "";
-
-                    //	var Sentitle = document.getElementById('senTitle');
-                    //	Sentitle.innerHTML = "";
-
-                    //var Senterm = document.getElementById('SenTerm');
-                    //	Senterm.innerHTML = "";
-
-                    var SenAud = document.getElementById('SenAudion');
-                    SenAud.innerHTML = "";
-                } else {
-                    var DefaudioElement = document.createElement('audio');
-                    DefaudioElement.setAttribute('src', "media/" + (GroupArray[t].AudioList[0].defAudioUrl + ".mp3").replace(".mp3.mp3", ".mp3"));
-                    var DefAud = document.getElementById('defAudio');
-                    DefAud.innerHTML = "";
-                    var Abtn = document.createElement("button");
-                    Abtn.setAttribute("id", "Defplay");
-                    Abtn.setAttribute("class", "Defplayplay");
-                    Abtn.setAttribute("onmouseover", "DefplaymOver(this)");
-                    Abtn.setAttribute("onmouseout", "DefplaymOut(this)");
-                    Abtn.innerHTML = "Play Def Audio";
-                    DefAud.appendChild(Abtn);
-                    //DefaudioElement.play();
-                    $('.Defplayplay').click(function() {
-                        try {
-                            DefaudioElement.play();
-
-                        } catch (e) {
-                            Defa
-                        }
-
-                    });
-
-                }
-
-                //Adding audio button to sentence
-                if (GroupArray[t].AudioList[0].AudioSentence == "") {
-
-                    //	var Sterm = document.getElementById("SenTerm");
-                    //		Sterm.innerHTML = "";
-                    //	var SenAud = document.getElementById('SenAudion');
-                    //SenAud.innerHTML = "";
-
-                } else {
-                    var Sterm = document.getElementById("SenTerm");
-                    Sterm.innerHTML = GroupArray[t].AudioList[0].AudioSentence;
-
-                    var SentenceaudioElement = document.createElement('audio');
-                    $(SentenceaudioElement).attr('src', "media/" + (GroupArray[t].AudioList[0].defAudioUrl + ".mp3").replace(".mp3.mp3", ".mp3"));
-                    var SenAud = document.getElementById('SenAudion');
-                    SenAud.innerHTML = "";
-                    var Abtn = document.createElement("button");
-                    Abtn.setAttribute("id", "Senplay");
-                    Abtn.setAttribute("class", "Senplayplay");
-                    Abtn.setAttribute("onmouseover", "SenplaymOver(this)");
-                    Abtn.setAttribute("onmouseout", "SenplaymOut(this)");
-                    Abtn.innerHTML = "Play sen Audio";
-                    SenAud.appendChild(Abtn);
-                    //SentenceaudioElement.play();
-                    $('.Senplayplay').click(function() {
-                        try {
-                            SentenceaudioElement.play();
-                        } catch (e) {
-                            console.log("Error");
-                        }
-
-                    });
-
-                }
-
-                //adding Audio button to Term frame
-                var TOappnd = document.getElementById('Audio1');
-                TOappnd.innerHTML = "";
-                audioElement1.setAttribute('src', "media/" + (GroupArray[t].AudioList[0].AudioUrl + ".mp3").replace(".mp3.mp3", ".mp3"));
-                //console.log("media/" + GroupArray[t].AudioList[j].AudioUrl);
-                audioElement1.onloadeddata = function() {
-                        document.getElementById("loadder").style.display = "none";
-                    }
-                    //audioElement1.play();
-                var TOappnd = document.getElementById('Audio1');
-                var Abtn = document.createElement("button");
-                Abtn.setAttribute("id", "play");
-                Abtn.setAttribute("class", "play");
-                Abtn.setAttribute("onmouseover", "mOver(this)");
-                Abtn.setAttribute("onmouseout", "mOut(this)");
-                Abtn.innerHTML = "Play Def Audio";
-                TOappnd.appendChild(Abtn);
-                audioElement1.preload = "none";
-                audioElement1.onloadeddata = function() {
-                    document.getElementById("loadder").style.display = "none";
-                }
-                $('.play').click(function() {
-                    try {
-                        audioElement1.play();
-                        audioElement1.onPlay=(function(){
-                        alert("welcome");
-                    })
-                    } catch (e) {
-                        console.log("Error");
-                    }
-
-                });
-
-                $('.pause').click(function() {
-                    audioElement1.pause();
-                });
-
-
+                audio_tag("media/"+GroupArray[t].AudioList[0].AudioUrl,"Audio1","play1")
                 $('#b1').css('background', '#9AC97B')
                 $('#b1').css('color', 'white')
             }
@@ -2280,6 +2048,7 @@ function onSelectDef(tar, vartlist) {
 
                 var DC = document.getElementById("definitionContent");
                 DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning;
+                audio_tag("media/"+GroupArray[t].AudioList[j].AudioUrl,"Audio1","play1")
                 if (GroupArray[t].AudioList[j].SpaneshTerm == "") {
                     //ToViewSpanTerm();
 
@@ -2315,7 +2084,15 @@ function onSelectDef(tar, vartlist) {
                     TC.style.display = "none";
                     var TC = document.getElementById("spanitem_1");
                     TC.style.color = "blue";
-                    TC.innerHTML = '<span class="Senplayplay" ></span> ' + GroupArray[t].AudioList[j].SpaneshTerm;
+                    TC.innerHTML = '' + GroupArray[t].AudioList[j].SpaneshTerm;
+                    if(GroupArray[t].AudioList[j].SpanURL!=undefined || GroupArray[t].AudioList[j].SpanURL!="")
+                    {
+                     audio_tag("media/span/media/"+GroupArray[t].AudioList[j].SpanURL,"spanAudio1","spanplay1")
+                     }
+                     else
+                     {
+                         $("#spanAudio1").css("display","none");
+                     }
                 }
                 //	var tcontext = document.getElementById("TermContext");
                 //	tcontext.innerHTML = GroupArray[t].AudioList[j].Audioterm;
@@ -2328,162 +2105,7 @@ function onSelectDef(tar, vartlist) {
                 varj = j;
 
 
-                //adding Audio button to definiton frame
-                var audioElement = document.createElement('audio');
-
-                $(audioElement).attr('src', "media/" + (GroupArray[t].AudioList[j].AudioUrl + ".mp3").replace(".mp3.mp3", ".mp3"));
-                var TOappnd = document.getElementById('Audio');
-                TOappnd.innerHTML = "";
-                var Abtn = document.createElement("button");
-                Abtn.setAttribute("id", "play1");
-                Abtn.setAttribute("class", "play");
-                Abtn.setAttribute("onmouseover", "mOver1(this)");
-                Abtn.setAttribute("onmouseout", "mOut1(this)");
-                Abtn.innerHTML = "Play Term Audio";
-                TOappnd.appendChild(Abtn);
-                //audioElement.play();
-                audioElement.onloadeddata = function() {
-                    document.getElementById("loadder").style.display = "none";
-                }
-                $('.play').click(function() {
-                    try {
-                        audioElement.play();
-                        audioElement.onPlay=(function(){
-                        alert("welcome");
-                    })
-                    } catch (e) {
-                        console.log("Error");
-                    }
-                    
-                });
-
-                $('.pause').click(function() {
-                    audioElement.pause();
-                });
-
-                //adding definition audion button
-
-                if (GroupArray[t].AudioList[j].defAudioUrl == undefined) {
-                    var DefAud = document.getElementById('defAudio');
-                    DefAud.innerHTML = "";
-
-                    //	var Sentitle = document.getElementById('senTitle');
-                    //	Sentitle.innerHTML = "";
-
-                    //var Senterm = document.getElementById('SenTerm');
-                    //	Senterm.innerHTML = "";
-
-                    var SenAud = document.getElementById('SenAudion');
-                    SenAud.innerHTML = "";
-                } else {
-                    var DefaudioElement = document.createElement('audio');
-                    $(DefaudioElement).attr('src', "media/" + (GroupArray[t].AudioList[j].defAudioUrl + ".mp3").replace(".mp3.mp3", ".mp3"));
-                    var DefAud = document.getElementById('defAudio');
-                    DefAud.innerHTML = "";
-                    var Abtn = document.createElement("button");
-                    Abtn.setAttribute("id", "Defplay");
-                    Abtn.setAttribute("class", "Defplayplay");
-                    Abtn.setAttribute("onmouseover", "DefplaymOver(this)");
-                    Abtn.setAttribute("onmouseout", "DefplaymOut(this)");
-                    Abtn.innerHTML = "Play Def Audio";
-                    DefAud.appendChild(Abtn);
-                    //DefaudioElement.play();
-                    $('.Defplayplay').click(function() {
-                        try {
-                            DefaudioElement.play();
-                        } catch (e) {
-                            $('.defplayplay').innerHTML = "";
-                            document.getElementById("loadder").style.display = "none";
-                        }
-
-
-                    });
-
-                }
-
-                //Adding audio button to sentence
-                if (GroupArray[t].AudioList[j].AudioSentence == "") {
-
-                    //	var Sterm = document.getElementById("SenTerm");
-                    //		Sterm.innerHTML = "";
-                    //	var SenAud = document.getElementById('SenAudion');
-                    //SenAud.innerHTML = "";
-
-                } else {
-                    var Sterm = document.getElementById("SenTerm");
-                    Sterm.innerHTML = GroupArray[t].AudioList[j].AudioSentence;
-
-                    var SentenceaudioElement = document.createElement('audio');
-                    $(SentenceaudioElement).attr('src', "media/" + (GroupArray[t].AudioList[j].defAudioUrl + ".mp3").replace(".mp3.mp3", ".mp3"));
-                    var SenAud = document.getElementById('SenAudion');
-                    SenAud.innerHTML = "";
-                    var Abtn = document.createElement("button");
-                    Abtn.setAttribute("id", "Senplay");
-                    Abtn.setAttribute("class", "Senplayplay");
-                    Abtn.setAttribute("onmouseover", "SenplaymOver(this)");
-                    Abtn.setAttribute("onmouseout", "SenplaymOut(this)");
-                    Abtn.innerHTML = "Play sen Audio";
-                    SenAud.appendChild(Abtn);
-                    //SentenceaudioElement.play();
-                    $('.Senplayplay').click(function() {
-
-                        try {
-                            SentenceaudioElement.play();
-
-                        } catch (e) {
-                            $('.Senplayplay').innerHTML = ""
-                            document.getElementById("loadder").style.display = "none";
-                        }
-
-
-
-
-                    });
-
-                }
-
-                //adding Audio button to Term frame
-                var TOappnd = document.getElementById('Audio1');
-                TOappnd.innerHTML = "";
-                audioElement1.setAttribute('src', "media/" + (GroupArray[t].AudioList[j].AudioUrl + ".mp3").replace(".mp3.mp3", ".mp3"));
-                //console.log("media/" + GroupArray[t].AudioList[j].AudioUrl);
-                audioElement1.onloadeddata = function() {
-                    document.getElementById("loadder").style.display = "none";
-                }
-                try {
-                    audioElement1.play();
-                     audioElement1.onPlay=(function(){
-                        alert("welcome");
-                    })
-
-                } catch (e) {
-                    auioElement1.innerHTML = ""
-                    document.getElementById("loadder").style.display = "none";
-                }
-
-                var TOappnd = document.getElementById('Audio1');
-                var Abtn = document.createElement("button");
-                Abtn.setAttribute("id", "play");
-                Abtn.setAttribute("class", "play");
-                Abtn.setAttribute("onmouseover", "mOver(this)");
-                Abtn.setAttribute("onmouseout", "mOut(this)");
-                Abtn.innerHTML = "Play Def Audio";
-                TOappnd.appendChild(Abtn);
-                audioElement1.preload = "none";
-                audioElement1.onloadeddata = function() {
-                    document.getElementById("loadder").style.display = "none";
-                }
-                $('.play').click(function() {
-                    try { audioElement1.play();  audioElement1.onPlay=(function(){
-                        alert("welcome");
-                    })} catch (e) {
-                        document.getElementById("loadder").style.display = "none";
-                    }
-                });
-
-                $('.pause').click(function() {
-                    audioElement1.pause();
-                });
+               
             } else if (GroupArray[t].AudioList[j].SpaneshTerm == selectedterm) //Spanes Definition Display Frame
             {
                 // SpanURL
@@ -2503,76 +2125,7 @@ function onSelectDef(tar, vartlist) {
                 TC.style.color = "black";
                 TC.style.display = "block";
                 TC.innerHTML = '<span class="Senplayplay" ></span> ' + GroupArray[t].AudioList[j].Audioterm;
-                var TOappnd = document.getElementById('Audio1');
-                TOappnd.innerHTML = "";
-                audioElement1.setAttribute('src', "media/span/media/" + GroupArray[t].AudioList[j].SpanURL + ".mp3");
-
-                //console.log("media/span/media/" + GroupArray[t].AudioList[j].SpanURL);
-                audioElement1.onloadeddata = function() {
-                    document.getElementById("loadder").style.display = "none";
-                }
-                try {
-                    audioElement1.play();
-                    audioElement1.onPlay=(function(){
-                        alert("welcome");
-                    })
-                } catch (e) {
-                    auioElement1.innerHTML = ""
-                    document.getElementById("loadder").style.display = "none";
-                }
-
-
-                var TOappnd = document.getElementById('Audio1');
-                var Abtn = document.createElement("button");
-                Abtn.setAttribute("id", "play");
-                Abtn.setAttribute("class", "play");
-                Abtn.setAttribute("onmouseover", "mOver(this)");
-                Abtn.setAttribute("onmouseout", "mOut(this)");
-                Abtn.innerHTML = "Play Def Audio";
-                TOappnd.appendChild(Abtn);
-                audioElement1.preload = "none";
-                $('.play').click(function() {
-                    try {
-                        audioElement1.play();
-                        audioElement1.onPlay=(function(){
-                        alert("welcome");
-                    })
-                    } catch (e) { document.getElementById("loadder").style.display = "none"; }
-                });
-
-                $('.pause').click(function() {
-                    audioElement1.pause();
-                });
-
-
-                //sapn Definition Audio
-                var audioElement = document.createElement('audio');
-                audioElement.setAttribute('src', "media/span/media/" + GroupArray[t].AudioList[j].SpanURL + ".mp3");
-                var TOappnd = document.getElementById('Audio');
-                TOappnd.innerHTML = "";
-                var Abtn = document.createElement("button");
-                Abtn.setAttribute("id", "play1");
-                Abtn.setAttribute("class", "play");
-                Abtn.setAttribute("onmouseover", "mOver1(this)");
-                Abtn.setAttribute("onmouseout", "mOut1(this)");
-                Abtn.innerHTML = "Play Term Audio";
-                TOappnd.appendChild(Abtn);
-                //audioElement.play();
-                audioElement.onloadeddata = function() {
-                    document.getElementById("loadder").style.display = "none";
-                }
-                $('.play').click(function() {
-                    try {
-                        audioElement.play();
-                         audioElement.onPlay=(function(){
-                        alert("welcome");
-                    })
-                    } catch (e) { document.getElementById("loadder").style.display = "none"; }
-                });
-
-                $('.pause').click(function() {
-                    audioElement.pause();
-                });
+               
 
 
 
@@ -2601,22 +2154,22 @@ function mOver(obj) {
 function mOver1(obj) {
 
     // obj.class=play1
-    var ply = document.getElementById('play1')
-    ply.className = 'play1'
+    
+    obj.className = 'play1'
         // ply.className="play1"
 
 }
 
 function mOut(obj) {
-    var ply = document.getElementById('play')
-    ply.className = 'play'
+    
+    obj.className = 'play'
         // console.log("mout"+ply.className)
 
 }
 
 function mOut1(obj) {
-    var ply = document.getElementById('play1')
-    ply.className = 'play'
+  
+   obj.className = 'play'
         // console.log("mout"+ply.className)
 
 }
@@ -2810,3 +2363,72 @@ $("body").keydown(function(e) {
   $(".js-typeahead-input").focus();
   }
 });
+
+function audio_tag(audiofile,audioid,varplayid)
+{
+        
+                
+               
+                
+             
+                if(audiofile.indexOf("undefined")==-1)
+                {
+                var audioElement = document.createElement('audio');
+                audioElement.setAttribute("id","audiotag1")
+                audioElement.setAttribute('src', (audiofile + ".mp3").replace(".mp3.mp3", ".mp3"));
+                var TOappnd = document.getElementById(audioid);
+                TOappnd.innerHTML = "";
+                var Abtn = document.createElement("button");
+                Abtn.setAttribute("id", varplayid);
+                Abtn.setAttribute("class", "play");
+                Abtn.setAttribute("onmouseover", "mOver1(this)");
+                Abtn.setAttribute("onmouseout", "mOut1(this)");
+                Abtn.innerHTML = "Play Term Audio";
+                TOappnd.appendChild(Abtn);
+                //audioElement.play();
+
+
+                audioElement.onloadeddata = function() {
+                    document.getElementById("loadder").style.display = "none";
+                }
+                $('#'+varplayid).click(function() {
+                    try {
+                        audioElement.play();
+                       audioElement.onPlay=(function(){
+                        alert("welcome");
+                    })
+
+                    } catch (e) {
+                        document.getElementById("loadder").style.display = "none";
+                    }
+                });
+
+                $('.pause').click(function() {
+                    audioElement.pause();
+                });
+
+              
+                $('.play').click(function() {
+                    try {
+                        audioElement1.play();
+                        audioElement1.onPlay=(function(){
+                        alert("welcome");
+                    })
+                    } catch (e) {
+                        console.log("Error");
+                    }
+
+                });
+
+                $('.pause').click(function() {
+                    audioElement1.pause();
+                });
+                 document.getElementById(audioid).setAttribute("style","display:block");
+}
+else
+{
+ 
+ document.getElementById(audioid).setAttribute("style","display:none");
+}
+
+}

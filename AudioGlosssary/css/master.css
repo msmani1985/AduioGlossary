@@ -59,6 +59,8 @@
 select {
     display: none;
 }
+#spanAudio1
+{margin-left: -124px;}
 
 *html {
     margin: 0;
