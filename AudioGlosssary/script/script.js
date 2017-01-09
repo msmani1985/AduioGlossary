@@ -1,6 +1,6 @@
 var toggES="En";
 var max = 60
-var min = 14
+var min = 20
 var data
 var vart = 0;
 var varj = 0;
@@ -382,17 +382,19 @@ function Englishwordonly(selectList1, varj, vart) {
     if(varterms.length>=130)
    {   
        var t1 = document.createTextNode(varterms.substring(1,45) + "...")
-       
+       a.setAttribute("data-terms",varterms);   
        li.setAttribute("data-toggle","tooltip");
        li.setAttribute("title",varterms)}
     else
     {
         var t1 = document.createTextNode(varterms)
+        a.setAttribute("data-terms",varterms);
         li.setAttribute("data-toggle","tooltip");
         li.setAttribute("title","English Term only");
     }
         // li.text = GroupArray[t].AudioList[j].Audioterm
     a.appendChild(t1)
+    
     li.appendChild(a)
     selectList1.appendChild(li)
         // onSelectDef_1(selectList1.childNodes[0].childNodes[0],true);
@@ -555,7 +557,7 @@ function search() {
                             document.getElementById('previous').disabled = false
                             document.getElementById('next').disabled = true
                         }
-
+                        ($(".js-typeahead-input").val($(".js-typeahead-input").val().replace(/\n/g,"").trim())); 
                         document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
                         onSelectDef(x1[x].childNodes[0]);
                         break
@@ -584,9 +586,9 @@ function search() {
                        
                     if (varleft.trim() == itemdisplay.replace(/\n/g,"").trim()) {
                         //x1.selectedIndex = x
-
+                            
                         count = x;
-
+alert(count);
                         if (x == 0) {
                             document.getElementById('previous').disabled = true
                             document.getElementById('next').disabled = false
@@ -1981,11 +1983,21 @@ function onSelectDef(tar, vartlist) {
     var currentChap = cahperList.options[cahperList.selectedIndex].value;
     var termList = document.getElementById("termChoose1");
     //var selectedterm = termList.options[termList.selectedIndex].value;
+ 
     if (tar.childNodes.length > 1) {
         var selectedterm = tar.childNodes[0].innerHTML;
     } else {
         var selectedterm = tar.innerHTML;
     }
+ if(selectedterm.indexOf("...")>-1)   
+ {
+    if (tar.childNodes.length > 1) {
+        var selectedterm = tar.childNodes[0].getAttribute("data-terms");
+    } else {
+        var selectedterm = tar.getAttribute("data-terms");
+    }
+ }
+ 
     //console.log(termList.childNodes.length);
     if (vartlist == true) {
         var x1 = document.getElementById('termChoose1').childNodes;
