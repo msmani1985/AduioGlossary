@@ -103,7 +103,7 @@ function alpha_list(e) {
      
     var lix = document.createElement('li')
         //	lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-warning\" style=\"width:42px;height:25px;font-size:15px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"All\" value=\"All\">"
-    lix.innerHTML = '<input type="button" class="btns1 btn-warning" style=" width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="All" value="All">'
+    lix.innerHTML = '<input data-toggle="tooltip" title="All alphabet wise term list" type="button" class="btns1 btn-warning" style=" width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="All" value="All">'
         // lix.innerHTML="<button type=\"button\" class=\"btn btn-default\" onclick=\"onSelection3(this)\" id=\"All\" value=\"All\">All</button>"
     MYLIST.appendChild(lix)
 
@@ -245,14 +245,14 @@ function alpha_list(e) {
         if (varfound[i].indexOf("-") > 0) {
             var lix = document.createElement('li')
                 // lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-info\" style=\"width:42px;height:25px;font-size:17px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"" + GROUP[i] + "index\" value=\"" + GROUP[i] + "\">"
-            lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 3px;    padding-right: 1em" onclick="onSelection3(this)" id="' + varfound[i] + 'index" value="' + varfound[i] + '">'
+            lix.innerHTML = '<input data-toggle="tooltip" title="' + varfound[i] + ' term list" type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 3px;    padding-right: 1em" onclick="onSelection3(this)" id="' + varfound[i] + 'index" value="' + varfound[i] + '">'
             MYLIST.appendChild(lix)
         } else
 
         {
             var lix = document.createElement('li')
                 // lix.innerHTML = "<input type=\"button\" class=\"btns1 btn-info\" style=\"width:42px;height:25px;font-size:17px;font-weight:bold\" onclick=\"onSelection3(this)\" id=\"" + GROUP[i] + "index\" value=\"" + GROUP[i] + "\">"
-            lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="' + varfound[i] + 'index" value="' + varfound[i] + '">'
+            lix.innerHTML = '<input  data-toggle="tooltip" title="' + varfound[i] + ' term list" type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="' + varfound[i] + 'index" value="' + varfound[i] + '">'
             MYLIST.appendChild(lix)
         }
 
@@ -593,7 +593,9 @@ function Englishwordonly(selectList1, varj, vart) {
     document.getElementById("b4").disabled = false;
     document.getElementById('b4').className = document.getElementById('b4').className.replace("btn-info", "btn-default");
     document.getElementById('b3').className = document.getElementById('b3').className.replace("btn-info", "btn-default");
-    var li = document.createElement('li')
+    var li = document.createElement('li')   
+     li.setAttribute("data-toggle","tooltip");
+    li.setAttribute("title","English Term only");
     var a = document.createElement('a')
     li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
     a.setAttribute('onclick', 'onSelectDef_1(this,true)')
@@ -624,9 +626,12 @@ function EnglishSpanshword(selectList1, varj, vart) {
     document.getElementById('b4').className = document.getElementById('b4').className.replace("btn-info", "btn-default");
     document.getElementById('b3').className = document.getElementById('b3').className.replace("btn-info", "btn-default");
     var li1 = document.createElement('li')
+     li1.setAttribute("data-toggle","tooltip");
+    li1.setAttribute("title","English and Spanish Terms");
     var a = document.createElement('a')
     a.setAttribute('onclick', 'onSelectDef_1(this,true)')
     a.setAttribute("style", "        font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
+   
     li1.setAttribute('class', 'list-group-item list-group-item btn-warning')
     li1.value = varj
     var t1 = document.createTextNode(GroupArray[vart].AudioList[varj].Audioterm)
@@ -634,10 +639,15 @@ function EnglishSpanshword(selectList1, varj, vart) {
     var t3 = document.createTextNode(", ")
     var s1 = document.createElement('span')
     s1.setAttribute("style", "color:black");
+    s1.setAttribute("data-toggle","tooltip");
+    s1.setAttribute("title","English Term");
     var s2 = document.createElement('span')
     s2.setAttribute("style", "color:blue");
+    s2.setAttribute("data-toggle","tooltip");
+    s2.setAttribute("title","Spanish Term");
     var s3 = document.createElement('span')
     s3.setAttribute("style", "color:black");
+    
     s1.appendChild(t1)
     s2.appendChild(t2)
     s3.appendChild(t3)
@@ -2709,7 +2719,7 @@ function increaseFontSizeInternal() {
         if (list[i].style.fontSize) {
             s = parseInt(list[i].style.fontSize.replace('px', ''))
         }
-        if (s != max) {
+        if (s <= max) {
             s += 1
         }
         list[i].style.fontSize = s + 'px'
