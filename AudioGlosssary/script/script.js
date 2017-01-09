@@ -2806,4 +2806,7 @@ $("body").keydown(function(e) {
   else if(e.keyCode == 119) { // right
   increaseFontSizeInternal();
   }
+ if(e.keyCode == 120) { // right
+  $(".js-typeahead-input").focus();
+  }
 });
