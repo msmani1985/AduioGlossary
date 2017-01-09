@@ -2426,13 +2426,28 @@ function audio_tag(audiofile,audioid,varplayid)
                 audioElement.onloadeddata = function() {
                     document.getElementById("loadder").style.display = "none";
                 }
+               
                 $('#'+varplayid).click(function() {
                     try {
                         audioElement.play();
-                       audioElement.onPlay=(function(){
-                        alert("welcome");
-                    })
+                     audioElement.onplaying = function() {
+                         if(varplayid=="spanplay1")
+                         {$("#spanitem_1").css("background-color","yellow");
+                        $("#spanitem_1").css("font-weight","bold");}
+                         else
+   {$("#termContent").css("background-color","yellow");
+   $("#termContent").css("font-weight","bold");}
 
+};
+audioElement.onended = function() {
+    $("#termContent").css("background-color","white");
+    $("#spanitem_1").css("background-color","white");
+    $("#spanitem_1").css("font-weight","normal");
+     $("#termContent").css("font-weight","normal");
+};
+audioElement.onerror = function() {
+    alert("Error! Something went wrong");
+};
                     } catch (e) {
                         document.getElementById("loadder").style.display = "none";
                     }
@@ -2443,21 +2458,7 @@ function audio_tag(audiofile,audioid,varplayid)
                 });
 
               
-                $('.play').click(function() {
-                    try {
-                        audioElement1.play();
-                        audioElement1.onPlay=(function(){
-                        alert("welcome");
-                    })
-                    } catch (e) {
-                        console.log("Error");
-                    }
-
-                });
-
-                $('.pause').click(function() {
-                    audioElement1.pause();
-                });
+              
                  document.getElementById(audioid).setAttribute("style","display:block");
 }
 else
