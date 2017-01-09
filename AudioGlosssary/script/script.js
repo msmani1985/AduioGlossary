@@ -441,7 +441,9 @@ function createUI1(e) {
                 $('.play').click(function() {
                     try {
                         audioElement.play();
-
+                       audioElement.onPlay=(function(){
+                        alert("welcome");
+                    })
 
                     } catch (e) {
                         document.getElementById("loadder").style.display = "none";
@@ -550,6 +552,9 @@ function createUI1(e) {
                 $('.play').click(function() {
                     try {
                         audioElement1.play();
+                        audioElement1.onPlay=(function(){
+                        alert("welcome");
+                    })
                     } catch (e) {
                         console.log("Error");
                     }
@@ -956,7 +961,7 @@ function ToViewEnglishTerm() {
         }
     }
 
-
+termsdetsear="";
     for (varj = 0; varj < spanish_list.length; varj++) {
         termsdetsear = termsdetsear + '"' + spanish_list[varj] + '",'
             /********************************************************************************************** */
@@ -989,6 +994,14 @@ function ToViewEnglishTerm() {
     }
     document.getElementById('previous').disabled = true
                     document.getElementById('next').disabled = true
+     try {
+        var termdsdetsear1 = JSON.parse('[' + removeLastComma(termsdetsear) + ']')
+        console.log(termdsdetsear1)
+        data = { 'ale': termdsdetsear1 }
+        search()
+    } catch (e) {
+
+    }                
 }
 
 
@@ -1146,6 +1159,7 @@ spanish_list = spanish_list.sort(function(a, b) {
   // names must be equal
   return 0;
 });
+termsdetsear="";
     for (varj = 0; varj < spanish_list.length; varj++) {
         termsdetsear = termsdetsear + '"' + spanish_list[varj] + '",'
             /********************************************************************************************** */
@@ -1178,6 +1192,14 @@ spanish_list = spanish_list.sort(function(a, b) {
     }
      document.getElementById('previous').disabled = true
                     document.getElementById('next').disabled = true
+     try {
+        var termdsdetsear1 = JSON.parse('[' + removeLastComma(termsdetsear) + ']')
+        console.log(termdsdetsear1)
+        data = { 'ale': termdsdetsear1 }
+        search()
+    } catch (e) {
+
+    }
 }
 
 
@@ -1493,6 +1515,14 @@ function onSelection2() {
                 // data=  {"ale": termdsdetsear1}
                 // console.log(termdsdetsear1)
                 // search()
+                 try {
+        var termdsdetsear1 = JSON.parse('[' + removeLastComma(termsdetsear) + ']')
+        console.log(termdsdetsear1)
+        data = { 'ale': termdsdetsear1 }
+        search()
+    } catch (e) {
+
+    }
             }
             // console.log(data)
 
@@ -2318,10 +2348,13 @@ function onSelectDef(tar, vartlist) {
                 $('.play').click(function() {
                     try {
                         audioElement.play();
+                        audioElement.onPlay=(function(){
+                        alert("welcome");
+                    })
                     } catch (e) {
                         console.log("Error");
                     }
-
+                    
                 });
 
                 $('.pause').click(function() {
@@ -2419,6 +2452,9 @@ function onSelectDef(tar, vartlist) {
                 }
                 try {
                     audioElement1.play();
+                     audioElement1.onPlay=(function(){
+                        alert("welcome");
+                    })
 
                 } catch (e) {
                     auioElement1.innerHTML = ""
@@ -2438,7 +2474,9 @@ function onSelectDef(tar, vartlist) {
                     document.getElementById("loadder").style.display = "none";
                 }
                 $('.play').click(function() {
-                    try { audioElement1.play(); } catch (e) {
+                    try { audioElement1.play();  audioElement1.onPlay=(function(){
+                        alert("welcome");
+                    })} catch (e) {
                         document.getElementById("loadder").style.display = "none";
                     }
                 });
@@ -2475,6 +2513,9 @@ function onSelectDef(tar, vartlist) {
                 }
                 try {
                     audioElement1.play();
+                    audioElement1.onPlay=(function(){
+                        alert("welcome");
+                    })
                 } catch (e) {
                     auioElement1.innerHTML = ""
                     document.getElementById("loadder").style.display = "none";
@@ -2493,6 +2534,9 @@ function onSelectDef(tar, vartlist) {
                 $('.play').click(function() {
                     try {
                         audioElement1.play();
+                        audioElement1.onPlay=(function(){
+                        alert("welcome");
+                    })
                     } catch (e) { document.getElementById("loadder").style.display = "none"; }
                 });
 
@@ -2520,6 +2564,9 @@ function onSelectDef(tar, vartlist) {
                 $('.play').click(function() {
                     try {
                         audioElement.play();
+                         audioElement.onPlay=(function(){
+                        alert("welcome");
+                    })
                     } catch (e) { document.getElementById("loadder").style.display = "none"; }
                 });
 
