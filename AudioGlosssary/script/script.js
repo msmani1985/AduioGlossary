@@ -1,5 +1,5 @@
 var max = 60
-var min = 24
+var min = 14
 var data
 var vart = 0;
 var varj = 0;
