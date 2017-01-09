@@ -462,9 +462,10 @@ h6 {
     overflow-y: auto;
     overflow-x: hidden;
     height: 674px;
-    width: 200px;
+    width: 220px;
     text-align: left;
     margin-left: 4px;
+
 }
 
 .term_contenttext span {

@@ -368,8 +368,7 @@ function Englishwordonly(selectList1, varj, vart) {
     document.getElementById('b4').className = document.getElementById('b4').className.replace("btn-info", "btn-default");
     document.getElementById('b3').className = document.getElementById('b3').className.replace("btn-info", "btn-default");
     var li = document.createElement('li')   
-     li.setAttribute("data-toggle","tooltip");
-    li.setAttribute("title","English Term only");
+     
     var a = document.createElement('a')
     li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
     a.setAttribute('onclick', 'onSelectDef_1(this,true)')
@@ -378,7 +377,20 @@ function Englishwordonly(selectList1, varj, vart) {
 
     li.value = varj
         // var t2 = document.createTextNode(GroupArray[t].AudioList[j].Audioterm)
-    var t1 = document.createTextNode(GroupArray[vart].AudioList[varj].Audioterm)
+    var varterms= (GroupArray[vart].AudioList[varj].Audioterm);
+    
+    if(varterms.length>=130)
+   {   
+       var t1 = document.createTextNode(varterms.substring(1,45) + "...")
+       
+       li.setAttribute("data-toggle","tooltip");
+       li.setAttribute("title",varterms)}
+    else
+    {
+        var t1 = document.createTextNode(varterms)
+        li.setAttribute("data-toggle","tooltip");
+        li.setAttribute("title","English Term only");
+    }
         // li.text = GroupArray[t].AudioList[j].Audioterm
     a.appendChild(t1)
     li.appendChild(a)
@@ -408,6 +420,7 @@ function EnglishSpanshword(selectList1, varj, vart) {
    
     li1.setAttribute('class', 'list-group-item list-group-item btn-warning')
     li1.value = varj
+    
     var t1 = document.createTextNode(GroupArray[vart].AudioList[varj].Audioterm)
     var t2 = document.createTextNode(GroupArray[vart].AudioList[varj].SpaneshTerm)
     var t3 = document.createTextNode(", ")
