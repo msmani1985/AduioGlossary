@@ -1,3 +1,4 @@
+var toggES="En";
 var max = 60
 var min = 14
 var data
@@ -596,6 +597,7 @@ function ToViewEnglishTerm() {
     // document.getElementById("b3").value="English Term"
     // document.getElementById("b3").style="	background-color: #7D81D1;"
     //if (document.getElementById('b4').value == 'English Terms') 
+    toggES="En";
     var groupName = "";
     for (vark = 0; vark < document.getElementById("myLi").childNodes.length; vark++) {
 
@@ -775,6 +777,7 @@ termsdetsear="";
 
 
 function ToViewSpanTerm() {
+    toggES="SP";
 
     {
         var groupName = "";
@@ -2048,7 +2051,11 @@ function onSelectDef(tar, vartlist) {
 
                 var DC = document.getElementById("definitionContent");
                 DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning;
-                audio_tag("media/"+GroupArray[t].AudioList[j].AudioUrl,"Audio1","play1")
+              
+                if(toggES=="En")
+                {
+                    audio_tag("media/"+GroupArray[t].AudioList[j].AudioUrl,"Audio1","play1")
+                }
                 if (GroupArray[t].AudioList[j].SpaneshTerm == "") {
                     //ToViewSpanTerm();
 
@@ -2087,7 +2094,9 @@ function onSelectDef(tar, vartlist) {
                     TC.innerHTML = '' + GroupArray[t].AudioList[j].SpaneshTerm;
                     if(GroupArray[t].AudioList[j].SpanURL!=undefined || GroupArray[t].AudioList[j].SpanURL!="")
                     {
+                       
                      audio_tag("media/span/media/"+GroupArray[t].AudioList[j].SpanURL,"spanAudio1","spanplay1")
+                      
                      }
                      else
                      {
@@ -2108,6 +2117,7 @@ function onSelectDef(tar, vartlist) {
                
             } else if (GroupArray[t].AudioList[j].SpaneshTerm == selectedterm) //Spanes Definition Display Frame
             {
+                 
                 // SpanURL
                 //document.getElementById('b3').value = 'English Terms'
                 //document.getElementById('b3').style = '	background-color: #7D81D1;'
@@ -2126,7 +2136,11 @@ function onSelectDef(tar, vartlist) {
                 TC.style.display = "block";
                 TC.innerHTML = '<span class="Senplayplay" ></span> ' + GroupArray[t].AudioList[j].Audioterm;
                
-
+                    if(toggES=="SP")
+                        {
+                     audio_tag("media/span/media/"+GroupArray[t].AudioList[j].SpanURL,"Audio1","play1")
+                        }
+                        
 
 
 
