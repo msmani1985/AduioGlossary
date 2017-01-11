@@ -788,8 +788,12 @@ termsdetsear="";
 
 
     }
-    document.getElementById('previous').disabled = true
-                    document.getElementById('next').disabled = true
+    
+    //document.getElementById('previous').disabled = true
+      //              document.getElementById('next').disabled = true
+       onSelectDef(document.getElementById('termChoose1').childNodes[0].childNodes[0])
+       count=0
+       document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
      try {
         var termdsdetsear1 = JSON.parse('[' + removeLastComma(termsdetsear) + ']')
         console.log(termdsdetsear1)
@@ -987,8 +991,9 @@ termsdetsear="";
 
 
     }
-     document.getElementById('previous').disabled = true
-                    document.getElementById('next').disabled = true
+       onSelectDef(document.getElementById('termChoose1').childNodes[0].childNodes[0])
+       count=0;
+       document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
      try {
         var termdsdetsear1 = JSON.parse('[' + removeLastComma(termsdetsear) + ']')
         console.log(termdsdetsear1)
@@ -2121,7 +2126,7 @@ function onSelectDef(tar, vartlist) {
                         //document.getElementById("ESToggle3").style.visibility = "hidden";
                     document.getElementById("b3").disabled = false;
                     document.getElementById("b4").disabled = false;
-                    document.getElementById('b4').className = document.getElementById('b4').className.replace("btn-default", "btn-info");
+                    document.getElementById('b4').className = document.getElementById('b4').className.replace("btn-info", "btn-default");
                     document.getElementById('b3').className = document.getElementById('b3').className.replace("btn-info", "btn-default");
                     var TC = document.getElementById("SpanTerms_1");
                     TC.style.display = "block";
