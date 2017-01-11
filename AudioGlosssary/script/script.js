@@ -358,7 +358,8 @@ function createUI1(e) {
     /********************************************************************************************************** */
     $('#bl').attr('disabled', true)
     $('#b2').attr('disabled', true)
-        //document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
+    
+    document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
 }
 
 function Englishwordonly(selectList1, varj, vart) {
@@ -455,7 +456,6 @@ function EnglishSpanshword(selectList1, varj, vart) {
 }
 
 function onPrevious() {
-
     if (count == 0) {
         document.getElementById('previous').disabled = true
         document.getElementById('next').disabled = false
@@ -469,20 +469,25 @@ function onPrevious() {
         }
         catch(e)
         {}
-        document.getElementById('number_term').innerHTML = count + '/' + document.getElementById('termChoose1').childNodes.length
+        
         count = count - 1
         if (count == 0) {
             document.getElementById('previous').disabled = true
             document.getElementById('next').disabled = false
+        }
+        else
+        {
+            document.getElementById('number_term').innerHTML = count + '/' + document.getElementById('termChoose1').childNodes.length;
         }
     }
 }
 
 function onNext() {
     // console.log(document.getElementById("termChoose").length + " " + count)
-    count = count + 1
+    
 
     if (count < document.getElementById('termChoose1').childNodes.length) {
+        count = count + 1
         document.getElementById('previous').disabled = false
         document.getElementById('next').disabled = false
         onSelectDef(document.getElementById('termChoose1').childNodes[count].childNodes[0])
@@ -1852,10 +1857,11 @@ function onSelection3(obj) {
 
         //document.getElementById('b1').disabled = true
        // document.getElementById('b2').disabled = true
-      }
+      }*/
+      
       count=0;
       document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
-      */
+      
 }
 
 function GroupRefVO() {
@@ -2022,7 +2028,8 @@ function onSelectDef(tar, vartlist) {
                     document.getElementById('next').disabled = true
                 }
                 // alert(count);
-                document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
+              //  count=0;
+               // document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
                     // onSelectDef(x1[x].childNodes[0]);
                 break
             }
@@ -2394,7 +2401,7 @@ $("#chapterList").keydown(function(e){
   if(e.keyCode == 37) { // left
  $(".js-typeahead-input").focus(); 
    document.getElementById("chapterList").selectedIndex=document.getElementById("chapterList").selectedIndex+1;
-   onPrevious();
+  onPrevious();
   }
   else if(e.keyCode == 39) { // right
    $(".js-typeahead-input").focus();  
