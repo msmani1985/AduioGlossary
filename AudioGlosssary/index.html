@@ -102,7 +102,7 @@
                                         <div class="typeahead__container">
                                             <div class="typeahead__field">
                                                 <span class="typeahead__query">
-                            <input data-toggle="tooltip" title="Type your term here for search(F6)" class="js-typeahead-input"
+                            <input data-toggle="tooltip" title="Type your term here for search(F9)" class="js-typeahead-input"
                                   
                                    type="search"
                                    placeholder="Search the Term"
@@ -227,9 +227,23 @@
         <div class="panel-footer">
             Copyright &copy; 2017 Wolters Kluwer Health | Lippincott Williams &amp; Wilkins
         </div>
+
     </div>
     </div>
     </div>
+    <div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header btn-warning">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" style="font-color:white"><strong>Error</strong></h4>
+            </div>
+             <div class="alert alert-danger">
+    <strong>Error!</strong> Search term not found!
+  </div>
+        </div>
+    </div>
+</div>
     </div>
     <!-- jQuery -->
     <script src="script/lib.js"></script>

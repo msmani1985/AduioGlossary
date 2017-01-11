@@ -257,7 +257,7 @@ function alpha_list(e) {
             MYLIST.appendChild(lix)
         }
 
-//alert(varfound[i]);
+
 
     }
 }
@@ -517,8 +517,7 @@ function search() {
         backdrop: {
             'background-color': '#fff'
         },
-        // href: "alpha1.html",
-        // dropdownFilter: "all beers",
+       
         emptyTemplate: 'No result for "{{query}}"',
         source: {
             Terms: {
@@ -528,7 +527,7 @@ function search() {
         callback: {
             onClickAfter: function(node, a, item, event) {
                 
-                // href key gets added inside item from options.href configuration
+               
                 var varleft="";
                 var x1 = document.getElementById('termChoose1').childNodes;
                 for (var x = 0; x < x1.length; x++) {
@@ -568,12 +567,10 @@ function search() {
 
             onSubmit: function(node, form, item, event) {
                 event.preventDefault()
-                var itemdisplay=($(".js-typeahead-input").val())
-               
+                var itemdisplay=($(".js-typeahead-input").val())             
                 var varleft="";
                 var x1 = document.getElementById('termChoose1').childNodes;
                 for (var x = 0; x < x1.length; x++) {
-
                     if(x1[x].childNodes[0].text.replace(/\n/g,"").indexOf(" , ")>-1)
                        {
                            varleft=x1[x].childNodes[0].text.replace(/\n/g,"").split(",")[0];
@@ -582,13 +579,11 @@ function search() {
                        {
                            varleft=x1[x].childNodes[0].text.replace(/\n/g,"");
                        }
-
-                       
+                   
                     if (varleft.trim() == itemdisplay.replace(/\n/g,"").trim()) {
-                        //x1.selectedIndex = x
-                            
+                       
                         count = x;
-alert(count);
+
                         if (x == 0) {
                             document.getElementById('previous').disabled = true
                             document.getElementById('next').disabled = false
@@ -606,6 +601,12 @@ alert(count);
                         onSelectDef(x1[x].childNodes[0]);
                         break
                     }
+                    else
+                {
+                    
+		                $("#myModal").modal('show');
+	                   
+                }
                 }
             }
         },
@@ -2470,9 +2471,7 @@ audioElement.onended = function() {
     $("#spanitem_1").css("font-weight","normal");
      $("#termContent").css("font-weight","normal");
 };
-audioElement.onerror = function() {
-    alert("Error! Something went wrong");
-};
+
                     } catch (e) {
                         document.getElementById("loadder").style.display = "none";
                     }
