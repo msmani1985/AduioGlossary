@@ -52,6 +52,8 @@ function DtataProvider1(url, fuc) {
                 qVo.Audiomeaning = $(this).find("def").text();
                 qVo.AudioSentence = $(this).find("sen").text();
                 qVo.SpaneshTerm = $(this).find("spanishterm").text();
+                qVo.SpaneshDef = $(this).find("spanishdef").text();
+                
                 //alert($(this).find("spanishterm").text());
 
                 qVo.chapterattr = $(this).attr("chapter");
@@ -111,6 +113,7 @@ function DtataProvider1(url, fuc) {
         var defAudioUrl;
         var senAudioUrl;
         var SpanURL;
+        var SpaneshDef;
     }
 
 }

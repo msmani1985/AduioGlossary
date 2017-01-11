@@ -1908,7 +1908,7 @@ function onSelectDef_1(tar, vartlist) {
 }
 
 function onSelectDef(tar, vartlist) {
-
+ 
     //	document.getElementById("loadder").style.display = "block";
 
     if (window.matchMedia("(min-width: 768px)").matches) {
@@ -2057,7 +2057,7 @@ function onSelectDef(tar, vartlist) {
     
     else
     {
-    
+   
     
      {
         //alert(document.getElementById("thead").innerHTML)
@@ -2101,7 +2101,7 @@ function onSelectDef(tar, vartlist) {
                 }
                 if (GroupArray[t].AudioList[j].SpaneshTerm == "") {
                     //ToViewSpanTerm();
-
+ 
                     document.getElementById("ESToggle").style.visibility = "visible";
                     //	document.getElementById("ESToggle3").style.visibility = "visible";
 
@@ -2130,8 +2130,23 @@ function onSelectDef(tar, vartlist) {
                     document.getElementById('b3').className = document.getElementById('b3').className.replace("btn-info", "btn-default");
                     var TC = document.getElementById("SpanTerms_1");
                     TC.style.display = "block";
+                   if (GroupArray[t].AudioList[j].SpaneshDef == undefined || GroupArray[t].AudioList[j].SpaneshDef == '') 
+                {
+             
                     var TC = document.getElementById("Span_Definition");
                     TC.style.display = "none";
+                }
+                else
+                {
+                var DC = document.getElementById("spandefinitionContent");
+                DC.innerHTML = GroupArray[t].AudioList[j].SpaneshDef;
+                var TC = document.getElementById("Span_Definition");
+                    TC.style.display = "block";
+                }
+               
+               
+                    
+               
                     var TC = document.getElementById("spanitem_1");
                     TC.style.color = "blue";
                     TC.innerHTML = '' + GroupArray[t].AudioList[j].SpaneshTerm;
@@ -2160,7 +2175,7 @@ function onSelectDef(tar, vartlist) {
                
             } else if (GroupArray[t].AudioList[j].SpaneshTerm == selectedterm) //Spanes Definition Display Frame
             {
-                 
+                
                 // SpanURL
                 //document.getElementById('b3').value = 'English Terms'
                 //document.getElementById('b3').style = '	background-color: #7D81D1;'
@@ -2168,8 +2183,18 @@ function onSelectDef(tar, vartlist) {
                 document.getElementById('b3').style.display = 'block'
                 var TC = document.getElementById("termContent");
                 TC.innerHTML = GroupArray[t].AudioList[j].SpaneshTerm;
+                if(GroupArray[t].AudioList[j].SpaneshDef!=undefined && GroupArray[t].AudioList[j].SpaneshDef!="")
+                {
                 var DC = document.getElementById("definitionContent");
-                DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning;
+                DC.innerHTML = GroupArray[t].AudioList[j].SpaneshDef;
+                var TC = document.getElementById("Span_Definition");
+                    TC.style.display = "block";
+                }
+                else
+                {
+                    var TC = document.getElementById("Span_Definition");
+                    TC.style.display = "none";
+                }
                 //var tcontext = document.getElementById("TermContext");
                 //tcontext.innerHTML = GroupArray[t].AudioList[j].SpaneshTerm;
                 //span term Audio 
@@ -2340,11 +2365,14 @@ function flipInto() // conditional flip
 function decreaseFontSizeInternal() {
     var list = []
     list.push(document.getElementById('thead'))
+    list.push(document.getElementById('sthead'))
     list.push(document.getElementById('termContent'))
     list.push(document.getElementById('dhead'))
+      list.push(document.getElementById('sdhead'))
     list.push(document.getElementById('definitionContent'))
     list.push(document.getElementById('termContentPro'))
     list.push(document.getElementById('spanitem_1'))
+     list.push(document.getElementById('spandefinitionContent'))
     for (i = 0; i < list.length; i++) {
         var s = 24
         if (list[i].style.fontSize) {
@@ -2354,18 +2382,34 @@ function decreaseFontSizeInternal() {
         if (s >= min) {
             s -= 1
         }
+        else
+        {
+            try{
+            document.getElementById("spanplay1").style.marginTop="0px";
+            document.getElementById("spanplay1").style.marginLeft="-18px";
+            }
+            catch(e)
+            {
+
+            }
+        }
         list[i].style.fontSize = s + 'px'
+         
     }
 }
 
 function increaseFontSizeInternal() {
     var list = []
     list.push(document.getElementById('thead'))
-    list.push(document.getElementById('termContent'))
     list.push(document.getElementById('dhead'))
+    list.push(document.getElementById('sthead'))
+    list.push(document.getElementById('sdhead'))
+    list.push(document.getElementById('termContent'))
+    
     list.push(document.getElementById('definitionContent'))
     list.push(document.getElementById('termContentPro'))
     list.push(document.getElementById('spanitem_1'))
+    list.push(document.getElementById('spandefinitionContent'))
         //termContentPro
         //SpanTerms_1
         // console.log(list)
@@ -2380,6 +2424,12 @@ function increaseFontSizeInternal() {
             s += 1
         }
         list[i].style.fontSize = s + 'px'
+        try
+
+        {document.getElementById("spanplay1").style.marginTop="-100px";
+        document.getElementById("spanplay1").style.marginLeft="100px";}
+        catch(e)
+        {}
     }
 }
 
@@ -2419,15 +2469,19 @@ $("#chapterList").keydown(function(e){
 $("body").keydown(function(e) {
     
   if(e.keyCode == 37) { // left
+      e.preventDefault
    onPrevious();
   }
   else if(e.keyCode == 39) { // right
+      e.preventDefault
   onNext();
   }
   if(e.keyCode == 118) { // left
+      e.preventDefault
     decreaseFontSizeInternal();
   }
   else if(e.keyCode == 119) { // right
+      e.preventDefault
   increaseFontSizeInternal();
   }
  if(e.keyCode == 120) { // right
