@@ -74,8 +74,8 @@ function onSidenav() {
 function bodyloaded1() {
     document.addEventListener('dataLoaded', createUI)
     document.addEventListener('dataLoaded', createUI1)
-    modelObj = new DtataProvider('xml/chapter.xml', createUI)
-    modelObj1 = new DtataProvider1('xml/terms.xml', createUI1)
+    modelObj = new DtataProvider('Assets/xml/chapter.xml', createUI)
+    modelObj1 = new DtataProvider1('Assets/xml/terms.xml', createUI1)
     psbi = null
     document.getElementById('previous').disabled = true
     document.getElementById('next').disabled = false
@@ -424,13 +424,14 @@ function onPrevious() {
         catch (e)
         { }
 
-        count = count - 1
+        
         if (count == 0) {
             document.getElementById('previous').disabled = true
             document.getElementById('next').disabled = false
         }
         else {
             document.getElementById('number_term').innerHTML = count + '/' + document.getElementById('termChoose1').childNodes.length;
+            count = count - 1
         }
     }
 }
@@ -526,6 +527,7 @@ function search() {
                 var itemdisplay = ($(".js-typeahead-input").val())
                 var varleft = "";
                 var x1 = document.getElementById('termChoose1').childNodes;
+                var varfoundterm=false;
                 for (var x = 0; x < x1.length; x++) {
                     if (x1[x].childNodes[0].text.replace(/\n/g, "").indexOf(" , ") > -1) {
                         varleft = x1[x].childNodes[0].text.replace(/\n/g, "").split(",")[0];
@@ -533,7 +535,7 @@ function search() {
                     else {
                         varleft = x1[x].childNodes[0].text.replace(/\n/g, "");
                     }
-
+//alert(varleft.trim() == itemdisplay.replace(/\n/g, "").trim());
                     if (varleft.trim() == itemdisplay.replace(/\n/g, "").trim()) {
 
                         count = x;
@@ -553,13 +555,18 @@ function search() {
 
                         document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
                         onSelectDef(x1[x].childNodes[0]);
+                        varfoundterm=true;
                         break
                     }
                     else {
-
-                        $("#myModal").modal('show');
+                         varfoundterm=false;   
+                       // $("#myModal").modal('show');
 
                     }
+                }
+                if(varfoundterm==false)
+                {
+                            $("#myModal").modal('show');
                 }
             }
         },
@@ -1404,7 +1411,7 @@ function onSelectDef_1(tar, vartlist)
     //}
 
     //}
-
+ document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
 
 }
 
