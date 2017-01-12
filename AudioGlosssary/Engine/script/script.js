@@ -115,7 +115,7 @@ function alpha_list(e) {
 
     var lix = document.createElement('li')
     
-    lix.innerHTML = '<input data-toggle="tooltip" title="All alphabet wise term list" type="button" class="btns1 btn-warning" style=" width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="All" value="All">'
+    lix.innerHTML = '<input type="button" class="btns1 btn-warning" style=" width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="All" value="All">'
     
     MYLIST.appendChild(lix)
 
@@ -211,12 +211,12 @@ function alpha_list(e) {
         if (varfound[i].indexOf("-") > 0) {
             var lix = document.createElement('li')
         
-            lix.innerHTML = '<input data-toggle="tooltip" title="' + varfound[i] + ' term list" type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 3px;    padding-right: 1em" onclick="onSelection3(this)" id="' + varfound[i] + 'index" value="' + varfound[i] + '">'
+            lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 3px;    padding-right: 1em" onclick="onSelection3(this)" id="' + varfound[i] + 'index" value="' + varfound[i] + '">'
             MYLIST.appendChild(lix)
         } else {
             var lix = document.createElement('li')
         
-            lix.innerHTML = '<input  data-toggle="tooltip" title="' + varfound[i] + ' term list" type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="' + varfound[i] + 'index" value="' + varfound[i] + '">'
+            lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="' + varfound[i] + 'index" value="' + varfound[i] + '">'
             MYLIST.appendChild(lix)
         }
 
@@ -346,8 +346,8 @@ function Englishwordonly(selectList1, varj, vart) {
     else {
         var t1 = document.createTextNode(varterms)
         a.setAttribute("data-terms", varterms);
-        li.setAttribute("data-toggle", "tooltip");
-        li.setAttribute("title", "English Term only");
+        //li.setAttribute("data-toggle", "tooltip");
+       // li.setAttribute("title", "English Term only");
     }
     
     a.appendChild(t1)
@@ -373,8 +373,8 @@ function EnglishSpanshword(selectList1, varj, vart) {
     document.getElementById('b4').className = document.getElementById('b4').className.replace("btn-info", "btn-default");
     document.getElementById('b3').className = document.getElementById('b3').className.replace("btn-info", "btn-default");
     var li1 = document.createElement('li')
-    li1.setAttribute("data-toggle", "tooltip");
-    li1.setAttribute("title", "English and Spanish Terms");
+    //li1.setAttribute("data-toggle", "tooltip");
+    //li1.setAttribute("title", "English and Spanish Terms");
     var a = document.createElement('a')
     a.setAttribute('onclick', 'onSelectDef_1(this,true,true)')
     a.setAttribute("style", "        font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
@@ -387,12 +387,12 @@ function EnglishSpanshword(selectList1, varj, vart) {
     var t3 = document.createTextNode(", ")
     var s1 = document.createElement('span')
     s1.setAttribute("style", "color:black");
-    s1.setAttribute("data-toggle", "tooltip");
-    s1.setAttribute("title", "English Term");
+    //s1.setAttribute("data-toggle", "tooltip");
+    //s1.setAttribute("title", "English Term");
     var s2 = document.createElement('span')
     s2.setAttribute("style", "color:blue");
-    s2.setAttribute("data-toggle", "tooltip");
-    s2.setAttribute("title", "Spanish Term");
+    //s2.setAttribute("data-toggle", "tooltip");
+    //s2.setAttribute("title", "Spanish Term");
     var s3 = document.createElement('span')
     s3.setAttribute("style", "color:black");
 
