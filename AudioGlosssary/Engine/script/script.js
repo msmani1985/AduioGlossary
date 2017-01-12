@@ -1982,6 +1982,8 @@ $("#chapterList").keydown(function (e) {
 
 $("body").keydown(function (e) {
 
+if(e.ctrlKey)
+{
     if (e.keyCode == 37) { // left
         e.preventDefault
         onPrevious();
@@ -1998,9 +2000,23 @@ $("body").keydown(function (e) {
         e.preventDefault
         increaseFontSizeInternal();
     }
+     
+    
     if (e.keyCode == 120) { // right
         $(".js-typeahead-input").focus();
     }
+}
+if(e.altKey)
+
+{ if (e.keyCode == 116) { // left
+        e.preventDefault
+        ToViewEnglishTerm();
+    }
+    if (e.keyCode == 117) { // left
+        e.preventDefault
+        ToViewSpanTerm();
+    }
+}
 });
 
 function audio_tag(audiofile, audioid, varplayid) 

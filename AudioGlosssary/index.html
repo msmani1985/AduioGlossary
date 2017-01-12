@@ -102,8 +102,8 @@
                                         <div class="typeahead__container">
                                             <div class="typeahead__field">
                                                 <span class="typeahead__query">
-                            <input data-toggle="tooltip" title="Type your term here for search(F9)" class="js-typeahead-input"
-                                  
+                            <input data-toggle="tooltip" title="Type your term here for search(Ctrl+F9)" class="js-typeahead-input"
+                                   id="search1"
                                    type="search"
                                    placeholder="Search the Term"
                                    autofocus
@@ -153,12 +153,12 @@
                                     <div id="ESToggle2" class="pull-left" style="visibility:visible">
                                        <!-- <input class="btns" type="button" value="English Terms" id="b4" class="active" onclick="ToViewEnglishTerm()" title="SpaneshTerm"
                                         />-->
-                                        <button id="b4" data-toggle="tooltip" title="Switch to English Term" type="button" class="btn btn-default" value="Englih Terms" onclick="ToViewEnglishTerm()">English Terms</button>
+                                        <button id="b4" data-toggle="tooltip" title="Switch to English Term(Atl+F6)" type="button" class="btn btn-default" value="Englih Terms" onclick="ToViewEnglishTerm()">English Terms</button>
                                     </div>
                                     <div id="ESToggle1" class="pull-left" style="visibility:visible">
                                       <!-- <input class="btns" type="button" value="Spanish Terms" id="b3" class="active" onclick="ToViewSpanTerm()" title="EnglishTerm"
                                         />-->
-                                        <button id="b3" type="button" data-toggle="tooltip" title="Swtich to Spanish Term" class="btn btn-default" value="Spanish Terms" onclick="ToViewSpanTerm()">Spanish Terms</button>
+                                        <button id="b3" type="button" data-toggle="tooltip" title="Swtich to Spanish Term(Atl+F5)" class="btn btn-default" value="Spanish Terms" onclick="ToViewSpanTerm()">Spanish Terms</button>
                                     </div>
                                     <!--<div id="ESToggle3" class="pull-left" style="visibility:hidden">
                                         <span id="Info_terms" class="label label-warning">Only English Terms Available. No Spanish Terms </span>
@@ -172,20 +172,20 @@
                         <div>
                             <div class="pull-right">
                                 <div class="pull-left">
-                                    <button type="button" data-toggle="tooltip" title="Increase Font Size(F8)" class="btn btn-default" onclick="increaseFontSizeInternal()">A+</button>
+                                    <button type="button" data-toggle="tooltip" title="Increase Font Size(Ctrl+F8)" class="btn btn-default" onclick="increaseFontSizeInternal()">A+</button>
 </div>
 
 <div class="pull-right">
-    <button type="button" data-toggle="tooltip" title="Decrease Font Size(F7)" class="btn btn-default" onclick="decreaseFontSizeInternal()">A-</button>
+    <button type="button" data-toggle="tooltip" title="Decrease Font Size(Ctrl+F7)" class="btn btn-default" onclick="decreaseFontSizeInternal()">A-</button>
 </div>
 </div>
 </div>
 <div class="termbox  panel panel-default">
     <div>
-        <button id="previous" data-toggle="tooltip" title="Previous Term(Left Arrow Key &#x2190;)" type="button" class="btn btn-default btn-sm pull-left" onclick="onPrevious()">
+        <button id="previous" data-toggle="tooltip" title="Previous Term(Ctrl+Left Arrow Key Ctrl+&#x2190;)" type="button" class="btn btn-default btn-sm pull-left" onclick="onPrevious()">
 <span class="glyphicon glyphicon-chevron-left"></span> Previous
                                     </button>
-                                    <button id="next" data-toggle="tooltip" title="Next Term(Right Arrow Key &#x2192;)" type="button" class="btn btn-default btn-sm pull-right" onclick="onNext()">
+                                    <button id="next" data-toggle="tooltip" title="Next Term(Ctrl+Right Arrow Key Ctrl+&#x2192;)" type="button" class="btn btn-default btn-sm pull-right" onclick="onNext()">
 <span class="glyphicon glyphicon-chevron-right pull-right"></span> Next
 </button>
                                 </div>
@@ -262,10 +262,14 @@
                 $("#LP").css("display", "none");
                 bodyloaded1();
                 $("#AG").css("display", "block");
+                $("#search1").focusin(function() {
+        
+                    $("#search1").tooltip('hide');  
+                });
 
             });
        $('[data-toggle="tooltip"]').tooltip();       
-
+      
         })
 
        
