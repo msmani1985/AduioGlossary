@@ -1421,6 +1421,11 @@ function onSelectDef_1(tar, vartlist)
 
 function onSelectDef(tar, vartlist)
  {
+     for(var vark=0;vark<document.getElementById('termChoose1').childNodes.length;vark++)
+     {
+         document.getElementById('termChoose1').childNodes[vark].childNodes[0].className=document.getElementById('termChoose1').childNodes[vark].childNodes[0].className.replace(" " + "btn-warning","");
+     }
+     tar.className=tar.className + " " + "btn-warning";
 
     //	document.getElementById("loadder").style.display = "block";
 
