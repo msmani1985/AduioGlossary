@@ -411,6 +411,10 @@ function EnglishSpanshword(selectList1, varj, vart) {
 }
 // Previous button functionality 
 function onPrevious() {
+    if(count>=document.getElementById('termChoose1').childNodes.length)
+        {
+            count=count-1;
+        }
     if (count == 0) {
         document.getElementById('previous').disabled = true
         document.getElementById('next').disabled = false
@@ -423,7 +427,7 @@ function onPrevious() {
         }
         catch (e)
         { }
-
+        
         
         if (count == 0) {
             document.getElementById('previous').disabled = true
