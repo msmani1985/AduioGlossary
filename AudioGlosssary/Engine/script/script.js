@@ -2022,15 +2022,7 @@ if(e.ctrlKey)
         e.preventDefault
         onNext();
     }
-    if (e.keyCode == 118) { // left
-        e.preventDefault
-        decreaseFontSizeInternal();
-    }
-    else if (e.keyCode == 119) { // right
-        e.preventDefault
-        increaseFontSizeInternal();
-    }
-     
+      
     
     if (e.keyCode == 120) { // right
         $(".js-typeahead-input").focus();
@@ -2038,13 +2030,23 @@ if(e.ctrlKey)
 }
 if(e.altKey)
 
-{ if (e.keyCode == 116) { // left
+{
+    console.log(e.keyCode);
+     if (e.keyCode == 116) { // left
         e.preventDefault
         ToViewEnglishTerm();
     }
     if (e.keyCode == 117) { // left
         e.preventDefault
         ToViewSpanTerm();
+    }
+    if (e.keyCode == 173) { // left
+        e.preventDefault
+        decreaseFontSizeInternal();
+    }
+    else if (e.keyCode == 61) { // right
+        e.preventDefault
+        increaseFontSizeInternal();
     }
 }
 });
