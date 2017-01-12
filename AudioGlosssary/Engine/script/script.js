@@ -327,8 +327,9 @@ function Englishwordonly(selectList1, varj, vart) {
     var li = document.createElement('li')
 
     var a = document.createElement('a')
-    li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-    a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+    li.setAttribute('class', 'items list-group-item list-group-itemn-action btn-warning')
+
+    a.setAttribute('onclick', 'onSelectDef_1(this,true,true)')
     
     a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
 
@@ -357,6 +358,8 @@ function Englishwordonly(selectList1, varj, vart) {
 
 
 }
+
+
 // English and spanish terms listed
 function EnglishSpanshword(selectList1, varj, vart) {
 
@@ -373,7 +376,7 @@ function EnglishSpanshword(selectList1, varj, vart) {
     li1.setAttribute("data-toggle", "tooltip");
     li1.setAttribute("title", "English and Spanish Terms");
     var a = document.createElement('a')
-    a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+    a.setAttribute('onclick', 'onSelectDef_1(this,true,true)')
     a.setAttribute("style", "        font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
 
     li1.setAttribute('class', 'list-group-item list-group-item btn-warning')
@@ -722,7 +725,7 @@ function ToViewEnglishTerm() {
         var li = document.createElement('li')
         var a = document.createElement('a')
         li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-        a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+        a.setAttribute('onclick', 'onSelectDef_1(this,true,true)')
         a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
         li.value = varj
         var t1 = document.createTextNode(spanish_list[varj])
@@ -919,7 +922,7 @@ function ToViewSpanTerm() {
         var li = document.createElement('li')
         var a = document.createElement('a')
         li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-        a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+        a.setAttribute('onclick', 'onSelectDef_1(this,true,true)')
         a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
         li.value = varj
         var t1 = document.createTextNode(spanish_list[varj])
@@ -1080,7 +1083,7 @@ function onSelection2() {
                 var li = document.createElement('li')
                 var a = document.createElement('a')
                 li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-                a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+                a.setAttribute('onclick', 'onSelectDef_1(this,true,true)')
                 a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
                 li.value = -1
                 var t1 = document.createTextNode('No Term.......!')
@@ -1093,7 +1096,7 @@ function onSelection2() {
                 var li = document.createElement('li')
                 var a = document.createElement('a')
                 li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-                a.setAttribute('onclick', 'onSelectDef_1(this,true)')
+                a.setAttribute('onclick', 'onSelectDef_1(this,true,true)')
                 a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
                 li.value = -1
                 var t1 = document.createTextNode('No Term.......!')
@@ -1403,14 +1406,14 @@ function queistionVO() {
 //    Impelesys India Privat Limited 
 //    Date : 08-Dec-2016
 /******************************************************************************************************************* */
-function onSelectDef_1(tar, vartlist) 
+function onSelectDef_1(tar, vartlist,varclick) 
 {
     tar.className = tar.className + ' active'
     //var x1 = document.getElementById('termChoose')
     //for (var x = 0;x < x1.length;x++) {
     //if (x1[x].value == tar.innerHTML) {
     //x1.selectedIndex = x
-    onSelectDef(tar, vartlist)
+    onSelectDef(tar, vartlist,varclick)
     //break
     //}
 
@@ -1419,14 +1422,36 @@ function onSelectDef_1(tar, vartlist)
 
 }
 
-function onSelectDef(tar, vartlist)
+function onSelectDef(tar, vartlist,varclick)
  {
+    
+     if(varclick==undefined)
+     {
      for(var vark=0;vark<document.getElementById('termChoose1').childNodes.length;vark++)
      {
+         
          document.getElementById('termChoose1').childNodes[vark].childNodes[0].className=document.getElementById('termChoose1').childNodes[vark].childNodes[0].className.replace(" " + "btn-warning","");
      }
-     tar.className=tar.className + " " + "btn-warning";
+     //alert((tar.offsetTop))
 
+     if(tar.parentElement.parentElement.scrollTop>3000)
+     {
+      
+        //document.documentElement.scrollTop=document.documentElement.scrollHeight;
+        
+        
+        window.scrollTo(0, 250);
+        //document.documentElement.scrollTop=document.documentElement.scrollTop+200
+     }
+     else
+     {
+         window.scrollTo(0, 0);
+     }
+     
+      tar.parentElement.parentElement.scrollTop = (tar.parentElement.offsetTop);
+      console.log(tar.parentElement.parentElement.scrollTop)
+     tar.className=tar.className + " " + "btn-warning";
+}
     //	document.getElementById("loadder").style.display = "block";
 
     if (window.matchMedia("(min-width: 768px)").matches) {
