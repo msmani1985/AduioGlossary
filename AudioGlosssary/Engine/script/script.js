@@ -2098,7 +2098,7 @@ function audio_tag(audiofile, audioid, varplayid)
         var audioElement = document.createElement('audio');
         audioElement.setAttribute("id", "audiotag1")
         audioElement.setAttribute('src', (audiofile + ".mp3").replace(".mp3.mp3", ".mp3"));
-         alert((audiofile + ".mp3").replace(".mp3.mp3", ".mp3"));
+         //alert((audiofile + ".mp3").replace(".mp3.mp3", ".mp3"));
         var TOappnd = document.getElementById(audioid);
         TOappnd.innerHTML = "";
         var Abtn = document.createElement("button");
