@@ -133,25 +133,63 @@ function alpha_list(e) {
     
 
     if (currentChap == 'All Chapters') {
-
+/*
         var varprev = "";
         for (vari = 65; vari < 91; vari++) {
-            if ($(xml1).find("group[name='" + String.fromCharCode(vari) + "']").length == 0) { } else {
+            
+            if ($(xml1).find("group[name='" + String.fromCharCode(vari) + "']").length == 0) { 
+                
+            } else {
                 if (varprev != String.fromCharCode(vari)) {
                     varfound.push(String.fromCharCode(vari));
-                    varprev = "";
+                     varprev = vari + 1
                 } else { 
-                    varprev = ""
+                      varfound.push(String.fromCharCode(varprev) + "-" + String.fromCharCode(vari))
+    
+    
+                varprev = vari+ 1
+                //varprev = String.fromCharCode(vari);
+                   // varprev = ""
                 }
-
-                varprev = String.fromCharCode(vari);
+              
             }
         }
 
-        if (varprev != "") {
+        if (varprev != 91) {
 
-            varfound[varfound.length - 1] = (varprev + "-" + "Z");
+            varfound[varfound.length - 1] = varfound[varfound.length - 1].split("-")[0] + "-" + "Z";
+    
+        }*/
+         var vargname = [];
+        var varfound = [];
+        $(xml1).find("audio").each(function () {
+            if ($.inArray($(this).parent().attr("name").charCodeAt(0), vargname) < 0) {
+                vargname.push($(this).parent().attr("name").charCodeAt(0))
+            } else {
+        
+            }
+        })
+        vargname = vargname.sort();
+        varprev = 65;
+        
+        for (vari = 0; vari < vargname.length; vari++) {
+            
+            if (varprev == vargname[vari]) {
+                varfound.push(String.fromCharCode(vargname[vari]));
+    
+                varprev = vargname[vari] + 1
+            } else {
+                varfound.push(String.fromCharCode(varprev) + "-" + String.fromCharCode(vargname[vari]))
+    
+    
+                varprev = vargname[vari] + 1
+            }
 
+        }
+        if (varprev != 91) {
+
+            varfound[varfound.length - 1] = varfound[varfound.length - 1].split("-")[0] + "-" + "Z";
+    
         }
     } else {
 
