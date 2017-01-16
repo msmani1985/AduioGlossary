@@ -581,7 +581,7 @@ function search() {
                         varleft = x1[x].childNodes[0].text.replace(/\n/g, "");
                     }
 //alert(varleft.trim() == itemdisplay.replace(/\n/g, "").trim());
-                    if (varleft.trim() == itemdisplay.replace(/\n/g, "").trim()) {
+                    if (varleft.trim().toUpperCase() == itemdisplay.replace(/\n/g, "").trim().toUpperCase()) {
 
                         count = x;
 
