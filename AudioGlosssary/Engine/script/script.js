@@ -330,7 +330,7 @@ function createUI1(e) {
                 TC.innerHTML = FirstTerm
                 var DC = document.getElementById('definitionContent')
                 DC.innerHTML = FirstDefinition
-                audio_tag("media/" + GroupArray[t].AudioList[0].AudioUrl, "Audio1", "play1")
+                audio_tag("Assets/media/" + GroupArray[t].AudioList[0].AudioUrl, "Audio1", "play1")
                 $('#b1').css('background', '#9AC97B')
                 $('#b1').css('color', 'white')
             }
@@ -1675,7 +1675,7 @@ function onSelectDef(tar, vartlist,varclick)
                 DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning;
 
                 if (toggES == "En") {
-                    audio_tag("media/" + GroupArray[t].AudioList[j].AudioUrl, "Audio1", "play1")
+                    audio_tag("Assets/media/" + GroupArray[t].AudioList[j].AudioUrl, "Audio1", "play1")
                 }
                 if (GroupArray[t].AudioList[j].SpaneshTerm == "") {
                     //ToViewSpanTerm();
@@ -1728,7 +1728,7 @@ function onSelectDef(tar, vartlist,varclick)
                     TC.innerHTML = '' + GroupArray[t].AudioList[j].SpaneshTerm;
                     if (GroupArray[t].AudioList[j].SpanURL != undefined || GroupArray[t].AudioList[j].SpanURL != "") {
 
-                        audio_tag("media/span/media/" + GroupArray[t].AudioList[j].SpanURL, "spanAudio1", "spanplay1")
+                        audio_tag("Assets/media/span/media/" + GroupArray[t].AudioList[j].SpanURL, "spanAudio1", "spanplay1")
 
                     }
                     else {
@@ -1777,7 +1777,7 @@ function onSelectDef(tar, vartlist,varclick)
                 TC.innerHTML = '<span class="Senplayplay" ></span> ' + GroupArray[t].AudioList[j].Audioterm;
 
                 if (toggES == "SP") {
-                    audio_tag("media/span/media/" + GroupArray[t].AudioList[j].SpanURL, "Audio1", "play1")
+                    audio_tag("Assets/media/span/media/" + GroupArray[t].AudioList[j].SpanURL, "Audio1", "play1")
                 }
 
 
@@ -2091,11 +2091,14 @@ if(e.altKey)
 
 function audio_tag(audiofile, audioid, varplayid) 
 {
+    
     if (audiofile.indexOf("undefined") == -1) 
     {
+       
         var audioElement = document.createElement('audio');
         audioElement.setAttribute("id", "audiotag1")
         audioElement.setAttribute('src', (audiofile + ".mp3").replace(".mp3.mp3", ".mp3"));
+         alert((audiofile + ".mp3").replace(".mp3.mp3", ".mp3"));
         var TOappnd = document.getElementById(audioid);
         TOappnd.innerHTML = "";
         var Abtn = document.createElement("button");
