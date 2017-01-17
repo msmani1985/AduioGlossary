@@ -1578,9 +1578,9 @@ function onSelectDef(tar, vartlist,varclick)
     //var selectedterm = termList.options[termList.selectedIndex].value;
 
     if (tar.childNodes.length > 1) {
-        var selectedterm = tar.childNodes[0].innerHTML;
+        var selectedterm = tar.childNodes[0].text;
     } else {
-        var selectedterm = tar.innerHTML;
+        var selectedterm = tar.text;
     }
     if (selectedterm.indexOf("...") > -1) {
         if (tar.childNodes.length > 1) {
@@ -1591,11 +1591,14 @@ function onSelectDef(tar, vartlist,varclick)
     }
 
     //console.log(termList.childNodes.length);
-    if (vartlist == true) {
+   // if (vartlist == true)
+     {
         var x1 = document.getElementById('termChoose1').childNodes;
+       
         for (var x = 0; x < x1.length; x++) {
-            //alert(x1[x].childNodes[0].text.split(",")[0]   + " " + selectedterm)
+           
             if (x1[x].childNodes[0].text.split(",")[0] == selectedterm) {
+               
                 //x1.selectedIndex = x
                 count = x;
                 //alert(count);
