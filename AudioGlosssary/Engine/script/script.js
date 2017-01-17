@@ -354,6 +354,7 @@ function createUI1(e) {
     $('#b2').attr('disabled', true)
 
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
+    onSelectDef(document.getElementById('termChoose1').childNodes[0].childNodes[0])
 }
 // English only terms listed
 function Englishwordonly(selectList1, varj, vart) {
@@ -1207,6 +1208,9 @@ function onSelection2() {
 
     }
 
+     
+     onSelectDef(document.getElementById('termChoose1').childNodes[0].childNodes[0])
+
 }
 
 function display_left(vart, varchap1) 
@@ -1418,7 +1422,7 @@ function onSelection3(obj)
     }
     count = 0;
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
-
+        onSelectDef(document.getElementById('termChoose1').childNodes[0].childNodes[0])
 }
 /*
 function GroupRefVO() {
@@ -1470,6 +1474,7 @@ function onSelectDef(tar, vartlist,varclick)
          
          document.getElementById('termChoose1').childNodes[vark].childNodes[0].className=document.getElementById('termChoose1').childNodes[vark].childNodes[0].className.replace(" " + "btn-warning","");
      }
+
      //alert((tar.offsetTop))
 
      if(tar.parentElement.parentElement.scrollTop>3000)
@@ -1488,6 +1493,16 @@ function onSelectDef(tar, vartlist,varclick)
      
       tar.parentElement.parentElement.scrollTop = (tar.parentElement.offsetTop);
       console.log(tar.parentElement.parentElement.scrollTop)
+     tar.className=tar.className + " " + "btn-warning";
+}
+else
+{
+    //alert("asdfdsfsd");
+      for(var vark=0;vark<document.getElementById('termChoose1').childNodes.length;vark++)
+     {
+         
+         document.getElementById('termChoose1').childNodes[vark].childNodes[0].className=document.getElementById('termChoose1').childNodes[vark].childNodes[0].className.replace(" " + "btn-warning","");
+     }
      tar.className=tar.className + " " + "btn-warning";
 }
     //	document.getElementById("loadder").style.display = "block";
