@@ -330,7 +330,14 @@ function createUI1(e) {
                 TC.innerHTML = FirstTerm
                 var DC = document.getElementById('definitionContent')
                 DC.innerHTML = FirstDefinition
+                if(GroupArray[t].AudioList[0].AudioUrl=="")
+                {
+                    audio_tag("Assets/media/" + "undefined", "Audio1", "play1")
+                }
+                else
+                {
                 audio_tag("Assets/media/" + GroupArray[t].AudioList[0].AudioUrl, "Audio1", "play1")
+                }
                 $('#b1').css('background', '#9AC97B')
                 $('#b1').css('color', 'white')
             }
@@ -1693,7 +1700,10 @@ else
                 DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning;
 
                 if (toggES == "En") {
-                    audio_tag("Assets/media/" + GroupArray[t].AudioList[j].AudioUrl, "Audio1", "play1")
+                    if(GroupArray[t].AudioList[j].AudioUrl=="")
+                    {audio_tag("Assets/media/" + "undefined", "Audio1", "play1")}
+                    else
+                    {audio_tag("Assets/media/" + GroupArray[t].AudioList[j].AudioUrl, "Audio1", "play1")}
                 }
                 if (GroupArray[t].AudioList[j].SpaneshTerm == "") {
                     //ToViewSpanTerm();
@@ -1795,7 +1805,10 @@ else
                 TC.innerHTML = '<span class="Senplayplay" ></span> ' + GroupArray[t].AudioList[j].Audioterm;
 
                 if (toggES == "SP") {
-                    audio_tag("Assets/media/span/media/" + GroupArray[t].AudioList[j].SpanURL, "Audio1", "play1")
+                    if(GroupArray[t].AudioList[j].SpanURL=="")
+                    {audio_tag("Assets/media/span/media/" + "undefined", "Audio1", "play1")}
+                    else
+                    {audio_tag("Assets/media/span/media/" + GroupArray[t].AudioList[j].SpanURL, "Audio1", "play1")}
                 }
 
 
