@@ -115,7 +115,7 @@ function alpha_list(e) {
 
     var lix = document.createElement('li')
     
-    lix.innerHTML = '<input type="button" class="btns1 btn-warning" style=" width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="All" value="All">'
+    lix.innerHTML = '<input type="button" class="btns1 btn-warning" style=" width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelectAlphaMenu(this)" id="All" value="All">'
     
     MYLIST.appendChild(lix)
 
@@ -249,12 +249,12 @@ function alpha_list(e) {
         if (varfound[i].indexOf("-") > 0) {
             var lix = document.createElement('li')
         
-            lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 3px;    padding-right: 1em" onclick="onSelection3(this)" id="' + varfound[i] + 'index" value="' + varfound[i] + '">'
+            lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 3px;    padding-right: 1em" onclick="onSelectAlphaMenu(this)" id="' + varfound[i] + 'index" value="' + varfound[i] + '">'
             MYLIST.appendChild(lix)
         } else {
             var lix = document.createElement('li')
         
-            lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelection3(this)" id="' + varfound[i] + 'index" value="' + varfound[i] + '">'
+            lix.innerHTML = '<input type="button" class="btns1 btn-info" style="    width: 35px;    height: 25px;   font-size: 15px;    font-weight: bold;    display: inline-block;   position: relative;    z-index: 1;    padding-left: 6px;    padding-right: 1em;" onclick="onSelectAlphaMenu(this)" id="' + varfound[i] + 'index" value="' + varfound[i] + '">'
             MYLIST.appendChild(lix)
         }
 
@@ -361,7 +361,7 @@ function createUI1(e) {
     $('#b2').attr('disabled', true)
 
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
-    onSelectDef(document.getElementById('termChoose1').childNodes[0].childNodes[0])
+    onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
 }
 // English only terms listed
 function Englishwordonly(selectList1, varj, vart) {
@@ -375,7 +375,7 @@ function Englishwordonly(selectList1, varj, vart) {
     var a = document.createElement('a')
     li.setAttribute('class', 'items list-group-item list-group-itemn-action btn-warning')
 
-    a.setAttribute('onclick', 'onSelectDef_1(this,true,true)')
+    a.setAttribute('onclick', 'onClickTerm_1(this,true,true)')
     
     a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
 
@@ -422,7 +422,7 @@ function EnglishSpanshword(selectList1, varj, vart) {
     //li1.setAttribute("data-toggle", "tooltip");
     //li1.setAttribute("title", "English and Spanish Terms");
     var a = document.createElement('a')
-    a.setAttribute('onclick', 'onSelectDef_1(this,true,true)')
+    a.setAttribute('onclick', 'onClickTerm_1(this,true,true)')
     a.setAttribute("style", "        font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
 
     li1.setAttribute('class', 'list-group-item list-group-item btn-warning')
@@ -472,7 +472,7 @@ function onPrevious() {
         document.getElementById('previous').disabled = false
         document.getElementById('next').disabled = false
         try {
-            onSelectDef(document.getElementById('termChoose1').childNodes[count - 1].childNodes[0]);
+            onClickTerm(document.getElementById('termChoose1').childNodes[count - 1].childNodes[0]);
         }
         catch (e)
         { }
@@ -497,7 +497,7 @@ function onNext() {
         count = count + 1
         document.getElementById('previous').disabled = false
         document.getElementById('next').disabled = false
-        onSelectDef(document.getElementById('termChoose1').childNodes[count].childNodes[0])
+        onClickTerm(document.getElementById('termChoose1').childNodes[count].childNodes[0])
         document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
         if (count >= document.getElementById('termChoose1').childNodes.length - 1) {
 
@@ -568,7 +568,7 @@ function search() {
                         }
                         ($(".js-typeahead-input").val($(".js-typeahead-input").val().replace(/\n/g, "").trim()));
                         document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
-                        onSelectDef(x1[x].childNodes[0]);
+                        onClickTerm(x1[x].childNodes[0]);
                         break
                     }
                 }
@@ -607,7 +607,7 @@ function search() {
                         }
 
                         document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
-                        onSelectDef(x1[x].childNodes[0]);
+                        onClickTerm(x1[x].childNodes[0]);
                         varfoundterm=true;
                         break
                     }
@@ -771,7 +771,7 @@ function ToViewEnglishTerm() {
         var li = document.createElement('li')
         var a = document.createElement('a')
         li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-        a.setAttribute('onclick', 'onSelectDef_1(this,true,true)')
+        a.setAttribute('onclick', 'onClickTerm_1(this,true,true)')
         a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
         li.value = varj
         var t1 = document.createTextNode(spanish_list[varj])
@@ -789,7 +789,7 @@ function ToViewEnglishTerm() {
     }
 
   
-    onSelectDef(document.getElementById('termChoose1').childNodes[0].childNodes[0])
+    onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
     count = 0
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
     try {
@@ -968,7 +968,7 @@ function ToViewSpanTerm() {
         var li = document.createElement('li')
         var a = document.createElement('a')
         li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-        a.setAttribute('onclick', 'onSelectDef_1(this,true,true)')
+        a.setAttribute('onclick', 'onClickTerm_1(this,true,true)')
         a.setAttribute("style", "    color: blue;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
         li.value = varj
         var t1 = document.createTextNode(spanish_list[varj])
@@ -984,7 +984,7 @@ function ToViewSpanTerm() {
 
 
     }
-    onSelectDef(document.getElementById('termChoose1').childNodes[0].childNodes[0])
+    onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
     count = 0;
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
     try {
@@ -1004,7 +1004,7 @@ function ToViewSpanTerm() {
 //     chapter wise dropdown follwoing trigged the following        
 //      function
 /************************************************************* */
-function onSelection2() {
+function onSelectChapterList() {
 
     var bx = document.getElementById('box')
     if (bx == null) { } else {
@@ -1129,7 +1129,7 @@ function onSelection2() {
                 var li = document.createElement('li')
                 var a = document.createElement('a')
                 li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-                a.setAttribute('onclick', 'onSelectDef_1(this,true,true)')
+                a.setAttribute('onclick', 'onClickTerm_1(this,true,true)')
                 a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
                 li.value = -1
                 var t1 = document.createTextNode('No Term.......!')
@@ -1142,7 +1142,7 @@ function onSelection2() {
                 var li = document.createElement('li')
                 var a = document.createElement('a')
                 li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-                a.setAttribute('onclick', 'onSelectDef_1(this,true,true)')
+                a.setAttribute('onclick', 'onClickTerm_1(this,true,true)')
                 a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
                 li.value = -1
                 var t1 = document.createTextNode('No Term.......!')
@@ -1216,7 +1216,7 @@ function onSelection2() {
     }
 
      
-     onSelectDef(document.getElementById('termChoose1').childNodes[0].childNodes[0])
+     onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
 
 }
 
@@ -1302,7 +1302,7 @@ function display_left(vart, varchap1)
 //			Followig function trgged when you select the alphabet
 //
 /*********************************************************** */
-function onSelection3(obj) 
+function onSelectAlphaMenu(obj) 
 {
     var list = []
     list = document.getElementsByClassName('btns1')
@@ -1429,7 +1429,7 @@ function onSelection3(obj)
     }
     count = 0;
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
-        onSelectDef(document.getElementById('termChoose1').childNodes[0].childNodes[0])
+        onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
 }
 /*
 function GroupRefVO() {
@@ -1450,19 +1450,19 @@ function queistionVO() {
 /**************************************************************************************************************** */
 //    New Update for the select dropdown button layout varies from desktop browsers to mobile browser
 //    We have modifies ths to select element to list tag.
-//    onSelectDef_1 method used to check and select the corresponding index of the dropdown menu
+//    onClickTerm_1 method used to check and select the corresponding index of the dropdown menu
 //    Developer : Subramani M
 //    Impelesys India Privat Limited 
 //    Date : 08-Dec-2016
 /******************************************************************************************************************* */
-function onSelectDef_1(tar, vartlist,varclick) 
+function onClickTerm_1(tar, vartlist,varclick) 
 {
     tar.className = tar.className + ' active'
     //var x1 = document.getElementById('termChoose')
     //for (var x = 0;x < x1.length;x++) {
     //if (x1[x].value == tar.innerHTML) {
     //x1.selectedIndex = x
-    onSelectDef(tar, vartlist,varclick)
+    onClickTerm(tar, vartlist,varclick)
     //break
     //}
 
@@ -1471,7 +1471,7 @@ function onSelectDef_1(tar, vartlist,varclick)
 
 }
 
-function onSelectDef(tar, vartlist,varclick)
+function onClickTerm(tar, vartlist,varclick)
  {
     
      if(varclick==undefined)
@@ -1640,7 +1640,7 @@ else
                 // alert(count);
                 //  count=0;
                 // document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
-                // onSelectDef(x1[x].childNodes[0]);
+                // onClickTerm(x1[x].childNodes[0]);
                 break
             }
         }
