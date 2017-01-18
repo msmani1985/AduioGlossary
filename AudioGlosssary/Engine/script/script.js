@@ -539,7 +539,7 @@ function search() {
         callback: {
             onClickAfter: function (node, a, item, event) {
 
-
+              hideKeyboard();                  
                 var varleft = "";
                 var x1 = document.getElementById('termChoose1').childNodes;
                 for (var x = 0; x < x1.length; x++) {
@@ -577,6 +577,7 @@ function search() {
 
             onSubmit: function (node, form, item, event) {
                 event.preventDefault()
+                hideKeyboard();
                 var itemdisplay = ($(".js-typeahead-input").val())
                 var varleft = "";
                 var x1 = document.getElementById('termChoose1').childNodes;
@@ -2190,3 +2191,4 @@ function audio_tag(audiofile, audioid, varplayid)
     }
 
 }
+
