@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <title>Landing Page</title>
+    <title>Audio Glossary</title>
     <!-- Bootstrap CSS -->
     <link href="Engine/css/bootstrap.min.css" rel="stylesheet">
     <link href="Engine/css/Launch.min.css" rel="stylesheet">
@@ -56,7 +56,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div>
+                        <div id="LCP">
                             Copyright &copy; 2017 Wolters Kluwer Health | Lippincott Williams &amp; Wilkins
                         </div>
                     </div>
@@ -87,7 +87,7 @@
                         <div class="fr subtitle">SECOND EDITION</div>
                     </div>
                     <div class="main_title">
-                        <div class="title">JEFFREY A. POTTEIGER</div>
+                        <div class="Author title">JEFFREY A. POTTEIGER</div>
                     </div>
                     <div class="main_title1">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 main_title1">
@@ -226,14 +226,14 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div id="MCP">
             Copyright &copy; 2017 Wolters Kluwer Health | Lippincott Williams &amp; Wilkins
         </div>
 
     </div>
     </div>
     </div>
-    <div id="myModal" class="modal fade">
+    <div id=" myModal" class="modal fade">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header btn-warning">
@@ -251,27 +251,34 @@
     <script src="Engine/script/lib.min.js"></script>
     <!-- Bootstrap JavaScript -->
     <script src="Engine/script/bootstrap.min.js"></script>
+    
     <script type="text/javascript" src="Engine/script/DataProvider.min.js"></script>
     <script type="text/javascript" src="Engine/script/DataProvider1.min.js"></script>
+    
     <script src="Engine/script/jquery.typeahead.min.js"></script>
-
+    <script type="text/javascript" src="Engine/script/DataConfigProvider.js"></script>
     <script>
         $(document).ready(function() {
+             var modelObjconf = new dataconfigprovider('Assets/xml/config.xml', config)
+           
             audioElement1 = document.createElement('audio')
             audioElement1.setAttribute('preload', 'none')
             audioElement1.setAttribute('id', 'Taudio')
             $(".landing").click(function() {
-                $("#LP").css("display", "none");
+                
+                $("#LP").css("display","none");
                 bodyloaded1();
-                $("#AG").css("display", "block");
+                $("#AG").css("display","block");
                 $("#search1").focusin(function() {
                     $("#search1").tooltip('hide');
                 });
-
+                
             });
-           // $('[data-toggle="tooltip"]').tooltip();
-            $('[data-toggle="popover"]').popover({ trigger: "hover"})
-
+            // $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover({
+                trigger:"hover"
+            })
+           
         })
     </script>
     <script type="text/javascript" src="Engine/script/script.js"></script>

@@ -19,6 +19,7 @@ var nclexDoc
 var tocDoc
 var initDoc
 var xml1;
+var xmlconfig;
 var sound
 var Chap4Array = []
 var GroupArray = []
@@ -70,7 +71,16 @@ function onSidenav() {
     }
 
 }
+function config()
+{
+    
+$('#LCP').html($(xmlconfig).find("copyright").text());
+$('#MCP').html($(xmlconfig).find("copyright").text());
 
+$('.title').html($(xmlconfig).find("title").text());
+$('.subtitle').html($(xmlconfig).find("edition").text());
+$('.Author').html($(xmlconfig).find("author").text());
+}
 function bodyloaded1() {
     document.addEventListener('dataLoaded', createUI)
     document.addEventListener('dataLoaded', createUI1)
