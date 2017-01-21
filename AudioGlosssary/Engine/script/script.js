@@ -10,6 +10,7 @@
 
 /***************************************************************************************************************************************************************************************************** */
 var toggES = "En";
+var onload1=false;
 var max = 60
 var min = 20
 var data
@@ -96,6 +97,7 @@ function bodyloaded1() {
         $("#sidemenu").css("display", "none");
         $("#main_cont").css("display", "block");
     }
+    onload1=false;
 }
 
 function createUI(e) // to load data into the UI
@@ -274,6 +276,7 @@ function alpha_list(e) {
 }
 // Modal moduel for xml extract
 function createUI1(e) {
+   
     modalData1 = e // loading data to variable
     var questionlist = modalData1[0].AudioList
     currentChapterList = questionlist.slice(0, questionlist.length) // coping array
@@ -330,6 +333,8 @@ function createUI1(e) {
             }
     
             if (GroupArray[t].groupname == 'A') {
+                if(FirstTerm==undefined)
+                {
                 vart = t;
                 varj = 0;
                 FirstTerm = GroupArray[t].AudioList[0].Audioterm
@@ -340,16 +345,20 @@ function createUI1(e) {
                 TC.innerHTML = FirstTerm
                 var DC = document.getElementById('definitionContent')
                 DC.innerHTML = FirstDefinition
+                
                 if(GroupArray[t].AudioList[0].AudioUrl=="")
                 {
+                     onload1=true;
                     audio_tag("Assets/media/" + "undefined", "Audio1", "play1")
                 }
                 else
                 {
+                     onload1=true;
                 audio_tag("Assets/media/" + GroupArray[t].AudioList[0].AudioUrl, "Audio1", "play1")
                 }
                 $('#b1').css('background', '#9AC97B')
                 $('#b1').css('color', 'white')
+            }
             }
         }
     }
@@ -371,6 +380,7 @@ function createUI1(e) {
     $('#b2').attr('disabled', true)
 
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
+    
     onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
 }
 // English only terms listed
@@ -482,6 +492,7 @@ function onPrevious() {
         document.getElementById('previous').disabled = false
         document.getElementById('next').disabled = false
         try {
+            
             onClickTerm(document.getElementById('termChoose1').childNodes[count - 1].childNodes[0]);
         }
         catch (e)
@@ -507,6 +518,7 @@ function onNext() {
         count = count + 1
         document.getElementById('previous').disabled = false
         document.getElementById('next').disabled = false
+        
         onClickTerm(document.getElementById('termChoose1').childNodes[count].childNodes[0])
         document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
         if (count >= document.getElementById('termChoose1').childNodes.length - 1) {
@@ -799,7 +811,7 @@ function ToViewEnglishTerm() {
 
     }
 
-  
+    
     onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
     count = 0
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
@@ -995,6 +1007,7 @@ function ToViewSpanTerm() {
 
 
     }
+     
     onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
     count = 0;
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
@@ -1440,6 +1453,7 @@ function onSelectAlphaMenu(obj)
     }
     count = 0;
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
+     
         onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
 }
 /*
@@ -1473,6 +1487,7 @@ function onClickTerm_1(tar, vartlist,varclick)
     //for (var x = 0;x < x1.length;x++) {
     //if (x1[x].value == tar.innerHTML) {
     //x1.selectedIndex = x
+   
     onClickTerm(tar, vartlist,varclick)
     //break
     //}
@@ -1483,10 +1498,13 @@ function onClickTerm_1(tar, vartlist,varclick)
 }
 
 function onClickTerm(tar, vartlist,varclick)
+
  {
     
+   
      if(varclick==undefined)
      {
+    
      for(var vark=0;vark<document.getElementById('termChoose1').childNodes.length;vark++)
      {
          
@@ -2133,11 +2151,14 @@ if(e.altKey)
 
 function audio_tag(audiofile, audioid, varplayid) 
 {
-    
+    //document.getElementById(audioid).setAttribute("style", "display:none");
     if (audiofile.indexOf("undefined") == -1) 
     {
        
-        var audioElement = document.createElement('audio');
+        //var audioElement = document.createElement('audio');
+       
+        var audioElement =new Audio();
+        
         audioElement.setAttribute("id", "audiotag1")
         audioElement.setAttribute('src', (audiofile + ".mp3").replace(".mp3.mp3", ".mp3"));
          //alert((audiofile + ".mp3").replace(".mp3.mp3", ".mp3"));
@@ -2152,18 +2173,18 @@ function audio_tag(audiofile, audioid, varplayid)
         Abtn.setAttribute("title", "Play/Repeat audio");
         Abtn.innerHTML = "Play Term Audio";
         TOappnd.appendChild(Abtn);
-        //audioElement.play();
+        audioElement.pause();
+        $('<audio src="'+ audiofile +'">').load(function() {
+               document.getElementById(audioid).setAttribute("style", "display:block");
+           
+               
 
-
-        audioElement.onloadeddata = function () 
-        {
-            document.getElementById("loadder").style.display = "none";
-        }
-
-        $('#' + varplayid).click(function () {
-            try {
-                audioElement.play();
-                audioElement.onplaying = function () {
+        }).bind('error', function() {
+            document.getElementById(audioid).setAttribute("style", "display:none");
+        });
+        
+        
+                 audioElement.onplaying = function () {
                     if (varplayid == "spanplay1") {
                         $("#spanitem_1").css("background-color", "yellow");
                         $("#spanitem_1").css("font-weight", "bold");
@@ -2180,8 +2201,29 @@ function audio_tag(audiofile, audioid, varplayid)
                     $("#spanitem_1").css("font-weight", "normal");
                     $("#termContent").css("font-weight", "normal");
                 };
+        //audioElement.play();
+           
+
+        audioElement.onloadeddata = function () 
+        {  
+               setTimeout(function () {    
+                  
+                   {audioElement.play();}
+                }, 150);
+
+        }
+
+        $('#' + varplayid).click(function () {
+            
+            try {
+                setTimeout(function () {      
+                   audioElement.play();
+                }, 150);
+                
+               
 
             } catch (e) {
+               
                 document.getElementById("loadder").style.display = "none";
             }
         });
@@ -2202,3 +2244,10 @@ function audio_tag(audiofile, audioid, varplayid)
 
 }
 
+var hideKeyboard = function() {
+ document.activeElement.blur();
+ var inputs = document.querySelectorAll('input');
+ for(var i=0; i < inputs.length; i++) {
+  inputs[i].blur();
+ }
+};
