@@ -811,8 +811,8 @@ function ToViewEnglishTerm() {
 
     }
 
-    
-    onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
+     if(document.getElementById('termChoose1').childNodes.length>0)
+   { onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])}
     count = 0
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
     try {
@@ -1007,8 +1007,8 @@ function ToViewSpanTerm() {
 
 
     }
-     
-    onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
+    if(document.getElementById('termChoose1').childNodes.length>0)
+    {onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])}
     count = 0;
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
     try {
@@ -1319,6 +1319,130 @@ function display_left(vart, varchap1)
             }
         }
     }
+}
+
+function onSelectAlphaMenu1(obj) 
+{
+    
+    var list = []
+    list = document.getElementsByClassName('btns1')
+
+    for (var i = 0; i < list.length; i++) {
+        list[i].className = list[i].className.replace('btn-warning', 'btn-info')
+    }
+
+    document.getElementById("All").className = document.getElementById("All").className.replace('btn-info', 'btn-warning')
+   
+     
+
+    var attr = obj
+
+    var gName = attr.value;
+
+    var gcount = 0
+
+ var cahperList = document.getElementById('chapterList')
+    var currentChap = cahperList.options[cahperList.selectedIndex].value
+    
+   
+
+    if (gName == 'All' && currentChap == 'All Chapters') {
+        
+
+        gcount++
+        
+        gcount++
+
+      
+        display_left();
+
+       
+    } else {
+
+        for (var t = 0; t < modalData.length; t++) {
+            if (modalData[t].name == currentChap) {
+                var chapterNumberOnly = modalData[t].name
+                var chapterNumberOnly1 = chapterNumberOnly.substring(7, 10)
+                var chapterNumberOnly2 = '\,' + chapterNumberOnly1.trim() + '\,'
+                break;
+            }
+        }
+
+        if (currentChap == "All Chapters") {
+
+            if (gName.indexOf("-") == -1) {
+
+                for (var t = 0; t < GroupArray.length; t++) {
+                    //for(varj=0;varj<GroupArray[t].AudioList.length;varj++){
+                    //if (GroupArray[t].AudioList[varj].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
+                    if (GroupArray[t].groupname == gName) {
+                        // alert(gName);
+                        display_left(t);
+
+                    } else { }
+                }
+            } else {
+                for (var varcharcode = gName.split("-")[0].charCodeAt(0); varcharcode < gName.split("-")[1].charCodeAt(0) + 1; varcharcode++) {
+                    var gName1 = String.fromCharCode(varcharcode)
+                    for (var t = 0; t < GroupArray.length; t++) {
+                        // for(varj=0;varj<GroupArray[t].AudioList.length;varj++){
+                        //    if (GroupArray[t].AudioList[varj].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
+                        if (GroupArray[t].groupname == gName1) {
+                            display_left(t);
+
+                        }
+                        // }
+
+                        //}
+
+
+                    }
+                }
+            }
+        } else {
+
+            if (gName.indexOf("-") == -1) {
+
+                for (var t = 0; t < GroupArray.length; t++) {
+                    for (varj = 0; varj < GroupArray[t].AudioList.length; varj++) {
+                        if (GroupArray[t].AudioList[varj].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
+                            if (gName == "All") {
+
+                                display_left(undefined, chapterNumberOnly1);
+                                break;
+                            } else {
+
+                                if (GroupArray[t].groupname == gName) {
+
+                                    display_left(t, chapterNumberOnly1);
+
+                                } else { }
+                            }
+                        }
+                    }
+                }
+            } else {
+                for (var varcharcode = gName.split("-")[0].charCodeAt(0); varcharcode < gName.split("-")[1].charCodeAt(0) + 1; varcharcode++) {
+                    var gName1 = String.fromCharCode(varcharcode)
+                    for (var t = 0; t < GroupArray.length; t++) {
+                        for (varj = 0; varj < GroupArray[t].AudioList.length; varj++) {
+                            if (GroupArray[t].AudioList[varj].chapterattr.indexOf('\,' + chapterNumberOnly1.trim() + '\,') > -1) {
+                                if (GroupArray[t].groupname == gName1) {
+                                    display_left(t, chapterNumberOnly1);
+
+                                }
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
+    }
+    count = 0;
+    document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
+     
+        onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
 }
 /*********************************************************** */
 //
