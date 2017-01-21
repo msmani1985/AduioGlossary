@@ -2298,12 +2298,22 @@ function audioplay()
 function audio_tag(audiofile, audioid, varplayid) 
 {
     //document.getElementById(audioid).setAttribute("style", "display:none");
+    
+    if(typeof(audioElement) == "object") {
+        
+ audioElement.pause();
+ audioElement = null;
+};
+  $("#termContent").css("background-color", "white");
+                    $("#spanitem_1").css("background-color", "white");
+                    $("#spanitem_1").css("font-weight", "bold");
+                    $("#termContent").css("font-weight", "bold");
     if (audiofile.indexOf("undefined") == -1) 
     {
        
         //var audioElement = document.createElement('audio');
        
-        var audioElement =new Audio();
+        audioElement =new Audio();
         
         audioElement.setAttribute("id", "audiotag1")
         audioElement.setAttribute('src', (audiofile + ".mp3").replace(".mp3.mp3", ".mp3"));
@@ -2324,11 +2334,13 @@ function audio_tag(audiofile, audioid, varplayid)
         
         $('<audio src="'+ audiofile +'">').load(function() {
                document.getElementById(audioid).setAttribute("style", "display:block");
+               document.getElementById("Audio2").setAttribute("style", "display:block");
            
                
 
         }).bind('error', function() {
             document.getElementById(audioid).setAttribute("style", "display:none");
+            document.getElementById("Audio2").setAttribute("style", "display:none");
         });
         
         
@@ -2347,8 +2359,8 @@ function audio_tag(audiofile, audioid, varplayid)
                 audioElement.onended = function () {
                     $("#termContent").css("background-color", "white");
                     $("#spanitem_1").css("background-color", "white");
-                    $("#spanitem_1").css("font-weight", "normal");
-                    $("#termContent").css("font-weight", "normal");
+                    $("#spanitem_1").css("font-weight", "bold");
+                    $("#termContent").css("font-weight", "bold");
                 };
         //audioElement.play();
            
@@ -2412,11 +2424,14 @@ function audio_tag(audiofile, audioid, varplayid)
 
 
         document.getElementById(audioid).setAttribute("style", "display:block");
+        document.getElementById("Audio2").setAttribute("style", "display:block");
     }
     else 
     {
-
+        
+        document.getElementById("Audio2").setAttribute("style", "display:none");
         document.getElementById(audioid).setAttribute("style", "display:none");
+        
     }
 
 }
