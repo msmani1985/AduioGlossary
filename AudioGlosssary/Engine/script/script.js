@@ -1740,12 +1740,34 @@ else
     var currentChap = cahperList.options[cahperList.selectedIndex].value;
     var termList = document.getElementById("termChoose1");
     //var selectedterm = termList.options[termList.selectedIndex].value;
-
+ var selectedterm;
     if (tar.childNodes.length > 1) {
-        var selectedterm = tar.childNodes[0].text;
+        
+       
+      
+      
+        if(tar.childNodes[0].text==undefined)   
+        {
+            selectedterm = tar.childNodes[0].innerHTML;
+        }
+        else
+        {
+             selectedterm = tar.childNodes[0].text;
+        }
+       
     } else {
-        var selectedterm = tar.text;
+        
+         if(tar.text==undefined)   
+        {
+            selectedterm = tar.innerHTML;
+        }
+        else
+        {
+             selectedterm = tar.text;
+        }
+        
     }
+   
     if (selectedterm.indexOf("...") > -1) {
         if (tar.childNodes.length > 1) {
             var selectedterm = tar.childNodes[0].getAttribute("data-terms");
@@ -1791,6 +1813,7 @@ else
 
 
     if (tar.getAttribute("style").indexOf("color: blue;") > 0) {
+     
         //alert(document.getElementById("thead").innerHTML)
         document.getElementById("thead").innerHTML = document.getElementById("thead").innerHTML.replace("Term", "Término")
         document.getElementById("dhead").innerHTML = document.getElementById("dhead").innerHTML.replace("Definition", "Definición")
@@ -1813,6 +1836,8 @@ else
             $("#termContentPro1").css("display", "block")
             $("#SpanTerms_1").css("display", "block")
             $("#Span_Definition").css("display", "none")
+                
+                
             //termContentPro
 
         }
@@ -1969,7 +1994,15 @@ else
         //console.log("Not found");
     }
     //document.getElementById("loadder").style.display="none";
-
+  var TC = document.getElementById("termContent");
+               // TC.innerHTML = "No Spanish Term"
+                var TC = document.getElementById("Audio1");
+                TC.style.display="block";
+                var TC = document.getElementById("termContentPro1");
+                TC.style.display="block";
+                //Definition
+                var TC = document.getElementById("Definition");
+                TC.style.display="block";
 }
 
 function mOver(obj) 
@@ -2288,8 +2321,8 @@ function audio_tag(audiofile, audioid, varplayid)
     //document.getElementById(audioid).setAttribute("style", "display:none");
     
     if(typeof(audioElement) == "object") {
-        
- audioElement.pause();
+       if(audioElement!=null) 
+ {audioElement.pause();}
  audioElement = null;
 };
   $("#termContent").css("background-color", "white");
