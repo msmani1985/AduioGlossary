@@ -83,6 +83,7 @@ $('.subtitle').html($(xmlconfig).find("edition").text());
 $('.Author').html($(xmlconfig).find("author").text());
 }
 function bodyloaded1() {
+    document.getElementById("loadder1").style.display="block";
     document.addEventListener('dataLoaded', createUI)
     document.addEventListener('dataLoaded', createUI1)
     modelObj = new DtataProvider('Assets/xml/chapter.xml', createUI)
@@ -97,7 +98,7 @@ function bodyloaded1() {
         $("#sidemenu").css("display", "none");
         $("#main_cont").css("display", "block");
     }
-    onload1=false;
+   
 }
 
 function createUI(e) // to load data into the UI
@@ -1008,7 +1009,11 @@ function ToViewSpanTerm() {
 
 
     }
-    if(document.getElementById('termChoose1').childNodes.length>0)
+    if(document.getElementById('termChoose1').childNodes.length==0)
+    {
+       notermsfound_func();
+    }
+    else
     {onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])}
     count = 0;
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
@@ -1021,7 +1026,53 @@ function ToViewSpanTerm() {
 
     }
 }
+function notermsfound_func()
+{
+     var toreport = document.createElement('div')
+              
 
+                var x = $('#termChoose1')
+                x.remove()
+
+                var myDiv = document.getElementById('section')
+                
+                /* list item  */
+                var selectList1 = document.createElement('ul')
+                selectList1.setAttribute('id', 'termChoose1')
+                
+                selectList1.setAttribute('style', 'width:200px')
+                myDiv.appendChild(selectList1)
+
+                var li = document.createElement('li')
+                var a = document.createElement('a')
+                li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
+               // a.setAttribute('onclick', 'onClickTerm_1(this,true,true)')
+                a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
+                li.value = -1
+                var t1 = document.createTextNode('No Spanish Terms!')
+
+                a.appendChild(t1)
+                li.appendChild(a)
+                selectList1.appendChild(li)
+                
+                var TC = document.getElementById("termContent");
+                TC.innerHTML = "No Spanish Term"
+                var TC = document.getElementById("Audio1");
+                TC.style.display="none";
+                var TC = document.getElementById("termContentPro1");
+                TC.style.display="none";
+                //Definition
+                var TC = document.getElementById("Definition");
+                TC.style.display="none";
+                
+                document.getElementById('number_term').innerHTML = '0/0';
+                
+                document.getElementById('next').disabled = true
+                document.getElementById('previous').disabled = true
+               
+               
+
+}
 /************************************************************* */
 //
 //
@@ -1126,70 +1177,7 @@ function onSelectChapterList() {
             }
  
 
-            if (sectiondatacount == 0) {
-                var toreport = document.createElement('div')
-                toreport.setAttribute('id', 'box')
-                toreport.innerHTML = 'No Terms/Definitions in the Selected Letter'
-                var ToappendBox = document.getElementById('Definition')
-                ToappendBox.appendChild(toreport)
-
-                var toreport1 = document.createElement('div')
-                toreport1.setAttribute('id', 'box1')
-                toreport1.innerHTML = 'No Terms/Definitions in the Selected Letter'
-                var ToappendBox1 = document.getElementById('Term')
-                ToappendBox1.appendChild(toreport1)
-
-                var x = $('#termChoose1')
-                x.remove()
-
-                var myDiv = document.getElementById('section')
-                
-                /* list item  */
-                var selectList1 = document.createElement('ul')
-                selectList1.setAttribute('id', 'termChoose1')
-                
-                selectList1.setAttribute('style', 'width:200px')
-                myDiv.appendChild(selectList1)
-
-                var li = document.createElement('li')
-                var a = document.createElement('a')
-                li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-                a.setAttribute('onclick', 'onClickTerm_1(this,true,true)')
-                a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
-                li.value = -1
-                var t1 = document.createTextNode('No Term.......!')
-
-                a.appendChild(t1)
-                li.appendChild(a)
-                selectList1.appendChild(li)
-
-                /**************************/
-                var li = document.createElement('li')
-                var a = document.createElement('a')
-                li.setAttribute('class', 'list-group-item list-group-itemn-action btn-warning')
-                a.setAttribute('onclick', 'onClickTerm_1(this,true,true)')
-                a.setAttribute("style", "    color: black;    font-weight: bold;    cursor: pointer;    display: inline-block;    position: relative;    z-index: 1;    padding-left: 10em;    padding-right: 10em;    margin-left: -10em; margin-right:-10em;padding: 10px 10.6em;");
-                li.value = -1
-                var t1 = document.createTextNode('No Term.......!')
-                a.appendChild(t1)
-                li.appendChild(a)
-                selectList1.appendChild(li)
-
-                var TC = document.getElementById('termContent')
-                TC.innerHTML = ''
-                var DC = document.getElementById('definitionContent')
-                DC.innerHTML = ''
-                var tcontext = document.getElementById('TermContext')
-                tcontext.innerHTML = ''
-                var Audio = dmyDiv.appendChild(selectList)
-                ocument.getElementById('Audio')
-                Audio.innerHTML = ''
-                var Audio1 = document.getElementById('Audio1')
-                Audio1.innerHTML = ''
-
-                document.getElementById('b1').disabled = true
-                document.getElementById('b2').disabled = true
-            }
+            
         } else if (currentChap == 'All Chapters') {
             var x = $('#termChoose1')
             x.remove()
@@ -2341,11 +2329,12 @@ function audio_tag(audiofile, audioid, varplayid)
         }).bind('error', function() {
             document.getElementById(audioid).setAttribute("style", "display:none");
             document.getElementById("Audio2").setAttribute("style", "display:none");
+             document.getElementById("loadder1").style.display="none";
         });
         
         
                  audioElement.onplaying = function () {
-                     
+                  document.getElementById("loadder").style.display="block";
                     if (varplayid == "spanplay1") {
                         $("#spanitem_1").css("background-color", "yellow");
                         $("#spanitem_1").css("font-weight", "bold");
@@ -2357,6 +2346,8 @@ function audio_tag(audiofile, audioid, varplayid)
 
                 };
                 audioElement.onended = function () {
+                    document.getElementById("loadder").style.display="none";
+                     document.getElementById("loadder1").style.display="none";
                     $("#termContent").css("background-color", "white");
                     $("#spanitem_1").css("background-color", "white");
                     $("#spanitem_1").css("font-weight", "bold");
