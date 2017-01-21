@@ -480,6 +480,7 @@ function EnglishSpanshword(selectList1, varj, vart) {
 }
 // Previous button functionality 
 function onPrevious() {
+   
     if(count>=document.getElementById('termChoose1').childNodes.length)
         {
             count=count-1;
@@ -1470,7 +1471,7 @@ function onSelectAlphaMenu(obj)
         $('#box1').remove()
     }
 
-
+  
     var attr = obj
 
     var gName = attr.value;
@@ -1806,7 +1807,7 @@ else
         document.getElementById("thead").innerHTML = document.getElementById("thead").innerHTML.replace("Term", "Término")
         document.getElementById("dhead").innerHTML = document.getElementById("dhead").innerHTML.replace("Definition", "Definición")
         $("#Definition").css("display", "none")
-        $("#termContentPro").css("display", "none")
+        $("#termContentPro1").css("display", "none")
         $("#SpanTerms_1").css("display", "none")
         $("#Span_Definition").css("display", "none")
         //termContentPro
@@ -1821,7 +1822,7 @@ else
             document.getElementById("thead").innerHTML = document.getElementById("thead").innerHTML.replace("Término", "Term")
             document.getElementById("dhead").innerHTML = document.getElementById("dhead").innerHTML.replace("Definición", "Definition")
             $("#Definition").css("display", "block")
-            $("#termContentPro").css("display", "block")
+            $("#termContentPro1").css("display", "block")
             $("#SpanTerms_1").css("display", "block")
             $("#Span_Definition").css("display", "none")
             //termContentPro
@@ -1848,7 +1849,11 @@ else
                 //termContentPro
                 var TCp = document.getElementById("termContentPro");
                 TCp.innerHTML = GroupArray[t].AudioList[j].pronc;
-
+            
+                if(TCp.innerHTML=="")
+                {
+                     $("#termContentPro1").css("display", "none")
+                }
                 var DC = document.getElementById("definitionContent");
                 DC.innerHTML = GroupArray[t].AudioList[j].Audiomeaning;
 
@@ -2272,7 +2277,24 @@ if(e.altKey)
     }
 }
 });
+function audioplay()
+{
+ 
+         
+            try {
+                setTimeout(function () {     
+                    
+                   audioElement.play();
+                }, 150);
+                
+               
 
+            } catch (e) {
+               
+                document.getElementById("loadder").style.display = "none";
+            }
+ 
+}
 function audio_tag(audiofile, audioid, varplayid) 
 {
     //document.getElementById(audioid).setAttribute("style", "display:none");
@@ -2297,7 +2319,9 @@ function audio_tag(audiofile, audioid, varplayid)
         Abtn.setAttribute("title", "Play/Repeat audio");
         Abtn.innerHTML = "Play Term Audio";
         TOappnd.appendChild(Abtn);
-        audioElement.pause();
+
+       
+        
         $('<audio src="'+ audiofile +'">').load(function() {
                document.getElementById(audioid).setAttribute("style", "display:block");
            
@@ -2309,6 +2333,7 @@ function audio_tag(audiofile, audioid, varplayid)
         
         
                  audioElement.onplaying = function () {
+                     
                     if (varplayid == "spanplay1") {
                         $("#spanitem_1").css("background-color", "yellow");
                         $("#spanitem_1").css("font-weight", "bold");
@@ -2336,7 +2361,35 @@ function audio_tag(audiofile, audioid, varplayid)
                 }, 150);
 
         }
+      /*   $('#' + "Audio2_Play").click(function () {
+          
+            try {
+                setTimeout(function () {      
+                   audioElement.play();
+                }, 150);
+                
+               
 
+            } catch (e) {
+               
+                document.getElementById("loadder").style.display = "none";
+            }
+        });
+        pro_audio*/
+        $('#' + "pro_audio").click(function () {
+          
+            try {
+                setTimeout(function () {      
+                   audioElement.play();
+                }, 150);
+                
+               
+
+            } catch (e) {
+               
+                document.getElementById("loadder").style.display = "none";
+            }
+        });
         $('#' + varplayid).click(function () {
           
             try {
