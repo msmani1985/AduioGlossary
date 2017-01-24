@@ -1806,18 +1806,12 @@ else
                 //  count=0;
                 // document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
                 // onClickTerm(x1[x].childNodes[0]);
-                varfound1=true;
+               
                 break
             }
-            else
-            {
-                varfound1=false;
-            }
+           
         }
-        if(varfound1==false)
-        {
-            alert("dafsdfsd");
-        }
+       
     }
 
 
@@ -1855,6 +1849,7 @@ else
     //	console.log(selectedterm);
     //console.log(selectedterm);
     var cnt = 0;
+
     for (var t = 0; t < GroupArray.length; t++) {
         for (var j = 0; j < GroupArray[t].AudioList.length; j++) {
             if (GroupArray[t].AudioList[j].Audioterm == selectedterm) {
@@ -1963,7 +1958,7 @@ else
                 //document.getElementById('b3').value = 'English Terms'
                 //document.getElementById('b3').style = '	background-color: #7D81D1;'
 
-                document.getElementById('b3').style.display = 'block'
+                //document.getElementById('b3').style.display = 'block'
                 var TC = document.getElementById("termContent");
                 TC.innerHTML = GroupArray[t].AudioList[j].SpaneshTerm;
                 if (GroupArray[t].AudioList[j].SpaneshDef != undefined && GroupArray[t].AudioList[j].SpaneshDef != "") {
