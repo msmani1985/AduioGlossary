@@ -835,11 +835,14 @@ function ToViewEnglishTerm() {
     }
      document.getElementById('b4').className = document.getElementById('b4').className.replace("btn-default", "btn-info");
         document.getElementById('b3').className = document.getElementById('b3').className.replace("btn-info", "btn-default");
+           $("#Audio1").css("display", "none");
+    $("#Audio2").css("display", "none");
 }
  
 // Spanish toggle button  functionality 
 
 function ToViewSpanTerm() {
+   
     toggES = "SP";
 
     {
@@ -1033,6 +1036,8 @@ function ToViewSpanTerm() {
     } catch (e) {
 
     }
+     $("#Audio1").css("display", "none");
+    $("#Audio2").css("display", "none");
 }
 function notermsfound_func()
 {
@@ -1622,7 +1627,7 @@ function onClickTerm(tar, vartlist,varclick)
 
  {
     
-   
+  
      if(varclick==undefined)
      {
     
@@ -1945,6 +1950,7 @@ else
                     }
                     else {
                         $("#spanAudio1").css("display", "none");
+                     
                     }
                 }
                 //	var tcontext = document.getElementById("TermContext");
@@ -2016,6 +2022,8 @@ else
                 //Definition
                 var TC = document.getElementById("Definition");
                 TC.style.display="block";
+
+                   
     
 }
 
@@ -2365,6 +2373,7 @@ function audio_tag(audiofile, audioid, varplayid)
         Abtn.setAttribute("title", "Play/Repeat audio");
         Abtn.innerHTML = "Play Term Audio";
         TOappnd.appendChild(Abtn);
+      
        
        
         
