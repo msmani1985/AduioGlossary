@@ -515,13 +515,21 @@ function onPrevious() {
 function onNext() {
     
 
-
+//alert(count + " " +document.getElementById('termChoose1').childNodes.length);
     if (count < document.getElementById('termChoose1').childNodes.length) {
         count = count + 1
+        vrcount1=count;
         document.getElementById('previous').disabled = false
         document.getElementById('next').disabled = false
         
         onClickTerm(document.getElementById('termChoose1').childNodes[count].childNodes[0])
+        if(vrcount1==count)
+        {
+            //alert(count);
+        }
+        else{
+            count=count+1
+        }
         document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
         if (count >= document.getElementById('termChoose1').childNodes.length - 1) {
 
@@ -2008,6 +2016,7 @@ else
                 //Definition
                 var TC = document.getElementById("Definition");
                 TC.style.display="block";
+    
 }
 
 function mOver(obj) 
