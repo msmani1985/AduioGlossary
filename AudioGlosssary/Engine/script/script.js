@@ -1723,7 +1723,7 @@ else
         }
 
     }
-    audioElement1.pause();
+    //audioElement1.pause();
 
     //TAudioption.currentTime = 0;
     var currAud = 0;
@@ -1741,6 +1741,7 @@ else
     var termList = document.getElementById("termChoose1");
     //var selectedterm = termList.options[termList.selectedIndex].value;
  var selectedterm;
+ 
     if (tar.childNodes.length > 1) {
         
        
@@ -1767,7 +1768,7 @@ else
         }
         
     }
-   
+ 
     if (selectedterm.indexOf("...") > -1) {
         if (tar.childNodes.length > 1) {
             var selectedterm = tar.childNodes[0].getAttribute("data-terms");
@@ -1805,8 +1806,17 @@ else
                 //  count=0;
                 // document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
                 // onClickTerm(x1[x].childNodes[0]);
+                varfound1=true;
                 break
             }
+            else
+            {
+                varfound1=false;
+            }
+        }
+        if(varfound1==false)
+        {
+            alert("dafsdfsd");
         }
     }
 
@@ -2320,6 +2330,7 @@ function audio_tag(audiofile, audioid, varplayid)
 {
     //document.getElementById(audioid).setAttribute("style", "display:none");
     
+           
     if(typeof(audioElement) == "object") {
        if(audioElement!=null) 
  {audioElement.pause();}
@@ -2333,7 +2344,7 @@ function audio_tag(audiofile, audioid, varplayid)
     {
        
         //var audioElement = document.createElement('audio');
-       
+      
         audioElement =new Audio();
         
         audioElement.setAttribute("id", "audiotag1")
@@ -2350,23 +2361,31 @@ function audio_tag(audiofile, audioid, varplayid)
         Abtn.setAttribute("title", "Play/Repeat audio");
         Abtn.innerHTML = "Play Term Audio";
         TOappnd.appendChild(Abtn);
-
+       
        
         
         $('<audio src="'+ audiofile +'">').load(function() {
-               document.getElementById(audioid).setAttribute("style", "display:block");
-               document.getElementById("Audio2").setAttribute("style", "display:block");
+               document.getElementById(audioid).setAttribute("style", "visibility:visible");
+               document.getElementById("Audio2").setAttribute("style", "display:none");
            
                
 
         }).bind('error', function() {
-            document.getElementById(audioid).setAttribute("style", "display:none");
+            document.getElementById(audioid).setAttribute("style", "visibility:hidden");
             document.getElementById("Audio2").setAttribute("style", "display:none");
              document.getElementById("loadder1").style.display="none";
         });
         
         
                  audioElement.onplaying = function () {
+                     if(document.getElementById("loadder1").style.display=="block")
+                     {
+                         
+                         audioElement.volume = 0.0;
+                     }
+                     else
+                     {
+                         audioElement.volume = 1.0;
                   document.getElementById("loadder").style.display="block";
                     if (varplayid == "spanplay1") {
                         $("#spanitem_1").css("background-color", "yellow");
@@ -2376,7 +2395,7 @@ function audio_tag(audiofile, audioid, varplayid)
                         $("#termContent").css("background-color", "yellow");
                         $("#termContent").css("font-weight", "bold");
                     }
-
+                    }
                 };
                 audioElement.onended = function () {
                     document.getElementById("loadder").style.display="none";
