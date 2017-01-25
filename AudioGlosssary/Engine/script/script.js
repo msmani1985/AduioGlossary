@@ -1603,6 +1603,15 @@ function onSelectAlphaMenu(obj)
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
      
         onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
+        if(TC.style.display=="none")
+                { var TC = document.getElementById("Audio2");
+                TC.style.display="none";
+                  TC.style.visibility="hiddene";}
+                else
+                  {var TC = document.getElementById("Audio2");
+                TC.style.display="block";
+                  TC.style.visibility="visible";}
+                    
 }
 /*
 function GroupRefVO() {
