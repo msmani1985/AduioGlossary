@@ -835,8 +835,7 @@ function ToViewEnglishTerm() {
     }
      document.getElementById('b4').className = document.getElementById('b4').className.replace("btn-default", "btn-info");
         document.getElementById('b3').className = document.getElementById('b3').className.replace("btn-info", "btn-default");
-           $("#Audio1").css("display", "none");
-    $("#Audio2").css("display", "none");
+        
 }
  
 // Spanish toggle button  functionality 
@@ -1036,8 +1035,10 @@ function ToViewSpanTerm() {
     } catch (e) {
 
     }
-     $("#Audio1").css("display", "none");
-    $("#Audio2").css("display", "none");
+    $("#Audio1").css("display", "none");
+    document.getElementById("Audio2").setAttribute("style", "display:none;margin-left: -20px;margin-top: 14px;");
+    
+    // /margin-left: -20px;margin-top: 14px;
 }
 function notermsfound_func()
 {
@@ -2379,13 +2380,13 @@ function audio_tag(audiofile, audioid, varplayid)
         
         $('<audio src="'+ audiofile +'">').load(function() {
                document.getElementById(audioid).setAttribute("style", "visibility:visible");
-               document.getElementById("Audio2").setAttribute("style", "display:none");
+               document.getElementById("Audio2").setAttribute("style", "display:block;margin-left: -20px;margin-top: 14px;");
            
                
 
         }).bind('error', function() {
             document.getElementById(audioid).setAttribute("style", "visibility:hidden");
-            document.getElementById("Audio2").setAttribute("style", "display:none");
+            document.getElementById("Audio2").setAttribute("style", "display:none;margin-left:-20px;margin-top:14px;");
              document.getElementById("loadder1").style.display="none";
         });
         
@@ -2394,7 +2395,8 @@ function audio_tag(audiofile, audioid, varplayid)
                      if(document.getElementById("loadder1").style.display=="block")
                      {
                          
-                         audioElement.volume = 0.0;
+                           audioElement.volume = 0.0;
+                           
                      }
                      else
                      {
@@ -2408,6 +2410,9 @@ function audio_tag(audiofile, audioid, varplayid)
                         $("#termContent").css("background-color", "yellow");
                         $("#termContent").css("font-weight", "bold");
                     }
+                    document.getElementById("Audio2").className="play1";
+                   document.getElementById("play1").className="play1";
+                    
                     }
                 };
                 audioElement.onended = function () {
@@ -2417,6 +2422,8 @@ function audio_tag(audiofile, audioid, varplayid)
                     $("#spanitem_1").css("background-color", "white");
                     $("#spanitem_1").css("font-weight", "bold");
                     $("#termContent").css("font-weight", "bold");
+                  document.getElementById("Audio2").className="play2";
+                  document.getElementById("play1").className="play";
                 };
         //audioElement.play();
            
@@ -2449,6 +2456,8 @@ function audio_tag(audiofile, audioid, varplayid)
             try {
                 setTimeout(function () {      
                    audioElement.play();
+                  // document.getElementById("Audio2").className="play1";
+                  // document.getElementById("Audio1").className="play1";
                 }, 150);
                 
                
@@ -2463,6 +2472,8 @@ function audio_tag(audiofile, audioid, varplayid)
             try {
                 setTimeout(function () {      
                    audioElement.play();
+                    //document.getElementById("Audio1").className="play1";
+                     //document.getElementById("Audio2").className="play1";
                 }, 150);
                 
                
@@ -2480,12 +2491,12 @@ function audio_tag(audiofile, audioid, varplayid)
 
 
         document.getElementById(audioid).setAttribute("style", "display:block");
-        document.getElementById("Audio2").setAttribute("style", "display:block");
+        document.getElementById("Audio2").setAttribute("style", "display:block;margin-left: -20px;margin-top: 14px;");
     }
     else 
     {
         
-        document.getElementById("Audio2").setAttribute("style", "display:none");
+        document.getElementById("Audio2").setAttribute("style", "display:none;margin-left: -20px;margin-top: 14px;");
         document.getElementById(audioid).setAttribute("style", "display:none");
         
     }
