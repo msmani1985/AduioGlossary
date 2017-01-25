@@ -9,6 +9,7 @@
 //
 
 /***************************************************************************************************************************************************************************************************** */
+var audiotag1=false;
 var toggES = "En";
 var onload1=false;
 var max = 60
@@ -349,13 +350,24 @@ function createUI1(e) {
                 
                 if(GroupArray[t].AudioList[0].AudioUrl=="")
                 {
-                     onload1=true;
-                    audio_tag("Assets/media/" + "undefined", "Audio1", "play1")
+                    document.getElementById("Audio1").setAttribute("style", "visibility:hidden");
+                    document.getElementById("Audio2").setAttribute("style", "display:none;margin-left: -20px;margin-top: 14px;");
+                    audio_tag("Assets/media/" + "undefined", "Audio1", "play1","englishaudio")
+
                 }
                 else
                 {
-                     onload1=true;
-                audio_tag("Assets/media/" + GroupArray[t].AudioList[0].AudioUrl, "Audio1", "play1")
+                    
+                    document.getElementById("Audio1").setAttribute("style", "visibility:visible");
+                       var TC = document.getElementById("termContentPro1");
+                if(TC.style.display=="none")
+                {}
+                else
+                  {var TC = document.getElementById("Audio2");
+                TC.style.display="block";
+                  TC.style.visibility="visible";}
+                    //document.getElementById("Audio2").setAttribute("style", "display:block;margin-left: -20px;margin-top: 14px;");
+                    audio_tag("Assets/media/" + GroupArray[t].AudioList[0].AudioUrl, "Audio1", "play1","englishaudio")
                 }
                 $('#b1').css('background', '#9AC97B')
                 $('#b1').css('color', 'white')
@@ -841,7 +853,7 @@ function ToViewEnglishTerm() {
 // Spanish toggle button  functionality 
 
 function ToViewSpanTerm() {
-   
+    
     toggES = "SP";
 
     {
@@ -1075,6 +1087,9 @@ function notermsfound_func()
                 TC.style.display="none";
                 var TC = document.getElementById("termContentPro1");
                 TC.style.display="none";
+                  var TC = document.getElementById("Audio2");
+                TC.style.display="none";
+                TC.style.visibility="hidden";
                 //Definition
                 var TC = document.getElementById("Definition");
                 TC.style.display="none";
@@ -1891,9 +1906,20 @@ else
 
                 if (toggES == "En") {
                     if(GroupArray[t].AudioList[j].AudioUrl=="")
-                    {audio_tag("Assets/media/" + "undefined", "Audio1", "play1")}
+                    {document.getElementById("Audio1").setAttribute("style", "visibility:hidden");
+                    document.getElementById("Audio2").setAttribute("style", "display:none;margin-left: -20px;margin-top: 14px;");
+                        audio_tag("Assets/media/" + "undefined", "Audio1", "play1","englishaudio")}
                     else
-                    {audio_tag("Assets/media/" + GroupArray[t].AudioList[j].AudioUrl, "Audio1", "play1")}
+                    {document.getElementById("Audio1").setAttribute("style", "visibility:visible");
+                    var TC = document.getElementById("termContentPro1");
+                if(TC.style.display=="none")
+                {}
+                else
+                  {var TC = document.getElementById("Audio2");
+                TC.style.display="block";
+                  TC.style.visibility="visible";}
+                    //document.getElementById("Audio2").setAttribute("style", "display:block;margin-left: -20px;margin-top: 14px;");
+                        audio_tag("Assets/media/" + GroupArray[t].AudioList[j].AudioUrl, "Audio1", "play1","englishaudio")}
                 }
                 if (GroupArray[t].AudioList[j].SpaneshTerm == "") {
                     //ToViewSpanTerm();
@@ -1946,7 +1972,7 @@ else
                     TC.innerHTML = '' + GroupArray[t].AudioList[j].SpaneshTerm;
                     if (GroupArray[t].AudioList[j].SpanURL != undefined || GroupArray[t].AudioList[j].SpanURL != "") {
 
-                        audio_tag("Assets/media/span/media/" + GroupArray[t].AudioList[j].SpanURL, "spanAudio1", "spanplay1")
+                        audio_tag("Assets/media/span/media/" + GroupArray[t].AudioList[j].SpanURL, "spanAudio1", "spanplay1","spanishaudio")
 
                     }
                     else {
@@ -1996,10 +2022,11 @@ else
                 TC.innerHTML = '<span class="Senplayplay" ></span> ' + GroupArray[t].AudioList[j].Audioterm;
 
                 if (toggES == "SP") {
+                    docuemnt.getElementById("Span_Definition").style.display="none";
                     if(GroupArray[t].AudioList[j].SpanURL=="")
-                    {audio_tag("Assets/media/span/media/" + "undefined", "Audio1", "play1")}
+                    {audio_tag("Assets/media/span/media/" + "undefined", "Audio1", "play1","spanishaudio")}
                     else
-                    {audio_tag("Assets/media/span/media/" + GroupArray[t].AudioList[j].SpanURL, "Audio1", "play1")}
+                    {audio_tag("Assets/media/span/media/" + GroupArray[t].AudioList[j].SpanURL, "Audio1", "play1","spanishaudio")}
                 }
 
 
@@ -2339,7 +2366,8 @@ function audioplay()
             }
  
 }
-function audio_tag(audiofile, audioid, varplayid) 
+
+function audio_tag(audiofile, audioid, varplayid,audiotag) 
 {
     //document.getElementById(audioid).setAttribute("style", "display:none");
     
@@ -2349,6 +2377,7 @@ function audio_tag(audiofile, audioid, varplayid)
  {audioElement.pause();}
  audioElement = null;
 };
+
   $("#termContent").css("background-color", "white");
                     $("#spanitem_1").css("background-color", "white");
                     $("#spanitem_1").css("font-weight", "bold");
@@ -2366,10 +2395,11 @@ function audio_tag(audiofile, audioid, varplayid)
 
         //}
         
-        audioElement =new Audio();
-        
-        audioElement.setAttribute("id", "audiotag1")
+        //audioElement =new Audio();
+         var audioElement = document.getElementById(audiotag);
+        //audioElement.setAttribute("id", "audiotag1")
         audioElement.setAttribute('src', (audiofile + ".mp3").replace(".mp3.mp3", ".mp3"));
+       
          //alert((audiofile + ".mp3").replace(".mp3.mp3", ".mp3"));
         var TOappnd = document.getElementById(audioid);
         TOappnd.innerHTML = "";
@@ -2389,8 +2419,8 @@ function audio_tag(audiofile, audioid, varplayid)
         $(audioElement).load(function() {
          
            // alert(audioid);
-               document.getElementById(audioid).setAttribute("style", "visibility:visible");
-               document.getElementById("Audio2").setAttribute("style", "display:block;margin-left: -20px;margin-top: 14px;");
+              // document.getElementById(audioid).setAttribute("style", "visibility:visible");
+             //  document.getElementById("Audio2").setAttribute("style", "display:block;margin-left: -20px;margin-top: 14px;");
            
                
 
@@ -2403,7 +2433,8 @@ function audio_tag(audiofile, audioid, varplayid)
         
         
                  audioElement.onplaying = function () {
-                     if(document.getElementById("loadder1").style.display=="block")
+                      
+                     if(document.getElementById("loadder1").style.display=="block" || (audiotag=="spanishaudio" && audiotag1==false))
                      {
                          
                            audioElement.volume = 0.0;
@@ -2411,6 +2442,7 @@ function audio_tag(audiofile, audioid, varplayid)
                      }
                      else
                      {
+                         
                          audioElement.volume = 1.0;
                   document.getElementById("loadder").style.display="block";
                     if (varplayid == "spanplay1") {
@@ -2435,6 +2467,7 @@ function audio_tag(audiofile, audioid, varplayid)
                     $("#termContent").css("font-weight", "bold");
                   document.getElementById("Audio2").className="play2";
                   document.getElementById("play1").className="play";
+                    audiotag1=false;
                 };
         //audioElement.play();
            
@@ -2479,6 +2512,10 @@ function audio_tag(audiofile, audioid, varplayid)
             }
         });
         $('#' + varplayid).click(function () {
+          if(audiotag=="spanishaudio")
+          {
+            audiotag1=true;
+          }
           
             try {
                 setTimeout(function () {      
@@ -2502,7 +2539,15 @@ function audio_tag(audiofile, audioid, varplayid)
 
 
         document.getElementById(audioid).setAttribute("style", "display:block");
-        document.getElementById("Audio2").setAttribute("style", "display:block;margin-left: -20px;margin-top: 14px;");
+           var TC = document.getElementById("termContentPro1");
+                if(TC.style.display=="none")
+                {}
+                else
+                  {
+                      var TC = document.getElementById("Audio2");
+                TC.style.display="block";
+                  TC.style.visibility="visible";}
+        //document.getElementById("Audio2").setAttribute("style", "display:block;margin-left: -20px;margin-top: 14px;");
     }
     else 
     {
