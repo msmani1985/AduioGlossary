@@ -1,2800 +1,971 @@
 <root>
-
-<group name='A' chapter=',1,'>
-<!--<audio audioURL='00000103.mp3' SpanURL='' chapter=',1,'>
-<term><b>abortion</b></term>
-<pronc>(ah-BOR-shun)</pronc>
-<def>Loss of an embryo or fetus before the 20th week of pregnancy.</def>
-<spanishterm>welcome</spanishterm>
-</audio>-->
-<audio audioURL='00000103.mp3' SpanURL='' chapter=',1,'>
-<term><b>absorption</b></term>
-<pronc>(ab-SORP-shun)</pronc>
-<def>The process of taking up or assimilating a substance.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00086018.mp3' SpanURL='' chapter=',1,'>
-<term><b>accommodation</b></term>
-<pronc>(ah-kom-o-DA-shun)</pronc>
-<def>Coordinated changes in the lens of the eye that enable one to focus on near and far objects.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00047047.mp3' SpanURL='' chapter=',1,'>
-<term><b>acetylcholine</b></term>
-<pronc>(as-e-til-KO-lene)</pronc>
-<def>(ACh) Neurotransmitter; released at synapses within the nervous system and at the neuromuscular junction.</def>
-<spanishterm>32434234</spanishterm>
-</audio>
-<audio audioURL='00000352.mp3' SpanURL='' chapter=',1,'>
-<term><b>acid </b></term>
-<pronc>(AH-sid)</pronc>
-<def>Substance that can release a hydrogen ion when dissolved in water.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00000490.mp3' SpanURL='' chapter=',1,'>
-<term><b>actin</b></term>
-<pronc>(AK-tin)</pronc>
-<def>One of the two contractile proteins in muscle cells, the other being myosin.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00048136.mp3' SpanURL='' chapter=',1,'>
-<term><b>action potential</b></term>
-<pronc><definition/></pronc>
-<def>Rapid depolarization and repolarization of the plasma membrane capable of spreading down the neuron or muscle membrane; nerve impulse.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00057117.mp3' SpanURL='' chapter=',1,'>
-<term><b>active transport</b></term>
-<pronc><definition/></pronc>
-<def>Movement of molecules into or out of a cell from an area where they are in lower concentration to an area where they are in higher concentration. Such movement, which is opposite to the direction of normal flow by diffusion, requires energy and transporters.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00000598.mp3' SpanURL='' chapter=',1,'>
-<term><b>adenoids</b></term>
-<pronc>(AD-eh-noyds)</pronc>
-<def>Popular name for pharyngeal tonsil located in the nasopharynx.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00000678.mp3' SpanURL='' chapter=',1,'>
-<term><b>adipose</b></term>
-<pronc>(AD-ih-pose)</pronc>
-<def>Referring to fats or a type of connective tissue that stores fat.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',1,'>
-<term><b>afferent</b></term>
-<pronc>(AF-fer-ent)</pronc>
-<def>Carrying toward a given point, such as a sensory neuron that carries nerve impulses toward the central nervous system.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00000873.mp3' SpanURL='' chapter=',1,'>
-<term><b>agglutination</b></term>
-<pronc>(ah-glu-tih-NA-shun)</pronc>
-<def>Clumping of cells due to an antigen–antibody reaction.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00000914.mp3' SpanURL='' chapter=',1,'>
-<term><b>agonist</b></term>
-<pronc>(AG-on-ist)</pronc>
-<def>Muscle that contracts to perform a given movement.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00000986.mp3' SpanURL='' chapter=',1,'>
-<term><b>albumin</b></term>
-<pronc>(al-BU-min)</pronc>
-<def>Protein in blood plasma and other body fluids; helps maintain the osmotic pressure of the blood.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00001154.mp3' SpanURL='' chapter=',1,'>
-<term><b>allele</b></term>
-<pronc>(al-LEEL)</pronc>
-<def>A version of a gene that controls a given trait.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00001332.mp3' SpanURL='' chapter=',1,'>
-<term><b>alveolus</b></term>
-<pronc>(al-VE-o-lus)</pronc>
-<def>Small sac or pouch; usually a tiny air sac in the lungs through which gases are exchanged between the outside air and the blood; tooth socket; pl., alveoli.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',1,'>
-<term><b>amino</b></term>
-<pronc>(ah-ME-no)</pronc>
-<def><b>acid </b>Building block of protein.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00001543.mp3' SpanURL='' chapter=',1,'>
-<term><b>amniotic</b></term>
-<pronc>(am-ne-OT-ik)</pronc>
-<def><b>sac </b>Fluid-filled sac that surrounds and cushions the developing fetus.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00001566.mp3' SpanURL='' chapter=',1,'>
-<term><b>amphiarthrosis</b></term>
-<pronc>(am-fe-ar-THRO-sis)</pronc>
-<def>Slightly movable joint.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00001684.mp3' SpanURL='' chapter=',1,'>
-<term><b>anabolism</b></term>
-<pronc>(ah-NAB-o-lizm)</pronc>
-<def>Metabolic building of simple compounds into more complex substances needed by the body.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00048404.mp3' SpanURL='' chapter=',1,'>
-<term><b>anatomic position</b></term>
-<pronc><definition/></pronc>
-<def>Standard position of the body for anatomic studies or designations, upright, face front, arms at side with palms forward, and feet parallel.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00001787.mp3' SpanURL='' chapter=',1,'>
-<term><b>anatomy</b></term>
-<pronc>(ah-NAT-o-me)</pronc>
-<def>Study of body structure.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00001925.mp3' SpanURL='' chapter=',1,'>
-<term><b>angiography</b></term>
-<pronc>(an-je-OG-rah-fe)</pronc>
-<def>Radiography of vessels following injection of a contrast material.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00070232.mp3' SpanURL='' chapter=',1,'>
-<term><b>angiotensin II</b></term>
-<pronc>(an-je-o-TEN-sin)</pronc>
-<def>Substance produced from inactive precursors by the action of the renal enzyme renin and other enzymes; increases blood pressure by causing vascular constriction, stimulating the release of aldosterone from the adrenal cortex and ADH from the posterior pituitary, and increasing thirst.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002034.mp3' SpanURL='' chapter=',1,'>
-<term><b>anion</b></term>
-<pronc><b> </b>(AN-i-on)</pronc>
-<def>Negatively charged particle (ion).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002164.mp3' SpanURL='' chapter=',1,'>
-<term><b>antagonist</b></term>
-<pronc>(an-TAG-o-nist)</pronc>
-<def>Muscle that has an action opposite that of a given movement or muscle; substance that opposes the action of another substance.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002273.mp3' SpanURL='' chapter=',1,'>
-<term><b>antibody</b></term>
-<pronc>(AN-te-bod-e)</pronc>
-<def><b>(Ab)</b> Substance produced in response to a specific antigen; immunoglobulin.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002303.mp3' SpanURL='' chapter=',1,'>
-<term><b>antidiuretic</b></term>
-<pronc>(an-ti-di-u-RET-ik)</pronc>
-<def><b>hormone (ADH) </b>Hormone released from the posterior pituitary gland that increases water reabsorption in the kidneys, thus decreasing the urinary output.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002321.mp3' SpanURL='' chapter=',1,'>
-<term><b>antigen</b></term>
-<pronc>(AN-te-jen)</pronc>
-<def><b>(Ag) </b>Substance that induces an immune response.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002426.mp3' SpanURL='' chapter=',1,'>
-<term><b>antiserum</b></term>
-<pronc>(an-te-SE-rum)</pronc>
-<def>Serum containing antibodies that may be given to provide passive immunity; immune serum.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002447.mp3' SpanURL='' chapter=',1,'>
-<term><b>antitoxin</b></term>
-<pronc>(an-te-TOKS-in)</pronc>
-<def>Antibody that neutralizes a toxin.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002492.mp3' SpanURL='' chapter=',1,'>
-<term><b>aorta</b></term>
-<pronc>(a-OR-tah)</pronc>
-<def>The largest artery; carries blood out of the heart’s left ventricle.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002597.mp3' SpanURL='' chapter=',1,'>
-<term><b>apocrine</b></term>
-<pronc>(AP-o-krin)</pronc>
-<def>Referring to a gland that releases some cellular material along with its secretions.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002700.mp3' SpanURL='' chapter=',1,'>
-<term><b>aqueous</b></term>
-<pronc>(A-kwe-us)</pronc>
-<def><b>humor </b>Watery fluid that fills much of the eyeball anterior to the lens.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002700.mp3' SpanURL='' chapter=',1,'>
-<term><b>aqueous</b></term>
-<pronc>(A-kwe-us)</pronc>
-<def>Pertaining to water; an aqueous solution is one in which water is the solvent.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002782.mp3' SpanURL='' chapter=',1,'>
-<term><b>areolar</b></term>
-<pronc>(ah-RE-o-lar)</pronc>
-<def>Referring to loose connective tissue, any small space, or to an areola, a circular area of marked color.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',1,'>
-<term><b>arrector pili</b></term>
-<pronc>(ah-REK-tor PI-li)</pronc>
-<def>Muscle attached to a hair follicle that raises the hair.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002829.mp3' SpanURL='' chapter=',1,'>
-<term><b>arrhythmia</b></term>
-<pronc>(ah-RITH-me-ah)</pronc>
-<def>Loss or abnormality of rhythm, usually of the heart; dysrhythmia.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002870.mp3' SpanURL='' chapter=',1,'>
-<term><b>arteriole</b></term>
-<pronc>(ar-TE-re-ole)</pronc>
-<def>Vessel between a small artery and a capillary.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002898.mp3' SpanURL='' chapter=',1,'>
-<term><b>artery</b></term>
-<pronc>(AR-ter-e)</pronc>
-<def>Vessel that carries blood away from the heart.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00002963.mp3' SpanURL='' chapter=',1,'>
-<term><b>articulation</b></term>
-<pronc>(ar-tik-u-LA-shun)</pronc>
-<def>A joint; an area of junction or union between two or more structures.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00003224.mp3' SpanURL='' chapter=',1,'>
-<term><b>atom</b></term>
-<pronc>(AT-om)</pronc>
-<def>Smallest subunit of a chemical element.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00003266.mp3' SpanURL='' chapter=',1,'>
-<term><b>atrium</b></term>
-<pronc>(A-tre-um)</pronc>
-<def>One of the heart’s two upper chambers; adj., atrial.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',1,'>
-<term><b>attenuated</b></term>
-<pronc>(ah-TEN-u-a-ted)</pronc>
-<def>Weakened.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00003315.mp3' SpanURL='' chapter=',1,'>
-<term><b>auditory</b></term>
-<pronc>(AW-dih-tor-e)</pronc>
-<def><b>tube </b>Tube that connects the middle ear cavity to the throat; eustachian tube.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00003436.mp3' SpanURL='' chapter=',1,'>
-<term><b>autonomic</b></term>
-<pronc>(aw-to-NOM-ik)</pronc>
-<def><b>nervous system (ANS)</b> The part of the nervous system that controls smooth muscle, cardiac muscle, and glands; the visceral or involuntary nervous system.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00003479.mp3' SpanURL='' chapter=',1,'>
-<term><b>autosome</b></term>
-<pronc>(AW-to-some)</pronc>
-<def>Any chromosome not involved in sex determination. There are 44 autosomes (22 pairs) in humans.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00003572.mp3' SpanURL='' chapter=',1,'>
-<term><b>axon</b></term>
-<pronc>(AK-son)</pronc>
-<def>Fiber of a neuron that conducts impulses away from the cell body.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='B' chapter=',2,'>
-<audio audioURL='00101739.mp3' SpanURL='' chapter=',2,'>
-<term><b>B cell</b></term>
-<pronc><definition/></pronc>
-<def>Agranular white blood cell that gives rise to antibody-producing plasma cells in response to an antigen; B lymphocyte.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00003773.mp3' SpanURL='' chapter=',2,'>
-<term><b>baroreceptor</b></term>
-<pronc>(bar-o-re-SEP-ter)</pronc>
-<def>Receptor that responds to pressure, such as those in vessel walls that respond to stretching and help regulate blood pressure; a type of mechanoreceptor.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00003792.mp3' SpanURL='' chapter=',2,'>
-<term><b>basal</b></term>
-<pronc>(BA-sal)</pronc>
-<def><b>metabolism </b>The amount of energy needed to maintain life functions while the body is at rest.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',2,'>
-<term><b>basal nuclei</b></term>
-<pronc>(BA-sal NU-kle-i)</pronc>
-<def>Interconnected masses of gray matter spread throughout the brain that modulate motor inputs and facilitate routine motor tasks; basal ganglia.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00003795.mp3' SpanURL='' chapter=',2,'>
-<term><b>base</b></term>
-<pronc><definition/></pronc>
-<def><table border="0" cellspacing="0" frame="VOID" rules="NONE">
-<tbody>
-<tr>
-<td width="1894" height="21" align="LEFT"><font color="#000000">A lower portion or foundation. Substance that can accept a hydrogen ion (H<sup>+</sup>); substance that releases a hydroxide ion (OH<sup>−</sup>) when dissolved in water; an alkali. The broad, superior portion of the heart.</font></td>
-</tr>
-</tbody>
-</table></def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00003839.mp3' SpanURL='' chapter=',2,'>
-<term><b>basophil</b></term>
-<pronc>(BA-so-fil)</pronc>
-<def>Granular white blood cell that shows large, dark blue cytoplasmic granules when stained with basic stain.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',2,'>
-<term><b>bicarbonate ion</b></term>
-<pronc>(bi-KAR-bon-ate I-on)</pronc>
-<def>Molecule that combines with hydrogen ion to form carbonic acid, which separates into carbon dioxide and water; an important buffer in body fluids.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00004044.mp3' SpanURL='' chapter=',2,'>
-<term><b>bile</b></term>
-<pronc><definition/></pronc>
-<def>Substance produced in the liver that emulsifies fats.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00004499.mp3' SpanURL='' chapter=',2,'>
-<term><b>bradycardia</b></term>
-<pronc>(brad-e-KAR-de-ah)</pronc>
-<def>Heart rate of less than 60 beats per minute.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00049133.mp3' SpanURL='' chapter=',2,'>
-<term><b>brain stem</b></term>
-<pronc><definition/></pronc>
-<def>Portion of the brain that connects the cerebrum with the spinal cord; contains the midbrain, pons, and medulla oblongata.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00004614.mp3' SpanURL='' chapter=',2,'>
-<term><b>bronchiole</b></term>
-<pronc>(BRONG-ke-ole)</pronc>
-<def>Microscopic branch of a bronchus.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00004665.mp3' SpanURL='' chapter=',2,'>
-<term><b>bronchus</b></term>
-<pronc>(BRONG-kus)</pronc>
-<def>Large air passageway in the lung; pl., bronchi (BRONG-ki).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00004722.mp3' SpanURL='' chapter=',2,'>
-<term><b>buffer</b></term>
-<pronc>(BUF-er)</pronc>
-<def>Substance that prevents sharp changes in a solution’s pH.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00004778.mp3' SpanURL='' chapter=',2,'>
-<term><b>bursa</b></term>
-<pronc>(BER-sah)</pronc>
-<def>Small, fluid-filled sac found in an area subject to stress around bones and joints; pl., bursae (BER-se).</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='C' chapter=',3,'>
-<audio audioURL='' SpanURL='' chapter=',3,'>
-<term><b>capillary</b></term>
-<pronc>(CAP-ih-lar-e)</pronc>
-<def>Microscopic vessel through which exchanges take place between the blood and the tissues.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00101468.mp3' SpanURL='' chapter=',3,'>
-<term><b>carbohydrate</b></term>
-<pronc>(kar-bo-HI-drate)</pronc>
-<def>Simple sugar or compound made from simple sugars linked together, such as starch or glycogen.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00070998.mp3' SpanURL='' chapter=',3,'>
-<term><b>carbonic acid</b></term>
-<pronc>(kar-BON-ik)</pronc>
-<def>Acid formed when carbon dioxide dissolves in water; carbonic acid then separates into hydrogen ion and bicarbonate ion.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',3,'>
-<term><b>carbonic anhydrase</b></term>
-<pronc>(an-HI-drase)</pronc>
-<def>Enzyme that catalyzes the interconversion of carbon dioxide with bicarbonate ion and hydrogen ion.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00005250.mp3' SpanURL='' chapter=',3,'>
-<term><b>cardiac</b></term>
-<pronc>(KAR-de-ak)</pronc>
-<def><b>output (CO)</b> Volume of blood pumped by each ventricle in one minute. CO is the product of stroke volume and heart rate.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00086266.mp3' SpanURL='' chapter=',3,'>
-<term><b>carrier</b></term>
-<pronc><definition/></pronc>
-<def>Individual who has a recessive allele of a gene that is not expressed in the phenotype but that can be passed to offspring.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00005406.mp3' SpanURL='' chapter=',3,'>
-<term><b>cartilage</b></term>
-<pronc>(KAR-tih-lij)</pronc>
-<def>Type of hard connective tissue found at the ends of bones, the tip of the nose, larynx, trachea, and the embryonic skeleton.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00005443.mp3' SpanURL='' chapter=',3,'>
-<term><b>catabolism</b></term>
-<pronc>(kah-TAB-o-lizm)</pronc>
-<def>Metabolic breakdown of substances into simpler substances; includes the digestion of food and the oxidation of nutrient molecules for energy.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00005460.mp3' SpanURL='' chapter=',3,'>
-<term><b>catalyst</b></term>
-<pronc>(KAT-ah-list)</pronc>
-<def>Substance that speeds the rate of a chemical reaction.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00005522.mp3' SpanURL='' chapter=',3,'>
-<term><b>cation</b></term>
-<pronc>(KAT-i-on)</pronc>
-<def>Positively charged particle (ion).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00005630.mp3' SpanURL='' chapter=',3,'>
-<term><b>cell</b></term>
-<pronc><definition/></pronc>
-<def>Basic unit of life.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',3,'>
-<term><b>cellular respiration</b></term>
-<pronc><definition/></pronc>
-<def>Series of reactions by which nutrients are oxidized for energy within the mitochondria of body cells.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00005708.mp3' SpanURL='' chapter=',3,'>
-<term><b>centrifuge</b></term>
-<pronc>(SEN-trih-fuje)</pronc>
-<def>An instrument that separates materials in a mixture based on density.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00005818.mp3' SpanURL='' chapter=',3,'>
-<term><b>cerebellum</b></term>
-<pronc>(ser-eh-BEL-um)</pronc>
-<def>Small section of the brain inferior to the cerebral hemispheres; functions in coordination, balance, and muscle tone.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00005819.mp3' SpanURL='' chapter=',3,'>
-<term><b>cerebral</b></term>
-<pronc>(SER-e-bral)</pronc>
-<def><b>cortex </b>Very thin outer layer of gray matter on the surface of the cerebral hemispheres.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00005834.mp3' SpanURL='' chapter=',3,'>
-<term><b>cerebrospinal</b></term>
-<pronc>(ser-e-bro-SPI-nal)</pronc>
-<def><b>fluid (CSF)</b> Fluid that circulates in and around the brain and spinal cord.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00005838.mp3' SpanURL='' chapter=',3,'>
-<term><b>cerebrum</b></term>
-<pronc>(SER-e-brum)</pronc>
-<def>Largest part of the brain; composed of two cerebral hemispheres.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00005854.mp3' SpanURL='' chapter=',3,'>
-<term><b>cerumen</b></term>
-<pronc>(seh-RU-men)</pronc>
-<def>Earwax; adj., ceruminous (seh-RU-min-us).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00005986.mp3' SpanURL='' chapter=',3,'>
-<term><b>chemistry</b></term>
-<pronc>(KEM-is-tre)</pronc>
-<def>Study of the composition and properties of matter.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00006015.mp3' SpanURL='' chapter=',3,'>
-<term><b>chemoreceptor</b></term>
-<pronc>(ke-mo-re-SEP-tor)</pronc>
-<def>Receptor that responds to chemicals in body fluids.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00006388.mp3' SpanURL='' chapter=',3,'>
-<term><b>chondrocyte</b></term>
-<pronc>(KON-dro-site)</pronc>
-<def>Cell that produces and maintains cartilage.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00006459.mp3' SpanURL='' chapter=',3,'>
-<term><b>chorion</b></term>
-<pronc>(KO-re-on)</pronc>
-<def>Outer embryonic layer that, together with a layer of the endometrium, forms the placenta.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00006467.mp3' SpanURL='' chapter=',3,'>
-<term><b>choroid</b></term>
-<pronc>(KO-royd)</pronc>
-<def>Pigmented middle layer of the eye.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00006557.mp3' SpanURL='' chapter=',3,'>
-<term><b>chromosome</b></term>
-<pronc>(KRO-mo-some)</pronc>
-<def>Dark-staining, threadlike body in a cell’s nucleus; contains genes that determine hereditary traits.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00006601.mp3' SpanURL='' chapter=',3,'>
-<term><b>chyle</b></term>
-<pronc>(kile)</pronc>
-<def>Milky-appearing fluid absorbed into the lymphatic system from the small intestine. It consists of lymph and droplets of digested fat.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00006627.mp3' SpanURL='' chapter=',3,'>
-<term><b>chyme</b></term>
-<pronc>(kime)</pronc>
-<def>Mixture of partially digested food, water, and digestive juices that forms in the stomach.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00006732.mp3' SpanURL='' chapter=',3,'>
-<term><b>circumduction</b></term>
-<pronc>(ser-kum-DUK-shun)</pronc>
-<def>Circular movement at a joint.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00006952.mp3' SpanURL='' chapter=',3,'>
-<term><b>coagulation</b></term>
-<pronc>(ko-ag-u-LA-shun)</pronc>
-<def>Clotting, as of blood.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00007015.mp3' SpanURL='' chapter=',3,'>
-<term><b>cochlea</b></term>
-<pronc>(KOK-le-ah)</pronc>
-<def>Coiled portion of the inner ear that contains the organ of hearing.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00007097.mp3' SpanURL='' chapter=',3,'>
-<term><b>collagen</b></term>
-<pronc>(KOL-ah-jen)</pronc>
-<def>Flexible white protein that gives strength and resilience to connective tissue, such as bone and cartilage.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00007122.mp3' SpanURL='' chapter=',3,'>
-<term><b>colloid</b></term>
-<pronc>(kol-OYD)</pronc>
-<def>Mixture in which suspended particles do not dissolve but remain distributed in the solvent because of their small size (e.g., cytoplasm); colloidal suspension.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00007184.mp3' SpanURL='' chapter=',3,'>
-<term><b>colostrum</b></term>
-<pronc>(ko-LOS-trum)</pronc>
-<def>Secretion of the mammary glands released prior to secretion of milk.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00007271.mp3' SpanURL='' chapter=',3,'>
-<term><b>complement</b></term>
-<pronc>(KOM-ple-ment)</pronc>
-<def>Group of blood proteins that helps antibodies and phagocytes to destroy foreign cells.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00007278.mp3' SpanURL='' chapter=',3,'>
-<term><b>compliance</b></term>
-<pronc>(kom-PLI-ans)</pronc>
-<def>Ease with which a hollow structure, such as the thorax or alveoli of the lungs, can be expanded under pressure.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00007285.mp3' SpanURL='' chapter=',3,'>
-<term><b>compound</b></term>
-<pronc><definition/></pronc>
-<def>Substance composed of two or more chemical elements.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00007410.mp3' SpanURL='' chapter=',3,'>
-<term><b>conjunctiva</b></term>
-<pronc>(kon-junk-TI-vah)</pronc>
-<def>Membrane that lines the eyelid and covers the anterior part of the sclera (white of the eye).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00007481.mp3' SpanURL='' chapter=',3,'>
-<term><b>contractility</b></term>
-<pronc>(kon-trak-TIL-ih-te)</pronc>
-<def>Capacity to undergo shortening, as in muscle tissue.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00007499.mp3' SpanURL='' chapter=',3,'>
-<term><b>convergence</b></term>
-<pronc>(kon-VER-jens)</pronc>
-<def>Centering of both eyes on the same visual field.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00007593.mp3' SpanURL='' chapter=',3,'>
-<term><b>cornea</b></term>
-<pronc>(KOR-ne-ah)</pronc>
-<def>Clear portion of the sclera that covers the anterior of the eye.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00007618.mp3' SpanURL='' chapter=',3,'>
-<term><b>coronary</b></term>
-<pronc>(KOR-on-ar-e)</pronc>
-<def>Referring to the heart or to the arteries supplying blood to the heart.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00060904.mp3' SpanURL='' chapter=',3,'>
-<term><b>corpus callosum</b></term>
-<pronc>(kal-O-sum)</pronc>
-<def>Thick bundle of myelinated nerve cell fibers deep within the brain that carries nerve impulses from one cerebral hemisphere to the other.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00060911.mp3' SpanURL='' chapter=',3,'>
-<term><b>corpus luteum</b></term>
-<pronc>(LU-te-um)</pronc>
-<def>Yellow body formed from ovarian follicle after ovulation; produces estrogen and progesterone.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00007996.mp3' SpanURL='' chapter=',3,'>
-<term><b>cryoprecipitate</b></term>
-<pronc>(kri-o-pre-SIP-ih-tate)</pronc>
-<def>Sediment formed when plasma is frozen and thawed. It is rich in fibrinogen and clotting factors.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00008393.mp3' SpanURL='' chapter=',3,'>
-<term><b>cytokine</b></term>
-<pronc>(SI-to-kine)</pronc>
-<def>Peptide produced by immune cells or other cells that acts as a cellular signal; (e.g., interleukin).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00008399.mp3' SpanURL='' chapter=',3,'>
-<term><b>cytology</b></term>
-<pronc>(si-TOL-o-je)</pronc>
-<def>Study of cells.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00008433.mp3' SpanURL='' chapter=',3,'>
-<term><b>cytoplasm</b></term>
-<pronc>(SI-to-plazm)</pronc>
-<def>Substance that fills the cell, consisting of a liquid cytosol and organelles.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='D' chapter=',4,'>
-<audio audioURL='00008594.mp3' SpanURL='' chapter=',4,'>
-<term><b>decidua</b></term>
-<pronc>(de-SID-u-ah)</pronc>
-<def>The vascularized internal portion of the endometrium in a pregnant uterus; the maternal portion of the placenta.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00008639.mp3' SpanURL='' chapter=',4,'>
-<term><b>defecation</b></term>
-<pronc>(def-eh-KA-shun)</pronc>
-<def>Act of eliminating undigested waste from the digestive tract.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00008674.mp3' SpanURL='' chapter=',4,'>
-<term><b>deglutition</b></term>
-<pronc>(deg-lu-TISH-un)</pronc>
-<def>Act of swallowing.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00008762.mp3' SpanURL='' chapter=',4,'>
-<term><b>denaturation</b></term>
-<pronc>(de-nah-tu-RA-shun)</pronc>
-<def>Change in structure of a protein, such as an enzyme, so that it can no longer function.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00008766.mp3' SpanURL='' chapter=',4,'>
-<term><b>dendrite</b></term>
-<pronc>(DEN-drite)</pronc>
-<def>Neuron fiber that conducts impulses toward the cell body.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00008767.mp3' SpanURL='' chapter=',4,'>
-<term><b>dendritic</b></term>
-<pronc>(den-DRIT-ik)</pronc>
-<def><b>cell </b>Phagocytic white blood cell active in the immune system as an antigen-presenting cell (APC).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00008878.mp3' SpanURL='' chapter=',4,'>
-<term><b>depolarization</b></term>
-<pronc>(de-po-lar-ih-ZA-shun)</pronc>
-<def>Reduction of the membrane potential (charge) resulting from the entry of cations or the exit of anions.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00037977.mp3' SpanURL='' chapter=',4,'>
-<term><b>dermis</b></term>
-<pronc>(DER-mis)</pronc>
-<def>True skin; deeper part of the skin.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00009223.mp3' SpanURL='' chapter=',4,'>
-<term><b>diaphragm</b></term>
-<pronc>(DI-ah-fram)</pronc>
-<def>Dome-shaped muscle under the lungs that flattens during inhalation; a separating membrane or structure.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00009232.mp3' SpanURL='' chapter=',4,'>
-<term><b>diaphysis</b></term>
-<pronc>(di-AF-ih-sis)</pronc>
-<def>Shaft of a long bone.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00009245.mp3' SpanURL='' chapter=',4,'>
-<term><b>diarthrosis</b></term>
-<pronc>(di-ar-THRO-sis)</pronc>
-<def>Freely movable joint; synovial joint.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00009261.mp3' SpanURL='' chapter=',4,'>
-<term><b>diastole</b></term>
-<pronc>(di-AS-to-le)</pronc>
-<def>Relaxation; adj., diastolic (di-as-TOL-ik).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00009364.mp3' SpanURL='' chapter=',4,'>
-<term><b>diencephalon</b></term>
-<pronc>(di-en-SEF-ah-lon)</pronc>
-<def>Region of the brain between the cerebral hemispheres and the midbrain; contains the thalamus, hypothalamus, and pituitary gland.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00009405.mp3' SpanURL='' chapter=',4,'>
-<term><b>diffusion</b></term>
-<pronc>(dih-FU-zhun)</pronc>
-<def>Movement of solutes from a region where they are in higher concentration to a region where they are in lower concentration.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00009416.mp3' SpanURL='' chapter=',4,'>
-<term><b>digestion</b></term>
-<pronc>(di-JEST-yun)</pronc>
-<def>Process of breaking down food into absorbable particles.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',4,'>
-<term><b>DNA</b></term>
-<pronc><definition/></pronc>
-<def>Genetic material of the cell; makes up the chromosomes in the cell’s nucleus.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00009854.mp3' SpanURL='' chapter=',4,'>
-<term><b>dominant</b></term>
-<pronc>(DOM-ih-nant)</pronc>
-<def>Referring to an allele of a gene that is always expressed in the phenotype if present.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00009972.mp3' SpanURL='' chapter=',4,'>
-<term><b>duodenum</b></term>
-<pronc>(du-o-DE-num)</pronc>
-<def>First portion of the small intestine.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='E' chapter=',5,'>
-<audio audioURL='00010177.mp3' SpanURL='' chapter=',5,'>
-<term><b>eccrine</b></term>
-<pronc>(EK-rin)</pronc>
-<def>Referring to sweat glands that regulate body temperature and vent sweat directly to the surface of the skin through a pore.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',5,'>
-<term><b>echocardiograph</b></term>
-<pronc>(ek-o-KAR-de-o-graf)</pronc>
-<def>Instrument to study the heart by means of ultrasound; the record produced is an echocardiogram.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00010332.mp3' SpanURL='' chapter=',5,'>
-<term><b>effector</b></term>
-<pronc>(ef-FEK-tor)</pronc>
-<def>Muscle or gland that responds to a signal; effector organ.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00010334.mp3' SpanURL='' chapter=',5,'>
-<term><b>efferent</b></term>
-<pronc>(EF-fer-ent)</pronc>
-<def>Carrying away from a given point, such as a motor neuron that carries nerve impulses away from the central nervous system.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00010392.mp3' SpanURL='' chapter=',5,'>
-<term><b>elasticity</b></term>
-<pronc>(e-las-TIS-ih-te)</pronc>
-<def>Capacity of a structure to return to its original shape after being stretched.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00010411.mp3' SpanURL='' chapter=',5,'>
-<term><b>electrocardiograph</b></term>
-<pronc>(e-lek-tro-KAR-de-o-graf)</pronc>
-<def><b>(ECG, EKG) </b>Instrument to study the heart’s electric activity; record made is an electrocardiogram.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00010438.mp3' SpanURL='' chapter=',5,'>
-<term><b>electroencephalograph</b></term>
-<pronc>(e-lek-tro-en-SEF-ah-lo-graf)</pronc>
-<def><b>(EEG) </b>Instrument used to study the brain’s electric activity; record made is an electroencephalogram.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00010452.mp3' SpanURL='' chapter=',5,'>
-<term><b>electrolyte</b></term>
-<pronc>(e-LEK-tro-lite)</pronc>
-<def>Compound that separates into ions in solution; substance that conducts an electric current in solution.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00010464.mp3' SpanURL='' chapter=',5,'>
-<term><b>electron</b></term>
-<pronc>(e-LEK-tron)</pronc>
-<def>Negatively charged particle located in an energy level outside an atom’s nucleus.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00010517.mp3' SpanURL='' chapter=',5,'>
-<term><b>element</b></term>
-<pronc>(EL-eh-ment)</pronc>
-<def>One of the substances from which all matter is made; substance that cannot be decomposed into a simpler substance.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',5,'>
-<term><b>embryo</b></term>
-<pronc>(EM-bre-o)</pronc>
-<def>Developing offspring during the first eight weeks of gestation.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00086406.mp3' SpanURL='' chapter=',5,'>
-<term><b>emulsify</b></term>
-<pronc>(e-MUL-sih-fi)</pronc>
-<def>To break up fats into small particles; n., emulsification.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00010783.mp3' SpanURL='' chapter=',5,'>
-<term><b>endocardium</b></term>
-<pronc>(en-do-KAR-de-um)</pronc>
-<def>Membrane that lines the heart’s chambers and covers the valves.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00010794.mp3' SpanURL='' chapter=',5,'>
-<term><b>endocrine</b></term>
-<pronc>(EN-do-krin)</pronc>
-<def>Referring to a gland that secretes into the bloodstream.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00082126.mp3' SpanURL='' chapter=',5,'>
-<term><b>endocrine system</b></term>
-<pronc><definition/></pronc>
-<def>System composed of glands that secrete hormones.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00010804.mp3' SpanURL='' chapter=',5,'>
-<term><b>endocytosis</b></term>
-<pronc>(en-do-si-TO-sis)</pronc>
-<def>Movement of large amounts of material into a cell using vesicles (e.g., phagocytosis and pinocytosis).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00010844.mp3' SpanURL='' chapter=',5,'>
-<term><b>endometrium</b></term>
-<pronc>(en-do-ME-tre-um)</pronc>
-<def>Inner layer of the uterus.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00010900.mp3' SpanURL='' chapter=',5,'>
-<term><b>endosteum</b></term>
-<pronc>(en-DOS-te-um)</pronc>
-<def>Thin membrane that lines a bone marrow cavity.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00010909.mp3' SpanURL='' chapter=',5,'>
-<term><b>endothelium</b></term>
-<pronc>(en-do-THE-le-um)</pronc>
-<def>Epithelium that lines the heart, blood vessels, and lymphatic vessels.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00011104.mp3' SpanURL='' chapter=',5,'>
-<term><b>enzyme</b></term>
-<pronc>(EN-zime)</pronc>
-<def>A protein that accelerates a specific chemical reaction.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00011113.mp3' SpanURL='' chapter=',5,'>
-<term><b>eosinophil</b></term>
-<pronc>(e-o-SIN-o-fil)</pronc>
-<def>Granular white blood cell that shows beadlike, bright pink cytoplasmic granules when stained with acid stain.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00011148.mp3' SpanURL='' chapter=',5,'>
-<term><b>epicardium</b></term>
-<pronc>(ep-ih-KAR-de-um)</pronc>
-<def>Membrane that forms the heart wall’s outermost layer and is continuous with the lining of the fibrous pericardium; visceral pericardium.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00011175.mp3' SpanURL='' chapter=',5,'>
-<term><b>epidermis</b></term>
-<pronc>(ep-ih-DER-mis)</pronc>
-<def>Outermost layer of the skin.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00011208.mp3' SpanURL='' chapter=',5,'>
-<term><b>epiglottis</b></term>
-<pronc>(ep-e-GLOT-is)</pronc>
-<def>Leaf-shaped cartilage that covers the larynx during swallowing.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00011258.mp3' SpanURL='' chapter=',5,'>
-<term><b>epiphysis</b></term>
-<pronc>(eh-PIF-ih-sis)</pronc>
-<def>End of a long bone; adj., epiphyseal (ep-ih-FIZ-e-al).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00011312.mp3' SpanURL='' chapter=',5,'>
-<term><b>epithelium</b></term>
-<pronc>(ep-ih-THE-le-um)</pronc>
-<def>One of the four main types of tissues; forms glands, covers surfaces, and lines cavities; adj., epithelial.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00011463.mp3' SpanURL='' chapter=',5,'>
-<term><b>erythrocyte</b></term>
-<pronc>(eh-RITH-ro-site)</pronc>
-<def>Red blood cell.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00011568.mp3' SpanURL='' chapter=',5,'>
-<term><b>esophagus</b></term>
-<pronc>(eh-SOF-ah-gus)</pronc>
-<def>Muscular tube that carries food from the throat to the stomach.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00011613.mp3' SpanURL='' chapter=',5,'>
-<term><b>estrogen</b></term>
-<pronc>(ES-tro-jen)</pronc>
-<def>Group of female sex hormones that promotes development of the ovarian follicle and the uterine lining and maintains secondary sex characteristics; the main estrogen is estradiol.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00011893.mp3' SpanURL='' chapter=',5,'>
-<term><b>excitability</b></term>
-<pronc><definition/></pronc>
-<def>In cells, the ability to transmit an electric current along the plasma membrane.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00011917.mp3' SpanURL='' chapter=',5,'>
-<term><b>excretion</b></term>
-<pronc>(eks-KRE-shun)</pronc>
-<def>Removal and elimination of metabolic waste products from the blood.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00011952.mp3' SpanURL='' chapter=',5,'>
-<term><b>exocrine</b></term>
-<pronc>(EK-so-krin)</pronc>
-<def>Referring to a gland that secretes through a duct.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00011954.mp3' SpanURL='' chapter=',5,'>
-<term><b>exocytosis</b></term>
-<pronc>(eks-o-si-TO-sis)</pronc>
-<def>Movement of large amounts of material out of the cell using vesicles.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00012047.mp3' SpanURL='' chapter=',5,'>
-<term><b>extracellular</b></term>
-<pronc>(EK-strah-sel-u-lar)</pronc>
-<def>Outside the cell.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00012101.mp3' SpanURL='' chapter=',5,'>
-<term><b>extremity</b></term>
-<pronc>(ek-STREM-ih-te)</pronc>
-<def>Limb.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='F' chapter=',6,'>
-<audio audioURL='00012182.mp3' SpanURL='' chapter=',6,'>
-<term><b>fascia</b></term>
-<pronc>(FASH-e-ah)</pronc>
-<def>Band or sheet of fibrous connective tissue.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00012184.mp3' SpanURL='' chapter=',6,'>
-<term><b>fascicle</b></term>
-<pronc>(FAS-ih-kl)</pronc>
-<def>Small bundle, as of muscle cells or nerve cell fibers.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00012311.mp3' SpanURL='' chapter=',6,'>
-<term><b>fertilization</b></term>
-<pronc>(fer-til-ih-ZA-shun)</pronc>
-<def>Union of an ovum and a spermatozoon.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00012338.mp3' SpanURL='' chapter=',6,'>
-<term><b>fetus</b></term>
-<pronc>(FE-tus)</pronc>
-<def>Developing offspring from the start of the ninth week of gestation until birth.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00012339.mp3' SpanURL='' chapter=',6,'>
-<term><b>fever</b></term>
-<pronc>(FE-ver)</pronc>
-<def>Abnormally high body temperature involving an increased temperature set point.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00012358.mp3' SpanURL='' chapter=',6,'>
-<term><b>fibrin</b></term>
-<pronc>(FI-brin)</pronc>
-<def>Blood protein that forms a blood clot.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00012382.mp3' SpanURL='' chapter=',6,'>
-<term><b>fibroblast</b></term>
-<pronc>(FI-bro-blast)</pronc>
-<def>Cell that produces protein fibers and other components of the matrix in connective tissue.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00012481.mp3' SpanURL='' chapter=',6,'>
-<term><b>filtration</b></term>
-<pronc>(fil-TRA-shun)</pronc>
-<def>Movement of material through a semipermeable membrane down a pressure gradient.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00061672.mp3' SpanURL='' chapter=',6,'>
-<term><b>follicle-stimulating hormone </b><b>(FSH)</b></term>
-<pronc><definition/></pronc>
-<def>Hormone produced by the anterior pituitary that stimulates development of ova in the ovary and spermatozoa in the testes.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',6,'>
-<term><b>fontanel</b></term>
-<pronc>(fon-tah-NEL)</pronc>
-<def>Membranous area in the infant skull where bone has not yet formed; also spelled fontanelle; “soft spot.”</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='G' chapter=',7,'>
-<audio audioURL='00013041.mp3' SpanURL='' chapter=',7,'>
-<term><b>gallbladder</b></term>
-<pronc>(GAWL-blad-er)</pronc>
-<def>Muscular sac on the inferior surface of the liver that stores bile.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',7,'>
-<term><b>GALT</b></term>
-<pronc><definition/></pronc>
-<def>Gut-associated lymphoid tissue.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00013074.mp3' SpanURL='' chapter=',7,'>
-<term><b>gamete</b></term>
-<pronc>(GAM-ete)</pronc>
-<def>Reproductive cell; ovum or spermatozoon.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',7,'>
-<term><b>gamma globulin</b></term>
-<pronc>(GLOB-u-lin)</pronc>
-<def>Protein fraction in the blood plasma that contains antibodies.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00013108.mp3' SpanURL='' chapter=',7,'>
-<term><b>ganglion</b></term>
-<pronc>(GANG-le-on)</pronc>
-<def>Collection of nerve cell bodies located outside the central nervous system.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00013303.mp3' SpanURL='' chapter=',7,'>
-<term><b>gene</b></term>
-<pronc><definition/></pronc>
-<def>Hereditary factor; portion of the DNA on a chromosome encoding a specific protein.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00013317.mp3' SpanURL='' chapter=',7,'>
-<term><b>genetic</b></term>
-<pronc>(jeh-NET-ik)</pronc>
-<def>Pertaining to the genes or heredity.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00013351.mp3' SpanURL='' chapter=',7,'>
-<term><b>genotype</b></term>
-<pronc>(JEN-o-tipe)</pronc>
-<def>Genetic makeup of an organism.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00013407.mp3' SpanURL='' chapter=',7,'>
-<term><b>gestation</b></term>
-<pronc>(jes-TA-shun)</pronc>
-<def>Period of development from conception to birth.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00013518.mp3' SpanURL='' chapter=',7,'>
-<term><b>glomerular</b></term>
-<pronc>(glo-MER-u-lar)</pronc>
-<def>filtrate Fluid and dissolved materials that leave the blood and enter the kidney tubule.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00013525.mp3' SpanURL='' chapter=',7,'>
-<term><b>glomerulus</b></term>
-<pronc>(glo-MER-u-lus)</pronc>
-<def>Cluster of capillaries surrounded by the kidney tubule’s glomerular capsule.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00038512.mp3' SpanURL='' chapter=',7,'>
-<term><b>glucose</b></term>
-<pronc>(GLU-kose)</pronc>
-<def>Simple sugar; main energy source for the cells; dextrose.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00013685.mp3' SpanURL='' chapter=',7,'>
-<term><b>glycogen</b></term>
-<pronc>(GLI-ko-jen)</pronc>
-<def>Compound built from glucose molecules that is stored for energy in the liver and muscles.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00013705.mp3' SpanURL='' chapter=',7,'>
-<term><b>glycolysis</b></term>
-<pronc>(gli-KOL-ih-sis)</pronc>
-<def>First, anaerobic phase of glucose’s metabolic breakdown for energy; converts glucose into pyruvate.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00078762.mp3' SpanURL='' chapter=',7,'>
-<term><b>gustation</b></term>
-<pronc>(gus-TA-shun)</pronc>
-<def>Sense of taste; adj., gustatory.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00078793.mp3' SpanURL='' chapter=',7,'>
-<term><b>gyrus</b></term>
-<pronc>(JI-rus)</pronc>
-<def>Raised area of the cerebral cortex; pl., gyri (JI-ri).</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='H' chapter=',8,'>
-<audio audioURL='00078335.mp3' SpanURL='' chapter=',8,'>
-<term><b>hair follicle</b></term>
-<pronc>(FOL-lih-kl)</pronc>
-<def>Sheath that encloses a hair.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00014290.mp3' SpanURL='' chapter=',8,'>
-<term><b>hematocrit</b></term>
-<pronc>(he-MAT-o-krit)</pronc>
-<def><b>(Hct)</b> Volume percentage of red blood cells in whole blood; packed cell volume.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00014327.mp3' SpanURL='' chapter=',8,'>
-<term><b>hematopoietic</b></term>
-<pronc>(he-mah-to-poy-ET-ik)</pronc>
-<def>Pertaining to blood cell formation.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00079080.mp3' SpanURL='' chapter=',8,'>
-<term><b>hemoglobin</b></term>
-<pronc>(he-mo-GLO-bin)<b> </b></pronc>
-<def><b>(Hb) </b>Iron-containing protein in red blood cells that binds oxygen.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00014532.mp3' SpanURL='' chapter=',8,'>
-<term><b>hemolysis</b></term>
-<pronc>(he-MOL-ih-sis)</pronc>
-<def>Rupture of red blood cells; v., hemolyze (HE-mo-lize).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00014586.mp3' SpanURL='' chapter=',8,'>
-<term><b>hemostasis</b></term>
-<pronc>(he-mo-STA-sis)</pronc>
-<def>Stoppage of bleeding.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00014704.mp3' SpanURL='' chapter=',8,'>
-<term><b>heredity</b></term>
-<pronc>(he-RED-ih-te)</pronc>
-<def>Transmission of characteristics from parent to offspring by means of the genes.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00079286.mp3' SpanURL='' chapter=',8,'>
-<term><b>heterozygous</b></term>
-<pronc>(het-er-o-ZI-gus)</pronc>
-<def>Having unmatched alleles for a given trait; hybrid.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00079365.mp3' SpanURL='' chapter=',8,'>
-<term><b>histology</b></term>
-<pronc>(his-TOL-o-je)</pronc>
-<def>Study of tissues.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00015099.mp3' SpanURL='' chapter=',8,'>
-<term><b>homeostasis</b></term>
-<pronc>(ho-me-o-STA-sis)</pronc>
-<def>State of balance within the body; maintenance of body conditions within set limits.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00015189.mp3' SpanURL='' chapter=',8,'>
-<term><b>homozygous</b></term>
-<pronc>(ho-mo-ZI-gus)</pronc>
-<def>Having identical alleles in a given gene pair.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00079469.mp3' SpanURL='' chapter=',8,'>
-<term><b>hormone</b></term>
-<pronc><definition/></pronc>
-<def>Chemical messenger secreted by a tissue that has specific regulatory effects on certain other cells.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00079561.mp3' SpanURL='' chapter=',8,'>
-<term><b>human chorionic gonadotropin</b></term>
-<pronc>(ko-re-ON-ik gon-ah-do-TRO-pin)</pronc>
-<def><b>(hCG)</b> Hormone produced by embryonic cells soon after implantation that maintains the corpus luteum and is diagnostic of pregnancy.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00015373.mp3' SpanURL='' chapter=',8,'>
-<term><b>hydrolysis</b></term>
-<pronc>(hi-DROL-ih-sis)</pronc>
-<def>Splitting of large molecules by the addition of water, as in digestion.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00015586.mp3' SpanURL='' chapter=',8,'>
-<term><b>hypercapnia</b></term>
-<pronc>(hi-per-KAP-ne-ah)</pronc>
-<def>Increased level of carbon dioxide in the blood.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00015852.mp3' SpanURL='' chapter=',8,'>
-<term><b>hypertonic</b></term>
-<pronc>(hi-per-TON-ik)</pronc>
-<def>Describing a solution that is more concentrated than the fluids within a cell.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00016140.mp3' SpanURL='' chapter=',8,'>
-<term><b>hypothalamus</b></term>
-<pronc>(hi-po-THAL-ah-mus)</pronc>
-<def>Region of the brain that controls the pituitary; control center for numerous homeostatic negative feedback loops and for the autonomic nervous system.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00016154.mp3' SpanURL='' chapter=',8,'>
-<term><b>hypotonic</b></term>
-<pronc>(hi-po-TON-ik)</pronc>
-<def>Describing a solution that is less concentrated than are the fluids within a cell.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00016174.mp3' SpanURL='' chapter=',8,'>
-<term><b>hypoxia</b></term>
-<pronc>(hi-POK-se-ah)</pronc>
-<def>Lower than normal level of oxygen in the tissues.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='I' chapter=',9,'>
-<audio audioURL='00016443.mp3' SpanURL='' chapter=',9,'>
-<term><b>immunity</b></term>
-<pronc>(ih-MU-nih-te)</pronc>
-<def>Power of an individual to resist or overcome the effects of a disease or other harmful agent.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00016444.mp3' SpanURL='' chapter=',9,'>
-<term><b>immunization</b></term>
-<pronc>(ih-mu-nih-ZA-shun)</pronc>
-<def>Use of a vaccine to produce immunity; vaccination.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00016475.mp3' SpanURL='' chapter=',9,'>
-<term><b>immunoglobulin</b></term>
-<pronc>(im-mu-no-GLOB-u-lin)</pronc>
-<def><b>(Ig)</b> Substance produced in response to a specific antigen; immunoglobulin.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00016515.mp3' SpanURL='' chapter=',9,'>
-<term><b>implantation</b></term>
-<pronc>(im-plan-TA-shun)</pronc>
-<def>Embedding of a fertilized ovum into the uterine lining.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00016675.mp3' SpanURL='' chapter=',9,'>
-<term><b>inflammation</b></term>
-<pronc>(in-flah-MA-shun)</pronc>
-<def>Response of tissues to injury or infection; characterized by heat, redness, swelling, and pain.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00016747.mp3' SpanURL='' chapter=',9,'>
-<term><b>ingestion </b></term>
-<pronc>(in-JES-chun)</pronc>
-<def>Intake of food.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00016842.mp3' SpanURL='' chapter=',9,'>
-<term><b>insertion</b></term>
-<pronc>(in-SER-shun)</pronc>
-<def>Muscle attachment connected to a movable part.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',9,'>
-<term><b>integumentary system</b></term>
-<pronc><definition/></pronc>
-<def>The skin and all its associated structures.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00016962.mp3' SpanURL='' chapter=',9,'>
-<term><b>interferon</b></term>
-<pronc>(in-ter-FERE-on)</pronc>
-<def><b>(IFN)</b> Group of substances released from virus-infected cells that prevent spread of infection to other cells; also nonspecifically boosts the immune system.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00038943.mp3' SpanURL='' chapter=',9,'>
-<term><b>interleukin</b></term>
-<pronc>(in-ter-LU-kin)</pronc>
-<def>Substance released by a T cell, macrophage, or endothelial cell that regulates other immune system cells.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',9,'>
-<term><b>interneuron</b></term>
-<pronc>(in-ter-NU-ron)</pronc>
-<def>Nerve cell that transmits impulses within the central nervous system or enteric (gastrointestinal) nervous system.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00017035.mp3' SpanURL='' chapter=',9,'>
-<term><b>interphase</b></term>
-<pronc>(IN-ter-faze)</pronc>
-<def>Stage in a cell’s life between one mitosis and the next when the cell is not dividing.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00017060.mp3' SpanURL='' chapter=',9,'>
-<term><b>interstitial</b></term>
-<pronc>(in-ter-STISH-al)</pronc>
-<def>Between; pertaining to an organ’s spaces or structures between active tissues; also refers to the fluid between cells.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00017079.mp3' SpanURL='' chapter=',9,'>
-<term><b>intestine</b></term>
-<pronc>(in-TES-tin)</pronc>
-<def>Organ of the digestive tract between the stomach and the anus, consisting of the small and large intestine.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00101302.mp3' SpanURL='' chapter=',9,'>
-<term><b>intracellular</b></term>
-<pronc>(in-trah-SEL-u-lar)</pronc>
-<def>Within a cell.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00017320.mp3' SpanURL='' chapter=',9,'>
-<term><b>ion</b></term>
-<pronc>(I-on)</pronc>
-<def>Atom or molecule with an electrical charge; anion or cation.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00079797.mp3' SpanURL='' chapter=',9,'>
-<term><b>iris</b></term>
-<pronc>(I-ris)</pronc>
-<def>Circular colored region of the eye around the pupil.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00017616.mp3' SpanURL='' chapter=',9,'>
-<term><b>isotonic</b></term>
-<pronc>(i-so-TON-ik)</pronc>
-<def>Describing a solution that has the same concentration as the fluid within a cell.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00017618.mp3' SpanURL='' chapter=',9,'>
-<term><b>isotope</b></term>
-<pronc>(I-so-tope)</pronc>
-<def>Form of an element that has the same atomic number as another form of that element but a different atomic weight; isotopes differ in their numbers of neutrons.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='J' chapter=',10'>
-<audio audioURL='' SpanURL='' chapter=',10,'>
-<term><b>joint</b></term>
-<pronc><definition/></pronc>
-<def>Area of junction between two or more bones; articulation.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='K' chapter=',11'>
-<audio audioURL='00017772.mp3' SpanURL='' chapter=',11,'>
-<term><b>keratin</b></term>
-<pronc>(KER-ah-tin)</pronc>
-<def>Protein that thickens and protects the skin; makes up hair and nails.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00017886.mp3' SpanURL='' chapter=',11,'>
-<term><b>kidney</b></term>
-<pronc>(KID-ne)</pronc>
-<def>Organ of excretion, hormone synthesis, and blood pressure regulation.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00017888.mp3' SpanURL='' chapter=',11,'>
-<term><b>kilocalorie</b></term>
-<pronc>(kil-o-KAL-o-re)</pronc>
-<def><b>(kcal)</b> Measure of the energy content of food; technically, the amount of heat needed to raise l kg of water 1°C; calorie (C).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00017912.mp3' SpanURL='' chapter=',11,'>
-<term><b>kinesthesia</b></term>
-<pronc>(kin-es-THE-ze-ah)</pronc>
-<def>Sense of body movement.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='L' chapter=',12'>
-<audio audioURL='00018039.mp3' SpanURL='' chapter=',12,'>
-<term><b>lacrimal</b></term>
-<pronc>(LAK-rih-mal)</pronc>
-<def><b>apparatus </b>Lacrimal (tear) gland and its associated ducts.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00018052.mp3' SpanURL='' chapter=',12,'>
-<term><b>lactation</b></term>
-<pronc>(lak-TA-shun)</pronc>
-<def>Secretion of milk.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00018054.mp3' SpanURL='' chapter=',12,'>
-<term><b>lacteal</b></term>
-<pronc>(LAK-te-al)</pronc>
-<def>Lymphatic capillary that drains digested fats from the villi of the small intestine.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00018221.mp3' SpanURL='' chapter=',12,'>
-<term><b>larynx</b></term>
-<pronc>(LAR-inks)</pronc>
-<def>Structure between the pharynx and trachea that contains the vocal cords; voice box.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00018306.mp3' SpanURL='' chapter=',12,'>
-<term><b>lens</b></term>
-<pronc><definition/></pronc>
-<def>Biconvex structure of the eye that changes in thickness to accommodate near and far vision; crystalline lens.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00018421.mp3' SpanURL='' chapter=',12,'>
-<term><b>leukocyte</b></term>
-<pronc>(LU-ko-site)</pronc>
-<def>White blood cell.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00018587.mp3' SpanURL='' chapter=',12,'>
-<term><b>limbic</b></term>
-<pronc>(LIM-bik)</pronc>
-<def>system Area between the brain’s cerebrum and diencephalon that is involved in emotional states, memory, and behavior.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00018646.mp3' SpanURL='' chapter=',12,'>
-<term><b>lipid</b></term>
-<pronc>(LIP-id)</pronc>
-<def>Type of organic compound, one example of which is a fat.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00018803.mp3' SpanURL='' chapter=',12,'>
-<term><b>liver</b></term>
-<pronc>(LIV-er)</pronc>
-<def>Large organ inferior to the diaphragm in the superior right abdomen; has many functions, including bile secretion, detoxification, storage, and interconversion of nutrients.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00018954.mp3' SpanURL='' chapter=',12,'>
-<term><b>lung</b></term>
-<pronc><definition/></pronc>
-<def>Organ of respiration.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',12,'>
-<term><b>luteinizing</b></term>
-<pronc>(LU-te-in-i-zing)</pronc>
-<def><b>hormone (LH)</b> Hormone produced by the anterior pituitary that induces ovulation and formation of the corpus luteum in females; in males, it stimulates cells in the testes to produce testosterone.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019004.mp3' SpanURL='' chapter=',12,'>
-<term><b>lymph</b></term>
-<pronc>(limf)</pronc>
-<def>Fluid in the lymphatic system.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00052518.mp3' SpanURL='' chapter=',12,'>
-<term><b>lymph node</b></term>
-<pronc><definition/></pronc>
-<def>Mass of lymphoid tissue along the path of a lymphatic vessel that filters lymph and harbors white blood cells active in immunity.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00052522.mp3' SpanURL='' chapter=',12,'>
-<term><b>lymphatic duct</b></term>
-<pronc>(lim-FAH-tic)</pronc>
-<def>One of two large vessels draining lymph from the lymphatic system into the venous system.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019058.mp3' SpanURL='' chapter=',12,'>
-<term><b>lymphocyte</b></term>
-<pronc>(LIM-fo-site)</pronc>
-<def>Agranular white blood cell that functions in acquired immunity.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='M' chapter=',13'>
-<audio audioURL='00019246.mp3' SpanURL='' chapter=',13,'>
-<term><b>macrophage</b></term>
-<pronc>(MAK-ro-faj)</pronc>
-<def>Large phagocytic cell that develops from a monocyte; presents antigen to other leukocytes in immune response.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019270.mp3' SpanURL='' chapter=',13,'>
-<term><b>macula</b></term>
-<pronc>(MAK-u-lah)</pronc>
-<def>Spot; flat, discolored spot on the skin, such as a freckle or measles. Area of the retina that contains the point of sharpest vision; equilibrium receptor in the vestibule of the inner ear. Also macule.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019379.mp3' SpanURL='' chapter=',13,'>
-<term><b>MALT</b></term>
-<pronc><definition/></pronc>
-<def>Mucosal-associated lymphoid tissue; tissue in the mucous membranes that helps fight infection.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019497.mp3' SpanURL='' chapter=',13,'>
-<term><b>marrow</b></term>
-<pronc>(MAH-ro)</pronc>
-<def>Any soft, gelatinous material resembling bone marrow.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00057949.mp3' SpanURL='' chapter=',13,'>
-<term><b>mast cell</b></term>
-<pronc><definition/></pronc>
-<def>White blood cell related to a basophil that is present in tissues; active in inflammatory and allergic reactions.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019534.mp3' SpanURL='' chapter=',13,'>
-<term><b>mastication</b></term>
-<pronc>(mas-tih-KA-shun)</pronc>
-<def>Act of chewing.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00079815.mp3' SpanURL='' chapter=',13,'>
-<term><b>matrix</b></term>
-<pronc>(MA-triks)</pronc>
-<def>The acellular background material in a tissue; the intercellular material.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019669.mp3' SpanURL='' chapter=',13,'>
-<term><b>mediastinum</b></term>
-<pronc>(me-de-as-TI-num)</pronc>
-<def>Region between the lungs and the organs and vessels it contains.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00052764.mp3' SpanURL='' chapter=',13,'>
-<term><b>medulla oblongata</b></term>
-<pronc>(ob-long-GAH-tah)</pronc>
-<def>Part of the brain stem that connects the brain to the spinal cord.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019746.mp3' SpanURL='' chapter=',13,'>
-<term><b>megakaryocyte</b></term>
-<pronc>(meg-ah-KAR-e-o-site)</pronc>
-<def>Very large bone marrow cell that gives rise to blood platelets.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019805.mp3' SpanURL='' chapter=',13,'>
-<term><b>meiosis</b></term>
-<pronc>(mi-O-sis)</pronc>
-<def>Process of cell division that halves the chromosome number in the formation of the gametes.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019817.mp3' SpanURL='' chapter=',13,'>
-<term><b>melanin</b></term>
-<pronc>(MEL-ah-nin)</pronc>
-<def>Dark pigment found in the skin, hair, parts of the eye, and certain parts of the brain.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019825.mp3' SpanURL='' chapter=',13,'>
-<term><b>melanocyte</b></term>
-<pronc>(MEL-ah-no-site)</pronc>
-<def>Cell that produces melanin.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019894.mp3' SpanURL='' chapter=',13,'>
-<term><b>membrane</b></term>
-<pronc>(MEM-brane)</pronc>
-<def>Thin sheet of tissue; lipid bilayer surrounding a cell or an organelle.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00052789.mp3' SpanURL='' chapter=',13,'>
-<term><b>membrane potential</b></term>
-<pronc>(po-TEN-shal)</pronc>
-<def>Difference in electric charge on either side of a plasma membrane; transmembrane potential.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019917.mp3' SpanURL='' chapter=',13,'>
-<term><b>meninges</b></term>
-<pronc>(men-IN-jeze)</pronc>
-<def>Three layers of fibrous membranes that cover the brain and spinal cord.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019955.mp3' SpanURL='' chapter=',13,'>
-<term><b>menopause</b></term>
-<pronc>(MEN-o-pawz)</pronc>
-<def>Time during which menstruation ceases.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019966.mp3' SpanURL='' chapter=',13,'>
-<term><b>menses</b></term>
-<pronc>(MEN-seze)</pronc>
-<def>Monthly flow of blood from the female reproductive tract.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00019970.mp3' SpanURL='' chapter=',13,'>
-<term><b>menstruation</b></term>
-<pronc>(men-stru-A-shun)</pronc>
-<def>Period of menstrual flow.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00020087.mp3' SpanURL='' chapter=',13,'>
-<term><b>mesentery</b></term>
-<pronc>(MES-en-ter-e)</pronc>
-<def>Connective tissue membrane that attaches the small intestine to the dorsal abdominal wall.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',13,'>
-<term><b>metabolic rate</b></term>
-<pronc><definition/></pronc>
-<def>Rate at which energy is released from nutrients in the cells.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00020231.mp3' SpanURL='' chapter=',13,'>
-<term><b>metabolism</b></term>
-<pronc>(meh-TAB-o-lizm)</pronc>
-<def>All the physical and chemical processes by which an organism is maintained.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00020655.mp3' SpanURL='' chapter=',13,'>
-<term><b>micrometer</b></term>
-<pronc>(MI-kro-me-ter)</pronc>
-<def><b>(mcm) </b>1/1,000th of a millimeter; an instrument for measuring through a microscope (pronounced mi-KROM-eh-ter).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00020705.mp3' SpanURL='' chapter=',13,'>
-<term><b>microscope</b></term>
-<pronc>(MI-kro-skope)</pronc>
-<def>Magnifying instrument used to examine cells and other structures not visible with the naked eye; examples are the compound light microscope, transmission electron microscope (TEM), and scanning electron microscope (SEM).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00020755.mp3' SpanURL='' chapter=',13,'>
-<term><b>micturition</b></term>
-<pronc>(mik-tu-RISH-un)</pronc>
-<def>Act of urination; voiding of the urinary bladder.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00020757.mp3' SpanURL='' chapter=',13,'>
-<term><b>midbrain</b></term>
-<pronc><definition/></pronc>
-<def>Upper portion of the brain stem.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00020804.mp3' SpanURL='' chapter=',13,'>
-<term><b>mineral</b></term>
-<pronc>(MIN-er-al)</pronc>
-<def>Inorganic substance; in the diet, an element needed in small amounts for health.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00020850.mp3' SpanURL='' chapter=',13,'>
-<term><b>mitochondria</b></term>
-<pronc>(mi-to-KON-dre-ah)</pronc>
-<def>Cellular organelles that manufacture ATP with the energy released from the oxidation of nutrients; sing., mitochondrion.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00020859.mp3' SpanURL='' chapter=',13,'>
-<term><b>mitosis</b></term>
-<pronc>(mi-TO-sis)</pronc>
-<def>Type of cell division that produces two daughter cells exactly like the parent cell.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00020903.mp3' SpanURL='' chapter=',13,'>
-<term><b>molecule</b></term>
-<pronc>(MOL-eh-kule)</pronc>
-<def>Particle formed by covalent bonding of two or more atoms; smallest subunit of a compound.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00082780.mp3' SpanURL='' chapter=',13,'>
-<term><b>monocyte</b></term>
-<pronc>(MON-o-site)</pronc>
-<def>Phagocytic agranular white blood cell that differentiates into a macrophage.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00021181.mp3' SpanURL='' chapter=',13,'>
-<term><b>motor</b></term>
-<pronc>(MO-tor)</pronc>
-<def>Describing structures or activities involved in transmitting impulses away from the central nervous system; efferent.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00053018.mp3' SpanURL='' chapter=',13,'>
-<term><b>motor unit</b></term>
-<pronc><definition/></pronc>
-<def>Group consisting of a single neuron and all the muscle fibers it stimulates.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00021250.mp3' SpanURL='' chapter=',13,'>
-<term><b>mucosa</b></term>
-<pronc>(mu-KO-sah)</pronc>
-<def>Epithelial membrane that produces mucus; mucous membrane.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00021261.mp3' SpanURL='' chapter=',13,'>
-<term><b>mucus</b></term>
-<pronc>(MU-kus)</pronc>
-<def>Thick protective fluid secreted by mucous membranes and glands; adj., mucous.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00021317.mp3' SpanURL='' chapter=',13,'>
-<term><b>murmur </b></term>
-<pronc><definition/></pronc>
-<def>Abnormal heart sound.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00021360.mp3' SpanURL='' chapter=',13,'>
-<term><b>mutation</b></term>
-<pronc>(mu-TA-shun)</pronc>
-<def>Change in a gene or a chromosome.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00021521.mp3' SpanURL='' chapter=',13,'>
-<term><b>myocardium</b></term>
-<pronc>(mi-o-KAR-de-um)</pronc>
-<def>Middle layer of the heart wall; heart muscle.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00021574.mp3' SpanURL='' chapter=',13,'>
-<term><b>myoglobin</b></term>
-<pronc>(MI-o-glo-bin)</pronc>
-<def>Compound that stores oxygen in muscle cells.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00021639.mp3' SpanURL='' chapter=',13,'>
-<term><b>myosin</b></term>
-<pronc>(MI-o-sin)</pronc>
-<def>One of the two contractile proteins in muscle cells, the other being actin.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='N' chapter=',14'>
-<audio audioURL='' SpanURL='' chapter=',14,'>
-<term><b>natural killer</b></term>
-<pronc><definition/></pronc>
-<def><b> cell </b>Type of lymphocyte that can nonspecifically destroy abnormal cells.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',14,'>
-<term><b>negative feedback <b>(NK)</b></b></term>
-<pronc><definition/></pronc>
-<def>Self-regulating system in which the result of an action reverses that action; a method for keeping body conditions within a normal range and maintaining homeostasis.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00082878.mp3' SpanURL='' chapter=',14,'>
-<term><b>nephron</b></term>
-<pronc>(NEF-ron)</pronc>
-<def>Microscopic functional unit of the kidney; consists of the glomerulus and the renal tubule.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00022010.mp3' SpanURL='' chapter=',14,'>
-<term><b>nerve</b></term>
-<pronc><definition/></pronc>
-<def>Bundle of neuron fibers outside the central nervous system.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',14,'>
-<term><b>nerve impulse</b></term>
-<pronc><definition/></pronc>
-<def>Electric charge that spreads along the membrane of a neuron; action potential.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00022104.mp3' SpanURL='' chapter=',14,'>
-<term><b>neuroglia</b></term>
-<pronc>(nu-ROG-le-ah)</pronc>
-<def>Supporting and protective cells of the nervous system; glial cells.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',14,'>
-<term><b>neuromuscular junction</b></term>
-<pronc><definition/></pronc>
-<def>Point at which a neuron’s axon contacts a muscle cell.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00022141.mp3' SpanURL='' chapter=',14,'>
-<term><b>neuron</b></term>
-<pronc>(NU-ron)</pronc>
-<def>Conducting cell of the nervous system.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00080015.mp3' SpanURL='' chapter=',14,'>
-<term><b>neurotransmitter</b></term>
-<pronc>(nu-ro-TRANS-mit-er)</pronc>
-<def>Chemical released from the ending of an axon that enables a nerve impulse to cross a chemical synapse.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00022241.mp3' SpanURL='' chapter=',14,'>
-<term><b>neutron</b></term>
-<pronc>(NU-tron)</pronc>
-<def>Noncharged particle in an atom’s nucleus.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00080016.mp3' SpanURL='' chapter=',14,'>
-<term><b>neutrophil</b></term>
-<pronc>(NU-tro-fil)</pronc>
-<def>Phagocytic granular white blood cell; polymorph; poly; PMN; seg.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00022443.mp3' SpanURL='' chapter=',14,'>
-<term><b>norepinephrine</b></term>
-<pronc>(nor-epi-ih-NEF-rin)</pronc>
-<def>Neurotransmitter similar in composition and action to the hormone epinephrine; noradrenaline.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00022578.mp3' SpanURL='' chapter=',14,'>
-<term><b>nucleotide</b></term>
-<pronc>(NU-kle-o-tide)</pronc>
-<def>Building block of DNA and RNA; one is also a component of ATP.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00022581.mp3' SpanURL='' chapter=',14,'>
-<term><b>nucleus</b></term>
-<pronc>(NU-kle-us)</pronc>
-<def>Largest cellular organelle, containing the DNA, which directs all cell activities; group of neurons in the central nervous system; in chemistry, the central part of an atom.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='O' chapter=',15'>
-<audio audioURL='00022661.mp3' SpanURL='' chapter=',15,'>
-<term><b>obstetrics</b></term>
-<pronc>(ob-STET-riks)</pronc>
-<def>Branch of medicine that is concerned with the care of women during pregnancy, childbirth, and the six weeks after childbirth.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00022854.mp3' SpanURL='' chapter=',15,'>
-<term><b>olfaction</b></term>
-<pronc>(ol-FAK-shun)</pronc>
-<def>Sense of smell; adj., olfactory.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00023257.mp3' SpanURL='' chapter=',15,'>
-<term><b>organ</b></term>
-<pronc>(OR-gan)</pronc>
-<def>Body part containing two or more tissues functioning together for specific purposes.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00023259.mp3' SpanURL='' chapter=',15,'>
-<term><b>organelle</b></term>
-<pronc>(or-gan-EL)</pronc>
-<def>Specialized subdivision within a cell.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00023306.mp3' SpanURL='' chapter=',15,'>
-<term><b>origin</b></term>
-<pronc>(OR-ih-jin)</pronc>
-<def>Source; beginning; muscle attachment connected to a nonmoving part.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00023427.mp3' SpanURL='' chapter=',15,'>
-<term><b>osmolarity </b></term>
-<pronc>(os-mo-LAR-ih-te)</pronc>
-<def>Term that refers to the solute concentration of a solution; osmotic concentration.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00023438.mp3' SpanURL='' chapter=',15,'>
-<term><b>osmosis</b></term>
-<pronc>(os-MO-sis)</pronc>
-<def>Passage of water through a semipermeable membrane from the region of lower solute concentration to the region of higher solute concentration.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00023454.mp3' SpanURL='' chapter=',15,'>
-<term><b>ossicle</b></term>
-<pronc>(OS-ih-kl)</pronc>
-<def>One of three small bones of the middle ear: malleus, incus, or stapes.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00023481.mp3' SpanURL='' chapter=',15,'>
-<term><b>osteoblast</b></term>
-<pronc>(OS-te-o-blast)</pronc>
-<def>Bone-forming cell.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00023495.mp3' SpanURL='' chapter=',15,'>
-<term><b>osteoclast</b></term>
-<pronc>(OS-te-o-clast)</pronc>
-<def>Cell that breaks down bone.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00023500.mp3' SpanURL='' chapter=',15,'>
-<term><b>osteocyte</b></term>
-<pronc>(OS-te-o-site)</pronc>
-<def>Mature bone cell; maintains bone but does not produce new bone tissue.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00023538.mp3' SpanURL='' chapter=',15,'>
-<term><b>osteon</b></term>
-<pronc>(OS-te-on)</pronc>
-<def>Subunit of compact bone, consisting of concentric rings of bone tissue around a central channel; haversian system.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00078336.mp3' SpanURL='' chapter=',15,'>
-<term><b>ovarian follicle</b></term>
-<pronc>(o-VA-re-an FOL-ih-kl)</pronc>
-<def>Cluster of cells containing an ovum. A follicle can mature during a menstrual cycle and release its ovum.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00023667.mp3' SpanURL='' chapter=',15,'>
-<term><b>ovary</b></term>
-<pronc>(O-vah-re)</pronc>
-<def>Female reproductive organ; produces ova and female sex steroids.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00023726.mp3' SpanURL='' chapter=',15,'>
-<term><b>ovulation</b></term>
-<pronc>(ov-u-LA-shun)</pronc>
-<def>Release of an ovum from a mature ovarian follicle (graafian follicle).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00023731.mp3' SpanURL='' chapter=',15,'>
-<term><b>ovum </b></term>
-<pronc>(O-vum)</pronc>
-<def>Female reproductive cell or gamete; pl., ova.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00023761.mp3' SpanURL='' chapter=',15,'>
-<term><b>oxidation</b></term>
-<pronc>(ok-sih-DA-shun)</pronc>
-<def>Chemical breakdown of nutrients for energy usually using oxygen.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00023840.mp3' SpanURL='' chapter=',15,'>
-<term><b>oxytocin</b></term>
-<pronc>(ok-se-TO-sin)</pronc>
-<def>Hormone from the posterior pituitary that causes uterine contraction and milk ejection (“letdown”) from the breasts.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='P' chapter=',16'>
-<audio audioURL='00023862.mp3' SpanURL='' chapter=',16,'>
-<term><b>pacemaker</b></term>
-<pronc><definition/></pronc>
-<def>Group of cells or artificial device that sets activity rate; in the heart, the sinoatrial (SA) node that normally initiates contractions.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00024019.mp3' SpanURL='' chapter=',16,'>
-<term><b>pancreas</b></term>
-<pronc>(PAN-kre-as)</pronc>
-<def>Large, elongated gland behind the stomach; produces digestive enzymes and hormones (e.g., insulin, glucagon).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00086799.mp3' SpanURL='' chapter=',16,'>
-<term><b>parasympathetic nervous system</b></term>
-<pronc><definition/></pronc>
-<def>Craniosacral division of the autonomic nervous system; generally reverses the fight or flight (stress) response.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00024454.mp3' SpanURL='' chapter=',16,'>
-<term><b>parietal</b></term>
-<pronc>(pah-RI-eh-tal)</pronc>
-<def>Pertaining to the wall of a space or cavity.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00024518.mp3' SpanURL='' chapter=',16,'>
-<term><b>parturition</b></term>
-<pronc>(par-tu-RISH-un)</pronc>
-<def>Childbirth; labor.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00024926.mp3' SpanURL='' chapter=',16,'>
-<term><b>pericardium</b></term>
-<pronc>(per-ih-KAR-de-um)</pronc>
-<def>Fibrous sac lined with serous membrane that encloses the heart.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00025090.mp3' SpanURL='' chapter=',16,'>
-<term><b>periosteum</b></term>
-<pronc>(per-e-OS-te-um)</pronc>
-<def>Connective tissue membrane covering a bone.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00025146.mp3' SpanURL='' chapter=',16,'>
-<term><b>peristalsis</b></term>
-<pronc>(per-ih-STAL-sis)</pronc>
-<def>Wavelike movements in the wall of an organ or duct that propel its contents forward.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00025180.mp3' SpanURL='' chapter=',16,'>
-<term><b>peritoneum</b></term>
-<pronc>(per-ih-to-NE-um)</pronc>
-<def>Serous membrane that lines the abdominal cavity and forms the outer layer of the abdominal organs; forms supporting ligaments for some organs.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',16,'>
-<term><b>pH</b></term>
-<pronc><definition/></pronc>
-<def>Symbol indicating hydrogen ion (H<sup>+</sup>) concentration; lower numbers indicate a higher H<sup>+</sup> concentration and higher acidity.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00025339.mp3' SpanURL='' chapter=',16,'>
-<term><b>phagocytosis</b></term>
-<pronc>(fag-o-si-TO-sis)</pronc>
-<def>Engulfing of large particles through the plasma membrane.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00025447.mp3' SpanURL='' chapter=',16,'>
-<term><b>pharynx</b></term>
-<pronc>(FAR-inks)</pronc>
-<def>Throat; passageway between the mouth and esophagus.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00025501.mp3' SpanURL='' chapter=',16,'>
-<term><b>phenotype</b></term>
-<pronc>(FE-no-tipe)</pronc>
-<def>All the characteristics of an organism that can be seen or tested for.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00054092.mp3' SpanURL='' chapter=',16,'>
-<term><b>phrenic nerve</b></term>
-<pronc><definition/></pronc>
-<def>Nerve that activates the diaphragm.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00025982.mp3' SpanURL='' chapter=',16,'>
-<term><b>physiology</b></term>
-<pronc>(fiz-e-OL-o-je)</pronc>
-<def>Study of the function of living organisms.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00026192.mp3' SpanURL='' chapter=',16,'>
-<term><b>pituitary</b></term>
-<pronc>(pih-TU-ih-tar-e)</pronc>
-<def><b>gland</b> Endocrine gland located under and controlled by the hypothalamus; releases hormones that control other glands; hypophysis.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00026204.mp3' SpanURL='' chapter=',16,'>
-<term><b>placenta</b></term>
-<pronc>(plah-SEN-tah)</pronc>
-<def>Structure that nourishes and maintains the developing fetus during pregnancy.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00026252.mp3' SpanURL='' chapter=',16,'>
-<term><b>plasma</b></term>
-<pronc>(PLAZ-mah)</pronc>
-<def>Liquid portion of the blood.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00054191.mp3' SpanURL='' chapter=',16,'>
-<term><b>plasma cell</b></term>
-<pronc><definition/></pronc>
-<def><b> </b>Cell derived from a B cell that produces antibodies.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00054193.mp3' SpanURL='' chapter=',16,'>
-<term><b>plasma membrane</b></term>
-<pronc><definition/></pronc>
-<def>Outer covering of a cell; regulates what enters and leaves the cell; cell membrane.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00026308.mp3' SpanURL='' chapter=',16,'>
-<term><b>platelet</b></term>
-<pronc>(PLATE-let)</pronc>
-<def>Cell fragment that forms a plug to stop bleeding and acts in blood clotting; thrombocyte.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00026369.mp3' SpanURL='' chapter=',16,'>
-<term><b>pleura</b></term>
-<pronc>(PLU-rah)</pronc>
-<def>Serous membrane that lines the chest cavity and covers the lungs.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00026409.mp3' SpanURL='' chapter=',16,'>
-<term><b>plexus</b></term>
-<pronc>(PLEK-sus)</pronc>
-<def>Network of vessels or nerves.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00080384.mp3' SpanURL='' chapter=',16,'>
-<term><b>pons</b></term>
-<pronc>(ponz)</pronc>
-<def>Area of the brain between the midbrain and medulla; connects the cerebellum with the rest of the central nervous system.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00080468.mp3' SpanURL='' chapter=',16,'>
-<term><b>postsynaptic</b></term>
-<pronc>(post-sin-AP-tik)</pronc>
-<def>Distal to the synaptic cleft.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00080586.mp3' SpanURL='' chapter=',16,'>
-<term><b>presynaptic</b></term>
-<pronc>(pre-sin-AP-tik)</pronc>
-<def>Proximal to the synaptic cleft.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00058865.mp3' SpanURL='' chapter=',16,'>
-<term><b>prime mover</b></term>
-<pronc><definition/></pronc>
-<def>The main muscle that produces a given movement.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00027478.mp3' SpanURL='' chapter=',16,'>
-<term><b>progeny</b></term>
-<pronc>(PROJ-eh-ne)</pronc>
-<def>Offspring, descendent.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00027481.mp3' SpanURL='' chapter=',16,'>
-<term><b>progesterone</b></term>
-<pronc>(pro-JES-ter-one)</pronc>
-<def>Hormone produced by the corpus luteum and placenta; maintains the uterine lining for pregnancy.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00027609.mp3' SpanURL='' chapter=',16,'>
-<term><b>proprioceptor</b></term>
-<pronc>(pro-pre-o-SEP-tor)</pronc>
-<def>Sensory receptor that aids in judging body position and changes in position; located in muscles, tendons, and joints.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00080735.mp3' SpanURL='' chapter=',16,'>
-<term><b>prostaglandin</b></term>
-<pronc>(pros-tah-GLAN-din)</pronc>
-<def>Any of a group of hormones produced by many cells that usually act on neighboring cells; these hormones are involved in pain and inflammation, as well as many other functions.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00080760.mp3' SpanURL='' chapter=',16,'>
-<term><b>protein</b></term>
-<pronc>(PRO-tene)</pronc>
-<def>Organic compound made of amino acids; found as structural materials and metabolically active compounds, such as enzymes, some hormones, pigments, antibodies, and others.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00027751.mp3' SpanURL='' chapter=',16,'>
-<term><b>proton</b></term>
-<pronc>(PRO-ton)</pronc>
-<def>Positively charged particle in an atom’s nucleus. May also refer to the hydrogen ion (H+), which consists of a single proton.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00054738.mp3' SpanURL='' chapter=',16,'>
-<term><b>pulmonary ventilation</b></term>
-<pronc>(ven-tih-LA-shun)</pronc>
-<def>Exchange of air between the atmosphere and the alveoli of the lungs.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00080973.mp3' SpanURL='' chapter=',16,'>
-<term><b>pulse</b></term>
-<pronc><definition/></pronc>
-<def>Wave of increased pressure in the vessels produced by heart contraction.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='R' chapter=',17'>
-<audio audioURL='00028710.mp3' SpanURL='' chapter=',17,'>
-<term><b>radioactive</b></term>
-<pronc>(ra-de-o-AK-tive)</pronc>
-<def>Pertaining to isotopes that fall apart easily, giving off radiation.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00028893.mp3' SpanURL='' chapter=',17,'>
-<term><b>receptor</b></term>
-<pronc>(re-SEP-tor)</pronc>
-<def>Specialized cell or ending of a sensory neuron that can be excited by a stimulus. Protein in the plasma membrane or other part of a cell that binds a chemical signal (e.g., hormone, neurotransmitter) resulting in a change in cellular activity.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00028898.mp3' SpanURL='' chapter=',17,'>
-<term><b>recessive</b></term>
-<pronc>(re-SES-iv)</pronc>
-<def>Referring to an allele that is not expressed in the phenotype if a dominant allele for the same trait is present.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00028983.mp3' SpanURL='' chapter=',17,'>
-<term><b>reflex</b></term>
-<pronc>(RE-fleks)</pronc>
-<def>Simple, rapid, automatic response to a specific stimulus.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00028995.mp3' SpanURL='' chapter=',17,'>
-<term><b>refraction</b></term>
-<pronc>(re-FRAK-shun)</pronc>
-<def>Bending of light rays as they pass from one medium to another of a different density.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00029077.mp3' SpanURL='' chapter=',17,'>
-<term><b>renin</b></term>
-<pronc>(RE-nin)</pronc>
-<def>Enzyme released from the kidney’s juxtaglomerular apparatus that indirectly increases blood pressure by activating angiotensin.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00029115.mp3' SpanURL='' chapter=',17,'>
-<term><b>repolarization</b></term>
-<pronc>(re-po-lar-ih-ZA-shun)</pronc>
-<def>A change in the membrane potential that brings it closer to the resting value.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00029165.mp3' SpanURL='' chapter=',17,'>
-<term><b>resorption</b></term>
-<pronc>(re-SORP-shun)</pronc>
-<def>Loss of substance from a solid tissue, such as bone or a tooth, and return of the components to the blood.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00029167.mp3' SpanURL='' chapter=',17,'>
-<term><b>respiration</b></term>
-<pronc>(res-pih-RA-shun)</pronc>
-<def>Process by which oxygen is obtained from the environment and delivered to the cells as carbon dioxide is removed from the tissues and released to the environment.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00029192.mp3' SpanURL='' chapter=',17,'>
-<term><b>reticular</b></term>
-<pronc>(reh-TIK-u-lar)</pronc>
-<def><b>formation </b>Network in the limbic system that governs wakefulness and sleep.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00029211.mp3' SpanURL='' chapter=',17,'>
-<term><b>retina</b></term>
-<pronc>(RET-ih-nah)</pronc>
-<def>Innermost layer of the eye; contains light-sensitive cells (rods and cones).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00029498.mp3' SpanURL='' chapter=',17,'>
-<term><b>ribosome</b></term>
-<pronc>(RI-bo-some)</pronc>
-<def>Small body in the cell’s cytoplasm that is a site of protein manufacture.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',17,'>
-<term><b>RNA</b></term>
-<pronc><definition/></pronc>
-<def>Substance needed for protein manufacture in the cell.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='S' chapter=',18'>
-<audio audioURL='00029779.mp3' SpanURL='' chapter=',18,'>
-<term><b>saliva</b></term>
-<pronc>(sah-LI-vah)</pronc>
-<def>Secretion of the salivary glands; moistens food and contains an enzyme that digests starch.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00046892.mp3' SpanURL='' chapter=',18,'>
-<term><b>salt</b></term>
-<pronc><definition/></pronc>
-<def>Compound formed by reaction between an acid and a base (e.g., NaCl, table salt).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00029818.mp3' SpanURL='' chapter=',18,'>
-<term><b>saltatory</b></term>
-<pronc>(SAL-tah-to-re)</pronc>
-<def>conduction Transmission of an electric impulse from node to node along a myelinated fiber; faster than continuous conduction along the entire membrane.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00029904.mp3' SpanURL='' chapter=',18,'>
-<term><b>sarcomere</b></term>
-<pronc>(SAR-ko-mere)</pronc>
-<def>Contracting subunit of skeletal muscle.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00030102.mp3' SpanURL='' chapter=',18,'>
-<term><b>sclera</b></term>
-<pronc>(SKLE-rah)</pronc>
-<def>Outermost layer of the eye; made of tough connective tissue; “white” of the eye.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00030240.mp3' SpanURL='' chapter=',18,'>
-<term><b>sebaceous</b></term>
-<pronc>(seh-BA-chus)</pronc>
-<def>Pertaining to sebum, an oily substance secreted by skin glands.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00030248.mp3' SpanURL='' chapter=',18,'>
-<term><b>sebum </b></term>
-<pronc>(SE-bum)</pronc>
-<def>Oily secretion that lubricates the skin; adj., sebaceous (se-BA-shus).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00030289.mp3' SpanURL='' chapter=',18,'>
-<term><b>segmentation</b></term>
-<pronc>(seg-men-TA-shun)</pronc>
-<def>Alternating contraction and relaxation of the circular muscle in the small intestine’s wall that mix its contents with digestive juices and move them through the organ.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00030313.mp3' SpanURL='' chapter=',18,'>
-<term><b>semen</b></term>
-<pronc>(SE-men)</pronc>
-<def>Mixture of sperm cells and secretions from several glands of the male reproductive tract.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',18,'>
-<term><b>semicircular canal</b></term>
-<pronc><definition/></pronc>
-<def>One of three curved channels of the inner ear where receptors for rotational equilibrium are located.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00030400.mp3' SpanURL='' chapter=',18,'>
-<term><b>sensory</b></term>
-<pronc>(SEN-so-re)</pronc>
-<def>Describing cells or activities involved in transmitting impulses toward the central nervous system; afferent.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',18,'>
-<term><b>sensory adaptation</b></term>
-<pronc><definition/></pronc>
-<def>Gradual loss of sensation when sensory receptors are exposed to continuous stimulation.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',18,'>
-<term><b>sensory receptor</b></term>
-<pronc><definition/></pronc>
-<def>Part of the nervous system that detects a stimulus.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00030432.mp3' SpanURL='' chapter=',18,'>
-<term><b>septum</b></term>
-<pronc>(SEP-tum)</pronc>
-<def>Dividing wall, as between the chambers of the heart or the nasal cavities.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00030475.mp3' SpanURL='' chapter=',18,'>
-<term><b>serosa</b></term>
-<pronc>(se-RO-sah)</pronc>
-<def>Serous membrane; epithelial membrane that secretes a thin, watery fluid.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00030503.mp3' SpanURL='' chapter=',18,'>
-<term><b>serum</b></term>
-<pronc>(SE-rum)</pronc>
-<def>Liquid portion of blood without clotting factors; thin, watery fluid; adj., serous (SE-rus).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00081276.mp3' SpanURL='' chapter=',18,'>
-<term><b>sex-linked</b></term>
-<pronc><definition/></pronc>
-<def>Referring to a gene carried on a sex chromosome, usually the X chromosome.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00030703.mp3' SpanURL='' chapter=',18,'>
-<term><b>sinusoid</b></term>
-<pronc>(SI-nus-oyd)</pronc>
-<def>Enlarged capillary that serves as a blood channel.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00030732.mp3' SpanURL='' chapter=',18,'>
-<term><b>skeleton</b></term>
-<pronc>(SKEL-eh-ton)</pronc>
-<def>Bony framework of the body; adj., skeletal.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00030817.mp3' SpanURL='' chapter=',18,'>
-<term><b>solute</b></term>
-<pronc>(SOL-ute)</pronc>
-<def>Substance that is dissolved in another substance (the solvent).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00030819.mp3' SpanURL='' chapter=',18,'>
-<term><b>solution</b></term>
-<pronc>(so-LU-shun)</pronc>
-<def>Homogeneous mixture of one substance dissolved in another; the components in a mixture are evenly distributed and cannot be distinguished from each other.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00081387.mp3' SpanURL='' chapter=',18,'>
-<term><b>solvent</b></term>
-<pronc>(SOL-vent)</pronc>
-<def>Substance in which another substance (the solute) is dissolved.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00030831.mp3' SpanURL='' chapter=',18,'>
-<term><b>somatic</b></term>
-<pronc>(so-MAT-ik)</pronc>
-<def><b>nervous system</b> Division of the nervous system that controls voluntary activities and stimulates skeletal muscle.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00031024.mp3' SpanURL='' chapter=',18,'>
-<term><b>spermatozoon</b></term>
-<pronc>(sper-mah-to-ZO-on)</pronc>
-<def>Male reproductive cell or gamete; pl., spermatozoa; sperm cell.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00031086.mp3' SpanURL='' chapter=',18,'>
-<term><b>sphincter</b></term>
-<pronc>(SFINK-ter)</pronc>
-<def>Muscular ring that regulates the size of an opening.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00031118.mp3' SpanURL='' chapter=',18,'>
-<term><b>sphygmomanometer</b></term>
-<pronc>(sfig-mo-mah-NOM-eh-ter)</pronc>
-<def>Device used to measure blood pressure; blood pressure apparatus or cuff.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00031167.mp3' SpanURL='' chapter=',18,'>
-<term><b>spiral</b></term>
-<pronc>(SPI-ral)</pronc>
-<def>organ Receptor for hearing located in the cochlea of the internal ear; organ of Corti.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00031194.mp3' SpanURL='' chapter=',18,'>
-<term><b>spirometer</b></term>
-<pronc>(spi-ROM-eh-ter)</pronc>
-<def>Instrument for recording lung volumes; tracing obtained is a spirogram.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00031233.mp3' SpanURL='' chapter=',18,'>
-<term><b>spleen</b></term>
-<pronc><definition/></pronc>
-<def>Lymphoid organ in the upper left region of the abdomen.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00059541.mp3' SpanURL='' chapter=',18,'>
-<term><b>stem cell</b></term>
-<pronc><definition/></pronc>
-<def><b> </b>Cell that has the potential to divide and produce different types of cells.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00031631.mp3' SpanURL='' chapter=',18,'>
-<term><b>steroid</b></term>
-<pronc>(STE-royd)</pronc>
-<def>Category of lipids that includes the hormones of the sex glands and the adrenal cortex.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00082059.mp3' SpanURL='' chapter=',18,'>
-<term><b>stomach</b></term>
-<pronc>(STUM-ak)</pronc>
-<def>Organ of the digestive tract that stores food, mixes it with digestive juices, and moves it into the small intestine.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00089286.mp3' SpanURL='' chapter=',18,'>
-<term><b>stratum basale</b></term>
-<pronc>(bas-A-le)</pronc>
-<def>Deepest layer of the epidermis; layer that produces new epidermal cells; stratum germinativum.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00031938.mp3' SpanURL='' chapter=',18,'>
-<term><b>subcutaneous</b></term>
-<pronc>(sub-ku-TA-ne-us)</pronc>
-<def><b>layer </b>Under the skin.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00032079.mp3' SpanURL='' chapter=',18,'>
-<term><b>substrate</b></term>
-<pronc><definition/></pronc>
-<def>Substance on which an enzyme works.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00081675.mp3' SpanURL='' chapter=',18,'>
-<term><b>sudoriferous</b></term>
-<pronc>(su-do-RIF-er-us)</pronc>
-<def><b>gland </b>Producing sweat; referring to the sweat glands.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00032183.mp3' SpanURL='' chapter=',18,'>
-<term><b>sulcus</b></term>
-<pronc>(SUL-kus)</pronc>
-<def>Shallow groove as between convolutions of the cerebral cortex; pl., sulci (SUL-si).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00032416.mp3' SpanURL='' chapter=',18,'>
-<term><b>surfactant</b></term>
-<pronc>(sur-FAK-tant)</pronc>
-<def>Substance in the alveoli that prevents their collapse by reducing surface tension of the fluid lining them.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00032432.mp3' SpanURL='' chapter=',18,'>
-<term><b>suspension</b></term>
-<pronc>(sus-PEN-shun)</pronc>
-<def>Heterogeneous mixture that will separate unless shaken.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00087039.mp3' SpanURL='' chapter=',18,'>
-<term><b>sympathetic nervous system</b></term>
-<pronc><definition/></pronc>
-<def>Thoracolumbar division of the autonomic nervous system; stimulates a fight or flight (stress) response.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00032526.mp3' SpanURL='' chapter=',18,'>
-<term><b>synapse</b></term>
-<pronc>(SIN-aps)</pronc>
-<def>Junction between two neurons or between a neuron and an effector.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00032536.mp3' SpanURL='' chapter=',18,'>
-<term><b>synarthrosis</b></term>
-<pronc>(sin-ar-THRO-sis)</pronc>
-<def>Immovable joint.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00081778.mp3' SpanURL='' chapter=',18,'>
-<term><b>synergist</b></term>
-<pronc>(SIN-er-jist)</pronc>
-<def>Substance or structure that enhances the work of another. A muscle that works with a prime mover to produce a given movement.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00032629.mp3' SpanURL='' chapter=',18,'>
-<term><b>synovial</b></term>
-<pronc>(sin-O-ve-al)</pronc>
-<def>Pertaining to a thick, lubricating fluid found in joints, bursae, and tendon sheaths; pertaining to a freely movable (diarthrotic) joint.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00032697.mp3' SpanURL='' chapter=',18,'>
-<term><b>system</b></term>
-<pronc>(SIS-tem)</pronc>
-<def>Group of organs functioning together for the same general purposes.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00032703.mp3' SpanURL='' chapter=',18,'>
-<term><b>systole</b></term>
-<pronc>(SIS-to-le)</pronc>
-<def>Contraction; adj., systolic (sis-TOL-ik).</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='T' chapter=',19'>
-<audio audioURL='00059625.mp3' SpanURL='' chapter=',19,'>
-<term><b>T cell</b></term>
-<pronc><definition/></pronc>
-<def>Lymphocyte active in immunity that matures in the thymus gland; may destroy foreign cells directly or help in or regulate the immune response; T lymphocyte.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00032742.mp3' SpanURL='' chapter=',19,'>
-<term><b>tachycardia</b></term>
-<pronc>(tak-e-KAR-de-ah)</pronc>
-<def>Heart rate more than 100 beats per minute in an adult.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',19,'>
-<term><b>target tissue</b></term>
-<pronc><definition/></pronc>
-<def>Tissue that is capable of responding to a specific hormone.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00033011.mp3' SpanURL='' chapter=',19,'>
-<term><b>tendon</b></term>
-<pronc>(TEN-don)</pronc>
-<def>Cord of regular dense connective tissue that attaches a muscle to a bone.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00033133.mp3' SpanURL='' chapter=',19,'>
-<term><b>testis</b></term>
-<pronc>(TES-tis)</pronc>
-<def>Male reproductive gland; pl., testes (TES-teze).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00033137.mp3' SpanURL='' chapter=',19,'>
-<term><b>testosterone</b></term>
-<pronc>(tes-TOS-ter-one)</pronc>
-<def>Male sex hormone produced in the testes; promotes sperm cell development and maintains secondary sex characteristics.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00033240.mp3' SpanURL='' chapter=',19,'>
-<term><b>thalamus</b></term>
-<pronc>(THAL-ah-mus)</pronc>
-<def>Region of the brain located in the diencephalon; chief relay center for sensory impulses traveling to the cerebral cortex.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00046942.mp3' SpanURL='' chapter=',19,'>
-<term><b>thrombin</b></term>
-<pronc>(THROM-bin)</pronc>
-<def>Clotting factor in the blood needed to convert fibrinogen to fibrin.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00033648.mp3' SpanURL='' chapter=',19,'>
-<term><b>thymus</b></term>
-<pronc>(THI-mus)</pronc>
-<def>Lymphoid organ in the upper portion of the chest; site of T-cell development.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00033749.mp3' SpanURL='' chapter=',19,'>
-<term><b>tissue</b></term>
-<pronc><definition/></pronc>
-<def>Group of similar cells that performs a specialized function.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00033834.mp3' SpanURL='' chapter=',19,'>
-<term><b>tonsil</b></term>
-<pronc>(TON-sil)</pronc>
-<def>Mass of lymphoid tissue in the region of the pharynx.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00033844.mp3' SpanURL='' chapter=',19,'>
-<term><b>tonus</b></term>
-<pronc>(TO-nus)</pronc>
-<def>Partially contracted state of muscle; also, tone.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00033930.mp3' SpanURL='' chapter=',19,'>
-<term><b>toxin </b></term>
-<pronc>(TOK-sin)</pronc>
-<def>Poison.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00033940.mp3' SpanURL='' chapter=',19,'>
-<term><b>toxoid</b></term>
-<pronc>(TOK-soyd)</pronc>
-<def>Altered toxin used to produce active immunity.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00033960.mp3' SpanURL='' chapter=',19,'>
-<term><b>trachea</b></term>
-<pronc>(TRA-ke-ah)</pronc>
-<def>Tube that extends from the larynx to the bronchi; windpipe.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00034014.mp3' SpanURL='' chapter=',19,'>
-<term><b>tract</b></term>
-<pronc><definition/></pronc>
-<def>Bundle of neuron fibers within the central nervous system.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00034029.mp3' SpanURL='' chapter=',19,'>
-<term><b>trait</b></term>
-<pronc><definition/></pronc>
-<def>Characteristic.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00034081.mp3' SpanURL='' chapter=',19,'>
-<term><b>transfusion</b></term>
-<pronc>(trans-FU-zhun)</pronc>
-<def>Introduction of blood or blood components directly into the bloodstream of a recipient.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00034613.mp3' SpanURL='' chapter=',19,'>
-<term><b>tropomyosin</b></term>
-<pronc>(tro-po-MI-o-sin)</pronc>
-<def>Protein that works with troponin to regulate contraction in skeletal muscle.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00034614.mp3' SpanURL='' chapter=',19,'>
-<term><b>troponin</b></term>
-<pronc>(tro-PO-nin)</pronc>
-<def>Protein that works with tropomyosin to regulate contraction in skeletal muscle.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',19,'>
-<term><b>tubular reabsorption</b></term>
-<pronc><definition/></pronc>
-<def>Return of substances in the glomerular filtrate to the circulation through the renal tubule.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00034794.mp3' SpanURL='' chapter=',19,'>
-<term><b>tympanic</b></term>
-<pronc>(tim-PAN-ik)</pronc>
-<def><b>membrane </b>Membrane between the external and middle ear that transmits sound waves to the bones of the middle ear; eardrum.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-
-
-
-<group name='U' chapter=',20'>
-<audio audioURL='00034931.mp3' SpanURL='' chapter=',20,'>
-<term><b>umbilical</b></term>
-<pronc>(um-BIL-ih-kal)</pronc>
-<def><b>cord</b> Structure that connects the fetus with the placenta; contains vessels that carry blood between the fetus and placenta.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00083796.mp3' SpanURL='' chapter=',20,'>
-<term><b>urea</b></term>
-<pronc>(u-RE-ah)</pronc>
-<def>Nitrogenous waste product excreted in the urine; end product of protein metabolism.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00035093.mp3' SpanURL='' chapter=',20,'>
-<term><b>ureter</b></term>
-<pronc>(U-re-ter)</pronc>
-<def>Tube that carries urine from the kidney to the urinary bladder.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00083819.mp3' SpanURL='' chapter=',20,'>
-<term><b>urethra</b></term>
-<pronc>(u-RE-thrah)</pronc>
-<def>Tube that carries urine from the urinary bladder to the outside of the body.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00035203.mp3' SpanURL='' chapter=',20,'>
-<term><b>urinary</b></term>
-<pronc>(U-rin-ar-e)</pronc>
-<def><b>bladder</b> Hollow organ that stores urine until it is eliminated.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00035206.mp3' SpanURL='' chapter=',20,'>
-<term><b>urine</b></term>
-<pronc>(U-rin)</pronc>
-<def>Liquid waste excreted by the kidneys.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00035351.mp3' SpanURL='' chapter=',20,'>
-<term><b>uterus</b></term>
-<pronc>(U-ter-us)</pronc>
-<def>Muscular, pear-shaped organ in the female pelvis within which the fetus develops during pregnancy; adj., uterine.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='V' chapter=',21'>
-<audio audioURL='00035393.mp3' SpanURL='' chapter=',21,'>
-<term><b>vaccine</b></term>
-<pronc>(vak-SENE)</pronc>
-<def>Substance used to produce active immunity; usually, a suspension of attenuated or killed pathogens or some component of a pathogen given by inoculation to prevent a specific disease.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00035455.mp3' SpanURL='' chapter=',21,'>
-<term><b>valence</b></term>
-<pronc>(VA-lens)</pronc>
-<def>Combining power of an atom; number of electrons lost, gained, or shared by atoms of an element in chemical reactions.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00035485.mp3' SpanURL='' chapter=',21,'>
-<term><b>valve</b></term>
-<pronc><definition/></pronc>
-<def>Structure that prevents fluid from flowing backward, as in the heart, veins, and lymphatic vessels.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00035577.mp3' SpanURL='' chapter=',21,'>
-<term><b>vasoconstriction</b></term>
-<pronc>(vas-o-kon-STRIK-shun)</pronc>
-<def>Decrease in a blood vessel’s lumen diameter.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00035584.mp3' SpanURL='' chapter=',21,'>
-<term><b>vasodilation</b></term>
-<pronc>(vas-o-di-LA-shun)</pronc>
-<def>Increase in a blood vessel’s lumen diameter.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00035598.mp3' SpanURL='' chapter=',21,'>
-<term><b>vasomotor</b></term>
-<pronc>(va-so-MO-tor)</pronc>
-<def>Pertaining to dilation or constriction of blood vessels.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00035647.mp3' SpanURL='' chapter=',21,'>
-<term><b>vein</b></term>
-<pronc>(vane)</pronc>
-<def>Vessel that carries blood toward the heart.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00101855.mp3' SpanURL='' chapter=',21,'>
-<term><b>vena cava</b></term>
-<pronc>(VE-nah KA-vah)</pronc>
-<def>Large vein that carries blood into the heart’s right atrium; superior vena cava or inferior vena cava.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='' SpanURL='' chapter=',21,'>
-<term><b>venous sinus</b></term>
-<pronc>(VE-nus SI-nus)</pronc>
-<def>Large channel that drains blood low in oxygen.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00035711.mp3' SpanURL='' chapter=',21,'>
-<term><b>ventricle</b></term>
-<pronc>(VEN-trih-kl)</pronc>
-<def>Cavity or chamber. One of the heart’s two lower chambers. One of the brain’s four chambers in which cerebrospinal fluid is produced; adj., ventricular (ven-TRIK-u-lar).</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00035743.mp3' SpanURL='' chapter=',21,'>
-<term><b>venule</b></term>
-<pronc>(VEN-ule)</pronc>
-<def>Vessel between a capillary and a vein.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00035876.mp3' SpanURL='' chapter=',21,'>
-<term><b>vestibule</b></term>
-<pronc>(VES-tih-bule)</pronc>
-<def>Any space at the entrance to a canal or organ; in the inner ear, area that contains some receptors for the sense of equilibrium.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00035922.mp3' SpanURL='' chapter=',21,'>
-<term><b>villi</b></term>
-<pronc>(VIL-li)</pronc>
-<def>Small finger-like projections from the surface of a membrane; projections in the lining of the small intestine through which digested food is absorbed; sing., villus.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00035988.mp3' SpanURL='' chapter=',21,'>
-<term><b>viscera</b></term>
-<pronc>(VIS-er-ah)</pronc>
-<def>Organs in the ventral body cavities, especially the abdominal organs; adj., visceral.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00036043.mp3' SpanURL='' chapter=',21,'>
-<term><b>vitamin</b></term>
-<pronc>(VI-tah-min)</pronc>
-<def>Organic compound needed in small amounts for health.</def>
-<spanishterm></spanishterm>
-</audio>
-<audio audioURL='00036064.mp3' SpanURL='' chapter=',21,'>
-<term><b>vitreous</b></term>
-<pronc>(VIT-re-us)</pronc>
-<def><b>body</b> Soft, jelly-like substance that fills the eyeball and holds the shape of the eye; vitreous humor.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-<group name='Z' chapter=',22'>
-<audio audioURL='00036506.mp3' SpanURL='' chapter=',22,'>
-<term>zygote</term>
-<pronc>(ZI-gote)</pronc>
-<def>Fertilized ovum; cell formed by the union of a sperm and an egg.</def>
-<spanishterm></spanishterm>
-</audio>
-</group>
-
-
+  <group name='A' chapter=',5,6,19,26,'>
+    <audio audioURL='00000012.mp3' SpanURL='' chapter=',5,'>
+      <term>
+        abdominocentesis
+      </term>
+      <pronc>
+        (ab-dom-ih-no-PEL-vik)
+      </pronc>
+      <def>
+        surgical puncture of the abdomen to remove fluid
+      </def>
+      <spanishterm></spanishterm>
+    </audio>
+    <audio audioURL='00000030.mp3' SpanURL='00065215' chapter=',6,'>
+      <term>
+        abduction
+      </term>
+      <pronc>
+        (ab-dom-ih-no-PEL-vik)
+      </pronc>
+      <def>
+        moving away from the body midline (the opposite of adduction) (e.g., spreading the arms)
+      </def>
+      <spanishterm>
+        secuestro
+      </spanishterm>
+      <spanishdef>
+        Alejándose de la línea media del cuerpo (lo opuesto a la aducción) (por ejemplo, extendiendo los brazos)
+      </spanishdef>
+    </audio>
+    <audio audioURL='00000075.mp3' chapter=',19,26,'>
+      <term>
+        abrasion
+      </term>
+      <pronc>
+        (ab-dom-ih-no-PEL-vik)
+      </pronc>
+      <def>
+        outer layers of skin scraped off, resulting in a small amount of sanguineous or serosanguineous drainage, such as a "skinned" knee; open wound resulting in scraping
+        off of skin layer(s) by trauma; may or may not produce bleeding
+      </def>
+    </audio>
+    <audio audioURL='00000082.mp3' SpanURL='00065215' chapter=',6,'>
+      <term>
+        abruptio placentae
+      </term>
+      <pronc>
+        (ab-dom-ih-no-PEL-vik)
+      </pronc>
+      <def>
+        premature separation of the placenta
+      </def>
+      <spanishterm>
+        desprendimiento de placenta
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='B' chapter=',4,,17,'>
+    <audio audioURL='00003662.mp3' chapter=',17,'>
+      <term>
+        bacteria (singular bacterium)
+      </term>
+      <def>
+        one-celled microorganisms; may be found singularly or in chains
+      </def>
+    </audio>
+    <audio audioURL='00003673.mp3' chapter=',17,'>
+      <term>
+        bacteriocide
+      </term>
+      <def>
+        an agent or a process that kills bacteria
+      </def>
+      <spanishterm>
+        bactericida
+      </spanishterm>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00003683.mp3'
+      SpanURL='00065592'
+      chapter=',17,'>
+      <term>
+        bacteriology
+      </term>
+      <def>
+        the science and study of bacteria.
+      </def>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00003717.mp3'
+      SpanURL='00065599'
+      chapter=',4,'>
+      <term>
+        balance
+      </term>
+      <def>
+        equality between the debit and credit sides of an accounting equation; that which is left over after additions and subtractions have been made to an account; remainder
+        amount due.
+      </def>
+      <spanishterm>
+        equilibrar
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='C' chapter=',10,15,,21,24,'>
+    <audio audioURL='00004938.mp3' chapter=',21,'>
+      <term>
+        calibration
+      </term>
+      <def>
+        a measurement compared with a standard; a method for testing the accuracy of equipment; a quality assurance procedure
+      </def>
+    </audio>
+    <audio audioURL='00004974.mp3' chapter=',24,'>
+      <term>
+        calorie
+      </term>
+      <def>
+        unit of energy that produces heat
+      </def>
+      <spanishterm>
+        caloría
+      </spanishterm>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00005224'
+      SpanURL='00065909'
+      chapter=',15,'>
+      <term>
+        carbuncle
+      </term>
+      <def>
+        infection of interconnected group of hair follicles or several furuncles forming a mass.
+      </def>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00005289'
+      SpanURL='00065927'
+      chapter=',10,'>
+      <term>
+        cardiomegaly
+      </term>
+      <def>
+        enlarged heart muscle.
+      </def>
+      <spanishterm>
+        cardiomegalia
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='D' chapter=',5,13,15,'>
+    <audio audioURL='00008475.mp3' chapter=',5,'>
+      <term>
+        dacryocystitis
+      </term>
+      <def>
+        inflammation of a tear sac
+      </def>
+    </audio>
+    <audio audioURL='00071608.mp3' chapter=',5,'>
+      <term>
+        dactyl/o
+      </term>
+      <def>
+        digit, finger or toe
+      </def>
+      <spanishterm>
+        Dactila
+      </spanishterm>
+    </audio>
+    <audio audioURL='00086343.mp3' chapter=',15,'>
+      <term>
+        day sheet
+      </term>
+      <def>
+        a daily record of the services rendered, charges made, and payments received; may be a manual or computerized system
+      </def>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00008615'
+      SpanURL='00066549'
+      chapter=',13,'>
+      <term>
+        decongestant
+      </term>
+      <def>
+        substance that reduces congestion or swelling.
+      </def>
+      <spanishterm>
+        descongestionante
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='E' chapter=',6,14,20,'>
+    <audio audioURL='00086389.mp3' chapter=',14,'>
+      <term>
+        E code
+      </term>
+      <def>
+        a supplementary classification of ICD-9 coding that denotes the external cause of an injury rather than a disease; explains the mechanism of injury; includes drug
+        events such as poisonings and adverse effects
+      </def>
+    </audio>
+    <audio audioURL='00010205.mp3' chapter=',20,'>
+      <term>
+        echocardiogram
+      </term>
+      <def>
+        reflected sound waves used to test the heart for structural or functional abnormalities
+      </def>
+      <spanishterm>
+        ecocardiograma
+      </spanishterm>
+    </audio>
+    <audio audioURL='00010226.mp3' chapter=',6,'>
+      <term>
+        eclampsia
+      </term>
+      <def>
+        toxemia of pregnancy, with high blood pressure, albuminuria, oliguria, seizures, and sometimes coma
+      </def>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00010175'
+      SpanURL='00066994'
+      chapter=',20,'>
+      <term>
+        ecchymosis
+      </term>
+      <def>
+        characteristic black and blue mark that results from blood as it accumulates under the skin.
+      </def>
+      <spanishterm>
+        equimosis
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='F' chapter=',6,7,13,24,'>
+    <audio audioURL='00038247.mp3' chapter=',6,'>
+      <term>
+        fallopian tubes
+      </term>
+      <def>
+        oviducts; canals leading from the ovaries to the uterus
+      </def>
+    </audio>
+    <audio audioURL='00018646.mp3' chapter=',24,'>
+      <term>
+        fats (lipids)
+      </term>
+      <def>
+        greasy material in nutrients transport fat-soluble vitamins, insulate the body from the cold, and provide fatty acids
+      </def>
+      <spanishterm>
+        Grasas (lípidos)
+      </spanishterm>
+    </audio>
+    <audio audioURL='00086444.mp3' chapter=',13,'>
+      <term>
+        fee schedule
+      </term>
+      <def>
+        a list of a physician's customary charges; may incorporate insurance plan-specific discounts
+      </def>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00012652'
+      SpanURL='00067414'
+      chapter=',7,'>
+      <term>
+        fluoroscopy
+      </term>
+      <def>
+        special x-ray technique for examining a body part by immediate projection onto a fluorescent screen.
+      </def>
+      <spanishterm>
+        fluoroscopa
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='G' chapter=',5,6,'>
+    <audio audioURL='00013041.mp3' chapter=',6,'>
+      <term>
+        gallbladder
+      </term>
+      <def>
+        pear-shaped sac located on the inferior surface of the liver; stores bile to aid in digestion and fat absorption
+      </def>
+    </audio>
+    <audio audioURL='00013074.mp3' chapter=',6,'>
+      <term>
+        gamete
+      </term>
+      <def>
+        male(sperm) or female (ovum) reproductive cell
+      </def>
+      <spanishterm>
+        gameto
+      </spanishterm>
+    </audio>
+    <audio audioURL='00013108.mp3' chapter=',6,'>
+      <term>
+        ganglion
+      </term>
+      <def>
+        marked swelling of gray matter, located outside the central nervous system, containing cells of neurons
+      </def>
+    </audio>
+    <audio audioURL='00038454.mp3' chapter=',5,'>
+      <term>
+        gastrectasia
+      </term>
+      <def>
+        stretching of the stomach
+      </def>
+      <spanishterm>
+        Gastrectasia
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='H' chapter=',9,11,13,21,'>
+    <audio audioURL='00072910.mp3' chapter=',9,'>
+      <term>
+        hardware
+      </term>
+      <def>
+        the central processing unit, motherboard, hard drive, disk drive, keyboard, monitor, and mouse of the computer
+      </def>
+    </audio>
+    <audio audioURL='00046682.mp3' chapter=',11,'>
+      <term>
+        Health Insurance Portability and Accountability Act (HIPAA)
+      </term>
+      <def>
+        originally enacted in 1996, contains requirements for patient confidentiality
+      </def>
+      <spanishterm>
+        Ley de Portabilidad y Responsabilidad del Seguro Médico (HIPAA)
+      </spanishterm>
+    </audio>
+    <audio audioURL='00051391.mp3' chapter=',13,'>
+      <term>
+        health maintenance organization (HMO)
+      </term>
+      <def>
+        an association that provides all care to the insured person for a fixed fee, usually paid for by the insured or employer through a monthly premium; a copayment may
+        or may not be required
+      </def>
+    </audio>
+    <audio audioURL='00014290.mp3' chapter=',21,'>
+      <term>
+        hematocrit
+      </term>
+      <def>
+        percentage of red blood cells in the total blood volume
+      </def>
+      <spanishterm>
+        Hematocrito
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='I' chapter=',6,'>
+    <audio audioURL='00016373.mp3' chapter=',6,'>
+      <term>
+        ileum
+      </term>
+      <def>
+        lower portion of the small intestine, opening into the cecum
+      </def>
+    </audio>
+    <audio audioURL='00016398.mp3' chapter=',6,'>
+      <term>
+        ilium
+      </term>
+      <def>
+        superior wing-shaped portion of hip bones
+      </def>
+      <spanishterm>
+        ilion
+      </spanishterm>
+    </audio>
+    <audio audioURL='00016443.mp3' chapter=',6,'>
+      <term>
+        immunity
+      </term>
+      <def>
+        the individual's ability to resist specific diseases or disorders, usually by acquiring the corresponding antibody
+      </def>
+    </audio>
+    <audio audioURL='00016444.mp3' chapter=',6,'>
+      <term>
+        immunization
+      </term>
+      <def>
+        vaccination; protection from communicable diseases by administration of living attenuated agents (e.g., measles), killed organisms (e.g., pertussis), inactivated
+        toxins (e.g., tetanus), or recombinant DNA (e.g., hepatitis B)
+      </def>
+      <spanishterm>
+        inmunización
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='J' chapter=',4,6,'>
+    <audio audioURL='00017656.mp3' chapter=',6,'>
+      <term>
+        jaundice
+      </term>
+      <def>
+        yellow color of skin, white of eyes, and mucous membranes resulting from increased bilirubin in blood; most common causes are obstruction of bile flow, liver dysfunction,
+        and excess destruction of red blood cells
+      </def>
+    </audio>
+    <audio audioURL='00017674.mp3' chapter=',6,'>
+      <term>
+        joints
+      </term>
+      <def>
+        areas where two or more bones come together or articulate
+      </def>
+      <spanishterm>
+        Articulaciones
+      </spanishterm>
+    </audio>
+    <audio audioURL='00057781.mp3' chapter=',4,'>
+      <term>
+        justice
+      </term>
+      <def>
+        equitable distribution of benefits and burdens
+      </def>
+    </audio>
+  </group>
+  <group name='K' chapter=',6,18,'>
+    <audio audioURL='00017772.mp3' chapter=',6,'>
+      <term>
+        keratin
+      </term>
+      <def>
+        a protein in the epidermis that thickens and waterproofs the skin
+      </def>
+    </audio>
+    <audio audioURL='00017886.mp3' chapter=',6,'>
+      <term>
+        kidneys
+      </term>
+      <def>
+        two muscular, bean-shaped organs located in the back of the abdominal cavity that filtrate, reabsorb selected substances, and excrete urine
+      </def>
+      <spanishterm>
+        Riñones
+      </spanishterm>
+    </audio>
+    <audio audioURL='00039100.mp3' chapter=',18,'>
+      <term>
+        Korotkoff sounds
+      </term>
+      <def>
+        sounds heard through the stethoscope during the measurement of blood pressure; there are five phases
+      </def>
+    </audio>
+    <audio audioURL='00017990.mp3' chapter=',6,'>
+      <term>
+        kyphosis
+      </term>
+      <def>
+        hunchback; an excessive curvature in the thoracic portion of the vertebral column
+      </def>
+      <spanishterm>
+        Cifosis
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='L' chapter=',5,6,19,21,26,'>
+    <audio audioURL='00018024.mp3' chapter=',6,'>
+      <term>
+        labyrinth
+      </term>
+      <def>
+        inner ear; contains vestibule, semicircular canal, and cochlea with receptors for hearing and balance
+      </def>
+    </audio>
+    <audio audioURL='00018035.mp3' chapter=',19,26,'>
+      <term>
+        laceration
+      </term>
+      <def>
+        a jagged traumatic cut resulting in irregular wound edges; straight or jagged cut into the body tissue
+      </def>
+      <spanishterm>
+        laceración
+      </spanishterm>
+    </audio>
+    <audio audioURL='00018149.mp3' chapter=',21,'>
+      <term>
+        lancet
+      </term>
+      <def>
+        a sharp, sterile, disposable instrument used to puncture skin for collecting capillary blood
+      </def>
+    </audio>
+    <audio audioURL='00018171.mp3' chapter=',5,'>
+      <term>
+        laparotomy
+      </term>
+      <def>
+        incision of the abdominal wall
+      </def>
+      <spanishterm>
+        Laparotomía
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='M' chapter=',5,6,22,'>
+    <audio audioURL='00086570.mp3' chapter=',6,'>
+      <term>
+        macular degeneration
+      </term>
+      <def>
+        progressive abnormal growth of blood vessels or other structures in the retina, usually leading to blindness
+      </def>
+    </audio>
+    <audio audioURL='00083140.mp3' chapter=',22,'>
+      <term>
+        magnetic resonance imaging (MRI)
+      </term>
+      <def>
+        film visualization of internal structures, including soft tissue, by using a magnetic field with radiation
+      </def>
+      <spanishterm>
+        Resonancia magnética (MRI)
+      </spanishterm>
+    </audio>
+    <audio audioURL='00041379.mp3' chapter=',5,'>
+      <term>
+        malacia
+      </term>
+      <def>
+        softening of tissue
+      </def>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00019354'
+      SpanURL='00068388'
+      chapter=',14,'>
+      <term>
+        malignant
+      </term>
+      <def>
+        cancerous.
+      </def>
+      <spanishterm>
+        maligno
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='N' chapter=',4,5,6,'>
+    <audio audioURL='00021769.mp3' chapter=',6,'>
+      <term>
+        narcolepsy
+      </term>
+      <def>
+        uncontrollable episodes of falling asleep; also known as sleep epilepsy
+      </def>
+    </audio>
+    <audio audioURL='00021788.mp3' chapter=',5,'>
+      <term>
+        nasopharyngeal
+      </term>
+      <def>
+        pertaining to nose and throat
+      </def>
+      <spanishterm>
+        Nasofaríngeo
+      </spanishterm>
+    </audio>
+    <audio audioURL='00021858.mp3' chapter=',5,'>
+      <term>
+        necrosis
+      </term>
+      <def>
+        death of tissue or bone
+      </def>
+    </audio>
+    <audio audioURL='00058198.mp3' chapter=',4,'>
+      <term>
+        negligence
+      </term>
+      <def>
+        commission or omission of an act that resulted in or caused harm
+      </def>
+      <spanishterm>
+        negligencia
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='O' chapter=',5,12,24,'>
+    <audio audioURL='00022642.mp3' chapter=',24,'>
+      <term>
+        obese
+      </term>
+      <def>
+        20% overweight for sex, height, and type of frame
+      </def>
+    </audio>
+    <audio audioURL='00023018.mp3' chapter=',5,'>
+      <term>
+        onychocryptosis
+      </term>
+      <def>
+        an ingrown (hidden) nail, finger or toe
+      </def>
+      <spanishterm>
+        Onicocriptosis
+      </spanishterm>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00023130'
+      SpanURL=''
+      chapter=',5,12,'>
+      <term>
+        ophthalmoscope
+      </term>
+      <def>
+        lighted instrument used to examine the inner surfaces of the eye.
+      </def>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00023188'
+      SpanURL='00068867'
+      chapter=',12,'>
+      <term>
+        optometrist
+      </term>
+      <def>
+        specialist who can measure for errors of refraction and prescribe lenses but who cannot treat diseases of the eye or perform surgery.
+      </def>
+      <spanishterm>
+        Optmetra optometrista
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='P' chapter=',6,16,18,'>
+    <audio audioURL='00023993.mp3' chapter=',18,'>
+      <term>
+        palpation
+      </term>
+      <def>
+        use of fingertips and hands to feel for sizes and positions of specific organs, masses, or other abnormalities; texture and firmness; skin temperature and moisture
+        and flexibility of joints
+      </def>
+    </audio>
+    <audio audioURL='00024019.mp3' chapter=',6,'>
+      <term>
+        pancreas
+      </term>
+      <def>
+        an endocrine gland located behind the stomach that produces pancreatic juice, which is transported to the duodenum to aid in digestion, and insulin and glucagon,
+        which regulate carbohydrate metabolism
+      </def>
+      <spanishterm>
+        páncreas
+      </spanishterm>
+    </audio>
+    <audio
+      mediatype='sound'
+      format='mp3'
+      audioURL='00024659'
+      SpanURL=''
+      chapter=',16,'>
+      <term>
+        pediculosis
+      </term>
+      <def>
+        infestation with parasitic lice.
+      </def>
+    </audio>
+    <audio audioURL='00044149.mp3' chapter=',6,'>
+      <term>
+        Papnicolaou smear (Pap smear)
+      </term>
+      <def>
+        test for cervical cancer that involves microscopically examining cervical scrapings
+      </def>
+      <spanishterm>
+        Papanicolaou frotis (Papanicolau)
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='Q' chapter=',21,'>
+    <audio audioURL='00058994.mp3' chapter=',21,'>
+      <term>
+        qualitative analysis
+      </term>
+      <def>
+        the identification of a type of pathogen by its appearance in the specimen
+      </def>
+    </audio>
+    <audio audioURL='00058999.mp3' chapter=',21,'>
+      <term>
+        quantitative analysis
+      </term>
+      <def>
+        the method used to determine the number of bacteria present in a specimen
+      </def>
+      <spanishterm>
+        análisis cuantitativo
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='R' chapter=',22,'>
+    <audio audioURL='00075133.mp3' chapter=',22,'>
+      <term>
+        rad
+      </term>
+      <def>
+        unit of absorbed dose of radiation
+      </def>
+    </audio>
+    <audio audioURL='00028768.mp3' chapter=',22,'>
+      <term>
+        radiology
+      </term>
+      <def>
+        the study of use of radioactive substances to visualize an internal structure
+      </def>
+      <spanishterm>
+        radiología
+      </spanishterm>
+    </audio>
+    <audio audioURL='00028770.mp3' chapter=',22,'>
+      <term>
+        radiolucent
+      </term>
+      <def>
+        a substance or structure that x-rays will penetrate
+      </def>
+    </audio>
+    <audio audioURL='00028782.mp3' chapter=',22,'>
+      <term>
+        radiopaque
+      </term>
+      <def>
+        substance or structure that is not penetrated by x-rays
+      </def>
+      <spanishterm>
+        radioopaco
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='S' chapter=',6,9,19,'>
+    <audio audioURL='00055180.mp3' chapter=',6,'>
+      <term>
+        sagittal plane
+      </term>
+      <def>
+        an imaginary line or cut through the body, bilaterally separating it into right and left halves
+      </def>
+    </audio>
+    <audio audioURL='00103494.mp3' chapter=',6,'>
+      <term>
+        salivary glands
+      </term>
+      <def>
+        three pairs of glands located in the mouth, secreting saliva that moistens food and begins the chemical breakdown of carbohydrates
+      </def>
+      <spanishterm>
+        glándulas salivales
+      </spanishterm>
+    </audio>
+    <audio audioURL='00029966.mp3' chapter=',19,'>
+      <term>
+        scalpels
+      </term>
+      <def>
+        knives with various blade shapes and sizes, used to make surgical incisions
+      </def>
+    </audio>
+    <audio audioURL='00029973.mp3' chapter=',9,'>
+      <term>
+        scanner
+      </term>
+      <def>
+        software-required device that reads documents (text, graphics, photos) and transfers the image to the computer
+      </def>
+      <spanishterm>
+        escáner
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='T' chapter=',5,6,19,20,'>
+    <audio audioURL='00032742.mp3' chapter=',5,20,'>
+      <term>
+        tachycardia
+      </term>
+      <def>
+        increased heart rate (pulse):a heart rate faster than 100 beats per minute
+      </def>
+    </audio>
+    <audio audioURL='00032970.mp3' chapter=',6,'>
+      <term>
+        telophase
+      </term>
+      <def>
+        final phase of mitosis; the nucleus divides in the center, forming two distinct cells
+      </def>
+      <spanishterm>
+        Telófase
+      </spanishterm>
+    </audio>
+    <audio audioURL='00033000.mp3' chapter=',19,'>
+      <term>
+        tenaculum
+      </term>
+      <def>
+        a long, two-handled instrument with pointed ends used to grasp tissue during surgery; a cervical tenaculum is commonly used in well-woman exams
+      </def>
+    </audio>
+    <audio audioURL='00033011.mp3' chapter=',6,'>
+      <term>
+        tendons
+      </term>
+      <def>
+        connective tissue attaching muscle directly to the periosteum (covering) of the bone
+      </def>
+      <spanishterm>
+        Tendones
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='U' chapter=',6,22,'>
+    <audio audioURL='00056486.mp3' chapter=',6,'>
+      <term>
+        ulcerative colitis
+      </term>
+      <def>
+        inflammation and ulceration of the mucosa of the colon and rectum
+      </def>
+    </audio>
+    <audio audioURL='00034876.mp3' chapter=',6,'>
+      <term>
+        ulcers
+      </term>
+      <def>
+        lesions of the mucosa of any organ; most common in the stomach and intestine
+      </def>
+      <spanishterm>
+        úlceras
+      </spanishterm>
+    </audio>
+    <audio audioURL='00082479.mp3' chapter=',6,'>
+      <term>
+        ulna
+      </term>
+      <def>
+        medial bone of forearm (in anatomic position)
+      </def>
+    </audio>
+    <audio audioURL='00034923.mp3' chapter=',22,'>
+      <term>
+        ultrasonography (ultrasound)
+      </term>
+      <def>
+        use of high-frequency ultrasonic waves to produce an image and identify and measure deep body structures and abnormalities
+      </def>
+      <spanishterm>
+        Ultrasonografía (ultrasonido)
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='V' chapter=',6,14,'>
+    <audio audioURL='00087088.mp3' chapter=',14,'>
+      <term>
+        V codes
+      </term>
+      <def>
+        ICD-9 codes identifying health care visits for reasons other than illness
+      </def>
+    </audio>
+    <audio audioURL='00089970.mp3' chapter=',6,'>
+      <term>
+        vas deferens
+      </term>
+      <def>
+        tubule carrying sperm from epididymis to seminal vesicles
+      </def>
+      <spanishterm>
+        Conducto deferente
+      </spanishterm>
+    </audio>
+    <audio audioURL='00035571.mp3' chapter=',6,'>
+      <term>
+        vasectomy
+      </term>
+      <def>
+        male sterilization procedure; tying off or removing part or all of vas defernes
+      </def>
+    </audio>
+    <audio audioURL='00101855.mp3' chapter=',6,'>
+      <term>
+        vena cava
+      </term>
+      <def>
+        largest body vein, with inferior and superior branches
+      </def>
+      <spanishterm>
+        Vena cava
+      </spanishterm>
+    </audio>
+  </group>
+  <group name='W' chapter=',6,10,13,26,'>
+    <audio audioURL='00087109.mp3' chapter=',26,'>
+      <term>
+        walking wounded
+      </term>
+      <def>
+        persons in a disaster who have been triaged at a command center of the community disaster, have minor injuries, and are capable of walking
+      </def>
+    </audio>
+    <audio audioURL='00036165.mp3' chapter=',10,'>
+      <term>
+        wave
+      </term>
+      <def>
+        scheduling a specific number of patients, usually four, at the beginning of the hour
+      </def>
+      <spanishterm>
+        ola
+      </spanishterm>
+    </audio>
+    <audio audioURL='00036191.mp3' chapter=',6,'>
+      <term>
+        wheeze
+      </term>
+      <def>
+        squeaking or whistling breath sound, usually caused by narrowed tracheobronchial airways, as in asthma
+      </def>
+    </audio>
+    <audio audioURL='00056910.mp3' chapter=',13,'>
+      <term>
+        workers' compensation
+      </term>
+      <def>
+        medical and disability insurance to cover employees in the event of a work-related injury, illness, or death
+      </def>
+      <spanishterm>
+        Compensación laboral
+      </spanishterm>
+    </audio>
+  </group>
 </root>

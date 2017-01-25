@@ -2357,7 +2357,15 @@ function audio_tag(audiofile, audioid, varplayid)
     {
        
         //var audioElement = document.createElement('audio');
-      
+        //try
+       // 
+     
+        //}
+        //catch(e)
+       // {
+
+        //}
+        
         audioElement =new Audio();
         
         audioElement.setAttribute("id", "audiotag1")
@@ -2378,13 +2386,16 @@ function audio_tag(audiofile, audioid, varplayid)
        
        
         
-        $('<audio src="'+ audiofile +'">').load(function() {
+        $(audioElement).load(function() {
+         
+           // alert(audioid);
                document.getElementById(audioid).setAttribute("style", "visibility:visible");
                document.getElementById("Audio2").setAttribute("style", "display:block;margin-left: -20px;margin-top: 14px;");
            
                
 
         }).bind('error', function() {
+          
             document.getElementById(audioid).setAttribute("style", "visibility:hidden");
             document.getElementById("Audio2").setAttribute("style", "display:none;margin-left:-20px;margin-top:14px;");
              document.getElementById("loadder1").style.display="none";
