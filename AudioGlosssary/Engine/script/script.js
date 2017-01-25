@@ -84,7 +84,7 @@ $('.subtitle').html($(xmlconfig).find("edition").text());
 $('.Author').html($(xmlconfig).find("author").text());
 }
 function bodyloaded1() {
-    document.getElementById("loadder1").style.display="block";
+    document.getElementById("loadder1").style.display="none";
     document.addEventListener('dataLoaded', createUI)
     document.addEventListener('dataLoaded', createUI1)
     modelObj = new DtataProvider('Assets/xml/chapter.xml', createUI)
@@ -350,10 +350,11 @@ function createUI1(e) {
                 
                 if(GroupArray[t].AudioList[0].AudioUrl=="")
                 {
+                   
+                   
+                    audio_tag("Assets/media/" + "undefined", "Audio1", "play1","englishaudio")
                     document.getElementById("Audio1").setAttribute("style", "visibility:hidden");
                     document.getElementById("Audio2").setAttribute("style", "display:none;margin-left: -20px;margin-top: 14px;");
-                    audio_tag("Assets/media/" + "undefined", "Audio1", "play1","englishaudio")
-
                 }
                 else
                 {
@@ -361,7 +362,9 @@ function createUI1(e) {
                     document.getElementById("Audio1").setAttribute("style", "visibility:visible");
                        var TC = document.getElementById("termContentPro1");
                 if(TC.style.display=="none")
-                {}
+                { var TC = document.getElementById("Audio2");
+                TC.style.display="none";
+                  TC.style.visibility="hiddene";}
                 else
                   {var TC = document.getElementById("Audio2");
                 TC.style.display="block";
@@ -847,6 +850,7 @@ function ToViewEnglishTerm() {
     }
      document.getElementById('b4').className = document.getElementById('b4').className.replace("btn-default", "btn-info");
         document.getElementById('b3').className = document.getElementById('b3').className.replace("btn-info", "btn-default");
+        document.getElementById("All1").className = document.getElementById("All1").className.replace('btn-info','btn-default' )
         
 }
  
@@ -868,6 +872,7 @@ function ToViewSpanTerm() {
 
         document.getElementById('b3').className = document.getElementById('b3').className.replace("btn-default", "btn-info");
         document.getElementById('b4').className = document.getElementById('b4').className.replace("btn-info", "btn-default");
+        document.getElementById("All1").className = document.getElementById("All1").className.replace('btn-info','btn-default' )
 
         var cahperList = document.getElementById('chapterList')
         var currentChap = cahperList.options[cahperList.selectedIndex].value
@@ -1350,6 +1355,7 @@ function onSelectAlphaMenu1(obj)
     }
 
     document.getElementById("All").className = document.getElementById("All").className.replace('btn-info', 'btn-warning')
+    document.getElementById("All1").className = document.getElementById("All1").className.replace('btn-default', 'btn-info')
    
      
 
@@ -1906,14 +1912,19 @@ else
 
                 if (toggES == "En") {
                     if(GroupArray[t].AudioList[j].AudioUrl=="")
-                    {document.getElementById("Audio1").setAttribute("style", "visibility:hidden");
+                    {
+                    
+                        audio_tag("Assets/media/" + "undefined", "Audio1", "play1","englishaudio")
+                        document.getElementById("Audio1").setAttribute("style", "visibility:hidden");
                     document.getElementById("Audio2").setAttribute("style", "display:none;margin-left: -20px;margin-top: 14px;");
-                        audio_tag("Assets/media/" + "undefined", "Audio1", "play1","englishaudio")}
+                    }
                     else
                     {document.getElementById("Audio1").setAttribute("style", "visibility:visible");
                     var TC = document.getElementById("termContentPro1");
                 if(TC.style.display=="none")
-                {}
+                { var TC = document.getElementById("Audio2");
+                TC.style.display="none";
+                  TC.style.visibility="hiddene";}
                 else
                   {var TC = document.getElementById("Audio2");
                 TC.style.display="block";
@@ -2445,6 +2456,7 @@ function audio_tag(audiofile, audioid, varplayid,audiotag)
                          
                          audioElement.volume = 1.0;
                   document.getElementById("loadder").style.display="block";
+                   document.getElementById("loadder1").style.display="none";
                     if (varplayid == "spanplay1") {
                         $("#spanitem_1").css("background-color", "yellow");
                         $("#spanitem_1").css("font-weight", "bold");
@@ -2541,7 +2553,9 @@ function audio_tag(audiofile, audioid, varplayid,audiotag)
         document.getElementById(audioid).setAttribute("style", "display:block");
            var TC = document.getElementById("termContentPro1");
                 if(TC.style.display=="none")
-                {}
+                { var TC = document.getElementById("Audio2");
+                TC.style.display="none";
+                  TC.style.visibility="hiddene";}
                 else
                   {
                       var TC = document.getElementById("Audio2");
