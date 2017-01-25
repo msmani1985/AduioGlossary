@@ -361,12 +361,17 @@ function createUI1(e) {
                     
                     document.getElementById("Audio1").setAttribute("style", "visibility:visible");
                        var TC = document.getElementById("termContentPro1");
+                       
                 if(TC.style.display=="none")
                 { var TC = document.getElementById("Audio2");
                 TC.style.display="none";
                   TC.style.visibility="hiddene";}
                 else
-                  {var TC = document.getElementById("Audio2");
+                  
+                  
+                  {
+                      
+                      var TC = document.getElementById("Audio2");
                 TC.style.display="block";
                   TC.style.visibility="visible";}
                     //document.getElementById("Audio2").setAttribute("style", "display:block;margin-left: -20px;margin-top: 14px;");
@@ -1347,6 +1352,7 @@ function display_left(vart, varchap1)
 function onSelectAlphaMenu1(obj) 
 {
     
+    
     var list = []
     list = document.getElementsByClassName('btns1')
 
@@ -1466,7 +1472,18 @@ function onSelectAlphaMenu1(obj)
     count = 0;
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
      
-        onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
+    onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
+   var TC = document.getElementById("termContentPro1");
+                   
+                if(TC.style.display=="none")
+                { var TC = document.getElementById("Audio2");
+                TC.style.display="none";
+                  TC.style.visibility="hiddene";}
+                else
+                  {
+                      var TC = document.getElementById("Audio2");
+                TC.style.display="block";
+                  TC.style.visibility="visible";}
 }
 /*********************************************************** */
 //
@@ -1603,15 +1620,7 @@ function onSelectAlphaMenu(obj)
     document.getElementById('number_term').innerHTML = count + 1 + '/' + document.getElementById('termChoose1').childNodes.length
      
         onClickTerm(document.getElementById('termChoose1').childNodes[0].childNodes[0])
-        if(TC.style.display=="none")
-                { var TC = document.getElementById("Audio2");
-                TC.style.display="none";
-                  TC.style.visibility="hiddene";}
-                else
-                  {var TC = document.getElementById("Audio2");
-                TC.style.display="block";
-                  TC.style.visibility="visible";}
-                    
+        
 }
 /*
 function GroupRefVO() {
@@ -1930,12 +1939,14 @@ else
                     else
                     {document.getElementById("Audio1").setAttribute("style", "visibility:visible");
                     var TC = document.getElementById("termContentPro1");
+                    
                 if(TC.style.display=="none")
                 { var TC = document.getElementById("Audio2");
                 TC.style.display="none";
                   TC.style.visibility="hiddene";}
                 else
-                  {var TC = document.getElementById("Audio2");
+                  {
+                      var TC = document.getElementById("Audio2");
                 TC.style.display="block";
                   TC.style.visibility="visible";}
                     //document.getElementById("Audio2").setAttribute("style", "display:block;margin-left: -20px;margin-top: 14px;");
@@ -2561,12 +2572,14 @@ function audio_tag(audiofile, audioid, varplayid,audiotag)
 
         document.getElementById(audioid).setAttribute("style", "display:block");
            var TC = document.getElementById("termContentPro1");
+           
                 if(TC.style.display=="none")
                 { var TC = document.getElementById("Audio2");
                 TC.style.display="none";
                   TC.style.visibility="hiddene";}
                 else
                   {
+           
                       var TC = document.getElementById("Audio2");
                 TC.style.display="block";
                   TC.style.visibility="visible";}
